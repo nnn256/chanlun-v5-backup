@@ -1,0 +1,18 @@
+test_failed_submit_rolls_back_running_state (test_adaptive_replay.OrchestrationTests.test_failed_submit_rolls_back_running_state) ... ok
+test_manifest_is_exact_native_contract (test_adaptive_replay.OrchestrationTests.test_manifest_is_exact_native_contract) ... ok
+test_stop_never_submits_work (test_adaptive_replay.OrchestrationTests.test_stop_never_submits_work) ... ok
+test_submit_one_only_admits_one_and_commits_before_return (test_adaptive_replay.OrchestrationTests.test_submit_one_only_admits_one_and_commits_before_return) ... ok
+sh600000 1m verified 
+sh600001 1m verified 
+test_temp_end_to_end_preserves_manifest_and_completes (test_adaptive_replay.OrchestrationTests.test_temp_end_to_end_preserves_manifest_and_completes) ... ok
+sh600000 1m failed worker process: BrokenProcessPool: fixture abrupt exit
+test_worker_failure_is_recorded_and_pool_break_is_terminal (test_adaptive_replay.OrchestrationTests.test_worker_failure_is_recorded_and_pool_break_is_terminal) ... ok
+test_idle_starts_one_with_512mb_and_waits_below (test_adaptive_replay.PolicyTests.test_idle_starts_one_with_512mb_and_waits_below) ... ok
+test_parallel_uses_free_memory_plus_unallocated_growth_reserve (test_adaptive_replay.PolicyTests.test_parallel_uses_free_memory_plus_unallocated_growth_reserve) ... ok
+test_peak_growth_raises_reservation_and_no_kill_on_pressure (test_adaptive_replay.PolicyTests.test_peak_growth_raises_reservation_and_no_kill_on_pressure) ... ok
+test_unreported_pid_reserves_entire_worker_and_cpu_limit (test_adaptive_replay.PolicyTests.test_unreported_pid_reserves_entire_worker_and_cpu_limit) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.400s
+
+OK

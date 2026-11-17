@@ -1,0 +1,7 @@
+# Preserve source snapshots byte-for-byte so their SHA-256 receipts stay valid.
+* -text
+*.png binary
+*.jpg binary
+*.pdf binary
+*.woff binary
+*.woff2 binary

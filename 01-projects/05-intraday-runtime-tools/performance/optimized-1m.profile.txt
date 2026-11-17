@@ -1,0 +1,38 @@
+         652237049 function calls (643986506 primitive calls) in 294.501 seconds
+
+   Ordered by: cumulative time
+   List reduced from 533 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    22560    0.633    0.000  296.397    0.013 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\intraday_research.py:97(append)
+     3073    0.042    0.000  190.677    0.062 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:167(snapshot)
+     3073   88.037    0.029  190.634    0.062 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:195(make_report)
+    22560   31.243    0.001  104.372    0.005 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:121(append)
+    22560    0.138    0.000   29.134    0.001 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\KLine\KLine_List.py:122(add_single_klu)
+     3073   16.047    0.005   26.642    0.009 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:307(review_geometry)
+    10085    0.059    0.000   25.977    0.003 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\KLine\KLine_List.py:104(cal_seg_and_zs)
+  1434679   10.234    0.000   25.724    0.000 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:196(move)
+ 48269520   15.615    0.000   22.669    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Common\cache.py:16(__get__)
+169807809   14.432    0.000   14.432    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\KLine\KLine_Unit.py:82(idx)
+  1804565    2.083    0.000   13.646    0.000 C:\Users\li\AppData\Local\Python\pythoncore-3.14-64\Lib\json\__init__.py:185(dumps)
+    20170    0.414    0.000   13.130    0.001 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\KLine\KLine_List.py:142(cal_seg)
+    20170    0.081    0.000   12.522    0.001 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\SegListChan.py:28(update)
+  1804565    1.914    0.000   11.294    0.000 C:\Users\li\AppData\Local\Python\pythoncore-3.14-64\Lib\json\encoder.py:185(encode)
+48269520/48072014    9.761    0.000   10.529    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Common\cache.py:25(__call__)
+  2469961    2.113    0.000    9.736    0.000 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:51(local_time)
+  1804565    8.564    0.000    8.564    0.000 C:\Users\li\AppData\Local\Python\pythoncore-3.14-64\Lib\json\encoder.py:207(iterencode)
+22749/20170    0.360    0.000    7.936    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\SegListChan.py:36(cal_seg_sure)
+    20170    0.065    0.000    7.729    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\BuySellPoint\BSPointList.py:100(cal)
+ 48269527    7.053    0.000    7.053    0.000 {built-in method builtins.hasattr}
+    86852    0.088    0.000    6.561    0.000 {built-in method builtins.next}
+    39642    6.429    0.000    6.429    0.000 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:259(<genexpr>)
+  1950023    3.493    0.000    6.050    0.000 {built-in method builtins.min}
+260146/152589    0.265    0.000    5.676    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\EigenFX.py:55(add)
+  1986385    2.807    0.000    4.979    0.000 {built-in method builtins.max}
+10050/9084    0.029    0.000    4.280    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\SegListChan.py:64(treat_fx_eigen)
+22187/20170    0.048    0.000    4.232    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\SegListComm.py:112(collect_left_seg)
+21773/19799    0.100    0.000    4.121    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\SegListComm.py:91(collect_segs)
+47399/47343    0.032    0.000    4.035    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\SegListComm.py:149(add_new_seg)
+89195/70813    0.298    0.000    4.025    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\EigenFX.py:38(treat_third_ele)
+
+

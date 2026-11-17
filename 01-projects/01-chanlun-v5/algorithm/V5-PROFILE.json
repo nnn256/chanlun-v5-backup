@@ -1,0 +1,17 @@
+{
+  "algorithm_name": "缠论V5",
+  "profile_id": "course_feature_sequence_recursive_v2",
+  "stroke_mode": "strict",
+  "second_policy": "conservative",
+  "third_boundary": "strict_outside",
+  "segment_paths": ["feature_no_gap", "feature_gap_second_sequence", "first_pen_break"],
+  "recursive_levels": "L0_confirmed_segments_to_L8_when_supported_by_data",
+  "max_rank": 8,
+  "max_depth": 3,
+  "multiframe_roles": ["trade", "confirm", "trigger"],
+  "strict_original_equivalence_proven": false,
+  "execution_allowed": false,
+  "market_scan_semantics": "current_provider_universe_daily_acquisition_and_candidate_scan",
+  "market_scan_profile_note": "market_scan.py is V4-compatible acquisition/base scan; V5 recursive reports are separate full-study/postprocess artifacts",
+  "created_at": "2026-11-14T00:00:00+08:00"
+}

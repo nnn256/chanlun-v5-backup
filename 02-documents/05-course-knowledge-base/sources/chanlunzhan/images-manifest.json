@@ -1,0 +1,432 @@
+[
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0394.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 16994,
+    "sha256": "3d4782475c75b2cafc3842fc6fb829f69a345cc86267de00b1ac335da5c7a584",
+    "file": "sources/chanlunzhan/images/reference__pic__0394.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0398_1.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 23072,
+    "sha256": "bb348665b8e9323407b9e499d0c7ae15bfa62bdae3e12f599a631628315fcc7a",
+    "file": "sources/chanlunzhan/images/reference__pic__0398_1.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0398_2.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 25090,
+    "sha256": "653e908ce106d57a7e7647e000bbd000fb66a8a56f73947a68406dad0f0e73f4",
+    "file": "sources/chanlunzhan/images/reference__pic__0398_2.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0398_3.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 18609,
+    "sha256": "aa6c41bee88476104443d6a6416a8c3034514dbfbc816dcb13272930a4f0519d",
+    "file": "sources/chanlunzhan/images/reference__pic__0398_3.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0408_1.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 25370,
+    "sha256": "6185577435100a12d438ed39a45a733947ed876e42d542b67b2c68992cb14527",
+    "file": "sources/chanlunzhan/images/reference__pic__0408_1.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0408_2.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 27028,
+    "sha256": "e8974587bf38c542c4da1b2d113c5bf155ae25d7f1ed84d329b8463460728352",
+    "file": "sources/chanlunzhan/images/reference__pic__0408_2.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0408_3.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 22150,
+    "sha256": "0f6bf1cca088074f098a69ae5cade3324d3a1e5a5aff63c99521fada0c0f25fc",
+    "file": "sources/chanlunzhan/images/reference__pic__0408_3.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0412.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 19910,
+    "sha256": "bfd1e74b253f9890034b45fee3a8c559806575248b489652b192ee0a690b3039",
+    "file": "sources/chanlunzhan/images/reference__pic__0412.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0424_1.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 18410,
+    "sha256": "7e5d8283967117c96f8c09ddcecf50a75d5822afbdf6f57bdde732d5e77dd3c6",
+    "file": "sources/chanlunzhan/images/reference__pic__0424_1.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0424_2.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 15834,
+    "sha256": "8722883887f01da48219a0d37b81c5762dce19bd81355788b9055b42518c76c7",
+    "file": "sources/chanlunzhan/images/reference__pic__0424_2.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0428.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 9144,
+    "sha256": "222fe739ebce90520bfe59d8293cadf16da3c7c42fc55b8a4b6ec9278d39504a",
+    "file": "sources/chanlunzhan/images/reference__pic__0428.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0436_1.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 25059,
+    "sha256": "a2c3d326a2ef02d77d46208c132e9c03d6157f31e5076e58644028ff95ff1f01",
+    "file": "sources/chanlunzhan/images/reference__pic__0436_1.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0436_2.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 17681,
+    "sha256": "77458039f6e27353c7a44c6a708ad807c257d15613fc971a0dc3d757bf6d5093",
+    "file": "sources/chanlunzhan/images/reference__pic__0436_2.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0436_3.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 28371,
+    "sha256": "c2633d204bb814f93498ec67a3e7585a0017d967f53b13afdeda5dbe58e8c2e2",
+    "file": "sources/chanlunzhan/images/reference__pic__0436_3.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0440_1.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 18276,
+    "sha256": "1cf7b9ca3e5350892a49785b3f3643b67617abcf9dcabed3b311816c2b09dbfe",
+    "file": "sources/chanlunzhan/images/reference__pic__0440_1.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0440_2.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 18028,
+    "sha256": "e8057ea74f873b0dfb56f696c856db1eebd603470e1ade8e0cee3a8b98c32c71",
+    "file": "sources/chanlunzhan/images/reference__pic__0440_2.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0440_3.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 16946,
+    "sha256": "f26cdeeb5d922789cfc90ec8980cc4bb089a677068ac2cde9ae6db5b8e4ca1c3",
+    "file": "sources/chanlunzhan/images/reference__pic__0440_3.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0440_4.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 16937,
+    "sha256": "9e05407d8e182b586eb47c5bcb34da11eb9ec25e69582cdb7b98df6478fa4007",
+    "file": "sources/chanlunzhan/images/reference__pic__0440_4.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0449.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 10907,
+    "sha256": "7a2cde098a68a9b63a721d2bcc6c9fda30ae1a6cd7b1bc86c4d1c140e9b28e66",
+    "file": "sources/chanlunzhan/images/reference__pic__0449.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0469.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 147698,
+    "sha256": "e54fc5c3d18c7193e25c36a500c2d9a6e44b8ac8a063a7fcce3eacb0b7e80f12",
+    "file": "sources/chanlunzhan/images/reference__pic__0469.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0478.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 18684,
+    "sha256": "78ee48a05035c1ce502887fc6326cd6148c39238e90ca94055e453666ecedb19",
+    "file": "sources/chanlunzhan/images/reference__pic__0478.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0511_1.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 241277,
+    "sha256": "8fc89cd5792e3406752fb83e33b093e9eacd8d4142ad215c2f966597c2b81a4e",
+    "file": "sources/chanlunzhan/images/reference__pic__0511_1.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0511_2.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 221575,
+    "sha256": "ecced91732803160423fffff72ab51463705f6111f394aa8ec6ca6f24faba365",
+    "file": "sources/chanlunzhan/images/reference__pic__0511_2.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0535.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 103138,
+    "sha256": "f1a954137606474a929af39cf16faa6bf8fc5d28fc6e31c0dc95430b78eaa55d",
+    "file": "sources/chanlunzhan/images/reference__pic__0535.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0541.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 271965,
+    "sha256": "0021a777642b9f0c39e8ad60f4335d22894cc61849e4b5d33aec62a407684d0b",
+    "file": "sources/chanlunzhan/images/reference__pic__0541.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0542.png",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 457428,
+    "sha256": "bae8c4ddb36f5b0877d3a84bd883786885a7b8b4650c3b96ed5c944ee33f92d5",
+    "file": "sources/chanlunzhan/images/reference__pic__0542.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0545_1.jpg",
+    "retrieved_at": "2026-11-08T02:41:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 115222,
+    "sha256": "62f7c2797cb30cc5c10e32943dff0ed382aa244a9880ad491d203ef6017ce19a",
+    "file": "sources/chanlunzhan/images/reference__pic__0545_1.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0545_2.png",
+    "retrieved_at": "2026-11-08T02:41:07+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 522078,
+    "sha256": "22ec45895cbf710121d17f7fdd9c06beb59f394727e7ea48b829ebef3ed7e5fd",
+    "file": "sources/chanlunzhan/images/reference__pic__0545_2.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0552_1.jpg",
+    "retrieved_at": "2026-11-08T02:41:07+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 118801,
+    "sha256": "d37259f0da35b8f2fbd344f1d174256352ae93ec65c994b69aa65af02ffe9a9b",
+    "file": "sources/chanlunzhan/images/reference__pic__0552_1.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0552_2.jpg",
+    "retrieved_at": "2026-11-08T02:41:09+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 122983,
+    "sha256": "46d4fc2aef9455f37b08706bc99fb0e54f607037d2557e4a2641f5d7e10322d0",
+    "file": "sources/chanlunzhan/images/reference__pic__0552_2.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0552_3.jpg",
+    "retrieved_at": "2026-11-08T02:41:10+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 117463,
+    "sha256": "fb83e4332bf503561c12c01c3b1aea37e98f67f9cf3f89dadc09f8e1d338deab",
+    "file": "sources/chanlunzhan/images/reference__pic__0552_3.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0556.jpg",
+    "retrieved_at": "2026-11-08T02:41:11+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 121439,
+    "sha256": "ce79fccbc27e60bb3c40d3590a603853e2cb0954ddc78cbb3936db812c2b970a",
+    "file": "sources/chanlunzhan/images/reference__pic__0556.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0558.jpg",
+    "retrieved_at": "2026-11-08T02:41:17+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 113491,
+    "sha256": "04c32b7b800f1e93ec9af55230025b78e346370e3254ee16e9ee987d0dfe70d0",
+    "file": "sources/chanlunzhan/images/reference__pic__0558.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0567.jpg",
+    "retrieved_at": "2026-11-08T02:41:18+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 17918,
+    "sha256": "dc669a81f6fd0d647a99240c4f804905d9e246706479bb971384b583708625da",
+    "file": "sources/chanlunzhan/images/reference__pic__0567.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0571.jpg",
+    "retrieved_at": "2026-11-08T02:41:19+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 119992,
+    "sha256": "c1fd0eba128c3148b4fdbcdafe0e8fb02174f6bb6c1ce99574fbe27ca98b1599",
+    "file": "sources/chanlunzhan/images/reference__pic__0571.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0614.jpg",
+    "retrieved_at": "2026-11-08T02:41:20+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 12998,
+    "sha256": "402618f360ef7dcc3342d4ec93c4ef584717d880451a9d3434487177cc113efd",
+    "file": "sources/chanlunzhan/images/reference__pic__0614.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0627.jpg",
+    "retrieved_at": "2026-11-08T02:41:21+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 115672,
+    "sha256": "7bdd9b0107eb2768e7dfc2f69f3e141a96c6fc8b25ef9301fce406b05a1daed5",
+    "file": "sources/chanlunzhan/images/reference__pic__0627.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0637_1.jpg",
+    "retrieved_at": "2026-11-08T02:41:22+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 138705,
+    "sha256": "76bddc62d8391e240754eb62cf99b2f84ac00a7eeae7e9ec8bd37ea21fee7ebd",
+    "file": "sources/chanlunzhan/images/reference__pic__0637_1.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0637_2.jpg",
+    "retrieved_at": "2026-11-08T02:41:25+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 149806,
+    "sha256": "b130b2664d0ccd3e1983f17f9c7662c7dc317d8f43ea6b161c99529bd0e0a10c",
+    "file": "sources/chanlunzhan/images/reference__pic__0637_2.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0639.jpg",
+    "retrieved_at": "2026-11-08T02:41:28+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 19441,
+    "sha256": "b5e8e301c43eb491d3448457dddf6b5c447ef136919e35660751c433c0c2cf3e",
+    "file": "sources/chanlunzhan/images/reference__pic__0639.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0767.jpg",
+    "retrieved_at": "2026-11-08T02:41:29+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 134211,
+    "sha256": "c32907b386863e8eb65bba739b7ce5ed27b2437d8e3f2c2c711fadc1cc8e8d2f",
+    "file": "sources/chanlunzhan/images/reference__pic__0767.jpg"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0800.png",
+    "retrieved_at": "2026-11-08T02:41:31+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 315556,
+    "sha256": "ac730ebbe8ee872c08dad118f1cb785a7305d62b4e99a283cdb24ee8901efcf7",
+    "file": "sources/chanlunzhan/images/reference__pic__0800.png"
+  },
+  {
+    "url": "https://chanlunzhan.com/reference/pic/0902.png",
+    "retrieved_at": "2026-11-08T02:41:31+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "content_type": "image/png",
+    "bytes": 128515,
+    "sha256": "ea5dff1914370b01e80019f37fdf196fa84c7837a9519c515c23ff37a7e9fc15",
+    "file": "sources/chanlunzhan/images/reference__pic__0902.png"
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "source": "workspace chanlun-algorithm/chanmodel",
+  "identical_files": 19,
+  "files": [
+    {
+      "path": "engine\\chanmodel\\__init__.py",
+      "source_sha256": "889aabd0d47914254820ecda5ab6a03721c5442198360b173fbaac15f62adfb4",
+      "bundled_sha256": "889aabd0d47914254820ecda5ab6a03721c5442198360b173fbaac15f62adfb4",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\causal_replay.py",
+      "source_sha256": "5bc27f4fb18baeb3a517587724c79b70956dcaa663263a7e16e6dd83e626c767",
+      "bundled_sha256": "5bc27f4fb18baeb3a517587724c79b70956dcaa663263a7e16e6dd83e626c767",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\centers.py",
+      "source_sha256": "05a8e0f37dc24720febbb6c73c4f66a6d2aa0c44e6c2cc4e772b198977650167",
+      "bundled_sha256": "05a8e0f37dc24720febbb6c73c4f66a6d2aa0c44e6c2cc4e772b198977650167",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\complete_multilevel.py",
+      "source_sha256": "a7023a449fbb937c330c488866d9919aa7d1540d44b8439c3c51cedeb288f231",
+      "bundled_sha256": "a7023a449fbb937c330c488866d9919aa7d1540d44b8439c3c51cedeb288f231",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\complete_study.py",
+      "source_sha256": "3648b80e7674264590bed3b6d9f5f22cec73359a2ba540a97164445cdc087d79",
+      "bundled_sha256": "3648b80e7674264590bed3b6d9f5f22cec73359a2ba540a97164445cdc087d79",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\engine.py",
+      "source_sha256": "0d696d3745d2d3b5fa2cae615ab09740d80ead1cdc2957cc46291ed464f75d20",
+      "bundled_sha256": "0d696d3745d2d3b5fa2cae615ab09740d80ead1cdc2957cc46291ed464f75d20",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\model.py",
+      "source_sha256": "76353eed592b6170d71d66dba0bfcab489a3d28ef9b045698cddf4ce9be03ca8",
+      "bundled_sha256": "76353eed592b6170d71d66dba0bfcab489a3d28ef9b045698cddf4ce9be03ca8",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\segments.py",
+      "source_sha256": "916c3e2649566ddeb566f47ffbb51ade9465db33c2b902ae4960227a73ecdb49",
+      "bundled_sha256": "916c3e2649566ddeb566f47ffbb51ade9465db33c2b902ae4960227a73ecdb49",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\signal_anchor.py",
+      "source_sha256": "293750ef3285ddd97f86ae603933f3355872a4d275be5670e4119e11868defb6",
+      "bundled_sha256": "293750ef3285ddd97f86ae603933f3355872a4d275be5670e4119e11868defb6",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\signals.py",
+      "source_sha256": "eacac57ef51d0dbc00c04914ba535a1967918f979ef778b62d5782f9a866cb9d",
+      "bundled_sha256": "eacac57ef51d0dbc00c04914ba535a1967918f979ef778b62d5782f9a866cb9d",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\structure.py",
+      "source_sha256": "34997e8ca12d4597e30f0ccbabeb810067041d99408b01eb83a1040a40d7f740",
+      "bundled_sha256": "34997e8ca12d4597e30f0ccbabeb810067041d99408b01eb83a1040a40d7f740",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\study_profile.py",
+      "source_sha256": "b277fac104d9f83f069045c3874ae1fbe8baed3826dde61b6556b591b9fcda8f",
+      "bundled_sha256": "b277fac104d9f83f069045c3874ae1fbe8baed3826dde61b6556b591b9fcda8f",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\unified.py",
+      "source_sha256": "9222f10498e3f1798360b62496d79f8d898f227d2aa4a33b0a83a1c9be138ae0",
+      "bundled_sha256": "9222f10498e3f1798360b62496d79f8d898f227d2aa4a33b0a83a1c9be138ae0",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\v2\\__init__.py",
+      "source_sha256": "d141b109979e764822f6ee17200ccee34c189fc0c5b6a92ca17b9504da0858de",
+      "bundled_sha256": "d141b109979e764822f6ee17200ccee34c189fc0c5b6a92ca17b9504da0858de",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\v2\\divergence.py",
+      "source_sha256": "136ddabe60fcb409e6342679a32b4db85a302a65b0b198bb559226d9d5ce601c",
+      "bundled_sha256": "136ddabe60fcb409e6342679a32b4db85a302a65b0b198bb559226d9d5ce601c",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\v2\\engine.py",
+      "source_sha256": "83e7f1d573ea9aebe6eb2724fc9f513072f59ea455cb76a9f5ef32241e04755b",
+      "bundled_sha256": "83e7f1d573ea9aebe6eb2724fc9f513072f59ea455cb76a9f5ef32241e04755b",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\v2\\io.py",
+      "source_sha256": "78682b9901ed849cc19000fa5d7e39c90aa205a9105be718f7f9e6137b8652d0",
+      "bundled_sha256": "78682b9901ed849cc19000fa5d7e39c90aa205a9105be718f7f9e6137b8652d0",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\v2\\recursive.py",
+      "source_sha256": "f51de59fc2b5d5db27428001965c86b0589636abd7328c68be5fb5344f7a2bf4",
+      "bundled_sha256": "f51de59fc2b5d5db27428001965c86b0589636abd7328c68be5fb5344f7a2bf4",
+      "byte_identical": true
+    },
+    {
+      "path": "engine\\chanmodel\\v2\\series.py",
+      "source_sha256": "8ca83734a6d6600d2c9a095cd33acdbd763ae9d771ecaff7910112bbe221dedb",
+      "bundled_sha256": "8ca83734a6d6600d2c9a095cd33acdbd763ae9d771ecaff7910112bbe221dedb",
+      "byte_identical": true
+    }
+  ],
+  "note": "Bundled engine modules are traceable to workspace source; local entrypoints and view adapters are listed separately."
+}

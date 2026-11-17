@@ -1,0 +1,140 @@
+{
+  "schema": "chanlun.complete.v3",
+  "profile": "chanlun_unified_complete_study_extrema_v4_2",
+  "synthetic": true,
+  "as_of": "2026-02-17T15:00:00+08:00",
+  "replay_schedule": {
+    "finest_period": "5m",
+    "requested_tail_bars": 64,
+    "step": 1,
+    "observations": 64,
+    "first": "2026-02-16T13:45:00+08:00",
+    "last": "2026-02-17T15:00:00+08:00",
+    "semantics": "each scheduled close uses all earlier input; warm history is retained, no final geometry reuse"
+  },
+  "frames": 64,
+  "events": 2471,
+  "checked_object_times": 28603,
+  "future_timestamps_found": false,
+  "periods": {
+    "day": {
+      "bars": 32,
+      "base_counts": {
+        "merged": 23,
+        "fractals": 13,
+        "strokes": 3,
+        "segments": 1,
+        "stroke_rejections": 5
+      },
+      "certificate_audit": {
+        "state": "passed",
+        "centers_checked": 0,
+        "completed_types_checked": 0,
+        "errors": [],
+        "scope": "referenced-child/rank/continuity/completion/range predicates under the declared decomposition profile"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "completed_types": 0,
+          "centers": 0
+        }
+      ],
+      "confirmation_paths": [],
+      "feature_sequence_count": 1,
+      "center_evolution_count": 0,
+      "signal_states": []
+    },
+    "30m": {
+      "bars": 256,
+      "base_counts": {
+        "merged": 229,
+        "fractals": 99,
+        "strokes": 25,
+        "segments": 3,
+        "stroke_rejections": 37
+      },
+      "certificate_audit": {
+        "state": "passed",
+        "centers_checked": 0,
+        "completed_types_checked": 0,
+        "errors": [],
+        "scope": "referenced-child/rank/continuity/completion/range predicates under the declared decomposition profile"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "completed_types": 0,
+          "centers": 0
+        }
+      ],
+      "confirmation_paths": [
+        "first_pen_break"
+      ],
+      "feature_sequence_count": 3,
+      "center_evolution_count": 0,
+      "signal_states": []
+    },
+    "5m": {
+      "bars": 1536,
+      "base_counts": {
+        "merged": 1484,
+        "fractals": 140,
+        "strokes": 137,
+        "segments": 26,
+        "stroke_rejections": 1
+      },
+      "certificate_audit": {
+        "state": "passed",
+        "centers_checked": 13,
+        "completed_types_checked": 8,
+        "errors": [],
+        "scope": "referenced-child/rank/continuity/completion/range predicates under the declared decomposition profile"
+      },
+      "ranks": [
+        {
+          "rank": 1,
+          "completed_types": 7,
+          "centers": 4
+        },
+        {
+          "rank": 2,
+          "completed_types": 1,
+          "centers": 1
+        }
+      ],
+      "confirmation_paths": [
+        "feature_gap",
+        "feature_no_gap",
+        "first_pen_break"
+      ],
+      "feature_sequence_count": 26,
+      "center_evolution_count": 35,
+      "signal_states": [
+        {
+          "class": "third_sell",
+          "state": "invalidated",
+          "rank": 1
+        },
+        {
+          "class": "third_buy",
+          "state": "invalidated",
+          "rank": 1
+        },
+        {
+          "class": "third_sell",
+          "state": "awaiting_lower_confirmation",
+          "rank": 1
+        }
+      ]
+    }
+  },
+  "pair_states": {
+    "day>30m": "verified",
+    "day>5m": "verified",
+    "30m>5m": "verified"
+  },
+  "targeted_rule_tests": 82,
+  "execution_allowed": false,
+  "strict_original_equivalence_proven": false
+}

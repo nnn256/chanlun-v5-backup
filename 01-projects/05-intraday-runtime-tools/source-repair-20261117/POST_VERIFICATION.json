@@ -1,0 +1,34 @@
+{
+  "state": "passed",
+  "targets": [
+    {
+      "symbol": "sz000906",
+      "period": "5m",
+      "raw_hash": "passed",
+      "csv_hash": "passed",
+      "rows": 23856,
+      "last_closed_at": "2026-11-13T07:00:00+00:00"
+    },
+    {
+      "symbol": "sz002679",
+      "period": "1m",
+      "raw_hash": "passed",
+      "csv_hash": "passed",
+      "rows": 23760,
+      "last_closed_at": "2026-11-13T07:00:00+00:00"
+    },
+    {
+      "symbol": "sz300875",
+      "period": "1m",
+      "raw_hash": "passed",
+      "csv_hash": "passed",
+      "rows": 21840,
+      "last_closed_at": "2026-11-13T07:00:00+00:00"
+    }
+  ],
+  "summary_aliases_equal": true,
+  "unchanged_successful_entries": 11155,
+  "aggregate_bars": 256654260,
+  "execution_allowed": false,
+  "uploaded": false
+}

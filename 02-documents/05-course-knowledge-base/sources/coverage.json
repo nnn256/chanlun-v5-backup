@@ -1,0 +1,27 @@
+{
+  "site_pages": 46,
+  "site_ok": 46,
+  "course_texts": 108,
+  "original_courses": 93,
+  "reprint_courses": 15,
+  "original_supplements": 1,
+  "missing_courses": [],
+  "missing_author_site_courses": [
+    7,
+    9,
+    30,
+    32,
+    34,
+    35,
+    47,
+    54,
+    72,
+    74,
+    80,
+    84,
+    87,
+    89,
+    94
+  ],
+  "video_scope": "official companion text and links; no full video viewing or transcription"
+}

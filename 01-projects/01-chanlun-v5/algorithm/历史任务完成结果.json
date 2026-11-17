@@ -1,0 +1,50 @@
+{
+  "completed_at": "2026-11-07",
+  "fixed_cutoff": "2026-11-06T02:03:45+08:00",
+  "universe": 5579,
+  "source_commit": "ea07dccb67aeb92ebde851ac31503b4bf457a318",
+  "source": "tdx",
+  "adjustment": "unadjusted",
+  "pipelines": [
+    {
+      "pipeline": "daily",
+      "success": 5578,
+      "unavailable": 1,
+      "rows": 17062480,
+      "verification": "pass_with_unavailable"
+    },
+    {
+      "pipeline": "day_30m_5m",
+      "success": 5578,
+      "unavailable": 1,
+      "rows": {
+        "day": 17062480,
+        "30m": 21487433,
+        "5m": 128924257
+      },
+      "verification": "pass_with_source_unavailable"
+    },
+    {
+      "pipeline": "full_daily_prefix_replay",
+      "success": 5578,
+      "unavailable": 1,
+      "prefixes": 17062480,
+      "events": 172306,
+      "first_candidate_observations": 35691,
+      "verification": "pass_with_source_unavailable"
+    }
+  ],
+  "unavailable_symbols": [
+    "sh688827"
+  ],
+  "quarantined_raw_rows": 7,
+  "later_acquisition_rows_excluded": 744,
+  "unexpected_failed": 0,
+  "pending": 0,
+  "unit_tests": 120,
+  "strict_chanlun_complete": false,
+  "multi_timeframe_result_semantics": "candidate interval association; not strict lower-level trigger confirmation",
+  "historical_point_in_time_universe": false,
+  "trade_execution_model": false,
+  "execution_allowed": false
+}

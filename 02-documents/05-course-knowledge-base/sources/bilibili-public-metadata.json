@@ -1,0 +1,22 @@
+[
+  {
+    "bvid": "BV1bRHW6uEbb",
+    "error": "HTTPError: HTTP Error 412: Precondition Failed"
+  },
+  {
+    "bvid": "BV1brpc6CE86",
+    "error": "HTTPError: HTTP Error 412: Precondition Failed"
+  },
+  {
+    "bvid": "BV1azp56nEpa",
+    "error": "HTTPError: HTTP Error 412: Precondition Failed"
+  },
+  {
+    "bvid": "BV1g5nM6tEC3",
+    "error": "HTTPError: HTTP Error 412: Precondition Failed"
+  },
+  {
+    "bvid": "BV1Wunn6JEZR",
+    "error": "HTTPError: HTTP Error 412: Precondition Failed"
+  }
+]

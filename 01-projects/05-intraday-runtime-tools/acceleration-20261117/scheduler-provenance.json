@@ -1,0 +1,11 @@
+{
+  "profile": "resource_adaptive_cpu_v1",
+  "path": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acceleration-20261117\\run_adaptive_intraday.py",
+  "sha256": "b8482e3f548e0a7877dac0b8afc053bddf83835370ab801967a29ba2a56197e1",
+  "max_workers": 4,
+  "gpu_enabled": false,
+  "algorithm_code_sha256": "67dc64e53f7eac7a9285e9a89f979b20c8e8c4f1069e9a43b88db3c744b9892f",
+  "uses_unchanged_native_worker": true,
+  "independent_verification": true,
+  "gc_mode": "default"
+}

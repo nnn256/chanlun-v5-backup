@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>看图听讲 · 全周期与全结构层级</title><link rel="stylesheet" href="period-explained.css"></head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html"><span>缠</span><b>把结构看明白<small>CHART BY CHART / PERIOD BY PERIOD</small></b></a><a class="back" href="index.html#chart">回到课程与递归回放 ↗</a></header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">不只画线，每个周期都说清楚</p><h1>这张图，讲给你听<span>。</span></h1></div><p>换周期、换层级、回到过去，<br>讲解跟着当时的图一起变。</p></section>
+    <section class="picker-panel" aria-label="选择周期与结构级别">
+      <div class="period-line"><span class="picker-label">图表周期</span><div id="period-buttons" class="period-buttons" role="group" aria-label="全部周期"></div></div>
+      <div class="rank-line"><label>结构层级 <select id="rank-select"><option value="all">全部已有层级</option><option value="0">L0 · 基础结构</option><option value="1">L1</option><option value="2">L2</option><option value="3">L3</option><option value="4">L4</option><option value="5">L5</option><option value="6">L6</option><option value="7">L7</option><option value="8">L8</option></select></label><span id="rank-note">周期是K线采样长度，L1/L2是结构递归深度。</span><label class="window-label">视野 <select id="chart-window"><option value="240">最近240根</option><option value="100">最近100根</option><option value="0">当前全部历史</option></select></label></div>
+      <div class="source-line"><i></i><p id="source-note">正在加载周期目录。</p></div>
+    </section>
+    <section id="main-grid" class="main-grid">
+      <div class="left-column">
+        <section class="plot-panel"><div class="plot-heading"><div><span id="current-period">5分钟</span><b id="current-asof">正在定位</b></div><div class="export-buttons"><button id="export-json">导出当时数据</button><button id="export-svg">保存SVG图</button></div></div>
+          <div class="layer-toolbar" aria-label="图层"><label><input data-layer="bars" type="checkbox" checked>K线</label><label><input data-layer="fractals" type="checkbox" checked>分型</label><label><input data-layer="strokes" type="checkbox" checked>笔</label><label><input data-layer="segments" type="checkbox" checked>线段</label><label><input data-layer="centers" type="checkbox" checked>中枢</label><label><input data-layer="types" type="checkbox">完成分解</label><label><input data-layer="signals" type="checkbox" checked>候选点</label></div>
+          <div id="plot-host" class="plot-host"></div><div id="plot-status" class="plot-status"></div>
+          <div class="time-controls"><button id="first-frame">起点</button><button id="previous-frame" aria-label="上一个观测时点">←</button><button id="replay" class="primary">播放观测过程</button><button id="next-frame" aria-label="下一个观测时点">→</button><button id="last-frame">最新</button><output id="frame-position"></output></div>
+          <div class="timeline"><input id="frame-slider" type="range" min="0" step="1" aria-label="当前观测时点"><div><span id="schedule-note"></span><span id="bars-count"></span></div></div>
+        </section>
+        <section id="object-panel" class="object-panel" hidden><div class="object-heading"><div><span class="eyebrow">你刚刚选中的结构</span><h2 id="object-title"></h2></div><button id="clear-object">返回整图讲解</button></div><p id="object-text"></p><div id="object-rows" class="object-rows"></div></section>
+        <section class="context-panel"><p class="eyebrow">先分清两件事</p><div class="context-columns"><p><b id="period-role-title">这个周期解决什么问题</b><span id="period-role"></span></p><p><b>这个层级怎样形成</b><span id="rank-role"></span></p></div></section>
+      </div>
+      <aside class="explain-panel"><div class="explain-heading"><span class="eyebrow">跟着当前图讲</span><span id="explain-origin">只用当前截止前证据</span></div><h2 id="explanation-title">正在整理讲解</h2><p id="explanation-overview"></p><div id="availability" class="availability"></div>
+        <div class="speech-controls"><button id="read-chart" class="primary">朗读这张图</button><button id="speech-pause">暂停</button><button id="speech-stop">停止</button><label>语速 <select id="speech-rate"><option value="0.85">慢一点</option><option value="1" selected>正常</option><option value="1.2">快一点</option></select></label></div><p id="speech-status" class="speech-status" aria-live="polite">点击后使用浏览器的中文语音；文字讲解始终可看。</p>
+        <div class="guided-head"><span>一步一步看</span><button id="guided-read">连续带读</button></div><div class="step-nav"><button id="step-prev" aria-label="上一条讲解">←</button><span id="step-position"></span><button id="step-next" aria-label="下一条讲解">→</button><button id="read-step">读这一条</button></div><article id="active-step" class="active-step" aria-live="polite"></article><div id="step-list" class="step-list"></div>
+      </aside>
+    </section>
+    <section class="coverage"><h2>全部周期，都有自己的解释</h2><p>1、5、15、30、60分钟与日、周、月、季、年分别取样。周期长短不等于结构层级高低；历史不足的周期保留原图，并明确说明还缺哪些组件。</p><p>短周期合成源与长期独立合成源属于两个教学实验，不能拼成经过数据校验的区间套。没有发生的中枢或买卖点不会为了讲解补造。</p></section>
+    <div id="load-error" hidden></div>
+  </main><footer><span>教学数据明确合成 · 声明口径下的结构研究</span><span>先定级别，再认结构，最后等确认。</span></footer>
+  <script src="period_catalog.js"></script><script src="chart_explainer.js"></script><script src="period-explained.js"></script>
+</body></html>

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>通达信近似缠论公式下载：分型、笔、线段与中枢实现说明｜Struct Guide</title>
+    <meta name="description" content="免费下载通达信近似缠论指标与主图公式TXT源码，无需DLL。附电脑版导入步骤、近似规则、未来函数与网页插件效果对照。本公式不支持通达信手机版；另介绍Struct Guide网页自动画线方案。">
+    <meta name="generator" content="VitePress v1.6.4">
+    <link rel="preload stylesheet" href="/assets/style.c6mmFbRw.css" as="style">
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style">
+    
+    <script type="module" src="/assets/app.ymOo0wZ7.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/theme.CqQ1Tbih.js">
+    <link rel="modulepreload" href="/assets/chunks/framework.CIwHg-Ss.js">
+    <link rel="modulepreload" href="/assets/faq_tongdaxin-approx-chanlun-formula.md.BcgHcwxH.lean.js">
+    <meta name="theme-color" content="#F8FAFC">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script>window.addEventListener("click",function(i){var t=i.target,n=t&&t.closest?t.closest('a[href="/"], a[href="/index.html"]'):null;!n||n.origin!==window.location.origin||(i.preventDefault(),i.stopImmediatePropagation(),window.location.assign("/"))},!0);</script>
+    <script>(function(){var r=["tradingview","tonghuashun","eastmoney","xueqiu","sina","moomoo","tongdaxin","wenhua","boyi","mt5"],c={"/concept/containment":"/concept/containment","/concept/fractal":"/concept/fractal","/concept/stroke":"/concept/stroke","/concept/segment":"/concept/segment","/concept/central-zone":"/concept/central-zone","/download":"/download/","/who-its-for":"/who-its-for","/faq/tongdaxin-approx-chanlun-formula":"/faq/#tongdaxin","/faq/drawing-rules":"/faq/drawing-rules","/faq/chanlun-indicator":"/faq/","/faq/how-to-read-108":"/faq/how-to-read-108","/chanlun-auto-drawing":"/chanlun-auto-drawing","/chanlun-videos":"/chanlun-videos","/indicators":"/indicators/","/indicators/ma":"/indicators/ma","/indicators/ma-vs-ema":"/indicators/ma-vs-ema","/indicators/boll":"/indicators/boll","/indicators/macd":"/indicators/macd","/indicators/kdj":"/indicators/kdj","/indicators/rsi":"/indicators/rsi","/indicators/bias":"/indicators/bias","/indicators/atr":"/indicators/atr","/indicators/cci":"/indicators/cci","/indicators/obv":"/indicators/obv","/indicators/vol":"/indicators/vol","/indicators/vwap":"/indicators/vwap","/indicators/dmi-adx":"/indicators/dmi-adx","/indicators/psy":"/indicators/psy","/indicators/roc":"/indicators/roc","/indicators/wr":"/indicators/wr","/sites":"/sites/","/sites/tonghuashun":"/faq/#tonghuashun","/sites/eastmoney":"/faq/#eastmoney","/sites/xueqiu":"/faq/#xueqiu","/sites/xueqiu/boards":"/faq/#xueqiu","/sites/sina":"/faq/#sina","/wenhua-chanlun-auto-drawing":"/faq/#wenhua","/boyi-chanlun-auto-drawing":"/faq/#boyi","/mt5-chanlun-auto-drawing":"/faq/#mt5","/sites/tradingview":"/faq/#tradingview","/sites/moomoo":"/faq/#moomoo","/tutorial/tradingview":"/faq/#tradingview","/tutorial/xueqiu":"/faq/#xueqiu","/tutorial/tonghuashun":"/faq/#tonghuashun","/tutorial/sina":"/faq/#sina"},o=!1;function d(t){return(t||"/").replace(/\/index\.html$/,"").replace(/\/$/,"")||"/"}function u(){var t=d(window.location.pathname);if(c[t])return c[t];if(t!=="/faq")return"";var a=decodeURIComponent(window.location.hash.replace(/^#/,""));if(r.indexOf(a)!==-1)return"/faq/#"+a;var i="";return r.forEach(function(e){var s=document.getElementById(e);s&&s.getBoundingClientRect().top<=140&&(i=e)}),i?"/faq/#"+i:"/faq/"}function f(){o=!1,document.querySelectorAll(".VPSidebarItem.is-current-section").forEach(function(a){a.classList.remove("is-current-section")}),document.querySelectorAll('.VPSidebar a[data-section-current="true"]').forEach(function(a){a.removeAttribute("data-section-current"),a.removeAttribute("aria-current")});var t=u();t&&document.querySelectorAll(".VPSidebar a").forEach(function(a){var i=decodeURIComponent(a.getAttribute("href")||"");if(i===t){a.setAttribute("data-section-current","true"),a.setAttribute("aria-current","location");var e=a.closest(".VPSidebarItem");e&&e.classList.add("is-current-section")}})}function n(){o||(o=!0,window.requestAnimationFrame(f))}document.addEventListener("DOMContentLoaded",function(){n();var t=document.getElementById("app");t&&new MutationObserver(n).observe(t,{childList:!0,subtree:!0})}),window.addEventListener("hashchange",n),window.addEventListener("popstate",n),window.addEventListener("scroll",n,{passive:!0}),document.addEventListener("click",function(t){t.target&&t.target.closest&&t.target.closest(".VPSidebar a")&&window.setTimeout(n,80)},!0)})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  <meta property="og:site_name" content="Struct Guide 官网">
+<link rel="canonical" href="https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula">
+<meta property="og:title" content="通达信近似缠论公式下载：分型、笔、线段与中枢实现说明｜Struct Guide">
+<meta property="og:description" content="免费下载通达信近似缠论指标与主图公式TXT源码，无需DLL。附电脑版导入步骤、近似规则、未来函数与网页插件效果对照。本公式不支持通达信手机版；另介绍Struct Guide网页自动画线方案。">
+<meta property="og:image" content="https://www.structguide.com/images/structguide-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="通达信近似缠论公式下载：分型、笔、线段与中枢实现说明｜Struct Guide">
+<meta name="twitter:description" content="免费下载通达信近似缠论指标与主图公式TXT源码，无需DLL。附电脑版导入步骤、近似规则、未来函数与网页插件效果对照。本公式不支持通达信手机版；另介绍Struct Guide网页自动画线方案。">
+<meta name="twitter:image" content="https://www.structguide.com/images/structguide-logo.png">
+<script type="application/ld+json" data-seo-jsonld>{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"通达信近似缠论公式下载：分型、笔、线段与中枢实现说明｜Struct Guide","description":"免费下载通达信近似缠论指标与主图公式TXT源码，无需DLL。附电脑版导入步骤、近似规则、未来函数与网页插件效果对照。本公式不支持通达信手机版；另介绍Struct Guide网页自动画线方案。","mainEntityOfPage":"https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula","inLanguage":"zh-CN","image":"https://www.structguide.com/images/structguide-logo.png","author":{"@id":"https://www.structguide.com/#organization"},"publisher":{"@id":"https://www.structguide.com/#organization"},"isPartOf":{"@id":"https://www.structguide.com/#website"}}]}</script>
+
+<script type="application/ld+json" data-site-identity>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.structguide.com/#website","name":"Struct Guide 官网","alternateName":["Struct Guide","Struct Guide 缠论助手","SG缠论助手"],"url":"https://www.structguide.com/","publisher":{"@id":"https://www.structguide.com/#organization"},"about":{"@id":"https://www.structguide.com/#software"}},{"@type":"Organization","@id":"https://www.structguide.com/#organization","name":"Struct Guide","alternateName":"Struct Guide 缠论助手","url":"https://www.structguide.com/","logo":"https://www.structguide.com/images/structguide-logo.png"},{"@type":"SoftwareApplication","@id":"https://www.structguide.com/#software","name":"Struct Guide","alternateName":"Struct Guide 缠论助手","url":"https://www.structguide.com/","publisher":{"@id":"https://www.structguide.com/#organization"},"applicationCategory":"BrowserApplication","operatingSystem":["Windows","macOS","Linux","Android"],"softwareRequirements":"Desktop: Google Chrome, Microsoft Edge or 360 Browser. Android: Microsoft Edge. Requires a supported webpage and chart.","installUrl":["https://chromewebstore.google.com/detail/structure-guild-for-marke/kcoopfogmmbbijhkcamjejagjkbchlgg","https://microsoftedge.microsoft.com/addons/detail/structure-guild-for-marke/nibbchbhagojanbhneamgdcnlgelobbg"],"sameAs":["https://chromewebstore.google.com/detail/structure-guild-for-marke/kcoopfogmmbbijhkcamjejagjkbchlgg","https://microsoftedge.microsoft.com/addons/detail/structure-guild-for-marke/nibbchbhagojanbhneamgdcnlgelobbg"]}]}</script>
+</head>
+  <body>
+    <div id="app"><div class="Layout" data-v-5d98c3a5><!--[--><!--]--><!--[--><span tabindex="-1" data-v-0b0ada53></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-0b0ada53>跳到正文</a><!--]--><!----><header class="VPNav" data-v-5d98c3a5 data-v-ae24b3ad><div class="VPNavBar" data-v-ae24b3ad data-v-6aa21345><div class="wrapper" data-v-6aa21345><div class="container" data-v-6aa21345><div class="title" data-v-6aa21345><div class="VPNavBarTitle has-sidebar" data-v-6aa21345 data-v-1168a8e4><a class="title" href="/" data-v-1168a8e4><!--[--><!--]--><!--[--><img class="VPImage logo" src="/images/structguide-logo.png" alt="Struct Guide 缠论助手" data-v-8426fc1a><!--]--><span data-v-1168a8e4>Struct Guide</span><!--[--><!--]--></a></div></div><div class="content" data-v-6aa21345><div class="content-body" data-v-6aa21345><!--[--><!--]--><div class="VPNavBarSearch search" data-v-6aa21345><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-6aa21345 data-v-dc692963><span id="main-nav-aria-label" class="visually-hidden" data-v-dc692963> 主导航 </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/" tabindex="0" data-v-dc692963 data-v-e56f3d57><!--[--><span data-v-e56f3d57>首页</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/faq/drawing-rules" tabindex="0" data-v-dc692963 data-v-e56f3d57><!--[--><span data-v-e56f3d57>画线规则</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/download/" tabindex="0" data-v-dc692963 data-v-e56f3d57><!--[--><span data-v-e56f3d57>安装插件</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/faq/" tabindex="0" data-v-dc692963 data-v-e56f3d57><!--[--><span data-v-e56f3d57>知识库</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/indicators/" tabindex="0" data-v-dc692963 data-v-e56f3d57><!--[--><span data-v-e56f3d57>指标速查手册</span><!--]--></a><!--]--><!--]--></nav><!----><!----><!----><!----><!--[--><!--[--><!--[--><nav class="docs-language-switch docs-language-switch--bar" aria-label="语言切换"><!--[--><a href="/faq/tongdaxin-approx-chanlun-formula" lang="zh-CN" hreflang="zh-CN" aria-current="page">简体</a><a href="/zh-tw/" lang="zh-Hant" hreflang="zh-Hant">繁體</a><a href="/en/" lang="en" hreflang="en">English</a><!--]--></nav><!--]--><!--]--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="移动导航" aria-expanded="false" aria-controls="VPNavScreen" data-v-6aa21345 data-v-e5dd9c1c><span class="container" data-v-e5dd9c1c><span class="top" data-v-e5dd9c1c></span><span class="middle" data-v-e5dd9c1c></span><span class="bottom" data-v-e5dd9c1c></span></span></button></div></div></div></div><div class="divider" data-v-6aa21345><div class="divider-line" data-v-6aa21345></div></div></div><!----></header><div class="VPLocalNav has-sidebar empty" data-v-5d98c3a5 data-v-a6f0e41e><div class="container" data-v-a6f0e41e><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-a6f0e41e><span class="vpi-align-left menu-icon" data-v-a6f0e41e></span><span class="menu-text" data-v-a6f0e41e>菜单</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-a6f0e41e data-v-8a42e2b4><button data-v-8a42e2b4>返回顶部</button><!----></div></div></div><aside class="VPSidebar" data-v-5d98c3a5 data-v-319d5ca6><div class="curtain" data-v-319d5ca6></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-319d5ca6><span class="visually-hidden" id="sidebar-aria-label" data-v-319d5ca6> 侧边栏导航 </span><!--[--><!--]--><!--[--><div class="no-transition group" data-v-c40bc020><section class="VPSidebarItem level-0" data-v-c40bc020 data-v-b3fd67f8><div class="item" role="button" tabindex="0" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><h2 class="text" data-v-b3fd67f8>工具文档</h2><!----></div><div class="items" data-v-b3fd67f8><!--[--><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/chanlun-videos" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>缠论视频讲解</p><!--]--></a><!----></div><!----></div><section class="VPSidebarItem level-1 collapsible" data-v-b3fd67f8><div class="item" role="button" tabindex="0" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><h3 class="text" data-v-b3fd67f8>画线规则</h3><div class="caret" role="button" aria-label="展开或收起分组" tabindex="0" data-v-b3fd67f8><span class="vpi-chevron-right caret-icon" data-v-b3fd67f8></span></div></div><div class="items" data-v-b3fd67f8><!--[--><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/drawing-rules" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>参数总览</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/concept/containment" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>K线包含关系</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/concept/fractal" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>分型</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/concept/stroke" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>笔</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/concept/segment" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>线段</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/concept/central-zone" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>中枢</p><!--]--></a><!----></div><!----></div><!--]--></div></section><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/download/" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>安装插件</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><div class="no-transition group" data-v-c40bc020><section class="VPSidebarItem level-0" data-v-c40bc020 data-v-b3fd67f8><div class="item" role="button" tabindex="0" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><h2 class="text" data-v-b3fd67f8>知识库</h2><!----></div><div class="items" data-v-b3fd67f8><!--[--><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>网站和软件总览</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#tradingview" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>TradingView</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#tonghuashun" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>同花顺</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#eastmoney" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>东方财富</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#xueqiu" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>雪球</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#sina" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>新浪财经</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#moomoo" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>moomoo</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#tongdaxin" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>通达信</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#wenhua" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>文华财经</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#boyi" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>博易大师</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#mt5" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>MT5</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><div class="no-transition group" data-v-c40bc020><section class="VPSidebarItem level-0" data-v-c40bc020 data-v-b3fd67f8><div class="item" role="button" tabindex="0" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><h2 class="text" data-v-b3fd67f8>常见指标速查手册</h2><!----></div><div class="items" data-v-b3fd67f8><!--[--><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>指标计算原理总览</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/ma" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>MA均线怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/ma-vs-ema" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>MA和EMA的区别</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/macd" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>MACD计算公式图解</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/boll" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>BOLL布林带怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/kdj" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>KDJ计算公式图解</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/rsi" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>RSI怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/bias" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>BIAS乖离率怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/atr" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>ATR平均真实波幅怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/cci" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>CCI 顺势指标（商品通道指数）</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/obv" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>OBV 能量潮指标</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/vol" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>VOL 成交量与均量线</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/vwap" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>VWAP 成交量加权平均价</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/dmi-adx" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>DMI与ADX计算图解</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/psy" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>PSY心理线怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/roc" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>ROC变动率怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/wr" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>WR威廉指标怎么算</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><div class="no-transition group" data-v-c40bc020><section class="VPSidebarItem level-0" data-v-c40bc020 data-v-b3fd67f8><div class="item" role="button" tabindex="0" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><h2 class="text" data-v-b3fd67f8>热门文章</h2><!----></div><div class="items" data-v-b3fd67f8><!--[--><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/chanlun-indicator" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>缠论自动画线软件怎么选</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/how-to-read-108" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>108课原文阅读索引</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/chanlun-auto-drawing" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>缠论自动画线工具</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/wenhua-chanlun-auto-drawing" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>文华财经近似缠论公式</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/tutorial/tradingview" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>TradingView 使用教程</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/sites/" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>支持的行情网站</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-5d98c3a5 data-v-1428d186><div class="VPDoc has-sidebar has-aside" data-v-1428d186 data-v-39a288b8><!--[--><!--]--><div class="container" data-v-39a288b8><div class="aside" data-v-39a288b8><div class="aside-curtain" data-v-39a288b8></div><div class="aside-container" data-v-39a288b8><div class="aside-content" data-v-39a288b8><div class="VPDocAside" data-v-39a288b8 data-v-3f215769><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-3f215769 data-v-a5bbad30><div class="content" data-v-a5bbad30><div class="outline-marker" data-v-a5bbad30></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-a5bbad30>本页目录</div><ul class="VPDocOutlineItem root" data-v-a5bbad30 data-v-b933a997><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-3f215769></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-39a288b8><div class="content-container" data-v-39a288b8><!--[--><!--]--><main class="main" data-v-39a288b8><div style="position:relative;" class="vp-doc _faq_tongdaxin-approx-chanlun-formula" data-v-39a288b8><div><p><span id="通达信缠论公式与网页插件怎么选-数据、回写与维护"></span></p><h1 id="通达信近似缠论公式下载-实现方法与插件区别" tabindex="-1">通达信近似缠论公式下载：实现方法与插件区别 <a class="header-anchor" href="#通达信近似缠论公式下载-实现方法与插件区别" aria-label="固定链接： &quot;通达信近似缠论公式下载：实现方法与插件区别&quot;">​</a></h1><p>本页提供免费的<strong>通达信缠论指标源码、主图自动画线公式</strong>，可显示分型、笔、线段和中枢。公式独立编写，无需 DLL，采用局部近似规则；与 Struct Guide 网页插件使用不同的计算方式。</p><h2 id="download" tabindex="-1">下载通达信近似缠论公式 <a class="header-anchor" href="#download" aria-label="固定链接： &quot;下载通达信近似缠论公式 {#download}&quot;">​</a></h2><p><a class="site-install-button" href="/formulas/sg-tdx-approx-v1.txt" download="StructGuide_TDX_Approx_v1.txt">免费下载近似公式 TXT 源码</a></p><p><strong>v1.0.0 · 2026年10月10日 · 约39KB · 无需登录或插件会员。</strong> 文件为含中文注释的 UTF-8 文本，可查看和修改。</p><p>本公式用于通达信电脑版，<strong>不支持通达信手机版</strong>。使用未来函数，会补画或修改历史标注。</p><p><span id="choose"></span></p><h2 id="comparison" tabindex="-1">为什么是近似公式，与网页插件有什么区别？ <a class="header-anchor" href="#comparison" aria-label="固定链接： &quot;为什么是近似公式，与网页插件有什么区别？ {#comparison}&quot;">​</a></h2><p>为适应通达信公式环境的源码长度限制，并控制计算展开的规模，本公式采用有限范围的包含合并、端点整理和局部分组。它与 Struct Guide 浏览器插件采用不同的处理流程，具体区别如下。</p><table tabindex="0"><thead><tr><th>对照项</th><th>通达信近似公式</th><th>Struct Guide 网页插件</th></tr></thead><tbody><tr><td>使用环境</td><td>导入通达信，使用客户端 K 线数据</td><td>安装浏览器扩展，使用适配网页已加载的数据</td></tr><tr><td>手机使用</td><td>不支持通达信手机版</td><td>安卓 Edge 浏览器中的受支持网页</td></tr><tr><td>包含与分型</td><td>每组最多5根的局部合并；分型标在组末</td><td>按照本站公开的规则进行 K 线合并，分型标记映射到原始极值来源</td></tr><tr><td>笔</td><td>有限范围整理端点，按组末位置计数</td><td>严格／宽松两种模式，分别按标准 K 线或原始极值来源计数</td></tr><tr><td>线段</td><td>按局部端点变化分组、取组内极值</td><td>按特征序列、缺口及第一笔破坏后的成段确认条件检查结束点</td></tr><tr><td>中枢</td><td>局部三段分组，初始上下沿固定</td><td>按已确认线段、成员归属及返回条件检查延伸</td></tr><tr><td>历史回写与更新</td><td>使用未来函数补画或修改历史标注，历史显示可随数据变化</td><td>待确认对象随数据更新；历史数据或设置改变时，相关结构可重算</td></tr><tr><td>更新与维护</td><td>随源码和客户端版本核对</td><td>随扩展版本和网页适配维护</td></tr></tbody></table><p>两者都按线段覆盖的原始 K 线高低价求共同区间，但线段划分与成员选择不同，矩形可以不同。表中只说明这两份实现的规则，不代表通达信或浏览器的能力上限。</p><h2 id="web-layers" tabindex="-1">想在网页上自动画线？使用 Struct Guide <a class="header-anchor" href="#web-layers" aria-label="固定链接： &quot;想在网页上自动画线？使用 Struct Guide {#web-layers}&quot;">​</a></h2><p>Struct Guide 在适配行情网页的原有 K 线上叠加分型、笔、线段和中枢，四类图层可分别开关，笔模式可选严格笔或宽松笔。笔和线段以实线、虚线区分已确认与待确认状态，还可使用<a href="/chanlun-auto-drawing#replay-check">结构快照与回放</a>保存和回看结构变化。具体计算条件见<a href="/faq/drawing-rules">画线规则与参数总览</a>。</p><p><a class="site-install-button" href="/download/">安装 Struct Guide 网页画线插件</a></p><p>先核对<a href="/sites/">支持网站与周期</a>，再打开对应网页。常用入口见<a href="/sites/tonghuashun">同花顺缠论自动画线支持说明</a>和<a href="/sites/eastmoney">东方财富缠论自动画线支持说明</a>。插件使用网页已加载的数据，不读取通达信客户端，也不能安装进通达信。</p><h2 id="installation" tabindex="-1">通达信主图公式怎么导入？ <a class="header-anchor" href="#installation" aria-label="固定链接： &quot;通达信主图公式怎么导入？ {#installation}&quot;">​</a></h2><ol><li>下载 TXT，用文本编辑器打开，复制全文。</li><li>在通达信公式管理器中新建<strong>技术指标公式</strong>，选择<strong>主图叠加</strong>。</li><li>输入未使用的名称，例如 <code>SG近似缠论</code>，粘贴源码并执行公式测试。</li><li>测试通过后保存，添加到 K 线主图。</li></ol><p>TXT 不是 <code>.tn6</code> 或 <code>.tne</code> 打包文件；若文件导入窗口不接受 TXT，请在公式编辑器中粘贴。参数已写在源码开头，无需另建参数表。</p><details class="details custom-block"><summary>图层开关与参数怎么改？</summary><table tabindex="0"><thead><tr><th>设置</th><th>默认值</th><th>作用</th></tr></thead><tbody><tr><td><code>SF</code></td><td>1</td><td>分型箭头：顶为红色下箭头，底为绿色上箭头</td></tr><tr><td><code>SP</code></td><td>1</td><td>笔：蓝色细线</td></tr><tr><td><code>SS</code></td><td>1</td><td>线段：上行红色、下行绿色</td></tr><tr><td><code>SZ</code></td><td>1</td><td>中枢：紫色线框，不填充</td></tr><tr><td><code>MG</code></td><td>4</td><td>两端分型所在合并组末根的原始 K 线编号差下限；小于4按4处理</td></tr><tr><td><code>EW</code></td><td>40</td><td>笔端点整理的单轮范围，以原始 K 线根数计；小于4按4处理</td></tr></tbody></table><p>前四项设为0可隐藏对应图层，不停止计算。<code>MG</code>、<code>EW</code>会影响计算结果，不是严格笔／宽松笔切换；<code>EW</code>也不是一笔的最大长度。</p></details><h2 id="screenshots" tabindex="-1">两种环境下的画线效果 <a class="header-anchor" href="#screenshots" aria-label="固定链接： &quot;两种环境下的画线效果 {#screenshots}&quot;">​</a></h2><p>两张截图均为上证指数日线，点击可放大。</p><figure class="article-image"><button class="article-image-zoom-trigger" type="button" aria-label="放大查看：通达信客户端：近似公式的上证指数日线显示" title="放大查看"><img src="/assets/images/comparisons/tdx-approx-shanghai-daily-20261010.avif" alt="通达信客户端：近似公式的上证指数日线显示" width="3276" height="1190" loading="lazy" fetchpriority="auto" decoding="async"><span class="article-image-zoom-hint" aria-hidden="true">放大查看</span></button><figcaption><strong>通达信客户端：近似公式的上证指数日线显示</strong><span>日线、前复权；红绿线为近似线段，紫色线框为中枢。</span></figcaption><dialog class="article-image-zoom-dialog" aria-label="通达信客户端：近似公式的上证指数日线显示"><div class="article-image-zoom-toolbar"><span>通达信客户端：近似公式的上证指数日线显示</span><button type="button">原始尺寸</button><button class="article-image-zoom-close" type="button" aria-label="关闭大图" title="关闭">×</button></div><!----></dialog></figure><figure class="article-image"><button class="article-image-zoom-trigger" type="button" aria-label="放大查看：同花顺网页：Struct Guide 的上证指数日线显示" title="放大查看"><img src="/assets/images/comparisons/struct-guide-ths-shanghai-daily-20261105.avif" alt="同花顺网页：Struct Guide 的上证指数日线显示" width="1895" height="714" loading="lazy" fetchpriority="auto" decoding="async"><span class="article-image-zoom-hint" aria-hidden="true">放大查看</span></button><figcaption><strong>同花顺网页：Struct Guide 的上证指数日线显示</strong><span>插件 v2.1.2，宽松笔、全部分型设置；分型图层关闭，笔、线段和中枢图层开启。结构图层由 Struct Guide 绘制。</span></figcaption><dialog class="article-image-zoom-dialog" aria-label="同花顺网页：Struct Guide 的上证指数日线显示"><div class="article-image-zoom-toolbar"><span>同花顺网页：Struct Guide 的上证指数日线显示</span><button type="button">原始尺寸</button><button class="article-image-zoom-close" type="button" aria-label="关闭大图" title="关闭">×</button></div><!----></dialog></figure><p>插件图选择了宽松笔，分型图层关闭，笔、线段和中枢图层开启；公式没有等价模式。两边的数据来源、复权和历史范围尚未逐项对齐。这组图用于展示各自的显示效果，不能仅凭外观判断某处差异的原因。</p><h2 id="implementation" tabindex="-1">分型、笔、线段和中枢怎样近似计算？ <a class="header-anchor" href="#implementation" aria-label="固定链接： &quot;分型、笔、线段和中枢怎样近似计算？ {#implementation}&quot;">​</a></h2><h3 id="fractal" tabindex="-1">分型：先合并包含，再比较三组 <a class="header-anchor" href="#fractal" aria-label="固定链接： &quot;分型：先合并包含，再比较三组 {#fractal}&quot;">​</a></h3><p>每个包含组最多5根原始 K 线，经过有限轮合并后，比较连续三个已结束的有效组：中间组的高点、低点同时严格高于两侧为顶分型，同时严格低于两侧为底分型，相等不通过。超出范围或仍有未解决包含的组不参与比较。</p><p>按时间保留不共用合并组的分型，标记放在中间组末根 K 线上，价格取合并高点或低点。标记因此可能偏离该根原始 K 线自身的高低点；右侧组结束后才补画标记。</p><h3 id="stroke" tabindex="-1">笔：整理端点后连接 <a class="header-anchor" href="#stroke" aria-label="固定链接： &quot;笔：整理端点后连接 {#stroke}&quot;">​</a></h3><p>在 <code>EW</code> 范围内择取同类极值，最多整理12轮，再连接相邻的顶底分型。两端不能共用合并组，默认绘制位置之间至少隔3根原始 K 线；顶分型中心组的最高价须严格高于底分型中心组的最高价。不满足条件或跨过无效组时留空。</p><p><strong>蓝色实线</strong>表示后面已有紧接的合法反向笔；<strong>蓝色虚线</strong>表示尚无这个依据。不能跳过无效连接，因此历史断点前也可能有虚线。这是本公式的近似状态，不对应插件的严格笔或宽松笔模式。</p><h3 id="segment" tabindex="-1">线段：按局部端点变化分组 <a class="header-anchor" href="#segment" aria-label="固定链接： &quot;线段：按局部端点变化分组 {#segment}&quot;">​</a></h3><p>最近四个笔端点中，两组同类高低点同时抬高或降低时，据此确定分组方向；方向改变时开始新组，组内选择相应极值。整理后还须满足至少三笔、起始三笔有正宽度共同区间、途中没有无效笔，才连接成近似线段。</p><p><strong>粗实线</strong>表示该分组已有后续方向变化依据，<strong>细虚线</strong>表示尚未结束的尾部分组；尾段不参与中枢计算。本公式不使用特征序列与缺口第二序列确认，不设线段总条数上限。这里的方向仅指连线方向。</p><h3 id="central-zone" tabindex="-1">中枢：初始三段定上下沿，后续延长时间 <a class="header-anchor" href="#central-zone" aria-label="固定链接： &quot;中枢：初始三段定上下沿，后续延长时间 {#central-zone}&quot;">​</a></h3><p>取连续三条有效近似线段覆盖的原始 K 线最高、最低价，包含连接端点：<strong>上沿取三段高点的最小值，下沿取三段低点的最大值</strong>；上沿严格高于下沿才输出矩形。</p><p>初始上下沿固定，后续线段与区间重叠或触边时延长时间范围；完全不交、输入无效或局部分组重开时停止。局部分组在滚动三段交集失效或与前一交集完全分离时重开；每组只取一次初始窗口，停止后等待新分组的三段依据。</p><p>矩形从初始第一段起点画到最后纳入的线段终点，尾部细虚线不计入。不设中枢总个数上限。</p><h2 id="faq" tabindex="-1">常见问题 <a class="header-anchor" href="#faq" aria-label="固定链接： &quot;常见问题 {#faq}&quot;">​</a></h2><p><span id="常见问题"></span><span id="哪种方式的画线更正确"></span></p><h3 id="为什么叫近似公式-是插件的通达信移植版吗" tabindex="-1">为什么叫近似公式，是插件的通达信移植版吗？ <a class="header-anchor" href="#为什么叫近似公式-是插件的通达信移植版吗" aria-label="固定链接： &quot;为什么叫近似公式，是插件的通达信移植版吗？&quot;">​</a></h3><p>不是移植版。为适应通达信公式环境的源码长度限制，并控制计算展开的规模，本公式采用有限范围整理与局部分组，没有移植插件的全部状态处理。这是本版的实现选择，不代表其他通达信公式只能采用相同方式。</p><p><span id="repainting"></span></p><h3 id="updates" tabindex="-1">使用未来函数吗？历史画线会变化吗？ <a class="header-anchor" href="#updates" aria-label="固定链接： &quot;使用未来函数吗？历史画线会变化吗？ {#updates}&quot;">​</a></h3><p>会。本公式使用 <code>BACKSET</code>、<code>DRAWLINE</code>、<code>BARSNEXT</code> 和 <code>REFX</code>，相关定义见<a href="https://help.tdx.com.cn/gspt/docs/markdown/redword/functionlist.html" target="_blank" rel="noreferrer">通达信官方函数列表</a>。它们用于补画历史或读取后续数据；新增、修订或补载 K 线，以及修改参数，都可能改变已有标记和连线。<strong>图上端点的位置不等于取得确认依据的时间。</strong></p><h3 id="可以免费使用、修改源码吗" tabindex="-1">可以免费使用、修改源码吗？ <a class="header-anchor" href="#可以免费使用、修改源码吗" aria-label="固定链接： &quot;可以免费使用、修改源码吗？&quot;">​</a></h3><p><span id="不想更换通达信-可以只用公式吗"></span></p><p>可以，无需注册或购买插件会员。修改后请记录版本与参数，方便核对。</p><h3 id="mobile" tabindex="-1">手机版通达信也能用吗？ <a class="header-anchor" href="#mobile" aria-label="固定链接： &quot;手机版通达信也能用吗？ {#mobile}&quot;">​</a></h3><p>本公式不支持通达信手机版，请在电脑版使用。Struct Guide 浏览器插件也不能安装进通达信 App；手机网页画线可使用安卓 Edge 浏览器中的受支持网页，步骤见<a href="/download/">安装说明</a>。</p><h3 id="有其他通达信缠论指标源码、dll-或客户端插件吗" tabindex="-1">有其他通达信缠论指标源码、DLL 或客户端插件吗？ <a class="header-anchor" href="#有其他通达信缠论指标源码、dll-或客户端插件吗" aria-label="固定链接： &quot;有其他通达信缠论指标源码、DLL 或客户端插件吗？&quot;">​</a></h3><p>本站不提供第三方或网络流传版本的通达信缠论公式文件，也不提供通达信 DLL、工具包或客户端插件。本页下载的是本站独立编写的近似公式，可在通达信电脑版内单独使用，无需安装 Struct Guide。</p><h3 id="网页加载失败时-插件能改用通达信数据吗" tabindex="-1">网页加载失败时，插件能改用通达信数据吗？ <a class="header-anchor" href="#网页加载失败时-插件能改用通达信数据吗" aria-label="固定链接： &quot;网页加载失败时，插件能改用通达信数据吗？&quot;">​</a></h3><p>不能。插件不提供另一套行情，也不连接通达信客户端作为替代数据源。</p><h3 id="能与网页插件同步吗" tabindex="-1">能与网页插件同步吗？ <a class="header-anchor" href="#能与网页插件同步吗" aria-label="固定链接： &quot;能与网页插件同步吗？&quot;">​</a></h3><p><span id="浏览器插件能把公式计算结果同步到网页吗"></span></p><p>不能。两者可分别使用，但不共用数据、参数或确认记录；Struct Guide 不执行通达信公式，也不读取客户端图表。</p><h3 id="可以复制到同花顺、文华财经或博易大师吗" tabindex="-1">可以复制到同花顺、文华财经或博易大师吗？ <a class="header-anchor" href="#可以复制到同花顺、文华财经或博易大师吗" aria-label="固定链接： &quot;可以复制到同花顺、文华财经或博易大师吗？&quot;">​</a></h3><p>不能直接视为兼容。文华财经 WH6 请使用单独适配的<a href="/wenhua-chanlun-auto-drawing">文华财经近似缠论公式</a>；本页的通达信源码未在同花顺、博易大师中验证，不同软件的公式语言、函数及导入格式不同。</p><h3 id="different-results" tabindex="-1">同一品种的画线不同，怎样核对？ <a class="header-anchor" href="#different-results" aria-label="固定链接： &quot;同一品种的画线不同，怎样核对？ {#different-results}&quot;">​</a></h3><p>先记录以下条件，再逐项比较计算规则。</p><table tabindex="0"><thead><tr><th>记录项</th><th>核对内容</th></tr></thead><tbody><tr><td>品种与数据来源</td><td>代码、报价来源是否相同</td></tr><tr><td>周期与时段</td><td>K 线周期、时段划分是否一致</td></tr><tr><td>复权方式</td><td>是否采用相同设置</td></tr><tr><td>历史范围</td><td>加载多少数据，是否补载或修订</td></tr><tr><td>版本与参数</td><td>客户端、公式、插件版本，以及MG、EW和笔模式</td></tr></tbody></table><p>具体步骤见<a href="/faq/chanlun-indicator#drawing-differences">画线差异核对顺序</a>。输入一致后，仍需考虑两套实现规则的差异。</p><p><span id="两种方案出问题时-分别检查什么"></span></p><h2 id="troubleshooting" tabindex="-1">导入报错或没有图形，怎么排查？ <a class="header-anchor" href="#troubleshooting" aria-label="固定链接： &quot;导入报错或没有图形，怎么排查？ {#troubleshooting}&quot;">​</a></h2><table tabindex="0"><thead><tr><th>现象</th><th>先检查</th></tr></thead><tbody><tr><td>TXT无法导入</td><td>改用公式编辑器粘贴全文</td></tr><tr><td>编译报错或源码超长</td><td>是否使用本页v1.0.0完整文本，是否混入网页说明；记录报错行和客户端版本</td></tr><tr><td>中文乱码</td><td>重新下载，用支持UTF-8的文本编辑器打开</td></tr><tr><td>通过编译但不显示</td><td>是否选择主图叠加、已添加到图表、相应图层开关为1，以及历史数据是否充足</td></tr><tr><td>分型少、连线有空白</td><td>包含组是否有效，间隔与价格条件是否满足；可先恢复默认MG=4、EW=40</td></tr><tr><td>没有中枢</td><td>是否已有三条有效的粗实线线段，其实际覆盖范围是否有正宽度交集；尾部虚线不计入</td></tr><tr><td>矩形或坐标显示异常</td><td>核对版本，保留完整截图与输入条件反馈</td></tr></tbody></table><p>仍无法定位时，将公式版本、客户端版本、品种、周期、复权、历史范围、参数、操作步骤及报错发至 <a href="mailto:structguide@outlook.com" target="_blank" rel="noreferrer">structguide@outlook.com</a>。如附截图，发送前请留意截图中是否包含个人账户信息。</p><h2 id="source" tabindex="-1">查看本版完整源码 <a class="header-anchor" href="#source" aria-label="固定链接： &quot;查看本版完整源码 {#source}&quot;">​</a></h2><details class="details custom-block"><summary>展开查看通达信近似公式源码</summary><div class="language-txt vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">txt</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>{Struct Guide 通达信近似缠论公式 v1.0.0 - 2026-10-10}</span></span>
+<span class="line"><span>{本公式由 Struct Guide 独立编写，采用近似计算规则。}</span></span>
+<span class="line"><span>{本公式采用近似规则。BACKSET 和 DRAWLINE 会回写历史显示。}</span></span>
+<span class="line"><span>{仅用于结构学习与复盘，不提供投资建议。}</span></span>
+<span class="line"><span>{本公式与通达信无隶属或合作关系。}</span></span>
+<span class="line"><span>{REFX 和 BARSNEXT 读取后续数据；历史画线不等同于插件的确认状态。}</span></span>
+<span class="line"><span>{线段按局部方向分组，中枢按局部区间分组；不设固定输出数量上限。}</span></span>
+<span class="line"><span>{包含合并每组最多5根K线；EW=40，笔整理12轮，线段整理12轮。}</span></span>
+<span class="line"><span>{中枢上下沿由初始三段固定，只延长时间范围；待完成尾段不计入。}</span></span>
+<span class="line"><span>{笔实线：已有紧接的合法反向笔；笔虚线：尚无此依据。}</span></span>
+<span class="line"><span>{用于通达信电脑版，不支持通达信手机版。}</span></span>
+<span class="line"><span>SF:=1;</span></span>
+<span class="line"><span>SP:=1;</span></span>
+<span class="line"><span>SS:=1;</span></span>
+<span class="line"><span>SZ:=1;</span></span>
+<span class="line"><span>MG:=4;</span></span>
+<span class="line"><span>EW:=40;</span></span>
+<span class="line"><span>BN:=BARSCOUNT(C);</span></span>
+<span class="line"><span>CI:=BN&gt;1 AND((H&gt;=REF(H,1)AND L&lt;=REF(L,1))OR(H&lt;=REF(H,1)AND L&gt;=REF(L,1)));</span></span>
+<span class="line"><span>R0GS:=BN=1 OR CI=0;</span></span>
+<span class="line"><span>R0GN:=COUNT(R0GS,0);</span></span>
+<span class="line"><span>R0GR:=BARSLAST(R0GS)+1;</span></span>
+<span class="line"><span>R0NR:=MIN(R0GR,5);</span></span>
+<span class="line"><span>R0AH:=REF(H,R0NR-1);</span></span>
+<span class="line"><span>R0AL:=REF(L,R0NR-1);</span></span>
+<span class="line"><span>R0BH:=REF(H,MAX(R0NR-2,0));</span></span>
+<span class="line"><span>R0BL:=REF(L,MAX(R0NR-2,0));</span></span>
+<span class="line"><span>R0GU:=IF(BN&gt;R0GR,R0AH&gt;REF(H,R0NR),IF(R0BH+R0BL&lt;&gt;R0AH+R0AL,R0BH+R0BL&gt;R0AH+R0AL,REF(C,MAX(R0NR-2,0))&gt;=REF(C,R0NR-1)));</span></span>
+<span class="line"><span>R0RHH:=IF(R0GU,HHV(H,R0NR),LLV(H,R0NR));</span></span>
+<span class="line"><span>R0RLL:=IF(R0GU,HHV(L,R0NR),LLV(L,R0NR));</span></span>
+<span class="line"><span>R0WH:=IF(R0GU,HHV(REF(H,1),MAX(R0NR-1,1)),LLV(REF(H,1),MAX(R0NR-1,1)));</span></span>
+<span class="line"><span>R0WL:=IF(R0GU,HHV(REF(L,1),MAX(R0NR-1,1)),LLV(REF(L,1),MAX(R0NR-1,1)));</span></span>
+<span class="line"><span>R0BF:=R0GR&gt;1 AND((R0WH&gt;=H AND R0WL&lt;=L)OR(R0WH&lt;=H AND R0WL&gt;=L))=0;</span></span>
+<span class="line"><span>R0GV:=R0GR&lt;=5 AND COUNT(R0BF,R0NR)=0;</span></span>
+<span class="line"><span>R1GS:=R0GS OR(R0BF AND R0GR&lt;=5);</span></span>
+<span class="line"><span>R1GN:=COUNT(R1GS,0);</span></span>
+<span class="line"><span>R1GR:=BARSLAST(R1GS)+1;</span></span>
+<span class="line"><span>R1NR:=MIN(R1GR,5);</span></span>
+<span class="line"><span>R1AH:=REF(H,R1NR-1);</span></span>
+<span class="line"><span>R1AL:=REF(L,R1NR-1);</span></span>
+<span class="line"><span>R1BH:=REF(H,MAX(R1NR-2,0));</span></span>
+<span class="line"><span>R1BL:=REF(L,MAX(R1NR-2,0));</span></span>
+<span class="line"><span>R1GU:=IF(BN&gt;R1GR,R1AH&gt;REF(H,R1NR),IF(R1BH+R1BL&lt;&gt;R1AH+R1AL,R1BH+R1BL&gt;R1AH+R1AL,REF(C,MAX(R1NR-2,0))&gt;=REF(C,R1NR-1)));</span></span>
+<span class="line"><span>R1RHH:=IF(R1GU,HHV(H,R1NR),LLV(H,R1NR));</span></span>
+<span class="line"><span>R1RLL:=IF(R1GU,HHV(L,R1NR),LLV(L,R1NR));</span></span>
+<span class="line"><span>R1WH:=IF(R1GU,HHV(REF(H,1),MAX(R1NR-1,1)),LLV(REF(H,1),MAX(R1NR-1,1)));</span></span>
+<span class="line"><span>R1WL:=IF(R1GU,HHV(REF(L,1),MAX(R1NR-1,1)),LLV(REF(L,1),MAX(R1NR-1,1)));</span></span>
+<span class="line"><span>R1BF:=R1GR&gt;1 AND((R1WH&gt;=H AND R1WL&lt;=L)OR(R1WH&lt;=H AND R1WL&gt;=L))=0;</span></span>
+<span class="line"><span>R1GV:=R1GR&lt;=5 AND COUNT(R1BF,R1NR)=0;</span></span>
+<span class="line"><span>R2GS:=R1GS OR(R1BF AND R1GR&lt;=5);</span></span>
+<span class="line"><span>R2GN:=COUNT(R2GS,0);</span></span>
+<span class="line"><span>R2GR:=BARSLAST(R2GS)+1;</span></span>
+<span class="line"><span>R2NR:=MIN(R2GR,5);</span></span>
+<span class="line"><span>R2AH:=REF(H,R2NR-1);</span></span>
+<span class="line"><span>R2AL:=REF(L,R2NR-1);</span></span>
+<span class="line"><span>R2BH:=REF(H,MAX(R2NR-2,0));</span></span>
+<span class="line"><span>R2BL:=REF(L,MAX(R2NR-2,0));</span></span>
+<span class="line"><span>R2GU:=IF(BN&gt;R2GR,R2AH&gt;REF(H,R2NR),IF(R2BH+R2BL&lt;&gt;R2AH+R2AL,R2BH+R2BL&gt;R2AH+R2AL,REF(C,MAX(R2NR-2,0))&gt;=REF(C,R2NR-1)));</span></span>
+<span class="line"><span>R2RHH:=IF(R2GU,HHV(H,R2NR),LLV(H,R2NR));</span></span>
+<span class="line"><span>R2RLL:=IF(R2GU,HHV(L,R2NR),LLV(L,R2NR));</span></span>
+<span class="line"><span>R2WH:=IF(R2GU,HHV(REF(H,1),MAX(R2NR-1,1)),LLV(REF(H,1),MAX(R2NR-1,1)));</span></span>
+<span class="line"><span>R2WL:=IF(R2GU,HHV(REF(L,1),MAX(R2NR-1,1)),LLV(REF(L,1),MAX(R2NR-1,1)));</span></span>
+<span class="line"><span>R2BF:=R2GR&gt;1 AND((R2WH&gt;=H AND R2WL&lt;=L)OR(R2WH&lt;=H AND R2WL&gt;=L))=0;</span></span>
+<span class="line"><span>R2GV:=R2GR&lt;=5 AND COUNT(R2BF,R2NR)=0;</span></span>
+<span class="line"><span>R3GS:=R2GS OR(R2BF AND R2GR&lt;=5);</span></span>
+<span class="line"><span>R3GN:=COUNT(R3GS,0);</span></span>
+<span class="line"><span>R3GR:=BARSLAST(R3GS)+1;</span></span>
+<span class="line"><span>R3NR:=MIN(R3GR,5);</span></span>
+<span class="line"><span>R3AH:=REF(H,R3NR-1);</span></span>
+<span class="line"><span>R3AL:=REF(L,R3NR-1);</span></span>
+<span class="line"><span>R3BH:=REF(H,MAX(R3NR-2,0));</span></span>
+<span class="line"><span>R3BL:=REF(L,MAX(R3NR-2,0));</span></span>
+<span class="line"><span>R3GU:=IF(BN&gt;R3GR,R3AH&gt;REF(H,R3NR),IF(R3BH+R3BL&lt;&gt;R3AH+R3AL,R3BH+R3BL&gt;R3AH+R3AL,REF(C,MAX(R3NR-2,0))&gt;=REF(C,R3NR-1)));</span></span>
+<span class="line"><span>R3RHH:=IF(R3GU,HHV(H,R3NR),LLV(H,R3NR));</span></span>
+<span class="line"><span>R3RLL:=IF(R3GU,HHV(L,R3NR),LLV(L,R3NR));</span></span>
+<span class="line"><span>R3WH:=IF(R3GU,HHV(REF(H,1),MAX(R3NR-1,1)),LLV(REF(H,1),MAX(R3NR-1,1)));</span></span>
+<span class="line"><span>R3WL:=IF(R3GU,HHV(REF(L,1),MAX(R3NR-1,1)),LLV(REF(L,1),MAX(R3NR-1,1)));</span></span>
+<span class="line"><span>R3BF:=R3GR&gt;1 AND((R3WH&gt;=H AND R3WL&lt;=L)OR(R3WH&lt;=H AND R3WL&gt;=L))=0;</span></span>
+<span class="line"><span>R3GV:=R3GR&lt;=5 AND COUNT(R3BF,R3NR)=0;</span></span>
+<span class="line"><span>GS:=R3GS OR(R3BF AND R3GR&lt;=5);</span></span>
+<span class="line"><span>GN:=COUNT(GS,0);</span></span>
+<span class="line"><span>GR:=BARSLAST(GS)+1;</span></span>
+<span class="line"><span>NR:=MIN(GR,5);</span></span>
+<span class="line"><span>AH:=REF(H,NR-1);</span></span>
+<span class="line"><span>AL:=REF(L,NR-1);</span></span>
+<span class="line"><span>BH:=REF(H,MAX(NR-2,0));</span></span>
+<span class="line"><span>BL:=REF(L,MAX(NR-2,0));</span></span>
+<span class="line"><span>GU:=IF(BN&gt;GR,AH&gt;REF(H,NR),IF(BH+BL&lt;&gt;AH+AL,BH+BL&gt;AH+AL,REF(C,MAX(NR-2,0))&gt;=REF(C,NR-1)));</span></span>
+<span class="line"><span>RHH:=IF(GU,HHV(H,NR),LLV(H,NR));</span></span>
+<span class="line"><span>RLL:=IF(GU,HHV(L,NR),LLV(L,NR));</span></span>
+<span class="line"><span>WH:=IF(GU,HHV(REF(H,1),MAX(NR-1,1)),LLV(REF(H,1),MAX(NR-1,1)));</span></span>
+<span class="line"><span>WL:=IF(GU,HHV(REF(L,1),MAX(NR-1,1)),LLV(REF(L,1),MAX(NR-1,1)));</span></span>
+<span class="line"><span>BF:=GR&gt;1 AND((WH&gt;=H AND WL&lt;=L)OR(WH&lt;=H AND WL&gt;=L))=0;</span></span>
+<span class="line"><span>GV:=GR&lt;=5 AND COUNT(BF,NR)=0;</span></span>
+<span class="line"><span>G0A:=GS AND BN&gt;1 AND MOD(GN,2)=0;</span></span>
+<span class="line"><span>G0B:=GS AND BN&gt;1 AND MOD(GN,2)=1;</span></span>
+<span class="line"><span>G0E:=(BACKSET(G0A,2)-BACKSET(G0A,1)&gt;0)OR(BACKSET(G0B,2)-BACKSET(G0B,1)&gt;0);</span></span>
+<span class="line"><span>G0H:=RHH;</span></span>
+<span class="line"><span>G0L:=RLL;</span></span>
+<span class="line"><span>G0S:=GR;</span></span>
+<span class="line"><span>G1N:=COUNT(G0E,0);</span></span>
+<span class="line"><span>G1D:=MIN(BARSLAST(REF(G0E,1))+1,BN-1);</span></span>
+<span class="line"><span>G1A:=MIN(G1D+REF(G1D,G1D),BN-1);</span></span>
+<span class="line"><span>G1W:=G1D+REF(G0S,G1D);</span></span>
+<span class="line"><span>G1I:=(G0H&gt;=REF(G0H,G1D)AND G0L&lt;=REF(G0L,G1D))OR(G0H&lt;=REF(G0H,G1D)AND G0L&gt;=REF(G0L,G1D));</span></span>
+<span class="line"><span>G1M:=G0E AND G1N&gt;=2 AND MOD(G1N-0,2)=0 AND GV AND REF(GV,G1D)AND G1W&lt;=5 AND G1I;</span></span>
+<span class="line"><span>G1U:=IF(G1N&gt;=3,REF(G0H,G1D)&gt;=REF(G0H,G1A),IF(G0H+G0L&lt;&gt;REF(G0H+G0L,G1D),G0H+G0L&gt;REF(G0H+G0L,G1D),C&gt;=REF(C,G1D)));</span></span>
+<span class="line"><span>G1T:=BACKSET(G1M,2)-BACKSET(G1M,1)&gt;0;</span></span>
+<span class="line"><span>G1B:=BACKSET(G1T,BARSLAST(G0E)+1);</span></span>
+<span class="line"><span>G1E:=G0E AND G1B=0;</span></span>
+<span class="line"><span>G1H:=IF(G1M,IF(G1U,MAX(G0H,REF(G0H,G1D)),MIN(G0H,REF(G0H,G1D))),G0H);</span></span>
+<span class="line"><span>G1L:=IF(G1M,IF(G1U,MAX(G0L,REF(G0L,G1D)),MIN(G0L,REF(G0L,G1D))),G0L);</span></span>
+<span class="line"><span>G1S:=IF(G1M,G1W,G0S);</span></span>
+<span class="line"><span>G2N:=COUNT(G1E,0);</span></span>
+<span class="line"><span>G2D:=MIN(BARSLAST(REF(G1E,1))+1,BN-1);</span></span>
+<span class="line"><span>G2A:=MIN(G2D+REF(G2D,G2D),BN-1);</span></span>
+<span class="line"><span>G2W:=G2D+REF(G1S,G2D);</span></span>
+<span class="line"><span>G2I:=(G1H&gt;=REF(G1H,G2D)AND G1L&lt;=REF(G1L,G2D))OR(G1H&lt;=REF(G1H,G2D)AND G1L&gt;=REF(G1L,G2D));</span></span>
+<span class="line"><span>G2M:=G1E AND G2N&gt;=3 AND MOD(G2N-1,2)=0 AND GV AND REF(GV,G2D)AND G2W&lt;=5 AND G2I;</span></span>
+<span class="line"><span>G2U:=IF(G2N&gt;=3,REF(G1H,G2D)&gt;=REF(G1H,G2A),IF(G1H+G1L&lt;&gt;REF(G1H+G1L,G2D),G1H+G1L&gt;REF(G1H+G1L,G2D),C&gt;=REF(C,G2D)));</span></span>
+<span class="line"><span>G2T:=BACKSET(G2M,2)-BACKSET(G2M,1)&gt;0;</span></span>
+<span class="line"><span>G2B:=BACKSET(G2T,BARSLAST(G1E)+1);</span></span>
+<span class="line"><span>G2E:=G1E AND G2B=0;</span></span>
+<span class="line"><span>G2H:=IF(G2M,IF(G2U,MAX(G1H,REF(G1H,G2D)),MIN(G1H,REF(G1H,G2D))),G1H);</span></span>
+<span class="line"><span>G2L:=IF(G2M,IF(G2U,MAX(G1L,REF(G1L,G2D)),MIN(G1L,REF(G1L,G2D))),G1L);</span></span>
+<span class="line"><span>G2S:=IF(G2M,G2W,G1S);</span></span>
+<span class="line"><span>G3N:=COUNT(G2E,0);</span></span>
+<span class="line"><span>G3D:=MIN(BARSLAST(REF(G2E,1))+1,BN-1);</span></span>
+<span class="line"><span>G3A:=MIN(G3D+REF(G3D,G3D),BN-1);</span></span>
+<span class="line"><span>G3W:=G3D+REF(G2S,G3D);</span></span>
+<span class="line"><span>G3I:=(G2H&gt;=REF(G2H,G3D)AND G2L&lt;=REF(G2L,G3D))OR(G2H&lt;=REF(G2H,G3D)AND G2L&gt;=REF(G2L,G3D));</span></span>
+<span class="line"><span>G3M:=G2E AND G3N&gt;=2 AND MOD(G3N-0,2)=0 AND GV AND REF(GV,G3D)AND G3W&lt;=5 AND G3I;</span></span>
+<span class="line"><span>G3U:=IF(G3N&gt;=3,REF(G2H,G3D)&gt;=REF(G2H,G3A),IF(G2H+G2L&lt;&gt;REF(G2H+G2L,G3D),G2H+G2L&gt;REF(G2H+G2L,G3D),C&gt;=REF(C,G3D)));</span></span>
+<span class="line"><span>G3T:=BACKSET(G3M,2)-BACKSET(G3M,1)&gt;0;</span></span>
+<span class="line"><span>G3B:=BACKSET(G3T,BARSLAST(G2E)+1);</span></span>
+<span class="line"><span>G3E:=G2E AND G3B=0;</span></span>
+<span class="line"><span>G3H:=IF(G3M,IF(G3U,MAX(G2H,REF(G2H,G3D)),MIN(G2H,REF(G2H,G3D))),G2H);</span></span>
+<span class="line"><span>G3L:=IF(G3M,IF(G3U,MAX(G2L,REF(G2L,G3D)),MIN(G2L,REF(G2L,G3D))),G2L);</span></span>
+<span class="line"><span>G3S:=IF(G3M,G3W,G2S);</span></span>
+<span class="line"><span>G4N:=COUNT(G3E,0);</span></span>
+<span class="line"><span>G4D:=MIN(BARSLAST(REF(G3E,1))+1,BN-1);</span></span>
+<span class="line"><span>G4A:=MIN(G4D+REF(G4D,G4D),BN-1);</span></span>
+<span class="line"><span>G4W:=G4D+REF(G3S,G4D);</span></span>
+<span class="line"><span>G4I:=(G3H&gt;=REF(G3H,G4D)AND G3L&lt;=REF(G3L,G4D))OR(G3H&lt;=REF(G3H,G4D)AND G3L&gt;=REF(G3L,G4D));</span></span>
+<span class="line"><span>G4M:=G3E AND G4N&gt;=3 AND MOD(G4N-1,2)=0 AND GV AND REF(GV,G4D)AND G4W&lt;=5 AND G4I;</span></span>
+<span class="line"><span>G4U:=IF(G4N&gt;=3,REF(G3H,G4D)&gt;=REF(G3H,G4A),IF(G3H+G3L&lt;&gt;REF(G3H+G3L,G4D),G3H+G3L&gt;REF(G3H+G3L,G4D),C&gt;=REF(C,G4D)));</span></span>
+<span class="line"><span>G4T:=BACKSET(G4M,2)-BACKSET(G4M,1)&gt;0;</span></span>
+<span class="line"><span>G4B:=BACKSET(G4T,BARSLAST(G3E)+1);</span></span>
+<span class="line"><span>G4E:=G3E AND G4B=0;</span></span>
+<span class="line"><span>G4H:=IF(G4M,IF(G4U,MAX(G3H,REF(G3H,G4D)),MIN(G3H,REF(G3H,G4D))),G3H);</span></span>
+<span class="line"><span>G4L:=IF(G4M,IF(G4U,MAX(G3L,REF(G3L,G4D)),MIN(G3L,REF(G3L,G4D))),G3L);</span></span>
+<span class="line"><span>G4S:=IF(G4M,G4W,G3S);</span></span>
+<span class="line"><span>G5N:=COUNT(G4E,0);</span></span>
+<span class="line"><span>G5D:=MIN(BARSLAST(REF(G4E,1))+1,BN-1);</span></span>
+<span class="line"><span>G5A:=MIN(G5D+REF(G5D,G5D),BN-1);</span></span>
+<span class="line"><span>G5W:=G5D+REF(G4S,G5D);</span></span>
+<span class="line"><span>G5I:=(G4H&gt;=REF(G4H,G5D)AND G4L&lt;=REF(G4L,G5D))OR(G4H&lt;=REF(G4H,G5D)AND G4L&gt;=REF(G4L,G5D));</span></span>
+<span class="line"><span>G5M:=G4E AND G5N&gt;=2 AND MOD(G5N-0,2)=0 AND GV AND REF(GV,G5D)AND G5W&lt;=5 AND G5I;</span></span>
+<span class="line"><span>G5U:=IF(G5N&gt;=3,REF(G4H,G5D)&gt;=REF(G4H,G5A),IF(G4H+G4L&lt;&gt;REF(G4H+G4L,G5D),G4H+G4L&gt;REF(G4H+G4L,G5D),C&gt;=REF(C,G5D)));</span></span>
+<span class="line"><span>G5T:=BACKSET(G5M,2)-BACKSET(G5M,1)&gt;0;</span></span>
+<span class="line"><span>G5B:=BACKSET(G5T,BARSLAST(G4E)+1);</span></span>
+<span class="line"><span>G5E:=G4E AND G5B=0;</span></span>
+<span class="line"><span>G5H:=IF(G5M,IF(G5U,MAX(G4H,REF(G4H,G5D)),MIN(G4H,REF(G4H,G5D))),G4H);</span></span>
+<span class="line"><span>G5L:=IF(G5M,IF(G5U,MAX(G4L,REF(G4L,G5D)),MIN(G4L,REF(G4L,G5D))),G4L);</span></span>
+<span class="line"><span>G5S:=IF(G5M,G5W,G4S);</span></span>
+<span class="line"><span>G6N:=COUNT(G5E,0);</span></span>
+<span class="line"><span>G6D:=MIN(BARSLAST(REF(G5E,1))+1,BN-1);</span></span>
+<span class="line"><span>G6A:=MIN(G6D+REF(G6D,G6D),BN-1);</span></span>
+<span class="line"><span>G6W:=G6D+REF(G5S,G6D);</span></span>
+<span class="line"><span>G6I:=(G5H&gt;=REF(G5H,G6D)AND G5L&lt;=REF(G5L,G6D))OR(G5H&lt;=REF(G5H,G6D)AND G5L&gt;=REF(G5L,G6D));</span></span>
+<span class="line"><span>G6M:=G5E AND G6N&gt;=3 AND MOD(G6N-1,2)=0 AND GV AND REF(GV,G6D)AND G6W&lt;=5 AND G6I;</span></span>
+<span class="line"><span>G6U:=IF(G6N&gt;=3,REF(G5H,G6D)&gt;=REF(G5H,G6A),IF(G5H+G5L&lt;&gt;REF(G5H+G5L,G6D),G5H+G5L&gt;REF(G5H+G5L,G6D),C&gt;=REF(C,G6D)));</span></span>
+<span class="line"><span>G6T:=BACKSET(G6M,2)-BACKSET(G6M,1)&gt;0;</span></span>
+<span class="line"><span>G6B:=BACKSET(G6T,BARSLAST(G5E)+1);</span></span>
+<span class="line"><span>G6E:=G5E AND G6B=0;</span></span>
+<span class="line"><span>G6H:=IF(G6M,IF(G6U,MAX(G5H,REF(G5H,G6D)),MIN(G5H,REF(G5H,G6D))),G5H);</span></span>
+<span class="line"><span>G6L:=IF(G6M,IF(G6U,MAX(G5L,REF(G5L,G6D)),MIN(G5L,REF(G5L,G6D))),G5L);</span></span>
+<span class="line"><span>G6S:=IF(G6M,G6W,G5S);</span></span>
+<span class="line"><span>G7N:=COUNT(G6E,0);</span></span>
+<span class="line"><span>G7D:=MIN(BARSLAST(REF(G6E,1))+1,BN-1);</span></span>
+<span class="line"><span>G7A:=MIN(G7D+REF(G7D,G7D),BN-1);</span></span>
+<span class="line"><span>G7W:=G7D+REF(G6S,G7D);</span></span>
+<span class="line"><span>G7I:=(G6H&gt;=REF(G6H,G7D)AND G6L&lt;=REF(G6L,G7D))OR(G6H&lt;=REF(G6H,G7D)AND G6L&gt;=REF(G6L,G7D));</span></span>
+<span class="line"><span>G7M:=G6E AND G7N&gt;=2 AND MOD(G7N-0,2)=0 AND GV AND REF(GV,G7D)AND G7W&lt;=5 AND G7I;</span></span>
+<span class="line"><span>G7U:=IF(G7N&gt;=3,REF(G6H,G7D)&gt;=REF(G6H,G7A),IF(G6H+G6L&lt;&gt;REF(G6H+G6L,G7D),G6H+G6L&gt;REF(G6H+G6L,G7D),C&gt;=REF(C,G7D)));</span></span>
+<span class="line"><span>G7T:=BACKSET(G7M,2)-BACKSET(G7M,1)&gt;0;</span></span>
+<span class="line"><span>G7B:=BACKSET(G7T,BARSLAST(G6E)+1);</span></span>
+<span class="line"><span>G7E:=G6E AND G7B=0;</span></span>
+<span class="line"><span>G7H:=IF(G7M,IF(G7U,MAX(G6H,REF(G6H,G7D)),MIN(G6H,REF(G6H,G7D))),G6H);</span></span>
+<span class="line"><span>G7L:=IF(G7M,IF(G7U,MAX(G6L,REF(G6L,G7D)),MIN(G6L,REF(G6L,G7D))),G6L);</span></span>
+<span class="line"><span>G7S:=IF(G7M,G7W,G6S);</span></span>
+<span class="line"><span>G8N:=COUNT(G7E,0);</span></span>
+<span class="line"><span>G8D:=MIN(BARSLAST(REF(G7E,1))+1,BN-1);</span></span>
+<span class="line"><span>G8A:=MIN(G8D+REF(G8D,G8D),BN-1);</span></span>
+<span class="line"><span>G8W:=G8D+REF(G7S,G8D);</span></span>
+<span class="line"><span>G8I:=(G7H&gt;=REF(G7H,G8D)AND G7L&lt;=REF(G7L,G8D))OR(G7H&lt;=REF(G7H,G8D)AND G7L&gt;=REF(G7L,G8D));</span></span>
+<span class="line"><span>G8M:=G7E AND G8N&gt;=3 AND MOD(G8N-1,2)=0 AND GV AND REF(GV,G8D)AND G8W&lt;=5 AND G8I;</span></span>
+<span class="line"><span>G8U:=IF(G8N&gt;=3,REF(G7H,G8D)&gt;=REF(G7H,G8A),IF(G7H+G7L&lt;&gt;REF(G7H+G7L,G8D),G7H+G7L&gt;REF(G7H+G7L,G8D),C&gt;=REF(C,G8D)));</span></span>
+<span class="line"><span>G8T:=BACKSET(G8M,2)-BACKSET(G8M,1)&gt;0;</span></span>
+<span class="line"><span>G8B:=BACKSET(G8T,BARSLAST(G7E)+1);</span></span>
+<span class="line"><span>G8E:=G7E AND G8B=0;</span></span>
+<span class="line"><span>G8H:=IF(G8M,IF(G8U,MAX(G7H,REF(G7H,G8D)),MIN(G7H,REF(G7H,G8D))),G7H);</span></span>
+<span class="line"><span>G8L:=IF(G8M,IF(G8U,MAX(G7L,REF(G7L,G8D)),MIN(G7L,REF(G7L,G8D))),G7L);</span></span>
+<span class="line"><span>G8S:=IF(G8M,G8W,G7S);</span></span>
+<span class="line"><span>GE:=G8E;</span></span>
+<span class="line"><span>MH:=G8H;</span></span>
+<span class="line"><span>ML:=G8L;</span></span>
+<span class="line"><span>GC:=COUNT(GE,0);</span></span>
+<span class="line"><span>Q1:=MIN(BARSLAST(REF(GE,1))+1,BN-1);</span></span>
+<span class="line"><span>Q2:=MIN(Q1+REF(Q1,Q1),BN-1);</span></span>
+<span class="line"><span>CH:=REF(MH,Q1);</span></span>
+<span class="line"><span>CL:=REF(ML,Q1);</span></span>
+<span class="line"><span>LH:=REF(MH,Q2);</span></span>
+<span class="line"><span>LL:=REF(ML,Q2);</span></span>
+<span class="line"><span>BC:=GE AND GC&gt;=2 AND((MH&gt;=CH AND ML&lt;=CL)OR(MH&lt;=CH AND ML&gt;=CL));</span></span>
+<span class="line"><span>GX:=GE AND(GV=0 OR BC);</span></span>
+<span class="line"><span>OK:=GE AND GC&gt;=3 AND GV AND REF(GV,Q1)AND REF(GV,Q2);</span></span>
+<span class="line"><span>T0:=OK AND CH&gt;LH AND CH&gt;MH AND CL&gt;LL AND CL&gt;ML;</span></span>
+<span class="line"><span>B0:=OK AND CH&lt;LH AND CH&lt;MH AND CL&lt;LL AND CL&lt;ML;</span></span>
+<span class="line"><span>TT:=BACKSET(T0,2)-BACKSET(T0,1)&gt;0;</span></span>
+<span class="line"><span>BT:=BACKSET(B0,2)-BACKSET(B0,1)&gt;0;</span></span>
+<span class="line"><span>FRT:=(TT AND GE)OR(BACKSET(TT AND GE=0,BARSLAST(GE)+1)-BACKSET(TT AND GE=0,MAX(BARSLAST(GE),1))&gt;0);</span></span>
+<span class="line"><span>FRB:=(BT AND GE)OR(BACKSET(BT AND GE=0,BARSLAST(GE)+1)-BACKSET(BT AND GE=0,MAX(BARSLAST(GE),1))&gt;0);</span></span>
+<span class="line"><span>F0A:=IF(FRT OR FRB,2,0);</span></span>
+<span class="line"><span>F0B:=IF(GE,0,1);</span></span>
+<span class="line"><span>F0C:=IF(GE,1,2);</span></span>
+<span class="line"><span>F1D:=MIN(1,BN-1);</span></span>
+<span class="line"><span>F1A:=IF(BN&lt;=1,F0A,IF(REF(F0A,F1D)=0,F0A,IF(REF(F0A,F1D)=1,F0B,F0C)));</span></span>
+<span class="line"><span>F1B:=IF(BN&lt;=1,F0B,IF(REF(F0B,F1D)=0,F0A,IF(REF(F0B,F1D)=1,F0B,F0C)));</span></span>
+<span class="line"><span>F1C:=IF(BN&lt;=1,F0C,IF(REF(F0C,F1D)=0,F0A,IF(REF(F0C,F1D)=1,F0B,F0C)));</span></span>
+<span class="line"><span>F2D:=MIN(2,BN-1);</span></span>
+<span class="line"><span>F2A:=IF(BN&lt;=2,F1A,IF(REF(F1A,F2D)=0,F1A,IF(REF(F1A,F2D)=1,F1B,F1C)));</span></span>
+<span class="line"><span>F2B:=IF(BN&lt;=2,F1B,IF(REF(F1B,F2D)=0,F1A,IF(REF(F1B,F2D)=1,F1B,F1C)));</span></span>
+<span class="line"><span>F2C:=IF(BN&lt;=2,F1C,IF(REF(F1C,F2D)=0,F1A,IF(REF(F1C,F2D)=1,F1B,F1C)));</span></span>
+<span class="line"><span>F3D:=MIN(4,BN-1);</span></span>
+<span class="line"><span>F3A:=IF(BN&lt;=4,F2A,IF(REF(F2A,F3D)=0,F2A,IF(REF(F2A,F3D)=1,F2B,F2C)));</span></span>
+<span class="line"><span>F3B:=IF(BN&lt;=4,F2B,IF(REF(F2B,F3D)=0,F2A,IF(REF(F2B,F3D)=1,F2B,F2C)));</span></span>
+<span class="line"><span>F3C:=IF(BN&lt;=4,F2C,IF(REF(F2C,F3D)=0,F2A,IF(REF(F2C,F3D)=1,F2B,F2C)));</span></span>
+<span class="line"><span>F4D:=MIN(8,BN-1);</span></span>
+<span class="line"><span>F4A:=IF(BN&lt;=8,F3A,IF(REF(F3A,F4D)=0,F3A,IF(REF(F3A,F4D)=1,F3B,F3C)));</span></span>
+<span class="line"><span>F4B:=IF(BN&lt;=8,F3B,IF(REF(F3B,F4D)=0,F3A,IF(REF(F3B,F4D)=1,F3B,F3C)));</span></span>
+<span class="line"><span>F4C:=IF(BN&lt;=8,F3C,IF(REF(F3C,F4D)=0,F3A,IF(REF(F3C,F4D)=1,F3B,F3C)));</span></span>
+<span class="line"><span>F5D:=MIN(16,BN-1);</span></span>
+<span class="line"><span>F5A:=IF(BN&lt;=16,F4A,IF(REF(F4A,F5D)=0,F4A,IF(REF(F4A,F5D)=1,F4B,F4C)));</span></span>
+<span class="line"><span>F5B:=IF(BN&lt;=16,F4B,IF(REF(F4B,F5D)=0,F4A,IF(REF(F4B,F5D)=1,F4B,F4C)));</span></span>
+<span class="line"><span>F5C:=IF(BN&lt;=16,F4C,IF(REF(F4C,F5D)=0,F4A,IF(REF(F4C,F5D)=1,F4B,F4C)));</span></span>
+<span class="line"><span>F6D:=MIN(32,BN-1);</span></span>
+<span class="line"><span>F6A:=IF(BN&lt;=32,F5A,IF(REF(F5A,F6D)=0,F5A,IF(REF(F5A,F6D)=1,F5B,F5C)));</span></span>
+<span class="line"><span>F6B:=IF(BN&lt;=32,F5B,IF(REF(F5B,F6D)=0,F5A,IF(REF(F5B,F6D)=1,F5B,F5C)));</span></span>
+<span class="line"><span>F6C:=IF(BN&lt;=32,F5C,IF(REF(F5C,F6D)=0,F5A,IF(REF(F5C,F6D)=1,F5B,F5C)));</span></span>
+<span class="line"><span>F7D:=MIN(64,BN-1);</span></span>
+<span class="line"><span>F7A:=IF(BN&lt;=64,F6A,IF(REF(F6A,F7D)=0,F6A,IF(REF(F6A,F7D)=1,F6B,F6C)));</span></span>
+<span class="line"><span>F7B:=IF(BN&lt;=64,F6B,IF(REF(F6B,F7D)=0,F6A,IF(REF(F6B,F7D)=1,F6B,F6C)));</span></span>
+<span class="line"><span>F7C:=IF(BN&lt;=64,F6C,IF(REF(F6C,F7D)=0,F6A,IF(REF(F6C,F7D)=1,F6B,F6C)));</span></span>
+<span class="line"><span>F8D:=MIN(128,BN-1);</span></span>
+<span class="line"><span>F8A:=IF(BN&lt;=128,F7A,IF(REF(F7A,F8D)=0,F7A,IF(REF(F7A,F8D)=1,F7B,F7C)));</span></span>
+<span class="line"><span>F8B:=IF(BN&lt;=128,F7B,IF(REF(F7B,F8D)=0,F7A,IF(REF(F7B,F8D)=1,F7B,F7C)));</span></span>
+<span class="line"><span>F8C:=IF(BN&lt;=128,F7C,IF(REF(F7C,F8D)=0,F7A,IF(REF(F7C,F8D)=1,F7B,F7C)));</span></span>
+<span class="line"><span>F9D:=MIN(256,BN-1);</span></span>
+<span class="line"><span>F9A:=IF(BN&lt;=256,F8A,IF(REF(F8A,F9D)=0,F8A,IF(REF(F8A,F9D)=1,F8B,F8C)));</span></span>
+<span class="line"><span>F9B:=IF(BN&lt;=256,F8B,IF(REF(F8B,F9D)=0,F8A,IF(REF(F8B,F9D)=1,F8B,F8C)));</span></span>
+<span class="line"><span>F9C:=IF(BN&lt;=256,F8C,IF(REF(F8C,F9D)=0,F8A,IF(REF(F8C,F9D)=1,F8B,F8C)));</span></span>
+<span class="line"><span>F10D:=MIN(512,BN-1);</span></span>
+<span class="line"><span>F10A:=IF(BN&lt;=512,F9A,IF(REF(F9A,F10D)=0,F9A,IF(REF(F9A,F10D)=1,F9B,F9C)));</span></span>
+<span class="line"><span>F10B:=IF(BN&lt;=512,F9B,IF(REF(F9B,F10D)=0,F9A,IF(REF(F9B,F10D)=1,F9B,F9C)));</span></span>
+<span class="line"><span>F10C:=IF(BN&lt;=512,F9C,IF(REF(F9C,F10D)=0,F9A,IF(REF(F9C,F10D)=1,F9B,F9C)));</span></span>
+<span class="line"><span>F11D:=MIN(1024,BN-1);</span></span>
+<span class="line"><span>F11A:=IF(BN&lt;=1024,F10A,IF(REF(F10A,F11D)=0,F10A,IF(REF(F10A,F11D)=1,F10B,F10C)));</span></span>
+<span class="line"><span>F11B:=IF(BN&lt;=1024,F10B,IF(REF(F10B,F11D)=0,F10A,IF(REF(F10B,F11D)=1,F10B,F10C)));</span></span>
+<span class="line"><span>F11C:=IF(BN&lt;=1024,F10C,IF(REF(F10C,F11D)=0,F10A,IF(REF(F10C,F11D)=1,F10B,F10C)));</span></span>
+<span class="line"><span>F12D:=MIN(2048,BN-1);</span></span>
+<span class="line"><span>F12A:=IF(BN&lt;=2048,F11A,IF(REF(F11A,F12D)=0,F11A,IF(REF(F11A,F12D)=1,F11B,F11C)));</span></span>
+<span class="line"><span>F12B:=IF(BN&lt;=2048,F11B,IF(REF(F11B,F12D)=0,F11A,IF(REF(F11B,F12D)=1,F11B,F11C)));</span></span>
+<span class="line"><span>F12C:=IF(BN&lt;=2048,F11C,IF(REF(F11C,F12D)=0,F11A,IF(REF(F11C,F12D)=1,F11B,F11C)));</span></span>
+<span class="line"><span>F13D:=MIN(4096,BN-1);</span></span>
+<span class="line"><span>F13A:=IF(BN&lt;=4096,F12A,IF(REF(F12A,F13D)=0,F12A,IF(REF(F12A,F13D)=1,F12B,F12C)));</span></span>
+<span class="line"><span>F13B:=IF(BN&lt;=4096,F12B,IF(REF(F12B,F13D)=0,F12A,IF(REF(F12B,F13D)=1,F12B,F12C)));</span></span>
+<span class="line"><span>F13C:=IF(BN&lt;=4096,F12C,IF(REF(F12C,F13D)=0,F12A,IF(REF(F12C,F13D)=1,F12B,F12C)));</span></span>
+<span class="line"><span>F14D:=MIN(8192,BN-1);</span></span>
+<span class="line"><span>F14A:=IF(BN&lt;=8192,F13A,IF(REF(F13A,F14D)=0,F13A,IF(REF(F13A,F14D)=1,F13B,F13C)));</span></span>
+<span class="line"><span>F14B:=IF(BN&lt;=8192,F13B,IF(REF(F13B,F14D)=0,F13A,IF(REF(F13B,F14D)=1,F13B,F13C)));</span></span>
+<span class="line"><span>F14C:=IF(BN&lt;=8192,F13C,IF(REF(F13C,F14D)=0,F13A,IF(REF(F13C,F14D)=1,F13B,F13C)));</span></span>
+<span class="line"><span>F15D:=MIN(16384,BN-1);</span></span>
+<span class="line"><span>F15A:=IF(BN&lt;=16384,F14A,IF(REF(F14A,F15D)=0,F14A,IF(REF(F14A,F15D)=1,F14B,F14C)));</span></span>
+<span class="line"><span>F15B:=IF(BN&lt;=16384,F14B,IF(REF(F14B,F15D)=0,F14A,IF(REF(F14B,F15D)=1,F14B,F14C)));</span></span>
+<span class="line"><span>F15C:=IF(BN&lt;=16384,F14C,IF(REF(F14C,F15D)=0,F14A,IF(REF(F14C,F15D)=1,F14B,F14C)));</span></span>
+<span class="line"><span>F16D:=MIN(32768,BN-1);</span></span>
+<span class="line"><span>F16A:=IF(BN&lt;=32768,F15A,IF(REF(F15A,F16D)=0,F15A,IF(REF(F15A,F16D)=1,F15B,F15C)));</span></span>
+<span class="line"><span>F16B:=IF(BN&lt;=32768,F15B,IF(REF(F15B,F16D)=0,F15A,IF(REF(F15B,F16D)=1,F15B,F15C)));</span></span>
+<span class="line"><span>F16C:=IF(BN&lt;=32768,F15C,IF(REF(F15C,F16D)=0,F15A,IF(REF(F15C,F16D)=1,F15B,F15C)));</span></span>
+<span class="line"><span>F17D:=MIN(65536,BN-1);</span></span>
+<span class="line"><span>F17A:=IF(BN&lt;=65536,F16A,IF(REF(F16A,F17D)=0,F16A,IF(REF(F16A,F17D)=1,F16B,F16C)));</span></span>
+<span class="line"><span>F17B:=IF(BN&lt;=65536,F16B,IF(REF(F16B,F17D)=0,F16A,IF(REF(F16B,F17D)=1,F16B,F16C)));</span></span>
+<span class="line"><span>F17C:=IF(BN&lt;=65536,F16C,IF(REF(F16C,F17D)=0,F16A,IF(REF(F16C,F17D)=1,F16B,F16C)));</span></span>
+<span class="line"><span>F18D:=MIN(131072,BN-1);</span></span>
+<span class="line"><span>F18A:=IF(BN&lt;=131072,F17A,IF(REF(F17A,F18D)=0,F17A,IF(REF(F17A,F18D)=1,F17B,F17C)));</span></span>
+<span class="line"><span>F18B:=IF(BN&lt;=131072,F17B,IF(REF(F17B,F18D)=0,F17A,IF(REF(F17B,F18D)=1,F17B,F17C)));</span></span>
+<span class="line"><span>F18C:=IF(BN&lt;=131072,F17C,IF(REF(F17C,F18D)=0,F17A,IF(REF(F17C,F18D)=1,F17B,F17C)));</span></span>
+<span class="line"><span>F19D:=MIN(262144,BN-1);</span></span>
+<span class="line"><span>F19A:=IF(BN&lt;=262144,F18A,IF(REF(F18A,F19D)=0,F18A,IF(REF(F18A,F19D)=1,F18B,F18C)));</span></span>
+<span class="line"><span>F19B:=IF(BN&lt;=262144,F18B,IF(REF(F18B,F19D)=0,F18A,IF(REF(F18B,F19D)=1,F18B,F18C)));</span></span>
+<span class="line"><span>F19C:=IF(BN&lt;=262144,F18C,IF(REF(F18C,F19D)=0,F18A,IF(REF(F18C,F19D)=1,F18B,F18C)));</span></span>
+<span class="line"><span>F20D:=MIN(524288,BN-1);</span></span>
+<span class="line"><span>F20A:=IF(BN&lt;=524288,F19A,IF(REF(F19A,F20D)=0,F19A,IF(REF(F19A,F20D)=1,F19B,F19C)));</span></span>
+<span class="line"><span>F20B:=IF(BN&lt;=524288,F19B,IF(REF(F19B,F20D)=0,F19A,IF(REF(F19B,F20D)=1,F19B,F19C)));</span></span>
+<span class="line"><span>F20C:=IF(BN&lt;=524288,F19C,IF(REF(F19C,F20D)=0,F19A,IF(REF(F19C,F20D)=1,F19B,F19C)));</span></span>
+<span class="line"><span>F21D:=MIN(1048576,BN-1);</span></span>
+<span class="line"><span>F21A:=IF(BN&lt;=1048576,F20A,IF(REF(F20A,F21D)=0,F20A,IF(REF(F20A,F21D)=1,F20B,F20C)));</span></span>
+<span class="line"><span>F21B:=IF(BN&lt;=1048576,F20B,IF(REF(F20B,F21D)=0,F20A,IF(REF(F20B,F21D)=1,F20B,F20C)));</span></span>
+<span class="line"><span>F21C:=IF(BN&lt;=1048576,F20C,IF(REF(F20C,F21D)=0,F20A,IF(REF(F20C,F21D)=1,F20B,F20C)));</span></span>
+<span class="line"><span>F22D:=MIN(2097152,BN-1);</span></span>
+<span class="line"><span>F22A:=IF(BN&lt;=2097152,F21A,IF(REF(F21A,F22D)=0,F21A,IF(REF(F21A,F22D)=1,F21B,F21C)));</span></span>
+<span class="line"><span>F22B:=IF(BN&lt;=2097152,F21B,IF(REF(F21B,F22D)=0,F21A,IF(REF(F21B,F22D)=1,F21B,F21C)));</span></span>
+<span class="line"><span>F22C:=IF(BN&lt;=2097152,F21C,IF(REF(F21C,F22D)=0,F21A,IF(REF(F21C,F22D)=1,F21B,F21C)));</span></span>
+<span class="line"><span>F23D:=MIN(4194304,BN-1);</span></span>
+<span class="line"><span>F23A:=IF(BN&lt;=4194304,F22A,IF(REF(F22A,F23D)=0,F22A,IF(REF(F22A,F23D)=1,F22B,F22C)));</span></span>
+<span class="line"><span>F23B:=IF(BN&lt;=4194304,F22B,IF(REF(F22B,F23D)=0,F22A,IF(REF(F22B,F23D)=1,F22B,F22C)));</span></span>
+<span class="line"><span>F23C:=IF(BN&lt;=4194304,F22C,IF(REF(F22C,F23D)=0,F22A,IF(REF(F22C,F23D)=1,F22B,F22C)));</span></span>
+<span class="line"><span>F24D:=MIN(8388608,BN-1);</span></span>
+<span class="line"><span>F24A:=IF(BN&lt;=8388608,F23A,IF(REF(F23A,F24D)=0,F23A,IF(REF(F23A,F24D)=1,F23B,F23C)));</span></span>
+<span class="line"><span>F24B:=IF(BN&lt;=8388608,F23B,IF(REF(F23B,F24D)=0,F23A,IF(REF(F23B,F24D)=1,F23B,F23C)));</span></span>
+<span class="line"><span>F24C:=IF(BN&lt;=8388608,F23C,IF(REF(F23C,F24D)=0,F23A,IF(REF(F23C,F24D)=1,F23B,F23C)));</span></span>
+<span class="line"><span>F25D:=MIN(16777216,BN-1);</span></span>
+<span class="line"><span>F25A:=IF(BN&lt;=16777216,F24A,IF(REF(F24A,F25D)=0,F24A,IF(REF(F24A,F25D)=1,F24B,F24C)));</span></span>
+<span class="line"><span>F25B:=IF(BN&lt;=16777216,F24B,IF(REF(F24B,F25D)=0,F24A,IF(REF(F24B,F25D)=1,F24B,F24C)));</span></span>
+<span class="line"><span>F25C:=IF(BN&lt;=16777216,F24C,IF(REF(F24C,F25D)=0,F24A,IF(REF(F24C,F25D)=1,F24B,F24C)));</span></span>
+<span class="line"><span>F26D:=MIN(33554432,BN-1);</span></span>
+<span class="line"><span>F26A:=IF(BN&lt;=33554432,F25A,IF(REF(F25A,F26D)=0,F25A,IF(REF(F25A,F26D)=1,F25B,F25C)));</span></span>
+<span class="line"><span>F26B:=IF(BN&lt;=33554432,F25B,IF(REF(F25B,F26D)=0,F25A,IF(REF(F25B,F26D)=1,F25B,F25C)));</span></span>
+<span class="line"><span>F26C:=IF(BN&lt;=33554432,F25C,IF(REF(F25C,F26D)=0,F25A,IF(REF(F25C,F26D)=1,F25B,F25C)));</span></span>
+<span class="line"><span>F27D:=MIN(67108864,BN-1);</span></span>
+<span class="line"><span>F27A:=IF(BN&lt;=67108864,F26A,IF(REF(F26A,F27D)=0,F26A,IF(REF(F26A,F27D)=1,F26B,F26C)));</span></span>
+<span class="line"><span>F27B:=IF(BN&lt;=67108864,F26B,IF(REF(F26B,F27D)=0,F26A,IF(REF(F26B,F27D)=1,F26B,F26C)));</span></span>
+<span class="line"><span>F27C:=IF(BN&lt;=67108864,F26C,IF(REF(F26C,F27D)=0,F26A,IF(REF(F26C,F27D)=1,F26B,F26C)));</span></span>
+<span class="line"><span>F28D:=MIN(134217728,BN-1);</span></span>
+<span class="line"><span>F28A:=IF(BN&lt;=134217728,F27A,IF(REF(F27A,F28D)=0,F27A,IF(REF(F27A,F28D)=1,F27B,F27C)));</span></span>
+<span class="line"><span>F28B:=IF(BN&lt;=134217728,F27B,IF(REF(F27B,F28D)=0,F27A,IF(REF(F27B,F28D)=1,F27B,F27C)));</span></span>
+<span class="line"><span>F28C:=IF(BN&lt;=134217728,F27C,IF(REF(F27C,F28D)=0,F27A,IF(REF(F27C,F28D)=1,F27B,F27C)));</span></span>
+<span class="line"><span>F29D:=MIN(268435456,BN-1);</span></span>
+<span class="line"><span>F29A:=IF(BN&lt;=268435456,F28A,IF(REF(F28A,F29D)=0,F28A,IF(REF(F28A,F29D)=1,F28B,F28C)));</span></span>
+<span class="line"><span>F29B:=IF(BN&lt;=268435456,F28B,IF(REF(F28B,F29D)=0,F28A,IF(REF(F28B,F29D)=1,F28B,F28C)));</span></span>
+<span class="line"><span>F29C:=IF(BN&lt;=268435456,F28C,IF(REF(F28C,F29D)=0,F28A,IF(REF(F28C,F29D)=1,F28B,F28C)));</span></span>
+<span class="line"><span>F30D:=MIN(536870912,BN-1);</span></span>
+<span class="line"><span>F30A:=IF(BN&lt;=536870912,F29A,IF(REF(F29A,F30D)=0,F29A,IF(REF(F29A,F30D)=1,F29B,F29C)));</span></span>
+<span class="line"><span>F30B:=IF(BN&lt;=536870912,F29B,IF(REF(F29B,F30D)=0,F29A,IF(REF(F29B,F30D)=1,F29B,F29C)));</span></span>
+<span class="line"><span>F30C:=IF(BN&lt;=536870912,F29C,IF(REF(F29C,F30D)=0,F29A,IF(REF(F29C,F30D)=1,F29B,F29C)));</span></span>
+<span class="line"><span>F31D:=MIN(1073741824,BN-1);</span></span>
+<span class="line"><span>F31A:=IF(BN&lt;=1073741824,F30A,IF(REF(F30A,F31D)=0,F30A,IF(REF(F30A,F31D)=1,F30B,F30C)));</span></span>
+<span class="line"><span>F31B:=IF(BN&lt;=1073741824,F30B,IF(REF(F30B,F31D)=0,F30A,IF(REF(F30B,F31D)=1,F30B,F30C)));</span></span>
+<span class="line"><span>F31C:=IF(BN&lt;=1073741824,F30C,IF(REF(F30C,F31D)=0,F30A,IF(REF(F30C,F31D)=1,F30B,F30C)));</span></span>
+<span class="line"><span>FS:=BN=1 OR REF(F31A,1)=0;</span></span>
+<span class="line"><span>FT:=FRT AND FS;</span></span>
+<span class="line"><span>FB:=FRB AND FS;</span></span>
+<span class="line"><span>FE:=FT OR FB;</span></span>
+<span class="line"><span>FK:=IF(FT,1,-1);</span></span>
+<span class="line"><span>FC:=COUNT(FE,0);</span></span>
+<span class="line"><span>ES:=FE AND(FC=1 OR FK&lt;&gt;REF(VALUEWHEN(FE,FK),1));</span></span>
+<span class="line"><span>ER:=BARSLAST(ES)+1;</span></span>
+<span class="line"><span>EH:=HHV(VALUEWHEN(FE,MH),MIN(ER,MAX(EW,4)));</span></span>
+<span class="line"><span>EL:=LLV(VALUEWHEN(FE,ML),MIN(ER,MAX(EW,4)));</span></span>
+<span class="line"><span>EX:=FE AND ES=0 AND ER&lt;=MAX(EW,4)AND COUNT(GX,ER)=0 AND IF(FT,MH&gt;REF(EH,1),ML&lt;REF(EL,1));</span></span>
+<span class="line"><span>EA:=ES OR EX;</span></span>
+<span class="line"><span>EB:=BACKSET(EX,2)-BACKSET(EX,1)&gt;0;</span></span>
+<span class="line"><span>EC:=BACKSET(EB,BARSLAST(EA)+1);</span></span>
+<span class="line"><span>KE0:=EA AND EC=0;</span></span>
+<span class="line"><span>J1N:=COUNT(KE0,0);</span></span>
+<span class="line"><span>J1D:=MIN(BARSLAST(REF(KE0,1))+1,BN-1);</span></span>
+<span class="line"><span>J1A:=MIN(J1D+REF(J1D,J1D),BN-1);</span></span>
+<span class="line"><span>J1P:=VALUEWHEN(KE0,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J1V:=KE0 AND J1N&gt;=2 AND J1D&gt;=MAX(MG,4)AND GC-REF(GC,J1D)&gt;=3 AND IF(FT,MH&gt;REF(J1P,J1D)AND MH&gt;REF(MH,J1D),REF(J1P,J1D)&gt;ML AND REF(MH,J1D)&gt;MH);</span></span>
+<span class="line"><span>J1C:=KE0 AND J1N&gt;=3 AND MOD(J1N-0,3)=0 AND J1A&lt;=MAX(EW,4)AND COUNT(GX,J1A+1)=0 AND REF(J1V,J1D)=0;</span></span>
+<span class="line"><span>J1K:=IF(FT,MH&gt;REF(MH,J1A),ML&lt;REF(ML,J1A));</span></span>
+<span class="line"><span>J1B:=BACKSET(J1C AND J1K=0,J1D+1);</span></span>
+<span class="line"><span>J1T:=BACKSET(J1C AND J1K,2)-BACKSET(J1C AND J1K,1)&gt;0;</span></span>
+<span class="line"><span>J1R:=BACKSET(J1T,MIN(BARSLAST(KE0)+REF(J1D,BARSLAST(KE0))+1,BN));</span></span>
+<span class="line"><span>KE1:=KE0 AND J1B=0 AND J1R=0;</span></span>
+<span class="line"><span>J2N:=COUNT(KE1,0);</span></span>
+<span class="line"><span>J2D:=MIN(BARSLAST(REF(KE1,1))+1,BN-1);</span></span>
+<span class="line"><span>J2A:=MIN(J2D+REF(J2D,J2D),BN-1);</span></span>
+<span class="line"><span>J2P:=VALUEWHEN(KE1,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J2V:=KE1 AND J2N&gt;=2 AND J2D&gt;=MAX(MG,4)AND GC-REF(GC,J2D)&gt;=3 AND IF(FT,MH&gt;REF(J2P,J2D)AND MH&gt;REF(MH,J2D),REF(J2P,J2D)&gt;ML AND REF(MH,J2D)&gt;MH);</span></span>
+<span class="line"><span>J2C:=KE1 AND J2N&gt;=4 AND MOD(J2N-1,3)=0 AND J2A&lt;=MAX(EW,4)AND COUNT(GX,J2A+1)=0 AND REF(J2V,J2D)=0;</span></span>
+<span class="line"><span>J2K:=IF(FT,MH&gt;REF(MH,J2A),ML&lt;REF(ML,J2A));</span></span>
+<span class="line"><span>J2B:=BACKSET(J2C AND J2K=0,J2D+1);</span></span>
+<span class="line"><span>J2T:=BACKSET(J2C AND J2K,2)-BACKSET(J2C AND J2K,1)&gt;0;</span></span>
+<span class="line"><span>J2R:=BACKSET(J2T,MIN(BARSLAST(KE1)+REF(J2D,BARSLAST(KE1))+1,BN));</span></span>
+<span class="line"><span>KE2:=KE1 AND J2B=0 AND J2R=0;</span></span>
+<span class="line"><span>J3N:=COUNT(KE2,0);</span></span>
+<span class="line"><span>J3D:=MIN(BARSLAST(REF(KE2,1))+1,BN-1);</span></span>
+<span class="line"><span>J3A:=MIN(J3D+REF(J3D,J3D),BN-1);</span></span>
+<span class="line"><span>J3P:=VALUEWHEN(KE2,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J3V:=KE2 AND J3N&gt;=2 AND J3D&gt;=MAX(MG,4)AND GC-REF(GC,J3D)&gt;=3 AND IF(FT,MH&gt;REF(J3P,J3D)AND MH&gt;REF(MH,J3D),REF(J3P,J3D)&gt;ML AND REF(MH,J3D)&gt;MH);</span></span>
+<span class="line"><span>J3C:=KE2 AND J3N&gt;=5 AND MOD(J3N-2,3)=0 AND J3A&lt;=MAX(EW,4)AND COUNT(GX,J3A+1)=0 AND REF(J3V,J3D)=0;</span></span>
+<span class="line"><span>J3K:=IF(FT,MH&gt;REF(MH,J3A),ML&lt;REF(ML,J3A));</span></span>
+<span class="line"><span>J3B:=BACKSET(J3C AND J3K=0,J3D+1);</span></span>
+<span class="line"><span>J3T:=BACKSET(J3C AND J3K,2)-BACKSET(J3C AND J3K,1)&gt;0;</span></span>
+<span class="line"><span>J3R:=BACKSET(J3T,MIN(BARSLAST(KE2)+REF(J3D,BARSLAST(KE2))+1,BN));</span></span>
+<span class="line"><span>KE3:=KE2 AND J3B=0 AND J3R=0;</span></span>
+<span class="line"><span>J4N:=COUNT(KE3,0);</span></span>
+<span class="line"><span>J4D:=MIN(BARSLAST(REF(KE3,1))+1,BN-1);</span></span>
+<span class="line"><span>J4A:=MIN(J4D+REF(J4D,J4D),BN-1);</span></span>
+<span class="line"><span>J4P:=VALUEWHEN(KE3,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J4V:=KE3 AND J4N&gt;=2 AND J4D&gt;=MAX(MG,4)AND GC-REF(GC,J4D)&gt;=3 AND IF(FT,MH&gt;REF(J4P,J4D)AND MH&gt;REF(MH,J4D),REF(J4P,J4D)&gt;ML AND REF(MH,J4D)&gt;MH);</span></span>
+<span class="line"><span>J4C:=KE3 AND J4N&gt;=3 AND MOD(J4N-0,3)=0 AND J4A&lt;=MAX(EW,4)AND COUNT(GX,J4A+1)=0 AND REF(J4V,J4D)=0;</span></span>
+<span class="line"><span>J4K:=IF(FT,MH&gt;REF(MH,J4A),ML&lt;REF(ML,J4A));</span></span>
+<span class="line"><span>J4B:=BACKSET(J4C AND J4K=0,J4D+1);</span></span>
+<span class="line"><span>J4T:=BACKSET(J4C AND J4K,2)-BACKSET(J4C AND J4K,1)&gt;0;</span></span>
+<span class="line"><span>J4R:=BACKSET(J4T,MIN(BARSLAST(KE3)+REF(J4D,BARSLAST(KE3))+1,BN));</span></span>
+<span class="line"><span>KE4:=KE3 AND J4B=0 AND J4R=0;</span></span>
+<span class="line"><span>J5N:=COUNT(KE4,0);</span></span>
+<span class="line"><span>J5D:=MIN(BARSLAST(REF(KE4,1))+1,BN-1);</span></span>
+<span class="line"><span>J5A:=MIN(J5D+REF(J5D,J5D),BN-1);</span></span>
+<span class="line"><span>J5P:=VALUEWHEN(KE4,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J5V:=KE4 AND J5N&gt;=2 AND J5D&gt;=MAX(MG,4)AND GC-REF(GC,J5D)&gt;=3 AND IF(FT,MH&gt;REF(J5P,J5D)AND MH&gt;REF(MH,J5D),REF(J5P,J5D)&gt;ML AND REF(MH,J5D)&gt;MH);</span></span>
+<span class="line"><span>J5C:=KE4 AND J5N&gt;=4 AND MOD(J5N-1,3)=0 AND J5A&lt;=MAX(EW,4)AND COUNT(GX,J5A+1)=0 AND REF(J5V,J5D)=0;</span></span>
+<span class="line"><span>J5K:=IF(FT,MH&gt;REF(MH,J5A),ML&lt;REF(ML,J5A));</span></span>
+<span class="line"><span>J5B:=BACKSET(J5C AND J5K=0,J5D+1);</span></span>
+<span class="line"><span>J5T:=BACKSET(J5C AND J5K,2)-BACKSET(J5C AND J5K,1)&gt;0;</span></span>
+<span class="line"><span>J5R:=BACKSET(J5T,MIN(BARSLAST(KE4)+REF(J5D,BARSLAST(KE4))+1,BN));</span></span>
+<span class="line"><span>KE5:=KE4 AND J5B=0 AND J5R=0;</span></span>
+<span class="line"><span>J6N:=COUNT(KE5,0);</span></span>
+<span class="line"><span>J6D:=MIN(BARSLAST(REF(KE5,1))+1,BN-1);</span></span>
+<span class="line"><span>J6A:=MIN(J6D+REF(J6D,J6D),BN-1);</span></span>
+<span class="line"><span>J6P:=VALUEWHEN(KE5,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J6V:=KE5 AND J6N&gt;=2 AND J6D&gt;=MAX(MG,4)AND GC-REF(GC,J6D)&gt;=3 AND IF(FT,MH&gt;REF(J6P,J6D)AND MH&gt;REF(MH,J6D),REF(J6P,J6D)&gt;ML AND REF(MH,J6D)&gt;MH);</span></span>
+<span class="line"><span>J6C:=KE5 AND J6N&gt;=5 AND MOD(J6N-2,3)=0 AND J6A&lt;=MAX(EW,4)AND COUNT(GX,J6A+1)=0 AND REF(J6V,J6D)=0;</span></span>
+<span class="line"><span>J6K:=IF(FT,MH&gt;REF(MH,J6A),ML&lt;REF(ML,J6A));</span></span>
+<span class="line"><span>J6B:=BACKSET(J6C AND J6K=0,J6D+1);</span></span>
+<span class="line"><span>J6T:=BACKSET(J6C AND J6K,2)-BACKSET(J6C AND J6K,1)&gt;0;</span></span>
+<span class="line"><span>J6R:=BACKSET(J6T,MIN(BARSLAST(KE5)+REF(J6D,BARSLAST(KE5))+1,BN));</span></span>
+<span class="line"><span>KE6:=KE5 AND J6B=0 AND J6R=0;</span></span>
+<span class="line"><span>J7N:=COUNT(KE6,0);</span></span>
+<span class="line"><span>J7D:=MIN(BARSLAST(REF(KE6,1))+1,BN-1);</span></span>
+<span class="line"><span>J7A:=MIN(J7D+REF(J7D,J7D),BN-1);</span></span>
+<span class="line"><span>J7P:=VALUEWHEN(KE6,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J7V:=KE6 AND J7N&gt;=2 AND J7D&gt;=MAX(MG,4)AND GC-REF(GC,J7D)&gt;=3 AND IF(FT,MH&gt;REF(J7P,J7D)AND MH&gt;REF(MH,J7D),REF(J7P,J7D)&gt;ML AND REF(MH,J7D)&gt;MH);</span></span>
+<span class="line"><span>J7C:=KE6 AND J7N&gt;=3 AND MOD(J7N-0,3)=0 AND J7A&lt;=MAX(EW,4)AND COUNT(GX,J7A+1)=0 AND REF(J7V,J7D)=0;</span></span>
+<span class="line"><span>J7K:=IF(FT,MH&gt;REF(MH,J7A),ML&lt;REF(ML,J7A));</span></span>
+<span class="line"><span>J7B:=BACKSET(J7C AND J7K=0,J7D+1);</span></span>
+<span class="line"><span>J7T:=BACKSET(J7C AND J7K,2)-BACKSET(J7C AND J7K,1)&gt;0;</span></span>
+<span class="line"><span>J7R:=BACKSET(J7T,MIN(BARSLAST(KE6)+REF(J7D,BARSLAST(KE6))+1,BN));</span></span>
+<span class="line"><span>KE7:=KE6 AND J7B=0 AND J7R=0;</span></span>
+<span class="line"><span>J8N:=COUNT(KE7,0);</span></span>
+<span class="line"><span>J8D:=MIN(BARSLAST(REF(KE7,1))+1,BN-1);</span></span>
+<span class="line"><span>J8A:=MIN(J8D+REF(J8D,J8D),BN-1);</span></span>
+<span class="line"><span>J8P:=VALUEWHEN(KE7,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J8V:=KE7 AND J8N&gt;=2 AND J8D&gt;=MAX(MG,4)AND GC-REF(GC,J8D)&gt;=3 AND IF(FT,MH&gt;REF(J8P,J8D)AND MH&gt;REF(MH,J8D),REF(J8P,J8D)&gt;ML AND REF(MH,J8D)&gt;MH);</span></span>
+<span class="line"><span>J8C:=KE7 AND J8N&gt;=4 AND MOD(J8N-1,3)=0 AND J8A&lt;=MAX(EW,4)AND COUNT(GX,J8A+1)=0 AND REF(J8V,J8D)=0;</span></span>
+<span class="line"><span>J8K:=IF(FT,MH&gt;REF(MH,J8A),ML&lt;REF(ML,J8A));</span></span>
+<span class="line"><span>J8B:=BACKSET(J8C AND J8K=0,J8D+1);</span></span>
+<span class="line"><span>J8T:=BACKSET(J8C AND J8K,2)-BACKSET(J8C AND J8K,1)&gt;0;</span></span>
+<span class="line"><span>J8R:=BACKSET(J8T,MIN(BARSLAST(KE7)+REF(J8D,BARSLAST(KE7))+1,BN));</span></span>
+<span class="line"><span>KE8:=KE7 AND J8B=0 AND J8R=0;</span></span>
+<span class="line"><span>J9N:=COUNT(KE8,0);</span></span>
+<span class="line"><span>J9D:=MIN(BARSLAST(REF(KE8,1))+1,BN-1);</span></span>
+<span class="line"><span>J9A:=MIN(J9D+REF(J9D,J9D),BN-1);</span></span>
+<span class="line"><span>J9P:=VALUEWHEN(KE8,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J9V:=KE8 AND J9N&gt;=2 AND J9D&gt;=MAX(MG,4)AND GC-REF(GC,J9D)&gt;=3 AND IF(FT,MH&gt;REF(J9P,J9D)AND MH&gt;REF(MH,J9D),REF(J9P,J9D)&gt;ML AND REF(MH,J9D)&gt;MH);</span></span>
+<span class="line"><span>J9C:=KE8 AND J9N&gt;=5 AND MOD(J9N-2,3)=0 AND J9A&lt;=MAX(EW,4)AND COUNT(GX,J9A+1)=0 AND REF(J9V,J9D)=0;</span></span>
+<span class="line"><span>J9K:=IF(FT,MH&gt;REF(MH,J9A),ML&lt;REF(ML,J9A));</span></span>
+<span class="line"><span>J9B:=BACKSET(J9C AND J9K=0,J9D+1);</span></span>
+<span class="line"><span>J9T:=BACKSET(J9C AND J9K,2)-BACKSET(J9C AND J9K,1)&gt;0;</span></span>
+<span class="line"><span>J9R:=BACKSET(J9T,MIN(BARSLAST(KE8)+REF(J9D,BARSLAST(KE8))+1,BN));</span></span>
+<span class="line"><span>KE9:=KE8 AND J9B=0 AND J9R=0;</span></span>
+<span class="line"><span>J10N:=COUNT(KE9,0);</span></span>
+<span class="line"><span>J10D:=MIN(BARSLAST(REF(KE9,1))+1,BN-1);</span></span>
+<span class="line"><span>J10A:=MIN(J10D+REF(J10D,J10D),BN-1);</span></span>
+<span class="line"><span>J10P:=VALUEWHEN(KE9,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J10V:=KE9 AND J10N&gt;=2 AND J10D&gt;=MAX(MG,4)AND GC-REF(GC,J10D)&gt;=3 AND IF(FT,MH&gt;REF(J10P,J10D)AND MH&gt;REF(MH,J10D),REF(J10P,J10D)&gt;ML AND REF(MH,J10D)&gt;MH);</span></span>
+<span class="line"><span>J10C:=KE9 AND J10N&gt;=3 AND MOD(J10N-0,3)=0 AND J10A&lt;=MAX(EW,4)AND COUNT(GX,J10A+1)=0 AND REF(J10V,J10D)=0;</span></span>
+<span class="line"><span>J10K:=IF(FT,MH&gt;REF(MH,J10A),ML&lt;REF(ML,J10A));</span></span>
+<span class="line"><span>J10B:=BACKSET(J10C AND J10K=0,J10D+1);</span></span>
+<span class="line"><span>J10T:=BACKSET(J10C AND J10K,2)-BACKSET(J10C AND J10K,1)&gt;0;</span></span>
+<span class="line"><span>J10R:=BACKSET(J10T,MIN(BARSLAST(KE9)+REF(J10D,BARSLAST(KE9))+1,BN));</span></span>
+<span class="line"><span>KE10:=KE9 AND J10B=0 AND J10R=0;</span></span>
+<span class="line"><span>J11N:=COUNT(KE10,0);</span></span>
+<span class="line"><span>J11D:=MIN(BARSLAST(REF(KE10,1))+1,BN-1);</span></span>
+<span class="line"><span>J11A:=MIN(J11D+REF(J11D,J11D),BN-1);</span></span>
+<span class="line"><span>J11P:=VALUEWHEN(KE10,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J11V:=KE10 AND J11N&gt;=2 AND J11D&gt;=MAX(MG,4)AND GC-REF(GC,J11D)&gt;=3 AND IF(FT,MH&gt;REF(J11P,J11D)AND MH&gt;REF(MH,J11D),REF(J11P,J11D)&gt;ML AND REF(MH,J11D)&gt;MH);</span></span>
+<span class="line"><span>J11C:=KE10 AND J11N&gt;=4 AND MOD(J11N-1,3)=0 AND J11A&lt;=MAX(EW,4)AND COUNT(GX,J11A+1)=0 AND REF(J11V,J11D)=0;</span></span>
+<span class="line"><span>J11K:=IF(FT,MH&gt;REF(MH,J11A),ML&lt;REF(ML,J11A));</span></span>
+<span class="line"><span>J11B:=BACKSET(J11C AND J11K=0,J11D+1);</span></span>
+<span class="line"><span>J11T:=BACKSET(J11C AND J11K,2)-BACKSET(J11C AND J11K,1)&gt;0;</span></span>
+<span class="line"><span>J11R:=BACKSET(J11T,MIN(BARSLAST(KE10)+REF(J11D,BARSLAST(KE10))+1,BN));</span></span>
+<span class="line"><span>KE11:=KE10 AND J11B=0 AND J11R=0;</span></span>
+<span class="line"><span>J12N:=COUNT(KE11,0);</span></span>
+<span class="line"><span>J12D:=MIN(BARSLAST(REF(KE11,1))+1,BN-1);</span></span>
+<span class="line"><span>J12A:=MIN(J12D+REF(J12D,J12D),BN-1);</span></span>
+<span class="line"><span>J12P:=VALUEWHEN(KE11,IF(FT,MH,ML));</span></span>
+<span class="line"><span>J12V:=KE11 AND J12N&gt;=2 AND J12D&gt;=MAX(MG,4)AND GC-REF(GC,J12D)&gt;=3 AND IF(FT,MH&gt;REF(J12P,J12D)AND MH&gt;REF(MH,J12D),REF(J12P,J12D)&gt;ML AND REF(MH,J12D)&gt;MH);</span></span>
+<span class="line"><span>J12C:=KE11 AND J12N&gt;=5 AND MOD(J12N-2,3)=0 AND J12A&lt;=MAX(EW,4)AND COUNT(GX,J12A+1)=0 AND REF(J12V,J12D)=0;</span></span>
+<span class="line"><span>J12K:=IF(FT,MH&gt;REF(MH,J12A),ML&lt;REF(ML,J12A));</span></span>
+<span class="line"><span>J12B:=BACKSET(J12C AND J12K=0,J12D+1);</span></span>
+<span class="line"><span>J12T:=BACKSET(J12C AND J12K,2)-BACKSET(J12C AND J12K,1)&gt;0;</span></span>
+<span class="line"><span>J12R:=BACKSET(J12T,MIN(BARSLAST(KE11)+REF(J12D,BARSLAST(KE11))+1,BN));</span></span>
+<span class="line"><span>KE12:=KE11 AND J12B=0 AND J12R=0;</span></span>
+<span class="line"><span>PE:=KE12;</span></span>
+<span class="line"><span>PC:=COUNT(PE,0);</span></span>
+<span class="line"><span>PP:=VALUEWHEN(PE,IF(FT,MH,ML));</span></span>
+<span class="line"><span>PH:=VALUEWHEN(PE,MH);</span></span>
+<span class="line"><span>D1:=MIN(BARSLAST(REF(PE,1))+1,BN-1);</span></span>
+<span class="line"><span>D2:=MIN(D1+REF(D1,D1),BN-1);</span></span>
+<span class="line"><span>D3:=MIN(D2+REF(D1,D2),BN-1);</span></span>
+<span class="line"><span>P1:=REF(PP,D1);</span></span>
+<span class="line"><span>P2:=REF(PP,D2);</span></span>
+<span class="line"><span>P3:=REF(PP,D3);</span></span>
+<span class="line"><span>PV:=PE AND PC&gt;=2 AND D1&gt;=MAX(MG,4)AND COUNT(GX,D1+1)=0 AND GC-REF(GC,D1)&gt;=3 AND IF(FT,MH&gt;P1 AND MH&gt;REF(PH,D1),P1&gt;ML AND REF(PH,D1)&gt;MH);</span></span>
+<span class="line"><span>PNHAS:=BN&lt;CONST(VALUEWHEN(PE,BN));</span></span>
+<span class="line"><span>PNDIST:=IF(PNHAS,MIN(MAX(REFX(BARSNEXT(PE),1)+1,0),MAX(CONST(BN)-BN,0)),0);</span></span>
+<span class="line"><span>PCONF:=PV AND PNHAS AND PNDIST&gt;0 AND REFX(PE,PNDIST)AND REFX(PV,PNDIST)AND REFX(D1,PNDIST)=PNDIST AND FT&lt;&gt;REFX(FT,PNDIST);</span></span>
+<span class="line"><span>PWAIT:=PV AND PCONF=0;</span></span>
+<span class="line"><span>STOTAL:=CONST(BN);</span></span>
+<span class="line"><span>PG:=MIN(MIN(MAX(PP,P1),MAX(P1,P2)),MAX(P2,P3));</span></span>
+<span class="line"><span>PD:=MAX(MAX(MIN(PP,P1),MIN(P1,P2)),MIN(P2,P3));</span></span>
+<span class="line"><span>SDUP:=PE AND PC&gt;=4 AND PP&gt;P2 AND P1&gt;P3;</span></span>
+<span class="line"><span>SDDN:=PE AND PC&gt;=4 AND PP&lt;P2 AND P1&lt;P3;</span></span>
+<span class="line"><span>SDE:=SDUP OR SDDN OR(PE AND PV=0);</span></span>
+<span class="line"><span>SDV:=VALUEWHEN(SDE,IF(PE AND PV=0,0,IF(SDUP,1,-1)));</span></span>
+<span class="line"><span>SCHANGE:=SDE AND SDV&lt;&gt;REF(SDV,1);</span></span>
+<span class="line"><span>SRLEN:=BARSLAST(SCHANGE)+1;</span></span>
+<span class="line"><span>SMAX:=HHV(PP,SRLEN);</span></span>
+<span class="line"><span>SMIN:=LLV(PP,SRLEN);</span></span>
+<span class="line"><span>SHASN:=BN&lt;CONST(VALUEWHEN(SCHANGE,BN));</span></span>
+<span class="line"><span>SNEXT:=IF(SHASN,MIN(MAX(REFX(BARSNEXT(SCHANGE),1)+1,0),MAX(STOTAL-BN,0)),MAX(STOTAL-BN,0));</span></span>
+<span class="line"><span>SRTO:=IF(SHASN,SNEXT-1,STOTAL-BN);</span></span>
+<span class="line"><span>SRHIGH:=REFX(SMAX,SRTO);</span></span>
+<span class="line"><span>SRLOW:=REFX(SMIN,SRTO);</span></span>
+<span class="line"><span>SRAW:=PE AND IF(SDV=1,FT AND PP=SRHIGH,SDV=-1 AND FB AND PP=SRLOW);</span></span>
+<span class="line"><span>SPICK:=SRAW AND COUNT(SRAW,SRLEN)=1;</span></span>
+<span class="line"><span>SRSTART:=SCHANGE AND SDV&lt;&gt;0 AND REF(SDV,1)=0 AND PC&gt;=4 AND COUNT(PE AND PV=0,D3)=0;</span></span>
+<span class="line"><span>SSEEK:=IF(BN&lt;=CONST(VALUEWHEN(SRSTART,BN)),MAX(BARSNEXT(SRSTART),0),MAX(STOTAL-BN,0));</span></span>
+<span class="line"><span>SSEED:=PE AND BN&lt;=CONST(VALUEWHEN(SRSTART,BN))AND REFX(SRSTART,SSEEK)AND BN=REFX(BN-D3,SSEEK);</span></span>
+<span class="line"><span>SE0:=SPICK OR SSEED;</span></span>
+<span class="line"><span>SN1:=IF(BN&lt;CONST(VALUEWHEN(PE,BN)),MIN(MAX(REFX(BARSNEXT(PE),1)+1,0),MAX(STOTAL-BN,0)),MAX(STOTAL-BN,0));</span></span>
+<span class="line"><span>SN2:=MIN(SN1+REFX(SN1,SN1),MAX(STOTAL-BN,0));</span></span>
+<span class="line"><span>SN3:=MIN(SN2+REFX(SN1,SN2),MAX(STOTAL-BN,0));</span></span>
+<span class="line"><span>SINIT:=REFX(PG&gt;PD,SN3)AND REFX(PC,SN3)-PC=3;</span></span>
+<span class="line"><span>Q1N:=COUNT(SE0,0);</span></span>
+<span class="line"><span>Q1D:=MIN(BARSLAST(REF(SE0,1))+1,BN-1);</span></span>
+<span class="line"><span>Q1A:=MIN(Q1D+REF(Q1D,Q1D),BN-1);</span></span>
+<span class="line"><span>Q1P:=VALUEWHEN(SE0,PP);</span></span>
+<span class="line"><span>Q1V:=SE0 AND Q1N&gt;=2 AND PC-REF(PC,Q1D)&gt;=3 AND FT&lt;&gt;REF(FT,Q1D)AND COUNT(PE AND PV=0,Q1D)=0 AND REF(SINIT,Q1D)AND IF(FT,PP&gt;REF(Q1P,Q1D),PP&lt;REF(Q1P,Q1D));</span></span>
+<span class="line"><span>Q1C:=SE0 AND Q1N&gt;=3 AND MOD(Q1N-0,3)=0 AND FT=REF(FT,Q1A)AND COUNT(PE AND PV=0,Q1A)=0 AND REF(Q1V,Q1D)=0;</span></span>
+<span class="line"><span>Q1K:=REF(SINIT,Q1A)=0 OR IF(FT,PP&gt;REF(PP,Q1A),PP&lt;REF(PP,Q1A));</span></span>
+<span class="line"><span>Q1B:=BACKSET(Q1C AND Q1K=0,Q1D+1);</span></span>
+<span class="line"><span>Q1T:=BACKSET(Q1C AND Q1K,2)-BACKSET(Q1C AND Q1K,1)&gt;0;</span></span>
+<span class="line"><span>Q1R:=BACKSET(Q1T,MIN(BARSLAST(SE0)+REF(Q1D,BARSLAST(SE0))+1,BN));</span></span>
+<span class="line"><span>SE1:=SE0 AND Q1B=0 AND Q1R=0;</span></span>
+<span class="line"><span>Q2N:=COUNT(SE1,0);</span></span>
+<span class="line"><span>Q2D:=MIN(BARSLAST(REF(SE1,1))+1,BN-1);</span></span>
+<span class="line"><span>Q2A:=MIN(Q2D+REF(Q2D,Q2D),BN-1);</span></span>
+<span class="line"><span>Q2P:=VALUEWHEN(SE1,PP);</span></span>
+<span class="line"><span>Q2V:=SE1 AND Q2N&gt;=2 AND PC-REF(PC,Q2D)&gt;=3 AND FT&lt;&gt;REF(FT,Q2D)AND COUNT(PE AND PV=0,Q2D)=0 AND REF(SINIT,Q2D)AND IF(FT,PP&gt;REF(Q2P,Q2D),PP&lt;REF(Q2P,Q2D));</span></span>
+<span class="line"><span>Q2C:=SE1 AND Q2N&gt;=4 AND MOD(Q2N-1,3)=0 AND FT=REF(FT,Q2A)AND COUNT(PE AND PV=0,Q2A)=0 AND REF(Q2V,Q2D)=0;</span></span>
+<span class="line"><span>Q2K:=REF(SINIT,Q2A)=0 OR IF(FT,PP&gt;REF(PP,Q2A),PP&lt;REF(PP,Q2A));</span></span>
+<span class="line"><span>Q2B:=BACKSET(Q2C AND Q2K=0,Q2D+1);</span></span>
+<span class="line"><span>Q2T:=BACKSET(Q2C AND Q2K,2)-BACKSET(Q2C AND Q2K,1)&gt;0;</span></span>
+<span class="line"><span>Q2R:=BACKSET(Q2T,MIN(BARSLAST(SE1)+REF(Q2D,BARSLAST(SE1))+1,BN));</span></span>
+<span class="line"><span>SE2:=SE1 AND Q2B=0 AND Q2R=0;</span></span>
+<span class="line"><span>Q3N:=COUNT(SE2,0);</span></span>
+<span class="line"><span>Q3D:=MIN(BARSLAST(REF(SE2,1))+1,BN-1);</span></span>
+<span class="line"><span>Q3A:=MIN(Q3D+REF(Q3D,Q3D),BN-1);</span></span>
+<span class="line"><span>Q3P:=VALUEWHEN(SE2,PP);</span></span>
+<span class="line"><span>Q3V:=SE2 AND Q3N&gt;=2 AND PC-REF(PC,Q3D)&gt;=3 AND FT&lt;&gt;REF(FT,Q3D)AND COUNT(PE AND PV=0,Q3D)=0 AND REF(SINIT,Q3D)AND IF(FT,PP&gt;REF(Q3P,Q3D),PP&lt;REF(Q3P,Q3D));</span></span>
+<span class="line"><span>Q3C:=SE2 AND Q3N&gt;=5 AND MOD(Q3N-2,3)=0 AND FT=REF(FT,Q3A)AND COUNT(PE AND PV=0,Q3A)=0 AND REF(Q3V,Q3D)=0;</span></span>
+<span class="line"><span>Q3K:=REF(SINIT,Q3A)=0 OR IF(FT,PP&gt;REF(PP,Q3A),PP&lt;REF(PP,Q3A));</span></span>
+<span class="line"><span>Q3B:=BACKSET(Q3C AND Q3K=0,Q3D+1);</span></span>
+<span class="line"><span>Q3T:=BACKSET(Q3C AND Q3K,2)-BACKSET(Q3C AND Q3K,1)&gt;0;</span></span>
+<span class="line"><span>Q3R:=BACKSET(Q3T,MIN(BARSLAST(SE2)+REF(Q3D,BARSLAST(SE2))+1,BN));</span></span>
+<span class="line"><span>SE3:=SE2 AND Q3B=0 AND Q3R=0;</span></span>
+<span class="line"><span>Q4N:=COUNT(SE3,0);</span></span>
+<span class="line"><span>Q4D:=MIN(BARSLAST(REF(SE3,1))+1,BN-1);</span></span>
+<span class="line"><span>Q4A:=MIN(Q4D+REF(Q4D,Q4D),BN-1);</span></span>
+<span class="line"><span>Q4P:=VALUEWHEN(SE3,PP);</span></span>
+<span class="line"><span>Q4V:=SE3 AND Q4N&gt;=2 AND PC-REF(PC,Q4D)&gt;=3 AND FT&lt;&gt;REF(FT,Q4D)AND COUNT(PE AND PV=0,Q4D)=0 AND REF(SINIT,Q4D)AND IF(FT,PP&gt;REF(Q4P,Q4D),PP&lt;REF(Q4P,Q4D));</span></span>
+<span class="line"><span>Q4C:=SE3 AND Q4N&gt;=3 AND MOD(Q4N-0,3)=0 AND FT=REF(FT,Q4A)AND COUNT(PE AND PV=0,Q4A)=0 AND REF(Q4V,Q4D)=0;</span></span>
+<span class="line"><span>Q4K:=REF(SINIT,Q4A)=0 OR IF(FT,PP&gt;REF(PP,Q4A),PP&lt;REF(PP,Q4A));</span></span>
+<span class="line"><span>Q4B:=BACKSET(Q4C AND Q4K=0,Q4D+1);</span></span>
+<span class="line"><span>Q4T:=BACKSET(Q4C AND Q4K,2)-BACKSET(Q4C AND Q4K,1)&gt;0;</span></span>
+<span class="line"><span>Q4R:=BACKSET(Q4T,MIN(BARSLAST(SE3)+REF(Q4D,BARSLAST(SE3))+1,BN));</span></span>
+<span class="line"><span>SE4:=SE3 AND Q4B=0 AND Q4R=0;</span></span>
+<span class="line"><span>Q5N:=COUNT(SE4,0);</span></span>
+<span class="line"><span>Q5D:=MIN(BARSLAST(REF(SE4,1))+1,BN-1);</span></span>
+<span class="line"><span>Q5A:=MIN(Q5D+REF(Q5D,Q5D),BN-1);</span></span>
+<span class="line"><span>Q5P:=VALUEWHEN(SE4,PP);</span></span>
+<span class="line"><span>Q5V:=SE4 AND Q5N&gt;=2 AND PC-REF(PC,Q5D)&gt;=3 AND FT&lt;&gt;REF(FT,Q5D)AND COUNT(PE AND PV=0,Q5D)=0 AND REF(SINIT,Q5D)AND IF(FT,PP&gt;REF(Q5P,Q5D),PP&lt;REF(Q5P,Q5D));</span></span>
+<span class="line"><span>Q5C:=SE4 AND Q5N&gt;=4 AND MOD(Q5N-1,3)=0 AND FT=REF(FT,Q5A)AND COUNT(PE AND PV=0,Q5A)=0 AND REF(Q5V,Q5D)=0;</span></span>
+<span class="line"><span>Q5K:=REF(SINIT,Q5A)=0 OR IF(FT,PP&gt;REF(PP,Q5A),PP&lt;REF(PP,Q5A));</span></span>
+<span class="line"><span>Q5B:=BACKSET(Q5C AND Q5K=0,Q5D+1);</span></span>
+<span class="line"><span>Q5T:=BACKSET(Q5C AND Q5K,2)-BACKSET(Q5C AND Q5K,1)&gt;0;</span></span>
+<span class="line"><span>Q5R:=BACKSET(Q5T,MIN(BARSLAST(SE4)+REF(Q5D,BARSLAST(SE4))+1,BN));</span></span>
+<span class="line"><span>SE5:=SE4 AND Q5B=0 AND Q5R=0;</span></span>
+<span class="line"><span>Q6N:=COUNT(SE5,0);</span></span>
+<span class="line"><span>Q6D:=MIN(BARSLAST(REF(SE5,1))+1,BN-1);</span></span>
+<span class="line"><span>Q6A:=MIN(Q6D+REF(Q6D,Q6D),BN-1);</span></span>
+<span class="line"><span>Q6P:=VALUEWHEN(SE5,PP);</span></span>
+<span class="line"><span>Q6V:=SE5 AND Q6N&gt;=2 AND PC-REF(PC,Q6D)&gt;=3 AND FT&lt;&gt;REF(FT,Q6D)AND COUNT(PE AND PV=0,Q6D)=0 AND REF(SINIT,Q6D)AND IF(FT,PP&gt;REF(Q6P,Q6D),PP&lt;REF(Q6P,Q6D));</span></span>
+<span class="line"><span>Q6C:=SE5 AND Q6N&gt;=5 AND MOD(Q6N-2,3)=0 AND FT=REF(FT,Q6A)AND COUNT(PE AND PV=0,Q6A)=0 AND REF(Q6V,Q6D)=0;</span></span>
+<span class="line"><span>Q6K:=REF(SINIT,Q6A)=0 OR IF(FT,PP&gt;REF(PP,Q6A),PP&lt;REF(PP,Q6A));</span></span>
+<span class="line"><span>Q6B:=BACKSET(Q6C AND Q6K=0,Q6D+1);</span></span>
+<span class="line"><span>Q6T:=BACKSET(Q6C AND Q6K,2)-BACKSET(Q6C AND Q6K,1)&gt;0;</span></span>
+<span class="line"><span>Q6R:=BACKSET(Q6T,MIN(BARSLAST(SE5)+REF(Q6D,BARSLAST(SE5))+1,BN));</span></span>
+<span class="line"><span>SE6:=SE5 AND Q6B=0 AND Q6R=0;</span></span>
+<span class="line"><span>Q7N:=COUNT(SE6,0);</span></span>
+<span class="line"><span>Q7D:=MIN(BARSLAST(REF(SE6,1))+1,BN-1);</span></span>
+<span class="line"><span>Q7A:=MIN(Q7D+REF(Q7D,Q7D),BN-1);</span></span>
+<span class="line"><span>Q7P:=VALUEWHEN(SE6,PP);</span></span>
+<span class="line"><span>Q7V:=SE6 AND Q7N&gt;=2 AND PC-REF(PC,Q7D)&gt;=3 AND FT&lt;&gt;REF(FT,Q7D)AND COUNT(PE AND PV=0,Q7D)=0 AND REF(SINIT,Q7D)AND IF(FT,PP&gt;REF(Q7P,Q7D),PP&lt;REF(Q7P,Q7D));</span></span>
+<span class="line"><span>Q7C:=SE6 AND Q7N&gt;=3 AND MOD(Q7N-0,3)=0 AND FT=REF(FT,Q7A)AND COUNT(PE AND PV=0,Q7A)=0 AND REF(Q7V,Q7D)=0;</span></span>
+<span class="line"><span>Q7K:=REF(SINIT,Q7A)=0 OR IF(FT,PP&gt;REF(PP,Q7A),PP&lt;REF(PP,Q7A));</span></span>
+<span class="line"><span>Q7B:=BACKSET(Q7C AND Q7K=0,Q7D+1);</span></span>
+<span class="line"><span>Q7T:=BACKSET(Q7C AND Q7K,2)-BACKSET(Q7C AND Q7K,1)&gt;0;</span></span>
+<span class="line"><span>Q7R:=BACKSET(Q7T,MIN(BARSLAST(SE6)+REF(Q7D,BARSLAST(SE6))+1,BN));</span></span>
+<span class="line"><span>SE7:=SE6 AND Q7B=0 AND Q7R=0;</span></span>
+<span class="line"><span>Q8N:=COUNT(SE7,0);</span></span>
+<span class="line"><span>Q8D:=MIN(BARSLAST(REF(SE7,1))+1,BN-1);</span></span>
+<span class="line"><span>Q8A:=MIN(Q8D+REF(Q8D,Q8D),BN-1);</span></span>
+<span class="line"><span>Q8P:=VALUEWHEN(SE7,PP);</span></span>
+<span class="line"><span>Q8V:=SE7 AND Q8N&gt;=2 AND PC-REF(PC,Q8D)&gt;=3 AND FT&lt;&gt;REF(FT,Q8D)AND COUNT(PE AND PV=0,Q8D)=0 AND REF(SINIT,Q8D)AND IF(FT,PP&gt;REF(Q8P,Q8D),PP&lt;REF(Q8P,Q8D));</span></span>
+<span class="line"><span>Q8C:=SE7 AND Q8N&gt;=4 AND MOD(Q8N-1,3)=0 AND FT=REF(FT,Q8A)AND COUNT(PE AND PV=0,Q8A)=0 AND REF(Q8V,Q8D)=0;</span></span>
+<span class="line"><span>Q8K:=REF(SINIT,Q8A)=0 OR IF(FT,PP&gt;REF(PP,Q8A),PP&lt;REF(PP,Q8A));</span></span>
+<span class="line"><span>Q8B:=BACKSET(Q8C AND Q8K=0,Q8D+1);</span></span>
+<span class="line"><span>Q8T:=BACKSET(Q8C AND Q8K,2)-BACKSET(Q8C AND Q8K,1)&gt;0;</span></span>
+<span class="line"><span>Q8R:=BACKSET(Q8T,MIN(BARSLAST(SE7)+REF(Q8D,BARSLAST(SE7))+1,BN));</span></span>
+<span class="line"><span>SE8:=SE7 AND Q8B=0 AND Q8R=0;</span></span>
+<span class="line"><span>Q9N:=COUNT(SE8,0);</span></span>
+<span class="line"><span>Q9D:=MIN(BARSLAST(REF(SE8,1))+1,BN-1);</span></span>
+<span class="line"><span>Q9A:=MIN(Q9D+REF(Q9D,Q9D),BN-1);</span></span>
+<span class="line"><span>Q9P:=VALUEWHEN(SE8,PP);</span></span>
+<span class="line"><span>Q9V:=SE8 AND Q9N&gt;=2 AND PC-REF(PC,Q9D)&gt;=3 AND FT&lt;&gt;REF(FT,Q9D)AND COUNT(PE AND PV=0,Q9D)=0 AND REF(SINIT,Q9D)AND IF(FT,PP&gt;REF(Q9P,Q9D),PP&lt;REF(Q9P,Q9D));</span></span>
+<span class="line"><span>Q9C:=SE8 AND Q9N&gt;=5 AND MOD(Q9N-2,3)=0 AND FT=REF(FT,Q9A)AND COUNT(PE AND PV=0,Q9A)=0 AND REF(Q9V,Q9D)=0;</span></span>
+<span class="line"><span>Q9K:=REF(SINIT,Q9A)=0 OR IF(FT,PP&gt;REF(PP,Q9A),PP&lt;REF(PP,Q9A));</span></span>
+<span class="line"><span>Q9B:=BACKSET(Q9C AND Q9K=0,Q9D+1);</span></span>
+<span class="line"><span>Q9T:=BACKSET(Q9C AND Q9K,2)-BACKSET(Q9C AND Q9K,1)&gt;0;</span></span>
+<span class="line"><span>Q9R:=BACKSET(Q9T,MIN(BARSLAST(SE8)+REF(Q9D,BARSLAST(SE8))+1,BN));</span></span>
+<span class="line"><span>SE9:=SE8 AND Q9B=0 AND Q9R=0;</span></span>
+<span class="line"><span>Q10N:=COUNT(SE9,0);</span></span>
+<span class="line"><span>Q10D:=MIN(BARSLAST(REF(SE9,1))+1,BN-1);</span></span>
+<span class="line"><span>Q10A:=MIN(Q10D+REF(Q10D,Q10D),BN-1);</span></span>
+<span class="line"><span>Q10P:=VALUEWHEN(SE9,PP);</span></span>
+<span class="line"><span>Q10V:=SE9 AND Q10N&gt;=2 AND PC-REF(PC,Q10D)&gt;=3 AND FT&lt;&gt;REF(FT,Q10D)AND COUNT(PE AND PV=0,Q10D)=0 AND REF(SINIT,Q10D)AND IF(FT,PP&gt;REF(Q10P,Q10D),PP&lt;REF(Q10P,Q10D));</span></span>
+<span class="line"><span>Q10C:=SE9 AND Q10N&gt;=3 AND MOD(Q10N-0,3)=0 AND FT=REF(FT,Q10A)AND COUNT(PE AND PV=0,Q10A)=0 AND REF(Q10V,Q10D)=0;</span></span>
+<span class="line"><span>Q10K:=REF(SINIT,Q10A)=0 OR IF(FT,PP&gt;REF(PP,Q10A),PP&lt;REF(PP,Q10A));</span></span>
+<span class="line"><span>Q10B:=BACKSET(Q10C AND Q10K=0,Q10D+1);</span></span>
+<span class="line"><span>Q10T:=BACKSET(Q10C AND Q10K,2)-BACKSET(Q10C AND Q10K,1)&gt;0;</span></span>
+<span class="line"><span>Q10R:=BACKSET(Q10T,MIN(BARSLAST(SE9)+REF(Q10D,BARSLAST(SE9))+1,BN));</span></span>
+<span class="line"><span>SE10:=SE9 AND Q10B=0 AND Q10R=0;</span></span>
+<span class="line"><span>Q11N:=COUNT(SE10,0);</span></span>
+<span class="line"><span>Q11D:=MIN(BARSLAST(REF(SE10,1))+1,BN-1);</span></span>
+<span class="line"><span>Q11A:=MIN(Q11D+REF(Q11D,Q11D),BN-1);</span></span>
+<span class="line"><span>Q11P:=VALUEWHEN(SE10,PP);</span></span>
+<span class="line"><span>Q11V:=SE10 AND Q11N&gt;=2 AND PC-REF(PC,Q11D)&gt;=3 AND FT&lt;&gt;REF(FT,Q11D)AND COUNT(PE AND PV=0,Q11D)=0 AND REF(SINIT,Q11D)AND IF(FT,PP&gt;REF(Q11P,Q11D),PP&lt;REF(Q11P,Q11D));</span></span>
+<span class="line"><span>Q11C:=SE10 AND Q11N&gt;=4 AND MOD(Q11N-1,3)=0 AND FT=REF(FT,Q11A)AND COUNT(PE AND PV=0,Q11A)=0 AND REF(Q11V,Q11D)=0;</span></span>
+<span class="line"><span>Q11K:=REF(SINIT,Q11A)=0 OR IF(FT,PP&gt;REF(PP,Q11A),PP&lt;REF(PP,Q11A));</span></span>
+<span class="line"><span>Q11B:=BACKSET(Q11C AND Q11K=0,Q11D+1);</span></span>
+<span class="line"><span>Q11T:=BACKSET(Q11C AND Q11K,2)-BACKSET(Q11C AND Q11K,1)&gt;0;</span></span>
+<span class="line"><span>Q11R:=BACKSET(Q11T,MIN(BARSLAST(SE10)+REF(Q11D,BARSLAST(SE10))+1,BN));</span></span>
+<span class="line"><span>SE11:=SE10 AND Q11B=0 AND Q11R=0;</span></span>
+<span class="line"><span>Q12N:=COUNT(SE11,0);</span></span>
+<span class="line"><span>Q12D:=MIN(BARSLAST(REF(SE11,1))+1,BN-1);</span></span>
+<span class="line"><span>Q12A:=MIN(Q12D+REF(Q12D,Q12D),BN-1);</span></span>
+<span class="line"><span>Q12P:=VALUEWHEN(SE11,PP);</span></span>
+<span class="line"><span>Q12V:=SE11 AND Q12N&gt;=2 AND PC-REF(PC,Q12D)&gt;=3 AND FT&lt;&gt;REF(FT,Q12D)AND COUNT(PE AND PV=0,Q12D)=0 AND REF(SINIT,Q12D)AND IF(FT,PP&gt;REF(Q12P,Q12D),PP&lt;REF(Q12P,Q12D));</span></span>
+<span class="line"><span>Q12C:=SE11 AND Q12N&gt;=5 AND MOD(Q12N-2,3)=0 AND FT=REF(FT,Q12A)AND COUNT(PE AND PV=0,Q12A)=0 AND REF(Q12V,Q12D)=0;</span></span>
+<span class="line"><span>Q12K:=REF(SINIT,Q12A)=0 OR IF(FT,PP&gt;REF(PP,Q12A),PP&lt;REF(PP,Q12A));</span></span>
+<span class="line"><span>Q12B:=BACKSET(Q12C AND Q12K=0,Q12D+1);</span></span>
+<span class="line"><span>Q12T:=BACKSET(Q12C AND Q12K,2)-BACKSET(Q12C AND Q12K,1)&gt;0;</span></span>
+<span class="line"><span>Q12R:=BACKSET(Q12T,MIN(BARSLAST(SE11)+REF(Q12D,BARSLAST(SE11))+1,BN));</span></span>
+<span class="line"><span>SE12:=SE11 AND Q12B=0 AND Q12R=0;</span></span>
+<span class="line"><span>SA:=SE12;</span></span>
+<span class="line"><span>SXD:=MIN(BARSLAST(REF(SA,1))+1,BN-1);</span></span>
+<span class="line"><span>SVALID:=SA AND COUNT(SA,0)&gt;=2 AND PC-REF(PC,SXD)&gt;=3 AND FT&lt;&gt;REF(FT,SXD)AND COUNT(PE AND PV=0,SXD)=0 AND REF(SINIT,SXD)AND IF(FT,PP&gt;REF(PP,SXD),PP&lt;REF(PP,SXD));</span></span>
+<span class="line"><span>SV:=SVALID AND SHASN;</span></span>
+<span class="line"><span>SPEND:=SVALID AND SHASN=0 AND SPICK;</span></span>
+<span class="line"><span>SPBACK:=BACKSET(SPEND,SXD+1);</span></span>
+<span class="line"><span>SPSTART:=SPBACK AND(BN=1 OR REF(SPBACK,1)=0);</span></span>
+<span class="line"><span>SPSTOP:=SPEND;</span></span>
+<span class="line"><span>SPREADY:=COUNT(SPEND,0)&gt;0;</span></span>
+<span class="line"><span>SGTDIR:=IF(VALUEWHEN(SPSTART,FT),-1,1);</span></span>
+<span class="line"><span>SH:=MAX(HHV(H,SXD+1),MAX(PP,REF(PP,SXD)));</span></span>
+<span class="line"><span>SL:=MIN(LLV(L,SXD+1),MIN(PP,REF(PP,SXD)));</span></span>
+<span class="line"><span>PU:DRAWLINE(SP=1 AND PE AND FB,ML,SP=1 AND PCONF AND FT,MH,0),COLORFF9933,LINETHICK1;</span></span>
+<span class="line"><span>PN:DRAWLINE(SP=1 AND PE AND FT,MH,SP=1 AND PCONF AND FB,ML,0),COLORFF9933,LINETHICK1;</span></span>
+<span class="line"><span>PUP:DRAWLINE(SP=1 AND PE AND FB,ML,SP=1 AND PWAIT AND FT,MH,0),COLORFF9933,LINETHICK1,DOTLINE;</span></span>
+<span class="line"><span>PNP:DRAWLINE(SP=1 AND PE AND FT,MH,SP=1 AND PWAIT AND FB,ML,0),COLORFF9933,LINETHICK1,DOTLINE;</span></span>
+<span class="line"><span>SU:DRAWLINE(SS=1 AND SA AND FB,ML,SS=1 AND SV AND FT,MH,0),COLOR0000FF,LINETHICK3;</span></span>
+<span class="line"><span>SN:DRAWLINE(SS=1 AND SA AND FT,MH,SS=1 AND SV AND FB,ML,0),COLOR00FF00,LINETHICK3;</span></span>
+<span class="line"><span>SUP:DRAWLINE(SS=1 AND SPSTART AND SGTDIR=1,PP,SS=1 AND SPSTOP AND SGTDIR=1,PP,0),COLOR0000FF,LINETHICK1,DOTLINE;</span></span>
+<span class="line"><span>SNP:DRAWLINE(SS=1 AND SPSTART AND SGTDIR=-1,PP,SS=1 AND SPSTOP AND SGTDIR=-1,PP,0),COLOR00FF00,LINETHICK1,DOTLINE;</span></span>
+<span class="line"><span>FH:=IF(SF=1 AND FT,MH,DRAWNULL);</span></span>
+<span class="line"><span>FL:=IF(SF=1 AND FB,ML,DRAWNULL);</span></span>
+<span class="line"><span>FHU:=FH*0.0004;</span></span>
+<span class="line"><span>FLU:=FL*0.0004;</span></span>
+<span class="line"><span>STICKLINE(SF=1 AND FT,IF(SF=1 AND FT,FH,DRAWNULL),IF(SF=1 AND FT,FH+FHU,DRAWNULL),0.4,0),COLOR0000FF;</span></span>
+<span class="line"><span>STICKLINE(SF=1 AND FT,IF(SF=1 AND FT,FH+FHU,DRAWNULL),IF(SF=1 AND FT,FH+2*FHU,DRAWNULL),1.4,0),COLOR0000FF;</span></span>
+<span class="line"><span>STICKLINE(SF=1 AND FT,IF(SF=1 AND FT,FH+2*FHU,DRAWNULL),IF(SF=1 AND FT,FH+3*FHU,DRAWNULL),2.4,0),COLOR0000FF;</span></span>
+<span class="line"><span>STICKLINE(SF=1 AND FT,IF(SF=1 AND FT,FH+3*FHU,DRAWNULL),IF(SF=1 AND FT,FH+6*FHU,DRAWNULL),0.4,0),COLOR0000FF;</span></span>
+<span class="line"><span>STICKLINE(SF=1 AND FB,IF(SF=1 AND FB,FL,DRAWNULL),IF(SF=1 AND FB,FL-FLU,DRAWNULL),0.4,0),COLOR00FF00;</span></span>
+<span class="line"><span>STICKLINE(SF=1 AND FB,IF(SF=1 AND FB,FL-FLU,DRAWNULL),IF(SF=1 AND FB,FL-2*FLU,DRAWNULL),1.4,0),COLOR00FF00;</span></span>
+<span class="line"><span>STICKLINE(SF=1 AND FB,IF(SF=1 AND FB,FL-2*FLU,DRAWNULL),IF(SF=1 AND FB,FL-3*FLU,DRAWNULL),2.4,0),COLOR00FF00;</span></span>
+<span class="line"><span>STICKLINE(SF=1 AND FB,IF(SF=1 AND FB,FL-3*FLU,DRAWNULL),IF(SF=1 AND FB,FL-6*FLU,DRAWNULL),0.4,0),COLOR00FF00;</span></span>
+<span class="line"><span>SC:=COUNT(SA,0);</span></span>
+<span class="line"><span>E1:=MIN(BARSLAST(REF(SA,1))+1,BN-1);</span></span>
+<span class="line"><span>E2:=MIN(E1+REF(E1,E1),BN-1);</span></span>
+<span class="line"><span>E3:=MIN(E2+REF(E1,E2),BN-1);</span></span>
+<span class="line"><span>ZG0:=MIN(SH,MIN(REF(SH,E1),REF(SH,E2)));</span></span>
+<span class="line"><span>ZD0:=MAX(SL,MAX(REF(SL,E1),REF(SL,E2)));</span></span>
+<span class="line"><span>ZC:=SA AND SC&gt;=4 AND SV AND REF(SV,E1)AND REF(SV,E2)AND ZG0&gt;ZD0;</span></span>
+<span class="line"><span>ZRESET:=SA AND(SV=0 OR(SC&gt;=4 AND(ZG0&lt;=ZD0 OR(REF(ZC,E1)AND(ZG0&lt;REF(ZD0,E1)OR ZD0&gt;REF(ZG0,E1))))));</span></span>
+<span class="line"><span>ZRANGE:=BARSLAST(ZRESET)+1;</span></span>
+<span class="line"><span>ZELIG:=ZC AND SC-VALUEWHEN(ZRESET,SC)&gt;=3;</span></span>
+<span class="line"><span>ZSTART:=ZELIG AND COUNT(ZELIG,ZRANGE)=1;</span></span>
+<span class="line"><span>ZID:=VALUEWHEN(ZSTART,BN);</span></span>
+<span class="line"><span>ZLEFT:=VALUEWHEN(ZSTART,BN-E3);</span></span>
+<span class="line"><span>ZGH:=VALUEWHEN(ZSTART,ZG0);</span></span>
+<span class="line"><span>ZDL:=VALUEWHEN(ZSTART,ZD0);</span></span>
+<span class="line"><span>ZSEE:=COUNT(ZSTART,ZRANGE)&gt;0;</span></span>
+<span class="line"><span>ZBAD:=SA AND ZSEE AND BN&gt;ZID AND(SV=0 OR SH&lt;ZDL OR SL&gt;ZGH);</span></span>
+<span class="line"><span>ZOK:=ZSEE AND COUNT(ZBAD,ZRANGE)=0;</span></span>
+<span class="line"><span>ZEND:=(ZBAD AND COUNT(ZBAD,ZRANGE)=1)OR(ZRESET AND REF(ZOK,1));</span></span>
+<span class="line"><span>ZMEM:=SA AND SV AND ZOK;</span></span>
+<span class="line"><span>ZNEXT:=IF(BN&lt;=CONST(VALUEWHEN(ZMEM,BN)),MIN(MAX(BARSNEXT(ZMEM),0),MAX(CONST(BN)-BN,0)),MAX(CONST(BN)-BN,0));</span></span>
+<span class="line"><span>ZFOUND:=REFX(ZMEM,ZNEXT);</span></span>
+<span class="line"><span>ZGROUP:=REFX(ZID,ZNEXT);</span></span>
+<span class="line"><span>ZFIRST:=REFX(ZLEFT,ZNEXT);</span></span>
+<span class="line"><span>ZSHOW:=SZ=1 AND ZFOUND AND BN&gt;=ZFIRST;</span></span>
+<span class="line"><span>ZEDGE:=ZSHOW AND(BN=ZFIRST OR ISLASTBAR OR REFX(ZSHOW,1)=0 OR REFX(ZGROUP,1)&lt;&gt;ZGROUP);</span></span>
+<span class="line"><span>ZPH:=IF(ZSHOW,REFX(ZGH,ZNEXT),DRAWNULL);</span></span>
+<span class="line"><span>ZPL:=IF(ZSHOW,REFX(ZDL,ZNEXT),DRAWNULL);</span></span>
+<span class="line"><span>ZG:DRAWLINE(ZSHOW AND BN=ZFIRST,ZPH,ZEDGE AND BN&lt;&gt;ZFIRST,ZPH,0),COLORCC66CC;</span></span>
+<span class="line"><span>ZD:DRAWLINE(ZSHOW AND BN=ZFIRST,ZPL,ZEDGE AND BN&lt;&gt;ZFIRST,ZPL,0),COLORCC66CC;</span></span>
+<span class="line"><span>ZFRAME:=ZEDGE AND ZG&gt;ZD AND ZG=ZPH AND ZD=ZPL;</span></span>
+<span class="line"><span>STICKLINE(ZFRAME,IF(ZFRAME,ZG,DRAWNULL),IF(ZFRAME,ZD,DRAWNULL),0.1,0),COLORCC66CC;</span></span></code></pre></div></details><p><span id="数据与使用边界"></span></p><p>通达信仅用于说明公式运行环境，与本产品无隶属或合作关系。</p><p><a href="/download/">安装说明</a> · <a href="/sites/">支持网站与周期</a> · <a href="/faq/chanlun-indicator">缠论自动画线软件怎么选</a></p><p>Struct Guide 用于结构识别、学习与复盘，不提供投资建议，不预测行情，也不承诺任何投资收益。</p></div></div></main><footer class="VPDocFooter" data-v-39a288b8 data-v-e257564d><!--[--><!--]--><!----><nav class="prev-next" aria-labelledby="doc-footer-aria-label" data-v-e257564d><span class="visually-hidden" id="doc-footer-aria-label" data-v-e257564d>分页</span><div class="pager" data-v-e257564d><!----></div><div class="pager" data-v-e257564d><a class="VPLink link pager-link next" href="/chanlun-videos" data-v-e257564d><!--[--><span class="desc" data-v-e257564d>下一页</span><span class="title" data-v-e257564d>缠论视频讲解</span><!--]--></a></div></nav></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><footer class="docs-site-footer"><div class="docs-site-footer-container"><div class="docs-site-footer-content"><div class="docs-site-footer-brand"><h4>Struct Guide</h4><strong>K线结构学习与复盘</strong><p>查阅工具参数、确认状态、安装与兼容说明。</p><p>Struct Guide 用于结构识别、学习与复盘，不提供投资建议，不预测行情，也不承诺任何投资收益。</p></div><div class="docs-site-footer-links"><h4>工具文档</h4><ul><li><a href="/faq/drawing-rules">画线规则</a></li><li><a href="/download/">安装插件</a></li></ul></div><div class="docs-site-footer-links"><h4>知识库</h4><ul><li><a href="/faq/">知识库</a></li><li><a href="/sites/">支持网站</a></li><li><a href="/who-its-for">适合谁</a></li><li><a href="/privacy">隐私政策</a></li><li><a href="/terms">用户协议</a></li></ul></div></div><div class="docs-site-footer-bottom">© 2026 Struct Guide. All rights reserved.</div></div></footer><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"boyi-chanlun-auto-drawing.md\":\"E4MWQcgj\",\"chanlun-auto-drawing.md\":\"Dm-pYRsf\",\"chanlun-videos.md\":\"Bhs22Q4S\",\"concept_central-zone.md\":\"Bu7sof3g\",\"concept_containment.md\":\"B0I8zP7D\",\"concept_fractal.md\":\"C2Plh0Wr\",\"concept_segment.md\":\"Cnp5HBD1\",\"concept_stroke.md\":\"DU-T0K7R\",\"download_index.md\":\"DU7UZU_d\",\"faq_chanlun-indicator.md\":\"CKyz1Sbr\",\"faq_drawing-rules.md\":\"BUxBjp9P\",\"faq_how-to-read-108.md\":\"DhyfNwGL\",\"faq_index.md\":\"1o7UT4Fh\",\"faq_tongdaxin-approx-chanlun-formula.md\":\"BcgHcwxH\",\"indicators_atr.md\":\"BgWGdRXz\",\"indicators_bias.md\":\"CEjEEuuW\",\"indicators_boll.md\":\"DHplBlOj\",\"indicators_cci.md\":\"ru82YT9_\",\"indicators_dmi-adx.md\":\"CcMNGJOB\",\"indicators_index.md\":\"CFlYay-u\",\"indicators_kdj.md\":\"CA4DrLM7\",\"indicators_ma-vs-ema.md\":\"nfp1bavT\",\"indicators_ma.md\":\"B2CmLkUO\",\"indicators_macd.md\":\"Dnw--aMd\",\"indicators_obv.md\":\"D_clO2PW\",\"indicators_psy.md\":\"D8e1wEBn\",\"indicators_roc.md\":\"B2cMDXmZ\",\"indicators_rsi.md\":\"BKkOE8LL\",\"indicators_vol.md\":\"BNcM1GMp\",\"indicators_vwap.md\":\"B7Ac5D-O\",\"indicators_wr.md\":\"-8zzZ2jV\",\"mt5-chanlun-auto-drawing.md\":\"4Kjtgwfx\",\"privacy.md\":\"D9Br-SHx\",\"sites_eastmoney.md\":\"BVrmBvei\",\"sites_index.md\":\"3BGdzeXs\",\"sites_moomoo.md\":\"B4lmA-LH\",\"sites_sina.md\":\"CV_dd9uY\",\"sites_tonghuashun.md\":\"DzKM3Ltz\",\"sites_tradingview.md\":\"BEnQfpUU\",\"sites_xueqiu.md\":\"1Ngb9eTz\",\"sites_xueqiu_boards.md\":\"qPl8Hi_S\",\"terms.md\":\"CgcsReyY\",\"tutorial_sina.md\":\"BIzeKVKE\",\"tutorial_tonghuashun.md\":\"DolLFhou\",\"tutorial_tradingview.md\":\"DUo2eP1D\",\"tutorial_xueqiu.md\":\"aemjxQBk\",\"wenhua-chanlun-auto-drawing.md\":\"rLDJQadC\",\"who-its-for.md\":\"CfiGnFmo\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"Struct Guide\",\"description\":\"Struct Guide 缠论助手是一款缠论自动画线浏览器插件，可直接在 TradingView、moomoo、同花顺、雪球等网页K线图上自动显示分型、笔、线段和中枢，用于结构观察与复盘。\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":false,\"themeConfig\":{\"logo\":{\"src\":\"/images/structguide-logo.png\",\"alt\":\"Struct Guide 缠论助手\"},\"siteTitle\":\"Struct Guide\",\"nav\":[{\"text\":\"首页\",\"link\":\"/\"},{\"text\":\"画线规则\",\"link\":\"/faq/drawing-rules\"},{\"text\":\"安装插件\",\"link\":\"/download/\"},{\"text\":\"知识库\",\"link\":\"/faq/\"},{\"text\":\"指标速查手册\",\"link\":\"/indicators/\"}],\"sidebar\":[{\"text\":\"工具文档\",\"items\":[{\"text\":\"缠论视频讲解\",\"link\":\"/chanlun-videos\"},{\"text\":\"画线规则\",\"collapsed\":false,\"items\":[{\"text\":\"参数总览\",\"link\":\"/faq/drawing-rules\"},{\"text\":\"K线包含关系\",\"link\":\"/concept/containment\"},{\"text\":\"分型\",\"link\":\"/concept/fractal\"},{\"text\":\"笔\",\"link\":\"/concept/stroke\"},{\"text\":\"线段\",\"link\":\"/concept/segment\"},{\"text\":\"中枢\",\"link\":\"/concept/central-zone\"}]},{\"text\":\"安装插件\",\"link\":\"/download/\"}]},{\"text\":\"知识库\",\"items\":[{\"text\":\"网站和软件总览\",\"link\":\"/faq/\"},{\"text\":\"TradingView\",\"link\":\"/faq/#tradingview\"},{\"text\":\"同花顺\",\"link\":\"/faq/#tonghuashun\"},{\"text\":\"东方财富\",\"link\":\"/faq/#eastmoney\"},{\"text\":\"雪球\",\"link\":\"/faq/#xueqiu\"},{\"text\":\"新浪财经\",\"link\":\"/faq/#sina\"},{\"text\":\"moomoo\",\"link\":\"/faq/#moomoo\"},{\"text\":\"通达信\",\"link\":\"/faq/#tongdaxin\"},{\"text\":\"文华财经\",\"link\":\"/faq/#wenhua\"},{\"text\":\"博易大师\",\"link\":\"/faq/#boyi\"},{\"text\":\"MT5\",\"link\":\"/faq/#mt5\"}]},{\"text\":\"常见指标速查手册\",\"items\":[{\"text\":\"指标计算原理总览\",\"link\":\"/indicators/\"},{\"text\":\"MA均线怎么算\",\"link\":\"/indicators/ma\"},{\"text\":\"MA和EMA的区别\",\"link\":\"/indicators/ma-vs-ema\"},{\"text\":\"MACD计算公式图解\",\"link\":\"/indicators/macd\"},{\"text\":\"BOLL布林带怎么算\",\"link\":\"/indicators/boll\"},{\"text\":\"KDJ计算公式图解\",\"link\":\"/indicators/kdj\"},{\"text\":\"RSI怎么算\",\"link\":\"/indicators/rsi\"},{\"text\":\"BIAS乖离率怎么算\",\"link\":\"/indicators/bias\"},{\"text\":\"ATR平均真实波幅怎么算\",\"link\":\"/indicators/atr\"},{\"text\":\"CCI 顺势指标（商品通道指数）\",\"link\":\"/indicators/cci\"},{\"text\":\"OBV 能量潮指标\",\"link\":\"/indicators/obv\"},{\"text\":\"VOL 成交量与均量线\",\"link\":\"/indicators/vol\"},{\"text\":\"VWAP 成交量加权平均价\",\"link\":\"/indicators/vwap\"},{\"text\":\"DMI与ADX计算图解\",\"link\":\"/indicators/dmi-adx\"},{\"text\":\"PSY心理线怎么算\",\"link\":\"/indicators/psy\"},{\"text\":\"ROC变动率怎么算\",\"link\":\"/indicators/roc\"},{\"text\":\"WR威廉指标怎么算\",\"link\":\"/indicators/wr\"}]},{\"text\":\"热门文章\",\"items\":[{\"text\":\"缠论自动画线软件怎么选\",\"link\":\"/faq/chanlun-indicator\"},{\"text\":\"108课原文阅读索引\",\"link\":\"/faq/how-to-read-108\"},{\"text\":\"缠论自动画线工具\",\"link\":\"/chanlun-auto-drawing\"},{\"text\":\"文华财经近似缠论公式\",\"link\":\"/wenhua-chanlun-auto-drawing\"},{\"text\":\"TradingView 使用教程\",\"link\":\"/tutorial/tradingview\"},{\"text\":\"支持的行情网站\",\"link\":\"/sites/\"}]}],\"outline\":{\"label\":\"本页目录\"},\"docFooter\":{\"prev\":\"上一页\",\"next\":\"下一页\"},\"returnToTopLabel\":\"返回顶部\",\"sidebarMenuLabel\":\"菜单\",\"skipToContentLabel\":\"跳到正文\"},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":true}");</script>
+    
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"7b8d13c7bcda4459bb6cbaabd579bfe3","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

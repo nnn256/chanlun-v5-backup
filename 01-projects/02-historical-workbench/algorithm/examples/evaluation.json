@@ -1,0 +1,102 @@
+{
+  "evaluation_mode": "ex_post_fixed_horizon_event_labels",
+  "horizon_unit": "bars",
+  "round_trip_bps": 20.0,
+  "labels": [
+    {
+      "signal_id": "third_sell:c0:19:197:509",
+      "signal_class": "third_sell_candidate",
+      "side": "sell",
+      "observed_at": 563,
+      "entry_index": 564,
+      "exit_index": 568,
+      "horizon_bars": 5,
+      "definition_mode": "signal_proxy",
+      "status": "labelled",
+      "entry_price": 71.01809830066249,
+      "exit_price": 71.66422734746533,
+      "gross_directional_return": -0.009098089955427824,
+      "hypothetical_return_after_constant_cost": -0.011098089955427824
+    },
+    {
+      "signal_id": "third_sell:c0:19:197:509",
+      "signal_class": "third_sell_candidate",
+      "side": "sell",
+      "observed_at": 563,
+      "entry_index": 564,
+      "exit_index": 583,
+      "horizon_bars": 20,
+      "definition_mode": "signal_proxy",
+      "status": "labelled",
+      "entry_price": 71.01809830066249,
+      "exit_price": 64.59687251334324,
+      "gross_directional_return": 0.09041675208105848,
+      "hypothetical_return_after_constant_cost": 0.08841675208105848
+    },
+    {
+      "signal_id": "third_sell:c0:19:197:509",
+      "signal_class": "third_sell_candidate",
+      "side": "sell",
+      "observed_at": 563,
+      "entry_index": 564,
+      "exit_index": 623,
+      "horizon_bars": 60,
+      "definition_mode": "signal_proxy",
+      "status": "labelled",
+      "entry_price": 71.01809830066249,
+      "exit_price": 66.50406315241746,
+      "gross_directional_return": 0.06356175758374139,
+      "hypothetical_return_after_constant_cost": 0.06156175758374138
+    }
+  ],
+  "summary": [
+    {
+      "horizon_bars": 5,
+      "side": "buy",
+      "n": 0,
+      "mean_directional_return": null,
+      "positive_fraction": null
+    },
+    {
+      "horizon_bars": 5,
+      "side": "sell",
+      "n": 1,
+      "mean_directional_return": -0.009098089955427824,
+      "positive_fraction": 0.0
+    },
+    {
+      "horizon_bars": 20,
+      "side": "buy",
+      "n": 0,
+      "mean_directional_return": null,
+      "positive_fraction": null
+    },
+    {
+      "horizon_bars": 20,
+      "side": "sell",
+      "n": 1,
+      "mean_directional_return": 0.09041675208105848,
+      "positive_fraction": 1.0
+    },
+    {
+      "horizon_bars": 60,
+      "side": "buy",
+      "n": 0,
+      "mean_directional_return": null,
+      "positive_fraction": null
+    },
+    {
+      "horizon_bars": 60,
+      "side": "sell",
+      "n": 1,
+      "mean_directional_return": 0.06356175758374139,
+      "positive_fraction": 1.0
+    }
+  ],
+  "execution_allowed": false,
+  "limitations": [
+    "Next-bar-open fill is hypothetical; price limits, suspensions, T+1, lending and slippage are not simulated.",
+    "Signals can overlap; these are event labels, not portfolio returns or evidence of profitable performance.",
+    "Future bars are used only here to label outcomes; signal generation uses prefix inputs."
+  ]
+}

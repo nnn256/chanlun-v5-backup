@@ -1,0 +1,79 @@
+{
+  "thread_id": "01a1a7f3-80e6-7283-826a-e2aa51f6fa26",
+  "snapshot_started_utc": "2026-11-17T16:15:23.327+00:00",
+  "scope": "Selected thread's recoverable user-visible items only",
+  "excluded": [
+    "assistant analysis and reasoning",
+    "system/developer messages",
+    "raw rollouts",
+    "compaction/context snapshots",
+    "other thread contents",
+    "global Codex state/auth"
+  ],
+  "sources": [
+    {
+      "kind": "capped_rollout",
+      "file": "rollout-2026-11-05T03-05-15-01a1a7f3-80e6-7283-826a-e2aa51f6fa26.jsonl",
+      "byte_cap": 8473343,
+      "session_meta_id_verified": true,
+      "history_base": null
+    },
+    {
+      "kind": "capped_rollout",
+      "file": "rollout-2026-11-13T18-49-37-01a1a7f3-80e6-7283-826a-e2aa51f6fa26_01a1d486-f73c-7190-8dc1-1a55db05c978.jsonl",
+      "byte_cap": 20277558,
+      "session_meta_id_verified": true,
+      "history_base": {
+        "thread_id": "01a1a7f3-80e6-7283-826a-e2aa51f6fa26",
+        "end_ordinal_exclusive": 2256,
+        "end_byte_offset": 8467846
+      }
+    },
+    {
+      "kind": "thread_history_projection",
+      "thread_id": "01a1a7f3-80e6-7283-826a-e2aa51f6fa26",
+      "snapshot_read_transaction": true,
+      "scoped_rows": 693
+    }
+  ],
+  "skipped": {
+    "reasoning": 232,
+    "instruction_message": 43,
+    "Reasoning": 1109,
+    "raw_reasoning": 1111,
+    "automatic_user_context": 11,
+    "raw_agent_message": 178,
+    "compaction_snapshot": 1,
+    "ContextCompaction": 1,
+    "duplicate_user_response": 49
+  },
+  "redactions": {
+    "private_key": 0,
+    "github_token": 0,
+    "api_token": 0,
+    "bearer": 0,
+    "credential_url": 1,
+    "assigned_secret": 0
+  },
+  "warnings": [],
+  "supplemental_user_messages": 2,
+  "first_visible_timestamp_utc": "2026-11-04T19:06:37.698Z",
+  "last_visible_timestamp_utc": "2026-11-17T16:15:22.641Z",
+  "exported_counts": {
+    "userMessage": 51,
+    "agentMessage": 360,
+    "commandExecution": 674,
+    "fileChange": 155,
+    "imageView": 26,
+    "subAgentActivity": 117,
+    "collabAgentToolCall": 8,
+    "extension": 3
+  },
+  "exported_items": 1394,
+  "markdown_parts": 3,
+  "jsonl_parts": 3,
+  "copied_user_attachments": 4,
+  "missing_attachment_references": 0,
+  "snapshot_completed_utc": "2026-11-17T16:15:25.070+00:00",
+  "completeness": "All recognized visible UI items in the selected thread's verified local rollout snapshots plus its scoped UI projection, with missing raw user messages supplemented. Messages after the recorded byte caps and inaccessible attachments are outside this snapshot."
+}

@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "archive": "D:\\缠论V5\\releases\\20261115\\ChanlunV5-20261115-FULL.zip",
+  "archive_bytes": 5365441521,
+  "archive_sha256": "94f8db0aea9c8b87e3007761fae82677d691216cfc6c7fb8667ab609f0751baa",
+  "file_count": 26381,
+  "source_manifest_verified_after_extraction": true,
+  "zip_crc": "pass",
+  "isolated_extracted_verification": {
+    "python_tests": [
+      "",
+      "OK"
+    ],
+    "workbench": "pass",
+    "health_profile": "course_feature_sequence_recursive_v2",
+    "computed": 5224,
+    "symbol": "sh600000",
+    "max_rank": 8,
+    "daily_bars": 6427,
+    "chart_asset_bytes": 197922,
+    "original_kline_audit": "matched",
+    "provider_response_audit": "hash_and_ohlcv_matched"
+  },
+  "excluded_workspace_backups": true
+}

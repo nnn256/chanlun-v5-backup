@@ -1,0 +1,15 @@
+{
+  "token": "0ac66799-c3d9-4a48-ba38-a2818ea09470",
+  "purpose": "drain native runner for resource-adaptive scheduler update",
+  "requested_at": "2026-11-17T15:52:48.217316+08:00",
+  "counts_before": {
+    "pending": 1,
+    "running": 1,
+    "verified": 610,
+    "waiting_source": 10546
+  },
+  "manifest_sha256": "37df74ce011f12abf0be27dd614fcf0f00ea4939c3f5ccd27a92b9bfd1a875fe",
+  "owned_stop_path": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\analysis\\STOP",
+  "frozen_code_modified": false,
+  "database_rebuilt": false
+}

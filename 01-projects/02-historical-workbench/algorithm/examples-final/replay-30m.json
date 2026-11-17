@@ -1,0 +1,1578 @@
+{
+  "schema_version": "1.0",
+  "mode": "structure_proxy",
+  "definition_profile": "structguide_documented_research_v1",
+  "as_of": 39,
+  "as_of_time": "2026-01-01T20:00:00+00:00",
+  "input_bars": 40,
+  "trade_level": "30m",
+  "review_level": "missing",
+  "confirm_level": "missing",
+  "trigger_level": "missing",
+  "config": {
+    "stroke_mode": "loose",
+    "price_decimals": 8,
+    "max_depth": 3,
+    "second_policy": "original_101",
+    "third_boundary": "strict_outside",
+    "macd_fast": 12,
+    "macd_slow": 26,
+    "macd_signal": 9,
+    "macd_multiplier": 1.0
+  },
+  "definition_mode": "structure_proxy",
+  "structure_completeness": "documented_base_chain_with_explicit_recursive_and_signal_proxies",
+  "approximation_loss": [
+    "Feature-sequence implementation is checked against published numerical examples; plugin source/output equivalence is not proven.",
+    "Higher layers recursively segment movements; they are a segment-recursion proxy, not proven recursive sublevel trend types.",
+    "MACD force and first/second/third points remain research candidates requiring separate lower-level evidence.",
+    "The raw timeframe label does not by itself establish a theoretical Chan level."
+  ],
+  "merged": [
+    {
+      "start": 0,
+      "end": 0,
+      "basis_at": 0,
+      "high": 113.2273618,
+      "low": 99.8,
+      "high_source": 0,
+      "low_source": 0,
+      "open": 100.0,
+      "close": 113.0273618,
+      "closed": true,
+      "components": [
+        0
+      ],
+      "index": 0,
+      "id": "k:0:0",
+      "available_at": 0,
+      "confirmed_at": null,
+      "source_range": [
+        0,
+        0
+      ],
+      "first_seen_at": 0,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 1,
+      "end": 1,
+      "basis_at": 1,
+      "high": 120.66131592,
+      "low": 113.72959129,
+      "high_source": 1,
+      "low_source": 1,
+      "open": 113.92959129,
+      "close": 116.53105512,
+      "closed": true,
+      "components": [
+        1
+      ],
+      "index": 1,
+      "id": "k:1:1",
+      "available_at": 1,
+      "confirmed_at": null,
+      "source_range": [
+        1,
+        1
+      ],
+      "first_seen_at": 1,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 2,
+      "end": 2,
+      "basis_at": 2,
+      "high": 120.57702581,
+      "low": 111.26819284,
+      "high_source": 2,
+      "low_source": 2,
+      "open": 116.93660552,
+      "close": 111.55421457,
+      "closed": true,
+      "components": [
+        2
+      ],
+      "index": 2,
+      "id": "k:2:2",
+      "available_at": 2,
+      "confirmed_at": null,
+      "source_range": [
+        2,
+        2
+      ],
+      "first_seen_at": 2,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 3,
+      "end": 3,
+      "basis_at": 3,
+      "high": 115.91395156,
+      "low": 110.09724568,
+      "high_source": 3,
+      "low_source": 3,
+      "open": 111.74889536,
+      "close": 110.63321553,
+      "closed": true,
+      "components": [
+        3
+      ],
+      "index": 3,
+      "id": "k:3:3",
+      "available_at": 3,
+      "confirmed_at": null,
+      "source_range": [
+        3,
+        3
+      ],
+      "first_seen_at": 3,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 4,
+      "end": 4,
+      "basis_at": 4,
+      "high": 120.91622731,
+      "low": 110.79704439,
+      "high_source": 4,
+      "low_source": 4,
+      "open": 110.99704439,
+      "close": 120.37803641,
+      "closed": true,
+      "components": [
+        4
+      ],
+      "index": 4,
+      "id": "k:4:4",
+      "available_at": 4,
+      "confirmed_at": null,
+      "source_range": [
+        4,
+        4
+      ],
+      "first_seen_at": 4,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 5,
+      "end": 5,
+      "basis_at": 5,
+      "high": 134.43003353,
+      "low": 120.65773066,
+      "high_source": 5,
+      "low_source": 5,
+      "open": 120.85773066,
+      "close": 132.8067472,
+      "closed": true,
+      "components": [
+        5
+      ],
+      "index": 5,
+      "id": "k:5:5",
+      "available_at": 5,
+      "confirmed_at": null,
+      "source_range": [
+        5,
+        5
+      ],
+      "first_seen_at": 5,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 6,
+      "end": 6,
+      "basis_at": 6,
+      "high": 141.77076278,
+      "low": 132.7568317,
+      "high_source": 6,
+      "low_source": 6,
+      "open": 132.9568317,
+      "close": 135.32469835,
+      "closed": true,
+      "components": [
+        6
+      ],
+      "index": 6,
+      "id": "k:6:6",
+      "available_at": 6,
+      "confirmed_at": null,
+      "source_range": [
+        6,
+        6
+      ],
+      "first_seen_at": 6,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 7,
+      "end": 7,
+      "basis_at": 7,
+      "high": 136.44196307,
+      "low": 126.43099214,
+      "high_source": 7,
+      "low_source": 7,
+      "open": 134.86667513,
+      "close": 126.63099214,
+      "closed": true,
+      "components": [
+        7
+      ],
+      "index": 7,
+      "id": "k:7:7",
+      "available_at": 7,
+      "confirmed_at": null,
+      "source_range": [
+        7,
+        7
+      ],
+      "first_seen_at": 7,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 8,
+      "end": 8,
+      "basis_at": 8,
+      "high": 126.01798645,
+      "low": 118.07457161,
+      "high_source": 8,
+      "low_source": 8,
+      "open": 125.81798645,
+      "close": 118.27457161,
+      "closed": true,
+      "components": [
+        8
+      ],
+      "index": 8,
+      "id": "k:8:8",
+      "available_at": 8,
+      "confirmed_at": null,
+      "source_range": [
+        8,
+        8
+      ],
+      "first_seen_at": 8,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 9,
+      "end": 9,
+      "basis_at": 9,
+      "high": 122.21967512,
+      "low": 115.50702583,
+      "high_source": 9,
+      "low_source": 9,
+      "open": 117.59555521,
+      "close": 119.88141748,
+      "closed": true,
+      "components": [
+        9
+      ],
+      "index": 9,
+      "id": "k:9:9",
+      "available_at": 9,
+      "confirmed_at": null,
+      "source_range": [
+        9,
+        9
+      ],
+      "first_seen_at": 9,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 10,
+      "end": 10,
+      "basis_at": 10,
+      "high": 128.50148973,
+      "low": 118.30510204,
+      "high_source": 10,
+      "low_source": 10,
+      "open": 119.48002505,
+      "close": 126.89629117,
+      "closed": true,
+      "components": [
+        10
+      ],
+      "index": 10,
+      "id": "k:10:10",
+      "available_at": 10,
+      "confirmed_at": null,
+      "source_range": [
+        10,
+        10
+      ],
+      "first_seen_at": 10,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 11,
+      "end": 11,
+      "basis_at": 11,
+      "high": 129.67257435,
+      "low": 124.06205596,
+      "high_source": 11,
+      "low_source": 11,
+      "open": 126.44208417,
+      "close": 126.47333718,
+      "closed": true,
+      "components": [
+        11
+      ],
+      "index": 11,
+      "id": "k:11:11",
+      "available_at": 11,
+      "confirmed_at": null,
+      "source_range": [
+        11,
+        11
+      ],
+      "first_seen_at": 11,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 12,
+      "end": 12,
+      "basis_at": 12,
+      "high": 125.84549555,
+      "low": 113.80227776,
+      "high_source": 12,
+      "low_source": 12,
+      "open": 125.64549555,
+      "close": 114.00227776,
+      "closed": true,
+      "components": [
+        12
+      ],
+      "index": 12,
+      "id": "k:12:12",
+      "available_at": 12,
+      "confirmed_at": null,
+      "source_range": [
+        12,
+        12
+      ],
+      "first_seen_at": 12,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 13,
+      "end": 13,
+      "basis_at": 13,
+      "high": 113.16413313,
+      "low": 98.99074351,
+      "high_source": 13,
+      "low_source": 13,
+      "open": 112.96413313,
+      "close": 99.19074351,
+      "closed": true,
+      "components": [
+        13
+      ],
+      "index": 13,
+      "id": "k:13:13",
+      "available_at": 13,
+      "confirmed_at": null,
+      "source_range": [
+        13,
+        13
+      ],
+      "first_seen_at": 13,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 14,
+      "end": 14,
+      "basis_at": 14,
+      "high": 98.6450679,
+      "low": 89.32121922,
+      "high_source": 14,
+      "low_source": 14,
+      "open": 98.4450679,
+      "close": 93.93935663,
+      "closed": true,
+      "components": [
+        14
+      ],
+      "index": 14,
+      "id": "k:14:14",
+      "available_at": 14,
+      "confirmed_at": null,
+      "source_range": [
+        14,
+        14
+      ],
+      "first_seen_at": 14,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 15,
+      "end": 15,
+      "basis_at": 15,
+      "high": 97.66287749,
+      "low": 88.93116259,
+      "high_source": 15,
+      "low_source": 15,
+      "open": 93.74423309,
+      "close": 97.46287749,
+      "closed": true,
+      "components": [
+        15
+      ],
+      "index": 15,
+      "id": "k:15:15",
+      "available_at": 15,
+      "confirmed_at": null,
+      "source_range": [
+        15,
+        15
+      ],
+      "first_seen_at": 15,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 16,
+      "end": 16,
+      "basis_at": 16,
+      "high": 97.82030182,
+      "low": 92.60552384,
+      "high_source": 16,
+      "low_source": 16,
+      "open": 97.54892197,
+      "close": 97.62030182,
+      "closed": true,
+      "components": [
+        16
+      ],
+      "index": 16,
+      "id": "k:16:16",
+      "available_at": 16,
+      "confirmed_at": null,
+      "source_range": [
+        16,
+        16
+      ],
+      "first_seen_at": 16,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 17,
+      "end": 17,
+      "basis_at": 17,
+      "high": 97.76657101,
+      "low": 86.00413441,
+      "high_source": 17,
+      "low_source": 17,
+      "open": 97.56657101,
+      "close": 86.74370157,
+      "closed": true,
+      "components": [
+        17
+      ],
+      "index": 17,
+      "id": "k:17:17",
+      "available_at": 17,
+      "confirmed_at": null,
+      "source_range": [
+        17,
+        17
+      ],
+      "first_seen_at": 17,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 18,
+      "end": 18,
+      "basis_at": 18,
+      "high": 86.73072677,
+      "low": 70.66507651,
+      "high_source": 18,
+      "low_source": 18,
+      "open": 86.53072677,
+      "close": 71.76406074,
+      "closed": true,
+      "components": [
+        18
+      ],
+      "index": 18,
+      "id": "k:18:18",
+      "available_at": 18,
+      "confirmed_at": null,
+      "source_range": [
+        18,
+        18
+      ],
+      "first_seen_at": 18,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 19,
+      "end": 20,
+      "basis_at": 20,
+      "high": 71.57293013,
+      "low": 61.5059498,
+      "high_source": 20,
+      "low_source": 19,
+      "open": 71.79783328,
+      "close": 71.37293013,
+      "closed": true,
+      "components": [
+        19,
+        20
+      ],
+      "index": 19,
+      "id": "k:19:20",
+      "available_at": 20,
+      "confirmed_at": null,
+      "source_range": [
+        19,
+        20
+      ],
+      "first_seen_at": 20,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 21,
+      "end": 21,
+      "basis_at": 21,
+      "high": 78.23544287,
+      "low": 72.0689416,
+      "high_source": 21,
+      "low_source": 21,
+      "open": 72.2689416,
+      "close": 78.03544287,
+      "closed": true,
+      "components": [
+        21
+      ],
+      "index": 20,
+      "id": "k:21:21",
+      "available_at": 21,
+      "confirmed_at": null,
+      "source_range": [
+        21,
+        21
+      ],
+      "first_seen_at": 21,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 22,
+      "end": 22,
+      "basis_at": 22,
+      "high": 82.24089317,
+      "low": 74.36371071,
+      "high_source": 22,
+      "low_source": 22,
+      "open": 78.74787058,
+      "close": 75.29828679,
+      "closed": true,
+      "components": [
+        22
+      ],
+      "index": 21,
+      "id": "k:22:22",
+      "available_at": 22,
+      "confirmed_at": null,
+      "source_range": [
+        22,
+        22
+      ],
+      "first_seen_at": 22,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 23,
+      "end": 23,
+      "basis_at": 23,
+      "high": 77.47643749,
+      "low": 66.03179174,
+      "high_source": 23,
+      "low_source": 23,
+      "open": 75.63353427,
+      "close": 66.48407065,
+      "closed": true,
+      "components": [
+        23
+      ],
+      "index": 22,
+      "id": "k:23:23",
+      "available_at": 23,
+      "confirmed_at": null,
+      "source_range": [
+        23,
+        23
+      ],
+      "first_seen_at": 23,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 24,
+      "end": 24,
+      "basis_at": 24,
+      "high": 69.70817997,
+      "low": 63.27928301,
+      "high_source": 24,
+      "low_source": 24,
+      "open": 66.7477169,
+      "close": 64.43506931,
+      "closed": true,
+      "components": [
+        24
+      ],
+      "index": 23,
+      "id": "k:24:24",
+      "available_at": 24,
+      "confirmed_at": null,
+      "source_range": [
+        24,
+        24
+      ],
+      "first_seen_at": 24,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 25,
+      "end": 25,
+      "basis_at": 25,
+      "high": 75.29128227,
+      "low": 64.78565474,
+      "high_source": 25,
+      "low_source": 25,
+      "open": 64.98565474,
+      "close": 75.09128227,
+      "closed": true,
+      "components": [
+        25
+      ],
+      "index": 24,
+      "id": "k:25:25",
+      "available_at": 25,
+      "confirmed_at": null,
+      "source_range": [
+        25,
+        25
+      ],
+      "first_seen_at": 25,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 26,
+      "end": 26,
+      "basis_at": 26,
+      "high": 89.98559593,
+      "low": 75.6314231,
+      "high_source": 26,
+      "low_source": 26,
+      "open": 75.8314231,
+      "close": 89.78559593,
+      "closed": true,
+      "components": [
+        26
+      ],
+      "index": 25,
+      "id": "k:26:26",
+      "available_at": 26,
+      "confirmed_at": null,
+      "source_range": [
+        26,
+        26
+      ],
+      "first_seen_at": 26,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 27,
+      "end": 27,
+      "basis_at": 27,
+      "high": 100.86511599,
+      "low": 90.0433457,
+      "high_source": 27,
+      "low_source": 27,
+      "open": 90.2433457,
+      "close": 96.08604502,
+      "closed": true,
+      "components": [
+        27
+      ],
+      "index": 26,
+      "id": "k:27:27",
+      "available_at": 27,
+      "confirmed_at": null,
+      "source_range": [
+        27,
+        27
+      ],
+      "first_seen_at": 27,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 28,
+      "end": 28,
+      "basis_at": 28,
+      "high": 101.02529779,
+      "low": 93.16669968,
+      "high_source": 28,
+      "low_source": 28,
+      "open": 95.98591148,
+      "close": 93.36669968,
+      "closed": true,
+      "components": [
+        28
+      ],
+      "index": 27,
+      "id": "k:28:28",
+      "available_at": 28,
+      "confirmed_at": null,
+      "source_range": [
+        28,
+        28
+      ],
+      "first_seen_at": 28,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 29,
+      "end": 29,
+      "basis_at": 29,
+      "high": 97.5885943,
+      "low": 92.27218613,
+      "high_source": 29,
+      "low_source": 29,
+      "open": 92.96425691,
+      "close": 93.26242361,
+      "closed": true,
+      "components": [
+        29
+      ],
+      "index": 28,
+      "id": "k:29:29",
+      "available_at": 29,
+      "confirmed_at": null,
+      "source_range": [
+        29,
+        29
+      ],
+      "first_seen_at": 29,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 30,
+      "end": 30,
+      "basis_at": 30,
+      "high": 105.07216033,
+      "low": 92.66744415,
+      "high_source": 30,
+      "low_source": 30,
+      "open": 93.01676706,
+      "close": 104.44363344,
+      "closed": true,
+      "components": [
+        30
+      ],
+      "index": 29,
+      "id": "k:30:30",
+      "available_at": 30,
+      "confirmed_at": null,
+      "source_range": [
+        30,
+        30
+      ],
+      "first_seen_at": 30,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 31,
+      "end": 31,
+      "basis_at": 31,
+      "high": 121.68542162,
+      "low": 104.24512751,
+      "high_source": 31,
+      "low_source": 31,
+      "open": 104.44512751,
+      "close": 121.14640437,
+      "closed": true,
+      "components": [
+        31
+      ],
+      "index": 30,
+      "id": "k:31:31",
+      "available_at": 31,
+      "confirmed_at": null,
+      "source_range": [
+        31,
+        31
+      ],
+      "first_seen_at": 31,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 32,
+      "end": 33,
+      "basis_at": 33,
+      "high": 132.2847945,
+      "low": 126.42883443,
+      "high_source": 32,
+      "low_source": 33,
+      "open": 121.0280459,
+      "close": 127.07260772,
+      "closed": true,
+      "components": [
+        32,
+        33
+      ],
+      "index": 31,
+      "id": "k:32:33",
+      "available_at": 33,
+      "confirmed_at": null,
+      "source_range": [
+        32,
+        33
+      ],
+      "first_seen_at": 33,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 34,
+      "end": 34,
+      "basis_at": 34,
+      "high": 126.45764156,
+      "low": 120.04308057,
+      "high_source": 34,
+      "low_source": 34,
+      "open": 126.25764156,
+      "close": 121.86884745,
+      "closed": true,
+      "components": [
+        34
+      ],
+      "index": 32,
+      "id": "k:34:34",
+      "available_at": 34,
+      "confirmed_at": null,
+      "source_range": [
+        34,
+        34
+      ],
+      "first_seen_at": 34,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 35,
+      "end": 35,
+      "basis_at": 35,
+      "high": 125.77311989,
+      "low": 116.61595653,
+      "high_source": 35,
+      "low_source": 35,
+      "open": 121.29446093,
+      "close": 125.55723257,
+      "closed": true,
+      "components": [
+        35
+      ],
+      "index": 33,
+      "id": "k:35:35",
+      "available_at": 35,
+      "confirmed_at": null,
+      "source_range": [
+        35,
+        35
+      ],
+      "first_seen_at": 35,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 36,
+      "end": 36,
+      "basis_at": 36,
+      "high": 136.30071785,
+      "low": 123.45396597,
+      "high_source": 36,
+      "low_source": 36,
+      "open": 125.45173121,
+      "close": 136.10071785,
+      "closed": true,
+      "components": [
+        36
+      ],
+      "index": 34,
+      "id": "k:36:36",
+      "available_at": 36,
+      "confirmed_at": null,
+      "source_range": [
+        36,
+        36
+      ],
+      "first_seen_at": 36,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 37,
+      "end": 37,
+      "basis_at": 37,
+      "high": 141.03019178,
+      "low": 133.5213819,
+      "high_source": 37,
+      "low_source": 37,
+      "open": 136.17439353,
+      "close": 140.81525181,
+      "closed": true,
+      "components": [
+        37
+      ],
+      "index": 35,
+      "id": "k:37:37",
+      "available_at": 37,
+      "confirmed_at": null,
+      "source_range": [
+        37,
+        37
+      ],
+      "first_seen_at": 37,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 38,
+      "end": 38,
+      "basis_at": 38,
+      "high": 140.86491461,
+      "low": 131.39225487,
+      "high_source": 38,
+      "low_source": 38,
+      "open": 140.66491461,
+      "close": 132.49547767,
+      "closed": true,
+      "components": [
+        38
+      ],
+      "index": 36,
+      "id": "k:38:38",
+      "available_at": 38,
+      "confirmed_at": null,
+      "source_range": [
+        38,
+        38
+      ],
+      "first_seen_at": 38,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "start": 39,
+      "end": 39,
+      "basis_at": 39,
+      "high": 132.34263692,
+      "low": 117.56065595,
+      "high_source": 39,
+      "low_source": 39,
+      "open": 132.14263692,
+      "close": 118.65216752,
+      "closed": true,
+      "components": [
+        39
+      ],
+      "index": 37,
+      "id": "k:39:39",
+      "available_at": 39,
+      "confirmed_at": null,
+      "source_range": [
+        39,
+        39
+      ],
+      "first_seen_at": 39,
+      "first_confirmed_at": null,
+      "revision": 0
+    }
+  ],
+  "fractals": [
+    {
+      "id": "f:top:1",
+      "kind": "top",
+      "merged_index": 1,
+      "source": 1,
+      "price": 120.66131592,
+      "center_high": 120.66131592,
+      "center_low": 113.72959129,
+      "group_start": 1,
+      "group_end": 1,
+      "basis_at": 2,
+      "state": "closed_basis",
+      "components": [
+        "k:0:0",
+        "k:1:1",
+        "k:2:2"
+      ],
+      "rule": "F01",
+      "available_at": 2,
+      "confirmed_at": null,
+      "source_range": [
+        1,
+        1
+      ],
+      "first_seen_at": 2,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:bottom:3",
+      "kind": "bottom",
+      "merged_index": 3,
+      "source": 3,
+      "price": 110.09724568,
+      "center_high": 115.91395156,
+      "center_low": 110.09724568,
+      "group_start": 3,
+      "group_end": 3,
+      "basis_at": 4,
+      "state": "closed_basis",
+      "components": [
+        "k:2:2",
+        "k:3:3",
+        "k:4:4"
+      ],
+      "rule": "F01",
+      "available_at": 4,
+      "confirmed_at": null,
+      "source_range": [
+        3,
+        3
+      ],
+      "first_seen_at": 4,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:top:6",
+      "kind": "top",
+      "merged_index": 6,
+      "source": 6,
+      "price": 141.77076278,
+      "center_high": 141.77076278,
+      "center_low": 132.7568317,
+      "group_start": 6,
+      "group_end": 6,
+      "basis_at": 7,
+      "state": "closed_basis",
+      "components": [
+        "k:5:5",
+        "k:6:6",
+        "k:7:7"
+      ],
+      "rule": "F01",
+      "available_at": 7,
+      "confirmed_at": null,
+      "source_range": [
+        6,
+        6
+      ],
+      "first_seen_at": 7,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:bottom:9",
+      "kind": "bottom",
+      "merged_index": 9,
+      "source": 9,
+      "price": 115.50702583,
+      "center_high": 122.21967512,
+      "center_low": 115.50702583,
+      "group_start": 9,
+      "group_end": 9,
+      "basis_at": 10,
+      "state": "closed_basis",
+      "components": [
+        "k:8:8",
+        "k:9:9",
+        "k:10:10"
+      ],
+      "rule": "F01",
+      "available_at": 10,
+      "confirmed_at": null,
+      "source_range": [
+        9,
+        9
+      ],
+      "first_seen_at": 10,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:top:11",
+      "kind": "top",
+      "merged_index": 11,
+      "source": 11,
+      "price": 129.67257435,
+      "center_high": 129.67257435,
+      "center_low": 124.06205596,
+      "group_start": 11,
+      "group_end": 11,
+      "basis_at": 12,
+      "state": "closed_basis",
+      "components": [
+        "k:10:10",
+        "k:11:11",
+        "k:12:12"
+      ],
+      "rule": "F01",
+      "available_at": 12,
+      "confirmed_at": null,
+      "source_range": [
+        11,
+        11
+      ],
+      "first_seen_at": 12,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:bottom:15",
+      "kind": "bottom",
+      "merged_index": 15,
+      "source": 15,
+      "price": 88.93116259,
+      "center_high": 97.66287749,
+      "center_low": 88.93116259,
+      "group_start": 15,
+      "group_end": 15,
+      "basis_at": 16,
+      "state": "closed_basis",
+      "components": [
+        "k:14:14",
+        "k:15:15",
+        "k:16:16"
+      ],
+      "rule": "F01",
+      "available_at": 16,
+      "confirmed_at": null,
+      "source_range": [
+        15,
+        15
+      ],
+      "first_seen_at": 16,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:top:16",
+      "kind": "top",
+      "merged_index": 16,
+      "source": 16,
+      "price": 97.82030182,
+      "center_high": 97.82030182,
+      "center_low": 92.60552384,
+      "group_start": 16,
+      "group_end": 16,
+      "basis_at": 17,
+      "state": "closed_basis",
+      "components": [
+        "k:15:15",
+        "k:16:16",
+        "k:17:17"
+      ],
+      "rule": "F01",
+      "available_at": 17,
+      "confirmed_at": null,
+      "source_range": [
+        16,
+        16
+      ],
+      "first_seen_at": 17,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:bottom:19",
+      "kind": "bottom",
+      "merged_index": 19,
+      "source": 19,
+      "price": 61.5059498,
+      "center_high": 71.57293013,
+      "center_low": 61.5059498,
+      "group_start": 19,
+      "group_end": 20,
+      "basis_at": 21,
+      "state": "closed_basis",
+      "components": [
+        "k:18:18",
+        "k:19:20",
+        "k:21:21"
+      ],
+      "rule": "F01",
+      "available_at": 21,
+      "confirmed_at": null,
+      "source_range": [
+        19,
+        19
+      ],
+      "first_seen_at": 21,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:top:22",
+      "kind": "top",
+      "merged_index": 21,
+      "source": 22,
+      "price": 82.24089317,
+      "center_high": 82.24089317,
+      "center_low": 74.36371071,
+      "group_start": 22,
+      "group_end": 22,
+      "basis_at": 23,
+      "state": "closed_basis",
+      "components": [
+        "k:21:21",
+        "k:22:22",
+        "k:23:23"
+      ],
+      "rule": "F01",
+      "available_at": 23,
+      "confirmed_at": null,
+      "source_range": [
+        22,
+        22
+      ],
+      "first_seen_at": 23,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:bottom:24",
+      "kind": "bottom",
+      "merged_index": 23,
+      "source": 24,
+      "price": 63.27928301,
+      "center_high": 69.70817997,
+      "center_low": 63.27928301,
+      "group_start": 24,
+      "group_end": 24,
+      "basis_at": 25,
+      "state": "closed_basis",
+      "components": [
+        "k:23:23",
+        "k:24:24",
+        "k:25:25"
+      ],
+      "rule": "F01",
+      "available_at": 25,
+      "confirmed_at": null,
+      "source_range": [
+        24,
+        24
+      ],
+      "first_seen_at": 25,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:top:28",
+      "kind": "top",
+      "merged_index": 27,
+      "source": 28,
+      "price": 101.02529779,
+      "center_high": 101.02529779,
+      "center_low": 93.16669968,
+      "group_start": 28,
+      "group_end": 28,
+      "basis_at": 29,
+      "state": "closed_basis",
+      "components": [
+        "k:27:27",
+        "k:28:28",
+        "k:29:29"
+      ],
+      "rule": "F01",
+      "available_at": 29,
+      "confirmed_at": null,
+      "source_range": [
+        28,
+        28
+      ],
+      "first_seen_at": 29,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:bottom:29",
+      "kind": "bottom",
+      "merged_index": 28,
+      "source": 29,
+      "price": 92.27218613,
+      "center_high": 97.5885943,
+      "center_low": 92.27218613,
+      "group_start": 29,
+      "group_end": 29,
+      "basis_at": 30,
+      "state": "closed_basis",
+      "components": [
+        "k:28:28",
+        "k:29:29",
+        "k:30:30"
+      ],
+      "rule": "F01",
+      "available_at": 30,
+      "confirmed_at": null,
+      "source_range": [
+        29,
+        29
+      ],
+      "first_seen_at": 30,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:top:32",
+      "kind": "top",
+      "merged_index": 31,
+      "source": 32,
+      "price": 132.2847945,
+      "center_high": 132.2847945,
+      "center_low": 126.42883443,
+      "group_start": 32,
+      "group_end": 33,
+      "basis_at": 34,
+      "state": "closed_basis",
+      "components": [
+        "k:31:31",
+        "k:32:33",
+        "k:34:34"
+      ],
+      "rule": "F01",
+      "available_at": 34,
+      "confirmed_at": null,
+      "source_range": [
+        32,
+        32
+      ],
+      "first_seen_at": 34,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:bottom:35",
+      "kind": "bottom",
+      "merged_index": 33,
+      "source": 35,
+      "price": 116.61595653,
+      "center_high": 125.77311989,
+      "center_low": 116.61595653,
+      "group_start": 35,
+      "group_end": 35,
+      "basis_at": 36,
+      "state": "closed_basis",
+      "components": [
+        "k:34:34",
+        "k:35:35",
+        "k:36:36"
+      ],
+      "rule": "F01",
+      "available_at": 36,
+      "confirmed_at": null,
+      "source_range": [
+        35,
+        35
+      ],
+      "first_seen_at": 36,
+      "first_confirmed_at": null,
+      "revision": 0
+    },
+    {
+      "id": "f:top:37",
+      "kind": "top",
+      "merged_index": 35,
+      "source": 37,
+      "price": 141.03019178,
+      "center_high": 141.03019178,
+      "center_low": 133.5213819,
+      "group_start": 37,
+      "group_end": 37,
+      "basis_at": 38,
+      "state": "closed_basis",
+      "components": [
+        "k:36:36",
+        "k:37:37",
+        "k:38:38"
+      ],
+      "rule": "F01",
+      "available_at": 38,
+      "confirmed_at": null,
+      "source_range": [
+        37,
+        37
+      ],
+      "first_seen_at": 38,
+      "first_confirmed_at": null,
+      "revision": 0
+    }
+  ],
+  "strokes": [
+    {
+      "id": "p:6:19",
+      "direction": "down",
+      "start": 6,
+      "end": 19,
+      "start_price": 141.77076278,
+      "end_price": 61.5059498,
+      "low": 61.5059498,
+      "high": 141.77076278,
+      "state": "confirmed",
+      "basis_at": 29,
+      "basis_closed": true,
+      "components": [
+        "f:top:6",
+        "f:bottom:19"
+      ],
+      "confirmation_basis": "f:top:28",
+      "definition_mode": "structguide_documented_stroke",
+      "rule": "P01-P04",
+      "available_at": 29,
+      "confirmed_at": 29,
+      "source_range": [
+        6,
+        19
+      ],
+      "first_seen_at": 21,
+      "first_confirmed_at": 29,
+      "revision": 1
+    },
+    {
+      "id": "p:19:37",
+      "direction": "up",
+      "start": 19,
+      "end": 37,
+      "start_price": 61.5059498,
+      "end_price": 141.03019178,
+      "low": 61.5059498,
+      "high": 141.03019178,
+      "state": "provisional",
+      "basis_at": 38,
+      "basis_closed": true,
+      "components": [
+        "f:bottom:19",
+        "f:top:37"
+      ],
+      "confirmation_basis": null,
+      "definition_mode": "structguide_documented_stroke",
+      "rule": "P01-P04",
+      "available_at": 38,
+      "confirmed_at": null,
+      "source_range": [
+        19,
+        37
+      ],
+      "first_seen_at": 38,
+      "first_confirmed_at": null,
+      "revision": 0
+    }
+  ],
+  "stroke_rejections": [
+    {
+      "from": "f:top:1",
+      "to": "f:bottom:3",
+      "reason": "shared_standard_candle"
+    },
+    {
+      "from": "f:top:6",
+      "to": "f:bottom:9",
+      "reason": "insufficient_spacing"
+    },
+    {
+      "from": "f:bottom:15",
+      "to": "f:top:16",
+      "reason": "shared_standard_candle"
+    },
+    {
+      "from": "f:bottom:19",
+      "to": "f:top:22",
+      "reason": "shared_standard_candle"
+    },
+    {
+      "from": "f:top:28",
+      "to": "f:bottom:29",
+      "reason": "shared_standard_candle"
+    },
+    {
+      "from": "f:top:32",
+      "to": "f:bottom:35",
+      "reason": "shared_standard_candle"
+    }
+  ],
+  "layers": [
+    {
+      "depth": 0,
+      "segments": [],
+      "centers": [],
+      "classification": {
+        "state": "untradable_unclear",
+        "relation": null
+      },
+      "definition_mode": "documented_base_structure"
+    }
+  ],
+  "segments": [],
+  "centers": [],
+  "recursion_graph": [],
+  "current_state": {
+    "state": "untradable_unclear",
+    "relation": null
+  },
+  "divergence_comparisons": [],
+  "signal_candidates": [],
+  "execution_allowed": false,
+  "action": "observe",
+  "availability_semantics": "version-observed times from prefix replay; earlier records are immutable",
+  "input_revision": 0,
+  "event_ledger": {
+    "file": "C:\\Users\\li\\Documents\\ChatGPT\\缠学习\\缠论算法\\examples-final\\events-30m.jsonl",
+    "count": 66,
+    "sha256": "94dcae393dea81a2522233e90ea0da7fabffbbda01f3b638d2475fea22682e22"
+  },
+  "source": {
+    "file": "C:\\Users\\li\\Documents\\ChatGPT\\缠学习\\缠论算法\\examples-final\\synthetic_30m.csv",
+    "input_sha256": "ab777c9302a227f6e8031f74c514e085d8f362e3934606b0b48af2dd493a2cf1",
+    "rows": 40,
+    "timestamp_semantics": "bar_close",
+    "assumed_closed_when_column_missing": false,
+    "assumed_timezone": null,
+    "timezone_assumed_rows": 0,
+    "date_labels_without_close_time": 0,
+    "rows_used": 40
+  }
+}

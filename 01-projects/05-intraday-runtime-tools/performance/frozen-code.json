@@ -1,0 +1,5 @@
+{
+  "chanmodel/intraday_research.py": "97145e90150eff7b37799cd1f91bcd6fc6b251ea326866d6550f40ac40b3c2af",
+  "tools/verify_intraday_research.py": "28ba178fb1e85f8ed5476d54fe966cba70e303b80f1435aed993b1494d46a1d5",
+  "tests/test_intraday_performance.py": "6d73e5a6c7eb9e2548f89c10464493c720a92db873b77f44da9ce8736873a910"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "path": "00-INDEX.md",
+    "bytes": 1423,
+    "sha256": "be17ad30236182261dd93fe7f9f87385bf10bf34ad9cc1c163f021525b0312e4"
+  },
+  {
+    "path": "attachments/7c929438596a-codex-clipboard-854298fc-dbeb-4d14-92d3-abde970fe1a1.png",
+    "bytes": 15011,
+    "sha256": "7c929438596a42936fc57de4327c584ec38a3cc4df1a5325ebadd3266b9f948d"
+  },
+  {
+    "path": "attachments/864049996c55-codex-clipboard-e836a091-b102-4fcc-86f9-441e26bb5580.png",
+    "bytes": 22229,
+    "sha256": "864049996c55f73f2b5238c556b2167f393b4b0998ea16ab0739b62e3c1a8791"
+  },
+  {
+    "path": "attachments/b27ac9eb219f-codex-clipboard-0e3810fd-d89d-4e61-b342-21924ebd3615.png",
+    "bytes": 65265,
+    "sha256": "b27ac9eb219fc0d87703e435dc4a2590592195090594e7812a199c5023ca1dc0"
+  },
+  {
+    "path": "attachments/d1e380011a21-codex-clipboard-45e26a65-304a-4367-a766-c9117e6b4b71.png",
+    "bytes": 14992,
+    "sha256": "d1e380011a21de712a988d285ef2b0727e8d48ffe8e0e5d4aa3b82387917823d"
+  },
+  {
+    "path": "attachments-manifest.json",
+    "bytes": 1445,
+    "sha256": "d0a74eae9d6e85d2c1d3cd201bec06b9a38a543e6dfb83328eb6e622f5e62953"
+  },
+  {
+    "path": "export-audit.json",
+    "bytes": 2621,
+    "sha256": "03ff18d144df135fd5c1f5b8e067c5751fae74a39afcc9d18ffd8152cc747762"
+  },
+  {
+    "path": "jsonl/conversation-001.jsonl",
+    "bytes": 2068530,
+    "sha256": "041bb0e2d45a5bef6ae35ee2b80d00e1ee7a84281d918845d85174affa3282fb"
+  },
+  {
+    "path": "jsonl/conversation-002.jsonl",
+    "bytes": 2096263,
+    "sha256": "4e16e6a0ca6fd002bf89348d70f79999348b1c6e0cb96fb575a24dd75b9bdd57"
+  },
+  {
+    "path": "jsonl/conversation-003.jsonl",
+    "bytes": 1600131,
+    "sha256": "62c86ffa90991df1ef8f27a0ec40b8b87166033091e55d5ffbee1d4391a2c8d1"
+  },
+  {
+    "path": "markdown/conversation-001.md",
+    "bytes": 2093580,
+    "sha256": "c0bd71154dbc7250f07d1bb0b555d8692e3dba3831f5feb968db04efc5874b0f"
+  },
+  {
+    "path": "markdown/conversation-002.md",
+    "bytes": 2087608,
+    "sha256": "882bc4d8ac6b15475365ca8c31489cb79249a5d2a55fa9d1c189a1199c7b432a"
+  },
+  {
+    "path": "markdown/conversation-003.md",
+    "bytes": 1340712,
+    "sha256": "f7fccb37c66fbad773198832da42b8fa194d3458a91cf16c974c681a8d161747"
+  },
+  {
+    "path": "missing-attachments.json",
+    "bytes": 4,
+    "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+  }
+]

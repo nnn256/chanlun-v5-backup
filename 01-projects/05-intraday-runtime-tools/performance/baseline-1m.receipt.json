@@ -1,0 +1,10 @@
+{
+  "mode": "baseline",
+  "period": "1m",
+  "bars": 22560,
+  "events": 1286,
+  "alerts": 600,
+  "replay_seconds": 366.645274100003,
+  "evaluation_seconds": 0.8628974000021117,
+  "body_sha256": "81ef1e73124069d880b95aec9019ade00b053b49355987b84973bb21bbca7c73"
+}

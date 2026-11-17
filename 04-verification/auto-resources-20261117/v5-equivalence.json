@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "source": "local saved TDX sh600000 first 800 bars",
+  "bars": 800,
+  "v5_profile": "course_feature_sequence_recursive_v2",
+  "max_rank": 8,
+  "direct_report_sha256": "dbcc0e894a87143c1a4a48c7d9815dd5a3a7738ed5e3e70a41605b6f5850cc3f",
+  "multiprocess_report_sha256": "dbcc0e894a87143c1a4a48c7d9815dd5a3a7738ed5e3e70a41605b6f5850cc3f",
+  "direct_seconds": 0.0277,
+  "multiprocess_seconds": 0.2368,
+  "timing_scope": "equivalence smoke, not speedup benchmark; includes one-process startup",
+  "planner_fixture_used": true,
+  "actual_resources": {
+    "cpu": {
+      "logical_processors": 20,
+      "load_percent": null
+    },
+    "memory": {
+      "total_bytes": 16870006784,
+      "available_bytes": 1416179712,
+      "load_percent": 91
+    },
+    "observed_at": 1794921042.681157
+  },
+  "scheduler_finished_state": "completed",
+  "execution_allowed": false
+}

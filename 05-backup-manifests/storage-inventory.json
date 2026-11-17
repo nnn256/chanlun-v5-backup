@@ -1,0 +1,515 @@
+{
+  "d_v5": {
+    "root": "D:\\缠论V5",
+    "groups": {
+      "_root": {
+        "files": 1,
+        "bytes": 3180
+      },
+      "algorithm": {
+        "files": 50,
+        "bytes": 290753
+      },
+      "algorithm/chanmodel": {
+        "files": 33,
+        "bytes": 332123
+      },
+      "algorithm/examples": {
+        "files": 7,
+        "bytes": 2479575
+      },
+      "algorithm/examples-final": {
+        "files": 10,
+        "bytes": 2474348
+      },
+      "algorithm/installer": {
+        "files": 1,
+        "bytes": 4647
+      },
+      "algorithm/public_web": {
+        "files": 15,
+        "bytes": 969839
+      },
+      "algorithm/runtime": {
+        "files": 484991,
+        "bytes": 12057418374
+      },
+      "algorithm/tests": {
+        "files": 51,
+        "bytes": 359988
+      },
+      "algorithm/third_party": {
+        "files": 47,
+        "bytes": 231577
+      },
+      "algorithm/tools": {
+        "files": 51,
+        "bytes": 489364
+      },
+      "algorithm/vendor": {
+        "files": 117,
+        "bytes": 37637834
+      },
+      "algorithm/workbench": {
+        "files": 27,
+        "bytes": 369317
+      },
+      "artifacts/auto-resources-20261117": {
+        "files": 6,
+        "bytes": 37657
+      },
+      "artifacts/v5-bugfix-package-20261115": {
+        "files": 8,
+        "bytes": 31997
+      },
+      "artifacts/v5-identity-fix-20261114": {
+        "files": 16,
+        "bytes": 5368489
+      },
+      "artifacts/v5-package-20261115": {
+        "files": 3,
+        "bytes": 561082
+      },
+      "artifacts/v5-rank8-benchmark-20261115": {
+        "files": 3,
+        "bytes": 561072
+      },
+      "artifacts/v5-rank8-top-20261115": {
+        "files": 5,
+        "bytes": 2197163
+      },
+      "data/market_data": {
+        "files": 15675,
+        "bytes": 2460882563
+      },
+      "releases/20261115": {
+        "files": 26387,
+        "bytes": 12277410817
+      },
+      "releases/20261115-worker-fix": {
+        "files": 5,
+        "bytes": 6861027
+      },
+      "releases/20261115-worker-hotfix-final": {
+        "files": 5,
+        "bytes": 6862498
+      },
+      "releases/auto-resources-20261117": {
+        "files": 2,
+        "bytes": 92099
+      },
+      "runs": {
+        "files": 3,
+        "bytes": 102410
+      },
+      "runs/full-market-20261114-tdx-partial": {
+        "files": 10457,
+        "bytes": 486054554
+      },
+      "runs/smoke-20261114-tdx-partial": {
+        "files": 47,
+        "bytes": 3026885
+      },
+      "runs/v5-recursive-20261114": {
+        "files": 5226,
+        "bytes": 1505054209
+      },
+      "runs/v5-recursive-l8-20261115": {
+        "files": 5226,
+        "bytes": 1510487099
+      },
+      "workbench-data": {
+        "files": 1,
+        "bytes": 397312
+      },
+      "workbench-data-8895": {
+        "files": 2,
+        "bytes": 69149125
+      },
+      "workbench-data-8895/backtests": {
+        "files": 31284,
+        "bytes": 2504811867
+      },
+      "workbench-data-8895/imports-v5": {
+        "files": 5224,
+        "bytes": 2888575419
+      },
+      "workbench-data-8895/jobs": {
+        "files": 50292,
+        "bytes": 10238984862
+      },
+      "workbench-data-8895/live": {
+        "files": 73,
+        "bytes": 11889977
+      },
+      "workbench-data-8895/live-sessions": {
+        "files": 121,
+        "bytes": 100538619
+      },
+      "workbench-data-8895/service-logs": {
+        "files": 4,
+        "bytes": 1061
+      },
+      "workbench-data/live": {
+        "files": 6,
+        "bytes": 757043
+      },
+      "workbench-data/live-sessions": {
+        "files": 7,
+        "bytes": 7016759
+      }
+    }
+  },
+  "f_v5": {
+    "root": "F:\\ChanlunV5-20261115",
+    "groups": {
+      "_root": {
+        "files": 7,
+        "bytes": 5643838
+      },
+      "algorithm": {
+        "files": 16,
+        "bytes": 161879
+      },
+      "algorithm/chanmodel": {
+        "files": 33,
+        "bytes": 332123
+      },
+      "algorithm/examples": {
+        "files": 7,
+        "bytes": 2479575
+      },
+      "algorithm/examples-final": {
+        "files": 10,
+        "bytes": 2474348
+      },
+      "algorithm/installer": {
+        "files": 1,
+        "bytes": 4647
+      },
+      "algorithm/public_web": {
+        "files": 15,
+        "bytes": 969839
+      },
+      "algorithm/runtime": {
+        "files": 2,
+        "bytes": 20979933
+      },
+      "algorithm/tests": {
+        "files": 51,
+        "bytes": 358738
+      },
+      "algorithm/third_party": {
+        "files": 47,
+        "bytes": 231577
+      },
+      "algorithm/tools": {
+        "files": 48,
+        "bytes": 478388
+      },
+      "algorithm/workbench": {
+        "files": 27,
+        "bytes": 369317
+      },
+      "data/market_data": {
+        "files": 15675,
+        "bytes": 2461002738
+      },
+      "intraday-monitor-audit": {
+        "files": 10,
+        "bytes": 66530
+      },
+      "live-monitor-audit/baseline": {
+        "files": 2,
+        "bytes": 18347
+      },
+      "logs": {
+        "files": 6,
+        "bytes": 74648
+      },
+      "runs/full-market-20261114-tdx-partial": {
+        "files": 1,
+        "bytes": 615846
+      },
+      "runs/v5-recursive-l8-20261115": {
+        "files": 5226,
+        "bytes": 1510487099
+      },
+      "workbench-data-8895": {
+        "files": 2,
+        "bytes": 276157774
+      },
+      "workbench-data-8895/backtests": {
+        "files": 5214,
+        "bytes": 773038735
+      },
+      "workbench-data-8895/imports-v5": {
+        "files": 5224,
+        "bytes": 2888575419
+      },
+      "workbench-data-8895/jobs": {
+        "files": 72440,
+        "bytes": 12141543378
+      },
+      "workbench-data-8895/live": {
+        "files": 10563,
+        "bytes": 511820881
+      },
+      "workbench-data-8895/live-sessions": {
+        "files": 11183,
+        "bytes": 4495136228
+      },
+      "workbench-data-8895/research-context": {
+        "files": 9,
+        "bytes": 360548
+      }
+    }
+  },
+  "intraday": {
+    "root": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday",
+    "groups": {
+      "_root": {
+        "files": 21,
+        "bytes": 186442
+      },
+      "acceleration-20261117": {
+        "files": 41,
+        "bytes": 348826
+      },
+      "acceleration-20261117/.pytest_cache": {
+        "files": 4,
+        "bytes": 1526
+      },
+      "acceleration-20261117/gpu-audit": {
+        "files": 11160,
+        "bytes": 469190086
+      },
+      "acceleration-20261117/runtime-benchmark": {
+        "files": 3,
+        "bytes": 1816
+      },
+      "acceleration-20261117/runtime-benchmark-22560": {
+        "files": 3,
+        "bytes": 2284
+      },
+      "acquisition": {
+        "files": 6,
+        "bytes": 23845720
+      },
+      "acquisition/market_data": {
+        "files": 44632,
+        "bytes": 10173342131
+      },
+      "analysis": {
+        "files": 5,
+        "bytes": 14510754
+      },
+      "analysis-preflight": {
+        "files": 5,
+        "bytes": 99966
+      },
+      "analysis-preflight/stocks": {
+        "files": 20,
+        "bytes": 1062686
+      },
+      "analysis/stocks": {
+        "files": 3989,
+        "bytes": 149208405
+      },
+      "frozen-code": {
+        "files": 1,
+        "bytes": 12500
+      },
+      "frozen-code/chanmodel": {
+        "files": 33,
+        "bytes": 346897
+      },
+      "frozen-code/runs": {
+        "files": 5,
+        "bytes": 866921
+      },
+      "frozen-code/third_party": {
+        "files": 47,
+        "bytes": 231577
+      },
+      "frozen-code/tools": {
+        "files": 5,
+        "bytes": 57670
+      },
+      "frozen-code/workbench": {
+        "files": 28,
+        "bytes": 398920
+      },
+      "helper-verification": {
+        "files": 5,
+        "bytes": 25723
+      },
+      "operations-20261117": {
+        "files": 16,
+        "bytes": 34369
+      },
+      "performance": {
+        "files": 15,
+        "bytes": 412031
+      },
+      "preflight": {
+        "files": 1,
+        "bytes": 4890
+      },
+      "preflight/market_data": {
+        "files": 16,
+        "bytes": 3799356
+      },
+      "source-repair-20261117": {
+        "files": 9,
+        "bytes": 34525
+      },
+      "source-repair-20261117/baseline": {
+        "files": 6,
+        "bytes": 11291056
+      },
+      "source-universe": {
+        "files": 5,
+        "bytes": 644739
+      }
+    }
+  },
+  "full_daily": {
+    "root": "D:\\ChanlunFullHistory-20261117",
+    "groups": {
+      "_root": {
+        "files": 7,
+        "bytes": 29920
+      },
+      "acquisition": {
+        "files": 5,
+        "bytes": 16588423
+      },
+      "acquisition/cache": {
+        "files": 16740,
+        "bytes": 2504268857
+      },
+      "acquisition/responses": {
+        "files": 11160,
+        "bytes": 440974785
+      },
+      "acquisition/stocks": {
+        "files": 5580,
+        "bytes": 7483169
+      },
+      "code/v3": {
+        "files": 100,
+        "bytes": 1734565
+      },
+      "code/v4": {
+        "files": 168,
+        "bytes": 1492940
+      },
+      "inputs": {
+        "files": 7,
+        "bytes": 7638658
+      },
+      "logs": {
+        "files": 4,
+        "bytes": 1059220
+      },
+      "smoke": {
+        "files": 2,
+        "bytes": 3456
+      },
+      "smoke/acquisition": {
+        "files": 17,
+        "bytes": 1389432
+      },
+      "smoke/v3": {
+        "files": 7,
+        "bytes": 225680
+      },
+      "smoke/v4": {
+        "files": 6,
+        "bytes": 212824
+      },
+      "v4-daily": {
+        "files": 3,
+        "bytes": 5730197
+      },
+      "v4-daily/stocks": {
+        "files": 2891,
+        "bytes": 247365551
+      }
+    }
+  },
+  "workspace_output": {
+    "root": "C:\\Users\\li\\Documents\\ChatGPT\\缠学习\\output",
+    "groups": {
+      "_root": {
+        "files": 4,
+        "bytes": 42135910
+      },
+      "chanlun-complete": {
+        "files": 64,
+        "bytes": 35014974
+      },
+      "chanlun-complete/artifacts": {
+        "files": 8,
+        "bytes": 87592
+      },
+      "chanlun-complete/audio": {
+        "files": 28,
+        "bytes": 21507472
+      },
+      "chanlun-complete/engine": {
+        "files": 19,
+        "bytes": 172132
+      },
+      "chanlun-complete/frames": {
+        "files": 28,
+        "bytes": 6587000
+      },
+      "chanlun-complete/full-study": {
+        "files": 6,
+        "bytes": 14478870
+      },
+      "chanlun-complete/full-study-final": {
+        "files": 5,
+        "bytes": 14509889
+      },
+      "chanlun-complete/media-baseline": {
+        "files": 6,
+        "bytes": 5160418
+      },
+      "chanlun-complete/multiframe_examples": {
+        "files": 4,
+        "bytes": 215965
+      },
+      "chanlun-complete/profile-rebuild": {
+        "files": 5,
+        "bytes": 14472918
+      },
+      "chanlun-complete/tests": {
+        "files": 6,
+        "bytes": 55460
+      },
+      "chanlun-complete/tools": {
+        "files": 1,
+        "bytes": 19523
+      },
+      "chanlun-course": {
+        "files": 31,
+        "bytes": 11806334
+      },
+      "chanlun-course/audio": {
+        "files": 28,
+        "bytes": 21178611
+      },
+      "chanlun-course/frames": {
+        "files": 28,
+        "bytes": 6508058
+      },
+      "pdf": {
+        "files": 1,
+        "bytes": 257851
+      }
+    }
+  }
+}

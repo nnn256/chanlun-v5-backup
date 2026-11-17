@@ -1,0 +1,54 @@
+{
+  "files": {
+    "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acquisition\\acquisition-results.json": {
+      "backup": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\source-repair-20261117\\baseline\\acquisition-results.json",
+      "sha256": "e6a4cceb80dcfbc3a8b7464980b48d0a95de2ed80e7d92821fb9bea50b8d84b1"
+    },
+    "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acquisition\\acquisition-summary.json": {
+      "backup": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\source-repair-20261117\\baseline\\acquisition-summary.json",
+      "sha256": "8d42ef3b78917e176bbd881419601a30e19f62d73b183252a18ca453b9ed8cf6"
+    },
+    "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acquisition\\summary.json": {
+      "backup": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\source-repair-20261117\\baseline\\summary.json",
+      "sha256": "8d42ef3b78917e176bbd881419601a30e19f62d73b183252a18ca453b9ed8cf6"
+    },
+    "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acquisition\\market_data\\capture-status\\5m\\sz000906.json": {
+      "backup": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\source-repair-20261117\\baseline\\market_data\\capture-status\\5m\\sz000906.json",
+      "sha256": "2116331722d1309be528022c1d0426d29f3e24624ec9e7518b8cf37396768d8d"
+    },
+    "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acquisition\\market_data\\capture-status\\1m\\sz002679.json": {
+      "backup": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\source-repair-20261117\\baseline\\market_data\\capture-status\\1m\\sz002679.json",
+      "sha256": "fb87754dda2033c316bef415e6671edb9681f5adc8086a789eac5aea579191c9"
+    },
+    "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acquisition\\market_data\\capture-status\\1m\\sz300875.json": {
+      "backup": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\source-repair-20261117\\baseline\\market_data\\capture-status\\1m\\sz300875.json",
+      "sha256": "a60ddb5d3b56e77bafc5310a9c1d790d0c335812530db9f9a2d3b2c2884407b2"
+    }
+  },
+  "failed_entries": [
+    {
+      "symbol": "sz000906",
+      "period": "5m",
+      "state": "failed",
+      "error": "TdxError: /api/kline-all/tdx: 获取K线失败: 超时",
+      "seconds": 435.276,
+      "resumed": false
+    },
+    {
+      "symbol": "sz002679",
+      "period": "1m",
+      "state": "failed",
+      "error": "TdxError: /api/kline-all/tdx: 获取K线失败: 超时",
+      "seconds": 25.535,
+      "resumed": false
+    },
+    {
+      "symbol": "sz300875",
+      "period": "1m",
+      "state": "failed",
+      "error": "TdxError: /api/kline-all/tdx: 获取K线失败: 超时",
+      "seconds": 25.572,
+      "resumed": false
+    }
+  ]
+}

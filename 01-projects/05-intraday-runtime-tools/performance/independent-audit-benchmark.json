@@ -1,0 +1,9 @@
+{
+  "state": "passed",
+  "rows": 593,
+  "all_fields_equal": true,
+  "baseline_seconds": 6.6077071000036085,
+  "optimized_seconds": 0.028555899996717926,
+  "speedup": 231.3955119874725,
+  "scope": "independent raw session oracle labels only; replay audit unchanged"
+}

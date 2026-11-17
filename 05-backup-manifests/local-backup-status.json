@@ -1,0 +1,63 @@
+{
+  "state": "completed",
+  "files": 327959,
+  "logical_bytes": 64464288340,
+  "new_object_bytes": 55268570907,
+  "unstable_files": 1,
+  "failed_files": 0,
+  "seconds": 2354.4,
+  "snapshot_scope": "per-file bounded-time snapshots; running batches continue; SQLite copied with online backup API",
+  "missing_input_videos": [],
+  "logical_paths": 327959,
+  "unique_objects": 277196,
+  "unique_object_bytes": 55268570907,
+  "manifest_rows": 327959,
+  "missing_objects": 0,
+  "object_size_mismatches": 0,
+  "volatile_log_paths": [
+    "daily-batch/logs/v4-daily.stdout.log"
+  ],
+  "user_visible_conversation": 1394,
+  "credential_configs_copied": false,
+  "verification": {
+    "all_objects_exist_and_match_sizes": true,
+    "sample_full_hash_verifications": [
+      {
+        "path": "runtime/tdx-api-revised.exe",
+        "sha256_checked": true,
+        "bytes": 20979712,
+        "sqlite_quick_check": null
+      },
+      {
+        "path": "active-f-workbench/workbench.sqlite3",
+        "sha256_checked": true,
+        "bytes": 276103168,
+        "sqlite_quick_check": "ok"
+      },
+      {
+        "path": "input-videos/k线合并.mp4",
+        "sha256_checked": true,
+        "bytes": 22870367,
+        "sqlite_quick_check": null
+      },
+      {
+        "path": "v5-d-data/market_data/tdx/day/ohlcv/sh600000.csv",
+        "sha256_checked": true,
+        "bytes": 788288,
+        "sqlite_quick_check": null
+      },
+      {
+        "path": "intraday-batch/acquisition/market_data/tdx/minute1/ohlcv/bj920000.csv.gz",
+        "sha256_checked": true,
+        "bytes": 306964,
+        "sqlite_quick_check": null
+      }
+    ],
+    "restore_smoke": {
+      "status": "pass",
+      "restored_files": 1,
+      "output": "D:\\ProjectBackups\\chanlun-v5\\20261117\\restore-smoke"
+    },
+    "full_rehash_performed": false
+  }
+}

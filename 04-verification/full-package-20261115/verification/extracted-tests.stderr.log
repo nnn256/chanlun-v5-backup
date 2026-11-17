@@ -1,0 +1,18 @@
+............................................................................................................................................................................................................................127.0.0.1 - - [15/Nov/2026 01:19:05] "POST /api/jobs HTTP/1.1" 405 -
+C:\Users\li\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 405: 'Method Not Allowed'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+127.0.0.1 - - [15/Nov/2026 01:19:05] "POST /api/monitor/config HTTP/1.1" 405 -
+127.0.0.1 - - [15/Nov/2026 01:19:05] "GET /../desktop_app.py HTTP/1.1" 404 -
+C:\Users\li\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 404: 'Not Found'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+127.0.0.1 - - [15/Nov/2026 01:19:05] "GET /api/monitor HTTP/1.1" 404 -
+.127.0.0.1 - - [15/Nov/2026 01:19:05] "GET /api/market-context?period=hour HTTP/1.1" 400 -
+C:\Users\li\AppData\Local\Python\pythoncore-3.14-64\Lib\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 400: 'Bad Request'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+.......................................................................................................................................................................................127.0.0.1 - - [15/Nov/2026 01:19:11] "POST /api/jobs HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:19:11] "GET /api/overview HTTP/1.1" 400 -
+............
+----------------------------------------------------------------------
+Ran 416 tests in 37.953s
+
+OK

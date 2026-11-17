@@ -1,0 +1,24 @@
+{
+  "verified": true,
+  "certificate_state": {
+    "day": "passed",
+    "30m": "passed",
+    "5m": "passed"
+  },
+  "single_series_levels": 3,
+  "full_multiframe_levels": 2,
+  "feature_sequences": 26,
+  "center_evolution": 35,
+  "decompositions": 10,
+  "signals": 3,
+  "replay_observations": 64,
+  "multiframe_contract": "verified",
+  "period_count": 10,
+  "multiframe_links": {
+    "interval_nesting": 0,
+    "small_to_large": 0,
+    "small_to_large_audit": 7
+  },
+  "video_sha256": "7695191f09b6a64738b869ecf52fef5c4049d58a3ed3aa60dbbf72c3a960da7e",
+  "snapshot_rebuild": "deep-structure-identical"
+}

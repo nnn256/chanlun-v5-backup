@@ -1,0 +1,30 @@
+[
+  {
+    "original_path": "C:/Users/li/AppData/Local/Temp/codex-clipboard-45e26a65-304a-4367-a766-c9117e6b4b71.png",
+    "status": "recovered_inline",
+    "path": "attachments/d1e380011a21-codex-clipboard-45e26a65-304a-4367-a766-c9117e6b4b71.png",
+    "sha256": "d1e380011a21de712a988d285ef2b0727e8d48ffe8e0e5d4aa3b82387917823d",
+    "bytes": 14992
+  },
+  {
+    "original_path": "C:/Users/li/AppData/Local/Temp/codex-clipboard-e836a091-b102-4fcc-86f9-441e26bb5580.png",
+    "status": "recovered_inline",
+    "path": "attachments/864049996c55-codex-clipboard-e836a091-b102-4fcc-86f9-441e26bb5580.png",
+    "sha256": "864049996c55f73f2b5238c556b2167f393b4b0998ea16ab0739b62e3c1a8791",
+    "bytes": 22229
+  },
+  {
+    "original_path": "C:/Users/li/AppData/Local/Temp/codex-clipboard-854298fc-dbeb-4d14-92d3-abde970fe1a1.png",
+    "status": "recovered_inline",
+    "path": "attachments/7c929438596a-codex-clipboard-854298fc-dbeb-4d14-92d3-abde970fe1a1.png",
+    "sha256": "7c929438596a42936fc57de4327c584ec38a3cc4df1a5325ebadd3266b9f948d",
+    "bytes": 15011
+  },
+  {
+    "original_path": "C:/Users/li/AppData/Local/Temp/codex-clipboard-0e3810fd-d89d-4e61-b342-21924ebd3615.png",
+    "status": "recovered_inline",
+    "path": "attachments/b27ac9eb219f-codex-clipboard-0e3810fd-d89d-4e61-b342-21924ebd3615.png",
+    "sha256": "b27ac9eb219fc0d87703e435dc4a2590592195090594e7812a199c5023ca1dc0",
+    "bytes": 65265
+  }
+]

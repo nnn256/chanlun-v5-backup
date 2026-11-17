@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-17T16:02:40.170429+08:00",
+  "counts_before": {
+    "pending": 1,
+    "verified": 611,
+    "waiting_source": 10546
+  },
+  "manifest_sha256": "37df74ce011f12abf0be27dd614fcf0f00ea4939c3f5ccd27a92b9bfd1a875fe",
+  "algorithm_code_sha256": "67dc64e53f7eac7a9285e9a89f979b20c8e8c4f1069e9a43b88db3c744b9892f",
+  "stop_archives": [
+    "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acceleration-20261117\\analysis-STOP-switch-completed.json",
+    "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acceleration-20261117\\operations-STOP-switch-completed"
+  ],
+  "adaptive_file_sha256": "1926f667ab1d906dcb546f857c19accdc8ddadf5308d3540e09db4ebb7c4d514",
+  "gc_mode": "disabled",
+  "max_workers": 4,
+  "gpu_enabled": false,
+  "execution_allowed": false,
+  "uploaded": false
+}

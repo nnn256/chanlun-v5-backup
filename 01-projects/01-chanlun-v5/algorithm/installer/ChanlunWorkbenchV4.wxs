@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+  <Product Id="*" Name="Chanlun Workbench V4" Language="1033" Codepage="1252" Version="$(var.AppVersion)"
+           Manufacturer="Chanlun Workbench" UpgradeCode="{2A0DDDA3-39E6-4FCE-BE79-DBA53BE6B84A}">
+    <Package InstallerVersion="500" Compressed="yes" InstallScope="perUser" Platform="x64"
+             Description="A-share Chan structure research workbench" />
+    <MajorUpgrade Schedule="afterInstallExecute" DowngradeErrorMessage="A newer version of Chanlun Workbench is already installed." />
+    <util:CloseApplication Id="CloseWorkbench" Target="ChanlunWorkbenchV4.exe"
+                           Description="Close Chanlun Workbench V4 before updating. Select Retry after closing the workbench. Ignore will request a normal close; a running scan may pause and resume when you reopen it."
+                           PromptToContinue="yes" CloseMessage="yes" Timeout="30" RebootPrompt="yes" />
+    <MediaTemplate EmbedCab="yes" />
+    <Icon Id="WorkbenchIcon" SourceFile="$(var.IconPath)" />
+    <Property Id="ARPPRODUCTICON" Value="WorkbenchIcon" />
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <UIRef Id="WixUI_InstallDir" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="LocalAppDataFolder">
+        <Directory Id="ProgramsFolder" Name="Programs">
+          <Directory Id="INSTALLFOLDER" Name="Chanlun Workbench V4">
+            <Component Id="WorkbenchFiles" Guid="{D95F465E-C44E-47DA-92BD-9DC4249A6130}" Win64="yes">
+              <File Id="WorkbenchExe" Source="$(var.ExePath)" Name="ChanlunWorkbenchV4.exe" Checksum="yes" />
+              <File Id="WorkbenchLauncher" Source="$(var.LauncherPath)" Name="LaunchV43.cmd" />
+              <File Id="WorkbenchReadme" Source="$(var.ReadmePath)" Name="README.txt" />
+              <util:RestartResource Id="WorkbenchExeRestartResource" Path="[#WorkbenchExe]" />
+              <RemoveFolder Id="RemoveInstallFolder" On="uninstall" />
+              <RegistryValue Root="HKCU" Key="Software\ChanlunWorkbenchV4\4.3.0" Name="FilesInstalled"
+                             Type="integer" Value="1" KeyPath="yes" />
+            </Component>
+          </Directory>
+        </Directory>
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="Chanlun Workbench V4" />
+      </Directory>
+      <Directory Id="DesktopFolder" />
+    </Directory>
+
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="StartMenuShortcut" Guid="{546F8AAE-7F19-4C34-B0C0-867C701420A7}" Win64="yes">
+        <Shortcut Id="WorkbenchStartMenuShortcut" Name="Chanlun Workbench V4.4.0"
+                  Target="[#WorkbenchLauncher]" WorkingDirectory="INSTALLFOLDER"
+                  Icon="WorkbenchIcon" IconIndex="0" />
+        <Shortcut Id="WorkbenchUninstallShortcut" Name="Uninstall Chanlun Workbench V4"
+                  Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" />
+        <RemoveFolder Id="RemoveApplicationProgramsFolder" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\ChanlunWorkbenchV4" Name="StartMenuInstalled"
+                       Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+
+    <DirectoryRef Id="ProgramsFolder">
+      <Component Id="RemoveProgramsDirectory" Guid="*" Win64="yes">
+        <RemoveFolder Id="RemoveProgramsDirectoryOnUninstall" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\ChanlunWorkbenchV4" Name="ProgramsDirectoryInstalled"
+                       Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+
+    <DirectoryRef Id="DesktopFolder">
+      <Component Id="DesktopShortcut" Guid="{0E7646D1-BB0C-4F9D-AB80-2E62F5B0D2BC}" Win64="yes">
+        <Shortcut Id="WorkbenchDesktopShortcut" Name="Chanlun Workbench V4.4.0"
+                  Target="[#WorkbenchLauncher]" WorkingDirectory="INSTALLFOLDER"
+                  Icon="WorkbenchIcon" IconIndex="0" />
+        <RegistryValue Root="HKCU" Key="Software\ChanlunWorkbenchV4" Name="DesktopShortcutInstalled"
+                       Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+
+    <Feature Id="Complete" Title="Chanlun Workbench V4" Level="1" ConfigurableDirectory="INSTALLFOLDER">
+      <ComponentRef Id="WorkbenchFiles" />
+      <ComponentRef Id="StartMenuShortcut" />
+      <ComponentRef Id="RemoveProgramsDirectory" />
+      <ComponentRef Id="DesktopShortcut" />
+    </Feature>
+  </Product>
+</Wix>

@@ -1,0 +1,78 @@
+{
+  "verified_at": "2026-11-06T01:46:46+08:00",
+  "checks": [
+    {
+      "check": "archived_sources",
+      "count": 155,
+      "status": "pass"
+    },
+    {
+      "check": "authored_documents_and_local_links",
+      "documents": 13,
+      "local_links": 375
+    },
+    {
+      "check": "course_index",
+      "indexed": 108,
+      "archived": 108,
+      "missing": []
+    },
+    {
+      "check": "offline_search",
+      "query": "特征序列",
+      "scope": "notes",
+      "hits": 3,
+      "first": {
+        "file": "C:\\Users\\li\\Documents\\ChatGPT\\缠学习\\缠论知识库\\notes\\01-理论知识总纲.md",
+        "line": 53,
+        "heading": "7. 线段",
+        "excerpt": "需要依次理解：特征元素 → 标准特征序列 → 特征分型 → 第一、第二元素有无缺口 → 必要时的第二特征序列 → 笔破坏与成段确认。相关原文67、71、78课应联读，71课图例还要看81课更正。",
+        "score": 102
+      }
+    },
+    {
+      "check": "offline_search",
+      "query": "中枢 触边",
+      "scope": "notes",
+      "hits": 2,
+      "first": {
+        "file": "C:\\Users\\li\\Documents\\ChatGPT\\缠学习\\缠论知识库\\notes\\08-常见问题与核对清单.md",
+        "line": 5,
+        "heading": "常见问题与核对清单",
+        "excerpt": "…？ | 插件当前确认仍可能被实时数据或后到的更早候选改变。 | | 端点日期就是识别出来的日期吗？ | 常常晚些才取得依据，应分字段保存。 | | 三条笔重叠就能代替理论中枢吗？ | 必须标明最低层设定或代理口径，不能无条件替代递归定义。 | | 插件中枢只看线段端点吗？ | 看已确认线段覆盖的全部原始K线实际极值。 | | ZG/ZD与GG/DD是一组东西吗？ | 核心区间与外围范围不同，还要核对具体公式的成员口径。 | | 旧框不延伸就必有新框吗？ | 新框另需三段、区间和成员条件。 | | 插件触边算未返回吗？ | 中枢延伸规则中等号按返回处理。 | | 日线出现两个矩形就是日线趋势吗？ | 还需结构级别、完成状态与外围范围关系。 | | MACD金叉是一买吗？ | 指标交叉本身不充分。 | | 更高低点…",
+        "score": 104
+      }
+    },
+    {
+      "check": "offline_search",
+      "query": "走势终完美",
+      "scope": "originals",
+      "hits": 3,
+      "first": {
+        "file": "C:\\Users\\li\\Documents\\ChatGPT\\缠学习\\缠论知识库\\sources\\originals\\text\\lesson-017.md",
+        "line": 13,
+        "heading": "教你炒股票17：走势终完美",
+        "excerpt": "由上可得到“缠中说禅技术分析基本原理一”：任何级别的任何走势类型终要完成。后面一句用更简练的话，就是“走势终完美”。这个原理的重要性在于把实践中总结出来的、很难实用的、静态的“所有级别的走势都能分解成趋势与盘整”，转化成动态的、可以实用的“走势类型终要完成”，这就是论语所说的智慧：“所有级别的走势都能分解成趋势与盘整”是“不患”的，是无位次的，而“走势类型终要完成”的“走势终完美”以“所有级别的走势都能分解成趋势与盘整”的无位次而位次之，而“患”之。",
+        "score": 22
+      }
+    },
+    {
+      "check": "search_cli",
+      "exit_code": 0
+    },
+    {
+      "check": "rollback_on_independent_copy",
+      "exit_code": 0,
+      "stdout": {
+        "Action": "Moved",
+        "Source": "C:\\Users\\li\\Documents\\ChatGPT\\缠学习\\缠论知识库\\delivery\\rollback-check\\缠论知识库",
+        "Destination": "C:\\Users\\li\\Documents\\ChatGPT\\缠学习\\缠论知识库\\delivery\\rollback-check\\缠论知识库.backup-20261106-014645-937",
+        "Deleted": false
+      },
+      "restored_content_sha256": "aa4bf10b1294d9b43ebe5d4377896c658b8e178377a67d984f6cf0d895127843",
+      "status": "pass"
+    }
+  ],
+  "failures": [],
+  "status": "pass"
+}

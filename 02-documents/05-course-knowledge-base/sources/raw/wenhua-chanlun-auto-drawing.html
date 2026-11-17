@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文华财经缠论指标公式下载：WH6自动画笔、线段与中枢｜Struct Guide</title>
+    <meta name="description" content="免费下载文华财经WH6近似缠论指标公式麦语言TXT源码，在主图上自动画笔、线段和中枢，分型及各结构可分别开关显示。附导入步骤、实测截图、近似规则与未来函数说明，以及Struct Guide网页插件效果对照。">
+    <meta name="generator" content="VitePress v1.6.4">
+    <link rel="preload stylesheet" href="/assets/style.c6mmFbRw.css" as="style">
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style">
+    
+    <script type="module" src="/assets/app.ymOo0wZ7.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/theme.CqQ1Tbih.js">
+    <link rel="modulepreload" href="/assets/chunks/framework.CIwHg-Ss.js">
+    <link rel="modulepreload" href="/assets/wenhua-chanlun-auto-drawing.md.rLDJQadC.lean.js">
+    <meta name="theme-color" content="#F8FAFC">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script>window.addEventListener("click",function(i){var t=i.target,n=t&&t.closest?t.closest('a[href="/"], a[href="/index.html"]'):null;!n||n.origin!==window.location.origin||(i.preventDefault(),i.stopImmediatePropagation(),window.location.assign("/"))},!0);</script>
+    <script>(function(){var r=["tradingview","tonghuashun","eastmoney","xueqiu","sina","moomoo","tongdaxin","wenhua","boyi","mt5"],c={"/concept/containment":"/concept/containment","/concept/fractal":"/concept/fractal","/concept/stroke":"/concept/stroke","/concept/segment":"/concept/segment","/concept/central-zone":"/concept/central-zone","/download":"/download/","/who-its-for":"/who-its-for","/faq/tongdaxin-approx-chanlun-formula":"/faq/#tongdaxin","/faq/drawing-rules":"/faq/drawing-rules","/faq/chanlun-indicator":"/faq/","/faq/how-to-read-108":"/faq/how-to-read-108","/chanlun-auto-drawing":"/chanlun-auto-drawing","/chanlun-videos":"/chanlun-videos","/indicators":"/indicators/","/indicators/ma":"/indicators/ma","/indicators/ma-vs-ema":"/indicators/ma-vs-ema","/indicators/boll":"/indicators/boll","/indicators/macd":"/indicators/macd","/indicators/kdj":"/indicators/kdj","/indicators/rsi":"/indicators/rsi","/indicators/bias":"/indicators/bias","/indicators/atr":"/indicators/atr","/indicators/cci":"/indicators/cci","/indicators/obv":"/indicators/obv","/indicators/vol":"/indicators/vol","/indicators/vwap":"/indicators/vwap","/indicators/dmi-adx":"/indicators/dmi-adx","/indicators/psy":"/indicators/psy","/indicators/roc":"/indicators/roc","/indicators/wr":"/indicators/wr","/sites":"/sites/","/sites/tonghuashun":"/faq/#tonghuashun","/sites/eastmoney":"/faq/#eastmoney","/sites/xueqiu":"/faq/#xueqiu","/sites/xueqiu/boards":"/faq/#xueqiu","/sites/sina":"/faq/#sina","/wenhua-chanlun-auto-drawing":"/faq/#wenhua","/boyi-chanlun-auto-drawing":"/faq/#boyi","/mt5-chanlun-auto-drawing":"/faq/#mt5","/sites/tradingview":"/faq/#tradingview","/sites/moomoo":"/faq/#moomoo","/tutorial/tradingview":"/faq/#tradingview","/tutorial/xueqiu":"/faq/#xueqiu","/tutorial/tonghuashun":"/faq/#tonghuashun","/tutorial/sina":"/faq/#sina"},o=!1;function d(t){return(t||"/").replace(/\/index\.html$/,"").replace(/\/$/,"")||"/"}function u(){var t=d(window.location.pathname);if(c[t])return c[t];if(t!=="/faq")return"";var a=decodeURIComponent(window.location.hash.replace(/^#/,""));if(r.indexOf(a)!==-1)return"/faq/#"+a;var i="";return r.forEach(function(e){var s=document.getElementById(e);s&&s.getBoundingClientRect().top<=140&&(i=e)}),i?"/faq/#"+i:"/faq/"}function f(){o=!1,document.querySelectorAll(".VPSidebarItem.is-current-section").forEach(function(a){a.classList.remove("is-current-section")}),document.querySelectorAll('.VPSidebar a[data-section-current="true"]').forEach(function(a){a.removeAttribute("data-section-current"),a.removeAttribute("aria-current")});var t=u();t&&document.querySelectorAll(".VPSidebar a").forEach(function(a){var i=decodeURIComponent(a.getAttribute("href")||"");if(i===t){a.setAttribute("data-section-current","true"),a.setAttribute("aria-current","location");var e=a.closest(".VPSidebarItem");e&&e.classList.add("is-current-section")}})}function n(){o||(o=!0,window.requestAnimationFrame(f))}document.addEventListener("DOMContentLoaded",function(){n();var t=document.getElementById("app");t&&new MutationObserver(n).observe(t,{childList:!0,subtree:!0})}),window.addEventListener("hashchange",n),window.addEventListener("popstate",n),window.addEventListener("scroll",n,{passive:!0}),document.addEventListener("click",function(t){t.target&&t.target.closest&&t.target.closest(".VPSidebar a")&&window.setTimeout(n,80)},!0)})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  <meta property="og:site_name" content="Struct Guide 官网">
+<link rel="canonical" href="https://www.structguide.com/wenhua-chanlun-auto-drawing">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.structguide.com/wenhua-chanlun-auto-drawing">
+<meta property="og:title" content="文华财经缠论指标公式下载：WH6自动画笔、线段与中枢｜Struct Guide">
+<meta property="og:description" content="免费下载文华财经WH6近似缠论指标公式麦语言TXT源码，在主图上自动画笔、线段和中枢，分型及各结构可分别开关显示。附导入步骤、实测截图、近似规则与未来函数说明，以及Struct Guide网页插件效果对照。">
+<meta property="og:image" content="https://www.structguide.com/images/structguide-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="文华财经缠论指标公式下载：WH6自动画笔、线段与中枢｜Struct Guide">
+<meta name="twitter:description" content="免费下载文华财经WH6近似缠论指标公式麦语言TXT源码，在主图上自动画笔、线段和中枢，分型及各结构可分别开关显示。附导入步骤、实测截图、近似规则与未来函数说明，以及Struct Guide网页插件效果对照。">
+<meta name="twitter:image" content="https://www.structguide.com/images/structguide-logo.png">
+<script type="application/ld+json" data-seo-jsonld>{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"文华财经缠论指标公式下载：WH6自动画笔、线段与中枢｜Struct Guide","description":"免费下载文华财经WH6近似缠论指标公式麦语言TXT源码，在主图上自动画笔、线段和中枢，分型及各结构可分别开关显示。附导入步骤、实测截图、近似规则与未来函数说明，以及Struct Guide网页插件效果对照。","mainEntityOfPage":"https://www.structguide.com/wenhua-chanlun-auto-drawing","inLanguage":"zh-CN","image":"https://www.structguide.com/images/structguide-logo.png","author":{"@id":"https://www.structguide.com/#organization"},"publisher":{"@id":"https://www.structguide.com/#organization"},"isPartOf":{"@id":"https://www.structguide.com/#website"}}]}</script>
+
+<script type="application/ld+json" data-site-identity>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.structguide.com/#website","name":"Struct Guide 官网","alternateName":["Struct Guide","Struct Guide 缠论助手","SG缠论助手"],"url":"https://www.structguide.com/","publisher":{"@id":"https://www.structguide.com/#organization"},"about":{"@id":"https://www.structguide.com/#software"}},{"@type":"Organization","@id":"https://www.structguide.com/#organization","name":"Struct Guide","alternateName":"Struct Guide 缠论助手","url":"https://www.structguide.com/","logo":"https://www.structguide.com/images/structguide-logo.png"},{"@type":"SoftwareApplication","@id":"https://www.structguide.com/#software","name":"Struct Guide","alternateName":"Struct Guide 缠论助手","url":"https://www.structguide.com/","publisher":{"@id":"https://www.structguide.com/#organization"},"applicationCategory":"BrowserApplication","operatingSystem":["Windows","macOS","Linux","Android"],"softwareRequirements":"Desktop: Google Chrome, Microsoft Edge or 360 Browser. Android: Microsoft Edge. Requires a supported webpage and chart.","installUrl":["https://chromewebstore.google.com/detail/structure-guild-for-marke/kcoopfogmmbbijhkcamjejagjkbchlgg","https://microsoftedge.microsoft.com/addons/detail/structure-guild-for-marke/nibbchbhagojanbhneamgdcnlgelobbg"],"sameAs":["https://chromewebstore.google.com/detail/structure-guild-for-marke/kcoopfogmmbbijhkcamjejagjkbchlgg","https://microsoftedge.microsoft.com/addons/detail/structure-guild-for-marke/nibbchbhagojanbhneamgdcnlgelobbg"]}]}</script>
+</head>
+  <body>
+    <div id="app"><div class="Layout" data-v-5d98c3a5><!--[--><!--]--><!--[--><span tabindex="-1" data-v-0b0ada53></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-0b0ada53>跳到正文</a><!--]--><!----><header class="VPNav" data-v-5d98c3a5 data-v-ae24b3ad><div class="VPNavBar" data-v-ae24b3ad data-v-6aa21345><div class="wrapper" data-v-6aa21345><div class="container" data-v-6aa21345><div class="title" data-v-6aa21345><div class="VPNavBarTitle has-sidebar" data-v-6aa21345 data-v-1168a8e4><a class="title" href="/" data-v-1168a8e4><!--[--><!--]--><!--[--><img class="VPImage logo" src="/images/structguide-logo.png" alt="Struct Guide 缠论助手" data-v-8426fc1a><!--]--><span data-v-1168a8e4>Struct Guide</span><!--[--><!--]--></a></div></div><div class="content" data-v-6aa21345><div class="content-body" data-v-6aa21345><!--[--><!--]--><div class="VPNavBarSearch search" data-v-6aa21345><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-6aa21345 data-v-dc692963><span id="main-nav-aria-label" class="visually-hidden" data-v-dc692963> 主导航 </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/" tabindex="0" data-v-dc692963 data-v-e56f3d57><!--[--><span data-v-e56f3d57>首页</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/faq/drawing-rules" tabindex="0" data-v-dc692963 data-v-e56f3d57><!--[--><span data-v-e56f3d57>画线规则</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/download/" tabindex="0" data-v-dc692963 data-v-e56f3d57><!--[--><span data-v-e56f3d57>安装插件</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/faq/" tabindex="0" data-v-dc692963 data-v-e56f3d57><!--[--><span data-v-e56f3d57>知识库</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/indicators/" tabindex="0" data-v-dc692963 data-v-e56f3d57><!--[--><span data-v-e56f3d57>指标速查手册</span><!--]--></a><!--]--><!--]--></nav><!----><!----><!----><!----><!--[--><!--[--><!--[--><nav class="docs-language-switch docs-language-switch--bar" aria-label="语言切换"><!--[--><a href="/wenhua-chanlun-auto-drawing" lang="zh-CN" hreflang="zh-CN" aria-current="page">简体</a><a href="/zh-tw/" lang="zh-Hant" hreflang="zh-Hant">繁體</a><a href="/en/" lang="en" hreflang="en">English</a><!--]--></nav><!--]--><!--]--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="移动导航" aria-expanded="false" aria-controls="VPNavScreen" data-v-6aa21345 data-v-e5dd9c1c><span class="container" data-v-e5dd9c1c><span class="top" data-v-e5dd9c1c></span><span class="middle" data-v-e5dd9c1c></span><span class="bottom" data-v-e5dd9c1c></span></span></button></div></div></div></div><div class="divider" data-v-6aa21345><div class="divider-line" data-v-6aa21345></div></div></div><!----></header><div class="VPLocalNav has-sidebar empty" data-v-5d98c3a5 data-v-a6f0e41e><div class="container" data-v-a6f0e41e><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-a6f0e41e><span class="vpi-align-left menu-icon" data-v-a6f0e41e></span><span class="menu-text" data-v-a6f0e41e>菜单</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-a6f0e41e data-v-8a42e2b4><button data-v-8a42e2b4>返回顶部</button><!----></div></div></div><aside class="VPSidebar" data-v-5d98c3a5 data-v-319d5ca6><div class="curtain" data-v-319d5ca6></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-319d5ca6><span class="visually-hidden" id="sidebar-aria-label" data-v-319d5ca6> 侧边栏导航 </span><!--[--><!--]--><!--[--><div class="no-transition group" data-v-c40bc020><section class="VPSidebarItem level-0" data-v-c40bc020 data-v-b3fd67f8><div class="item" role="button" tabindex="0" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><h2 class="text" data-v-b3fd67f8>工具文档</h2><!----></div><div class="items" data-v-b3fd67f8><!--[--><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/chanlun-videos" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>缠论视频讲解</p><!--]--></a><!----></div><!----></div><section class="VPSidebarItem level-1 collapsible" data-v-b3fd67f8><div class="item" role="button" tabindex="0" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><h3 class="text" data-v-b3fd67f8>画线规则</h3><div class="caret" role="button" aria-label="展开或收起分组" tabindex="0" data-v-b3fd67f8><span class="vpi-chevron-right caret-icon" data-v-b3fd67f8></span></div></div><div class="items" data-v-b3fd67f8><!--[--><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/drawing-rules" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>参数总览</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/concept/containment" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>K线包含关系</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/concept/fractal" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>分型</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/concept/stroke" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>笔</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/concept/segment" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>线段</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-2 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/concept/central-zone" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>中枢</p><!--]--></a><!----></div><!----></div><!--]--></div></section><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/download/" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>安装插件</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><div class="no-transition group" data-v-c40bc020><section class="VPSidebarItem level-0" data-v-c40bc020 data-v-b3fd67f8><div class="item" role="button" tabindex="0" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><h2 class="text" data-v-b3fd67f8>知识库</h2><!----></div><div class="items" data-v-b3fd67f8><!--[--><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>网站和软件总览</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#tradingview" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>TradingView</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#tonghuashun" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>同花顺</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#eastmoney" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>东方财富</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#xueqiu" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>雪球</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#sina" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>新浪财经</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#moomoo" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>moomoo</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#tongdaxin" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>通达信</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#wenhua" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>文华财经</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#boyi" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>博易大师</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/#mt5" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>MT5</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><div class="no-transition group" data-v-c40bc020><section class="VPSidebarItem level-0" data-v-c40bc020 data-v-b3fd67f8><div class="item" role="button" tabindex="0" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><h2 class="text" data-v-b3fd67f8>常见指标速查手册</h2><!----></div><div class="items" data-v-b3fd67f8><!--[--><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>指标计算原理总览</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/ma" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>MA均线怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/ma-vs-ema" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>MA和EMA的区别</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/macd" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>MACD计算公式图解</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/boll" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>BOLL布林带怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/kdj" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>KDJ计算公式图解</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/rsi" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>RSI怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/bias" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>BIAS乖离率怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/atr" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>ATR平均真实波幅怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/cci" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>CCI 顺势指标（商品通道指数）</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/obv" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>OBV 能量潮指标</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/vol" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>VOL 成交量与均量线</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/vwap" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>VWAP 成交量加权平均价</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/dmi-adx" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>DMI与ADX计算图解</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/psy" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>PSY心理线怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/roc" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>ROC变动率怎么算</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/indicators/wr" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>WR威廉指标怎么算</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><div class="no-transition group" data-v-c40bc020><section class="VPSidebarItem level-0 has-active" data-v-c40bc020 data-v-b3fd67f8><div class="item" role="button" tabindex="0" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><h2 class="text" data-v-b3fd67f8>热门文章</h2><!----></div><div class="items" data-v-b3fd67f8><!--[--><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/chanlun-indicator" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>缠论自动画线软件怎么选</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/faq/how-to-read-108" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>108课原文阅读索引</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/chanlun-auto-drawing" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>缠论自动画线工具</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/wenhua-chanlun-auto-drawing" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>文华财经近似缠论公式</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/tutorial/tradingview" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>TradingView 使用教程</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-b3fd67f8><div class="item" data-v-b3fd67f8><div class="indicator" data-v-b3fd67f8></div><a class="VPLink link link" href="/sites/" data-v-b3fd67f8><!--[--><p class="text" data-v-b3fd67f8>支持的行情网站</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-5d98c3a5 data-v-1428d186><div class="VPDoc has-sidebar has-aside" data-v-1428d186 data-v-39a288b8><!--[--><!--]--><div class="container" data-v-39a288b8><div class="aside" data-v-39a288b8><div class="aside-curtain" data-v-39a288b8></div><div class="aside-container" data-v-39a288b8><div class="aside-content" data-v-39a288b8><div class="VPDocAside" data-v-39a288b8 data-v-3f215769><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-3f215769 data-v-a5bbad30><div class="content" data-v-a5bbad30><div class="outline-marker" data-v-a5bbad30></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-a5bbad30>本页目录</div><ul class="VPDocOutlineItem root" data-v-a5bbad30 data-v-b933a997><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-3f215769></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-39a288b8><div class="content-container" data-v-39a288b8><!--[--><!--]--><main class="main" data-v-39a288b8><div style="position:relative;" class="vp-doc _wenhua-chanlun-auto-drawing" data-v-39a288b8><div><h1 id="文华财经缠论指标公式-自动画笔、线段与中枢" tabindex="-1">文华财经缠论指标公式：自动画笔、线段与中枢 <a class="header-anchor" href="#文华财经缠论指标公式-自动画笔、线段与中枢" aria-label="固定链接： &quot;文华财经缠论指标公式：自动画笔、线段与中枢&quot;">​</a></h1><p>想在文华财经 WH6 电脑版主图上自动画笔、线段和中枢，可以下载本页自行编写的<strong>近似缠论指标公式</strong>。麦语言 TXT 源码免费提供，可查看、修改，无需 DLL；分型、笔、线段和中枢可以分别开关显示。</p><p>下方提供源码下载、导入步骤和实际截图，并说明本版近似规则及其与 Struct Guide 网页插件的区别。需要在网页上画线，可查看<a href="#web-path">网页版方案</a>。</p><h2 id="download" tabindex="-1">下载文华财经近似缠论公式 <a class="header-anchor" href="#download" aria-label="固定链接： &quot;下载文华财经近似缠论公式 {#download}&quot;">​</a></h2><p><a class="site-install-button" href="/formulas/sg-wh6-approx-v1.txt" download="StructGuide_WH6_Approx_v1.0.0.txt">免费下载 WH6 麦语言 TXT 源码</a></p><p><strong>v1.0.0 · 2026年10月12日 · 约81KB · 无需注册。</strong> 文件为含中文注释的 UTF-8 文本，下载后复制全文到公式编辑器；<a href="#installation">导入步骤见下文</a>。</p><p>用户已在 <strong>WH6 电脑版 V6.8.950、上证指数日线</strong>验证可运行，并提供了<a href="#screenshots">实际效果图</a>。其他版本、手机版及云端指标未验证。本公式使用未来函数，历史标注可能随数据更新而变化。</p><h2 id="formula" tabindex="-1">为什么叫“近似缠论公式”？ <a class="header-anchor" href="#formula" aria-label="固定链接： &quot;为什么叫“近似缠论公式”？ {#formula}&quot;">​</a></h2><p>为适应 WH6 麦语言环境的公式长度限制，并控制计算展开的规模，本版沿用<a href="/faq/tongdaxin-approx-chanlun-formula">通达信近似缠论公式</a>的局部处理方式，针对麦语言重写端点定位与绘图。本页公式与 Struct Guide 浏览器插件的处理流程不同，具体区别如下。</p><table tabindex="0"><thead><tr><th>结构</th><th>本页 WH6 近似公式的规则</th><th>Struct Guide 浏览器插件的规则</th></tr></thead><tbody><tr><td>包含与分型</td><td>每个合并组最多5根原始 K 线；比较三个已结束的有效组，按时间筛选不共用组的分型，标在中间组末根</td><td>按本站公开规则处理 K 线合并，分型坐标映射到原始极值来源的 K 线处</td></tr><tr><td>笔</td><td>默认在40根范围内整理端点，最多12轮；按合并组末根位置计算间隔</td><td>严格笔与宽松笔分别按标准 K 线、原始极值来源计数，并维护候选端点与确认依据</td></tr><tr><td>线段</td><td>按最近笔端点的高低变化分组，取组内极值，再检查三笔起始与共同区间</td><td>按特征序列、缺口后的第二序列及第一笔破坏后的成段确认条件检查结束点</td></tr><tr><td>中枢</td><td>局部三段分组后固定上下沿，按区间交叠和分组条件延伸、结束</td><td>按已确认线段、成员归属及返回条件检查延伸与新区间</td></tr></tbody></table><p>两者的中枢都使用<strong>线段覆盖的原始 K 线最高、最低价，并包含连接端点</strong>；但线段和成员选择不同，矩形范围也可能不同。本公式不设线段、中枢总个数上限，尾部待确认线段不参与中枢计算。</p><p>这些是本版的实现取舍，不代表麦语言的能力上限，也不以图形数量评价两种方式。</p><h2 id="web-path" tabindex="-1">想在网页上自动画线？使用 Struct Guide <a class="header-anchor" href="#web-path" aria-label="固定链接： &quot;想在网页上自动画线？使用 Struct Guide {#web-path}&quot;">​</a></h2><p><span id="web-layers"></span></p><p>Struct Guide 是浏览器插件，在适配的行情网页原有 K 线上叠加<strong>分型、笔、线段和中枢</strong>。可切换严格笔／宽松笔，笔和线段以实线、虚线区分已确认与待确认状态，并使用<a href="/chanlun-auto-drawing#replay-check">结构快照与回放</a>保存和回看结构变化。具体计算条件见<a href="/faq/drawing-rules">画线规则与参数总览</a>。</p><p><a class="site-install-button" href="/download/">安装 Struct Guide 网页画线插件</a></p><p>查看期货时，可先核对<a href="/sites/sina#supported-periods">新浪财经兼容范围</a>，再按<a href="/tutorial/sina">新浪财经缠论画线教程</a>打开对应网页。查看其他市场可查<a href="/sites/">支持网站与周期</a>。</p><p><strong>公式在 WH6 中使用客户端数据；插件在浏览器中使用适配网页已加载的数据。</strong> 插件不能安装进文华财经，也不转接或同步客户端图表。需要留在 WH6 中可独立使用本页公式；需要网页规则与快照回放可选择插件。</p><h2 id="screenshots" tabindex="-1">文华财经自动画笔、线段和中枢：实测效果与网页方案对照 <a class="header-anchor" href="#screenshots" aria-label="固定链接： &quot;文华财经自动画笔、线段和中枢：实测效果与网页方案对照 {#screenshots}&quot;">​</a></h2><p>两图均展示上证指数日线，分别使用 WH6 近似公式和 Struct Guide 浏览器插件，点击可放大。</p><figure class="article-image"><button class="article-image-zoom-trigger" type="button" aria-label="放大查看：文华财经 WH6：近似公式的上证指数日线显示" title="放大查看"><img src="/assets/images/comparisons/wh6-approx-shanghai-daily-20261012.avif" alt="文华财经 WH6：近似公式的上证指数日线显示" width="1559" height="630" loading="lazy" fetchpriority="auto" decoding="async"><span class="article-image-zoom-hint" aria-hidden="true">放大查看</span></button><figcaption><strong>文华财经 WH6：近似公式的上证指数日线显示</strong><span>用户提供的运行截图：WH6 V6.8.950，上证指数日线。红绿线为近似线段，紫色线框为中枢；仅展示该环境下的显示效果。</span></figcaption><dialog class="article-image-zoom-dialog" aria-label="文华财经 WH6：近似公式的上证指数日线显示"><div class="article-image-zoom-toolbar"><span>文华财经 WH6：近似公式的上证指数日线显示</span><button type="button">原始尺寸</button><button class="article-image-zoom-close" type="button" aria-label="关闭大图" title="关闭">×</button></div><!----></dialog></figure><p>蓝色细线为笔，上行线段为红色、下行线段为绿色，中枢为紫色线框、不填充；方向和颜色仅用于标识结构。实线与虚线表示本公式的近似确认状态，不等同于插件的确认流程。截图展示一次运行效果，不代表所有输入均已验证。</p><figure class="article-image"><button class="article-image-zoom-trigger" type="button" aria-label="放大查看：同花顺网页：Struct Guide 的上证指数日线显示" title="放大查看"><img src="/assets/images/comparisons/struct-guide-ths-shanghai-daily-20261105.avif" alt="同花顺网页：Struct Guide 的上证指数日线显示" width="1895" height="714" loading="lazy" fetchpriority="auto" decoding="async"><span class="article-image-zoom-hint" aria-hidden="true">放大查看</span></button><figcaption><strong>同花顺网页：Struct Guide 的上证指数日线显示</strong><span>插件 v2.1.2，宽松笔、全部分型设置；分型图层关闭，笔、线段和中枢图层开启。结构图层由 Struct Guide 绘制。</span></figcaption><dialog class="article-image-zoom-dialog" aria-label="同花顺网页：Struct Guide 的上证指数日线显示"><div class="article-image-zoom-toolbar"><span>同花顺网页：Struct Guide 的上证指数日线显示</span><button type="button">原始尺寸</button><button class="article-image-zoom-close" type="button" aria-label="关闭大图" title="关闭">×</button></div><!----></dialog></figure><p>插件图来自同花顺网页，使用宽松笔模式；分型图层关闭，笔、线段和中枢图层开启。两边的数据来源、复权、历史范围及计算设置尚未逐项对齐，仅展示各自的显示效果，不作为相同输入下的逐项验证，也不能仅凭外观判断某处差异的原因。</p><h2 id="installation" tabindex="-1">麦语言公式怎么导入 WH6？ <a class="header-anchor" href="#installation" aria-label="固定链接： &quot;麦语言公式怎么导入 WH6？ {#installation}&quot;">​</a></h2><ol><li>下载 TXT，用支持 UTF-8 的文本编辑器打开，复制全文。</li><li>在 WH6 新建自定义指标，选择 <strong>K线附属指标</strong>，输入未使用的名称，例如 <code>SG近似缠论</code>。</li><li>粘贴源码并执行编译检查，通过后保存，加载到 K 线主图。</li></ol><p>这是源码文本，不是打包指标文件。替换旧版时先清空编辑器，避免两份代码叠在一起；不要把网页正文一并粘贴。</p><details class="details custom-block"><summary>图层开关与参数</summary><table tabindex="0"><thead><tr><th>设置</th><th>默认值</th><th>作用</th></tr></thead><tbody><tr><td><code>SGSF</code></td><td>1</td><td>分型：红色下箭头、绿色上箭头</td></tr><tr><td><code>SGSP</code></td><td>1</td><td>笔：蓝色细线</td></tr><tr><td><code>SGSS</code></td><td>1</td><td>线段：红绿连线</td></tr><tr><td><code>SGSZ</code></td><td>1</td><td>中枢：紫色线框</td></tr><tr><td><code>SGMG</code></td><td>4</td><td>两端分型所在合并组末根的原始 K 线编号差下限；小于4按4处理</td></tr><tr><td><code>SGEW</code></td><td>40</td><td>笔端点整理的单轮范围，以原始 K 线根数计；小于4按4处理</td></tr></tbody></table><p>前四项设为0可隐藏图层，计算仍继续。<code>SGMG</code>、<code>SGEW</code>影响计算，不是严格笔／宽松笔切换；<code>SGEW</code>也不是一笔最大长度。各结构的局部规则可对照<a href="/faq/tongdaxin-approx-chanlun-formula#implementation">通达信近似缠论公式的实现说明</a>，两份源码不能直接跨客户端粘贴。</p></details><h2 id="faq" tabindex="-1">常见问题 <a class="header-anchor" href="#faq" aria-label="固定链接： &quot;常见问题 {#faq}&quot;">​</a></h2><p><span id="有文华财经自动画笔公式、线段或中枢指标源码吗"></span></p><h3 id="stroke-formula" tabindex="-1">有文华财经缠论自动画笔、画线段的公式源码吗？ <a class="header-anchor" href="#stroke-formula" aria-label="固定链接： &quot;有文华财经缠论自动画笔、画线段的公式源码吗？ {#stroke-formula}&quot;">​</a></h3><p>有，<a href="#download">上方下载</a>的同一份 WH6 麦语言源码包含笔和线段，无需另装两份指标。<code>SGSP</code> 控制笔、<code>SGSS</code> 控制线段，设为1显示、0隐藏；如果只想看笔和线段，可将分型开关 <code>SGSF</code>、中枢开关 <code>SGSZ</code> 设为0。</p><p>本版按局部近似规则整理笔端点、划分线段，不提供插件的严格笔／宽松笔切换，具体处理方式见<a href="#formula">近似实现说明</a>。下载的是本站自行编写的公式，不是第三方或网络流传版本。</p><h3 id="central-zone-indicator" tabindex="-1">有文华财经缠论中枢指标吗？可以单独显示中枢吗？ <a class="header-anchor" href="#central-zone-indicator" aria-label="固定链接： &quot;有文华财经缠论中枢指标吗？可以单独显示中枢吗？ {#central-zone-indicator}&quot;">​</a></h3><p>有，中枢包含在同一份公式中，<code>SGSZ</code> 设为1即可显示紫色线框。若只显示中枢，可将 <code>SGSF</code>、<code>SGSP</code>、<code>SGSS</code> 设为0；这些开关只隐藏图层，笔和线段的计算仍继续。</p><p>本版中枢基于局部线段分组，使用线段覆盖的原始 K 线极值检查区间交叠、延伸和结束，尾部待确认线段不参与计算。它不是插件完整中枢流程的复现；历史数据不足或条件未满足时，也可能没有中枢框。实际显示见<a href="#screenshots">上方截图</a>。</p><h3 id="使用未来函数吗-历史画线会变化吗" tabindex="-1">使用未来函数吗？历史画线会变化吗？ <a class="header-anchor" href="#使用未来函数吗-历史画线会变化吗" aria-label="固定链接： &quot;使用未来函数吗？历史画线会变化吗？&quot;">​</a></h3><p>会。源码使用 <code>BACKSET</code>、<code>REFX</code> 回填历史标记、取得后续端点依据。新增、修订或补载数据，以及修改参数，都可能改变历史显示。<strong>端点所在的 K 线位置，不等于取得确认依据的时间。</strong> 插件的待确认对象也会更新，历史数据或设置变化时相关结构可重算。</p><h3 id="可以免费使用、修改吗" tabindex="-1">可以免费使用、修改吗？ <a class="header-anchor" href="#可以免费使用、修改吗" aria-label="固定链接： &quot;可以免费使用、修改吗？&quot;">​</a></h3><p>可以，公式可独立使用，无需安装浏览器插件。修改后请保留版本与参数记录。</p><h3 id="支持-wh7、wh8、手机版或云端指标吗" tabindex="-1">支持 WH7、WH8、手机版或云端指标吗？ <a class="header-anchor" href="#支持-wh7、wh8、手机版或云端指标吗" aria-label="固定链接： &quot;支持 WH7、WH8、手机版或云端指标吗？&quot;">​</a></h3><p>本页仅记录 WH6 电脑版 V6.8.950 的运行验证，尚未验证其他环境，不能直接视为兼容。</p><h3 id="通达信缠论公式能直接粘贴到文华财经吗" tabindex="-1">通达信缠论公式能直接粘贴到文华财经吗？ <a class="header-anchor" href="#通达信缠论公式能直接粘贴到文华财经吗" aria-label="固定链接： &quot;通达信缠论公式能直接粘贴到文华财经吗？&quot;">​</a></h3><p>不能把两种语言直接视为兼容。需要通达信电脑版源码请使用<a href="/faq/tongdaxin-approx-chanlun-formula">通达信近似缠论公式</a>；本页提供的是单独适配的麦语言版本。</p><h3 id="编译报错、没有连线或没有中枢怎么办" tabindex="-1">编译报错、没有连线或没有中枢怎么办？ <a class="header-anchor" href="#编译报错、没有连线或没有中枢怎么办" aria-label="固定链接： &quot;编译报错、没有连线或没有中枢怎么办？&quot;">​</a></h3><p>先核对文件头是否为 <strong>v1.0.0</strong>，源码是否完整，是否选择 K线附属指标并开启图层。历史数据不足、合并组无效或连接条件不满足时，可能没有对应图形；中枢须有三条有效近似线段的覆盖区间严格重叠，尾部虚线不计入。</p><p>仍有问题时，将客户端版本、错误句与行号、品种、周期、历史范围、参数及截图发至 <a href="mailto:structguide@outlook.com" target="_blank" rel="noreferrer">structguide@outlook.com</a>。</p><h3 id="同一品种在公式与网页插件中画得不同-怎么核对" tabindex="-1">同一品种在公式与网页插件中画得不同，怎么核对？ <a class="header-anchor" href="#同一品种在公式与网页插件中画得不同-怎么核对" aria-label="固定链接： &quot;同一品种在公式与网页插件中画得不同，怎么核对？&quot;">​</a></h3><p>先记录代码或具体合约、数据来源、周期、时段、复权、历史范围和参数，再对照上表的计算规则。两边输入未经对齐，不能只凭截图确定差异原因。检查顺序见<a href="/faq/chanlun-indicator#drawing-differences">画线差异核对顺序</a>。</p><h3 id="struct-guide-插件能读取文华财经的数据-或安装进客户端吗" tabindex="-1">Struct Guide 插件能读取文华财经的数据，或安装进客户端吗？ <a class="header-anchor" href="#struct-guide-插件能读取文华财经的数据-或安装进客户端吗" aria-label="固定链接： &quot;Struct Guide 插件能读取文华财经的数据，或安装进客户端吗？&quot;">​</a></h3><p>不能。插件只处理已适配行情网页中加载的 K 线数据。网页 K 线加载失败时，插件不会改用文华财经客户端作为数据源。</p><h2 id="source" tabindex="-1">查看完整麦语言源码 <a class="header-anchor" href="#source" aria-label="固定链接： &quot;查看完整麦语言源码 {#source}&quot;">​</a></h2><details class="details custom-block"><summary>展开查看文华财经近似缠论公式源码</summary><div class="language-txt vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">txt</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>// Struct Guide 文华财经近似缠论公式 v1.0.0 — 2026-10-12</span></span>
+<span class="line"><span>// 适用：WH6 电脑版，K线附属指标；用户已验证 V6.8.950 上证指数日线可运行。</span></span>
+<span class="line"><span>// Struct Guide 独立编写，无需 DLL，与文华财经无隶属或合作关系。</span></span>
+<span class="line"><span>// 仅用于结构学习与复盘，不提供投资建议；只输出结构端点、连线与区间。</span></span>
+<span class="line"><span>// 含 BACKSET、REFX 未来函数；历史标记可回写，不能视为当时已知结果。</span></span>
+<span class="line"><span>// 包含组最多5根；端点范围40根；笔与线段各整理12轮。</span></span>
+<span class="line"><span>// 线段采用局部分组；不包含插件的特征序列与第二序列流程。</span></span>
+<span class="line"><span>// 中枢取覆盖原始K线极值并包含端点，初始上下沿固定，无固定个数上限。</span></span>
+<span class="line"><span>// 请新建K线附属指标粘贴全文；其他版本、手机版及云端指标未验证。</span></span>
+<span class="line"><span>// 自定义变量使用 SG 前缀，减少与内置名称冲突。</span></span>
+<span class="line"><span>// 本版保留已验证的计算与绘图代码；切换环境后请重新核对。</span></span>
+<span class="line"><span>SGSF:=1;</span></span>
+<span class="line"><span>SGSP:=1;</span></span>
+<span class="line"><span>SGSS:=1;</span></span>
+<span class="line"><span>SGSZ:=1;</span></span>
+<span class="line"><span>SGMG:=4;</span></span>
+<span class="line"><span>SGEW:=40;</span></span>
+<span class="line"><span>SGBN:=BARPOS;</span></span>
+<span class="line"><span>SGTMP1:=SGBN&gt;1;</span></span>
+<span class="line"><span>SGTMP2:=REFWH(H,1);</span></span>
+<span class="line"><span>SGTMP3:=REFWH(L,1);</span></span>
+<span class="line"><span>SGCI:=SGTMP1 AND (H&gt;=SGTMP2 AND L&lt;=SGTMP3 OR H&lt;=SGTMP2 AND L&gt;=SGTMP3);</span></span>
+<span class="line"><span>SGR0GS:=SGBN=1 OR SGCI=0;</span></span>
+<span class="line"><span>SGR0GR:=IFELSE(COUNT(SGR0GS,0)&gt;0,BARSLAST(SGR0GS),SGBN)+1;</span></span>
+<span class="line"><span>SGR0NR:=MIN(SGR0GR,5);</span></span>
+<span class="line"><span>SGTMP4:=SGR0NR-1;</span></span>
+<span class="line"><span>SGR0AH:=REFWH(H,SGTMP4);</span></span>
+<span class="line"><span>SGR0AL:=REFWH(L,SGTMP4);</span></span>
+<span class="line"><span>SGTMP5:=SGR0NR-2;</span></span>
+<span class="line"><span>SGTMP6:=MAX(SGTMP5,0);</span></span>
+<span class="line"><span>SGR0BH:=REFWH(H,SGTMP6);</span></span>
+<span class="line"><span>SGR0BL:=REFWH(L,SGTMP6);</span></span>
+<span class="line"><span>SGR0GU:=IFELSE(SGBN&gt;SGR0GR,SGR0AH&gt;REFWH(H,SGR0NR),IFELSE(SGR0BH+SGR0BL&lt;&gt;SGR0AH+SGR0AL,SGR0BH+SGR0BL&gt;SGR0AH+SGR0AL,REFWH(C,SGTMP6)&gt;=REFWH(C,SGTMP4)));</span></span>
+<span class="line"><span>SGTMP7:=MAX(SGTMP4,1);</span></span>
+<span class="line"><span>SGR0WH:=IFELSE(SGR0GU,HHV(SGTMP2,SGTMP7),LLV(SGTMP2,SGTMP7));</span></span>
+<span class="line"><span>SGR0WL:=IFELSE(SGR0GU,HHV(SGTMP3,SGTMP7),LLV(SGTMP3,SGTMP7));</span></span>
+<span class="line"><span>SGR0BF:=SGR0GR&gt;1 AND (SGR0WH&gt;=H AND SGR0WL&lt;=L OR SGR0WH&lt;=H AND SGR0WL&gt;=L)=0;</span></span>
+<span class="line"><span>SGR1GS:=SGR0GS OR SGR0BF AND SGR0GR&lt;=5;</span></span>
+<span class="line"><span>SGR1GR:=IFELSE(COUNT(SGR1GS,0)&gt;0,BARSLAST(SGR1GS),SGBN)+1;</span></span>
+<span class="line"><span>SGR1NR:=MIN(SGR1GR,5);</span></span>
+<span class="line"><span>SGTMP8:=SGR1NR-1;</span></span>
+<span class="line"><span>SGR1AH:=REFWH(H,SGTMP8);</span></span>
+<span class="line"><span>SGR1AL:=REFWH(L,SGTMP8);</span></span>
+<span class="line"><span>SGTMP9:=SGR1NR-2;</span></span>
+<span class="line"><span>SGTMP10:=MAX(SGTMP9,0);</span></span>
+<span class="line"><span>SGR1BH:=REFWH(H,SGTMP10);</span></span>
+<span class="line"><span>SGR1BL:=REFWH(L,SGTMP10);</span></span>
+<span class="line"><span>SGR1GU:=IFELSE(SGBN&gt;SGR1GR,SGR1AH&gt;REFWH(H,SGR1NR),IFELSE(SGR1BH+SGR1BL&lt;&gt;SGR1AH+SGR1AL,SGR1BH+SGR1BL&gt;SGR1AH+SGR1AL,REFWH(C,SGTMP10)&gt;=REFWH(C,SGTMP8)));</span></span>
+<span class="line"><span>SGTMP11:=MAX(SGTMP8,1);</span></span>
+<span class="line"><span>SGR1WH:=IFELSE(SGR1GU,HHV(SGTMP2,SGTMP11),LLV(SGTMP2,SGTMP11));</span></span>
+<span class="line"><span>SGR1WL:=IFELSE(SGR1GU,HHV(SGTMP3,SGTMP11),LLV(SGTMP3,SGTMP11));</span></span>
+<span class="line"><span>SGR1BF:=SGR1GR&gt;1 AND (SGR1WH&gt;=H AND SGR1WL&lt;=L OR SGR1WH&lt;=H AND SGR1WL&gt;=L)=0;</span></span>
+<span class="line"><span>SGR2GS:=SGR1GS OR SGR1BF AND SGR1GR&lt;=5;</span></span>
+<span class="line"><span>SGR2GR:=IFELSE(COUNT(SGR2GS,0)&gt;0,BARSLAST(SGR2GS),SGBN)+1;</span></span>
+<span class="line"><span>SGR2NR:=MIN(SGR2GR,5);</span></span>
+<span class="line"><span>SGTMP12:=SGR2NR-1;</span></span>
+<span class="line"><span>SGR2AH:=REFWH(H,SGTMP12);</span></span>
+<span class="line"><span>SGR2AL:=REFWH(L,SGTMP12);</span></span>
+<span class="line"><span>SGTMP13:=SGR2NR-2;</span></span>
+<span class="line"><span>SGTMP14:=MAX(SGTMP13,0);</span></span>
+<span class="line"><span>SGR2BH:=REFWH(H,SGTMP14);</span></span>
+<span class="line"><span>SGR2BL:=REFWH(L,SGTMP14);</span></span>
+<span class="line"><span>SGR2GU:=IFELSE(SGBN&gt;SGR2GR,SGR2AH&gt;REFWH(H,SGR2NR),IFELSE(SGR2BH+SGR2BL&lt;&gt;SGR2AH+SGR2AL,SGR2BH+SGR2BL&gt;SGR2AH+SGR2AL,REFWH(C,SGTMP14)&gt;=REFWH(C,SGTMP12)));</span></span>
+<span class="line"><span>SGTMP15:=MAX(SGTMP12,1);</span></span>
+<span class="line"><span>SGR2WH:=IFELSE(SGR2GU,HHV(SGTMP2,SGTMP15),LLV(SGTMP2,SGTMP15));</span></span>
+<span class="line"><span>SGR2WL:=IFELSE(SGR2GU,HHV(SGTMP3,SGTMP15),LLV(SGTMP3,SGTMP15));</span></span>
+<span class="line"><span>SGR2BF:=SGR2GR&gt;1 AND (SGR2WH&gt;=H AND SGR2WL&lt;=L OR SGR2WH&lt;=H AND SGR2WL&gt;=L)=0;</span></span>
+<span class="line"><span>SGR3GS:=SGR2GS OR SGR2BF AND SGR2GR&lt;=5;</span></span>
+<span class="line"><span>SGR3GR:=IFELSE(COUNT(SGR3GS,0)&gt;0,BARSLAST(SGR3GS),SGBN)+1;</span></span>
+<span class="line"><span>SGR3NR:=MIN(SGR3GR,5);</span></span>
+<span class="line"><span>SGTMP16:=SGR3NR-1;</span></span>
+<span class="line"><span>SGR3AH:=REFWH(H,SGTMP16);</span></span>
+<span class="line"><span>SGR3AL:=REFWH(L,SGTMP16);</span></span>
+<span class="line"><span>SGTMP17:=SGR3NR-2;</span></span>
+<span class="line"><span>SGTMP18:=MAX(SGTMP17,0);</span></span>
+<span class="line"><span>SGR3BH:=REFWH(H,SGTMP18);</span></span>
+<span class="line"><span>SGR3BL:=REFWH(L,SGTMP18);</span></span>
+<span class="line"><span>SGR3GU:=IFELSE(SGBN&gt;SGR3GR,SGR3AH&gt;REFWH(H,SGR3NR),IFELSE(SGR3BH+SGR3BL&lt;&gt;SGR3AH+SGR3AL,SGR3BH+SGR3BL&gt;SGR3AH+SGR3AL,REFWH(C,SGTMP18)&gt;=REFWH(C,SGTMP16)));</span></span>
+<span class="line"><span>SGTMP19:=MAX(SGTMP16,1);</span></span>
+<span class="line"><span>SGR3WH:=IFELSE(SGR3GU,HHV(SGTMP2,SGTMP19),LLV(SGTMP2,SGTMP19));</span></span>
+<span class="line"><span>SGR3WL:=IFELSE(SGR3GU,HHV(SGTMP3,SGTMP19),LLV(SGTMP3,SGTMP19));</span></span>
+<span class="line"><span>SGR3BF:=SGR3GR&gt;1 AND (SGR3WH&gt;=H AND SGR3WL&lt;=L OR SGR3WH&lt;=H AND SGR3WL&gt;=L)=0;</span></span>
+<span class="line"><span>SGGS:=SGR3GS OR SGR3BF AND SGR3GR&lt;=5;</span></span>
+<span class="line"><span>SGGN:=COUNT(SGGS,0);</span></span>
+<span class="line"><span>SGGR:=IFELSE(COUNT(SGGS,0)&gt;0,BARSLAST(SGGS),SGBN)+1;</span></span>
+<span class="line"><span>SGNR:=MIN(SGGR,5);</span></span>
+<span class="line"><span>SGTMP20:=SGNR-1;</span></span>
+<span class="line"><span>SGAH:=REFWH(H,SGTMP20);</span></span>
+<span class="line"><span>SGAL:=REFWH(L,SGTMP20);</span></span>
+<span class="line"><span>SGTMP21:=SGNR-2;</span></span>
+<span class="line"><span>SGTMP22:=MAX(SGTMP21,0);</span></span>
+<span class="line"><span>SGBH:=REFWH(H,SGTMP22);</span></span>
+<span class="line"><span>SGBL:=REFWH(L,SGTMP22);</span></span>
+<span class="line"><span>SGGU:=IFELSE(SGBN&gt;SGGR,SGAH&gt;REFWH(H,SGNR),IFELSE(SGBH+SGBL&lt;&gt;SGAH+SGAL,SGBH+SGBL&gt;SGAH+SGAL,REFWH(C,SGTMP22)&gt;=REFWH(C,SGTMP20)));</span></span>
+<span class="line"><span>SGRHH:=IFELSE(SGGU,HHV(H,SGNR),LLV(H,SGNR));</span></span>
+<span class="line"><span>SGRLL:=IFELSE(SGGU,HHV(L,SGNR),LLV(L,SGNR));</span></span>
+<span class="line"><span>SGTMP23:=MAX(SGTMP20,1);</span></span>
+<span class="line"><span>SGWH:=IFELSE(SGGU,HHV(SGTMP2,SGTMP23),LLV(SGTMP2,SGTMP23));</span></span>
+<span class="line"><span>SGWL:=IFELSE(SGGU,HHV(SGTMP3,SGTMP23),LLV(SGTMP3,SGTMP23));</span></span>
+<span class="line"><span>SGBF:=SGGR&gt;1 AND (SGWH&gt;=H AND SGWL&lt;=L OR SGWH&lt;=H AND SGWL&gt;=L)=0;</span></span>
+<span class="line"><span>SGGV:=SGGR&lt;=5 AND COUNT(SGBF,SGNR)=0;</span></span>
+<span class="line"><span>SGTMP24:=SGGS AND SGTMP1;</span></span>
+<span class="line"><span>SGG0A:=SGTMP24 AND MOD(SGGN,2)=0;</span></span>
+<span class="line"><span>SGG0B:=SGTMP24 AND MOD(SGGN,2)=1;</span></span>
+<span class="line"><span>SGG0E:=BACKSET(SGG0A,2)-BACKSET(SGG0A,1)&gt;0 OR BACKSET(SGG0B,2)-BACKSET(SGG0B,1)&gt;0;</span></span>
+<span class="line"><span>SGG0H:=SGRHH;</span></span>
+<span class="line"><span>SGG0L:=SGRLL;</span></span>
+<span class="line"><span>SGG0S:=SGGR;</span></span>
+<span class="line"><span>SGG1N:=COUNT(SGG0E,0);</span></span>
+<span class="line"><span>SGTMP25:=SGBN-1;</span></span>
+<span class="line"><span>SGG1D:=MIN(IFELSE(COUNT(REFWH(SGG0E,1),0)&gt;0,BARSLAST(REFWH(SGG0E,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGG1A:=MIN(SGG1D+REFWH(SGG1D,SGG1D),SGTMP25);</span></span>
+<span class="line"><span>SGG1W:=SGG1D+REFWH(SGG0S,SGG1D);</span></span>
+<span class="line"><span>SGTMP26:=REFWH(SGG0H,SGG1D);</span></span>
+<span class="line"><span>SGTMP27:=REFWH(SGG0L,SGG1D);</span></span>
+<span class="line"><span>SGG1I:=SGG0H&gt;=SGTMP26 AND SGG0L&lt;=SGTMP27 OR SGG0H&lt;=SGTMP26 AND SGG0L&gt;=SGTMP27;</span></span>
+<span class="line"><span>SGG1M:=SGG0E AND SGG1N&gt;=2 AND MOD(SGG1N-0,2)=0 AND SGGV AND REFWH(SGGV,SGG1D) AND SGG1W&lt;=5 AND SGG1I;</span></span>
+<span class="line"><span>SGTMP28:=SGG0H+SGG0L;</span></span>
+<span class="line"><span>SGTMP29:=REFWH(SGTMP28,SGG1D);</span></span>
+<span class="line"><span>SGG1U:=IFELSE(SGG1N&gt;=3,SGTMP26&gt;=REFWH(SGG0H,SGG1A),IFELSE(SGTMP28&lt;&gt;SGTMP29,SGTMP28&gt;SGTMP29,C&gt;=REFWH(C,SGG1D)));</span></span>
+<span class="line"><span>SGG1T:=BACKSET(SGG1M,2)-BACKSET(SGG1M,1)&gt;0;</span></span>
+<span class="line"><span>SGG1B:=BACKSET(SGG1T,IFELSE(COUNT(SGG0E,0)&gt;0,BARSLAST(SGG0E),SGBN)+1);</span></span>
+<span class="line"><span>SGG1E:=SGG0E AND SGG1B=0;</span></span>
+<span class="line"><span>SGG1H:=IFELSE(SGG1M,IFELSE(SGG1U,MAX(SGG0H,SGTMP26),MIN(SGG0H,SGTMP26)),SGG0H);</span></span>
+<span class="line"><span>SGG1L:=IFELSE(SGG1M,IFELSE(SGG1U,MAX(SGG0L,SGTMP27),MIN(SGG0L,SGTMP27)),SGG0L);</span></span>
+<span class="line"><span>SGG1S:=IFELSE(SGG1M,SGG1W,SGG0S);</span></span>
+<span class="line"><span>SGG2N:=COUNT(SGG1E,0);</span></span>
+<span class="line"><span>SGG2D:=MIN(IFELSE(COUNT(REFWH(SGG1E,1),0)&gt;0,BARSLAST(REFWH(SGG1E,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGG2A:=MIN(SGG2D+REFWH(SGG2D,SGG2D),SGTMP25);</span></span>
+<span class="line"><span>SGG2W:=SGG2D+REFWH(SGG1S,SGG2D);</span></span>
+<span class="line"><span>SGTMP30:=REFWH(SGG1H,SGG2D);</span></span>
+<span class="line"><span>SGTMP31:=REFWH(SGG1L,SGG2D);</span></span>
+<span class="line"><span>SGG2I:=SGG1H&gt;=SGTMP30 AND SGG1L&lt;=SGTMP31 OR SGG1H&lt;=SGTMP30 AND SGG1L&gt;=SGTMP31;</span></span>
+<span class="line"><span>SGG2M:=SGG1E AND SGG2N&gt;=3 AND MOD(SGG2N-1,2)=0 AND SGGV AND REFWH(SGGV,SGG2D) AND SGG2W&lt;=5 AND SGG2I;</span></span>
+<span class="line"><span>SGTMP32:=SGG1H+SGG1L;</span></span>
+<span class="line"><span>SGTMP33:=REFWH(SGTMP32,SGG2D);</span></span>
+<span class="line"><span>SGG2U:=IFELSE(SGG2N&gt;=3,SGTMP30&gt;=REFWH(SGG1H,SGG2A),IFELSE(SGTMP32&lt;&gt;SGTMP33,SGTMP32&gt;SGTMP33,C&gt;=REFWH(C,SGG2D)));</span></span>
+<span class="line"><span>SGG2T:=BACKSET(SGG2M,2)-BACKSET(SGG2M,1)&gt;0;</span></span>
+<span class="line"><span>SGG2B:=BACKSET(SGG2T,IFELSE(COUNT(SGG1E,0)&gt;0,BARSLAST(SGG1E),SGBN)+1);</span></span>
+<span class="line"><span>SGG2E:=SGG1E AND SGG2B=0;</span></span>
+<span class="line"><span>SGG2H:=IFELSE(SGG2M,IFELSE(SGG2U,MAX(SGG1H,SGTMP30),MIN(SGG1H,SGTMP30)),SGG1H);</span></span>
+<span class="line"><span>SGG2L:=IFELSE(SGG2M,IFELSE(SGG2U,MAX(SGG1L,SGTMP31),MIN(SGG1L,SGTMP31)),SGG1L);</span></span>
+<span class="line"><span>SGG2S:=IFELSE(SGG2M,SGG2W,SGG1S);</span></span>
+<span class="line"><span>SGG3N:=COUNT(SGG2E,0);</span></span>
+<span class="line"><span>SGG3D:=MIN(IFELSE(COUNT(REFWH(SGG2E,1),0)&gt;0,BARSLAST(REFWH(SGG2E,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGG3A:=MIN(SGG3D+REFWH(SGG3D,SGG3D),SGTMP25);</span></span>
+<span class="line"><span>SGG3W:=SGG3D+REFWH(SGG2S,SGG3D);</span></span>
+<span class="line"><span>SGTMP34:=REFWH(SGG2H,SGG3D);</span></span>
+<span class="line"><span>SGTMP35:=REFWH(SGG2L,SGG3D);</span></span>
+<span class="line"><span>SGG3I:=SGG2H&gt;=SGTMP34 AND SGG2L&lt;=SGTMP35 OR SGG2H&lt;=SGTMP34 AND SGG2L&gt;=SGTMP35;</span></span>
+<span class="line"><span>SGG3M:=SGG2E AND SGG3N&gt;=2 AND MOD(SGG3N-0,2)=0 AND SGGV AND REFWH(SGGV,SGG3D) AND SGG3W&lt;=5 AND SGG3I;</span></span>
+<span class="line"><span>SGTMP36:=SGG2H+SGG2L;</span></span>
+<span class="line"><span>SGTMP37:=REFWH(SGTMP36,SGG3D);</span></span>
+<span class="line"><span>SGG3U:=IFELSE(SGG3N&gt;=3,SGTMP34&gt;=REFWH(SGG2H,SGG3A),IFELSE(SGTMP36&lt;&gt;SGTMP37,SGTMP36&gt;SGTMP37,C&gt;=REFWH(C,SGG3D)));</span></span>
+<span class="line"><span>SGG3T:=BACKSET(SGG3M,2)-BACKSET(SGG3M,1)&gt;0;</span></span>
+<span class="line"><span>SGG3B:=BACKSET(SGG3T,IFELSE(COUNT(SGG2E,0)&gt;0,BARSLAST(SGG2E),SGBN)+1);</span></span>
+<span class="line"><span>SGG3E:=SGG2E AND SGG3B=0;</span></span>
+<span class="line"><span>SGG3H:=IFELSE(SGG3M,IFELSE(SGG3U,MAX(SGG2H,SGTMP34),MIN(SGG2H,SGTMP34)),SGG2H);</span></span>
+<span class="line"><span>SGG3L:=IFELSE(SGG3M,IFELSE(SGG3U,MAX(SGG2L,SGTMP35),MIN(SGG2L,SGTMP35)),SGG2L);</span></span>
+<span class="line"><span>SGG3S:=IFELSE(SGG3M,SGG3W,SGG2S);</span></span>
+<span class="line"><span>SGG4N:=COUNT(SGG3E,0);</span></span>
+<span class="line"><span>SGG4D:=MIN(IFELSE(COUNT(REFWH(SGG3E,1),0)&gt;0,BARSLAST(REFWH(SGG3E,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGG4A:=MIN(SGG4D+REFWH(SGG4D,SGG4D),SGTMP25);</span></span>
+<span class="line"><span>SGG4W:=SGG4D+REFWH(SGG3S,SGG4D);</span></span>
+<span class="line"><span>SGTMP38:=REFWH(SGG3H,SGG4D);</span></span>
+<span class="line"><span>SGTMP39:=REFWH(SGG3L,SGG4D);</span></span>
+<span class="line"><span>SGG4I:=SGG3H&gt;=SGTMP38 AND SGG3L&lt;=SGTMP39 OR SGG3H&lt;=SGTMP38 AND SGG3L&gt;=SGTMP39;</span></span>
+<span class="line"><span>SGG4M:=SGG3E AND SGG4N&gt;=3 AND MOD(SGG4N-1,2)=0 AND SGGV AND REFWH(SGGV,SGG4D) AND SGG4W&lt;=5 AND SGG4I;</span></span>
+<span class="line"><span>SGTMP40:=SGG3H+SGG3L;</span></span>
+<span class="line"><span>SGTMP41:=REFWH(SGTMP40,SGG4D);</span></span>
+<span class="line"><span>SGG4U:=IFELSE(SGG4N&gt;=3,SGTMP38&gt;=REFWH(SGG3H,SGG4A),IFELSE(SGTMP40&lt;&gt;SGTMP41,SGTMP40&gt;SGTMP41,C&gt;=REFWH(C,SGG4D)));</span></span>
+<span class="line"><span>SGG4T:=BACKSET(SGG4M,2)-BACKSET(SGG4M,1)&gt;0;</span></span>
+<span class="line"><span>SGG4B:=BACKSET(SGG4T,IFELSE(COUNT(SGG3E,0)&gt;0,BARSLAST(SGG3E),SGBN)+1);</span></span>
+<span class="line"><span>SGG4E:=SGG3E AND SGG4B=0;</span></span>
+<span class="line"><span>SGG4H:=IFELSE(SGG4M,IFELSE(SGG4U,MAX(SGG3H,SGTMP38),MIN(SGG3H,SGTMP38)),SGG3H);</span></span>
+<span class="line"><span>SGG4L:=IFELSE(SGG4M,IFELSE(SGG4U,MAX(SGG3L,SGTMP39),MIN(SGG3L,SGTMP39)),SGG3L);</span></span>
+<span class="line"><span>SGG4S:=IFELSE(SGG4M,SGG4W,SGG3S);</span></span>
+<span class="line"><span>SGG5N:=COUNT(SGG4E,0);</span></span>
+<span class="line"><span>SGG5D:=MIN(IFELSE(COUNT(REFWH(SGG4E,1),0)&gt;0,BARSLAST(REFWH(SGG4E,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGG5A:=MIN(SGG5D+REFWH(SGG5D,SGG5D),SGTMP25);</span></span>
+<span class="line"><span>SGG5W:=SGG5D+REFWH(SGG4S,SGG5D);</span></span>
+<span class="line"><span>SGTMP42:=REFWH(SGG4H,SGG5D);</span></span>
+<span class="line"><span>SGTMP43:=REFWH(SGG4L,SGG5D);</span></span>
+<span class="line"><span>SGG5I:=SGG4H&gt;=SGTMP42 AND SGG4L&lt;=SGTMP43 OR SGG4H&lt;=SGTMP42 AND SGG4L&gt;=SGTMP43;</span></span>
+<span class="line"><span>SGG5M:=SGG4E AND SGG5N&gt;=2 AND MOD(SGG5N-0,2)=0 AND SGGV AND REFWH(SGGV,SGG5D) AND SGG5W&lt;=5 AND SGG5I;</span></span>
+<span class="line"><span>SGTMP44:=SGG4H+SGG4L;</span></span>
+<span class="line"><span>SGTMP45:=REFWH(SGTMP44,SGG5D);</span></span>
+<span class="line"><span>SGG5U:=IFELSE(SGG5N&gt;=3,SGTMP42&gt;=REFWH(SGG4H,SGG5A),IFELSE(SGTMP44&lt;&gt;SGTMP45,SGTMP44&gt;SGTMP45,C&gt;=REFWH(C,SGG5D)));</span></span>
+<span class="line"><span>SGG5T:=BACKSET(SGG5M,2)-BACKSET(SGG5M,1)&gt;0;</span></span>
+<span class="line"><span>SGG5B:=BACKSET(SGG5T,IFELSE(COUNT(SGG4E,0)&gt;0,BARSLAST(SGG4E),SGBN)+1);</span></span>
+<span class="line"><span>SGG5E:=SGG4E AND SGG5B=0;</span></span>
+<span class="line"><span>SGG5H:=IFELSE(SGG5M,IFELSE(SGG5U,MAX(SGG4H,SGTMP42),MIN(SGG4H,SGTMP42)),SGG4H);</span></span>
+<span class="line"><span>SGG5L:=IFELSE(SGG5M,IFELSE(SGG5U,MAX(SGG4L,SGTMP43),MIN(SGG4L,SGTMP43)),SGG4L);</span></span>
+<span class="line"><span>SGG5S:=IFELSE(SGG5M,SGG5W,SGG4S);</span></span>
+<span class="line"><span>SGG6N:=COUNT(SGG5E,0);</span></span>
+<span class="line"><span>SGG6D:=MIN(IFELSE(COUNT(REFWH(SGG5E,1),0)&gt;0,BARSLAST(REFWH(SGG5E,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGG6A:=MIN(SGG6D+REFWH(SGG6D,SGG6D),SGTMP25);</span></span>
+<span class="line"><span>SGG6W:=SGG6D+REFWH(SGG5S,SGG6D);</span></span>
+<span class="line"><span>SGTMP46:=REFWH(SGG5H,SGG6D);</span></span>
+<span class="line"><span>SGTMP47:=REFWH(SGG5L,SGG6D);</span></span>
+<span class="line"><span>SGG6I:=SGG5H&gt;=SGTMP46 AND SGG5L&lt;=SGTMP47 OR SGG5H&lt;=SGTMP46 AND SGG5L&gt;=SGTMP47;</span></span>
+<span class="line"><span>SGG6M:=SGG5E AND SGG6N&gt;=3 AND MOD(SGG6N-1,2)=0 AND SGGV AND REFWH(SGGV,SGG6D) AND SGG6W&lt;=5 AND SGG6I;</span></span>
+<span class="line"><span>SGTMP48:=SGG5H+SGG5L;</span></span>
+<span class="line"><span>SGTMP49:=REFWH(SGTMP48,SGG6D);</span></span>
+<span class="line"><span>SGG6U:=IFELSE(SGG6N&gt;=3,SGTMP46&gt;=REFWH(SGG5H,SGG6A),IFELSE(SGTMP48&lt;&gt;SGTMP49,SGTMP48&gt;SGTMP49,C&gt;=REFWH(C,SGG6D)));</span></span>
+<span class="line"><span>SGG6T:=BACKSET(SGG6M,2)-BACKSET(SGG6M,1)&gt;0;</span></span>
+<span class="line"><span>SGG6B:=BACKSET(SGG6T,IFELSE(COUNT(SGG5E,0)&gt;0,BARSLAST(SGG5E),SGBN)+1);</span></span>
+<span class="line"><span>SGG6E:=SGG5E AND SGG6B=0;</span></span>
+<span class="line"><span>SGG6H:=IFELSE(SGG6M,IFELSE(SGG6U,MAX(SGG5H,SGTMP46),MIN(SGG5H,SGTMP46)),SGG5H);</span></span>
+<span class="line"><span>SGG6L:=IFELSE(SGG6M,IFELSE(SGG6U,MAX(SGG5L,SGTMP47),MIN(SGG5L,SGTMP47)),SGG5L);</span></span>
+<span class="line"><span>SGG6S:=IFELSE(SGG6M,SGG6W,SGG5S);</span></span>
+<span class="line"><span>SGG7N:=COUNT(SGG6E,0);</span></span>
+<span class="line"><span>SGG7D:=MIN(IFELSE(COUNT(REFWH(SGG6E,1),0)&gt;0,BARSLAST(REFWH(SGG6E,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGG7A:=MIN(SGG7D+REFWH(SGG7D,SGG7D),SGTMP25);</span></span>
+<span class="line"><span>SGG7W:=SGG7D+REFWH(SGG6S,SGG7D);</span></span>
+<span class="line"><span>SGTMP50:=REFWH(SGG6H,SGG7D);</span></span>
+<span class="line"><span>SGTMP51:=REFWH(SGG6L,SGG7D);</span></span>
+<span class="line"><span>SGG7I:=SGG6H&gt;=SGTMP50 AND SGG6L&lt;=SGTMP51 OR SGG6H&lt;=SGTMP50 AND SGG6L&gt;=SGTMP51;</span></span>
+<span class="line"><span>SGG7M:=SGG6E AND SGG7N&gt;=2 AND MOD(SGG7N-0,2)=0 AND SGGV AND REFWH(SGGV,SGG7D) AND SGG7W&lt;=5 AND SGG7I;</span></span>
+<span class="line"><span>SGTMP52:=SGG6H+SGG6L;</span></span>
+<span class="line"><span>SGTMP53:=REFWH(SGTMP52,SGG7D);</span></span>
+<span class="line"><span>SGG7U:=IFELSE(SGG7N&gt;=3,SGTMP50&gt;=REFWH(SGG6H,SGG7A),IFELSE(SGTMP52&lt;&gt;SGTMP53,SGTMP52&gt;SGTMP53,C&gt;=REFWH(C,SGG7D)));</span></span>
+<span class="line"><span>SGG7T:=BACKSET(SGG7M,2)-BACKSET(SGG7M,1)&gt;0;</span></span>
+<span class="line"><span>SGG7B:=BACKSET(SGG7T,IFELSE(COUNT(SGG6E,0)&gt;0,BARSLAST(SGG6E),SGBN)+1);</span></span>
+<span class="line"><span>SGG7E:=SGG6E AND SGG7B=0;</span></span>
+<span class="line"><span>SGG7H:=IFELSE(SGG7M,IFELSE(SGG7U,MAX(SGG6H,SGTMP50),MIN(SGG6H,SGTMP50)),SGG6H);</span></span>
+<span class="line"><span>SGG7L:=IFELSE(SGG7M,IFELSE(SGG7U,MAX(SGG6L,SGTMP51),MIN(SGG6L,SGTMP51)),SGG6L);</span></span>
+<span class="line"><span>SGG7S:=IFELSE(SGG7M,SGG7W,SGG6S);</span></span>
+<span class="line"><span>SGG8N:=COUNT(SGG7E,0);</span></span>
+<span class="line"><span>SGG8D:=MIN(IFELSE(COUNT(REFWH(SGG7E,1),0)&gt;0,BARSLAST(REFWH(SGG7E,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGG8A:=MIN(SGG8D+REFWH(SGG8D,SGG8D),SGTMP25);</span></span>
+<span class="line"><span>SGG8W:=SGG8D+REFWH(SGG7S,SGG8D);</span></span>
+<span class="line"><span>SGTMP54:=REFWH(SGG7H,SGG8D);</span></span>
+<span class="line"><span>SGTMP55:=REFWH(SGG7L,SGG8D);</span></span>
+<span class="line"><span>SGG8I:=SGG7H&gt;=SGTMP54 AND SGG7L&lt;=SGTMP55 OR SGG7H&lt;=SGTMP54 AND SGG7L&gt;=SGTMP55;</span></span>
+<span class="line"><span>SGG8M:=SGG7E AND SGG8N&gt;=3 AND MOD(SGG8N-1,2)=0 AND SGGV AND REFWH(SGGV,SGG8D) AND SGG8W&lt;=5 AND SGG8I;</span></span>
+<span class="line"><span>SGTMP56:=SGG7H+SGG7L;</span></span>
+<span class="line"><span>SGTMP57:=REFWH(SGTMP56,SGG8D);</span></span>
+<span class="line"><span>SGG8U:=IFELSE(SGG8N&gt;=3,SGTMP54&gt;=REFWH(SGG7H,SGG8A),IFELSE(SGTMP56&lt;&gt;SGTMP57,SGTMP56&gt;SGTMP57,C&gt;=REFWH(C,SGG8D)));</span></span>
+<span class="line"><span>SGG8T:=BACKSET(SGG8M,2)-BACKSET(SGG8M,1)&gt;0;</span></span>
+<span class="line"><span>SGG8B:=BACKSET(SGG8T,IFELSE(COUNT(SGG7E,0)&gt;0,BARSLAST(SGG7E),SGBN)+1);</span></span>
+<span class="line"><span>SGG8E:=SGG7E AND SGG8B=0;</span></span>
+<span class="line"><span>SGG8H:=IFELSE(SGG8M,IFELSE(SGG8U,MAX(SGG7H,SGTMP54),MIN(SGG7H,SGTMP54)),SGG7H);</span></span>
+<span class="line"><span>SGG8L:=IFELSE(SGG8M,IFELSE(SGG8U,MAX(SGG7L,SGTMP55),MIN(SGG7L,SGTMP55)),SGG7L);</span></span>
+<span class="line"><span>SGGE:=SGG8E;</span></span>
+<span class="line"><span>SGMH:=SGG8H;</span></span>
+<span class="line"><span>SGML:=SGG8L;</span></span>
+<span class="line"><span>SGTMP58:=COUNT(SGGE,0);</span></span>
+<span class="line"><span>SGGC:=SGTMP58;</span></span>
+<span class="line"><span>SGQ1:=MIN(IFELSE(COUNT(REFWH(SGGE,1),0)&gt;0,BARSLAST(REFWH(SGGE,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ2:=MIN(SGQ1+REFWH(SGQ1,SGQ1),SGTMP25);</span></span>
+<span class="line"><span>SGCH:=REFWH(SGMH,SGQ1);</span></span>
+<span class="line"><span>SGCL:=REFWH(SGML,SGQ1);</span></span>
+<span class="line"><span>SGLH:=REFWH(SGMH,SGQ2);</span></span>
+<span class="line"><span>SGLL:=REFWH(SGML,SGQ2);</span></span>
+<span class="line"><span>SGBC:=SGGE AND SGGC&gt;=2 AND (SGMH&gt;=SGCH AND SGML&lt;=SGCL OR SGMH&lt;=SGCH AND SGML&gt;=SGCL);</span></span>
+<span class="line"><span>SGGX:=SGGE AND (SGGV=0 OR SGBC);</span></span>
+<span class="line"><span>SGOK:=SGGE AND SGGC&gt;=3 AND SGGV AND REFWH(SGGV,SGQ1) AND REFWH(SGGV,SGQ2);</span></span>
+<span class="line"><span>SGT0:=SGOK AND SGCH&gt;SGLH AND SGCH&gt;SGMH AND SGCL&gt;SGLL AND SGCL&gt;SGML;</span></span>
+<span class="line"><span>SGB0:=SGOK AND SGCH&lt;SGLH AND SGCH&lt;SGMH AND SGCL&lt;SGLL AND SGCL&lt;SGML;</span></span>
+<span class="line"><span>SGTT:=BACKSET(SGT0,2)-BACKSET(SGT0,1)&gt;0;</span></span>
+<span class="line"><span>SGBT:=BACKSET(SGB0,2)-BACKSET(SGB0,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP59:=SGGE=0;</span></span>
+<span class="line"><span>SGTMP60:=SGTT AND SGTMP59;</span></span>
+<span class="line"><span>SGTMP61:=SGTMP58&gt;0;</span></span>
+<span class="line"><span>SGTMP62:=BARSLAST(SGGE);</span></span>
+<span class="line"><span>SGTMP63:=IFELSE(SGTMP61,SGTMP62,SGBN);</span></span>
+<span class="line"><span>SGTMP64:=SGTMP63+1;</span></span>
+<span class="line"><span>SGTMP65:=MAX(SGTMP63,1);</span></span>
+<span class="line"><span>SGFRT:=SGTT AND SGGE OR BACKSET(SGTMP60,SGTMP64)-BACKSET(SGTMP60,SGTMP65)&gt;0;</span></span>
+<span class="line"><span>SGTMP66:=SGBT AND SGTMP59;</span></span>
+<span class="line"><span>SGFRB:=SGBT AND SGGE OR BACKSET(SGTMP66,SGTMP64)-BACKSET(SGTMP66,SGTMP65)&gt;0;</span></span>
+<span class="line"><span>SGF0A:=IFELSE(SGFRT OR SGFRB,2,0);</span></span>
+<span class="line"><span>SGF0B:=IFELSE(SGGE,0,1);</span></span>
+<span class="line"><span>SGF0C:=IFELSE(SGGE,1,2);</span></span>
+<span class="line"><span>SGF1D:=MIN(1,SGTMP25);</span></span>
+<span class="line"><span>SGTMP67:=SGBN&lt;=1;</span></span>
+<span class="line"><span>SGF1A:=IFELSE(SGTMP67,SGF0A,IFELSE(REFWH(SGF0A,SGF1D)=0,SGF0A,IFELSE(REFWH(SGF0A,SGF1D)=1,SGF0B,SGF0C)));</span></span>
+<span class="line"><span>SGF1B:=IFELSE(SGTMP67,SGF0B,IFELSE(REFWH(SGF0B,SGF1D)=0,SGF0A,IFELSE(REFWH(SGF0B,SGF1D)=1,SGF0B,SGF0C)));</span></span>
+<span class="line"><span>SGF1C:=IFELSE(SGTMP67,SGF0C,IFELSE(REFWH(SGF0C,SGF1D)=0,SGF0A,IFELSE(REFWH(SGF0C,SGF1D)=1,SGF0B,SGF0C)));</span></span>
+<span class="line"><span>SGF2D:=MIN(2,SGTMP25);</span></span>
+<span class="line"><span>SGTMP68:=SGBN&lt;=2;</span></span>
+<span class="line"><span>SGF2A:=IFELSE(SGTMP68,SGF1A,IFELSE(REFWH(SGF1A,SGF2D)=0,SGF1A,IFELSE(REFWH(SGF1A,SGF2D)=1,SGF1B,SGF1C)));</span></span>
+<span class="line"><span>SGF2B:=IFELSE(SGTMP68,SGF1B,IFELSE(REFWH(SGF1B,SGF2D)=0,SGF1A,IFELSE(REFWH(SGF1B,SGF2D)=1,SGF1B,SGF1C)));</span></span>
+<span class="line"><span>SGF2C:=IFELSE(SGTMP68,SGF1C,IFELSE(REFWH(SGF1C,SGF2D)=0,SGF1A,IFELSE(REFWH(SGF1C,SGF2D)=1,SGF1B,SGF1C)));</span></span>
+<span class="line"><span>SGF3D:=MIN(4,SGTMP25);</span></span>
+<span class="line"><span>SGTMP69:=SGBN&lt;=4;</span></span>
+<span class="line"><span>SGF3A:=IFELSE(SGTMP69,SGF2A,IFELSE(REFWH(SGF2A,SGF3D)=0,SGF2A,IFELSE(REFWH(SGF2A,SGF3D)=1,SGF2B,SGF2C)));</span></span>
+<span class="line"><span>SGF3B:=IFELSE(SGTMP69,SGF2B,IFELSE(REFWH(SGF2B,SGF3D)=0,SGF2A,IFELSE(REFWH(SGF2B,SGF3D)=1,SGF2B,SGF2C)));</span></span>
+<span class="line"><span>SGF3C:=IFELSE(SGTMP69,SGF2C,IFELSE(REFWH(SGF2C,SGF3D)=0,SGF2A,IFELSE(REFWH(SGF2C,SGF3D)=1,SGF2B,SGF2C)));</span></span>
+<span class="line"><span>SGF4D:=MIN(8,SGTMP25);</span></span>
+<span class="line"><span>SGTMP70:=SGBN&lt;=8;</span></span>
+<span class="line"><span>SGF4A:=IFELSE(SGTMP70,SGF3A,IFELSE(REFWH(SGF3A,SGF4D)=0,SGF3A,IFELSE(REFWH(SGF3A,SGF4D)=1,SGF3B,SGF3C)));</span></span>
+<span class="line"><span>SGF4B:=IFELSE(SGTMP70,SGF3B,IFELSE(REFWH(SGF3B,SGF4D)=0,SGF3A,IFELSE(REFWH(SGF3B,SGF4D)=1,SGF3B,SGF3C)));</span></span>
+<span class="line"><span>SGF4C:=IFELSE(SGTMP70,SGF3C,IFELSE(REFWH(SGF3C,SGF4D)=0,SGF3A,IFELSE(REFWH(SGF3C,SGF4D)=1,SGF3B,SGF3C)));</span></span>
+<span class="line"><span>SGF5D:=MIN(16,SGTMP25);</span></span>
+<span class="line"><span>SGTMP71:=SGBN&lt;=16;</span></span>
+<span class="line"><span>SGF5A:=IFELSE(SGTMP71,SGF4A,IFELSE(REFWH(SGF4A,SGF5D)=0,SGF4A,IFELSE(REFWH(SGF4A,SGF5D)=1,SGF4B,SGF4C)));</span></span>
+<span class="line"><span>SGF5B:=IFELSE(SGTMP71,SGF4B,IFELSE(REFWH(SGF4B,SGF5D)=0,SGF4A,IFELSE(REFWH(SGF4B,SGF5D)=1,SGF4B,SGF4C)));</span></span>
+<span class="line"><span>SGF5C:=IFELSE(SGTMP71,SGF4C,IFELSE(REFWH(SGF4C,SGF5D)=0,SGF4A,IFELSE(REFWH(SGF4C,SGF5D)=1,SGF4B,SGF4C)));</span></span>
+<span class="line"><span>SGF6D:=MIN(32,SGTMP25);</span></span>
+<span class="line"><span>SGTMP72:=SGBN&lt;=32;</span></span>
+<span class="line"><span>SGF6A:=IFELSE(SGTMP72,SGF5A,IFELSE(REFWH(SGF5A,SGF6D)=0,SGF5A,IFELSE(REFWH(SGF5A,SGF6D)=1,SGF5B,SGF5C)));</span></span>
+<span class="line"><span>SGF6B:=IFELSE(SGTMP72,SGF5B,IFELSE(REFWH(SGF5B,SGF6D)=0,SGF5A,IFELSE(REFWH(SGF5B,SGF6D)=1,SGF5B,SGF5C)));</span></span>
+<span class="line"><span>SGF6C:=IFELSE(SGTMP72,SGF5C,IFELSE(REFWH(SGF5C,SGF6D)=0,SGF5A,IFELSE(REFWH(SGF5C,SGF6D)=1,SGF5B,SGF5C)));</span></span>
+<span class="line"><span>SGF7D:=MIN(64,SGTMP25);</span></span>
+<span class="line"><span>SGTMP73:=SGBN&lt;=64;</span></span>
+<span class="line"><span>SGF7A:=IFELSE(SGTMP73,SGF6A,IFELSE(REFWH(SGF6A,SGF7D)=0,SGF6A,IFELSE(REFWH(SGF6A,SGF7D)=1,SGF6B,SGF6C)));</span></span>
+<span class="line"><span>SGF7B:=IFELSE(SGTMP73,SGF6B,IFELSE(REFWH(SGF6B,SGF7D)=0,SGF6A,IFELSE(REFWH(SGF6B,SGF7D)=1,SGF6B,SGF6C)));</span></span>
+<span class="line"><span>SGF7C:=IFELSE(SGTMP73,SGF6C,IFELSE(REFWH(SGF6C,SGF7D)=0,SGF6A,IFELSE(REFWH(SGF6C,SGF7D)=1,SGF6B,SGF6C)));</span></span>
+<span class="line"><span>SGF8D:=MIN(128,SGTMP25);</span></span>
+<span class="line"><span>SGTMP74:=SGBN&lt;=128;</span></span>
+<span class="line"><span>SGF8A:=IFELSE(SGTMP74,SGF7A,IFELSE(REFWH(SGF7A,SGF8D)=0,SGF7A,IFELSE(REFWH(SGF7A,SGF8D)=1,SGF7B,SGF7C)));</span></span>
+<span class="line"><span>SGF8B:=IFELSE(SGTMP74,SGF7B,IFELSE(REFWH(SGF7B,SGF8D)=0,SGF7A,IFELSE(REFWH(SGF7B,SGF8D)=1,SGF7B,SGF7C)));</span></span>
+<span class="line"><span>SGF8C:=IFELSE(SGTMP74,SGF7C,IFELSE(REFWH(SGF7C,SGF8D)=0,SGF7A,IFELSE(REFWH(SGF7C,SGF8D)=1,SGF7B,SGF7C)));</span></span>
+<span class="line"><span>SGF9D:=MIN(256,SGTMP25);</span></span>
+<span class="line"><span>SGTMP75:=SGBN&lt;=256;</span></span>
+<span class="line"><span>SGF9A:=IFELSE(SGTMP75,SGF8A,IFELSE(REFWH(SGF8A,SGF9D)=0,SGF8A,IFELSE(REFWH(SGF8A,SGF9D)=1,SGF8B,SGF8C)));</span></span>
+<span class="line"><span>SGF9B:=IFELSE(SGTMP75,SGF8B,IFELSE(REFWH(SGF8B,SGF9D)=0,SGF8A,IFELSE(REFWH(SGF8B,SGF9D)=1,SGF8B,SGF8C)));</span></span>
+<span class="line"><span>SGF9C:=IFELSE(SGTMP75,SGF8C,IFELSE(REFWH(SGF8C,SGF9D)=0,SGF8A,IFELSE(REFWH(SGF8C,SGF9D)=1,SGF8B,SGF8C)));</span></span>
+<span class="line"><span>SGF10D:=MIN(512,SGTMP25);</span></span>
+<span class="line"><span>SGTMP76:=SGBN&lt;=512;</span></span>
+<span class="line"><span>SGF10A:=IFELSE(SGTMP76,SGF9A,IFELSE(REFWH(SGF9A,SGF10D)=0,SGF9A,IFELSE(REFWH(SGF9A,SGF10D)=1,SGF9B,SGF9C)));</span></span>
+<span class="line"><span>SGF10B:=IFELSE(SGTMP76,SGF9B,IFELSE(REFWH(SGF9B,SGF10D)=0,SGF9A,IFELSE(REFWH(SGF9B,SGF10D)=1,SGF9B,SGF9C)));</span></span>
+<span class="line"><span>SGF10C:=IFELSE(SGTMP76,SGF9C,IFELSE(REFWH(SGF9C,SGF10D)=0,SGF9A,IFELSE(REFWH(SGF9C,SGF10D)=1,SGF9B,SGF9C)));</span></span>
+<span class="line"><span>SGF11D:=MIN(1024,SGTMP25);</span></span>
+<span class="line"><span>SGTMP77:=SGBN&lt;=1024;</span></span>
+<span class="line"><span>SGF11A:=IFELSE(SGTMP77,SGF10A,IFELSE(REFWH(SGF10A,SGF11D)=0,SGF10A,IFELSE(REFWH(SGF10A,SGF11D)=1,SGF10B,SGF10C)));</span></span>
+<span class="line"><span>SGF11B:=IFELSE(SGTMP77,SGF10B,IFELSE(REFWH(SGF10B,SGF11D)=0,SGF10A,IFELSE(REFWH(SGF10B,SGF11D)=1,SGF10B,SGF10C)));</span></span>
+<span class="line"><span>SGF11C:=IFELSE(SGTMP77,SGF10C,IFELSE(REFWH(SGF10C,SGF11D)=0,SGF10A,IFELSE(REFWH(SGF10C,SGF11D)=1,SGF10B,SGF10C)));</span></span>
+<span class="line"><span>SGF12D:=MIN(2048,SGTMP25);</span></span>
+<span class="line"><span>SGTMP78:=SGBN&lt;=2048;</span></span>
+<span class="line"><span>SGF12A:=IFELSE(SGTMP78,SGF11A,IFELSE(REFWH(SGF11A,SGF12D)=0,SGF11A,IFELSE(REFWH(SGF11A,SGF12D)=1,SGF11B,SGF11C)));</span></span>
+<span class="line"><span>SGF12B:=IFELSE(SGTMP78,SGF11B,IFELSE(REFWH(SGF11B,SGF12D)=0,SGF11A,IFELSE(REFWH(SGF11B,SGF12D)=1,SGF11B,SGF11C)));</span></span>
+<span class="line"><span>SGF12C:=IFELSE(SGTMP78,SGF11C,IFELSE(REFWH(SGF11C,SGF12D)=0,SGF11A,IFELSE(REFWH(SGF11C,SGF12D)=1,SGF11B,SGF11C)));</span></span>
+<span class="line"><span>SGF13D:=MIN(4096,SGTMP25);</span></span>
+<span class="line"><span>SGTMP79:=SGBN&lt;=4096;</span></span>
+<span class="line"><span>SGF13A:=IFELSE(SGTMP79,SGF12A,IFELSE(REFWH(SGF12A,SGF13D)=0,SGF12A,IFELSE(REFWH(SGF12A,SGF13D)=1,SGF12B,SGF12C)));</span></span>
+<span class="line"><span>SGF13B:=IFELSE(SGTMP79,SGF12B,IFELSE(REFWH(SGF12B,SGF13D)=0,SGF12A,IFELSE(REFWH(SGF12B,SGF13D)=1,SGF12B,SGF12C)));</span></span>
+<span class="line"><span>SGF13C:=IFELSE(SGTMP79,SGF12C,IFELSE(REFWH(SGF12C,SGF13D)=0,SGF12A,IFELSE(REFWH(SGF12C,SGF13D)=1,SGF12B,SGF12C)));</span></span>
+<span class="line"><span>SGF14D:=MIN(8192,SGTMP25);</span></span>
+<span class="line"><span>SGTMP80:=SGBN&lt;=8192;</span></span>
+<span class="line"><span>SGF14A:=IFELSE(SGTMP80,SGF13A,IFELSE(REFWH(SGF13A,SGF14D)=0,SGF13A,IFELSE(REFWH(SGF13A,SGF14D)=1,SGF13B,SGF13C)));</span></span>
+<span class="line"><span>SGF14B:=IFELSE(SGTMP80,SGF13B,IFELSE(REFWH(SGF13B,SGF14D)=0,SGF13A,IFELSE(REFWH(SGF13B,SGF14D)=1,SGF13B,SGF13C)));</span></span>
+<span class="line"><span>SGF14C:=IFELSE(SGTMP80,SGF13C,IFELSE(REFWH(SGF13C,SGF14D)=0,SGF13A,IFELSE(REFWH(SGF13C,SGF14D)=1,SGF13B,SGF13C)));</span></span>
+<span class="line"><span>SGF15D:=MIN(16384,SGTMP25);</span></span>
+<span class="line"><span>SGTMP81:=SGBN&lt;=16384;</span></span>
+<span class="line"><span>SGF15A:=IFELSE(SGTMP81,SGF14A,IFELSE(REFWH(SGF14A,SGF15D)=0,SGF14A,IFELSE(REFWH(SGF14A,SGF15D)=1,SGF14B,SGF14C)));</span></span>
+<span class="line"><span>SGF15B:=IFELSE(SGTMP81,SGF14B,IFELSE(REFWH(SGF14B,SGF15D)=0,SGF14A,IFELSE(REFWH(SGF14B,SGF15D)=1,SGF14B,SGF14C)));</span></span>
+<span class="line"><span>SGF15C:=IFELSE(SGTMP81,SGF14C,IFELSE(REFWH(SGF14C,SGF15D)=0,SGF14A,IFELSE(REFWH(SGF14C,SGF15D)=1,SGF14B,SGF14C)));</span></span>
+<span class="line"><span>SGF16D:=MIN(32768,SGTMP25);</span></span>
+<span class="line"><span>SGTMP82:=SGBN&lt;=32768;</span></span>
+<span class="line"><span>SGF16A:=IFELSE(SGTMP82,SGF15A,IFELSE(REFWH(SGF15A,SGF16D)=0,SGF15A,IFELSE(REFWH(SGF15A,SGF16D)=1,SGF15B,SGF15C)));</span></span>
+<span class="line"><span>SGF16B:=IFELSE(SGTMP82,SGF15B,IFELSE(REFWH(SGF15B,SGF16D)=0,SGF15A,IFELSE(REFWH(SGF15B,SGF16D)=1,SGF15B,SGF15C)));</span></span>
+<span class="line"><span>SGF16C:=IFELSE(SGTMP82,SGF15C,IFELSE(REFWH(SGF15C,SGF16D)=0,SGF15A,IFELSE(REFWH(SGF15C,SGF16D)=1,SGF15B,SGF15C)));</span></span>
+<span class="line"><span>SGF17D:=MIN(65536,SGTMP25);</span></span>
+<span class="line"><span>SGTMP83:=SGBN&lt;=65536;</span></span>
+<span class="line"><span>SGF17A:=IFELSE(SGTMP83,SGF16A,IFELSE(REFWH(SGF16A,SGF17D)=0,SGF16A,IFELSE(REFWH(SGF16A,SGF17D)=1,SGF16B,SGF16C)));</span></span>
+<span class="line"><span>SGF17B:=IFELSE(SGTMP83,SGF16B,IFELSE(REFWH(SGF16B,SGF17D)=0,SGF16A,IFELSE(REFWH(SGF16B,SGF17D)=1,SGF16B,SGF16C)));</span></span>
+<span class="line"><span>SGF17C:=IFELSE(SGTMP83,SGF16C,IFELSE(REFWH(SGF16C,SGF17D)=0,SGF16A,IFELSE(REFWH(SGF16C,SGF17D)=1,SGF16B,SGF16C)));</span></span>
+<span class="line"><span>SGF18D:=MIN(131072,SGTMP25);</span></span>
+<span class="line"><span>SGTMP84:=SGBN&lt;=131072;</span></span>
+<span class="line"><span>SGF18A:=IFELSE(SGTMP84,SGF17A,IFELSE(REFWH(SGF17A,SGF18D)=0,SGF17A,IFELSE(REFWH(SGF17A,SGF18D)=1,SGF17B,SGF17C)));</span></span>
+<span class="line"><span>SGF18B:=IFELSE(SGTMP84,SGF17B,IFELSE(REFWH(SGF17B,SGF18D)=0,SGF17A,IFELSE(REFWH(SGF17B,SGF18D)=1,SGF17B,SGF17C)));</span></span>
+<span class="line"><span>SGF18C:=IFELSE(SGTMP84,SGF17C,IFELSE(REFWH(SGF17C,SGF18D)=0,SGF17A,IFELSE(REFWH(SGF17C,SGF18D)=1,SGF17B,SGF17C)));</span></span>
+<span class="line"><span>SGF19D:=MIN(262144,SGTMP25);</span></span>
+<span class="line"><span>SGTMP85:=SGBN&lt;=262144;</span></span>
+<span class="line"><span>SGF19A:=IFELSE(SGTMP85,SGF18A,IFELSE(REFWH(SGF18A,SGF19D)=0,SGF18A,IFELSE(REFWH(SGF18A,SGF19D)=1,SGF18B,SGF18C)));</span></span>
+<span class="line"><span>SGF19B:=IFELSE(SGTMP85,SGF18B,IFELSE(REFWH(SGF18B,SGF19D)=0,SGF18A,IFELSE(REFWH(SGF18B,SGF19D)=1,SGF18B,SGF18C)));</span></span>
+<span class="line"><span>SGF19C:=IFELSE(SGTMP85,SGF18C,IFELSE(REFWH(SGF18C,SGF19D)=0,SGF18A,IFELSE(REFWH(SGF18C,SGF19D)=1,SGF18B,SGF18C)));</span></span>
+<span class="line"><span>SGF20D:=MIN(524288,SGTMP25);</span></span>
+<span class="line"><span>SGTMP86:=SGBN&lt;=524288;</span></span>
+<span class="line"><span>SGF20A:=IFELSE(SGTMP86,SGF19A,IFELSE(REFWH(SGF19A,SGF20D)=0,SGF19A,IFELSE(REFWH(SGF19A,SGF20D)=1,SGF19B,SGF19C)));</span></span>
+<span class="line"><span>SGF20B:=IFELSE(SGTMP86,SGF19B,IFELSE(REFWH(SGF19B,SGF20D)=0,SGF19A,IFELSE(REFWH(SGF19B,SGF20D)=1,SGF19B,SGF19C)));</span></span>
+<span class="line"><span>SGF20C:=IFELSE(SGTMP86,SGF19C,IFELSE(REFWH(SGF19C,SGF20D)=0,SGF19A,IFELSE(REFWH(SGF19C,SGF20D)=1,SGF19B,SGF19C)));</span></span>
+<span class="line"><span>SGF21D:=MIN(1048576,SGTMP25);</span></span>
+<span class="line"><span>SGTMP87:=SGBN&lt;=1048576;</span></span>
+<span class="line"><span>SGF21A:=IFELSE(SGTMP87,SGF20A,IFELSE(REFWH(SGF20A,SGF21D)=0,SGF20A,IFELSE(REFWH(SGF20A,SGF21D)=1,SGF20B,SGF20C)));</span></span>
+<span class="line"><span>SGF21B:=IFELSE(SGTMP87,SGF20B,IFELSE(REFWH(SGF20B,SGF21D)=0,SGF20A,IFELSE(REFWH(SGF20B,SGF21D)=1,SGF20B,SGF20C)));</span></span>
+<span class="line"><span>SGF21C:=IFELSE(SGTMP87,SGF20C,IFELSE(REFWH(SGF20C,SGF21D)=0,SGF20A,IFELSE(REFWH(SGF20C,SGF21D)=1,SGF20B,SGF20C)));</span></span>
+<span class="line"><span>SGF22D:=MIN(2097152,SGTMP25);</span></span>
+<span class="line"><span>SGTMP88:=SGBN&lt;=2097152;</span></span>
+<span class="line"><span>SGF22A:=IFELSE(SGTMP88,SGF21A,IFELSE(REFWH(SGF21A,SGF22D)=0,SGF21A,IFELSE(REFWH(SGF21A,SGF22D)=1,SGF21B,SGF21C)));</span></span>
+<span class="line"><span>SGF22B:=IFELSE(SGTMP88,SGF21B,IFELSE(REFWH(SGF21B,SGF22D)=0,SGF21A,IFELSE(REFWH(SGF21B,SGF22D)=1,SGF21B,SGF21C)));</span></span>
+<span class="line"><span>SGF22C:=IFELSE(SGTMP88,SGF21C,IFELSE(REFWH(SGF21C,SGF22D)=0,SGF21A,IFELSE(REFWH(SGF21C,SGF22D)=1,SGF21B,SGF21C)));</span></span>
+<span class="line"><span>SGF23D:=MIN(4194304,SGTMP25);</span></span>
+<span class="line"><span>SGTMP89:=SGBN&lt;=4194304;</span></span>
+<span class="line"><span>SGF23A:=IFELSE(SGTMP89,SGF22A,IFELSE(REFWH(SGF22A,SGF23D)=0,SGF22A,IFELSE(REFWH(SGF22A,SGF23D)=1,SGF22B,SGF22C)));</span></span>
+<span class="line"><span>SGF23B:=IFELSE(SGTMP89,SGF22B,IFELSE(REFWH(SGF22B,SGF23D)=0,SGF22A,IFELSE(REFWH(SGF22B,SGF23D)=1,SGF22B,SGF22C)));</span></span>
+<span class="line"><span>SGF23C:=IFELSE(SGTMP89,SGF22C,IFELSE(REFWH(SGF22C,SGF23D)=0,SGF22A,IFELSE(REFWH(SGF22C,SGF23D)=1,SGF22B,SGF22C)));</span></span>
+<span class="line"><span>SGF24D:=MIN(8388608,SGTMP25);</span></span>
+<span class="line"><span>SGTMP90:=SGBN&lt;=8388608;</span></span>
+<span class="line"><span>SGF24A:=IFELSE(SGTMP90,SGF23A,IFELSE(REFWH(SGF23A,SGF24D)=0,SGF23A,IFELSE(REFWH(SGF23A,SGF24D)=1,SGF23B,SGF23C)));</span></span>
+<span class="line"><span>SGF24B:=IFELSE(SGTMP90,SGF23B,IFELSE(REFWH(SGF23B,SGF24D)=0,SGF23A,IFELSE(REFWH(SGF23B,SGF24D)=1,SGF23B,SGF23C)));</span></span>
+<span class="line"><span>SGF24C:=IFELSE(SGTMP90,SGF23C,IFELSE(REFWH(SGF23C,SGF24D)=0,SGF23A,IFELSE(REFWH(SGF23C,SGF24D)=1,SGF23B,SGF23C)));</span></span>
+<span class="line"><span>SGF25D:=MIN(16777216,SGTMP25);</span></span>
+<span class="line"><span>SGTMP91:=SGBN&lt;=16777216;</span></span>
+<span class="line"><span>SGF25A:=IFELSE(SGTMP91,SGF24A,IFELSE(REFWH(SGF24A,SGF25D)=0,SGF24A,IFELSE(REFWH(SGF24A,SGF25D)=1,SGF24B,SGF24C)));</span></span>
+<span class="line"><span>SGF25B:=IFELSE(SGTMP91,SGF24B,IFELSE(REFWH(SGF24B,SGF25D)=0,SGF24A,IFELSE(REFWH(SGF24B,SGF25D)=1,SGF24B,SGF24C)));</span></span>
+<span class="line"><span>SGF25C:=IFELSE(SGTMP91,SGF24C,IFELSE(REFWH(SGF24C,SGF25D)=0,SGF24A,IFELSE(REFWH(SGF24C,SGF25D)=1,SGF24B,SGF24C)));</span></span>
+<span class="line"><span>SGF26D:=MIN(33554432,SGTMP25);</span></span>
+<span class="line"><span>SGTMP92:=SGBN&lt;=33554432;</span></span>
+<span class="line"><span>SGF26A:=IFELSE(SGTMP92,SGF25A,IFELSE(REFWH(SGF25A,SGF26D)=0,SGF25A,IFELSE(REFWH(SGF25A,SGF26D)=1,SGF25B,SGF25C)));</span></span>
+<span class="line"><span>SGF26B:=IFELSE(SGTMP92,SGF25B,IFELSE(REFWH(SGF25B,SGF26D)=0,SGF25A,IFELSE(REFWH(SGF25B,SGF26D)=1,SGF25B,SGF25C)));</span></span>
+<span class="line"><span>SGF26C:=IFELSE(SGTMP92,SGF25C,IFELSE(REFWH(SGF25C,SGF26D)=0,SGF25A,IFELSE(REFWH(SGF25C,SGF26D)=1,SGF25B,SGF25C)));</span></span>
+<span class="line"><span>SGF27D:=MIN(67108864,SGTMP25);</span></span>
+<span class="line"><span>SGTMP93:=SGBN&lt;=67108864;</span></span>
+<span class="line"><span>SGF27A:=IFELSE(SGTMP93,SGF26A,IFELSE(REFWH(SGF26A,SGF27D)=0,SGF26A,IFELSE(REFWH(SGF26A,SGF27D)=1,SGF26B,SGF26C)));</span></span>
+<span class="line"><span>SGF27B:=IFELSE(SGTMP93,SGF26B,IFELSE(REFWH(SGF26B,SGF27D)=0,SGF26A,IFELSE(REFWH(SGF26B,SGF27D)=1,SGF26B,SGF26C)));</span></span>
+<span class="line"><span>SGF27C:=IFELSE(SGTMP93,SGF26C,IFELSE(REFWH(SGF26C,SGF27D)=0,SGF26A,IFELSE(REFWH(SGF26C,SGF27D)=1,SGF26B,SGF26C)));</span></span>
+<span class="line"><span>SGF28D:=MIN(134217728,SGTMP25);</span></span>
+<span class="line"><span>SGTMP94:=SGBN&lt;=134217728;</span></span>
+<span class="line"><span>SGF28A:=IFELSE(SGTMP94,SGF27A,IFELSE(REFWH(SGF27A,SGF28D)=0,SGF27A,IFELSE(REFWH(SGF27A,SGF28D)=1,SGF27B,SGF27C)));</span></span>
+<span class="line"><span>SGF28B:=IFELSE(SGTMP94,SGF27B,IFELSE(REFWH(SGF27B,SGF28D)=0,SGF27A,IFELSE(REFWH(SGF27B,SGF28D)=1,SGF27B,SGF27C)));</span></span>
+<span class="line"><span>SGF28C:=IFELSE(SGTMP94,SGF27C,IFELSE(REFWH(SGF27C,SGF28D)=0,SGF27A,IFELSE(REFWH(SGF27C,SGF28D)=1,SGF27B,SGF27C)));</span></span>
+<span class="line"><span>SGF29D:=MIN(268435456,SGTMP25);</span></span>
+<span class="line"><span>SGTMP95:=SGBN&lt;=268435456;</span></span>
+<span class="line"><span>SGF29A:=IFELSE(SGTMP95,SGF28A,IFELSE(REFWH(SGF28A,SGF29D)=0,SGF28A,IFELSE(REFWH(SGF28A,SGF29D)=1,SGF28B,SGF28C)));</span></span>
+<span class="line"><span>SGF29B:=IFELSE(SGTMP95,SGF28B,IFELSE(REFWH(SGF28B,SGF29D)=0,SGF28A,IFELSE(REFWH(SGF28B,SGF29D)=1,SGF28B,SGF28C)));</span></span>
+<span class="line"><span>SGF29C:=IFELSE(SGTMP95,SGF28C,IFELSE(REFWH(SGF28C,SGF29D)=0,SGF28A,IFELSE(REFWH(SGF28C,SGF29D)=1,SGF28B,SGF28C)));</span></span>
+<span class="line"><span>SGF30D:=MIN(536870912,SGTMP25);</span></span>
+<span class="line"><span>SGTMP96:=SGBN&lt;=536870912;</span></span>
+<span class="line"><span>SGF30A:=IFELSE(SGTMP96,SGF29A,IFELSE(REFWH(SGF29A,SGF30D)=0,SGF29A,IFELSE(REFWH(SGF29A,SGF30D)=1,SGF29B,SGF29C)));</span></span>
+<span class="line"><span>SGF30B:=IFELSE(SGTMP96,SGF29B,IFELSE(REFWH(SGF29B,SGF30D)=0,SGF29A,IFELSE(REFWH(SGF29B,SGF30D)=1,SGF29B,SGF29C)));</span></span>
+<span class="line"><span>SGF30C:=IFELSE(SGTMP96,SGF29C,IFELSE(REFWH(SGF29C,SGF30D)=0,SGF29A,IFELSE(REFWH(SGF29C,SGF30D)=1,SGF29B,SGF29C)));</span></span>
+<span class="line"><span>SGF31D:=MIN(1073741824,SGTMP25);</span></span>
+<span class="line"><span>SGF31A:=IFELSE(SGBN&lt;=1073741824,SGF30A,IFELSE(REFWH(SGF30A,SGF31D)=0,SGF30A,IFELSE(REFWH(SGF30A,SGF31D)=1,SGF30B,SGF30C)));</span></span>
+<span class="line"><span>SGFS:=SGBN=1 OR REFWH(SGF31A,1)=0;</span></span>
+<span class="line"><span>SGFT:=SGFRT AND SGFS;</span></span>
+<span class="line"><span>SGFB:=SGFRB AND SGFS;</span></span>
+<span class="line"><span>SGFE:=SGFT OR SGFB;</span></span>
+<span class="line"><span>SGFK:=IFELSE(SGFT,1,-(1));</span></span>
+<span class="line"><span>SGTMP97:=COUNT(SGFE,0);</span></span>
+<span class="line"><span>SGFC:=SGTMP97;</span></span>
+<span class="line"><span>SGTMP98:=SGTMP97&gt;0;</span></span>
+<span class="line"><span>SGES:=SGFE AND (SGFC=1 OR SGFK&lt;&gt;REFWH(IFELSE(SGTMP98,VALUEWHEN(SGFE,SGFK),0),1));</span></span>
+<span class="line"><span>SGER:=IFELSE(COUNT(SGES,0)&gt;0,BARSLAST(SGES),SGBN)+1;</span></span>
+<span class="line"><span>SGTMP99:=MAX(SGEW,4);</span></span>
+<span class="line"><span>SGTMP100:=MIN(SGER,SGTMP99);</span></span>
+<span class="line"><span>SGEH:=HHV(IFELSE(SGTMP98,VALUEWHEN(SGFE,SGMH),0),SGTMP100);</span></span>
+<span class="line"><span>SGEL:=LLV(IFELSE(SGTMP98,VALUEWHEN(SGFE,SGML),0),SGTMP100);</span></span>
+<span class="line"><span>SGEX:=SGFE AND SGES=0 AND SGER&lt;=SGTMP99 AND COUNT(SGGX,SGER)=0 AND IFELSE(SGFT,SGMH&gt;REFWH(SGEH,1),SGML&lt;REFWH(SGEL,1));</span></span>
+<span class="line"><span>SGEA:=SGES OR SGEX;</span></span>
+<span class="line"><span>SGEB:=BACKSET(SGEX,2)-BACKSET(SGEX,1)&gt;0;</span></span>
+<span class="line"><span>SGEC:=BACKSET(SGEB,IFELSE(COUNT(SGEA,0)&gt;0,BARSLAST(SGEA),SGBN)+1);</span></span>
+<span class="line"><span>SGKE0:=SGEA AND SGEC=0;</span></span>
+<span class="line"><span>SGTMP101:=COUNT(SGKE0,0);</span></span>
+<span class="line"><span>SGJ1N:=SGTMP101;</span></span>
+<span class="line"><span>SGJ1D:=MIN(IFELSE(COUNT(REFWH(SGKE0,1),0)&gt;0,BARSLAST(REFWH(SGKE0,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ1A:=MIN(SGJ1D+REFWH(SGJ1D,SGJ1D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP102:=SGTMP101&gt;0;</span></span>
+<span class="line"><span>SGTMP103:=IFELSE(SGFT,SGMH,SGML);</span></span>
+<span class="line"><span>SGJ1P:=IFELSE(SGTMP102,VALUEWHEN(SGKE0,SGTMP103),0);</span></span>
+<span class="line"><span>SGTMP104:=MAX(SGMG,4);</span></span>
+<span class="line"><span>SGJ1V:=SGKE0 AND SGJ1N&gt;=2 AND SGJ1D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ1D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ1P,SGJ1D) AND SGMH&gt;REFWH(SGMH,SGJ1D),REFWH(SGJ1P,SGJ1D)&gt;SGML AND REFWH(SGMH,SGJ1D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ1C:=SGKE0 AND SGJ1N&gt;=3 AND MOD(SGJ1N-0,3)=0 AND SGJ1A&lt;=SGTMP99 AND COUNT(SGGX,SGJ1A+1)=0 AND REFWH(SGJ1V,SGJ1D)=0;</span></span>
+<span class="line"><span>SGJ1K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ1A),SGML&lt;REFWH(SGML,SGJ1A));</span></span>
+<span class="line"><span>SGJ1B:=BACKSET(SGJ1C AND SGJ1K=0,SGJ1D+1);</span></span>
+<span class="line"><span>SGJ1T:=BACKSET(SGJ1C AND SGJ1K,2)-BACKSET(SGJ1C AND SGJ1K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP105:=IFELSE(SGTMP102,BARSLAST(SGKE0),SGBN);</span></span>
+<span class="line"><span>SGJ1R:=BACKSET(SGJ1T,MIN(SGTMP105+REFWH(SGJ1D,SGTMP105)+1,SGBN));</span></span>
+<span class="line"><span>SGKE1:=SGKE0 AND SGJ1B=0 AND SGJ1R=0;</span></span>
+<span class="line"><span>SGTMP106:=COUNT(SGKE1,0);</span></span>
+<span class="line"><span>SGJ2N:=SGTMP106;</span></span>
+<span class="line"><span>SGJ2D:=MIN(IFELSE(COUNT(REFWH(SGKE1,1),0)&gt;0,BARSLAST(REFWH(SGKE1,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ2A:=MIN(SGJ2D+REFWH(SGJ2D,SGJ2D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP107:=SGTMP106&gt;0;</span></span>
+<span class="line"><span>SGJ2P:=IFELSE(SGTMP107,VALUEWHEN(SGKE1,SGTMP103),0);</span></span>
+<span class="line"><span>SGJ2V:=SGKE1 AND SGJ2N&gt;=2 AND SGJ2D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ2D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ2P,SGJ2D) AND SGMH&gt;REFWH(SGMH,SGJ2D),REFWH(SGJ2P,SGJ2D)&gt;SGML AND REFWH(SGMH,SGJ2D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ2C:=SGKE1 AND SGJ2N&gt;=4 AND MOD(SGJ2N-1,3)=0 AND SGJ2A&lt;=SGTMP99 AND COUNT(SGGX,SGJ2A+1)=0 AND REFWH(SGJ2V,SGJ2D)=0;</span></span>
+<span class="line"><span>SGJ2K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ2A),SGML&lt;REFWH(SGML,SGJ2A));</span></span>
+<span class="line"><span>SGJ2B:=BACKSET(SGJ2C AND SGJ2K=0,SGJ2D+1);</span></span>
+<span class="line"><span>SGJ2T:=BACKSET(SGJ2C AND SGJ2K,2)-BACKSET(SGJ2C AND SGJ2K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP108:=IFELSE(SGTMP107,BARSLAST(SGKE1),SGBN);</span></span>
+<span class="line"><span>SGJ2R:=BACKSET(SGJ2T,MIN(SGTMP108+REFWH(SGJ2D,SGTMP108)+1,SGBN));</span></span>
+<span class="line"><span>SGKE2:=SGKE1 AND SGJ2B=0 AND SGJ2R=0;</span></span>
+<span class="line"><span>SGTMP109:=COUNT(SGKE2,0);</span></span>
+<span class="line"><span>SGJ3N:=SGTMP109;</span></span>
+<span class="line"><span>SGJ3D:=MIN(IFELSE(COUNT(REFWH(SGKE2,1),0)&gt;0,BARSLAST(REFWH(SGKE2,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ3A:=MIN(SGJ3D+REFWH(SGJ3D,SGJ3D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP110:=SGTMP109&gt;0;</span></span>
+<span class="line"><span>SGJ3P:=IFELSE(SGTMP110,VALUEWHEN(SGKE2,SGTMP103),0);</span></span>
+<span class="line"><span>SGJ3V:=SGKE2 AND SGJ3N&gt;=2 AND SGJ3D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ3D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ3P,SGJ3D) AND SGMH&gt;REFWH(SGMH,SGJ3D),REFWH(SGJ3P,SGJ3D)&gt;SGML AND REFWH(SGMH,SGJ3D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ3C:=SGKE2 AND SGJ3N&gt;=5 AND MOD(SGJ3N-2,3)=0 AND SGJ3A&lt;=SGTMP99 AND COUNT(SGGX,SGJ3A+1)=0 AND REFWH(SGJ3V,SGJ3D)=0;</span></span>
+<span class="line"><span>SGJ3K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ3A),SGML&lt;REFWH(SGML,SGJ3A));</span></span>
+<span class="line"><span>SGJ3B:=BACKSET(SGJ3C AND SGJ3K=0,SGJ3D+1);</span></span>
+<span class="line"><span>SGJ3T:=BACKSET(SGJ3C AND SGJ3K,2)-BACKSET(SGJ3C AND SGJ3K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP111:=IFELSE(SGTMP110,BARSLAST(SGKE2),SGBN);</span></span>
+<span class="line"><span>SGJ3R:=BACKSET(SGJ3T,MIN(SGTMP111+REFWH(SGJ3D,SGTMP111)+1,SGBN));</span></span>
+<span class="line"><span>SGKE3:=SGKE2 AND SGJ3B=0 AND SGJ3R=0;</span></span>
+<span class="line"><span>SGTMP112:=COUNT(SGKE3,0);</span></span>
+<span class="line"><span>SGJ4N:=SGTMP112;</span></span>
+<span class="line"><span>SGJ4D:=MIN(IFELSE(COUNT(REFWH(SGKE3,1),0)&gt;0,BARSLAST(REFWH(SGKE3,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ4A:=MIN(SGJ4D+REFWH(SGJ4D,SGJ4D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP113:=SGTMP112&gt;0;</span></span>
+<span class="line"><span>SGJ4P:=IFELSE(SGTMP113,VALUEWHEN(SGKE3,SGTMP103),0);</span></span>
+<span class="line"><span>SGJ4V:=SGKE3 AND SGJ4N&gt;=2 AND SGJ4D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ4D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ4P,SGJ4D) AND SGMH&gt;REFWH(SGMH,SGJ4D),REFWH(SGJ4P,SGJ4D)&gt;SGML AND REFWH(SGMH,SGJ4D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ4C:=SGKE3 AND SGJ4N&gt;=3 AND MOD(SGJ4N-0,3)=0 AND SGJ4A&lt;=SGTMP99 AND COUNT(SGGX,SGJ4A+1)=0 AND REFWH(SGJ4V,SGJ4D)=0;</span></span>
+<span class="line"><span>SGJ4K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ4A),SGML&lt;REFWH(SGML,SGJ4A));</span></span>
+<span class="line"><span>SGJ4B:=BACKSET(SGJ4C AND SGJ4K=0,SGJ4D+1);</span></span>
+<span class="line"><span>SGJ4T:=BACKSET(SGJ4C AND SGJ4K,2)-BACKSET(SGJ4C AND SGJ4K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP114:=IFELSE(SGTMP113,BARSLAST(SGKE3),SGBN);</span></span>
+<span class="line"><span>SGJ4R:=BACKSET(SGJ4T,MIN(SGTMP114+REFWH(SGJ4D,SGTMP114)+1,SGBN));</span></span>
+<span class="line"><span>SGKE4:=SGKE3 AND SGJ4B=0 AND SGJ4R=0;</span></span>
+<span class="line"><span>SGTMP115:=COUNT(SGKE4,0);</span></span>
+<span class="line"><span>SGJ5N:=SGTMP115;</span></span>
+<span class="line"><span>SGJ5D:=MIN(IFELSE(COUNT(REFWH(SGKE4,1),0)&gt;0,BARSLAST(REFWH(SGKE4,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ5A:=MIN(SGJ5D+REFWH(SGJ5D,SGJ5D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP116:=SGTMP115&gt;0;</span></span>
+<span class="line"><span>SGJ5P:=IFELSE(SGTMP116,VALUEWHEN(SGKE4,SGTMP103),0);</span></span>
+<span class="line"><span>SGJ5V:=SGKE4 AND SGJ5N&gt;=2 AND SGJ5D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ5D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ5P,SGJ5D) AND SGMH&gt;REFWH(SGMH,SGJ5D),REFWH(SGJ5P,SGJ5D)&gt;SGML AND REFWH(SGMH,SGJ5D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ5C:=SGKE4 AND SGJ5N&gt;=4 AND MOD(SGJ5N-1,3)=0 AND SGJ5A&lt;=SGTMP99 AND COUNT(SGGX,SGJ5A+1)=0 AND REFWH(SGJ5V,SGJ5D)=0;</span></span>
+<span class="line"><span>SGJ5K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ5A),SGML&lt;REFWH(SGML,SGJ5A));</span></span>
+<span class="line"><span>SGJ5B:=BACKSET(SGJ5C AND SGJ5K=0,SGJ5D+1);</span></span>
+<span class="line"><span>SGJ5T:=BACKSET(SGJ5C AND SGJ5K,2)-BACKSET(SGJ5C AND SGJ5K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP117:=IFELSE(SGTMP116,BARSLAST(SGKE4),SGBN);</span></span>
+<span class="line"><span>SGJ5R:=BACKSET(SGJ5T,MIN(SGTMP117+REFWH(SGJ5D,SGTMP117)+1,SGBN));</span></span>
+<span class="line"><span>SGKE5:=SGKE4 AND SGJ5B=0 AND SGJ5R=0;</span></span>
+<span class="line"><span>SGTMP118:=COUNT(SGKE5,0);</span></span>
+<span class="line"><span>SGJ6N:=SGTMP118;</span></span>
+<span class="line"><span>SGJ6D:=MIN(IFELSE(COUNT(REFWH(SGKE5,1),0)&gt;0,BARSLAST(REFWH(SGKE5,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ6A:=MIN(SGJ6D+REFWH(SGJ6D,SGJ6D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP119:=SGTMP118&gt;0;</span></span>
+<span class="line"><span>SGJ6P:=IFELSE(SGTMP119,VALUEWHEN(SGKE5,SGTMP103),0);</span></span>
+<span class="line"><span>SGJ6V:=SGKE5 AND SGJ6N&gt;=2 AND SGJ6D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ6D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ6P,SGJ6D) AND SGMH&gt;REFWH(SGMH,SGJ6D),REFWH(SGJ6P,SGJ6D)&gt;SGML AND REFWH(SGMH,SGJ6D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ6C:=SGKE5 AND SGJ6N&gt;=5 AND MOD(SGJ6N-2,3)=0 AND SGJ6A&lt;=SGTMP99 AND COUNT(SGGX,SGJ6A+1)=0 AND REFWH(SGJ6V,SGJ6D)=0;</span></span>
+<span class="line"><span>SGJ6K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ6A),SGML&lt;REFWH(SGML,SGJ6A));</span></span>
+<span class="line"><span>SGJ6B:=BACKSET(SGJ6C AND SGJ6K=0,SGJ6D+1);</span></span>
+<span class="line"><span>SGJ6T:=BACKSET(SGJ6C AND SGJ6K,2)-BACKSET(SGJ6C AND SGJ6K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP120:=IFELSE(SGTMP119,BARSLAST(SGKE5),SGBN);</span></span>
+<span class="line"><span>SGJ6R:=BACKSET(SGJ6T,MIN(SGTMP120+REFWH(SGJ6D,SGTMP120)+1,SGBN));</span></span>
+<span class="line"><span>SGKE6:=SGKE5 AND SGJ6B=0 AND SGJ6R=0;</span></span>
+<span class="line"><span>SGTMP121:=COUNT(SGKE6,0);</span></span>
+<span class="line"><span>SGJ7N:=SGTMP121;</span></span>
+<span class="line"><span>SGJ7D:=MIN(IFELSE(COUNT(REFWH(SGKE6,1),0)&gt;0,BARSLAST(REFWH(SGKE6,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ7A:=MIN(SGJ7D+REFWH(SGJ7D,SGJ7D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP122:=SGTMP121&gt;0;</span></span>
+<span class="line"><span>SGJ7P:=IFELSE(SGTMP122,VALUEWHEN(SGKE6,SGTMP103),0);</span></span>
+<span class="line"><span>SGJ7V:=SGKE6 AND SGJ7N&gt;=2 AND SGJ7D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ7D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ7P,SGJ7D) AND SGMH&gt;REFWH(SGMH,SGJ7D),REFWH(SGJ7P,SGJ7D)&gt;SGML AND REFWH(SGMH,SGJ7D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ7C:=SGKE6 AND SGJ7N&gt;=3 AND MOD(SGJ7N-0,3)=0 AND SGJ7A&lt;=SGTMP99 AND COUNT(SGGX,SGJ7A+1)=0 AND REFWH(SGJ7V,SGJ7D)=0;</span></span>
+<span class="line"><span>SGJ7K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ7A),SGML&lt;REFWH(SGML,SGJ7A));</span></span>
+<span class="line"><span>SGJ7B:=BACKSET(SGJ7C AND SGJ7K=0,SGJ7D+1);</span></span>
+<span class="line"><span>SGJ7T:=BACKSET(SGJ7C AND SGJ7K,2)-BACKSET(SGJ7C AND SGJ7K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP123:=IFELSE(SGTMP122,BARSLAST(SGKE6),SGBN);</span></span>
+<span class="line"><span>SGJ7R:=BACKSET(SGJ7T,MIN(SGTMP123+REFWH(SGJ7D,SGTMP123)+1,SGBN));</span></span>
+<span class="line"><span>SGKE7:=SGKE6 AND SGJ7B=0 AND SGJ7R=0;</span></span>
+<span class="line"><span>SGTMP124:=COUNT(SGKE7,0);</span></span>
+<span class="line"><span>SGJ8N:=SGTMP124;</span></span>
+<span class="line"><span>SGJ8D:=MIN(IFELSE(COUNT(REFWH(SGKE7,1),0)&gt;0,BARSLAST(REFWH(SGKE7,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ8A:=MIN(SGJ8D+REFWH(SGJ8D,SGJ8D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP125:=SGTMP124&gt;0;</span></span>
+<span class="line"><span>SGJ8P:=IFELSE(SGTMP125,VALUEWHEN(SGKE7,SGTMP103),0);</span></span>
+<span class="line"><span>SGJ8V:=SGKE7 AND SGJ8N&gt;=2 AND SGJ8D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ8D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ8P,SGJ8D) AND SGMH&gt;REFWH(SGMH,SGJ8D),REFWH(SGJ8P,SGJ8D)&gt;SGML AND REFWH(SGMH,SGJ8D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ8C:=SGKE7 AND SGJ8N&gt;=4 AND MOD(SGJ8N-1,3)=0 AND SGJ8A&lt;=SGTMP99 AND COUNT(SGGX,SGJ8A+1)=0 AND REFWH(SGJ8V,SGJ8D)=0;</span></span>
+<span class="line"><span>SGJ8K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ8A),SGML&lt;REFWH(SGML,SGJ8A));</span></span>
+<span class="line"><span>SGJ8B:=BACKSET(SGJ8C AND SGJ8K=0,SGJ8D+1);</span></span>
+<span class="line"><span>SGJ8T:=BACKSET(SGJ8C AND SGJ8K,2)-BACKSET(SGJ8C AND SGJ8K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP126:=IFELSE(SGTMP125,BARSLAST(SGKE7),SGBN);</span></span>
+<span class="line"><span>SGJ8R:=BACKSET(SGJ8T,MIN(SGTMP126+REFWH(SGJ8D,SGTMP126)+1,SGBN));</span></span>
+<span class="line"><span>SGKE8:=SGKE7 AND SGJ8B=0 AND SGJ8R=0;</span></span>
+<span class="line"><span>SGTMP127:=COUNT(SGKE8,0);</span></span>
+<span class="line"><span>SGJ9N:=SGTMP127;</span></span>
+<span class="line"><span>SGJ9D:=MIN(IFELSE(COUNT(REFWH(SGKE8,1),0)&gt;0,BARSLAST(REFWH(SGKE8,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ9A:=MIN(SGJ9D+REFWH(SGJ9D,SGJ9D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP128:=SGTMP127&gt;0;</span></span>
+<span class="line"><span>SGJ9P:=IFELSE(SGTMP128,VALUEWHEN(SGKE8,SGTMP103),0);</span></span>
+<span class="line"><span>SGJ9V:=SGKE8 AND SGJ9N&gt;=2 AND SGJ9D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ9D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ9P,SGJ9D) AND SGMH&gt;REFWH(SGMH,SGJ9D),REFWH(SGJ9P,SGJ9D)&gt;SGML AND REFWH(SGMH,SGJ9D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ9C:=SGKE8 AND SGJ9N&gt;=5 AND MOD(SGJ9N-2,3)=0 AND SGJ9A&lt;=SGTMP99 AND COUNT(SGGX,SGJ9A+1)=0 AND REFWH(SGJ9V,SGJ9D)=0;</span></span>
+<span class="line"><span>SGJ9K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ9A),SGML&lt;REFWH(SGML,SGJ9A));</span></span>
+<span class="line"><span>SGJ9B:=BACKSET(SGJ9C AND SGJ9K=0,SGJ9D+1);</span></span>
+<span class="line"><span>SGJ9T:=BACKSET(SGJ9C AND SGJ9K,2)-BACKSET(SGJ9C AND SGJ9K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP129:=IFELSE(SGTMP128,BARSLAST(SGKE8),SGBN);</span></span>
+<span class="line"><span>SGJ9R:=BACKSET(SGJ9T,MIN(SGTMP129+REFWH(SGJ9D,SGTMP129)+1,SGBN));</span></span>
+<span class="line"><span>SGKE9:=SGKE8 AND SGJ9B=0 AND SGJ9R=0;</span></span>
+<span class="line"><span>SGTMP130:=COUNT(SGKE9,0);</span></span>
+<span class="line"><span>SGJ10N:=SGTMP130;</span></span>
+<span class="line"><span>SGJ10D:=MIN(IFELSE(COUNT(REFWH(SGKE9,1),0)&gt;0,BARSLAST(REFWH(SGKE9,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ10A:=MIN(SGJ10D+REFWH(SGJ10D,SGJ10D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP131:=SGTMP130&gt;0;</span></span>
+<span class="line"><span>SGJ10P:=IFELSE(SGTMP131,VALUEWHEN(SGKE9,SGTMP103),0);</span></span>
+<span class="line"><span>SGJ10V:=SGKE9 AND SGJ10N&gt;=2 AND SGJ10D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ10D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ10P,SGJ10D) AND SGMH&gt;REFWH(SGMH,SGJ10D),REFWH(SGJ10P,SGJ10D)&gt;SGML AND REFWH(SGMH,SGJ10D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ10C:=SGKE9 AND SGJ10N&gt;=3 AND MOD(SGJ10N-0,3)=0 AND SGJ10A&lt;=SGTMP99 AND COUNT(SGGX,SGJ10A+1)=0 AND REFWH(SGJ10V,SGJ10D)=0;</span></span>
+<span class="line"><span>SGJ10K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ10A),SGML&lt;REFWH(SGML,SGJ10A));</span></span>
+<span class="line"><span>SGJ10B:=BACKSET(SGJ10C AND SGJ10K=0,SGJ10D+1);</span></span>
+<span class="line"><span>SGJ10T:=BACKSET(SGJ10C AND SGJ10K,2)-BACKSET(SGJ10C AND SGJ10K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP132:=IFELSE(SGTMP131,BARSLAST(SGKE9),SGBN);</span></span>
+<span class="line"><span>SGJ10R:=BACKSET(SGJ10T,MIN(SGTMP132+REFWH(SGJ10D,SGTMP132)+1,SGBN));</span></span>
+<span class="line"><span>SGKE10:=SGKE9 AND SGJ10B=0 AND SGJ10R=0;</span></span>
+<span class="line"><span>SGTMP133:=COUNT(SGKE10,0);</span></span>
+<span class="line"><span>SGJ11N:=SGTMP133;</span></span>
+<span class="line"><span>SGJ11D:=MIN(IFELSE(COUNT(REFWH(SGKE10,1),0)&gt;0,BARSLAST(REFWH(SGKE10,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ11A:=MIN(SGJ11D+REFWH(SGJ11D,SGJ11D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP134:=SGTMP133&gt;0;</span></span>
+<span class="line"><span>SGJ11P:=IFELSE(SGTMP134,VALUEWHEN(SGKE10,SGTMP103),0);</span></span>
+<span class="line"><span>SGJ11V:=SGKE10 AND SGJ11N&gt;=2 AND SGJ11D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ11D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ11P,SGJ11D) AND SGMH&gt;REFWH(SGMH,SGJ11D),REFWH(SGJ11P,SGJ11D)&gt;SGML AND REFWH(SGMH,SGJ11D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ11C:=SGKE10 AND SGJ11N&gt;=4 AND MOD(SGJ11N-1,3)=0 AND SGJ11A&lt;=SGTMP99 AND COUNT(SGGX,SGJ11A+1)=0 AND REFWH(SGJ11V,SGJ11D)=0;</span></span>
+<span class="line"><span>SGJ11K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ11A),SGML&lt;REFWH(SGML,SGJ11A));</span></span>
+<span class="line"><span>SGJ11B:=BACKSET(SGJ11C AND SGJ11K=0,SGJ11D+1);</span></span>
+<span class="line"><span>SGJ11T:=BACKSET(SGJ11C AND SGJ11K,2)-BACKSET(SGJ11C AND SGJ11K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP135:=IFELSE(SGTMP134,BARSLAST(SGKE10),SGBN);</span></span>
+<span class="line"><span>SGJ11R:=BACKSET(SGJ11T,MIN(SGTMP135+REFWH(SGJ11D,SGTMP135)+1,SGBN));</span></span>
+<span class="line"><span>SGKE11:=SGKE10 AND SGJ11B=0 AND SGJ11R=0;</span></span>
+<span class="line"><span>SGTMP136:=COUNT(SGKE11,0);</span></span>
+<span class="line"><span>SGJ12N:=SGTMP136;</span></span>
+<span class="line"><span>SGJ12D:=MIN(IFELSE(COUNT(REFWH(SGKE11,1),0)&gt;0,BARSLAST(REFWH(SGKE11,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGJ12A:=MIN(SGJ12D+REFWH(SGJ12D,SGJ12D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP137:=SGTMP136&gt;0;</span></span>
+<span class="line"><span>SGJ12P:=IFELSE(SGTMP137,VALUEWHEN(SGKE11,SGTMP103),0);</span></span>
+<span class="line"><span>SGJ12V:=SGKE11 AND SGJ12N&gt;=2 AND SGJ12D&gt;=SGTMP104 AND SGGC-REFWH(SGGC,SGJ12D)&gt;=3 AND IFELSE(SGFT,SGMH&gt;REFWH(SGJ12P,SGJ12D) AND SGMH&gt;REFWH(SGMH,SGJ12D),REFWH(SGJ12P,SGJ12D)&gt;SGML AND REFWH(SGMH,SGJ12D)&gt;SGMH);</span></span>
+<span class="line"><span>SGJ12C:=SGKE11 AND SGJ12N&gt;=5 AND MOD(SGJ12N-2,3)=0 AND SGJ12A&lt;=SGTMP99 AND COUNT(SGGX,SGJ12A+1)=0 AND REFWH(SGJ12V,SGJ12D)=0;</span></span>
+<span class="line"><span>SGJ12K:=IFELSE(SGFT,SGMH&gt;REFWH(SGMH,SGJ12A),SGML&lt;REFWH(SGML,SGJ12A));</span></span>
+<span class="line"><span>SGJ12B:=BACKSET(SGJ12C AND SGJ12K=0,SGJ12D+1);</span></span>
+<span class="line"><span>SGJ12T:=BACKSET(SGJ12C AND SGJ12K,2)-BACKSET(SGJ12C AND SGJ12K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP138:=IFELSE(SGTMP137,BARSLAST(SGKE11),SGBN);</span></span>
+<span class="line"><span>SGJ12R:=BACKSET(SGJ12T,MIN(SGTMP138+REFWH(SGJ12D,SGTMP138)+1,SGBN));</span></span>
+<span class="line"><span>SGKE12:=SGKE11 AND SGJ12B=0 AND SGJ12R=0;</span></span>
+<span class="line"><span>SGPE:=SGKE12;</span></span>
+<span class="line"><span>SGTMP139:=COUNT(SGPE,0);</span></span>
+<span class="line"><span>SGPC:=SGTMP139;</span></span>
+<span class="line"><span>SGTMP140:=SGTMP139&gt;0;</span></span>
+<span class="line"><span>SGPP:=IFELSE(SGTMP140,VALUEWHEN(SGPE,SGTMP103),0);</span></span>
+<span class="line"><span>SGPH:=IFELSE(SGTMP140,VALUEWHEN(SGPE,SGMH),0);</span></span>
+<span class="line"><span>SGD1:=MIN(IFELSE(COUNT(REFWH(SGPE,1),0)&gt;0,BARSLAST(REFWH(SGPE,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGD2:=MIN(SGD1+REFWH(SGD1,SGD1),SGTMP25);</span></span>
+<span class="line"><span>SGD3:=MIN(SGD2+REFWH(SGD1,SGD2),SGTMP25);</span></span>
+<span class="line"><span>SGP1:=REFWH(SGPP,SGD1);</span></span>
+<span class="line"><span>SGP2:=REFWH(SGPP,SGD2);</span></span>
+<span class="line"><span>SGP3:=REFWH(SGPP,SGD3);</span></span>
+<span class="line"><span>SGTMP141:=SGD1+1;</span></span>
+<span class="line"><span>SGPV:=SGPE AND SGPC&gt;=2 AND SGD1&gt;=SGTMP104 AND COUNT(SGGX,SGTMP141)=0 AND SGGC-REFWH(SGGC,SGD1)&gt;=3 AND IFELSE(SGFT,SGMH&gt;SGP1 AND SGMH&gt;REFWH(SGPH,SGD1),SGP1&gt;SGML AND REFWH(SGPH,SGD1)&gt;SGMH);</span></span>
+<span class="line"><span>SGTMP142:=SGPC&gt;=3;</span></span>
+<span class="line"><span>SGTMP143:=SGPV AND SGTMP142;</span></span>
+<span class="line"><span>SGTMP144:=REFWH(SGPV,SGD1);</span></span>
+<span class="line"><span>SGTMP145:=SGTMP143 AND SGTMP144;</span></span>
+<span class="line"><span>SGTMP146:=REFWH(SGFT,SGD1);</span></span>
+<span class="line"><span>SGTMP147:=SGFT&lt;&gt;SGTMP146;</span></span>
+<span class="line"><span>SGTMP148:=SGTMP145 AND SGTMP147;</span></span>
+<span class="line"><span>SGTMP149:=MOD(SGPC,2);</span></span>
+<span class="line"><span>SGTMP150:=SGTMP149=0;</span></span>
+<span class="line"><span>SGTMP151:=SGTMP148 AND SGTMP150;</span></span>
+<span class="line"><span>SGWPC0:=BACKSET(SGTMP151,SGTMP141)-BACKSET(SGTMP151 AND SGD1&gt;0,MAX(SGD1,1))&gt;0;</span></span>
+<span class="line"><span>SGTMP152:=SGTMP149=1;</span></span>
+<span class="line"><span>SGTMP153:=SGTMP148 AND SGTMP152;</span></span>
+<span class="line"><span>SGWPC1:=BACKSET(SGTMP153,SGTMP141)-BACKSET(SGTMP153 AND SGD1&gt;0,MAX(SGD1,1))&gt;0;</span></span>
+<span class="line"><span>SGWPC:=SGWPC0 OR SGWPC1;</span></span>
+<span class="line"><span>SGPCONF:=SGPV AND SGWPC;</span></span>
+<span class="line"><span>SGPWAIT:=SGPV AND SGPCONF=0;</span></span>
+<span class="line"><span>SGPG:=MIN(MIN(MAX(SGPP,SGP1),MAX(SGP1,SGP2)),MAX(SGP2,SGP3));</span></span>
+<span class="line"><span>SGPD:=MAX(MAX(MIN(SGPP,SGP1),MIN(SGP1,SGP2)),MIN(SGP2,SGP3));</span></span>
+<span class="line"><span>SGTMP154:=SGPC&gt;=4;</span></span>
+<span class="line"><span>SGTMP155:=SGPE AND SGTMP154;</span></span>
+<span class="line"><span>SGSDUP:=SGTMP155 AND SGPP&gt;SGP2 AND SGP1&gt;SGP3;</span></span>
+<span class="line"><span>SGSDDN:=SGTMP155 AND SGPP&lt;SGP2 AND SGP1&lt;SGP3;</span></span>
+<span class="line"><span>SGTMP156:=SGPV=0;</span></span>
+<span class="line"><span>SGTMP157:=SGPE AND SGTMP156;</span></span>
+<span class="line"><span>SGSDE:=SGSDUP OR SGSDDN OR SGTMP157;</span></span>
+<span class="line"><span>SGSDV:=IFELSE(COUNT(SGSDE,0)&gt;0,VALUEWHEN(SGSDE,IFELSE(SGTMP157,0,IFELSE(SGSDUP,1,-(1)))),0);</span></span>
+<span class="line"><span>SGTMP158:=REFWH(SGSDV,1);</span></span>
+<span class="line"><span>SGSCHANGE:=SGSDE AND SGSDV&lt;&gt;SGTMP158;</span></span>
+<span class="line"><span>SGTMP159:=COUNT(SGSCHANGE,0);</span></span>
+<span class="line"><span>SGTMP160:=SGTMP159&gt;0;</span></span>
+<span class="line"><span>SGSRLEN:=IFELSE(SGTMP160,BARSLAST(SGSCHANGE),SGBN)+1;</span></span>
+<span class="line"><span>SGSMAX:=HHV(SGPP,SGSRLEN);</span></span>
+<span class="line"><span>SGSMIN:=LLV(SGPP,SGSRLEN);</span></span>
+<span class="line"><span>SGWHREC:=SGPE AND SGFT AND SGSDV=1 AND (SGSCHANGE OR SGPP&gt;REFWH(SGSMAX,1));</span></span>
+<span class="line"><span>SGWLREC:=SGPE AND SGFB AND SGSDV=-(1) AND (SGSCHANGE OR SGPP&lt;REFWH(SGSMIN,1));</span></span>
+<span class="line"><span>SGWBEST:=IFELSE(COUNT(SGWHREC OR SGWLREC,0)&gt;0,VALUEWHEN(SGWHREC OR SGWLREC,SGBN),0);</span></span>
+<span class="line"><span>SGTMP161:=REFWH(SGWBEST,1);</span></span>
+<span class="line"><span>SGTMP162:=IFELSE(SGTMP160,VALUEWHEN(SGSCHANGE,SGBN),0);</span></span>
+<span class="line"><span>SGWRDONE:=SGSCHANGE AND SGTMP158&lt;&gt;0 AND SGTMP161&gt;=REFWH(SGTMP162,1) AND SGTMP161&gt;0;</span></span>
+<span class="line"><span>SGWRDIST:=SGBN-SGTMP161;</span></span>
+<span class="line"><span>SGWRNUM:=SGTMP159;</span></span>
+<span class="line"><span>SGTMP163:=MOD(SGWRNUM,2);</span></span>
+<span class="line"><span>SGTMP164:=SGTMP163=0;</span></span>
+<span class="line"><span>SGTMP165:=SGWRDONE AND SGTMP164;</span></span>
+<span class="line"><span>SGWPO0:=BACKSET(SGTMP165,SGWRDIST+1)-BACKSET(SGTMP165 AND SGWRDIST&gt;0,MAX(SGWRDIST,1))&gt;0;</span></span>
+<span class="line"><span>SGTMP166:=SGTMP163=1;</span></span>
+<span class="line"><span>SGTMP167:=SGWRDONE AND SGTMP166;</span></span>
+<span class="line"><span>SGWPO1:=BACKSET(SGTMP167,SGWRDIST+1)-BACKSET(SGTMP167 AND SGWRDIST&gt;0,MAX(SGWRDIST,1))&gt;0;</span></span>
+<span class="line"><span>SGWPOLD:=SGWPO0 OR SGWPO1;</span></span>
+<span class="line"><span>SGWTAIL:=ISLASTBAR AND SGSDV&lt;&gt;0 AND SGWBEST&gt;=SGTMP162;</span></span>
+<span class="line"><span>SGWPDIST:=SGBN-SGWBEST;</span></span>
+<span class="line"><span>SGWPNEW:=BACKSET(SGWTAIL,SGWPDIST+1)-BACKSET(SGWTAIL AND SGWPDIST&gt;0,MAX(SGWPDIST,1))&gt;0;</span></span>
+<span class="line"><span>SGSPICK:=SGPE AND (SGWPOLD OR SGWPNEW);</span></span>
+<span class="line"><span>SGWHBACK:=BACKSET(SGSCHANGE,SGBN);</span></span>
+<span class="line"><span>SGSHASN:=IFELSE(ISLASTBAR,0,REFX(SGWHBACK,1));</span></span>
+<span class="line"><span>SGSRSTART:=SGSCHANGE AND SGSDV&lt;&gt;0 AND SGTMP158=0 AND SGTMP154 AND COUNT(SGTMP157,SGD3)=0;</span></span>
+<span class="line"><span>SGTMP168:=MOD(SGPC,4);</span></span>
+<span class="line"><span>SGTMP169:=SGTMP168=0;</span></span>
+<span class="line"><span>SGTMP170:=SGSRSTART AND SGTMP169;</span></span>
+<span class="line"><span>SGTMP171:=SGD3+1;</span></span>
+<span class="line"><span>SGTMP172:=SGD3&gt;0;</span></span>
+<span class="line"><span>SGTMP173:=MAX(SGD3,1);</span></span>
+<span class="line"><span>SGSSEED0:=BACKSET(SGTMP170,SGTMP171)-BACKSET(SGTMP170 AND SGTMP172,SGTMP173)&gt;0;</span></span>
+<span class="line"><span>SGTMP174:=SGTMP168=1;</span></span>
+<span class="line"><span>SGTMP175:=SGSRSTART AND SGTMP174;</span></span>
+<span class="line"><span>SGSSEED1:=BACKSET(SGTMP175,SGTMP171)-BACKSET(SGTMP175 AND SGTMP172,SGTMP173)&gt;0;</span></span>
+<span class="line"><span>SGTMP176:=SGTMP168=2;</span></span>
+<span class="line"><span>SGTMP177:=SGSRSTART AND SGTMP176;</span></span>
+<span class="line"><span>SGSSEED2:=BACKSET(SGTMP177,SGTMP171)-BACKSET(SGTMP177 AND SGTMP172,SGTMP173)&gt;0;</span></span>
+<span class="line"><span>SGTMP178:=SGTMP168=3;</span></span>
+<span class="line"><span>SGTMP179:=SGSRSTART AND SGTMP178;</span></span>
+<span class="line"><span>SGSSEED3:=BACKSET(SGTMP179,SGTMP171)-BACKSET(SGTMP179 AND SGTMP172,SGTMP173)&gt;0;</span></span>
+<span class="line"><span>SGSSEED:=SGSSEED0 OR SGSSEED1 OR SGSSEED2 OR SGSSEED3;</span></span>
+<span class="line"><span>SGSE0:=SGSPICK OR SGPE AND SGSSEED;</span></span>
+<span class="line"><span>SGTMP180:=SGPG&gt;SGPD;</span></span>
+<span class="line"><span>SGTMP181:=SGTMP155 AND SGTMP180;</span></span>
+<span class="line"><span>SGTMP182:=SGTMP181 AND SGTMP169;</span></span>
+<span class="line"><span>SGSINIT0:=BACKSET(SGTMP182,SGTMP171)-BACKSET(SGTMP182 AND SGTMP172,SGTMP173)&gt;0;</span></span>
+<span class="line"><span>SGTMP183:=SGTMP181 AND SGTMP174;</span></span>
+<span class="line"><span>SGSINIT1:=BACKSET(SGTMP183,SGTMP171)-BACKSET(SGTMP183 AND SGTMP172,SGTMP173)&gt;0;</span></span>
+<span class="line"><span>SGTMP184:=SGTMP181 AND SGTMP176;</span></span>
+<span class="line"><span>SGSINIT2:=BACKSET(SGTMP184,SGTMP171)-BACKSET(SGTMP184 AND SGTMP172,SGTMP173)&gt;0;</span></span>
+<span class="line"><span>SGTMP185:=SGTMP181 AND SGTMP178;</span></span>
+<span class="line"><span>SGSINIT3:=BACKSET(SGTMP185,SGTMP171)-BACKSET(SGTMP185 AND SGTMP172,SGTMP173)&gt;0;</span></span>
+<span class="line"><span>SGSINIT:=SGSINIT0 OR SGSINIT1 OR SGSINIT2 OR SGSINIT3;</span></span>
+<span class="line"><span>SGTMP186:=COUNT(SGSE0,0);</span></span>
+<span class="line"><span>SGQ1N:=SGTMP186;</span></span>
+<span class="line"><span>SGQ1D:=MIN(IFELSE(COUNT(REFWH(SGSE0,1),0)&gt;0,BARSLAST(REFWH(SGSE0,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ1A:=MIN(SGQ1D+REFWH(SGQ1D,SGQ1D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP187:=SGTMP186&gt;0;</span></span>
+<span class="line"><span>SGQ1P:=IFELSE(SGTMP187,VALUEWHEN(SGSE0,SGPP),0);</span></span>
+<span class="line"><span>SGQ1V:=SGSE0 AND SGQ1N&gt;=2 AND SGPC-REFWH(SGPC,SGQ1D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ1D) AND COUNT(SGTMP157,SGQ1D)=0 AND REFWH(SGSINIT,SGQ1D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ1P,SGQ1D),SGPP&lt;REFWH(SGQ1P,SGQ1D));</span></span>
+<span class="line"><span>SGQ1C:=SGSE0 AND SGQ1N&gt;=3 AND MOD(SGQ1N-0,3)=0 AND SGFT=REFWH(SGFT,SGQ1A) AND COUNT(SGTMP157,SGQ1A)=0 AND REFWH(SGQ1V,SGQ1D)=0;</span></span>
+<span class="line"><span>SGQ1K:=REFWH(SGSINIT,SGQ1A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ1A),SGPP&lt;REFWH(SGPP,SGQ1A));</span></span>
+<span class="line"><span>SGQ1B:=BACKSET(SGQ1C AND SGQ1K=0,SGQ1D+1);</span></span>
+<span class="line"><span>SGQ1T:=BACKSET(SGQ1C AND SGQ1K,2)-BACKSET(SGQ1C AND SGQ1K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP188:=IFELSE(SGTMP187,BARSLAST(SGSE0),SGBN);</span></span>
+<span class="line"><span>SGQ1R:=BACKSET(SGQ1T,MIN(SGTMP188+REFWH(SGQ1D,SGTMP188)+1,SGBN));</span></span>
+<span class="line"><span>SGSE1:=SGSE0 AND SGQ1B=0 AND SGQ1R=0;</span></span>
+<span class="line"><span>SGTMP189:=COUNT(SGSE1,0);</span></span>
+<span class="line"><span>SGQ2N:=SGTMP189;</span></span>
+<span class="line"><span>SGQ2D:=MIN(IFELSE(COUNT(REFWH(SGSE1,1),0)&gt;0,BARSLAST(REFWH(SGSE1,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ2A:=MIN(SGQ2D+REFWH(SGQ2D,SGQ2D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP190:=SGTMP189&gt;0;</span></span>
+<span class="line"><span>SGQ2P:=IFELSE(SGTMP190,VALUEWHEN(SGSE1,SGPP),0);</span></span>
+<span class="line"><span>SGQ2V:=SGSE1 AND SGQ2N&gt;=2 AND SGPC-REFWH(SGPC,SGQ2D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ2D) AND COUNT(SGTMP157,SGQ2D)=0 AND REFWH(SGSINIT,SGQ2D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ2P,SGQ2D),SGPP&lt;REFWH(SGQ2P,SGQ2D));</span></span>
+<span class="line"><span>SGQ2C:=SGSE1 AND SGQ2N&gt;=4 AND MOD(SGQ2N-1,3)=0 AND SGFT=REFWH(SGFT,SGQ2A) AND COUNT(SGTMP157,SGQ2A)=0 AND REFWH(SGQ2V,SGQ2D)=0;</span></span>
+<span class="line"><span>SGQ2K:=REFWH(SGSINIT,SGQ2A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ2A),SGPP&lt;REFWH(SGPP,SGQ2A));</span></span>
+<span class="line"><span>SGQ2B:=BACKSET(SGQ2C AND SGQ2K=0,SGQ2D+1);</span></span>
+<span class="line"><span>SGQ2T:=BACKSET(SGQ2C AND SGQ2K,2)-BACKSET(SGQ2C AND SGQ2K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP191:=IFELSE(SGTMP190,BARSLAST(SGSE1),SGBN);</span></span>
+<span class="line"><span>SGQ2R:=BACKSET(SGQ2T,MIN(SGTMP191+REFWH(SGQ2D,SGTMP191)+1,SGBN));</span></span>
+<span class="line"><span>SGSE2:=SGSE1 AND SGQ2B=0 AND SGQ2R=0;</span></span>
+<span class="line"><span>SGTMP192:=COUNT(SGSE2,0);</span></span>
+<span class="line"><span>SGQ3N:=SGTMP192;</span></span>
+<span class="line"><span>SGQ3D:=MIN(IFELSE(COUNT(REFWH(SGSE2,1),0)&gt;0,BARSLAST(REFWH(SGSE2,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ3A:=MIN(SGQ3D+REFWH(SGQ3D,SGQ3D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP193:=SGTMP192&gt;0;</span></span>
+<span class="line"><span>SGQ3P:=IFELSE(SGTMP193,VALUEWHEN(SGSE2,SGPP),0);</span></span>
+<span class="line"><span>SGQ3V:=SGSE2 AND SGQ3N&gt;=2 AND SGPC-REFWH(SGPC,SGQ3D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ3D) AND COUNT(SGTMP157,SGQ3D)=0 AND REFWH(SGSINIT,SGQ3D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ3P,SGQ3D),SGPP&lt;REFWH(SGQ3P,SGQ3D));</span></span>
+<span class="line"><span>SGQ3C:=SGSE2 AND SGQ3N&gt;=5 AND MOD(SGQ3N-2,3)=0 AND SGFT=REFWH(SGFT,SGQ3A) AND COUNT(SGTMP157,SGQ3A)=0 AND REFWH(SGQ3V,SGQ3D)=0;</span></span>
+<span class="line"><span>SGQ3K:=REFWH(SGSINIT,SGQ3A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ3A),SGPP&lt;REFWH(SGPP,SGQ3A));</span></span>
+<span class="line"><span>SGQ3B:=BACKSET(SGQ3C AND SGQ3K=0,SGQ3D+1);</span></span>
+<span class="line"><span>SGQ3T:=BACKSET(SGQ3C AND SGQ3K,2)-BACKSET(SGQ3C AND SGQ3K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP194:=IFELSE(SGTMP193,BARSLAST(SGSE2),SGBN);</span></span>
+<span class="line"><span>SGQ3R:=BACKSET(SGQ3T,MIN(SGTMP194+REFWH(SGQ3D,SGTMP194)+1,SGBN));</span></span>
+<span class="line"><span>SGSE3:=SGSE2 AND SGQ3B=0 AND SGQ3R=0;</span></span>
+<span class="line"><span>SGTMP195:=COUNT(SGSE3,0);</span></span>
+<span class="line"><span>SGQ4N:=SGTMP195;</span></span>
+<span class="line"><span>SGQ4D:=MIN(IFELSE(COUNT(REFWH(SGSE3,1),0)&gt;0,BARSLAST(REFWH(SGSE3,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ4A:=MIN(SGQ4D+REFWH(SGQ4D,SGQ4D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP196:=SGTMP195&gt;0;</span></span>
+<span class="line"><span>SGQ4P:=IFELSE(SGTMP196,VALUEWHEN(SGSE3,SGPP),0);</span></span>
+<span class="line"><span>SGQ4V:=SGSE3 AND SGQ4N&gt;=2 AND SGPC-REFWH(SGPC,SGQ4D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ4D) AND COUNT(SGTMP157,SGQ4D)=0 AND REFWH(SGSINIT,SGQ4D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ4P,SGQ4D),SGPP&lt;REFWH(SGQ4P,SGQ4D));</span></span>
+<span class="line"><span>SGQ4C:=SGSE3 AND SGQ4N&gt;=3 AND MOD(SGQ4N-0,3)=0 AND SGFT=REFWH(SGFT,SGQ4A) AND COUNT(SGTMP157,SGQ4A)=0 AND REFWH(SGQ4V,SGQ4D)=0;</span></span>
+<span class="line"><span>SGQ4K:=REFWH(SGSINIT,SGQ4A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ4A),SGPP&lt;REFWH(SGPP,SGQ4A));</span></span>
+<span class="line"><span>SGQ4B:=BACKSET(SGQ4C AND SGQ4K=0,SGQ4D+1);</span></span>
+<span class="line"><span>SGQ4T:=BACKSET(SGQ4C AND SGQ4K,2)-BACKSET(SGQ4C AND SGQ4K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP197:=IFELSE(SGTMP196,BARSLAST(SGSE3),SGBN);</span></span>
+<span class="line"><span>SGQ4R:=BACKSET(SGQ4T,MIN(SGTMP197+REFWH(SGQ4D,SGTMP197)+1,SGBN));</span></span>
+<span class="line"><span>SGSE4:=SGSE3 AND SGQ4B=0 AND SGQ4R=0;</span></span>
+<span class="line"><span>SGTMP198:=COUNT(SGSE4,0);</span></span>
+<span class="line"><span>SGQ5N:=SGTMP198;</span></span>
+<span class="line"><span>SGQ5D:=MIN(IFELSE(COUNT(REFWH(SGSE4,1),0)&gt;0,BARSLAST(REFWH(SGSE4,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ5A:=MIN(SGQ5D+REFWH(SGQ5D,SGQ5D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP199:=SGTMP198&gt;0;</span></span>
+<span class="line"><span>SGQ5P:=IFELSE(SGTMP199,VALUEWHEN(SGSE4,SGPP),0);</span></span>
+<span class="line"><span>SGQ5V:=SGSE4 AND SGQ5N&gt;=2 AND SGPC-REFWH(SGPC,SGQ5D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ5D) AND COUNT(SGTMP157,SGQ5D)=0 AND REFWH(SGSINIT,SGQ5D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ5P,SGQ5D),SGPP&lt;REFWH(SGQ5P,SGQ5D));</span></span>
+<span class="line"><span>SGQ5C:=SGSE4 AND SGQ5N&gt;=4 AND MOD(SGQ5N-1,3)=0 AND SGFT=REFWH(SGFT,SGQ5A) AND COUNT(SGTMP157,SGQ5A)=0 AND REFWH(SGQ5V,SGQ5D)=0;</span></span>
+<span class="line"><span>SGQ5K:=REFWH(SGSINIT,SGQ5A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ5A),SGPP&lt;REFWH(SGPP,SGQ5A));</span></span>
+<span class="line"><span>SGQ5B:=BACKSET(SGQ5C AND SGQ5K=0,SGQ5D+1);</span></span>
+<span class="line"><span>SGQ5T:=BACKSET(SGQ5C AND SGQ5K,2)-BACKSET(SGQ5C AND SGQ5K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP200:=IFELSE(SGTMP199,BARSLAST(SGSE4),SGBN);</span></span>
+<span class="line"><span>SGQ5R:=BACKSET(SGQ5T,MIN(SGTMP200+REFWH(SGQ5D,SGTMP200)+1,SGBN));</span></span>
+<span class="line"><span>SGSE5:=SGSE4 AND SGQ5B=0 AND SGQ5R=0;</span></span>
+<span class="line"><span>SGTMP201:=COUNT(SGSE5,0);</span></span>
+<span class="line"><span>SGQ6N:=SGTMP201;</span></span>
+<span class="line"><span>SGQ6D:=MIN(IFELSE(COUNT(REFWH(SGSE5,1),0)&gt;0,BARSLAST(REFWH(SGSE5,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ6A:=MIN(SGQ6D+REFWH(SGQ6D,SGQ6D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP202:=SGTMP201&gt;0;</span></span>
+<span class="line"><span>SGQ6P:=IFELSE(SGTMP202,VALUEWHEN(SGSE5,SGPP),0);</span></span>
+<span class="line"><span>SGQ6V:=SGSE5 AND SGQ6N&gt;=2 AND SGPC-REFWH(SGPC,SGQ6D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ6D) AND COUNT(SGTMP157,SGQ6D)=0 AND REFWH(SGSINIT,SGQ6D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ6P,SGQ6D),SGPP&lt;REFWH(SGQ6P,SGQ6D));</span></span>
+<span class="line"><span>SGQ6C:=SGSE5 AND SGQ6N&gt;=5 AND MOD(SGQ6N-2,3)=0 AND SGFT=REFWH(SGFT,SGQ6A) AND COUNT(SGTMP157,SGQ6A)=0 AND REFWH(SGQ6V,SGQ6D)=0;</span></span>
+<span class="line"><span>SGQ6K:=REFWH(SGSINIT,SGQ6A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ6A),SGPP&lt;REFWH(SGPP,SGQ6A));</span></span>
+<span class="line"><span>SGQ6B:=BACKSET(SGQ6C AND SGQ6K=0,SGQ6D+1);</span></span>
+<span class="line"><span>SGQ6T:=BACKSET(SGQ6C AND SGQ6K,2)-BACKSET(SGQ6C AND SGQ6K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP203:=IFELSE(SGTMP202,BARSLAST(SGSE5),SGBN);</span></span>
+<span class="line"><span>SGQ6R:=BACKSET(SGQ6T,MIN(SGTMP203+REFWH(SGQ6D,SGTMP203)+1,SGBN));</span></span>
+<span class="line"><span>SGSE6:=SGSE5 AND SGQ6B=0 AND SGQ6R=0;</span></span>
+<span class="line"><span>SGTMP204:=COUNT(SGSE6,0);</span></span>
+<span class="line"><span>SGQ7N:=SGTMP204;</span></span>
+<span class="line"><span>SGQ7D:=MIN(IFELSE(COUNT(REFWH(SGSE6,1),0)&gt;0,BARSLAST(REFWH(SGSE6,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ7A:=MIN(SGQ7D+REFWH(SGQ7D,SGQ7D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP205:=SGTMP204&gt;0;</span></span>
+<span class="line"><span>SGQ7P:=IFELSE(SGTMP205,VALUEWHEN(SGSE6,SGPP),0);</span></span>
+<span class="line"><span>SGQ7V:=SGSE6 AND SGQ7N&gt;=2 AND SGPC-REFWH(SGPC,SGQ7D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ7D) AND COUNT(SGTMP157,SGQ7D)=0 AND REFWH(SGSINIT,SGQ7D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ7P,SGQ7D),SGPP&lt;REFWH(SGQ7P,SGQ7D));</span></span>
+<span class="line"><span>SGQ7C:=SGSE6 AND SGQ7N&gt;=3 AND MOD(SGQ7N-0,3)=0 AND SGFT=REFWH(SGFT,SGQ7A) AND COUNT(SGTMP157,SGQ7A)=0 AND REFWH(SGQ7V,SGQ7D)=0;</span></span>
+<span class="line"><span>SGQ7K:=REFWH(SGSINIT,SGQ7A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ7A),SGPP&lt;REFWH(SGPP,SGQ7A));</span></span>
+<span class="line"><span>SGQ7B:=BACKSET(SGQ7C AND SGQ7K=0,SGQ7D+1);</span></span>
+<span class="line"><span>SGQ7T:=BACKSET(SGQ7C AND SGQ7K,2)-BACKSET(SGQ7C AND SGQ7K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP206:=IFELSE(SGTMP205,BARSLAST(SGSE6),SGBN);</span></span>
+<span class="line"><span>SGQ7R:=BACKSET(SGQ7T,MIN(SGTMP206+REFWH(SGQ7D,SGTMP206)+1,SGBN));</span></span>
+<span class="line"><span>SGSE7:=SGSE6 AND SGQ7B=0 AND SGQ7R=0;</span></span>
+<span class="line"><span>SGTMP207:=COUNT(SGSE7,0);</span></span>
+<span class="line"><span>SGQ8N:=SGTMP207;</span></span>
+<span class="line"><span>SGQ8D:=MIN(IFELSE(COUNT(REFWH(SGSE7,1),0)&gt;0,BARSLAST(REFWH(SGSE7,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ8A:=MIN(SGQ8D+REFWH(SGQ8D,SGQ8D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP208:=SGTMP207&gt;0;</span></span>
+<span class="line"><span>SGQ8P:=IFELSE(SGTMP208,VALUEWHEN(SGSE7,SGPP),0);</span></span>
+<span class="line"><span>SGQ8V:=SGSE7 AND SGQ8N&gt;=2 AND SGPC-REFWH(SGPC,SGQ8D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ8D) AND COUNT(SGTMP157,SGQ8D)=0 AND REFWH(SGSINIT,SGQ8D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ8P,SGQ8D),SGPP&lt;REFWH(SGQ8P,SGQ8D));</span></span>
+<span class="line"><span>SGQ8C:=SGSE7 AND SGQ8N&gt;=4 AND MOD(SGQ8N-1,3)=0 AND SGFT=REFWH(SGFT,SGQ8A) AND COUNT(SGTMP157,SGQ8A)=0 AND REFWH(SGQ8V,SGQ8D)=0;</span></span>
+<span class="line"><span>SGQ8K:=REFWH(SGSINIT,SGQ8A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ8A),SGPP&lt;REFWH(SGPP,SGQ8A));</span></span>
+<span class="line"><span>SGQ8B:=BACKSET(SGQ8C AND SGQ8K=0,SGQ8D+1);</span></span>
+<span class="line"><span>SGQ8T:=BACKSET(SGQ8C AND SGQ8K,2)-BACKSET(SGQ8C AND SGQ8K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP209:=IFELSE(SGTMP208,BARSLAST(SGSE7),SGBN);</span></span>
+<span class="line"><span>SGQ8R:=BACKSET(SGQ8T,MIN(SGTMP209+REFWH(SGQ8D,SGTMP209)+1,SGBN));</span></span>
+<span class="line"><span>SGSE8:=SGSE7 AND SGQ8B=0 AND SGQ8R=0;</span></span>
+<span class="line"><span>SGTMP210:=COUNT(SGSE8,0);</span></span>
+<span class="line"><span>SGQ9N:=SGTMP210;</span></span>
+<span class="line"><span>SGQ9D:=MIN(IFELSE(COUNT(REFWH(SGSE8,1),0)&gt;0,BARSLAST(REFWH(SGSE8,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ9A:=MIN(SGQ9D+REFWH(SGQ9D,SGQ9D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP211:=SGTMP210&gt;0;</span></span>
+<span class="line"><span>SGQ9P:=IFELSE(SGTMP211,VALUEWHEN(SGSE8,SGPP),0);</span></span>
+<span class="line"><span>SGQ9V:=SGSE8 AND SGQ9N&gt;=2 AND SGPC-REFWH(SGPC,SGQ9D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ9D) AND COUNT(SGTMP157,SGQ9D)=0 AND REFWH(SGSINIT,SGQ9D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ9P,SGQ9D),SGPP&lt;REFWH(SGQ9P,SGQ9D));</span></span>
+<span class="line"><span>SGQ9C:=SGSE8 AND SGQ9N&gt;=5 AND MOD(SGQ9N-2,3)=0 AND SGFT=REFWH(SGFT,SGQ9A) AND COUNT(SGTMP157,SGQ9A)=0 AND REFWH(SGQ9V,SGQ9D)=0;</span></span>
+<span class="line"><span>SGQ9K:=REFWH(SGSINIT,SGQ9A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ9A),SGPP&lt;REFWH(SGPP,SGQ9A));</span></span>
+<span class="line"><span>SGQ9B:=BACKSET(SGQ9C AND SGQ9K=0,SGQ9D+1);</span></span>
+<span class="line"><span>SGQ9T:=BACKSET(SGQ9C AND SGQ9K,2)-BACKSET(SGQ9C AND SGQ9K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP212:=IFELSE(SGTMP211,BARSLAST(SGSE8),SGBN);</span></span>
+<span class="line"><span>SGQ9R:=BACKSET(SGQ9T,MIN(SGTMP212+REFWH(SGQ9D,SGTMP212)+1,SGBN));</span></span>
+<span class="line"><span>SGSE9:=SGSE8 AND SGQ9B=0 AND SGQ9R=0;</span></span>
+<span class="line"><span>SGTMP213:=COUNT(SGSE9,0);</span></span>
+<span class="line"><span>SGQ10N:=SGTMP213;</span></span>
+<span class="line"><span>SGQ10D:=MIN(IFELSE(COUNT(REFWH(SGSE9,1),0)&gt;0,BARSLAST(REFWH(SGSE9,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ10A:=MIN(SGQ10D+REFWH(SGQ10D,SGQ10D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP214:=SGTMP213&gt;0;</span></span>
+<span class="line"><span>SGQ10P:=IFELSE(SGTMP214,VALUEWHEN(SGSE9,SGPP),0);</span></span>
+<span class="line"><span>SGQ10V:=SGSE9 AND SGQ10N&gt;=2 AND SGPC-REFWH(SGPC,SGQ10D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ10D) AND COUNT(SGTMP157,SGQ10D)=0 AND REFWH(SGSINIT,SGQ10D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ10P,SGQ10D),SGPP&lt;REFWH(SGQ10P,SGQ10D));</span></span>
+<span class="line"><span>SGQ10C:=SGSE9 AND SGQ10N&gt;=3 AND MOD(SGQ10N-0,3)=0 AND SGFT=REFWH(SGFT,SGQ10A) AND COUNT(SGTMP157,SGQ10A)=0 AND REFWH(SGQ10V,SGQ10D)=0;</span></span>
+<span class="line"><span>SGQ10K:=REFWH(SGSINIT,SGQ10A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ10A),SGPP&lt;REFWH(SGPP,SGQ10A));</span></span>
+<span class="line"><span>SGQ10B:=BACKSET(SGQ10C AND SGQ10K=0,SGQ10D+1);</span></span>
+<span class="line"><span>SGQ10T:=BACKSET(SGQ10C AND SGQ10K,2)-BACKSET(SGQ10C AND SGQ10K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP215:=IFELSE(SGTMP214,BARSLAST(SGSE9),SGBN);</span></span>
+<span class="line"><span>SGQ10R:=BACKSET(SGQ10T,MIN(SGTMP215+REFWH(SGQ10D,SGTMP215)+1,SGBN));</span></span>
+<span class="line"><span>SGSE10:=SGSE9 AND SGQ10B=0 AND SGQ10R=0;</span></span>
+<span class="line"><span>SGTMP216:=COUNT(SGSE10,0);</span></span>
+<span class="line"><span>SGQ11N:=SGTMP216;</span></span>
+<span class="line"><span>SGQ11D:=MIN(IFELSE(COUNT(REFWH(SGSE10,1),0)&gt;0,BARSLAST(REFWH(SGSE10,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ11A:=MIN(SGQ11D+REFWH(SGQ11D,SGQ11D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP217:=SGTMP216&gt;0;</span></span>
+<span class="line"><span>SGQ11P:=IFELSE(SGTMP217,VALUEWHEN(SGSE10,SGPP),0);</span></span>
+<span class="line"><span>SGQ11V:=SGSE10 AND SGQ11N&gt;=2 AND SGPC-REFWH(SGPC,SGQ11D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ11D) AND COUNT(SGTMP157,SGQ11D)=0 AND REFWH(SGSINIT,SGQ11D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ11P,SGQ11D),SGPP&lt;REFWH(SGQ11P,SGQ11D));</span></span>
+<span class="line"><span>SGQ11C:=SGSE10 AND SGQ11N&gt;=4 AND MOD(SGQ11N-1,3)=0 AND SGFT=REFWH(SGFT,SGQ11A) AND COUNT(SGTMP157,SGQ11A)=0 AND REFWH(SGQ11V,SGQ11D)=0;</span></span>
+<span class="line"><span>SGQ11K:=REFWH(SGSINIT,SGQ11A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ11A),SGPP&lt;REFWH(SGPP,SGQ11A));</span></span>
+<span class="line"><span>SGQ11B:=BACKSET(SGQ11C AND SGQ11K=0,SGQ11D+1);</span></span>
+<span class="line"><span>SGQ11T:=BACKSET(SGQ11C AND SGQ11K,2)-BACKSET(SGQ11C AND SGQ11K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP218:=IFELSE(SGTMP217,BARSLAST(SGSE10),SGBN);</span></span>
+<span class="line"><span>SGQ11R:=BACKSET(SGQ11T,MIN(SGTMP218+REFWH(SGQ11D,SGTMP218)+1,SGBN));</span></span>
+<span class="line"><span>SGSE11:=SGSE10 AND SGQ11B=0 AND SGQ11R=0;</span></span>
+<span class="line"><span>SGTMP219:=COUNT(SGSE11,0);</span></span>
+<span class="line"><span>SGQ12N:=SGTMP219;</span></span>
+<span class="line"><span>SGQ12D:=MIN(IFELSE(COUNT(REFWH(SGSE11,1),0)&gt;0,BARSLAST(REFWH(SGSE11,1)),SGBN)+1,SGTMP25);</span></span>
+<span class="line"><span>SGQ12A:=MIN(SGQ12D+REFWH(SGQ12D,SGQ12D),SGTMP25);</span></span>
+<span class="line"><span>SGTMP220:=SGTMP219&gt;0;</span></span>
+<span class="line"><span>SGQ12P:=IFELSE(SGTMP220,VALUEWHEN(SGSE11,SGPP),0);</span></span>
+<span class="line"><span>SGQ12V:=SGSE11 AND SGQ12N&gt;=2 AND SGPC-REFWH(SGPC,SGQ12D)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGQ12D) AND COUNT(SGTMP157,SGQ12D)=0 AND REFWH(SGSINIT,SGQ12D) AND IFELSE(SGFT,SGPP&gt;REFWH(SGQ12P,SGQ12D),SGPP&lt;REFWH(SGQ12P,SGQ12D));</span></span>
+<span class="line"><span>SGQ12C:=SGSE11 AND SGQ12N&gt;=5 AND MOD(SGQ12N-2,3)=0 AND SGFT=REFWH(SGFT,SGQ12A) AND COUNT(SGTMP157,SGQ12A)=0 AND REFWH(SGQ12V,SGQ12D)=0;</span></span>
+<span class="line"><span>SGQ12K:=REFWH(SGSINIT,SGQ12A)=0 OR IFELSE(SGFT,SGPP&gt;REFWH(SGPP,SGQ12A),SGPP&lt;REFWH(SGPP,SGQ12A));</span></span>
+<span class="line"><span>SGQ12B:=BACKSET(SGQ12C AND SGQ12K=0,SGQ12D+1);</span></span>
+<span class="line"><span>SGQ12T:=BACKSET(SGQ12C AND SGQ12K,2)-BACKSET(SGQ12C AND SGQ12K,1)&gt;0;</span></span>
+<span class="line"><span>SGTMP221:=IFELSE(SGTMP220,BARSLAST(SGSE11),SGBN);</span></span>
+<span class="line"><span>SGQ12R:=BACKSET(SGQ12T,MIN(SGTMP221+REFWH(SGQ12D,SGTMP221)+1,SGBN));</span></span>
+<span class="line"><span>SGSE12:=SGSE11 AND SGQ12B=0 AND SGQ12R=0;</span></span>
+<span class="line"><span>SGSA:=SGSE12;</span></span>
+<span class="line"><span>SGTMP222:=REFWH(SGSA,1);</span></span>
+<span class="line"><span>SGTMP223:=COUNT(SGTMP222,0);</span></span>
+<span class="line"><span>SGTMP224:=SGTMP223&gt;0;</span></span>
+<span class="line"><span>SGTMP225:=BARSLAST(SGTMP222);</span></span>
+<span class="line"><span>SGTMP226:=IFELSE(SGTMP224,SGTMP225,SGBN);</span></span>
+<span class="line"><span>SGTMP227:=SGTMP226+1;</span></span>
+<span class="line"><span>SGTMP228:=MIN(SGTMP227,SGTMP25);</span></span>
+<span class="line"><span>SGSXD:=SGTMP228;</span></span>
+<span class="line"><span>SGTMP229:=REFWH(SGPP,SGSXD);</span></span>
+<span class="line"><span>SGSVALID:=SGSA AND COUNT(SGSA,0)&gt;=2 AND SGPC-REFWH(SGPC,SGSXD)&gt;=3 AND SGFT&lt;&gt;REFWH(SGFT,SGSXD) AND COUNT(SGTMP157,SGSXD)=0 AND REFWH(SGSINIT,SGSXD) AND IFELSE(SGFT,SGPP&gt;SGTMP229,SGPP&lt;SGTMP229);</span></span>
+<span class="line"><span>SGSV:=SGSVALID AND SGSHASN;</span></span>
+<span class="line"><span>SGSPEND:=SGSVALID AND SGSHASN=0 AND SGSPICK;</span></span>
+<span class="line"><span>SGSH:=MAX(HHV(H,SGSXD+1),MAX(SGPP,SGTMP229));</span></span>
+<span class="line"><span>SGSL:=MIN(LLV(L,SGSXD+1),MIN(SGPP,SGTMP229));</span></span>
+<span class="line"><span>SGSC:=COUNT(SGSA,0);</span></span>
+<span class="line"><span>SGE1:=SGTMP228;</span></span>
+<span class="line"><span>SGE2:=MIN(SGE1+REFWH(SGE1,SGE1),SGTMP25);</span></span>
+<span class="line"><span>SGE3:=MIN(SGE2+REFWH(SGE1,SGE2),SGTMP25);</span></span>
+<span class="line"><span>SGZG0:=MIN(SGSH,MIN(REFWH(SGSH,SGE1),REFWH(SGSH,SGE2)));</span></span>
+<span class="line"><span>SGZD0:=MAX(SGSL,MAX(REFWH(SGSL,SGE1),REFWH(SGSL,SGE2)));</span></span>
+<span class="line"><span>SGZC:=SGSA AND SGSC&gt;=4 AND SGSV AND REFWH(SGSV,SGE1) AND REFWH(SGSV,SGE2) AND SGZG0&gt;SGZD0;</span></span>
+<span class="line"><span>SGZRESET:=SGSA AND (SGSV=0 OR SGSC&gt;=4 AND (SGZG0&lt;=SGZD0 OR REFWH(SGZC,SGE1) AND (SGZG0&lt;REFWH(SGZD0,SGE1) OR SGZD0&gt;REFWH(SGZG0,SGE1))));</span></span>
+<span class="line"><span>SGTMP230:=COUNT(SGZRESET,0)&gt;0;</span></span>
+<span class="line"><span>SGZRANGE:=IFELSE(SGTMP230,BARSLAST(SGZRESET),SGBN)+1;</span></span>
+<span class="line"><span>SGZELIG:=SGZC AND SGSC-IFELSE(SGTMP230,VALUEWHEN(SGZRESET,SGSC),0)&gt;=3;</span></span>
+<span class="line"><span>SGZSTART:=SGZELIG AND COUNT(SGZELIG,SGZRANGE)=1;</span></span>
+<span class="line"><span>SGTMP231:=COUNT(SGZSTART,0);</span></span>
+<span class="line"><span>SGTMP232:=SGTMP231&gt;0;</span></span>
+<span class="line"><span>SGZID:=IFELSE(SGTMP232,VALUEWHEN(SGZSTART,SGBN),0);</span></span>
+<span class="line"><span>SGZLEFT:=IFELSE(SGTMP232,VALUEWHEN(SGZSTART,SGBN-SGE3),0);</span></span>
+<span class="line"><span>SGZGH:=IFELSE(SGTMP232,VALUEWHEN(SGZSTART,SGZG0),0);</span></span>
+<span class="line"><span>SGZDL:=IFELSE(SGTMP232,VALUEWHEN(SGZSTART,SGZD0),0);</span></span>
+<span class="line"><span>SGZSEE:=COUNT(SGZSTART,SGZRANGE)&gt;0;</span></span>
+<span class="line"><span>SGZBAD:=SGSA AND SGZSEE AND SGBN&gt;SGZID AND (SGSV=0 OR SGSH&lt;SGZDL OR SGSL&gt;SGZGH);</span></span>
+<span class="line"><span>SGZOK:=SGZSEE AND COUNT(SGZBAD,SGZRANGE)=0;</span></span>
+<span class="line"><span>SGZEND:=SGZBAD AND COUNT(SGZBAD,SGZRANGE)=1 OR SGZRESET AND REFWH(SGZOK,1);</span></span>
+<span class="line"><span>SGZMEM:=SGSA AND SGSV AND SGZOK;</span></span>
+<span class="line"><span>SGTMP233:=COUNT(SGZMEM,0)&gt;0;</span></span>
+<span class="line"><span>SGWZM:=IFELSE(SGTMP233,VALUEWHEN(SGZMEM,SGBN),0);</span></span>
+<span class="line"><span>SGWZEND:=(SGZEND OR ISLASTBAR) AND SGTMP233;</span></span>
+<span class="line"><span>SGTMP234:=SGBN-SGWZM;</span></span>
+<span class="line"><span>SGWZF:=BACKSET(SGWZEND,SGTMP234+1)-BACKSET(SGWZEND AND SGTMP234&gt;0,MAX(SGTMP234,1))&gt;0;</span></span>
+<span class="line"><span>SGWZLAST:=SGZMEM AND SGWZF;</span></span>
+<span class="line"><span>SGWZI0:=IFELSE(SGWZLAST,SGBN,0);</span></span>
+<span class="line"><span>SGWZL0:=IFELSE(SGWZLAST,SGZLEFT,0);</span></span>
+<span class="line"><span>SGWZU0:=IFELSE(SGWZLAST,SGZGH,0);</span></span>
+<span class="line"><span>SGWZD0:=IFELSE(SGWZLAST,SGZDL,0);</span></span>
+<span class="line"><span>SGWZA1:=SGWZI0=0 AND IFELSE(REFX(SGWZI0,1)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI1:=IFELSE(SGWZA1,REFX(SGWZI0,1),SGWZI0);</span></span>
+<span class="line"><span>SGWZL1:=IFELSE(SGWZA1,REFX(SGWZL0,1),SGWZL0);</span></span>
+<span class="line"><span>SGWZU1:=IFELSE(SGWZA1,REFX(SGWZU0,1),SGWZU0);</span></span>
+<span class="line"><span>SGWZD1:=IFELSE(SGWZA1,REFX(SGWZD0,1),SGWZD0);</span></span>
+<span class="line"><span>SGWZA2:=SGWZI1=0 AND IFELSE(REFX(SGWZI1,2)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI2:=IFELSE(SGWZA2,REFX(SGWZI1,2),SGWZI1);</span></span>
+<span class="line"><span>SGWZL2:=IFELSE(SGWZA2,REFX(SGWZL1,2),SGWZL1);</span></span>
+<span class="line"><span>SGWZU2:=IFELSE(SGWZA2,REFX(SGWZU1,2),SGWZU1);</span></span>
+<span class="line"><span>SGWZD2:=IFELSE(SGWZA2,REFX(SGWZD1,2),SGWZD1);</span></span>
+<span class="line"><span>SGWZA3:=SGWZI2=0 AND IFELSE(REFX(SGWZI2,4)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI3:=IFELSE(SGWZA3,REFX(SGWZI2,4),SGWZI2);</span></span>
+<span class="line"><span>SGWZL3:=IFELSE(SGWZA3,REFX(SGWZL2,4),SGWZL2);</span></span>
+<span class="line"><span>SGWZU3:=IFELSE(SGWZA3,REFX(SGWZU2,4),SGWZU2);</span></span>
+<span class="line"><span>SGWZD3:=IFELSE(SGWZA3,REFX(SGWZD2,4),SGWZD2);</span></span>
+<span class="line"><span>SGWZA4:=SGWZI3=0 AND IFELSE(REFX(SGWZI3,8)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI4:=IFELSE(SGWZA4,REFX(SGWZI3,8),SGWZI3);</span></span>
+<span class="line"><span>SGWZL4:=IFELSE(SGWZA4,REFX(SGWZL3,8),SGWZL3);</span></span>
+<span class="line"><span>SGWZU4:=IFELSE(SGWZA4,REFX(SGWZU3,8),SGWZU3);</span></span>
+<span class="line"><span>SGWZD4:=IFELSE(SGWZA4,REFX(SGWZD3,8),SGWZD3);</span></span>
+<span class="line"><span>SGWZA5:=SGWZI4=0 AND IFELSE(REFX(SGWZI4,16)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI5:=IFELSE(SGWZA5,REFX(SGWZI4,16),SGWZI4);</span></span>
+<span class="line"><span>SGWZL5:=IFELSE(SGWZA5,REFX(SGWZL4,16),SGWZL4);</span></span>
+<span class="line"><span>SGWZU5:=IFELSE(SGWZA5,REFX(SGWZU4,16),SGWZU4);</span></span>
+<span class="line"><span>SGWZD5:=IFELSE(SGWZA5,REFX(SGWZD4,16),SGWZD4);</span></span>
+<span class="line"><span>SGWZA6:=SGWZI5=0 AND IFELSE(REFX(SGWZI5,32)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI6:=IFELSE(SGWZA6,REFX(SGWZI5,32),SGWZI5);</span></span>
+<span class="line"><span>SGWZL6:=IFELSE(SGWZA6,REFX(SGWZL5,32),SGWZL5);</span></span>
+<span class="line"><span>SGWZU6:=IFELSE(SGWZA6,REFX(SGWZU5,32),SGWZU5);</span></span>
+<span class="line"><span>SGWZD6:=IFELSE(SGWZA6,REFX(SGWZD5,32),SGWZD5);</span></span>
+<span class="line"><span>SGWZA7:=SGWZI6=0 AND IFELSE(REFX(SGWZI6,64)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI7:=IFELSE(SGWZA7,REFX(SGWZI6,64),SGWZI6);</span></span>
+<span class="line"><span>SGWZL7:=IFELSE(SGWZA7,REFX(SGWZL6,64),SGWZL6);</span></span>
+<span class="line"><span>SGWZU7:=IFELSE(SGWZA7,REFX(SGWZU6,64),SGWZU6);</span></span>
+<span class="line"><span>SGWZD7:=IFELSE(SGWZA7,REFX(SGWZD6,64),SGWZD6);</span></span>
+<span class="line"><span>SGWZA8:=SGWZI7=0 AND IFELSE(REFX(SGWZI7,128)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI8:=IFELSE(SGWZA8,REFX(SGWZI7,128),SGWZI7);</span></span>
+<span class="line"><span>SGWZL8:=IFELSE(SGWZA8,REFX(SGWZL7,128),SGWZL7);</span></span>
+<span class="line"><span>SGWZU8:=IFELSE(SGWZA8,REFX(SGWZU7,128),SGWZU7);</span></span>
+<span class="line"><span>SGWZD8:=IFELSE(SGWZA8,REFX(SGWZD7,128),SGWZD7);</span></span>
+<span class="line"><span>SGWZA9:=SGWZI8=0 AND IFELSE(REFX(SGWZI8,256)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI9:=IFELSE(SGWZA9,REFX(SGWZI8,256),SGWZI8);</span></span>
+<span class="line"><span>SGWZL9:=IFELSE(SGWZA9,REFX(SGWZL8,256),SGWZL8);</span></span>
+<span class="line"><span>SGWZU9:=IFELSE(SGWZA9,REFX(SGWZU8,256),SGWZU8);</span></span>
+<span class="line"><span>SGWZD9:=IFELSE(SGWZA9,REFX(SGWZD8,256),SGWZD8);</span></span>
+<span class="line"><span>SGWZA10:=SGWZI9=0 AND IFELSE(REFX(SGWZI9,512)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI10:=IFELSE(SGWZA10,REFX(SGWZI9,512),SGWZI9);</span></span>
+<span class="line"><span>SGWZL10:=IFELSE(SGWZA10,REFX(SGWZL9,512),SGWZL9);</span></span>
+<span class="line"><span>SGWZU10:=IFELSE(SGWZA10,REFX(SGWZU9,512),SGWZU9);</span></span>
+<span class="line"><span>SGWZD10:=IFELSE(SGWZA10,REFX(SGWZD9,512),SGWZD9);</span></span>
+<span class="line"><span>SGWZA11:=SGWZI10=0 AND IFELSE(REFX(SGWZI10,1024)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI11:=IFELSE(SGWZA11,REFX(SGWZI10,1024),SGWZI10);</span></span>
+<span class="line"><span>SGWZL11:=IFELSE(SGWZA11,REFX(SGWZL10,1024),SGWZL10);</span></span>
+<span class="line"><span>SGWZU11:=IFELSE(SGWZA11,REFX(SGWZU10,1024),SGWZU10);</span></span>
+<span class="line"><span>SGWZD11:=IFELSE(SGWZA11,REFX(SGWZD10,1024),SGWZD10);</span></span>
+<span class="line"><span>SGWZA12:=SGWZI11=0 AND IFELSE(REFX(SGWZI11,2048)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI12:=IFELSE(SGWZA12,REFX(SGWZI11,2048),SGWZI11);</span></span>
+<span class="line"><span>SGWZL12:=IFELSE(SGWZA12,REFX(SGWZL11,2048),SGWZL11);</span></span>
+<span class="line"><span>SGWZU12:=IFELSE(SGWZA12,REFX(SGWZU11,2048),SGWZU11);</span></span>
+<span class="line"><span>SGWZD12:=IFELSE(SGWZA12,REFX(SGWZD11,2048),SGWZD11);</span></span>
+<span class="line"><span>SGWZA13:=SGWZI12=0 AND IFELSE(REFX(SGWZI12,4096)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI13:=IFELSE(SGWZA13,REFX(SGWZI12,4096),SGWZI12);</span></span>
+<span class="line"><span>SGWZL13:=IFELSE(SGWZA13,REFX(SGWZL12,4096),SGWZL12);</span></span>
+<span class="line"><span>SGWZU13:=IFELSE(SGWZA13,REFX(SGWZU12,4096),SGWZU12);</span></span>
+<span class="line"><span>SGWZD13:=IFELSE(SGWZA13,REFX(SGWZD12,4096),SGWZD12);</span></span>
+<span class="line"><span>SGWZA14:=SGWZI13=0 AND IFELSE(REFX(SGWZI13,8192)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI14:=IFELSE(SGWZA14,REFX(SGWZI13,8192),SGWZI13);</span></span>
+<span class="line"><span>SGWZL14:=IFELSE(SGWZA14,REFX(SGWZL13,8192),SGWZL13);</span></span>
+<span class="line"><span>SGWZU14:=IFELSE(SGWZA14,REFX(SGWZU13,8192),SGWZU13);</span></span>
+<span class="line"><span>SGWZD14:=IFELSE(SGWZA14,REFX(SGWZD13,8192),SGWZD13);</span></span>
+<span class="line"><span>SGWZA15:=SGWZI14=0 AND IFELSE(REFX(SGWZI14,16384)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI15:=IFELSE(SGWZA15,REFX(SGWZI14,16384),SGWZI14);</span></span>
+<span class="line"><span>SGWZL15:=IFELSE(SGWZA15,REFX(SGWZL14,16384),SGWZL14);</span></span>
+<span class="line"><span>SGWZU15:=IFELSE(SGWZA15,REFX(SGWZU14,16384),SGWZU14);</span></span>
+<span class="line"><span>SGWZD15:=IFELSE(SGWZA15,REFX(SGWZD14,16384),SGWZD14);</span></span>
+<span class="line"><span>SGWZA16:=SGWZI15=0 AND IFELSE(REFX(SGWZI15,32768)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI16:=IFELSE(SGWZA16,REFX(SGWZI15,32768),SGWZI15);</span></span>
+<span class="line"><span>SGWZL16:=IFELSE(SGWZA16,REFX(SGWZL15,32768),SGWZL15);</span></span>
+<span class="line"><span>SGWZU16:=IFELSE(SGWZA16,REFX(SGWZU15,32768),SGWZU15);</span></span>
+<span class="line"><span>SGWZD16:=IFELSE(SGWZA16,REFX(SGWZD15,32768),SGWZD15);</span></span>
+<span class="line"><span>SGWZA17:=SGWZI16=0 AND IFELSE(REFX(SGWZI16,65536)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI17:=IFELSE(SGWZA17,REFX(SGWZI16,65536),SGWZI16);</span></span>
+<span class="line"><span>SGWZL17:=IFELSE(SGWZA17,REFX(SGWZL16,65536),SGWZL16);</span></span>
+<span class="line"><span>SGWZU17:=IFELSE(SGWZA17,REFX(SGWZU16,65536),SGWZU16);</span></span>
+<span class="line"><span>SGWZD17:=IFELSE(SGWZA17,REFX(SGWZD16,65536),SGWZD16);</span></span>
+<span class="line"><span>SGWZA18:=SGWZI17=0 AND IFELSE(REFX(SGWZI17,131072)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI18:=IFELSE(SGWZA18,REFX(SGWZI17,131072),SGWZI17);</span></span>
+<span class="line"><span>SGWZL18:=IFELSE(SGWZA18,REFX(SGWZL17,131072),SGWZL17);</span></span>
+<span class="line"><span>SGWZU18:=IFELSE(SGWZA18,REFX(SGWZU17,131072),SGWZU17);</span></span>
+<span class="line"><span>SGWZD18:=IFELSE(SGWZA18,REFX(SGWZD17,131072),SGWZD17);</span></span>
+<span class="line"><span>SGWZA19:=SGWZI18=0 AND IFELSE(REFX(SGWZI18,262144)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI19:=IFELSE(SGWZA19,REFX(SGWZI18,262144),SGWZI18);</span></span>
+<span class="line"><span>SGWZL19:=IFELSE(SGWZA19,REFX(SGWZL18,262144),SGWZL18);</span></span>
+<span class="line"><span>SGWZU19:=IFELSE(SGWZA19,REFX(SGWZU18,262144),SGWZU18);</span></span>
+<span class="line"><span>SGWZD19:=IFELSE(SGWZA19,REFX(SGWZD18,262144),SGWZD18);</span></span>
+<span class="line"><span>SGWZA20:=SGWZI19=0 AND IFELSE(REFX(SGWZI19,524288)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI20:=IFELSE(SGWZA20,REFX(SGWZI19,524288),SGWZI19);</span></span>
+<span class="line"><span>SGWZL20:=IFELSE(SGWZA20,REFX(SGWZL19,524288),SGWZL19);</span></span>
+<span class="line"><span>SGWZU20:=IFELSE(SGWZA20,REFX(SGWZU19,524288),SGWZU19);</span></span>
+<span class="line"><span>SGWZD20:=IFELSE(SGWZA20,REFX(SGWZD19,524288),SGWZD19);</span></span>
+<span class="line"><span>SGWZA21:=SGWZI20=0 AND IFELSE(REFX(SGWZI20,1048576)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI21:=IFELSE(SGWZA21,REFX(SGWZI20,1048576),SGWZI20);</span></span>
+<span class="line"><span>SGWZL21:=IFELSE(SGWZA21,REFX(SGWZL20,1048576),SGWZL20);</span></span>
+<span class="line"><span>SGWZU21:=IFELSE(SGWZA21,REFX(SGWZU20,1048576),SGWZU20);</span></span>
+<span class="line"><span>SGWZD21:=IFELSE(SGWZA21,REFX(SGWZD20,1048576),SGWZD20);</span></span>
+<span class="line"><span>SGWZA22:=SGWZI21=0 AND IFELSE(REFX(SGWZI21,2097152)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI22:=IFELSE(SGWZA22,REFX(SGWZI21,2097152),SGWZI21);</span></span>
+<span class="line"><span>SGWZL22:=IFELSE(SGWZA22,REFX(SGWZL21,2097152),SGWZL21);</span></span>
+<span class="line"><span>SGWZU22:=IFELSE(SGWZA22,REFX(SGWZU21,2097152),SGWZU21);</span></span>
+<span class="line"><span>SGWZD22:=IFELSE(SGWZA22,REFX(SGWZD21,2097152),SGWZD21);</span></span>
+<span class="line"><span>SGWZA23:=SGWZI22=0 AND IFELSE(REFX(SGWZI22,4194304)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI23:=IFELSE(SGWZA23,REFX(SGWZI22,4194304),SGWZI22);</span></span>
+<span class="line"><span>SGWZL23:=IFELSE(SGWZA23,REFX(SGWZL22,4194304),SGWZL22);</span></span>
+<span class="line"><span>SGWZU23:=IFELSE(SGWZA23,REFX(SGWZU22,4194304),SGWZU22);</span></span>
+<span class="line"><span>SGWZD23:=IFELSE(SGWZA23,REFX(SGWZD22,4194304),SGWZD22);</span></span>
+<span class="line"><span>SGWZA24:=SGWZI23=0 AND IFELSE(REFX(SGWZI23,8388608)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI24:=IFELSE(SGWZA24,REFX(SGWZI23,8388608),SGWZI23);</span></span>
+<span class="line"><span>SGWZL24:=IFELSE(SGWZA24,REFX(SGWZL23,8388608),SGWZL23);</span></span>
+<span class="line"><span>SGWZU24:=IFELSE(SGWZA24,REFX(SGWZU23,8388608),SGWZU23);</span></span>
+<span class="line"><span>SGWZD24:=IFELSE(SGWZA24,REFX(SGWZD23,8388608),SGWZD23);</span></span>
+<span class="line"><span>SGWZA25:=SGWZI24=0 AND IFELSE(REFX(SGWZI24,16777216)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI25:=IFELSE(SGWZA25,REFX(SGWZI24,16777216),SGWZI24);</span></span>
+<span class="line"><span>SGWZL25:=IFELSE(SGWZA25,REFX(SGWZL24,16777216),SGWZL24);</span></span>
+<span class="line"><span>SGWZU25:=IFELSE(SGWZA25,REFX(SGWZU24,16777216),SGWZU24);</span></span>
+<span class="line"><span>SGWZD25:=IFELSE(SGWZA25,REFX(SGWZD24,16777216),SGWZD24);</span></span>
+<span class="line"><span>SGWZA26:=SGWZI25=0 AND IFELSE(REFX(SGWZI25,33554432)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI26:=IFELSE(SGWZA26,REFX(SGWZI25,33554432),SGWZI25);</span></span>
+<span class="line"><span>SGWZL26:=IFELSE(SGWZA26,REFX(SGWZL25,33554432),SGWZL25);</span></span>
+<span class="line"><span>SGWZU26:=IFELSE(SGWZA26,REFX(SGWZU25,33554432),SGWZU25);</span></span>
+<span class="line"><span>SGWZD26:=IFELSE(SGWZA26,REFX(SGWZD25,33554432),SGWZD25);</span></span>
+<span class="line"><span>SGWZA27:=SGWZI26=0 AND IFELSE(REFX(SGWZI26,67108864)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI27:=IFELSE(SGWZA27,REFX(SGWZI26,67108864),SGWZI26);</span></span>
+<span class="line"><span>SGWZL27:=IFELSE(SGWZA27,REFX(SGWZL26,67108864),SGWZL26);</span></span>
+<span class="line"><span>SGWZU27:=IFELSE(SGWZA27,REFX(SGWZU26,67108864),SGWZU26);</span></span>
+<span class="line"><span>SGWZD27:=IFELSE(SGWZA27,REFX(SGWZD26,67108864),SGWZD26);</span></span>
+<span class="line"><span>SGWZA28:=SGWZI27=0 AND IFELSE(REFX(SGWZI27,134217728)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI28:=IFELSE(SGWZA28,REFX(SGWZI27,134217728),SGWZI27);</span></span>
+<span class="line"><span>SGWZL28:=IFELSE(SGWZA28,REFX(SGWZL27,134217728),SGWZL27);</span></span>
+<span class="line"><span>SGWZU28:=IFELSE(SGWZA28,REFX(SGWZU27,134217728),SGWZU27);</span></span>
+<span class="line"><span>SGWZD28:=IFELSE(SGWZA28,REFX(SGWZD27,134217728),SGWZD27);</span></span>
+<span class="line"><span>SGWZA29:=SGWZI28=0 AND IFELSE(REFX(SGWZI28,268435456)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI29:=IFELSE(SGWZA29,REFX(SGWZI28,268435456),SGWZI28);</span></span>
+<span class="line"><span>SGWZL29:=IFELSE(SGWZA29,REFX(SGWZL28,268435456),SGWZL28);</span></span>
+<span class="line"><span>SGWZU29:=IFELSE(SGWZA29,REFX(SGWZU28,268435456),SGWZU28);</span></span>
+<span class="line"><span>SGWZD29:=IFELSE(SGWZA29,REFX(SGWZD28,268435456),SGWZD28);</span></span>
+<span class="line"><span>SGWZA30:=SGWZI29=0 AND IFELSE(REFX(SGWZI29,536870912)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI30:=IFELSE(SGWZA30,REFX(SGWZI29,536870912),SGWZI29);</span></span>
+<span class="line"><span>SGWZL30:=IFELSE(SGWZA30,REFX(SGWZL29,536870912),SGWZL29);</span></span>
+<span class="line"><span>SGWZU30:=IFELSE(SGWZA30,REFX(SGWZU29,536870912),SGWZU29);</span></span>
+<span class="line"><span>SGWZD30:=IFELSE(SGWZA30,REFX(SGWZD29,536870912),SGWZD29);</span></span>
+<span class="line"><span>SGWZA31:=SGWZI30=0 AND IFELSE(REFX(SGWZI30,1073741824)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWZI31:=IFELSE(SGWZA31,REFX(SGWZI30,1073741824),SGWZI30);</span></span>
+<span class="line"><span>SGWZL31:=IFELSE(SGWZA31,REFX(SGWZL30,1073741824),SGWZL30);</span></span>
+<span class="line"><span>SGWZU31:=IFELSE(SGWZA31,REFX(SGWZU30,1073741824),SGWZU30);</span></span>
+<span class="line"><span>SGWZD31:=IFELSE(SGWZA31,REFX(SGWZD30,1073741824),SGWZD30);</span></span>
+<span class="line"><span>SGWLEFT:=SGSZ=1 AND SGWZI31&gt;SGBN AND SGBN=SGWZL31 AND SGWZU31&gt;SGWZD31;</span></span>
+<span class="line"><span>SGTMP235:=SGPCONF OR SGPWAIT;</span></span>
+<span class="line"><span>SGWPI0:=IFELSE(SGTMP235,SGBN,0);</span></span>
+<span class="line"><span>SGWPP0:=IFELSE(SGTMP235,SGPP,0);</span></span>
+<span class="line"><span>SGWPD0:=IFELSE(SGTMP235,SGD1,0);</span></span>
+<span class="line"><span>SGWPT0:=IFELSE(SGTMP235,IFELSE(SGPCONF,1,2),0);</span></span>
+<span class="line"><span>SGWPA1:=SGWPI0=0 AND IFELSE(REFX(SGWPI0,1)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI1:=IFELSE(SGWPA1,REFX(SGWPI0,1),SGWPI0);</span></span>
+<span class="line"><span>SGWPP1:=IFELSE(SGWPA1,REFX(SGWPP0,1),SGWPP0);</span></span>
+<span class="line"><span>SGWPD1:=IFELSE(SGWPA1,REFX(SGWPD0,1),SGWPD0);</span></span>
+<span class="line"><span>SGWPT1:=IFELSE(SGWPA1,REFX(SGWPT0,1),SGWPT0);</span></span>
+<span class="line"><span>SGWPA2:=SGWPI1=0 AND IFELSE(REFX(SGWPI1,2)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI2:=IFELSE(SGWPA2,REFX(SGWPI1,2),SGWPI1);</span></span>
+<span class="line"><span>SGWPP2:=IFELSE(SGWPA2,REFX(SGWPP1,2),SGWPP1);</span></span>
+<span class="line"><span>SGWPD2:=IFELSE(SGWPA2,REFX(SGWPD1,2),SGWPD1);</span></span>
+<span class="line"><span>SGWPT2:=IFELSE(SGWPA2,REFX(SGWPT1,2),SGWPT1);</span></span>
+<span class="line"><span>SGWPA3:=SGWPI2=0 AND IFELSE(REFX(SGWPI2,4)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI3:=IFELSE(SGWPA3,REFX(SGWPI2,4),SGWPI2);</span></span>
+<span class="line"><span>SGWPP3:=IFELSE(SGWPA3,REFX(SGWPP2,4),SGWPP2);</span></span>
+<span class="line"><span>SGWPD3:=IFELSE(SGWPA3,REFX(SGWPD2,4),SGWPD2);</span></span>
+<span class="line"><span>SGWPT3:=IFELSE(SGWPA3,REFX(SGWPT2,4),SGWPT2);</span></span>
+<span class="line"><span>SGWPA4:=SGWPI3=0 AND IFELSE(REFX(SGWPI3,8)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI4:=IFELSE(SGWPA4,REFX(SGWPI3,8),SGWPI3);</span></span>
+<span class="line"><span>SGWPP4:=IFELSE(SGWPA4,REFX(SGWPP3,8),SGWPP3);</span></span>
+<span class="line"><span>SGWPD4:=IFELSE(SGWPA4,REFX(SGWPD3,8),SGWPD3);</span></span>
+<span class="line"><span>SGWPT4:=IFELSE(SGWPA4,REFX(SGWPT3,8),SGWPT3);</span></span>
+<span class="line"><span>SGWPA5:=SGWPI4=0 AND IFELSE(REFX(SGWPI4,16)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI5:=IFELSE(SGWPA5,REFX(SGWPI4,16),SGWPI4);</span></span>
+<span class="line"><span>SGWPP5:=IFELSE(SGWPA5,REFX(SGWPP4,16),SGWPP4);</span></span>
+<span class="line"><span>SGWPD5:=IFELSE(SGWPA5,REFX(SGWPD4,16),SGWPD4);</span></span>
+<span class="line"><span>SGWPT5:=IFELSE(SGWPA5,REFX(SGWPT4,16),SGWPT4);</span></span>
+<span class="line"><span>SGWPA6:=SGWPI5=0 AND IFELSE(REFX(SGWPI5,32)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI6:=IFELSE(SGWPA6,REFX(SGWPI5,32),SGWPI5);</span></span>
+<span class="line"><span>SGWPP6:=IFELSE(SGWPA6,REFX(SGWPP5,32),SGWPP5);</span></span>
+<span class="line"><span>SGWPD6:=IFELSE(SGWPA6,REFX(SGWPD5,32),SGWPD5);</span></span>
+<span class="line"><span>SGWPT6:=IFELSE(SGWPA6,REFX(SGWPT5,32),SGWPT5);</span></span>
+<span class="line"><span>SGWPA7:=SGWPI6=0 AND IFELSE(REFX(SGWPI6,64)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI7:=IFELSE(SGWPA7,REFX(SGWPI6,64),SGWPI6);</span></span>
+<span class="line"><span>SGWPP7:=IFELSE(SGWPA7,REFX(SGWPP6,64),SGWPP6);</span></span>
+<span class="line"><span>SGWPD7:=IFELSE(SGWPA7,REFX(SGWPD6,64),SGWPD6);</span></span>
+<span class="line"><span>SGWPT7:=IFELSE(SGWPA7,REFX(SGWPT6,64),SGWPT6);</span></span>
+<span class="line"><span>SGWPA8:=SGWPI7=0 AND IFELSE(REFX(SGWPI7,128)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI8:=IFELSE(SGWPA8,REFX(SGWPI7,128),SGWPI7);</span></span>
+<span class="line"><span>SGWPP8:=IFELSE(SGWPA8,REFX(SGWPP7,128),SGWPP7);</span></span>
+<span class="line"><span>SGWPD8:=IFELSE(SGWPA8,REFX(SGWPD7,128),SGWPD7);</span></span>
+<span class="line"><span>SGWPT8:=IFELSE(SGWPA8,REFX(SGWPT7,128),SGWPT7);</span></span>
+<span class="line"><span>SGWPA9:=SGWPI8=0 AND IFELSE(REFX(SGWPI8,256)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI9:=IFELSE(SGWPA9,REFX(SGWPI8,256),SGWPI8);</span></span>
+<span class="line"><span>SGWPP9:=IFELSE(SGWPA9,REFX(SGWPP8,256),SGWPP8);</span></span>
+<span class="line"><span>SGWPD9:=IFELSE(SGWPA9,REFX(SGWPD8,256),SGWPD8);</span></span>
+<span class="line"><span>SGWPT9:=IFELSE(SGWPA9,REFX(SGWPT8,256),SGWPT8);</span></span>
+<span class="line"><span>SGWPA10:=SGWPI9=0 AND IFELSE(REFX(SGWPI9,512)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI10:=IFELSE(SGWPA10,REFX(SGWPI9,512),SGWPI9);</span></span>
+<span class="line"><span>SGWPP10:=IFELSE(SGWPA10,REFX(SGWPP9,512),SGWPP9);</span></span>
+<span class="line"><span>SGWPD10:=IFELSE(SGWPA10,REFX(SGWPD9,512),SGWPD9);</span></span>
+<span class="line"><span>SGWPT10:=IFELSE(SGWPA10,REFX(SGWPT9,512),SGWPT9);</span></span>
+<span class="line"><span>SGWPA11:=SGWPI10=0 AND IFELSE(REFX(SGWPI10,1024)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI11:=IFELSE(SGWPA11,REFX(SGWPI10,1024),SGWPI10);</span></span>
+<span class="line"><span>SGWPP11:=IFELSE(SGWPA11,REFX(SGWPP10,1024),SGWPP10);</span></span>
+<span class="line"><span>SGWPD11:=IFELSE(SGWPA11,REFX(SGWPD10,1024),SGWPD10);</span></span>
+<span class="line"><span>SGWPT11:=IFELSE(SGWPA11,REFX(SGWPT10,1024),SGWPT10);</span></span>
+<span class="line"><span>SGWPA12:=SGWPI11=0 AND IFELSE(REFX(SGWPI11,2048)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI12:=IFELSE(SGWPA12,REFX(SGWPI11,2048),SGWPI11);</span></span>
+<span class="line"><span>SGWPP12:=IFELSE(SGWPA12,REFX(SGWPP11,2048),SGWPP11);</span></span>
+<span class="line"><span>SGWPD12:=IFELSE(SGWPA12,REFX(SGWPD11,2048),SGWPD11);</span></span>
+<span class="line"><span>SGWPT12:=IFELSE(SGWPA12,REFX(SGWPT11,2048),SGWPT11);</span></span>
+<span class="line"><span>SGWPA13:=SGWPI12=0 AND IFELSE(REFX(SGWPI12,4096)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI13:=IFELSE(SGWPA13,REFX(SGWPI12,4096),SGWPI12);</span></span>
+<span class="line"><span>SGWPP13:=IFELSE(SGWPA13,REFX(SGWPP12,4096),SGWPP12);</span></span>
+<span class="line"><span>SGWPD13:=IFELSE(SGWPA13,REFX(SGWPD12,4096),SGWPD12);</span></span>
+<span class="line"><span>SGWPT13:=IFELSE(SGWPA13,REFX(SGWPT12,4096),SGWPT12);</span></span>
+<span class="line"><span>SGWPA14:=SGWPI13=0 AND IFELSE(REFX(SGWPI13,8192)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI14:=IFELSE(SGWPA14,REFX(SGWPI13,8192),SGWPI13);</span></span>
+<span class="line"><span>SGWPP14:=IFELSE(SGWPA14,REFX(SGWPP13,8192),SGWPP13);</span></span>
+<span class="line"><span>SGWPD14:=IFELSE(SGWPA14,REFX(SGWPD13,8192),SGWPD13);</span></span>
+<span class="line"><span>SGWPT14:=IFELSE(SGWPA14,REFX(SGWPT13,8192),SGWPT13);</span></span>
+<span class="line"><span>SGWPA15:=SGWPI14=0 AND IFELSE(REFX(SGWPI14,16384)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI15:=IFELSE(SGWPA15,REFX(SGWPI14,16384),SGWPI14);</span></span>
+<span class="line"><span>SGWPP15:=IFELSE(SGWPA15,REFX(SGWPP14,16384),SGWPP14);</span></span>
+<span class="line"><span>SGWPD15:=IFELSE(SGWPA15,REFX(SGWPD14,16384),SGWPD14);</span></span>
+<span class="line"><span>SGWPT15:=IFELSE(SGWPA15,REFX(SGWPT14,16384),SGWPT14);</span></span>
+<span class="line"><span>SGWPA16:=SGWPI15=0 AND IFELSE(REFX(SGWPI15,32768)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI16:=IFELSE(SGWPA16,REFX(SGWPI15,32768),SGWPI15);</span></span>
+<span class="line"><span>SGWPP16:=IFELSE(SGWPA16,REFX(SGWPP15,32768),SGWPP15);</span></span>
+<span class="line"><span>SGWPD16:=IFELSE(SGWPA16,REFX(SGWPD15,32768),SGWPD15);</span></span>
+<span class="line"><span>SGWPT16:=IFELSE(SGWPA16,REFX(SGWPT15,32768),SGWPT15);</span></span>
+<span class="line"><span>SGWPA17:=SGWPI16=0 AND IFELSE(REFX(SGWPI16,65536)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI17:=IFELSE(SGWPA17,REFX(SGWPI16,65536),SGWPI16);</span></span>
+<span class="line"><span>SGWPP17:=IFELSE(SGWPA17,REFX(SGWPP16,65536),SGWPP16);</span></span>
+<span class="line"><span>SGWPD17:=IFELSE(SGWPA17,REFX(SGWPD16,65536),SGWPD16);</span></span>
+<span class="line"><span>SGWPT17:=IFELSE(SGWPA17,REFX(SGWPT16,65536),SGWPT16);</span></span>
+<span class="line"><span>SGWPA18:=SGWPI17=0 AND IFELSE(REFX(SGWPI17,131072)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI18:=IFELSE(SGWPA18,REFX(SGWPI17,131072),SGWPI17);</span></span>
+<span class="line"><span>SGWPP18:=IFELSE(SGWPA18,REFX(SGWPP17,131072),SGWPP17);</span></span>
+<span class="line"><span>SGWPD18:=IFELSE(SGWPA18,REFX(SGWPD17,131072),SGWPD17);</span></span>
+<span class="line"><span>SGWPT18:=IFELSE(SGWPA18,REFX(SGWPT17,131072),SGWPT17);</span></span>
+<span class="line"><span>SGWPA19:=SGWPI18=0 AND IFELSE(REFX(SGWPI18,262144)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI19:=IFELSE(SGWPA19,REFX(SGWPI18,262144),SGWPI18);</span></span>
+<span class="line"><span>SGWPP19:=IFELSE(SGWPA19,REFX(SGWPP18,262144),SGWPP18);</span></span>
+<span class="line"><span>SGWPD19:=IFELSE(SGWPA19,REFX(SGWPD18,262144),SGWPD18);</span></span>
+<span class="line"><span>SGWPT19:=IFELSE(SGWPA19,REFX(SGWPT18,262144),SGWPT18);</span></span>
+<span class="line"><span>SGWPA20:=SGWPI19=0 AND IFELSE(REFX(SGWPI19,524288)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI20:=IFELSE(SGWPA20,REFX(SGWPI19,524288),SGWPI19);</span></span>
+<span class="line"><span>SGWPP20:=IFELSE(SGWPA20,REFX(SGWPP19,524288),SGWPP19);</span></span>
+<span class="line"><span>SGWPD20:=IFELSE(SGWPA20,REFX(SGWPD19,524288),SGWPD19);</span></span>
+<span class="line"><span>SGWPT20:=IFELSE(SGWPA20,REFX(SGWPT19,524288),SGWPT19);</span></span>
+<span class="line"><span>SGWPA21:=SGWPI20=0 AND IFELSE(REFX(SGWPI20,1048576)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI21:=IFELSE(SGWPA21,REFX(SGWPI20,1048576),SGWPI20);</span></span>
+<span class="line"><span>SGWPP21:=IFELSE(SGWPA21,REFX(SGWPP20,1048576),SGWPP20);</span></span>
+<span class="line"><span>SGWPD21:=IFELSE(SGWPA21,REFX(SGWPD20,1048576),SGWPD20);</span></span>
+<span class="line"><span>SGWPT21:=IFELSE(SGWPA21,REFX(SGWPT20,1048576),SGWPT20);</span></span>
+<span class="line"><span>SGWPA22:=SGWPI21=0 AND IFELSE(REFX(SGWPI21,2097152)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI22:=IFELSE(SGWPA22,REFX(SGWPI21,2097152),SGWPI21);</span></span>
+<span class="line"><span>SGWPP22:=IFELSE(SGWPA22,REFX(SGWPP21,2097152),SGWPP21);</span></span>
+<span class="line"><span>SGWPD22:=IFELSE(SGWPA22,REFX(SGWPD21,2097152),SGWPD21);</span></span>
+<span class="line"><span>SGWPT22:=IFELSE(SGWPA22,REFX(SGWPT21,2097152),SGWPT21);</span></span>
+<span class="line"><span>SGWPA23:=SGWPI22=0 AND IFELSE(REFX(SGWPI22,4194304)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI23:=IFELSE(SGWPA23,REFX(SGWPI22,4194304),SGWPI22);</span></span>
+<span class="line"><span>SGWPP23:=IFELSE(SGWPA23,REFX(SGWPP22,4194304),SGWPP22);</span></span>
+<span class="line"><span>SGWPD23:=IFELSE(SGWPA23,REFX(SGWPD22,4194304),SGWPD22);</span></span>
+<span class="line"><span>SGWPT23:=IFELSE(SGWPA23,REFX(SGWPT22,4194304),SGWPT22);</span></span>
+<span class="line"><span>SGWPA24:=SGWPI23=0 AND IFELSE(REFX(SGWPI23,8388608)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI24:=IFELSE(SGWPA24,REFX(SGWPI23,8388608),SGWPI23);</span></span>
+<span class="line"><span>SGWPP24:=IFELSE(SGWPA24,REFX(SGWPP23,8388608),SGWPP23);</span></span>
+<span class="line"><span>SGWPD24:=IFELSE(SGWPA24,REFX(SGWPD23,8388608),SGWPD23);</span></span>
+<span class="line"><span>SGWPT24:=IFELSE(SGWPA24,REFX(SGWPT23,8388608),SGWPT23);</span></span>
+<span class="line"><span>SGWPA25:=SGWPI24=0 AND IFELSE(REFX(SGWPI24,16777216)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI25:=IFELSE(SGWPA25,REFX(SGWPI24,16777216),SGWPI24);</span></span>
+<span class="line"><span>SGWPP25:=IFELSE(SGWPA25,REFX(SGWPP24,16777216),SGWPP24);</span></span>
+<span class="line"><span>SGWPD25:=IFELSE(SGWPA25,REFX(SGWPD24,16777216),SGWPD24);</span></span>
+<span class="line"><span>SGWPT25:=IFELSE(SGWPA25,REFX(SGWPT24,16777216),SGWPT24);</span></span>
+<span class="line"><span>SGWPA26:=SGWPI25=0 AND IFELSE(REFX(SGWPI25,33554432)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI26:=IFELSE(SGWPA26,REFX(SGWPI25,33554432),SGWPI25);</span></span>
+<span class="line"><span>SGWPP26:=IFELSE(SGWPA26,REFX(SGWPP25,33554432),SGWPP25);</span></span>
+<span class="line"><span>SGWPD26:=IFELSE(SGWPA26,REFX(SGWPD25,33554432),SGWPD25);</span></span>
+<span class="line"><span>SGWPT26:=IFELSE(SGWPA26,REFX(SGWPT25,33554432),SGWPT25);</span></span>
+<span class="line"><span>SGWPA27:=SGWPI26=0 AND IFELSE(REFX(SGWPI26,67108864)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI27:=IFELSE(SGWPA27,REFX(SGWPI26,67108864),SGWPI26);</span></span>
+<span class="line"><span>SGWPP27:=IFELSE(SGWPA27,REFX(SGWPP26,67108864),SGWPP26);</span></span>
+<span class="line"><span>SGWPD27:=IFELSE(SGWPA27,REFX(SGWPD26,67108864),SGWPD26);</span></span>
+<span class="line"><span>SGWPT27:=IFELSE(SGWPA27,REFX(SGWPT26,67108864),SGWPT26);</span></span>
+<span class="line"><span>SGWPA28:=SGWPI27=0 AND IFELSE(REFX(SGWPI27,134217728)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI28:=IFELSE(SGWPA28,REFX(SGWPI27,134217728),SGWPI27);</span></span>
+<span class="line"><span>SGWPP28:=IFELSE(SGWPA28,REFX(SGWPP27,134217728),SGWPP27);</span></span>
+<span class="line"><span>SGWPD28:=IFELSE(SGWPA28,REFX(SGWPD27,134217728),SGWPD27);</span></span>
+<span class="line"><span>SGWPT28:=IFELSE(SGWPA28,REFX(SGWPT27,134217728),SGWPT27);</span></span>
+<span class="line"><span>SGWPA29:=SGWPI28=0 AND IFELSE(REFX(SGWPI28,268435456)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI29:=IFELSE(SGWPA29,REFX(SGWPI28,268435456),SGWPI28);</span></span>
+<span class="line"><span>SGWPP29:=IFELSE(SGWPA29,REFX(SGWPP28,268435456),SGWPP28);</span></span>
+<span class="line"><span>SGWPD29:=IFELSE(SGWPA29,REFX(SGWPD28,268435456),SGWPD28);</span></span>
+<span class="line"><span>SGWPT29:=IFELSE(SGWPA29,REFX(SGWPT28,268435456),SGWPT28);</span></span>
+<span class="line"><span>SGWPA30:=SGWPI29=0 AND IFELSE(REFX(SGWPI29,536870912)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI30:=IFELSE(SGWPA30,REFX(SGWPI29,536870912),SGWPI29);</span></span>
+<span class="line"><span>SGWPP30:=IFELSE(SGWPA30,REFX(SGWPP29,536870912),SGWPP29);</span></span>
+<span class="line"><span>SGWPD30:=IFELSE(SGWPA30,REFX(SGWPD29,536870912),SGWPD29);</span></span>
+<span class="line"><span>SGWPT30:=IFELSE(SGWPA30,REFX(SGWPT29,536870912),SGWPT29);</span></span>
+<span class="line"><span>SGWPA31:=SGWPI30=0 AND IFELSE(REFX(SGWPI30,1073741824)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWPI31:=IFELSE(SGWPA31,REFX(SGWPI30,1073741824),SGWPI30);</span></span>
+<span class="line"><span>SGWPP31:=IFELSE(SGWPA31,REFX(SGWPP30,1073741824),SGWPP30);</span></span>
+<span class="line"><span>SGWPD31:=IFELSE(SGWPA31,REFX(SGWPD30,1073741824),SGWPD30);</span></span>
+<span class="line"><span>SGWPT31:=IFELSE(SGWPA31,REFX(SGWPT30,1073741824),SGWPT30);</span></span>
+<span class="line"><span>SGWPI:=IFELSE(ISLASTBAR,0,REFX(SGWPI31,1));</span></span>
+<span class="line"><span>SGWPP:=IFELSE(ISLASTBAR,0,REFX(SGWPP31,1));</span></span>
+<span class="line"><span>SGWPD:=IFELSE(ISLASTBAR,0,REFX(SGWPD31,1));</span></span>
+<span class="line"><span>SGWPT:=IFELSE(ISLASTBAR,0,REFX(SGWPT31,1));</span></span>
+<span class="line"><span>SGWPDRAW:=SGWPI&gt;SGBN AND SGBN=SGWPI-SGWPD;</span></span>
+<span class="line"><span>SGWPSLOPE:=(SGWPP-SGPP)/MAX(SGWPD,1);</span></span>
+<span class="line"><span>SGTMP236:=SGSV OR SGSPEND;</span></span>
+<span class="line"><span>SGWSI0:=IFELSE(SGTMP236,SGBN,0);</span></span>
+<span class="line"><span>SGWSP0:=IFELSE(SGTMP236,SGPP,0);</span></span>
+<span class="line"><span>SGWSD0:=IFELSE(SGTMP236,SGSXD,0);</span></span>
+<span class="line"><span>SGWST0:=IFELSE(SGTMP236,IFELSE(SGSV,1,2),0);</span></span>
+<span class="line"><span>SGWSA1:=SGWSI0=0 AND IFELSE(REFX(SGWSI0,1)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI1:=IFELSE(SGWSA1,REFX(SGWSI0,1),SGWSI0);</span></span>
+<span class="line"><span>SGWSP1:=IFELSE(SGWSA1,REFX(SGWSP0,1),SGWSP0);</span></span>
+<span class="line"><span>SGWSD1:=IFELSE(SGWSA1,REFX(SGWSD0,1),SGWSD0);</span></span>
+<span class="line"><span>SGWST1:=IFELSE(SGWSA1,REFX(SGWST0,1),SGWST0);</span></span>
+<span class="line"><span>SGWSA2:=SGWSI1=0 AND IFELSE(REFX(SGWSI1,2)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI2:=IFELSE(SGWSA2,REFX(SGWSI1,2),SGWSI1);</span></span>
+<span class="line"><span>SGWSP2:=IFELSE(SGWSA2,REFX(SGWSP1,2),SGWSP1);</span></span>
+<span class="line"><span>SGWSD2:=IFELSE(SGWSA2,REFX(SGWSD1,2),SGWSD1);</span></span>
+<span class="line"><span>SGWST2:=IFELSE(SGWSA2,REFX(SGWST1,2),SGWST1);</span></span>
+<span class="line"><span>SGWSA3:=SGWSI2=0 AND IFELSE(REFX(SGWSI2,4)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI3:=IFELSE(SGWSA3,REFX(SGWSI2,4),SGWSI2);</span></span>
+<span class="line"><span>SGWSP3:=IFELSE(SGWSA3,REFX(SGWSP2,4),SGWSP2);</span></span>
+<span class="line"><span>SGWSD3:=IFELSE(SGWSA3,REFX(SGWSD2,4),SGWSD2);</span></span>
+<span class="line"><span>SGWST3:=IFELSE(SGWSA3,REFX(SGWST2,4),SGWST2);</span></span>
+<span class="line"><span>SGWSA4:=SGWSI3=0 AND IFELSE(REFX(SGWSI3,8)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI4:=IFELSE(SGWSA4,REFX(SGWSI3,8),SGWSI3);</span></span>
+<span class="line"><span>SGWSP4:=IFELSE(SGWSA4,REFX(SGWSP3,8),SGWSP3);</span></span>
+<span class="line"><span>SGWSD4:=IFELSE(SGWSA4,REFX(SGWSD3,8),SGWSD3);</span></span>
+<span class="line"><span>SGWST4:=IFELSE(SGWSA4,REFX(SGWST3,8),SGWST3);</span></span>
+<span class="line"><span>SGWSA5:=SGWSI4=0 AND IFELSE(REFX(SGWSI4,16)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI5:=IFELSE(SGWSA5,REFX(SGWSI4,16),SGWSI4);</span></span>
+<span class="line"><span>SGWSP5:=IFELSE(SGWSA5,REFX(SGWSP4,16),SGWSP4);</span></span>
+<span class="line"><span>SGWSD5:=IFELSE(SGWSA5,REFX(SGWSD4,16),SGWSD4);</span></span>
+<span class="line"><span>SGWST5:=IFELSE(SGWSA5,REFX(SGWST4,16),SGWST4);</span></span>
+<span class="line"><span>SGWSA6:=SGWSI5=0 AND IFELSE(REFX(SGWSI5,32)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI6:=IFELSE(SGWSA6,REFX(SGWSI5,32),SGWSI5);</span></span>
+<span class="line"><span>SGWSP6:=IFELSE(SGWSA6,REFX(SGWSP5,32),SGWSP5);</span></span>
+<span class="line"><span>SGWSD6:=IFELSE(SGWSA6,REFX(SGWSD5,32),SGWSD5);</span></span>
+<span class="line"><span>SGWST6:=IFELSE(SGWSA6,REFX(SGWST5,32),SGWST5);</span></span>
+<span class="line"><span>SGWSA7:=SGWSI6=0 AND IFELSE(REFX(SGWSI6,64)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI7:=IFELSE(SGWSA7,REFX(SGWSI6,64),SGWSI6);</span></span>
+<span class="line"><span>SGWSP7:=IFELSE(SGWSA7,REFX(SGWSP6,64),SGWSP6);</span></span>
+<span class="line"><span>SGWSD7:=IFELSE(SGWSA7,REFX(SGWSD6,64),SGWSD6);</span></span>
+<span class="line"><span>SGWST7:=IFELSE(SGWSA7,REFX(SGWST6,64),SGWST6);</span></span>
+<span class="line"><span>SGWSA8:=SGWSI7=0 AND IFELSE(REFX(SGWSI7,128)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI8:=IFELSE(SGWSA8,REFX(SGWSI7,128),SGWSI7);</span></span>
+<span class="line"><span>SGWSP8:=IFELSE(SGWSA8,REFX(SGWSP7,128),SGWSP7);</span></span>
+<span class="line"><span>SGWSD8:=IFELSE(SGWSA8,REFX(SGWSD7,128),SGWSD7);</span></span>
+<span class="line"><span>SGWST8:=IFELSE(SGWSA8,REFX(SGWST7,128),SGWST7);</span></span>
+<span class="line"><span>SGWSA9:=SGWSI8=0 AND IFELSE(REFX(SGWSI8,256)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI9:=IFELSE(SGWSA9,REFX(SGWSI8,256),SGWSI8);</span></span>
+<span class="line"><span>SGWSP9:=IFELSE(SGWSA9,REFX(SGWSP8,256),SGWSP8);</span></span>
+<span class="line"><span>SGWSD9:=IFELSE(SGWSA9,REFX(SGWSD8,256),SGWSD8);</span></span>
+<span class="line"><span>SGWST9:=IFELSE(SGWSA9,REFX(SGWST8,256),SGWST8);</span></span>
+<span class="line"><span>SGWSA10:=SGWSI9=0 AND IFELSE(REFX(SGWSI9,512)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI10:=IFELSE(SGWSA10,REFX(SGWSI9,512),SGWSI9);</span></span>
+<span class="line"><span>SGWSP10:=IFELSE(SGWSA10,REFX(SGWSP9,512),SGWSP9);</span></span>
+<span class="line"><span>SGWSD10:=IFELSE(SGWSA10,REFX(SGWSD9,512),SGWSD9);</span></span>
+<span class="line"><span>SGWST10:=IFELSE(SGWSA10,REFX(SGWST9,512),SGWST9);</span></span>
+<span class="line"><span>SGWSA11:=SGWSI10=0 AND IFELSE(REFX(SGWSI10,1024)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI11:=IFELSE(SGWSA11,REFX(SGWSI10,1024),SGWSI10);</span></span>
+<span class="line"><span>SGWSP11:=IFELSE(SGWSA11,REFX(SGWSP10,1024),SGWSP10);</span></span>
+<span class="line"><span>SGWSD11:=IFELSE(SGWSA11,REFX(SGWSD10,1024),SGWSD10);</span></span>
+<span class="line"><span>SGWST11:=IFELSE(SGWSA11,REFX(SGWST10,1024),SGWST10);</span></span>
+<span class="line"><span>SGWSA12:=SGWSI11=0 AND IFELSE(REFX(SGWSI11,2048)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI12:=IFELSE(SGWSA12,REFX(SGWSI11,2048),SGWSI11);</span></span>
+<span class="line"><span>SGWSP12:=IFELSE(SGWSA12,REFX(SGWSP11,2048),SGWSP11);</span></span>
+<span class="line"><span>SGWSD12:=IFELSE(SGWSA12,REFX(SGWSD11,2048),SGWSD11);</span></span>
+<span class="line"><span>SGWST12:=IFELSE(SGWSA12,REFX(SGWST11,2048),SGWST11);</span></span>
+<span class="line"><span>SGWSA13:=SGWSI12=0 AND IFELSE(REFX(SGWSI12,4096)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI13:=IFELSE(SGWSA13,REFX(SGWSI12,4096),SGWSI12);</span></span>
+<span class="line"><span>SGWSP13:=IFELSE(SGWSA13,REFX(SGWSP12,4096),SGWSP12);</span></span>
+<span class="line"><span>SGWSD13:=IFELSE(SGWSA13,REFX(SGWSD12,4096),SGWSD12);</span></span>
+<span class="line"><span>SGWST13:=IFELSE(SGWSA13,REFX(SGWST12,4096),SGWST12);</span></span>
+<span class="line"><span>SGWSA14:=SGWSI13=0 AND IFELSE(REFX(SGWSI13,8192)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI14:=IFELSE(SGWSA14,REFX(SGWSI13,8192),SGWSI13);</span></span>
+<span class="line"><span>SGWSP14:=IFELSE(SGWSA14,REFX(SGWSP13,8192),SGWSP13);</span></span>
+<span class="line"><span>SGWSD14:=IFELSE(SGWSA14,REFX(SGWSD13,8192),SGWSD13);</span></span>
+<span class="line"><span>SGWST14:=IFELSE(SGWSA14,REFX(SGWST13,8192),SGWST13);</span></span>
+<span class="line"><span>SGWSA15:=SGWSI14=0 AND IFELSE(REFX(SGWSI14,16384)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI15:=IFELSE(SGWSA15,REFX(SGWSI14,16384),SGWSI14);</span></span>
+<span class="line"><span>SGWSP15:=IFELSE(SGWSA15,REFX(SGWSP14,16384),SGWSP14);</span></span>
+<span class="line"><span>SGWSD15:=IFELSE(SGWSA15,REFX(SGWSD14,16384),SGWSD14);</span></span>
+<span class="line"><span>SGWST15:=IFELSE(SGWSA15,REFX(SGWST14,16384),SGWST14);</span></span>
+<span class="line"><span>SGWSA16:=SGWSI15=0 AND IFELSE(REFX(SGWSI15,32768)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI16:=IFELSE(SGWSA16,REFX(SGWSI15,32768),SGWSI15);</span></span>
+<span class="line"><span>SGWSP16:=IFELSE(SGWSA16,REFX(SGWSP15,32768),SGWSP15);</span></span>
+<span class="line"><span>SGWSD16:=IFELSE(SGWSA16,REFX(SGWSD15,32768),SGWSD15);</span></span>
+<span class="line"><span>SGWST16:=IFELSE(SGWSA16,REFX(SGWST15,32768),SGWST15);</span></span>
+<span class="line"><span>SGWSA17:=SGWSI16=0 AND IFELSE(REFX(SGWSI16,65536)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI17:=IFELSE(SGWSA17,REFX(SGWSI16,65536),SGWSI16);</span></span>
+<span class="line"><span>SGWSP17:=IFELSE(SGWSA17,REFX(SGWSP16,65536),SGWSP16);</span></span>
+<span class="line"><span>SGWSD17:=IFELSE(SGWSA17,REFX(SGWSD16,65536),SGWSD16);</span></span>
+<span class="line"><span>SGWST17:=IFELSE(SGWSA17,REFX(SGWST16,65536),SGWST16);</span></span>
+<span class="line"><span>SGWSA18:=SGWSI17=0 AND IFELSE(REFX(SGWSI17,131072)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI18:=IFELSE(SGWSA18,REFX(SGWSI17,131072),SGWSI17);</span></span>
+<span class="line"><span>SGWSP18:=IFELSE(SGWSA18,REFX(SGWSP17,131072),SGWSP17);</span></span>
+<span class="line"><span>SGWSD18:=IFELSE(SGWSA18,REFX(SGWSD17,131072),SGWSD17);</span></span>
+<span class="line"><span>SGWST18:=IFELSE(SGWSA18,REFX(SGWST17,131072),SGWST17);</span></span>
+<span class="line"><span>SGWSA19:=SGWSI18=0 AND IFELSE(REFX(SGWSI18,262144)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI19:=IFELSE(SGWSA19,REFX(SGWSI18,262144),SGWSI18);</span></span>
+<span class="line"><span>SGWSP19:=IFELSE(SGWSA19,REFX(SGWSP18,262144),SGWSP18);</span></span>
+<span class="line"><span>SGWSD19:=IFELSE(SGWSA19,REFX(SGWSD18,262144),SGWSD18);</span></span>
+<span class="line"><span>SGWST19:=IFELSE(SGWSA19,REFX(SGWST18,262144),SGWST18);</span></span>
+<span class="line"><span>SGWSA20:=SGWSI19=0 AND IFELSE(REFX(SGWSI19,524288)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI20:=IFELSE(SGWSA20,REFX(SGWSI19,524288),SGWSI19);</span></span>
+<span class="line"><span>SGWSP20:=IFELSE(SGWSA20,REFX(SGWSP19,524288),SGWSP19);</span></span>
+<span class="line"><span>SGWSD20:=IFELSE(SGWSA20,REFX(SGWSD19,524288),SGWSD19);</span></span>
+<span class="line"><span>SGWST20:=IFELSE(SGWSA20,REFX(SGWST19,524288),SGWST19);</span></span>
+<span class="line"><span>SGWSA21:=SGWSI20=0 AND IFELSE(REFX(SGWSI20,1048576)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI21:=IFELSE(SGWSA21,REFX(SGWSI20,1048576),SGWSI20);</span></span>
+<span class="line"><span>SGWSP21:=IFELSE(SGWSA21,REFX(SGWSP20,1048576),SGWSP20);</span></span>
+<span class="line"><span>SGWSD21:=IFELSE(SGWSA21,REFX(SGWSD20,1048576),SGWSD20);</span></span>
+<span class="line"><span>SGWST21:=IFELSE(SGWSA21,REFX(SGWST20,1048576),SGWST20);</span></span>
+<span class="line"><span>SGWSA22:=SGWSI21=0 AND IFELSE(REFX(SGWSI21,2097152)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI22:=IFELSE(SGWSA22,REFX(SGWSI21,2097152),SGWSI21);</span></span>
+<span class="line"><span>SGWSP22:=IFELSE(SGWSA22,REFX(SGWSP21,2097152),SGWSP21);</span></span>
+<span class="line"><span>SGWSD22:=IFELSE(SGWSA22,REFX(SGWSD21,2097152),SGWSD21);</span></span>
+<span class="line"><span>SGWST22:=IFELSE(SGWSA22,REFX(SGWST21,2097152),SGWST21);</span></span>
+<span class="line"><span>SGWSA23:=SGWSI22=0 AND IFELSE(REFX(SGWSI22,4194304)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI23:=IFELSE(SGWSA23,REFX(SGWSI22,4194304),SGWSI22);</span></span>
+<span class="line"><span>SGWSP23:=IFELSE(SGWSA23,REFX(SGWSP22,4194304),SGWSP22);</span></span>
+<span class="line"><span>SGWSD23:=IFELSE(SGWSA23,REFX(SGWSD22,4194304),SGWSD22);</span></span>
+<span class="line"><span>SGWST23:=IFELSE(SGWSA23,REFX(SGWST22,4194304),SGWST22);</span></span>
+<span class="line"><span>SGWSA24:=SGWSI23=0 AND IFELSE(REFX(SGWSI23,8388608)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI24:=IFELSE(SGWSA24,REFX(SGWSI23,8388608),SGWSI23);</span></span>
+<span class="line"><span>SGWSP24:=IFELSE(SGWSA24,REFX(SGWSP23,8388608),SGWSP23);</span></span>
+<span class="line"><span>SGWSD24:=IFELSE(SGWSA24,REFX(SGWSD23,8388608),SGWSD23);</span></span>
+<span class="line"><span>SGWST24:=IFELSE(SGWSA24,REFX(SGWST23,8388608),SGWST23);</span></span>
+<span class="line"><span>SGWSA25:=SGWSI24=0 AND IFELSE(REFX(SGWSI24,16777216)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI25:=IFELSE(SGWSA25,REFX(SGWSI24,16777216),SGWSI24);</span></span>
+<span class="line"><span>SGWSP25:=IFELSE(SGWSA25,REFX(SGWSP24,16777216),SGWSP24);</span></span>
+<span class="line"><span>SGWSD25:=IFELSE(SGWSA25,REFX(SGWSD24,16777216),SGWSD24);</span></span>
+<span class="line"><span>SGWST25:=IFELSE(SGWSA25,REFX(SGWST24,16777216),SGWST24);</span></span>
+<span class="line"><span>SGWSA26:=SGWSI25=0 AND IFELSE(REFX(SGWSI25,33554432)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI26:=IFELSE(SGWSA26,REFX(SGWSI25,33554432),SGWSI25);</span></span>
+<span class="line"><span>SGWSP26:=IFELSE(SGWSA26,REFX(SGWSP25,33554432),SGWSP25);</span></span>
+<span class="line"><span>SGWSD26:=IFELSE(SGWSA26,REFX(SGWSD25,33554432),SGWSD25);</span></span>
+<span class="line"><span>SGWST26:=IFELSE(SGWSA26,REFX(SGWST25,33554432),SGWST25);</span></span>
+<span class="line"><span>SGWSA27:=SGWSI26=0 AND IFELSE(REFX(SGWSI26,67108864)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI27:=IFELSE(SGWSA27,REFX(SGWSI26,67108864),SGWSI26);</span></span>
+<span class="line"><span>SGWSP27:=IFELSE(SGWSA27,REFX(SGWSP26,67108864),SGWSP26);</span></span>
+<span class="line"><span>SGWSD27:=IFELSE(SGWSA27,REFX(SGWSD26,67108864),SGWSD26);</span></span>
+<span class="line"><span>SGWST27:=IFELSE(SGWSA27,REFX(SGWST26,67108864),SGWST26);</span></span>
+<span class="line"><span>SGWSA28:=SGWSI27=0 AND IFELSE(REFX(SGWSI27,134217728)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI28:=IFELSE(SGWSA28,REFX(SGWSI27,134217728),SGWSI27);</span></span>
+<span class="line"><span>SGWSP28:=IFELSE(SGWSA28,REFX(SGWSP27,134217728),SGWSP27);</span></span>
+<span class="line"><span>SGWSD28:=IFELSE(SGWSA28,REFX(SGWSD27,134217728),SGWSD27);</span></span>
+<span class="line"><span>SGWST28:=IFELSE(SGWSA28,REFX(SGWST27,134217728),SGWST27);</span></span>
+<span class="line"><span>SGWSA29:=SGWSI28=0 AND IFELSE(REFX(SGWSI28,268435456)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI29:=IFELSE(SGWSA29,REFX(SGWSI28,268435456),SGWSI28);</span></span>
+<span class="line"><span>SGWSP29:=IFELSE(SGWSA29,REFX(SGWSP28,268435456),SGWSP28);</span></span>
+<span class="line"><span>SGWSD29:=IFELSE(SGWSA29,REFX(SGWSD28,268435456),SGWSD28);</span></span>
+<span class="line"><span>SGWST29:=IFELSE(SGWSA29,REFX(SGWST28,268435456),SGWST28);</span></span>
+<span class="line"><span>SGWSA30:=SGWSI29=0 AND IFELSE(REFX(SGWSI29,536870912)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI30:=IFELSE(SGWSA30,REFX(SGWSI29,536870912),SGWSI29);</span></span>
+<span class="line"><span>SGWSP30:=IFELSE(SGWSA30,REFX(SGWSP29,536870912),SGWSP29);</span></span>
+<span class="line"><span>SGWSD30:=IFELSE(SGWSA30,REFX(SGWSD29,536870912),SGWSD29);</span></span>
+<span class="line"><span>SGWST30:=IFELSE(SGWSA30,REFX(SGWST29,536870912),SGWST29);</span></span>
+<span class="line"><span>SGWSA31:=SGWSI30=0 AND IFELSE(REFX(SGWSI30,1073741824)&gt;0,1,0);</span></span>
+<span class="line"><span>SGWSI31:=IFELSE(SGWSA31,REFX(SGWSI30,1073741824),SGWSI30);</span></span>
+<span class="line"><span>SGWSP31:=IFELSE(SGWSA31,REFX(SGWSP30,1073741824),SGWSP30);</span></span>
+<span class="line"><span>SGWSD31:=IFELSE(SGWSA31,REFX(SGWSD30,1073741824),SGWSD30);</span></span>
+<span class="line"><span>SGWST31:=IFELSE(SGWSA31,REFX(SGWST30,1073741824),SGWST30);</span></span>
+<span class="line"><span>SGWSI:=IFELSE(ISLASTBAR,0,REFX(SGWSI31,1));</span></span>
+<span class="line"><span>SGWSP:=IFELSE(ISLASTBAR,0,REFX(SGWSP31,1));</span></span>
+<span class="line"><span>SGWSD:=IFELSE(ISLASTBAR,0,REFX(SGWSD31,1));</span></span>
+<span class="line"><span>SGWST:=IFELSE(ISLASTBAR,0,REFX(SGWST31,1));</span></span>
+<span class="line"><span>SGWSDRAW:=SGWSI&gt;SGBN AND SGBN=SGWSI-SGWSD;</span></span>
+<span class="line"><span>SGWSSLOPE:=(SGWSP-SGPP)/MAX(SGWSD,1);</span></span>
+<span class="line"><span>// 绘图：蓝色笔；红色上行线段、绿色下行线段；尾部虚线。</span></span>
+<span class="line"><span>// 从真实起点向右画有限长度；不依赖负长度参数。</span></span>
+<span class="line"><span>DRAWSL(SGSP=1 AND SGWPDRAW AND SGWPT=1,SGPP,SGWPSLOPE,SGWPD,0,COLORBLUE),LINETHICK1;</span></span>
+<span class="line"><span>DRAWSL(SGSP=1 AND SGWPDRAW AND SGWPT=2,SGPP,SGWPSLOPE,SGWPD,0,COLORBLUE),LINETHICK1,POINTDOT;</span></span>
+<span class="line"><span>DRAWSL(SGSS=1 AND SGWSDRAW AND SGWST=1 AND SGWSP&gt;SGPP,SGPP,SGWSSLOPE,SGWSD,0,COLORRED),LINETHICK3;</span></span>
+<span class="line"><span>DRAWSL(SGSS=1 AND SGWSDRAW AND SGWST=1 AND SGWSP&lt;SGPP,SGPP,SGWSSLOPE,SGWSD,0,COLORGREEN),LINETHICK3;</span></span>
+<span class="line"><span>DRAWSL(SGSS=1 AND SGWSDRAW AND SGWST=2 AND SGWSP&gt;SGPP,SGPP,SGWSSLOPE,SGWSD,0,COLORRED),LINETHICK1,POINTDOT;</span></span>
+<span class="line"><span>DRAWSL(SGSS=1 AND SGWSDRAW AND SGWST=2 AND SGWSP&lt;SGPP,SGPP,SGWSSLOPE,SGWSD,0,COLORGREEN),LINETHICK1,POINTDOT;</span></span>
+<span class="line"><span>// 分型箭头：同一根K线上的短竖线拼接，颜色和粗细区分箭头形状。</span></span>
+<span class="line"><span>// WH6 不使用 STICK；DRAWLINE 两个条件相同，只画当根的竖线。</span></span>
+<span class="line"><span>SGAU:=MAX(ABS(SGMH)*0.0004,0.000001);</span></span>
+<span class="line"><span>SGBU:=MAX(ABS(SGML)*0.0004,0.000001);</span></span>
+<span class="line"><span>DRAWLINE(SGSF=1 AND SGFT,SGMH,SGSF=1 AND SGFT,SGMH+SGAU,COLORRED),LINETHICK1;</span></span>
+<span class="line"><span>DRAWLINE(SGSF=1 AND SGFT,SGMH+SGAU,SGSF=1 AND SGFT,SGMH+2*SGAU,COLORRED),LINETHICK2;</span></span>
+<span class="line"><span>DRAWLINE(SGSF=1 AND SGFT,SGMH+2*SGAU,SGSF=1 AND SGFT,SGMH+3*SGAU,COLORRED),LINETHICK3;</span></span>
+<span class="line"><span>DRAWLINE(SGSF=1 AND SGFT,SGMH+3*SGAU,SGSF=1 AND SGFT,SGMH+6*SGAU,COLORRED),LINETHICK1;</span></span>
+<span class="line"><span>DRAWLINE(SGSF=1 AND SGFB,SGML,SGSF=1 AND SGFB,SGML-SGBU,COLORGREEN),LINETHICK1;</span></span>
+<span class="line"><span>DRAWLINE(SGSF=1 AND SGFB,SGML-SGBU,SGSF=1 AND SGFB,SGML-2*SGBU,COLORGREEN),LINETHICK2;</span></span>
+<span class="line"><span>DRAWLINE(SGSF=1 AND SGFB,SGML-2*SGBU,SGSF=1 AND SGFB,SGML-3*SGBU,COLORGREEN),LINETHICK3;</span></span>
+<span class="line"><span>DRAWLINE(SGSF=1 AND SGFB,SGML-3*SGBU,SGSF=1 AND SGFB,SGML-6*SGBU,COLORGREEN),LINETHICK1;</span></span>
+<span class="line"><span>// 中枢上下沿固定，左右边界按成员；不填充、不跨矩形接线。</span></span>
+<span class="line"><span>DRAWSL(SGWLEFT,SGWZU31,0,SGWZI31-SGBN,0,COLORMAGENTA),LINETHICK1;</span></span>
+<span class="line"><span>DRAWSL(SGWLEFT,SGWZD31,0,SGWZI31-SGBN,0,COLORMAGENTA),LINETHICK1;</span></span>
+<span class="line"><span>DRAWLINE(SGSZ=1 AND SGWZLAST,SGZGH,SGSZ=1 AND SGWZLAST,SGZDL,COLORMAGENTA),LINETHICK1;</span></span>
+<span class="line"><span>DRAWLINE(SGWLEFT,SGWZU31,SGWLEFT,SGWZD31,COLORMAGENTA),LINETHICK1;</span></span></code></pre></div></details><p>文华财经与新浪财经仅用于说明运行环境，与本产品无隶属或合作关系。</p><p><a href="/faq/drawing-rules">画线规则与参数总览</a> · <a href="/sites/sina">新浪财经缠论自动画线支持说明</a> · <a href="/download/">安装说明</a> · <a href="/faq/chanlun-indicator">缠论自动画线软件怎么选</a></p><p>Struct Guide 用于结构识别、学习与复盘，不提供投资建议，不预测行情，也不承诺任何投资收益。</p></div></div></main><!----><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><footer class="docs-site-footer"><div class="docs-site-footer-container"><div class="docs-site-footer-content"><div class="docs-site-footer-brand"><h4>Struct Guide</h4><strong>K线结构学习与复盘</strong><p>查阅工具参数、确认状态、安装与兼容说明。</p><p>Struct Guide 用于结构识别、学习与复盘，不提供投资建议，不预测行情，也不承诺任何投资收益。</p></div><div class="docs-site-footer-links"><h4>工具文档</h4><ul><li><a href="/faq/drawing-rules">画线规则</a></li><li><a href="/download/">安装插件</a></li></ul></div><div class="docs-site-footer-links"><h4>知识库</h4><ul><li><a href="/faq/">知识库</a></li><li><a href="/sites/">支持网站</a></li><li><a href="/who-its-for">适合谁</a></li><li><a href="/privacy">隐私政策</a></li><li><a href="/terms">用户协议</a></li></ul></div></div><div class="docs-site-footer-bottom">© 2026 Struct Guide. All rights reserved.</div></div></footer><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"boyi-chanlun-auto-drawing.md\":\"E4MWQcgj\",\"chanlun-auto-drawing.md\":\"Dm-pYRsf\",\"chanlun-videos.md\":\"Bhs22Q4S\",\"concept_central-zone.md\":\"Bu7sof3g\",\"concept_containment.md\":\"B0I8zP7D\",\"concept_fractal.md\":\"C2Plh0Wr\",\"concept_segment.md\":\"Cnp5HBD1\",\"concept_stroke.md\":\"DU-T0K7R\",\"download_index.md\":\"DU7UZU_d\",\"faq_chanlun-indicator.md\":\"CKyz1Sbr\",\"faq_drawing-rules.md\":\"BUxBjp9P\",\"faq_how-to-read-108.md\":\"DhyfNwGL\",\"faq_index.md\":\"1o7UT4Fh\",\"faq_tongdaxin-approx-chanlun-formula.md\":\"BcgHcwxH\",\"indicators_atr.md\":\"BgWGdRXz\",\"indicators_bias.md\":\"CEjEEuuW\",\"indicators_boll.md\":\"DHplBlOj\",\"indicators_cci.md\":\"ru82YT9_\",\"indicators_dmi-adx.md\":\"CcMNGJOB\",\"indicators_index.md\":\"CFlYay-u\",\"indicators_kdj.md\":\"CA4DrLM7\",\"indicators_ma-vs-ema.md\":\"nfp1bavT\",\"indicators_ma.md\":\"B2CmLkUO\",\"indicators_macd.md\":\"Dnw--aMd\",\"indicators_obv.md\":\"D_clO2PW\",\"indicators_psy.md\":\"D8e1wEBn\",\"indicators_roc.md\":\"B2cMDXmZ\",\"indicators_rsi.md\":\"BKkOE8LL\",\"indicators_vol.md\":\"BNcM1GMp\",\"indicators_vwap.md\":\"B7Ac5D-O\",\"indicators_wr.md\":\"-8zzZ2jV\",\"mt5-chanlun-auto-drawing.md\":\"4Kjtgwfx\",\"privacy.md\":\"D9Br-SHx\",\"sites_eastmoney.md\":\"BVrmBvei\",\"sites_index.md\":\"3BGdzeXs\",\"sites_moomoo.md\":\"B4lmA-LH\",\"sites_sina.md\":\"CV_dd9uY\",\"sites_tonghuashun.md\":\"DzKM3Ltz\",\"sites_tradingview.md\":\"BEnQfpUU\",\"sites_xueqiu.md\":\"1Ngb9eTz\",\"sites_xueqiu_boards.md\":\"qPl8Hi_S\",\"terms.md\":\"CgcsReyY\",\"tutorial_sina.md\":\"BIzeKVKE\",\"tutorial_tonghuashun.md\":\"DolLFhou\",\"tutorial_tradingview.md\":\"DUo2eP1D\",\"tutorial_xueqiu.md\":\"aemjxQBk\",\"wenhua-chanlun-auto-drawing.md\":\"rLDJQadC\",\"who-its-for.md\":\"CfiGnFmo\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"Struct Guide\",\"description\":\"Struct Guide 缠论助手是一款缠论自动画线浏览器插件，可直接在 TradingView、moomoo、同花顺、雪球等网页K线图上自动显示分型、笔、线段和中枢，用于结构观察与复盘。\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":false,\"themeConfig\":{\"logo\":{\"src\":\"/images/structguide-logo.png\",\"alt\":\"Struct Guide 缠论助手\"},\"siteTitle\":\"Struct Guide\",\"nav\":[{\"text\":\"首页\",\"link\":\"/\"},{\"text\":\"画线规则\",\"link\":\"/faq/drawing-rules\"},{\"text\":\"安装插件\",\"link\":\"/download/\"},{\"text\":\"知识库\",\"link\":\"/faq/\"},{\"text\":\"指标速查手册\",\"link\":\"/indicators/\"}],\"sidebar\":[{\"text\":\"工具文档\",\"items\":[{\"text\":\"缠论视频讲解\",\"link\":\"/chanlun-videos\"},{\"text\":\"画线规则\",\"collapsed\":false,\"items\":[{\"text\":\"参数总览\",\"link\":\"/faq/drawing-rules\"},{\"text\":\"K线包含关系\",\"link\":\"/concept/containment\"},{\"text\":\"分型\",\"link\":\"/concept/fractal\"},{\"text\":\"笔\",\"link\":\"/concept/stroke\"},{\"text\":\"线段\",\"link\":\"/concept/segment\"},{\"text\":\"中枢\",\"link\":\"/concept/central-zone\"}]},{\"text\":\"安装插件\",\"link\":\"/download/\"}]},{\"text\":\"知识库\",\"items\":[{\"text\":\"网站和软件总览\",\"link\":\"/faq/\"},{\"text\":\"TradingView\",\"link\":\"/faq/#tradingview\"},{\"text\":\"同花顺\",\"link\":\"/faq/#tonghuashun\"},{\"text\":\"东方财富\",\"link\":\"/faq/#eastmoney\"},{\"text\":\"雪球\",\"link\":\"/faq/#xueqiu\"},{\"text\":\"新浪财经\",\"link\":\"/faq/#sina\"},{\"text\":\"moomoo\",\"link\":\"/faq/#moomoo\"},{\"text\":\"通达信\",\"link\":\"/faq/#tongdaxin\"},{\"text\":\"文华财经\",\"link\":\"/faq/#wenhua\"},{\"text\":\"博易大师\",\"link\":\"/faq/#boyi\"},{\"text\":\"MT5\",\"link\":\"/faq/#mt5\"}]},{\"text\":\"常见指标速查手册\",\"items\":[{\"text\":\"指标计算原理总览\",\"link\":\"/indicators/\"},{\"text\":\"MA均线怎么算\",\"link\":\"/indicators/ma\"},{\"text\":\"MA和EMA的区别\",\"link\":\"/indicators/ma-vs-ema\"},{\"text\":\"MACD计算公式图解\",\"link\":\"/indicators/macd\"},{\"text\":\"BOLL布林带怎么算\",\"link\":\"/indicators/boll\"},{\"text\":\"KDJ计算公式图解\",\"link\":\"/indicators/kdj\"},{\"text\":\"RSI怎么算\",\"link\":\"/indicators/rsi\"},{\"text\":\"BIAS乖离率怎么算\",\"link\":\"/indicators/bias\"},{\"text\":\"ATR平均真实波幅怎么算\",\"link\":\"/indicators/atr\"},{\"text\":\"CCI 顺势指标（商品通道指数）\",\"link\":\"/indicators/cci\"},{\"text\":\"OBV 能量潮指标\",\"link\":\"/indicators/obv\"},{\"text\":\"VOL 成交量与均量线\",\"link\":\"/indicators/vol\"},{\"text\":\"VWAP 成交量加权平均价\",\"link\":\"/indicators/vwap\"},{\"text\":\"DMI与ADX计算图解\",\"link\":\"/indicators/dmi-adx\"},{\"text\":\"PSY心理线怎么算\",\"link\":\"/indicators/psy\"},{\"text\":\"ROC变动率怎么算\",\"link\":\"/indicators/roc\"},{\"text\":\"WR威廉指标怎么算\",\"link\":\"/indicators/wr\"}]},{\"text\":\"热门文章\",\"items\":[{\"text\":\"缠论自动画线软件怎么选\",\"link\":\"/faq/chanlun-indicator\"},{\"text\":\"108课原文阅读索引\",\"link\":\"/faq/how-to-read-108\"},{\"text\":\"缠论自动画线工具\",\"link\":\"/chanlun-auto-drawing\"},{\"text\":\"文华财经近似缠论公式\",\"link\":\"/wenhua-chanlun-auto-drawing\"},{\"text\":\"TradingView 使用教程\",\"link\":\"/tutorial/tradingview\"},{\"text\":\"支持的行情网站\",\"link\":\"/sites/\"}]}],\"outline\":{\"label\":\"本页目录\"},\"docFooter\":{\"prev\":\"上一页\",\"next\":\"下一页\"},\"returnToTopLabel\":\"返回顶部\",\"sidebarMenuLabel\":\"菜单\",\"skipToContentLabel\":\"跳到正文\"},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":true}");</script>
+    
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"7b8d13c7bcda4459bb6cbaabd579bfe3","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+[
+  {
+    "path": "workbench/web/app.js",
+    "before_sha256": "1012a9f88d1d5f35fbb2fffa6ae27ad86d69a5e531d945f198e7e7b25a4a5d0c",
+    "after_sha256": "9eb442e8888d35d7957a37431fead6267838b162f9a655dc06b758b493ce6b6f"
+  },
+  {
+    "path": "workbench/web/index.html",
+    "before_sha256": "5f2fd731c86d008ab878559bdfc9eb2bdf4722c17f6e80806ff78fd2e362133d",
+    "after_sha256": "bddfb9d51bfd38e4306cefaf3fc9b9c366fc8eb2289c85aba83c5bfd0960a988"
+  }
+]

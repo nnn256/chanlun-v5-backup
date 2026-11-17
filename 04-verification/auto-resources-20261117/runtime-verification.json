@@ -1,0 +1,63 @@
+{
+  "frozen_files": 81,
+  "frozen_unchanged": true,
+  "code_sha256": "67dc64e53f7eac7a9285e9a89f979b20c8e8c4f1069e9a43b88db3c744b9892f",
+  "cpu_structure": {
+    "updated_at": "2026-11-17T21:12:13.256541+08:00",
+    "verified": 754,
+    "requested": 11158,
+    "failed": 0,
+    "processing_complete": false
+  },
+  "gpu_data_audit": {
+    "updated_at": "2026-11-17T18:43:13.188745+08:00",
+    "done": 11158,
+    "requested": 11158,
+    "passed": 11158,
+    "failed": 0,
+    "bars": 256654260,
+    "role": "data_integrity_session_extrema_only",
+    "cpu_structure_replay_on_gpu": false
+  },
+  "workbench_resources": {
+    "cpu": {
+      "logical_processors": 20,
+      "load_percent": 38.7
+    },
+    "memory": {
+      "total_bytes": 16870006784,
+      "available_bytes": 1124839424,
+      "load_percent": 93
+    },
+    "observed_at": 1794921134.0974317,
+    "plan": {
+      "target_workers": 0,
+      "ceiling": 16,
+      "requested": "auto",
+      "reserve_bytes": 2530501017,
+      "memory_per_worker_bytes": 402653184,
+      "available_bytes": 1124839424,
+      "reason": "insufficient_memory",
+      "state": "waiting_memory",
+      "mode": "auto"
+    },
+    "gpu": {
+      "devices": [
+        {
+          "name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+          "memory_total_mb": 4096.0,
+          "memory_used_mb": 575.0,
+          "utilization_percent": 25.0
+        }
+      ],
+      "supported": false,
+      "execution": "cpu",
+      "reason": "recursive_state_machine_cpu",
+      "probe_state": "detected",
+      "name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU"
+    },
+    "execution_backend": "cpu_multiprocess",
+    "policy": "cpu_memory_adaptive_v1",
+    "execution_allowed": false
+  }
+}

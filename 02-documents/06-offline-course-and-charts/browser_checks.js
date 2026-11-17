@@ -1,0 +1,31 @@
+(() => {
+ const passed=[];
+ const ok=(condition,label)=>{if(!condition)throw Error(label);passed.push(label);};
+ const app=window.CHAN_APP,d=window.CHAN_DATA;
+ ok(!!app&&d.bars.length===633&&d.snapshots.length===633,'633根真实前缀快照可用');
+ for(let i=0;i<window.CHAN_LESSONS.length;i++){app.setChapter(i);ok(!!document.querySelector('#lesson-stage svg'),`章节${i+1}图文完整`);}
+ app.switchView('chart');app.setCount(633);
+ const s=d.snapshots[632];
+ ok(s.hierarchy.levels.length>=3,'真实递归结构到L3');
+ ok(s.certificate_audit.state==='passed','当前中枢类型凭据检查通过');
+ ok(document.querySelector('#hierarchy-audit').textContent.includes('L3'),'页面显示L3完成分解');
+ const select=document.querySelector('#rank-select');select.value='2';select.dispatchEvent(new Event('change'));
+ ok(document.querySelector('#structure-counts').textContent.includes('L2'),'结构秩切换有效');
+ ok(document.querySelectorAll('[aria-label="查看递归中枢证据"]').length===s.centers.filter(c=>c.rank===2).length,'中枢按秩筛选');
+ select.value='0';select.dispatchEvent(new Event('change'));
+ const seg=document.querySelector('[aria-label="查看特征序列线段证据"]');seg.dispatchEvent(new MouseEvent('click',{bubbles:true}));
+ ok(document.querySelector('#selected-evidence').textContent.includes('线段确认路径'),'线段确认依据可点选');
+ const typelayer=document.querySelector('[data-layer="types"]');typelayer.click();
+ const typ=document.querySelector('[aria-label="查看完成分解单元证据"]');ok(!!typ,'完成走势类型可画图');typ.dispatchEvent(new MouseEvent('click',{bubbles:true}));
+ ok(document.querySelector('#selected-evidence').textContent.includes('非反转确认'),'分解完成不冒充反转');typelayer.click();
+ app.setCount(80);let ex=app.currentExport();ok(ex.bars.length===80&&ex.snapshot.as_of===79,'导出真实历史截止');
+ ok(ex.meta.counts.centers===ex.snapshot.centers.length,'导出无未来层级计数');
+ ok(ex.events.every(e=>e.available_at<80),'事件时间不越过截止');
+ ok(ex.meta.execution_allowed===false,'研究状态未接交易');
+ app.setCount(633);
+ ok(Object.values(s.signal_states).some(v=>v==='invalidated'),'失效候选版本保留');
+ app.switchView('full');ok(!document.querySelector('#full-view').hidden&&document.querySelector('#full-frame').src.includes('full-study-final'),'全层多周期入口可用');
+ app.switchView('lesson');app.setChapter(0);
+ ok(document.documentElement.scrollWidth<=innerWidth,'界面无水平溢出');
+ window.CHAN_CHECKS={checks:passed.length,passed};return window.CHAN_CHECKS;
+})();

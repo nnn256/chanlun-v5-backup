@@ -1,0 +1,84 @@
+{
+  "state": "passed",
+  "full_1m_replay_equal": true,
+  "full_1m_bars": 22560,
+  "full_1m_events": 1286,
+  "full_1m_alerts": 600,
+  "full_1m_output_sha256": "81ef1e73124069d880b95aec9019ade00b053b49355987b84973bb21bbca7c73",
+  "evaluation_checks": [
+    {
+      "period": "1m",
+      "bars": 22560,
+      "events": 1286,
+      "alerts": 600,
+      "all_fields_equal": true,
+      "timings": {
+        "baseline": {
+          "seconds": [
+            0.34327510000002803,
+            0.3513498999964213,
+            0.354030700000294,
+            0.34353230000124313,
+            0.3515509999997448,
+            0.356474199994409,
+            0.36977309999929275
+          ],
+          "median": 0.3515509999997448
+        },
+        "optimized": {
+          "seconds": [
+            0.09162610000203131,
+            0.09341230000427458,
+            0.0932163000034052,
+            0.09323560000484576,
+            0.09004270000150427,
+            0.09017170000151964,
+            0.0914178000020911
+          ],
+          "median": 0.09162610000203131
+        }
+      },
+      "evaluation_sha256": "ff7e3e62ad5073fbbc4441549fba56a05427e1851e948ca160dea952a0ca278f"
+    },
+    {
+      "period": "5m",
+      "bars": 23520,
+      "events": 126,
+      "alerts": 46,
+      "all_fields_equal": true,
+      "timings": {
+        "baseline": {
+          "seconds": [
+            0.03299490000063088,
+            0.029478399999788962,
+            0.029056300001684576,
+            0.031053400001837872,
+            0.03176540000276873,
+            0.03316349999658996,
+            0.03471350000472739
+          ],
+          "median": 0.03176540000276873
+        },
+        "optimized": {
+          "seconds": [
+            0.024991400001454167,
+            0.024126299998897593,
+            0.023687599998083897,
+            0.024046500002441462,
+            0.025258800000301562,
+            0.024498999999195803,
+            0.023736999995890073
+          ],
+          "median": 0.024126299998897593
+        }
+      },
+      "evaluation_sha256": "f4d3cc414fb41f4e1cf1abc53dd285dea17eb485e7f7f1f9859cabb408ca61d2"
+    }
+  ],
+  "timing_limits": "Full replay profiling concurrent under cProfile is diagnostic, not isolated throughput. Evaluation uses seven sequential repetitions per version.",
+  "changed_code": {
+    "chanmodel/intraday_research.py": "97145e90150eff7b37799cd1f91bcd6fc6b251ea326866d6550f40ac40b3c2af",
+    "tools/verify_intraday_research.py": "28ba178fb1e85f8ed5476d54fe966cba70e303b80f1435aed993b1494d46a1d5"
+  },
+  "execution_allowed": false
+}

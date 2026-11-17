@@ -1,0 +1,38 @@
+         659095380 function calls (650844837 primitive calls) in 359.080 seconds
+
+   Ordered by: cumulative time
+   List reduced from 531 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    22560    0.809    0.000  360.866    0.016 F:\ChanlunAlgorithmTests\2026-11-15-intraday\performance\intraday_research_baseline.py:87(append)
+     3073    0.048    0.000  224.037    0.073 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:167(snapshot)
+     3073  102.115    0.033  223.987    0.073 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:195(make_report)
+    22560   37.883    0.002  127.866    0.006 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:121(append)
+    22560    0.166    0.000   34.940    0.002 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\KLine\KLine_List.py:122(add_single_klu)
+     3073   19.362    0.006   32.028    0.010 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:307(review_geometry)
+    10085    0.066    0.000   31.050    0.003 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\KLine\KLine_List.py:104(cal_seg_and_zs)
+  1434679   12.178    0.000   30.830    0.000 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:196(move)
+ 48269520   19.077    0.000   27.682    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Common\cache.py:16(__get__)
+  1804565    2.733    0.000   17.434    0.000 C:\Users\li\AppData\Local\Python\pythoncore-3.14-64\Lib\json\__init__.py:185(dumps)
+169807809   16.878    0.000   16.878    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\KLine\KLine_Unit.py:82(idx)
+    20170    0.472    0.000   15.840    0.001 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\KLine\KLine_List.py:142(cal_seg)
+    20170    0.098    0.000   15.143    0.001 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\SegListChan.py:28(update)
+  1804565    2.378    0.000   14.363    0.000 C:\Users\li\AppData\Local\Python\pythoncore-3.14-64\Lib\json\encoder.py:185(encode)
+48269520/48072014   11.920    0.000   12.807    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Common\cache.py:25(__call__)
+  2469961    2.423    0.000   11.967    0.000 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:51(local_time)
+  1804565   10.934    0.000   10.934    0.000 C:\Users\li\AppData\Local\Python\pythoncore-3.14-64\Lib\json\encoder.py:207(iterencode)
+22749/20170    0.440    0.000    9.812    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\SegListChan.py:36(cal_seg_sure)
+    20170    0.074    0.000    9.161    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\BuySellPoint\BSPointList.py:100(cal)
+ 48269527    8.603    0.000    8.603    0.000 {built-in method builtins.hasattr}
+    86852    0.106    0.000    7.672    0.000 {built-in method builtins.next}
+    24529    6.451    0.000    7.517    0.000 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\v2\series.py:46(session_closes)
+    39642    7.515    0.000    7.515    0.000 C:\Users/li/Documents/ChatGPT/缠学习/缠论算法\chanmodel\reference_engine.py:259(<genexpr>)
+  1950230    4.021    0.000    7.112    0.000 {built-in method builtins.min}
+260146/152589    0.323    0.000    7.057    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\EigenFX.py:55(add)
+  1986583    3.325    0.000    6.086    0.000 {built-in method builtins.max}
+ 38234599    5.743    0.000    5.743    0.000 {method 'append' of 'list' objects}
+89195/70813    0.363    0.000    5.080    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\EigenFX.py:38(treat_third_ele)
+10050/9084    0.035    0.000    5.057    0.001 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\SegListChan.py:64(treat_fx_eigen)
+22187/20170    0.054    0.000    4.912    0.000 C:\Users\li\Documents\ChatGPT\缠学习\缠论算法\third_party\chanpy\Seg\SegListComm.py:112(collect_left_seg)
+
+

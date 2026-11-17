@@ -1,0 +1,10 @@
+{
+  "mode": "optimized",
+  "period": "1m",
+  "bars": 22560,
+  "events": 1286,
+  "alerts": 600,
+  "replay_seconds": 301.4827542999992,
+  "evaluation_seconds": 0.3058722999994643,
+  "body_sha256": "81ef1e73124069d880b95aec9019ade00b053b49355987b84973bb21bbca7c73"
+}

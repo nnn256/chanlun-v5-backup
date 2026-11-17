@@ -1,0 +1,1915 @@
+{
+  "modified_existing": [
+    {
+      "file": "README.md",
+      "sha256": "2873db1ee3edf85f18eda26c523f3fd9f289d3607ba580c81d8d4ec5c3bca9ca"
+    },
+    {
+      "file": "tools/search_kb.py",
+      "sha256": "4f52c0f90a8127b1068563d4d0d52664d354b6b64fea695b2022cde5093b2db6"
+    }
+  ],
+  "created_roots": [
+    "sources/chanlunzhan",
+    "data_structure.md",
+    "notes/12-缠论站系统学习总纲.md",
+    "notes/13-缠论站26课学习卡片.md",
+    "notes/14-缠论站52词条速查.md",
+    "notes/15-缠论站口径差异与原文核对.md",
+    "notes/16-缠论站学习计划与自测.md",
+    "notes/17-缠论站113篇原文与补充索引.md",
+    "tools/collect_chanlunzhan.py",
+    "tools/build_chanlunzhan_indices.py",
+    "tools/verify_chanlunzhan.py"
+  ],
+  "created_files": [
+    {
+      "file": "sources/chanlunzhan/about.html",
+      "sha256": "8f984b10e1d36b41d523cf693e2d1a620ed531cc0bb375cbb16ee95f8605f54f"
+    },
+    {
+      "file": "sources/chanlunzhan/collection-summary.json",
+      "sha256": "90914b8f676659fd5845f61d3984f43b86095e94dc26eff8a885d2248f1b9023"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0394.png",
+      "sha256": "3d4782475c75b2cafc3842fc6fb829f69a345cc86267de00b1ac335da5c7a584"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0398_1.png",
+      "sha256": "bb348665b8e9323407b9e499d0c7ae15bfa62bdae3e12f599a631628315fcc7a"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0398_2.png",
+      "sha256": "653e908ce106d57a7e7647e000bbd000fb66a8a56f73947a68406dad0f0e73f4"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0398_3.png",
+      "sha256": "aa6c41bee88476104443d6a6416a8c3034514dbfbc816dcb13272930a4f0519d"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0408_1.png",
+      "sha256": "6185577435100a12d438ed39a45a733947ed876e42d542b67b2c68992cb14527"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0408_2.png",
+      "sha256": "e8974587bf38c542c4da1b2d113c5bf155ae25d7f1ed84d329b8463460728352"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0408_3.png",
+      "sha256": "0f6bf1cca088074f098a69ae5cade3324d3a1e5a5aff63c99521fada0c0f25fc"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0412.png",
+      "sha256": "bfd1e74b253f9890034b45fee3a8c559806575248b489652b192ee0a690b3039"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0424_1.png",
+      "sha256": "7e5d8283967117c96f8c09ddcecf50a75d5822afbdf6f57bdde732d5e77dd3c6"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0424_2.png",
+      "sha256": "8722883887f01da48219a0d37b81c5762dce19bd81355788b9055b42518c76c7"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0428.png",
+      "sha256": "222fe739ebce90520bfe59d8293cadf16da3c7c42fc55b8a4b6ec9278d39504a"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0436_1.png",
+      "sha256": "a2c3d326a2ef02d77d46208c132e9c03d6157f31e5076e58644028ff95ff1f01"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0436_2.png",
+      "sha256": "77458039f6e27353c7a44c6a708ad807c257d15613fc971a0dc3d757bf6d5093"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0436_3.png",
+      "sha256": "c2633d204bb814f93498ec67a3e7585a0017d967f53b13afdeda5dbe58e8c2e2"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0440_1.png",
+      "sha256": "1cf7b9ca3e5350892a49785b3f3643b67617abcf9dcabed3b311816c2b09dbfe"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0440_2.png",
+      "sha256": "e8057ea74f873b0dfb56f696c856db1eebd603470e1ade8e0cee3a8b98c32c71"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0440_3.png",
+      "sha256": "f26cdeeb5d922789cfc90ec8980cc4bb089a677068ac2cde9ae6db5b8e4ca1c3"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0440_4.png",
+      "sha256": "9e05407d8e182b586eb47c5bcb34da11eb9ec25e69582cdb7b98df6478fa4007"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0449.png",
+      "sha256": "7a2cde098a68a9b63a721d2bcc6c9fda30ae1a6cd7b1bc86c4d1c140e9b28e66"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0469.png",
+      "sha256": "e54fc5c3d18c7193e25c36a500c2d9a6e44b8ac8a063a7fcce3eacb0b7e80f12"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0478.png",
+      "sha256": "78ee48a05035c1ce502887fc6326cd6148c39238e90ca94055e453666ecedb19"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0511_1.png",
+      "sha256": "8fc89cd5792e3406752fb83e33b093e9eacd8d4142ad215c2f966597c2b81a4e"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0511_2.png",
+      "sha256": "ecced91732803160423fffff72ab51463705f6111f394aa8ec6ca6f24faba365"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0535.png",
+      "sha256": "f1a954137606474a929af39cf16faa6bf8fc5d28fc6e31c0dc95430b78eaa55d"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0541.png",
+      "sha256": "0021a777642b9f0c39e8ad60f4335d22894cc61849e4b5d33aec62a407684d0b"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0542.png",
+      "sha256": "bae8c4ddb36f5b0877d3a84bd883786885a7b8b4650c3b96ed5c944ee33f92d5"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0545_1.jpg",
+      "sha256": "62f7c2797cb30cc5c10e32943dff0ed382aa244a9880ad491d203ef6017ce19a"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0545_2.png",
+      "sha256": "22ec45895cbf710121d17f7fdd9c06beb59f394727e7ea48b829ebef3ed7e5fd"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0552_1.jpg",
+      "sha256": "d37259f0da35b8f2fbd344f1d174256352ae93ec65c994b69aa65af02ffe9a9b"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0552_2.jpg",
+      "sha256": "46d4fc2aef9455f37b08706bc99fb0e54f607037d2557e4a2641f5d7e10322d0"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0552_3.jpg",
+      "sha256": "fb83e4332bf503561c12c01c3b1aea37e98f67f9cf3f89dadc09f8e1d338deab"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0556.jpg",
+      "sha256": "ce79fccbc27e60bb3c40d3590a603853e2cb0954ddc78cbb3936db812c2b970a"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0558.jpg",
+      "sha256": "04c32b7b800f1e93ec9af55230025b78e346370e3254ee16e9ee987d0dfe70d0"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0567.jpg",
+      "sha256": "dc669a81f6fd0d647a99240c4f804905d9e246706479bb971384b583708625da"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0571.jpg",
+      "sha256": "c1fd0eba128c3148b4fdbcdafe0e8fb02174f6bb6c1ce99574fbe27ca98b1599"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0614.jpg",
+      "sha256": "402618f360ef7dcc3342d4ec93c4ef584717d880451a9d3434487177cc113efd"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0627.jpg",
+      "sha256": "7bdd9b0107eb2768e7dfc2f69f3e141a96c6fc8b25ef9301fce406b05a1daed5"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0637_1.jpg",
+      "sha256": "76bddc62d8391e240754eb62cf99b2f84ac00a7eeae7e9ec8bd37ea21fee7ebd"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0637_2.jpg",
+      "sha256": "b130b2664d0ccd3e1983f17f9c7662c7dc317d8f43ea6b161c99529bd0e0a10c"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0639.jpg",
+      "sha256": "b5e8e301c43eb491d3448457dddf6b5c447ef136919e35660751c433c0c2cf3e"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0767.jpg",
+      "sha256": "c32907b386863e8eb65bba739b7ce5ed27b2437d8e3f2c2c711fadc1cc8e8d2f"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0800.png",
+      "sha256": "ac730ebbe8ee872c08dad118f1cb785a7305d62b4e99a283cdb24ee8901efcf7"
+    },
+    {
+      "file": "sources/chanlunzhan/images/reference__pic__0902.png",
+      "sha256": "ea5dff1914370b01e80019f37fdf196fa84c7837a9519c515c23ff37a7e9fc15"
+    },
+    {
+      "file": "sources/chanlunzhan/images-manifest.json",
+      "sha256": "04fa9a98427b109f1b2a11cf238505f8b43682356e6a39a2dc85319e851424ec"
+    },
+    {
+      "file": "sources/chanlunzhan/learn.html",
+      "sha256": "d8edf60e57a7381c2bfb6f2cad64abf68cdb99c49f2eafb64ace3f0994a40992"
+    },
+    {
+      "file": "sources/chanlunzhan/manifest.json",
+      "sha256": "77ff311b568c8d2241f15e8d60e898bb089ad0605acae78a6bb26537448623eb"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108.html",
+      "sha256": "4f3cea44ba291ecf685d687c587ba35b1234fe4ce0ec4a7417ef5e734b7955b1"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__1.html",
+      "sha256": "59e2cbed50db5ec5e58fd6dbae4e3de1ff6d051db804d6af2cc6421be07f0f5e"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__10.html",
+      "sha256": "8b3e7c42ab88337af5854b10167474026b621f1830288fb2c0c1e7ba9f73de09"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__100.html",
+      "sha256": "3fe60492941b6fa7ef7c197163d3c2671c23beb6d497f4aafafb63daef455e2d"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__101.html",
+      "sha256": "fa5622018b501d0cd9357966aad671b5ab0c7816f4234a113434c507d9ee779c"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__102.html",
+      "sha256": "5bc96ebd0be5c6fb1c5c139e7177db76c1ea9a1f64dde17e9b963e3302b63df9"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__103.html",
+      "sha256": "d9a95634000a26e5d5a85cc70fea3a7cd133894d9c96ee039ce4a3dbd487f8a0"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__104.html",
+      "sha256": "146acb871f65280371d34d2c82d714acd585b258d7bc10e52e74855e17f6b6ab"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__105.html",
+      "sha256": "2e8adeb4d75f51f14f02f6abfae565676c69b4257eed609d667a65aed2affa08"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__106.html",
+      "sha256": "8a2d7ab891142f6bad780fde6b61050c4f408d67646da2f485a4d80d05d87e98"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__107.html",
+      "sha256": "779cd095899d15cd3831b5657f7b4ecd7f4549ea9ab7fa05632a17c1495f75d2"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__108.html",
+      "sha256": "f2bdc21da7a0d8259f86892b1734ea2fa797aeefbdbd0d2271f719274e62a876"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__11.html",
+      "sha256": "96d8cb6cc53b51af147fefa83e587fbe5b7e09e50c685dd4a2848d92cfbd0883"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__12.html",
+      "sha256": "58aa89a867e7d07d19480758a2623eab31173ab5c00b80ec4d1d57481cffdf67"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__13.html",
+      "sha256": "ecf411be7ceb1f6a6c013736ae359486ef92dbf26255ce4835727ada8260c591"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__14.html",
+      "sha256": "6a6d544df0a7dca5bdd1c1cfa2c6d6a60723f3794630b2b69e1998d92b36012a"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__15.html",
+      "sha256": "eba4fbcaad598ec37bf10426abd281b8856c66b12fd879982361aa4596931eb9"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__16.html",
+      "sha256": "17abe9838eb93421b10745bc0da7a6ae6f901996f07f1210da31bf84997041dc"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__17.html",
+      "sha256": "2dbaf2c8b866806e8f567ddd971b2f4215174ed26926a55e9730956cf90262eb"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__18.html",
+      "sha256": "47b4c2a7ee275024ee183ddeb9889858c2eaf74712d4d93b0317dffc63f8a5c8"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__19.html",
+      "sha256": "69aa14fa180aa98ea3cc0435dddf13fdf4958181467ba74d4554b1b388014428"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__2.html",
+      "sha256": "eacbcd1d30f44d02741696682e22dd86c3c2e78a317619259920dbb1e168d4ff"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__20.html",
+      "sha256": "438c1267c9802470ff3b124599f80b1141ba635f1f260a22107f3dece18c9601"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__21.html",
+      "sha256": "93cccb99fa809535ae6d8aa6fe51f5e580e097bb85b2a0d6a424daa3deebd9c4"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__22.html",
+      "sha256": "93dbabec4bd661aa407d71146a85ca7cf4b0ad6e164a0f7c506187536f2db7cf"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__23.html",
+      "sha256": "899ff1ff268235d7541e3771c0689e77318db55b1edfc5367088d2f743f7c71d"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__24.html",
+      "sha256": "d4f23db5756a46e21cfcfbc707d22e92fadfce5cda9f8c80ea91c47fe01053b0"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__25.html",
+      "sha256": "d05a8d2dc1a3b6e48a77ed3ea92fc4c265d5e712e97f1caf4f7a54ce599b7feb"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__26.html",
+      "sha256": "a580f45d2ac954e33d162d752af235c233865115545e0dff4bb0f24c7943cec3"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__27.html",
+      "sha256": "879894e0ba50d598fca5bb1da0712ace23090644a527cacf2a62c7ae1a555e84"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__28.html",
+      "sha256": "1b1d6f1ae26e5a7406ab5012024d94e96104915392f0bd775ea01656ca644b8f"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__29.html",
+      "sha256": "ac2fdbcfd8ab21cece8e78eab2c4ff525a90c984a3a8d9ad01ea3fda6749e74c"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__3.html",
+      "sha256": "5dead42a3914e7fd4e669b64bcb0a6ecd8d4f22a05affc2f6992e332f480c69b"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__30.html",
+      "sha256": "37949e532c0643edfde9eb49f6e955595cdb8c8b872a603787a68879b6fbe526"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__31.html",
+      "sha256": "22e164374268d83443bebd85ecaa50892561f769aed1579bfc0ebe03bf8e5d42"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__32.html",
+      "sha256": "a90b1f686e1d676d97b2b2db35a45b1a140d54921607f5b5b7bc108db49775b2"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__33.html",
+      "sha256": "b728f0418092c58ff6d1cd0d0b80569c6bb2a3cc4ae51aeeb1c430278038a048"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__34.html",
+      "sha256": "2fa6acd122475472a967c27fb1dfa63df5a45d194924a90e5ca2dadb21bcaa40"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__35.html",
+      "sha256": "e0de57f5d3d7040e1d3a618e303c3bf33b0e12734307656ee2c967dbd7e93de7"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__36.html",
+      "sha256": "1917701adef5f2aff7ca2221307014846ed7be1f75816bc1832a7a5c1273b1d4"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__37.html",
+      "sha256": "4e809e7a9cfd6d7170a4b208c1724cfe6b029783e8db1c648c58973cff02f4e5"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__38.html",
+      "sha256": "26054c79a80fd546ef7b1364a96120662d03528445bfa8bcb9213d12eccd992d"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__39.html",
+      "sha256": "ae201dfc1b7e75a9843c5c946bcaee5e741ddd3f20b916de061dd6888cac1c47"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__4.html",
+      "sha256": "d5d3c409abe12e299022514a3f1329c07ee51952c66d6767736c0366ccbc78ef"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__40.html",
+      "sha256": "32fec959c05318d27fdaa0cd302b7265a24d6d8c399a3827a4953ef91872a78a"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__41.html",
+      "sha256": "291f7742827744027d89dc086ba95c9959f51e55c5a2e172a1e0ba9ba6602831"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__42.html",
+      "sha256": "3ce52546e0fde24f5b1124f0ec277acf9b9a1e68ca8fd433e8c5669e4d722bd8"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__43.html",
+      "sha256": "b735f0be2c2c6563b6adb6f28c955cb3025359c99a4c786b40bc3bbea43e054d"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__44.html",
+      "sha256": "248062f663c4f933fbb0c96650d011b89402f2cf890390eb2c26af8e42d6ad63"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__45.html",
+      "sha256": "435f4f2a043eabde46b12348fa4392f4e5488cc166bf8d428c50080e95a37dc3"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__46.html",
+      "sha256": "a3ad93879a5b91157337aad7cab09675510772d120e18a2f1c341500e8fa8ef2"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__47.html",
+      "sha256": "14298e99c15c629b1764004bd0ca5828c8ed588b190cbb7cfb7de0fd60c3477f"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__48.html",
+      "sha256": "eb644d54a67bceb087be24c41f33df286b5e1b58903123944982b39ac0a280f7"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__49.html",
+      "sha256": "140f3b9b1915c911fb63d644e79724b30e01476df9b46c5cc5b80064be388f1c"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__5.html",
+      "sha256": "aeff189186b45622e684f1e70d90b9caf9f5d8d187e287696c5793d7d5b4cfd3"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__50.html",
+      "sha256": "39731db8762e797a5231ced79c0382e20ea44ba29ef377214e34b8b328ac2f19"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__51.html",
+      "sha256": "916932d06c707c49ce48cc1c51a41bf2958d85c82bb0ccc3f94481afa9ccfbb9"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__52.html",
+      "sha256": "ed10a74c1537bd55895e4e751f4a57c1aab666045ec94ca5365703930764b628"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__53.html",
+      "sha256": "ec5e2017739fa6ec98cf78416e3b813da8702a652a24c552717055dc5fa72ace"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__54.html",
+      "sha256": "f3e6e3ee94f432af503cea6b9cd4b4ebf2354a3c6556d9f5b26c4be1c6dd1499"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__55.html",
+      "sha256": "85d12aab1c38fea00270b55bfff28806e8c1c23f31e9159b2028ff99bc1e0ceb"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__56.html",
+      "sha256": "7af96afee3ffdea3b36734a2fd2cfe9188f912bb05cec289806d6d3466d873d1"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__57.html",
+      "sha256": "b2c501411343e6488ff4cf1068463794fdaccfbdae1bf18276e00d0be446b95a"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__58.html",
+      "sha256": "8974a4801f0f11207e326f9541498a8ae5e5d23bffa10d18fadc755b9f66e2cd"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__59.html",
+      "sha256": "3d283da92b1d4d9e67b8e070e96c275fcce79e287433a384e31d5384afc45d5c"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__6.html",
+      "sha256": "5cc2e52c1a725008a31ae0d86ba080b7d3b34d90c586b7d77197a1639d94a896"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__60.html",
+      "sha256": "4a0dcbcc06c3881d6a77a3e3b9866ed18c0503935d9d13aa8182a852fbe2ecf5"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__61.html",
+      "sha256": "fc6e929b46c643faf5ac76cb26495b7980b9da265a27ebf795f6cfafc21cf0da"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__62.html",
+      "sha256": "d482113e6d668f3ac3bd1c1498f4faa5486f0a30d69d32b3d361e1f9513cd029"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__63.html",
+      "sha256": "9a1e48e4b676d78830076b340ee2ebee8c3ad3f212c4113ec232e255d2aab1b1"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__64.html",
+      "sha256": "83caa5862148ba2e2115aac3440fd304e108b330237a5f95add4560e3f55475f"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__65.html",
+      "sha256": "32ddf0b8f446f11ec81d6a4c19f12526843a4b0469f07e3f2fafb0dd6bc58c8a"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__66.html",
+      "sha256": "8de324c7f6b8b587b8436cc80a375f3a47e689a5a22a8f093bdd2e2b28819306"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__67.html",
+      "sha256": "32592c4864089d06cd5f424cce5fc63ce9d9adb18264f4b8518fd76c29e95ced"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__68.html",
+      "sha256": "6de1a0a3934fcf9981d498ca398dad34386500b28666ed3b78569eb32c461c6d"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__69.html",
+      "sha256": "21e6d9a5cc280679182feb74703201687025c9fba6e765ad05a0b9e834407c0a"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__7.html",
+      "sha256": "27d6f529e117116f4ed696f583a0ddb98a38507a6c8827869972533b41856fff"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__70.html",
+      "sha256": "a46b46229e6acc8ca23e488645eab7313a8faf083e4c0b2a82460c0e3809f68f"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__71.html",
+      "sha256": "48be7c2ab24633f81e7c0e5222e12b10e40437dde087f489aa734c7d602d24bb"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__72.html",
+      "sha256": "cd17b996d2deeeaa06c2c26c762e8d57072eb02c9c1b4e1ce737363d64d722f4"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__73.html",
+      "sha256": "b7469dc8d3a67a20bb94cd894b349b80157875430bcfda9e55cac7be6ac89d17"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__74.html",
+      "sha256": "93927b2e66dacec6867f704a4746afefd2836fd5a1b00408dbd54627a81ee966"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__75.html",
+      "sha256": "b46df98a359578daec9a42a186e71257e691a68b293e7ef6dfa5a22df3002ece"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__76.html",
+      "sha256": "fa89991dfc489bb92ae23ee9097a33a81688c1ad6510505c8d00b671d2647fa0"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__77.html",
+      "sha256": "01bd444518170ce9eead597f9c01d8262ee70774bfc615a06471bce2f9ece1aa"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__78.html",
+      "sha256": "a1ebb49255b864752a68edb29e4132df937c1b8fb6a21639cee4f354592b5b10"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__79.html",
+      "sha256": "8a4f5b14c2094849151f8968ede60e8433240f1aaaf7f589b913bd9cb4017e4b"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__8.html",
+      "sha256": "d4a898b22e0f60cb7032981fd4b2e5fe74a6077a2f3a78303b2730016b5fdd55"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__80.html",
+      "sha256": "abd586947c142d2a20aec472367f11df6ddf27ad701be2583d337dea320ace49"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__81.html",
+      "sha256": "2edc170512aa1597fe433dbb3959dc3959b650f16d9acc23b16413e7d5e547b1"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__82.html",
+      "sha256": "890bb8c5c0156b5bbe33592a01baa7860fc4363f9e063bd0e4c6d67e7c133ab0"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__83.html",
+      "sha256": "30a1cbba1e97f41e78610dba582f2c5e705282ad6b0870b3d412f537c6213545"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__84.html",
+      "sha256": "0f29d7018b7a98f3a167bcb5326815811d20fc3ed03892eb43c1457d18304a8d"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__85.html",
+      "sha256": "3f51bfdb10d91222a9d5090a32735fdcbc3131644fe62926817b7974d02bfc7d"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__86.html",
+      "sha256": "51cbf6d1521a7b38191b172d8dd1bcc24a0eba08d512e8c7a8ab9825c4e22af7"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__87.html",
+      "sha256": "beeeaa43220329820156b12ec352bfb38996edcefa4e8358f66749684caa3931"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__88.html",
+      "sha256": "d4211533ba1d7517098a159ef6f95b08a9a51d3ade2aad872b7b3721eeb978f7"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__89.html",
+      "sha256": "ecb559eb1772cec23e1007caa6e22077f63fa7cde92eb7dacf9ca62bf3d46ee0"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__9.html",
+      "sha256": "a51f36af541b8ecd12a1e77758c25024630372e6de10e8b6a648cd3284111070"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__90.html",
+      "sha256": "0f6cd9561bb4115f2ecfb5113a60c85a0928a219b5beb30a732b39123ed94ffe"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__91.html",
+      "sha256": "f0950021fec5cf4c68fe241ce92dca9fc188ec6e4f6ad89deb1ea0d871d32799"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__92.html",
+      "sha256": "98a33474f1f65af604a194e8ee1079aa465d3514444d8214531b23ee16c6f089"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__93.html",
+      "sha256": "2cc096d9206938bb113c377c9d194eef2f9c269a51957d0860a430a17aa2d0cd"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__94.html",
+      "sha256": "e04a8933f30f8dd805a7aa36314e6b154678b8846538f611b50775d78a48cd93"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__95.html",
+      "sha256": "b9173c76df51aa735dec5f96675ad4247f5ca3c9c4202f2071c22d335bdaff87"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__96.html",
+      "sha256": "ba65a1139ff90acb9e97b4518b1bc65295cd72d6de5fcd47a929529fc8c9edfa"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__97.html",
+      "sha256": "f1965dc9f3a549584eaf8c3dc6f6b5db57212d8af0e4df77ea9cab39d5e38bc9"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__98.html",
+      "sha256": "9c53a6229314a73e0845516b68f13e9c7a9bd5ed16fd1ff895eaa1846c6095a3"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__99.html",
+      "sha256": "945b08c630f8bc523ca5cf6184e1d9dd1267b281b1f953c8b1714cc2211ad27b"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__w3.html",
+      "sha256": "c746c5afba7c2450c32f359f28d3360a15b09ad40f4f13faeb4b41e88daabff9"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__w4.html",
+      "sha256": "7b5f905cbf31797323e42a08d27374a49d90f18e8cfa660880592c60d1aabb61"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__w5.html",
+      "sha256": "848b7fe37c471d28bfcf881a38e08bc700df0c4df365962971d5940bc706bcf3"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__x0596.html",
+      "sha256": "fd1e31be9b7062940fc879c4617849242f393b4a75a434e3dcd98bcb29211804"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/108__x0912.html",
+      "sha256": "c6de15984f4003000244c41501e27c171f8477f507e7abf55c46713377d8db84"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/about.html",
+      "sha256": "8f984b10e1d36b41d523cf693e2d1a620ed531cc0bb375cbb16ee95f8605f54f"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/disclaimer.html",
+      "sha256": "fc1bebc66dc780ed16690e012d6719d9c93b3673dab7f653fd56d42af0b4e818"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary.html",
+      "sha256": "53830497fbc54c4b1692ffbd03bedcd072d54c87a40741254107380a141cd1ac"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__baohan.html",
+      "sha256": "5e8eca08ccb0ed138cbedb09d5bc790282b15373ae7361d1bc747f63f2339149"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__beichi.html",
+      "sha256": "a6102b682bfad55b8b1e7dca007f3313091e8e6be7cde2a8256dfc24917c0949"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__bi.html",
+      "sha256": "d1c2d509fd50ac78d6cbf22eef7592fd54cf3c078f024b8bbe1a376eb6e0d778"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__biZhongshu.html",
+      "sha256": "3c1b7bdc3f607152f652f3eb79b052c9db72d73379d3624203eab50149fc124a"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__chengjiaoliang.html",
+      "sha256": "eaad64d7e0e3af8e6afe78bb91ff1d28d50e54fbeafbcc6138e65d32885e2c86"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__cijibie.html",
+      "sha256": "5967deda02faa268f6ac93b79aa8a46e08085128c693968380b19fc089a6e1ad"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__dierleimaimaidian.html",
+      "sha256": "778c320fbf16d5555d9e4ffd0119333612c619c0965eba81d6782065817c8da0"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__dierzhongqingkuang.html",
+      "sha256": "a1b077dcc3e9d11858b07fbf01d7c2c0be2b770c209c8a4bdfaa3183a8a39675"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__diguijibie.html",
+      "sha256": "8d93d0baf95d035662466aea0876a6fcbc0c607887fc7d0cfd77791c9be7954c"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__disanleimaimaidian.html",
+      "sha256": "f045fa76a9d9924982d39ff93893578a67eb3e874d94920e2d2ac23108f3a470"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__diyileimaimaidian.html",
+      "sha256": "553c891035ac833fbc66d1d61a7e17bbdb2b9c2a68c3da543fe7cd2b46d8857b"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__diyizhongqingkuang.html",
+      "sha256": "1312aaa6fa99cf1aae1f775147f457db41208fa2de01a245864b1b588c76d0bc"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__duojibielianli.html",
+      "sha256": "0c229856d72580d132502b8d65cd2fdf1d36658b46c58fb9dedc24c60d53a152"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__fenjieddingli.html",
+      "sha256": "ecbf06bd315983d35bc2588434ba6e4943159251e4089ff8788491d9a8c38980"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__fenleibuyuce.html",
+      "sha256": "78f02287979930875373eed375c4cbb2ff20868aff6d847b5ef34e2e8353b5a6"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__fenxing.html",
+      "sha256": "fc685d5fe651853c921eebd743e1e4ad6e50dc239b5dfd3aa3ae8d4900c608fe"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__fuquan.html",
+      "sha256": "211be7c3eaaa71747675cc2ddb0485f57b826abbef32de81f00cca167f3b7802"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__gg-dd.html",
+      "sha256": "3ec99b4e4be9b72c5ea4d0ade57482489f721c23e01ef67fdfb2b1673ab61f83"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__huilalingzhou.html",
+      "sha256": "12b965802f3ca0e3a80a96df8061e474fbf249e473e6a80947133ea0b64ad924"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__jibie.html",
+      "sha256": "0a6e723ab5ec07506fb09752eff0a85ad4e2d41b7ab8bea386c18b2e3228ad3e"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__jinruduan.html",
+      "sha256": "3e74b18c6554c30c4c057cfcc65e81f4a1840f4c749b3209c4a9aab51d922091"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__kline.html",
+      "sha256": "c8af4cee233847f6c9e4fd2ea7d743e4f7c03501f101713b159c22d269be1c26"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__koujingfenqi.html",
+      "sha256": "6fa936c78533d5039a3d23c4eb092b80e111f6c3e0ca109efcf85ce56007c292"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__kuansongbi.html",
+      "sha256": "b51a7795fdeaa4ba6e1a3c487abf34e404016569fa94a0a136093d64789f5d56"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__lianjiedian.html",
+      "sha256": "25276e2fef31b6ab1684829317d8670155ec5062a49cd6bbd04c515192765810"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__lidu.html",
+      "sha256": "c2c5f5c748454dff797334800a862217f3dd693b52c5c6f24e3a29d007484e6b"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__lijinzoushi.html",
+      "sha256": "a6f84701a52f0d4cc03da386a8e714e38e6428b9e5e6283c04e6bb9885086a84"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__macd.html",
+      "sha256": "3e37a8ed5ccb23e96c0cc9085cf28b273244484488dafaa951ef23ee668119ec"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__panzheng.html",
+      "sha256": "f935b0ced61d70420c5c108fc3cd2e5628672f15a5475fda0028c9b6bae614e0"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__panzhengbeichi.html",
+      "sha256": "915eb769d2a48e0e27a2765c44991eb07e36e38ce7caa30c450f31484258f364"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__qujiantao.html",
+      "sha256": "0faf9b1554d7018bbdc80fb264b444b05e591bf31af58367229a8a1d18620063"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__qushi.html",
+      "sha256": "1ff97411331689f59f53dd2fce6485e60ce5ecb7fd59b68d3b8234d811dda1f1"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__qushibeichi.html",
+      "sha256": "f5ef5ec0b7dd051b7bff96700cddd40eed2b1bddf1741c31ed257cc50286f55b"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__sanleimaimaidian.html",
+      "sha256": "0d8eb0fe8d4ba7a37f8235e00eff0ea6b10662adfc400d076b05659164e4d781"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__tezhengxulie.html",
+      "sha256": "f801ad928a1aa314c7b20f78256aae410ec911e1ac17a2f67de1235f9b15c7e2"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__tongxingfenxing.html",
+      "sha256": "d580a2f8df80d29dcd9f79b7a42c85771b617c8e12503f15380a8ce01b236ea3"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__weiwancheng.html",
+      "sha256": "67b155ea18cf325b18a746d6288783d4f5bd5218d2fc229c717e7a593b3edffb"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__xianduan.html",
+      "sha256": "aef26d9697af63e60aa1868c37c8db3d95085875c8d7425ad05e015fdcf2d124"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__xianduanhuishou.html",
+      "sha256": "0de278e5373c5ef5cb06b4e5638df533688774daf81749f86668d6085fe58ce5"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__xianduanpohuai.html",
+      "sha256": "9dd18e8e53db5499e7555b0257e171e5473b6602214b4b7c8bfb4348bbd5ecce"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__yangebi.html",
+      "sha256": "946ab9efbbf17058e41b0cd7d44ac2259b0d69a8bff71ef0b9fc72714a0dbfcd"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__zg-zd.html",
+      "sha256": "31b9c6fc4d335ad8ce99624eb57d499978241a47e761253deed5103fc1f666d2"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__zhongshu.html",
+      "sha256": "788e556f38598bd40816b33b277bf612fb9510c3b1b580bfca564fd515388b6d"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__zhongshukuozhan.html",
+      "sha256": "10aa13674b155e3afebb2149974e9c151820daebb96451575918b74695a3c8ee"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__zhongshuxinsheng.html",
+      "sha256": "27288cd7ceaf3790705db87a1b90c5bbb9b90e9fdff122d54bcbb24a87e385e8"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__zhongshuyanshen.html",
+      "sha256": "3c0caa36ebb1559b8064b1da21443bb0e9600cf5d74a5bfd39691de84df6302e"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__zhongshuzhonghe.html",
+      "sha256": "789ca8dcd38a9fbc41fd6978489ea6dda392ba4f2462a786a2bb8f302abeafb5"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__zhouqi.html",
+      "sha256": "88dd7ce7f9018b0b26b99b5e1ad4d083121e5891e418443b5e6c55b627029e1c"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__zoushiduoyixing.html",
+      "sha256": "74cedd043a5ffd37081fb0f8edda6ed58dc233bcaff91981cba4558291ba1448"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__zoushifenjie.html",
+      "sha256": "3ad2f2b509c7e9809f61a8f9116f3b2c53ddb82622ca6ce6e196ae34507c5de3"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__zoushileixing.html",
+      "sha256": "22e97bdca65eff9041a10164bdafce6335f08cfd1a9d0a832b501da6bfaa8888"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/glossary__zoushizhongwanmei.html",
+      "sha256": "e4f9b3cb4a650b0c840d081a30036ab2d1ceb57bfff0dab43930b8bdba717467"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/home.html",
+      "sha256": "9298415f5178168f61eff7629adb3766fc8facb7bab2d828b89f9322c79487aa"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn.html",
+      "sha256": "d8edf60e57a7381c2bfb6f2cad64abf68cdb99c49f2eafb64ace3f0994a40992"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__beichi.html",
+      "sha256": "c72dc3eaee122c8d5ae9891c4edd92cae661faeedb1ed2f3620916a935806efe"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__beichi__beichi-define.html",
+      "sha256": "b77c9b0982607e7d49ac29d1bdbbf699c1696372ce2d58cfce6dfd72fd103b27"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__beichi__macd-as-tool.html",
+      "sha256": "b290e301c67be0c40fd774319f198e97af4dca59e9706b250842463af37e14e5"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__beichi__panzheng-vs-qushi-beichi.html",
+      "sha256": "2788c35d032ad94bdf28ed5389e0808ed450a79bd561dd029a5fa5ff20ca8d83"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__fenxing-bi.html",
+      "sha256": "b1abde110f2303f430d4de365887a378892656477d2616221f482d31fa709e6d"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__fenxing-bi__baohan.html",
+      "sha256": "d16b0e5e3fc38b2e38f0cf05f924e25190dc5c4b203591a049370119b66c7a4d"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__fenxing-bi__bi.html",
+      "sha256": "09f2ebea4ff249cbd251ec34d75cde0848d4302357cb1ad85a8e119e2f0289e6"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__fenxing-bi__fenxing.html",
+      "sha256": "1542e1e36e3e12641427fc41a64ff9340d77ae3c241894b9f7c3c0f18bf50f31"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__kline-basics.html",
+      "sha256": "8552e073b46632645248f0ec73c08897d516eb62cb6d5a1452f368090c5d6d8f"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__kline-basics__periods-and-levels.html",
+      "sha256": "737e7f963f44ba1add33d7e79a470e73be74fa71d0e86bb15003c063d33d78e6"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__kline-basics__what-is-kline.html",
+      "sha256": "7d9c31710fa7467e454138c99ab7644fc28ac0a065757dd47b0e1e9ab5c0b4b3"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__kline-basics__why-structure.html",
+      "sha256": "4921741e6a04b89b303d04c5bcdbf27914b5c73d99a1ba397e2554b6842769bb"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__maimaidian.html",
+      "sha256": "b1e175029b0d24b6bb80f9d1c70e5c7f8e2762875d5bba79eed2b5d27a6d8914"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__maimaidian__first-type.html",
+      "sha256": "12a16f0675c5a85ad6cc7fbbe347ce98f7547b62687d855149c23042e329e469"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__maimaidian__second-type.html",
+      "sha256": "c3666ba323480664a2ee02cc4e6149cb0a7bc9293605034aed9555417482467b"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__maimaidian__third-type.html",
+      "sha256": "8c2be51ab2e6f056ca60cf4972e2feaedfffafeaeb73f16c6b8d2ad4f0ca82b0"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__recursion.html",
+      "sha256": "17a155e778a44e82e4b31607797a6a83ccff2cf6eaf476b852e240f3ebbb30a6"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__recursion__complete-decomposition.html",
+      "sha256": "ed87d2c2e293df33131b3787b728fcd362b9f3115de650e693b5677e545a5855"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__recursion__level-recursion.html",
+      "sha256": "0b69f1247deea538656b01b855cb9c466442faa9b2e0062e0dad76b6df632e88"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__recursion__multi-level.html",
+      "sha256": "069cbac6125e197e9c2dc80e897ead682d86e22da0c7a3819b5b7ea629222bc5"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__recursion__qujiantao.html",
+      "sha256": "b2aa7f046c9ae6589b4dd85d1b27281ca70e59e7660709999c5c206354fa2dde"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__worldview.html",
+      "sha256": "978f6fe56cbafe6d4c827146a5236b84c5fb938108beb2c200323fd7a18bdb63"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__worldview__classify-not-predict.html",
+      "sha256": "c279c1b9b11369756cb81bd0b0b555ec0c1c382a9a4c8cf7dd24ef226afa47d9"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__worldview__levels-and-recursion.html",
+      "sha256": "7a6b4d29a6cb325cfa8247df0d00ea880479e92f238e6b56ae9ea881a591d4d6"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__worldview__zoushi-zhong-wanmei.html",
+      "sha256": "aa86286a098695394b7cd40c13299fe71be919a53a4fede715caa7acfce41cdd"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__xianduan.html",
+      "sha256": "03ed66a9665e5cc602172b4bc1c7a4271aa8106d23d09a5a01cdd578fd32d215"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__xianduan__cancel-and-recover.html",
+      "sha256": "a584b590afa94a6151267051ffffb45dd34d88a40fc326dac1db7788dca6a947"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__xianduan__destroy-and-confirm.html",
+      "sha256": "1ef371b2429b8c5047a3d15297f73e6362a7afc5d640d5c8dcdeb9918f9415e5"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__xianduan__tezheng-xulie.html",
+      "sha256": "5607eff5d0a6b183e7b5522d2910778c54c4822e26a73992e6b3874ee344d01f"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__xianduan__two-cases.html",
+      "sha256": "3f77396fb89b8ddee2de9089f95c4a06de017a783f3179a752e2ba20efbdad71"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__zhongshu.html",
+      "sha256": "71840d7ec20b8200ed40cf515ca851f5b262ae2ac9b4aff323fffb29789af2ef"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__zhongshu__panzheng-qushi.html",
+      "sha256": "10fbe4bee7d4fb0e7b3bf0fa89e3791725e27deb5c6d1a62594fbd21d5cdf4c2"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__zhongshu__zhongshu-define.html",
+      "sha256": "c6728d5c0e36b2001ed29280832c3bab296b8f8bf800174877f06a228cb4faa4"
+    },
+    {
+      "file": "sources/chanlunzhan/raw/learn__zhongshu__zhongshu-evolve.html",
+      "sha256": "4dfc78f54988936b4377163aedac03d3f9d625ec41843822d62775958c23ccac"
+    },
+    {
+      "file": "sources/chanlunzhan/README.md",
+      "sha256": "ea2052f31d877bf5c832a3a6a725ae596b0be3bca8b35753d0d2fd330ee345f5"
+    },
+    {
+      "file": "sources/chanlunzhan/RECOVERY.md",
+      "sha256": "54ec67e58f0b69b71de8a9e53a88cb38de136832741f6a9a28445520692977f6"
+    },
+    {
+      "file": "sources/chanlunzhan/robots.txt",
+      "sha256": "70a5f140549ed63bd101e7195e674886c684df6647299f691aad98dafce5ac4c"
+    },
+    {
+      "file": "sources/chanlunzhan/sitemap.xml",
+      "sha256": "a301bb6f267fa1f35617dcd03d6e93cc6836f3f1a58f9e5d96f0a60e53beaff9"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108.md",
+      "sha256": "9e07fa60d2823d0bc757e729fdfe352e1f6c1e7b76f3d814a92e1e6dbdb8768c"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__1.md",
+      "sha256": "9b3ec67f1537f628facb5f859a4d87a5f80eea48dfaa48951a501a95ccbe4c07"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__10.md",
+      "sha256": "346730be2772e1e4ac61e83ff3ae51798e22214d8cdcf46ecfd3ada17a10ed04"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__100.md",
+      "sha256": "db92de961f497ba692c5162bc203410b8f26773b3dd15f61d2f8bd3f71cd1b9c"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__101.md",
+      "sha256": "1fbab0b0f1b5132a727a5133104f823ecf2b5993e922b2c77ffbcaaa7915b374"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__102.md",
+      "sha256": "a6464066ea25531ddbe34571a12dd267712464f2b2acfa4d19e30b0df52249c4"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__103.md",
+      "sha256": "a8a13541fa59b7aa24747faaea459d172c634084fa45697d3f978a55dbdc04f1"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__104.md",
+      "sha256": "a5fe2854c193ae2bba3f7c6df3478be6c40a190ead6a2e14f9697de4627730bb"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__105.md",
+      "sha256": "a8919f264fddf1be48cbc2fb69f56aec9d220511f0ec5a3b363a8437a28edcb8"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__106.md",
+      "sha256": "1f521b432147948a9af9a311f77208b460f0e5b6f210565bd4d6d0b4b2dcad1d"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__107.md",
+      "sha256": "2aca2e888de2b6e354c39067965e6055b24e2dc701efe344b75bb4eb612429bb"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__108.md",
+      "sha256": "60371b48860952783acae8b13ba8558dd134e9ab493c40aa49e3ed369c675065"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__11.md",
+      "sha256": "6ca347710de26b9b3c8bcb83ffd6ea5f18855dd1cfa532487da0786e518bff80"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__12.md",
+      "sha256": "6fb86a1d0cddcda8ae7b4fd9380af09ee904b85f5fe1624d781e859ea99e7419"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__13.md",
+      "sha256": "3ed464a28a913cbed9a8b4247ee07cf7867ac4b2d3ca299d0fe77db421e63e3b"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__14.md",
+      "sha256": "abf72244c6a8f2b4314630344ebf32bda54238b4f9c32cb5931a10004e08cf2b"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__15.md",
+      "sha256": "90a915dcdc7b579f87dc127c37ea3791971427e5006e0c04a8730894f6a03cfc"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__16.md",
+      "sha256": "2ae1b8762bbaf3f99305907229fb1d65a3c414e5df944b73577874433f203a13"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__17.md",
+      "sha256": "f35c24e5ba709c0a30ad04895fda28d7fbd5931f50da971fcc39d76bbab343ef"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__18.md",
+      "sha256": "5ffea82a97166e54fc42157eb2abc60d0e5fc96050c160eb477202e20aff44c0"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__19.md",
+      "sha256": "797098c1ffdcb63526c0860fb6869b81a0b6b18837e62e1ff0edcfc2a136a536"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__2.md",
+      "sha256": "0a8ea4622f5cc6036d489a3cb4187e41a554318ba16ec69f33be22397aff4cd0"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__20.md",
+      "sha256": "1a7b1ca482190e46fdb60a7bf974f6d1f298bed5076ccbc2e420341875a28adf"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__21.md",
+      "sha256": "9778985903e2832e2a18174f7860bced4c862909b972cf265f58b220fc596566"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__22.md",
+      "sha256": "19729992eb19a9d7a28fea0b671c3ff17861f663c23b6d2e282966e4fa976223"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__23.md",
+      "sha256": "4d6172eba26f447bb9ba545b8c117a78fd7c1e43375196b0fb085fc42fcc4310"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__24.md",
+      "sha256": "e36a24c9ae65165161997b12b0c0fa208c3abefce61c65af4136da3463f6ec0e"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__25.md",
+      "sha256": "e3e46db00e5221e4220ba49120e16b50bdf1c03bba265bb0da1c8b31e8b8336e"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__26.md",
+      "sha256": "74182128e87d17389d64e48fa4e661872b9d8b758b2c3e97d9173e491c693c92"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__27.md",
+      "sha256": "b8104649cb74d50a4344a45a369fb6ccf4f59ab3208e63015cbeab60359fadae"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__28.md",
+      "sha256": "7242c6e0ea74e4c235807f34c61ab8011ab60a20f65e8feca0752aeb512dc318"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__29.md",
+      "sha256": "a199f747277c0cbdc38a59a7586db27c00ae1da851ab3373a5baaa31c3fddb4b"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__3.md",
+      "sha256": "b14a064fda18218aca66b6b7e7cee60f4a1f5defade8b1fb1030733d293369f0"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__30.md",
+      "sha256": "316f43807f25fc573289f55dc61d3a3d0530f3a2a36c5aca26473f58360714cc"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__31.md",
+      "sha256": "d698e95c77e8bccda74d9249c7f3a4aaccac82f5133a59c1d90d59f0e678a4e2"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__32.md",
+      "sha256": "bc20b641a784bf1b4e2fec96844b135e3d0674986efa2415f14e6ac845ba7354"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__33.md",
+      "sha256": "38ebbe16331dab8ad701630b64e2dcbf62455f897d126dcd25a36f0a4d868438"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__34.md",
+      "sha256": "12a058d00b2a0bb884eacde3027b2b75b6396e0ee4e3296f5e600f1f3a540fae"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__35.md",
+      "sha256": "bb1920426a16268b1605ba3bc25543a68ff4857deabfc2efb2b60f5329b3a97b"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__36.md",
+      "sha256": "ff53263df45ee1ee82708f1d20cfb4ebe850368975dd29f16ee43b4245ddb244"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__37.md",
+      "sha256": "049c9d1e598409744a05a6db2f54c1263e6c1aa28bc165d64a5878fceee6c672"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__38.md",
+      "sha256": "ba54917bdb27e69916ce2533afc6e0045cd1ee1ee7d3426ee28d141868f8ebbe"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__39.md",
+      "sha256": "2ffc6e2ef1098b82e0ed0dcf80dc4d60007f95ed371c1b5654749dfc86b0c050"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__4.md",
+      "sha256": "e13d0ef58af086e2b6c6e0c77e8cdd732484af75ee72a87f20b7391db26c056d"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__40.md",
+      "sha256": "47a7fe0b4cec3dae4cdbbc005deb847b85960a294d0151aef3666821448c8b1f"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__41.md",
+      "sha256": "45f4703a9f50a1646fd1b70219e340976e51304430cfe9fb148f9463cdfae902"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__42.md",
+      "sha256": "c1f952c15432c8364003956d2a45425fb21e390d65116a2f515598b7d6f1def3"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__43.md",
+      "sha256": "bb9644d5183481ddc4f8a427d9915e3a66daf08fe8d25edeaba921ee762bd37e"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__44.md",
+      "sha256": "35f1a7965f87fd3882a173ea84e1cff6e0b116a798426656f81683650df51814"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__45.md",
+      "sha256": "364d69d00f222f52d03e4960c4d70f8d85aa775d54593c0bedc2e88ddeaccda3"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__46.md",
+      "sha256": "8d4fe97ad720e720fe6165c1528e0abf7088b702fd0b09b5f07bfbfe9ae61314"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__47.md",
+      "sha256": "201a21bb82dd9b8fcf88c4da10a838b509df3ee5162f9b2165dbaf6f52186dc9"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__48.md",
+      "sha256": "5701cbfe1ae2c922fed52aa6816a8b8721b4babb7cab6c47a5703466b2dad9af"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__49.md",
+      "sha256": "20d6eb5adc65a0f40e9c18f34aaebe782ac2250fd7d728f39b22d21bf0961594"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__5.md",
+      "sha256": "1e74b82be7675a5020857de3f42bc433f3c57b8b3030ce1dee3ac3cf8e3ab953"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__50.md",
+      "sha256": "2368cbdf273638d9ece9913a8bbbebbd99721f8f09ac50911006245e0dc54956"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__51.md",
+      "sha256": "12f7795dc4dec4f48e817b2df91639a76f80fe219072243f933be514bb1c3d12"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__52.md",
+      "sha256": "b0cc8e074e93fcf529bc90b451cc9c2f716c5b5d126da1ea35d9ddf642edad2d"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__53.md",
+      "sha256": "fae52e6b1a6d2ffdd816d64e2d3629ec30296d6b6822d628976f1881f68479e3"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__54.md",
+      "sha256": "6de048667816630f9fcf8b067aa0e046d8f04d7e02914c087fe88648b9cd015e"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__55.md",
+      "sha256": "0376f5cc141ac382ddcdd6a05c958af634785654fbd11b1476f02de2ff72a1c8"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__56.md",
+      "sha256": "75b279de5f1d3a8194e664b2666e1cbac9f72537aa04be77a5efa49ca50f25b2"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__57.md",
+      "sha256": "ecf92547b3cf5d50ad524de35721e39ae7a86764632f0c983fcafba0891f70ea"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__58.md",
+      "sha256": "a3e98573699cd28ef5a5051e7e68f96bef2374a0fa5d2f9094e8d0d8f693eae1"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__59.md",
+      "sha256": "1c1fc84eb09da8f1b1c93494a8ccb6c83648d11bfb68fd5b52078bcce592d93d"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__6.md",
+      "sha256": "f96ee1245b66b1bb42c7aa99819db76c0c004c07266533ed984d27f57421c09c"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__60.md",
+      "sha256": "e0eaba1a816fc0586a76eba31c56208241bb19a6401ca85a544627a9e4af9a3f"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__61.md",
+      "sha256": "09633c983ae4f58b5f2f9acafb6187af8a2a8f2b2db83329e85faa9a8a50c539"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__62.md",
+      "sha256": "edcd49e3ba39cd7a40dac3a8847fd9d4508db59cb81571064513cc64da4ab124"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__63.md",
+      "sha256": "9f51de7694c08edf97cf1538f13941205620c1c0d1f3f69e57ddc4a613a142a7"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__64.md",
+      "sha256": "0edd38e5fb7e8e808f39379f0a3fdf28061c7daf5b06bef93e3f422ad29071ec"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__65.md",
+      "sha256": "856ddc44cd1a8039b23148b2d67927d4eb3093268d4e467f615366908aa821e6"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__66.md",
+      "sha256": "397fe750022fb14bd97d9825a7de8573100d3698068f1cf299b8a4d7f2b53235"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__67.md",
+      "sha256": "e1b9994c71665ed5954adaa674bd07f9c90541cd6fb771d93fe53f969dcb24fa"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__68.md",
+      "sha256": "21412cf3a3279761606d5d21891725686c7713139d45d69ba655b3047e91a487"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__69.md",
+      "sha256": "724660c731cdb29917ca5aff51d46d392aba6551f9ef1b19c1393ea09bd89290"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__7.md",
+      "sha256": "a7b155a07c8ed86fd53b4e4def8c21f857ad3f3ff5d1abfeae8f3da5b0032920"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__70.md",
+      "sha256": "fd84f58a1c1c765079ea9dc15a02559eeea7c068ef37f3c439dc3acee442ab25"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__71.md",
+      "sha256": "1bb6bdd2220fef79c1530caca6eb68598c0de3a0c4c41927a6a88e9801aa2d09"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__72.md",
+      "sha256": "da4ddcff46790044bfdfd9156a41b2cc17b2ff7bb2a78a9b25db420cf6a87584"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__73.md",
+      "sha256": "9193d19b0a30192bab2921d281e3a8e3bd9c1f25d610a0a7af2230f8332c77c3"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__74.md",
+      "sha256": "85783f582e0baa8dd204162142d8d7ebdbb926891108ba2fe6b050c1c50c3d13"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__75.md",
+      "sha256": "231328bdfb034f057e4095c0fc6212e6d7f8154ade06364a9d696bebfa49544a"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__76.md",
+      "sha256": "87cbbcd28c512dba1a3267e7e5105d4659f43744eecd1c215680d707f7c2312f"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__77.md",
+      "sha256": "3b8ee22a9e8ba30f4cfcb54e271a25433e0999fc8b92eeffc6f60abe161e810f"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__78.md",
+      "sha256": "34c6924511438d774a3b31a3fde293467d35cdeb2ef5837fd6c913bab2de6391"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__79.md",
+      "sha256": "a368571ef6240c4f946f32f5727c45217d73ab215b0cf99562efa10d84df0308"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__8.md",
+      "sha256": "7adec91d0126207d5a7c9ce0cf987cbddfdcf5c7fde9ddd6483e70f839ec1280"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__80.md",
+      "sha256": "2e4b7b7d29c9856c233b2df84cba6986cf445d8d3e14eb89e681445be250889c"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__81.md",
+      "sha256": "50ab185edcb23718cab271c573ddef47a0715be06ff301950bb402e687199edc"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__82.md",
+      "sha256": "38af8589f9b01dc5492045d030a38a04c78fc5805c31c4ace2a4ffd38308ac4c"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__83.md",
+      "sha256": "e48bbd7707496c9e75bd28708b862ae4cc86986c6ae9feb63d9c8f5bb6a755f9"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__84.md",
+      "sha256": "9d61ec9138cf9adeebd6cfbd27ccb6585497acf7f3028fe4ffe98f9787d82fa2"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__85.md",
+      "sha256": "1f89f52cca1841c0f0f80c7d2def4c24b4cabf3bf58c6633219f4cfc60153057"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__86.md",
+      "sha256": "11b24390ae256fab633927b6f38a08d5732cd03226cc8a1b342355ffc5450f81"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__87.md",
+      "sha256": "5e0dadf1538eb9581afbbdcb951bb38c637b1880ebb7550220454061d65e3ba8"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__88.md",
+      "sha256": "c2938e7c0dd9c226d90f932418ff4dfb55b0d10a73b14c700033f010db8b1696"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__89.md",
+      "sha256": "c5ef6f351d70611d01f9e2c06f937bee89233020eb28fba64f13168415d4e7a6"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__9.md",
+      "sha256": "547846af74aedf46e38db7a57e4f614135150b38b536c42713d32a3b8db947c4"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__90.md",
+      "sha256": "585babc4c4820810631a12552131ff28c564d12485ccd24d04197b685bcf0d65"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__91.md",
+      "sha256": "779c8e6b8904deb7238c426dd8a0f1858ffe4d765bf0cebc4a6c0fc147e61e5f"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__92.md",
+      "sha256": "d83ca0a8238a31b21f9eb41a03a6d502d694cfa5edb434b3072e3e32b6066b2b"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__93.md",
+      "sha256": "4ab383b2e4be2167f293e2b1dc1e6268d2a4985b5ea68faad4e36d19c230b25a"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__94.md",
+      "sha256": "32360a224c36cce5a3e85fdd4c6d12cdadddb49bcbf5c501769617b007aa73bf"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__95.md",
+      "sha256": "f097e2a07b759e18157f971edaa947db979505a43f7e360923dbed377985c67b"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__96.md",
+      "sha256": "d654e1ae1f13fd8b265d7611c643b4d2b15e7603ce0eea545cc866f8c8e107d8"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__97.md",
+      "sha256": "262d30a1fe2e082de601efcc862997d1b551abb8351ef212058b9493ac467fa5"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__98.md",
+      "sha256": "f37dd2fc90691ca07097e41538a6a7480c445af9ca10c0c185f04fa320787d5e"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__99.md",
+      "sha256": "a030582ab9e30d124438b2b884455a958b5e35048c5dd9be2d677963a16a6f28"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__w3.md",
+      "sha256": "c295b2a0d12845abbc2901ff8c66324bda2ce1d753b7de16de0dbe21404e2019"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__w4.md",
+      "sha256": "d0e5c146a57f01c680ad928f10f51ac8030451c50d0aeb9f228cf824ed71d3d6"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__w5.md",
+      "sha256": "dc59bf182e8cf8ade99b64306d1969a1d1686df9563a7f39d9f254abd78d3de2"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__x0596.md",
+      "sha256": "2a484f9cdf89112167ac5e827b78673864cb69d4c62a686ef777b78957726a40"
+    },
+    {
+      "file": "sources/chanlunzhan/text/108__x0912.md",
+      "sha256": "7e51b994ead6014aa482749d11661c0fbfec0c4b4af60226a645f28cf27a4dc5"
+    },
+    {
+      "file": "sources/chanlunzhan/text/about.md",
+      "sha256": "d50365c5f3bfaf962652dd0663623e11c1fa2b43ef5e22b8bd2d0c320ead20dc"
+    },
+    {
+      "file": "sources/chanlunzhan/text/disclaimer.md",
+      "sha256": "5f3b7a5a77e0841cc6746cb1f3b08e5700ef499f0c749e8fb190bf10733101e3"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary.md",
+      "sha256": "e89cd5f10b5677378ddb26dd01a613bfd7b0e20a04f9ece54fcee3d09eb56e57"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__baohan.md",
+      "sha256": "a1a31e464d75d8b04f4db19465d047f19cba50f2522c6a32eda2cebaa3bf311c"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__beichi.md",
+      "sha256": "7d727b8b6f224d04ecaf4ac5d1a8ca7485960638d9131a1b3bfadd278951722d"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__bi.md",
+      "sha256": "d99c79402b0546e302bbb8d5920603a562878d6c08a0bb4b747a1dac362715ac"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__biZhongshu.md",
+      "sha256": "f23a676d42a1b55cdea1c2209442ac9632298aef186692a4cfe32d2fcfa766de"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__chengjiaoliang.md",
+      "sha256": "acb2b30f0ac34f15ee3a2c5e642252c2db2009d6c9ac4d9bfd6ae11ab4e2dcf1"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__cijibie.md",
+      "sha256": "691700ecd6e0d9408979a1059f8044baf5e16412f1a36c0e5858e2782ab763ba"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__dierleimaimaidian.md",
+      "sha256": "899dc713fbef6da5302c5c05e388792dba12641c0c5788d497bcadc10f9796d9"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__dierzhongqingkuang.md",
+      "sha256": "9a9cb52929e9653d0d8eb9b985d177baa415b7c03cbf872300aa99d07ed5605c"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__diguijibie.md",
+      "sha256": "63f0e0225d01aca8743b38f0464d62860cb3ff86868cdc3b760b427e1eb23cab"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__disanleimaimaidian.md",
+      "sha256": "02e06d9a8864fcd9436555b460a2ca1ebfb2fe7b9d872225256317f743fd4edc"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__diyileimaimaidian.md",
+      "sha256": "a3d02b5e16bfb02c3b9a5260fbe19023e15079e3506fcbd8cc18d2dd2f1887ec"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__diyizhongqingkuang.md",
+      "sha256": "dcb1d8de605ec207d2467e5382b369e6a4e162e8f60653ddea90499b7ab1d169"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__duojibielianli.md",
+      "sha256": "c9a6d4959044aa9b0de9307ff20fa12d1c2f76e695ab2b4f36334ceb9e371167"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__fenjieddingli.md",
+      "sha256": "83e0e8c39f4682c621bbc4cb61c8982496e181da2ce6a727fea2d3c8236c23bd"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__fenleibuyuce.md",
+      "sha256": "62be227acb5d45c126c046eb1d8a9a51d9cecd15cc0885be30baf88f8fe4eeda"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__fenxing.md",
+      "sha256": "653b2c284e0b957a37c2909a75b85270d63fac8984c1187c15b14d8c2e64bb6c"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__fuquan.md",
+      "sha256": "d5b782f3ccc88362ea7c9e3a55b4f3d257b2482974767af4bc68d23b5cf5b0da"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__gg-dd.md",
+      "sha256": "75cbf3effd1bb9b83c7bca9998780feb365fcbd4419180afb6b962d410501c28"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__huilalingzhou.md",
+      "sha256": "94351eb098aa05a0854eeabc34f3f9488c5ea43b5e3d39996b5d85f146c9a6d5"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__jibie.md",
+      "sha256": "e058677c4b91cf5880e9507051689be67f8f229e057e1ab1052f4cec335b3e32"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__jinruduan.md",
+      "sha256": "f7c3f5b6004c55f7e349ef79a547a2e42fc5f59a419785bf22fa36d76d0941cb"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__kline.md",
+      "sha256": "81f7b9ddf2dc835fca78c91bff494be094c954fb2815c9cd433211950ddf5f47"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__koujingfenqi.md",
+      "sha256": "da42ea4db15a94a04c99231174b5bfa69a13a26dd6888a4126a45668879ce86a"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__kuansongbi.md",
+      "sha256": "f8f79cf55cd261caae10710d7a8a40ab17e5a8755268ac6fd600875fc0cc8e62"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__lianjiedian.md",
+      "sha256": "a0840503b412052aa925d00a703cbe3a4b844f4d86c7562af79973ff07e2b391"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__lidu.md",
+      "sha256": "d69dadacd386cba7c567c5129b99586fe3faeec2e067514671d4fb6209200274"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__lijinzoushi.md",
+      "sha256": "68ef9403fb01765282e2a99983ecaca2a2130a2ac5bdddbdcc2e2c18a2cc2389"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__macd.md",
+      "sha256": "346223694e475787ac053809ebface52638bad9b446a05d05df7b2c9d5549444"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__panzheng.md",
+      "sha256": "b59f79e28e33cdb3a491c6fae6bd4f9ecd62457e57f327e8e316c044b7c3b0d0"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__panzhengbeichi.md",
+      "sha256": "b83fac405095f1d10884187a68093d9ce3690d1761f33e973a52487b07296177"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__qujiantao.md",
+      "sha256": "a800a4e4e77e0b5e17b73010e2e2f1a6dadf91cb442fb76a8b0253ef859ce9f2"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__qushi.md",
+      "sha256": "cffa258c3169f0e18c4fda73e678d8d89b4cf66c9c021ab4e576da90f873c9e1"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__qushibeichi.md",
+      "sha256": "8f97fea7355416e12f34ce5d4dd093202e6751cf9944c4783ebcede001be1b30"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__sanleimaimaidian.md",
+      "sha256": "45afc617d421c55389b9fc7c217e58199ea1af2ecb633713e86ed9440b3d9797"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__tezhengxulie.md",
+      "sha256": "5a5305f51b18e5100a58ee37f92772791659d0efc142f2a92462b0dc6433b0a2"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__tongxingfenxing.md",
+      "sha256": "f603a6736fc537a4f39d8d981fb98ff552561fec8ed8ecead0eb79edadc0e478"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__weiwancheng.md",
+      "sha256": "ad60ee18d70a9c77b9da80ef1bb4c1165d9e9d12f882caeab849732dbeca1ab6"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__xianduan.md",
+      "sha256": "e255684166347455433ce8d0132af989b6c849219a7065c359872fa5029f3681"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__xianduanhuishou.md",
+      "sha256": "a72879080d7f9ce19ef9b89ea5d0ae06982e50560bf49f3bc3b16cb8eae2866a"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__xianduanpohuai.md",
+      "sha256": "e6170f324be5ab216a64e9f52e32ee9b516e061f5b15a4f60bfdc74e8c928c94"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__yangebi.md",
+      "sha256": "69c68205624f2033ffc0217537553310d0c530f4e5bb4f9ab1ae6456bcd43167"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__zg-zd.md",
+      "sha256": "ee58cc8c06201bae005fc7173dab6f6861acf05d0d7add9abcc68d3298e04bc5"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__zhongshu.md",
+      "sha256": "42f42d6f60d77177d141a9dd5c3368b254bc196ab07a1bc029107c53c64418af"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__zhongshukuozhan.md",
+      "sha256": "d9ecdbcde8c6dfc79d5023de9477dc140c920e5b0942a8587f3a7bd9c465564f"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__zhongshuxinsheng.md",
+      "sha256": "5ae0e58e9222c0fe83ae989367211db624d0e66321582b3d2c2c60d9452a6c32"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__zhongshuyanshen.md",
+      "sha256": "77a187fa5e07580e92f7d90d7630c2baa10af575d9bb21c3fb62f4fd025b20ca"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__zhongshuzhonghe.md",
+      "sha256": "55f1ac4be4c5f98f49266a5c35b70e882fb93e889da4560fefd1ccb893adcdd1"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__zhouqi.md",
+      "sha256": "26fcdad8dd3abf2b3ff1a65c3fb906cfa43752199fd1ab047629fe2fe4e2d35a"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__zoushiduoyixing.md",
+      "sha256": "dac60698879a33acdbdc878a426f70efb6c4505d63d6c31530208af0f1db3267"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__zoushifenjie.md",
+      "sha256": "aa435917aeb3220230fe573fbc93c3827aa331bb8a774285ea6609118b9858ba"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__zoushileixing.md",
+      "sha256": "e38e316591da12bd783668420d76cb80366cde9f5225d3e7f40085ee640ae2bd"
+    },
+    {
+      "file": "sources/chanlunzhan/text/glossary__zoushizhongwanmei.md",
+      "sha256": "f537e9a2a453e7bdf9ed297b6591e3a86c3375edc8714a513cacc4cffea5fcf2"
+    },
+    {
+      "file": "sources/chanlunzhan/text/home.md",
+      "sha256": "b725ffd613159d76f85d4d1f90556d507b94b0340ad6d7d432da00ab98d5b70f"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn.md",
+      "sha256": "effb789eb36865ce6538e0ef82309b80c6f17587605b5a02533944f9840a28c3"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__beichi.md",
+      "sha256": "a84710751df6ccbcfc963f50bc481905cea3887262ce4ad889ff3d3e4560dc54"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__beichi__beichi-define.md",
+      "sha256": "c04ebaac06bd47d2197a83310f0654a5f0578fa637aba61af6bba955b2d4e533"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__beichi__macd-as-tool.md",
+      "sha256": "07cf70f7b64d8c5456e4dd1b5d7b472772ab1b77f3b09e6a9dd59ca2aa187325"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__beichi__panzheng-vs-qushi-beichi.md",
+      "sha256": "f9c546d7852cf5d472e679767121bd271ca5664ed44f64f3b27bb68267303fdc"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__fenxing-bi.md",
+      "sha256": "70610fcfa537741bfb8cd6b4f916b3e0b8e84603fc02e4d0eb5b344df8630c15"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__fenxing-bi__baohan.md",
+      "sha256": "493d0d4811b0fba2a8a73bcfb50a5e5aa0ffbdbbb79f915b80b40911efc37c01"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__fenxing-bi__bi.md",
+      "sha256": "db692d3eb33b4cea9b1fb38978ea92bbd8f5a08b0ace1ba97b391f8e20c08245"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__fenxing-bi__fenxing.md",
+      "sha256": "ddae94871d3ba0e2e6819f0bf75586a79a87b15c97726d9b5b49958adc8708d0"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__kline-basics.md",
+      "sha256": "30e4ef4c56d513f115a4150bea5876d5c3085460876e5610f9737cd9a65b8d21"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__kline-basics__periods-and-levels.md",
+      "sha256": "63b8d412ed51f556c37bd6652ef2767d5ea0a7aab0c8d8953b6300a94abf809c"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__kline-basics__what-is-kline.md",
+      "sha256": "54b06d7126824cb6ca8074eef5f34690c722a9cb40989e2d5fd9c32aee581d59"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__kline-basics__why-structure.md",
+      "sha256": "e69cd96c85cd6ff1d42db41466e019a40f4ab7d14a7153e274e7dbfbd6cdc8f4"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__maimaidian.md",
+      "sha256": "618b314cefe77d504928c96555c5763477def3d14be22c628ef8c43f3c5bb5b9"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__maimaidian__first-type.md",
+      "sha256": "e003c9c6eee760c095b7b47e860ff635e4b7e40170b13a241168ef44ac17e319"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__maimaidian__second-type.md",
+      "sha256": "d47891ae5cb2473f74fa365863e5ced6987a8567d1bf709550b2852e006d0bdc"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__maimaidian__third-type.md",
+      "sha256": "68dcdeffdbdcc04c730d4dc86d8b641a490b616a8313d61bf1949598a4d47181"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__recursion.md",
+      "sha256": "c780f9d8dd756eafe958cf5f42934b573826101ea5008bee1169adf7bb654a75"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__recursion__complete-decomposition.md",
+      "sha256": "bf27fdf1f9a162f5004a8d6394bd5028e5a4c0da8331554fa2acb272479f45c3"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__recursion__level-recursion.md",
+      "sha256": "413594b5cea77802ff2524f2f650d5259096774c634dcca57cc8df087ddf1be5"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__recursion__multi-level.md",
+      "sha256": "2d5670bc40927232446026ecd54585b05fbbaafb63346ad188b508eec5cfa6b2"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__recursion__qujiantao.md",
+      "sha256": "308d9775f30b2c15a0faab5dd855a643aee91a783c4925587340e7348a8b0c41"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__worldview.md",
+      "sha256": "26155c073c0bf270a0d5cacbe839d41ec4a580a30b1b217ca1e6b47de7ba62d2"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__worldview__classify-not-predict.md",
+      "sha256": "3b56955170b68e4b8f49a2ebfe9755c17cc1ddeea26fee92f48329b5ba83fd81"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__worldview__levels-and-recursion.md",
+      "sha256": "2742bd6620ed44ab9e21d38ebb234fbe5c34aed8e0aeaecdac5427f92a13627f"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__worldview__zoushi-zhong-wanmei.md",
+      "sha256": "6c170aa4eec5bbd9a26529cdf51cb7950949d3e8af5808696c633ac2726bfe4c"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__xianduan.md",
+      "sha256": "94780d6c0cb748eb4b166b4ebb685681594b6152ecfd79b104131eaa728e1aff"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__xianduan__cancel-and-recover.md",
+      "sha256": "3eea575f2ad316e94fabc4dc646d5f2a1f9e3c918fb146b67a875b0c57010d97"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__xianduan__destroy-and-confirm.md",
+      "sha256": "cec9f9bda7b9a1c6790c933dfd099f89a7fb31cd137e0dcd68b331f931913534"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__xianduan__tezheng-xulie.md",
+      "sha256": "99cb983e859a77a3bd1286a6e4d633315757f6266a280f6ed900cba052d84276"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__xianduan__two-cases.md",
+      "sha256": "3fffbdb4f91fe7507c52e65cef0c9e126f2a267eb31c69d12d5ea1139308f7cd"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__zhongshu.md",
+      "sha256": "f31e06fb9f4f95a943b2fb0c2b6c91ec56d6ca54cd479e86a43f18b633a91332"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__zhongshu__panzheng-qushi.md",
+      "sha256": "b4ca3933af303b81ff31d91c19379d27668cf23e818a006fe6d6eace6144a5a9"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__zhongshu__zhongshu-define.md",
+      "sha256": "b22e4055058da4a6cbf84e62e25f26859e32e62b69f088f0ff2a8c0e003f256a"
+    },
+    {
+      "file": "sources/chanlunzhan/text/learn__zhongshu__zhongshu-evolve.md",
+      "sha256": "5d9d830bfa13ee61cdd4296c438c1a7d047a971e85681bee1859a748471bdfa5"
+    },
+    {
+      "file": "data_structure.md",
+      "sha256": "490feb049725db0626b6f401185ceb49aba3664002515e37a303de2485f71654"
+    },
+    {
+      "file": "notes/12-缠论站系统学习总纲.md",
+      "sha256": "dbfdbfc840a3a84a742a5081619c982f4cab86b4cb05235acab206394eb9a57a"
+    },
+    {
+      "file": "notes/13-缠论站26课学习卡片.md",
+      "sha256": "300aee033a5e0abd288be46d8dea5a273505f30c2d5624ef3b6705f5f7270ce2"
+    },
+    {
+      "file": "notes/14-缠论站52词条速查.md",
+      "sha256": "6d3b423dea767829c8fab8f47b0dbeea922a62ed556c9fae650c5fae987d175a"
+    },
+    {
+      "file": "notes/15-缠论站口径差异与原文核对.md",
+      "sha256": "356d10d86bf7a902da8f123dbf365eff227908701e7949a28bd6dec7c404f22a"
+    },
+    {
+      "file": "notes/16-缠论站学习计划与自测.md",
+      "sha256": "a2c12a6c2143478b66fd623eccfe0ee6ca546f78e6b16cffa26b276aa84f29cc"
+    },
+    {
+      "file": "notes/17-缠论站113篇原文与补充索引.md",
+      "sha256": "c84849c288937f5e5bee2cf9fb620ed83496677ebb07d2946760b4afb4e5cbf7"
+    },
+    {
+      "file": "tools/collect_chanlunzhan.py",
+      "sha256": "f64df6e0bcb3d4626be8572553603d142d5df710fc2107b966a0494336f42c99"
+    },
+    {
+      "file": "tools/build_chanlunzhan_indices.py",
+      "sha256": "7d63f81f7cfe4fe7a5e165c773e451e4509aacdd936ca44d3f2a6f43ac4421bd"
+    },
+    {
+      "file": "tools/verify_chanlunzhan.py",
+      "sha256": "64bda22f3f4eb92641c23f571806c1e9574a4629a258f1eb9b49c9c2b326179b"
+    }
+  ]
+}

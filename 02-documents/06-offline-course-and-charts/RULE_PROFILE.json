@@ -1,0 +1,13 @@
+{
+  "profile_id": "course_feature_sequence_recursive_v2",
+  "stroke_mode": "strict",
+  "second_policy": "conservative",
+  "third_boundary": "strict_outside",
+  "segment_rule": "feature_no_gap / feature_gap_second_sequence / documented_first_pen_break",
+  "base_boundary": "L0 confirmed segments at selected data resolution",
+  "decomposition": "same_level_completed_center_cut_v1",
+  "turn_confirmation": "opposite_center_break_completion_v1",
+  "rank_is_not_timeframe": true,
+  "strict_original_equivalence_proven": false,
+  "execution_allowed": false
+}

@@ -1,0 +1,6 @@
+{
+  "token": "72c92dc4-4a1a-46f9-9731-c6436fc8ffa4",
+  "purpose": "replace waiting scheduler with verified conservative resource settings",
+  "previous_supervisor": 10928,
+  "previous_runner": 58476
+}

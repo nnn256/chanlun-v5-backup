@@ -1,0 +1,5159 @@
+{
+  "meta": {
+    "schema": "chanlun.period_catalog.v1",
+    "synthetic": true,
+    "period_order": [
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "60m",
+      "day",
+      "week",
+      "month",
+      "quarter",
+      "year"
+    ],
+    "source_groups": {
+      "minute_source": {
+        "label": "短周期合成教学源",
+        "source_period": "1m",
+        "bars": 1920,
+        "note": "8个工作日，按A股分钟收盘时钟生成；非真实股票行情。"
+      },
+      "daily_source": {
+        "label": "长期独立合成教学源",
+        "source_period": "day",
+        "bars": 1800,
+        "note": "1800个合成工作日，忽略交易所节假日；周月季年仅合成日历完整组。"
+      }
+    },
+    "cross_group_evidence": "forbidden: minute and long-term sources are independent teaching experiments",
+    "profile": "course_feature_sequence_recursive_v2",
+    "rank_is_not_period": true,
+    "strict_original_equivalence_proven": false,
+    "execution_allowed": false
+  },
+  "periods": {
+    "1m": {
+      "label": "1分钟",
+      "period": "1m",
+      "role": "更细的触发观察；噪声多，不能单独定义高级别反转。",
+      "source_group": "minute_source",
+      "synthetic": true,
+      "input_sha256": "e827117ce0e8b280236aea2364a379ef2fbf7abce2faf4851377b724f2aabfba",
+      "aggregation_audit": {
+        "rule": "source",
+        "source_group": "minute_source",
+        "source_period": "1m",
+        "source_count": 1920,
+        "calendar": "CN_A_session_clock_synthetic_weekdays",
+        "missing_children_filled": false
+      },
+      "replay_schedule": {
+        "observations": 12,
+        "indices": [
+          0,
+          4,
+          29,
+          212,
+          426,
+          639,
+          852,
+          1066,
+          1279,
+          1492,
+          1706,
+          1919
+        ],
+        "semantics": "scheduled literal prefixes, not every source bar; full earlier history retained"
+      },
+      "cross_group_link_allowed": false
+    },
+    "5m": {
+      "label": "5分钟",
+      "period": "5m",
+      "role": "短周期结构与局部确认；先检查所属操作级背景。",
+      "source_group": "minute_source",
+      "synthetic": true,
+      "input_sha256": "dec66af2394e1459dfd3d93610a25410b5d40dd0e48f3740cf1f33ec079d8088",
+      "aggregation_audit": {
+        "rule": "exact_complete_session_buckets",
+        "source_group": "minute_source",
+        "source_period": "1m",
+        "source_count": 1920,
+        "calendar": "CN_A_session_clock_synthetic_weekdays",
+        "missing_children_filled": false
+      },
+      "replay_schedule": {
+        "observations": 12,
+        "indices": [
+          0,
+          4,
+          29,
+          42,
+          84,
+          127,
+          170,
+          212,
+          255,
+          298,
+          340,
+          383
+        ],
+        "semantics": "scheduled literal prefixes, not every source bar; full earlier history retained"
+      },
+      "cross_group_link_allowed": false
+    },
+    "15m": {
+      "label": "15分钟",
+      "period": "15m",
+      "role": "日内结构观察；与更高周期配合，不预设固定倍数对应。",
+      "source_group": "minute_source",
+      "synthetic": true,
+      "input_sha256": "a274b57e19eb40118e8f4d391c65f73eed14471776f9771b8f47f9448b318898",
+      "aggregation_audit": {
+        "rule": "exact_complete_session_buckets",
+        "source_group": "minute_source",
+        "source_period": "1m",
+        "source_count": 1920,
+        "calendar": "CN_A_session_clock_synthetic_weekdays",
+        "missing_children_filled": false
+      },
+      "replay_schedule": {
+        "observations": 12,
+        "indices": [
+          0,
+          4,
+          13,
+          27,
+          29,
+          42,
+          56,
+          70,
+          84,
+          99,
+          113,
+          127
+        ],
+        "semantics": "scheduled literal prefixes, not every source bar; full earlier history retained"
+      },
+      "cross_group_link_allowed": false
+    },
+    "30m": {
+      "label": "30分钟",
+      "period": "30m",
+      "role": "操作级结构示例；中枢和走势关系要先明确。",
+      "source_group": "minute_source",
+      "synthetic": true,
+      "input_sha256": "640de67a2ca173026605fc662c5b7ff0914e27e7cde2a09b5bd8643da07856a1",
+      "aggregation_audit": {
+        "rule": "exact_complete_session_buckets",
+        "source_group": "minute_source",
+        "source_period": "1m",
+        "source_count": 1920,
+        "calendar": "CN_A_session_clock_synthetic_weekdays",
+        "missing_children_filled": false
+      },
+      "replay_schedule": {
+        "observations": 12,
+        "indices": [
+          0,
+          4,
+          6,
+          13,
+          20,
+          27,
+          29,
+          35,
+          42,
+          49,
+          56,
+          63
+        ],
+        "semantics": "scheduled literal prefixes, not every source bar; full earlier history retained"
+      },
+      "cross_group_link_allowed": false
+    },
+    "60m": {
+      "label": "60分钟",
+      "period": "60m",
+      "role": "较大的日内波动框架；内部小级别回调不等于本级别终结。",
+      "source_group": "minute_source",
+      "synthetic": true,
+      "input_sha256": "9da0e87e784562e37df982dfef83edba59d3bf66a21be75c169d383f813243e1",
+      "aggregation_audit": {
+        "rule": "exact_complete_session_buckets",
+        "source_group": "minute_source",
+        "source_period": "1m",
+        "source_count": 1920,
+        "calendar": "CN_A_session_clock_synthetic_weekdays",
+        "missing_children_filled": false
+      },
+      "replay_schedule": {
+        "observations": 12,
+        "indices": [
+          0,
+          3,
+          4,
+          6,
+          10,
+          13,
+          17,
+          20,
+          24,
+          27,
+          29,
+          31
+        ],
+        "semantics": "scheduled literal prefixes, not every source bar; full earlier history retained"
+      },
+      "cross_group_link_allowed": false
+    },
+    "day": {
+      "label": "日线",
+      "period": "day",
+      "role": "较长背景和波段结构；低级别只帮助确认时点。",
+      "source_group": "daily_source",
+      "synthetic": true,
+      "input_sha256": "0b0b7f3a78ed33da73d3a8c193c1e5486bc66c620d7d271d02bb25fa69cacba3",
+      "aggregation_audit": {
+        "rule": "source",
+        "source_group": "daily_source",
+        "source_period": "day",
+        "source_count": 1800,
+        "calendar": "CN_A_session_clock_synthetic_weekdays",
+        "missing_children_filled": false
+      },
+      "replay_schedule": {
+        "observations": 12,
+        "indices": [
+          0,
+          4,
+          29,
+          199,
+          399,
+          599,
+          799,
+          999,
+          1199,
+          1399,
+          1599,
+          1799
+        ],
+        "semantics": "scheduled literal prefixes, not every source bar; full earlier history retained"
+      },
+      "cross_group_link_allowed": false
+    },
+    "week": {
+      "label": "周线",
+      "period": "week",
+      "role": "多日结构背景；结构秩仍与周期名称分开。",
+      "source_group": "daily_source",
+      "synthetic": true,
+      "input_sha256": "71e355602d8f75f770e51b154311fb997b2952bcea03cc49d8444797e6156ae0",
+      "aggregation_audit": {
+        "rule": "complete_calendar_bucket_OHLCV",
+        "calendar": "synthetic_weekdays_without_exchange_holidays",
+        "source_period": "day",
+        "source_group": "daily_source",
+        "lineage": [
+          {
+            "index": 0,
+            "source_start": 4,
+            "source_end": 8,
+            "source_count": 5,
+            "calendar_start": "2018-01-08",
+            "calendar_end": "2018-01-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 1,
+            "source_start": 9,
+            "source_end": 13,
+            "source_count": 5,
+            "calendar_start": "2018-01-15",
+            "calendar_end": "2018-01-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 2,
+            "source_start": 14,
+            "source_end": 18,
+            "source_count": 5,
+            "calendar_start": "2018-01-22",
+            "calendar_end": "2018-01-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 3,
+            "source_start": 19,
+            "source_end": 23,
+            "source_count": 5,
+            "calendar_start": "2018-01-29",
+            "calendar_end": "2018-02-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 4,
+            "source_start": 24,
+            "source_end": 28,
+            "source_count": 5,
+            "calendar_start": "2018-02-05",
+            "calendar_end": "2018-02-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 5,
+            "source_start": 29,
+            "source_end": 33,
+            "source_count": 5,
+            "calendar_start": "2018-02-12",
+            "calendar_end": "2018-02-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 6,
+            "source_start": 34,
+            "source_end": 38,
+            "source_count": 5,
+            "calendar_start": "2018-02-19",
+            "calendar_end": "2018-02-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 7,
+            "source_start": 39,
+            "source_end": 43,
+            "source_count": 5,
+            "calendar_start": "2018-02-26",
+            "calendar_end": "2018-03-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 8,
+            "source_start": 44,
+            "source_end": 48,
+            "source_count": 5,
+            "calendar_start": "2018-03-05",
+            "calendar_end": "2018-03-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 9,
+            "source_start": 49,
+            "source_end": 53,
+            "source_count": 5,
+            "calendar_start": "2018-03-12",
+            "calendar_end": "2018-03-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 10,
+            "source_start": 54,
+            "source_end": 58,
+            "source_count": 5,
+            "calendar_start": "2018-03-19",
+            "calendar_end": "2018-03-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 11,
+            "source_start": 59,
+            "source_end": 63,
+            "source_count": 5,
+            "calendar_start": "2018-03-26",
+            "calendar_end": "2018-04-01",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 12,
+            "source_start": 64,
+            "source_end": 68,
+            "source_count": 5,
+            "calendar_start": "2018-04-02",
+            "calendar_end": "2018-04-08",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 13,
+            "source_start": 69,
+            "source_end": 73,
+            "source_count": 5,
+            "calendar_start": "2018-04-09",
+            "calendar_end": "2018-04-15",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 14,
+            "source_start": 74,
+            "source_end": 78,
+            "source_count": 5,
+            "calendar_start": "2018-04-16",
+            "calendar_end": "2018-04-22",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 15,
+            "source_start": 79,
+            "source_end": 83,
+            "source_count": 5,
+            "calendar_start": "2018-04-23",
+            "calendar_end": "2018-04-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 16,
+            "source_start": 84,
+            "source_end": 88,
+            "source_count": 5,
+            "calendar_start": "2018-04-30",
+            "calendar_end": "2018-05-06",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 17,
+            "source_start": 89,
+            "source_end": 93,
+            "source_count": 5,
+            "calendar_start": "2018-05-07",
+            "calendar_end": "2018-05-13",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 18,
+            "source_start": 94,
+            "source_end": 98,
+            "source_count": 5,
+            "calendar_start": "2018-05-14",
+            "calendar_end": "2018-05-20",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 19,
+            "source_start": 99,
+            "source_end": 103,
+            "source_count": 5,
+            "calendar_start": "2018-05-21",
+            "calendar_end": "2018-05-27",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 20,
+            "source_start": 104,
+            "source_end": 108,
+            "source_count": 5,
+            "calendar_start": "2018-05-28",
+            "calendar_end": "2018-06-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 21,
+            "source_start": 109,
+            "source_end": 113,
+            "source_count": 5,
+            "calendar_start": "2018-06-04",
+            "calendar_end": "2018-06-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 22,
+            "source_start": 114,
+            "source_end": 118,
+            "source_count": 5,
+            "calendar_start": "2018-06-11",
+            "calendar_end": "2018-06-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 23,
+            "source_start": 119,
+            "source_end": 123,
+            "source_count": 5,
+            "calendar_start": "2018-06-18",
+            "calendar_end": "2018-06-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 24,
+            "source_start": 124,
+            "source_end": 128,
+            "source_count": 5,
+            "calendar_start": "2018-06-25",
+            "calendar_end": "2018-07-01",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 25,
+            "source_start": 129,
+            "source_end": 133,
+            "source_count": 5,
+            "calendar_start": "2018-07-02",
+            "calendar_end": "2018-07-08",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 26,
+            "source_start": 134,
+            "source_end": 138,
+            "source_count": 5,
+            "calendar_start": "2018-07-09",
+            "calendar_end": "2018-07-15",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 27,
+            "source_start": 139,
+            "source_end": 143,
+            "source_count": 5,
+            "calendar_start": "2018-07-16",
+            "calendar_end": "2018-07-22",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 28,
+            "source_start": 144,
+            "source_end": 148,
+            "source_count": 5,
+            "calendar_start": "2018-07-23",
+            "calendar_end": "2018-07-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 29,
+            "source_start": 149,
+            "source_end": 153,
+            "source_count": 5,
+            "calendar_start": "2018-07-30",
+            "calendar_end": "2018-08-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 30,
+            "source_start": 154,
+            "source_end": 158,
+            "source_count": 5,
+            "calendar_start": "2018-08-06",
+            "calendar_end": "2018-08-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 31,
+            "source_start": 159,
+            "source_end": 163,
+            "source_count": 5,
+            "calendar_start": "2018-08-13",
+            "calendar_end": "2018-08-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 32,
+            "source_start": 164,
+            "source_end": 168,
+            "source_count": 5,
+            "calendar_start": "2018-08-20",
+            "calendar_end": "2018-08-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 33,
+            "source_start": 169,
+            "source_end": 173,
+            "source_count": 5,
+            "calendar_start": "2018-08-27",
+            "calendar_end": "2018-09-02",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 34,
+            "source_start": 174,
+            "source_end": 178,
+            "source_count": 5,
+            "calendar_start": "2018-09-03",
+            "calendar_end": "2018-09-09",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 35,
+            "source_start": 179,
+            "source_end": 183,
+            "source_count": 5,
+            "calendar_start": "2018-09-10",
+            "calendar_end": "2018-09-16",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 36,
+            "source_start": 184,
+            "source_end": 188,
+            "source_count": 5,
+            "calendar_start": "2018-09-17",
+            "calendar_end": "2018-09-23",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 37,
+            "source_start": 189,
+            "source_end": 193,
+            "source_count": 5,
+            "calendar_start": "2018-09-24",
+            "calendar_end": "2018-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 38,
+            "source_start": 194,
+            "source_end": 198,
+            "source_count": 5,
+            "calendar_start": "2018-10-01",
+            "calendar_end": "2018-10-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 39,
+            "source_start": 199,
+            "source_end": 203,
+            "source_count": 5,
+            "calendar_start": "2018-10-08",
+            "calendar_end": "2018-10-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 40,
+            "source_start": 204,
+            "source_end": 208,
+            "source_count": 5,
+            "calendar_start": "2018-10-15",
+            "calendar_end": "2018-10-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 41,
+            "source_start": 209,
+            "source_end": 213,
+            "source_count": 5,
+            "calendar_start": "2018-10-22",
+            "calendar_end": "2018-10-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 42,
+            "source_start": 214,
+            "source_end": 218,
+            "source_count": 5,
+            "calendar_start": "2018-10-29",
+            "calendar_end": "2018-11-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 43,
+            "source_start": 219,
+            "source_end": 223,
+            "source_count": 5,
+            "calendar_start": "2018-11-05",
+            "calendar_end": "2018-11-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 44,
+            "source_start": 224,
+            "source_end": 228,
+            "source_count": 5,
+            "calendar_start": "2018-11-12",
+            "calendar_end": "2018-11-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 45,
+            "source_start": 229,
+            "source_end": 233,
+            "source_count": 5,
+            "calendar_start": "2018-11-19",
+            "calendar_end": "2018-11-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 46,
+            "source_start": 234,
+            "source_end": 238,
+            "source_count": 5,
+            "calendar_start": "2018-11-26",
+            "calendar_end": "2018-12-02",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 47,
+            "source_start": 239,
+            "source_end": 243,
+            "source_count": 5,
+            "calendar_start": "2018-12-03",
+            "calendar_end": "2018-12-09",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 48,
+            "source_start": 244,
+            "source_end": 248,
+            "source_count": 5,
+            "calendar_start": "2018-12-10",
+            "calendar_end": "2018-12-16",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 49,
+            "source_start": 249,
+            "source_end": 253,
+            "source_count": 5,
+            "calendar_start": "2018-12-17",
+            "calendar_end": "2018-12-23",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 50,
+            "source_start": 254,
+            "source_end": 258,
+            "source_count": 5,
+            "calendar_start": "2018-12-24",
+            "calendar_end": "2018-12-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 51,
+            "source_start": 259,
+            "source_end": 263,
+            "source_count": 5,
+            "calendar_start": "2018-12-31",
+            "calendar_end": "2019-01-06",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 52,
+            "source_start": 264,
+            "source_end": 268,
+            "source_count": 5,
+            "calendar_start": "2019-01-07",
+            "calendar_end": "2019-01-13",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 53,
+            "source_start": 269,
+            "source_end": 273,
+            "source_count": 5,
+            "calendar_start": "2019-01-14",
+            "calendar_end": "2019-01-20",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 54,
+            "source_start": 274,
+            "source_end": 278,
+            "source_count": 5,
+            "calendar_start": "2019-01-21",
+            "calendar_end": "2019-01-27",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 55,
+            "source_start": 279,
+            "source_end": 283,
+            "source_count": 5,
+            "calendar_start": "2019-01-28",
+            "calendar_end": "2019-02-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 56,
+            "source_start": 284,
+            "source_end": 288,
+            "source_count": 5,
+            "calendar_start": "2019-02-04",
+            "calendar_end": "2019-02-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 57,
+            "source_start": 289,
+            "source_end": 293,
+            "source_count": 5,
+            "calendar_start": "2019-02-11",
+            "calendar_end": "2019-02-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 58,
+            "source_start": 294,
+            "source_end": 298,
+            "source_count": 5,
+            "calendar_start": "2019-02-18",
+            "calendar_end": "2019-02-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 59,
+            "source_start": 299,
+            "source_end": 303,
+            "source_count": 5,
+            "calendar_start": "2019-02-25",
+            "calendar_end": "2019-03-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 60,
+            "source_start": 304,
+            "source_end": 308,
+            "source_count": 5,
+            "calendar_start": "2019-03-04",
+            "calendar_end": "2019-03-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 61,
+            "source_start": 309,
+            "source_end": 313,
+            "source_count": 5,
+            "calendar_start": "2019-03-11",
+            "calendar_end": "2019-03-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 62,
+            "source_start": 314,
+            "source_end": 318,
+            "source_count": 5,
+            "calendar_start": "2019-03-18",
+            "calendar_end": "2019-03-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 63,
+            "source_start": 319,
+            "source_end": 323,
+            "source_count": 5,
+            "calendar_start": "2019-03-25",
+            "calendar_end": "2019-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 64,
+            "source_start": 324,
+            "source_end": 328,
+            "source_count": 5,
+            "calendar_start": "2019-04-01",
+            "calendar_end": "2019-04-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 65,
+            "source_start": 329,
+            "source_end": 333,
+            "source_count": 5,
+            "calendar_start": "2019-04-08",
+            "calendar_end": "2019-04-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 66,
+            "source_start": 334,
+            "source_end": 338,
+            "source_count": 5,
+            "calendar_start": "2019-04-15",
+            "calendar_end": "2019-04-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 67,
+            "source_start": 339,
+            "source_end": 343,
+            "source_count": 5,
+            "calendar_start": "2019-04-22",
+            "calendar_end": "2019-04-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 68,
+            "source_start": 344,
+            "source_end": 348,
+            "source_count": 5,
+            "calendar_start": "2019-04-29",
+            "calendar_end": "2019-05-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 69,
+            "source_start": 349,
+            "source_end": 353,
+            "source_count": 5,
+            "calendar_start": "2019-05-06",
+            "calendar_end": "2019-05-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 70,
+            "source_start": 354,
+            "source_end": 358,
+            "source_count": 5,
+            "calendar_start": "2019-05-13",
+            "calendar_end": "2019-05-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 71,
+            "source_start": 359,
+            "source_end": 363,
+            "source_count": 5,
+            "calendar_start": "2019-05-20",
+            "calendar_end": "2019-05-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 72,
+            "source_start": 364,
+            "source_end": 368,
+            "source_count": 5,
+            "calendar_start": "2019-05-27",
+            "calendar_end": "2019-06-02",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 73,
+            "source_start": 369,
+            "source_end": 373,
+            "source_count": 5,
+            "calendar_start": "2019-06-03",
+            "calendar_end": "2019-06-09",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 74,
+            "source_start": 374,
+            "source_end": 378,
+            "source_count": 5,
+            "calendar_start": "2019-06-10",
+            "calendar_end": "2019-06-16",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 75,
+            "source_start": 379,
+            "source_end": 383,
+            "source_count": 5,
+            "calendar_start": "2019-06-17",
+            "calendar_end": "2019-06-23",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 76,
+            "source_start": 384,
+            "source_end": 388,
+            "source_count": 5,
+            "calendar_start": "2019-06-24",
+            "calendar_end": "2019-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 77,
+            "source_start": 389,
+            "source_end": 393,
+            "source_count": 5,
+            "calendar_start": "2019-07-01",
+            "calendar_end": "2019-07-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 78,
+            "source_start": 394,
+            "source_end": 398,
+            "source_count": 5,
+            "calendar_start": "2019-07-08",
+            "calendar_end": "2019-07-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 79,
+            "source_start": 399,
+            "source_end": 403,
+            "source_count": 5,
+            "calendar_start": "2019-07-15",
+            "calendar_end": "2019-07-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 80,
+            "source_start": 404,
+            "source_end": 408,
+            "source_count": 5,
+            "calendar_start": "2019-07-22",
+            "calendar_end": "2019-07-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 81,
+            "source_start": 409,
+            "source_end": 413,
+            "source_count": 5,
+            "calendar_start": "2019-07-29",
+            "calendar_end": "2019-08-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 82,
+            "source_start": 414,
+            "source_end": 418,
+            "source_count": 5,
+            "calendar_start": "2019-08-05",
+            "calendar_end": "2019-08-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 83,
+            "source_start": 419,
+            "source_end": 423,
+            "source_count": 5,
+            "calendar_start": "2019-08-12",
+            "calendar_end": "2019-08-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 84,
+            "source_start": 424,
+            "source_end": 428,
+            "source_count": 5,
+            "calendar_start": "2019-08-19",
+            "calendar_end": "2019-08-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 85,
+            "source_start": 429,
+            "source_end": 433,
+            "source_count": 5,
+            "calendar_start": "2019-08-26",
+            "calendar_end": "2019-09-01",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 86,
+            "source_start": 434,
+            "source_end": 438,
+            "source_count": 5,
+            "calendar_start": "2019-09-02",
+            "calendar_end": "2019-09-08",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 87,
+            "source_start": 439,
+            "source_end": 443,
+            "source_count": 5,
+            "calendar_start": "2019-09-09",
+            "calendar_end": "2019-09-15",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 88,
+            "source_start": 444,
+            "source_end": 448,
+            "source_count": 5,
+            "calendar_start": "2019-09-16",
+            "calendar_end": "2019-09-22",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 89,
+            "source_start": 449,
+            "source_end": 453,
+            "source_count": 5,
+            "calendar_start": "2019-09-23",
+            "calendar_end": "2019-09-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 90,
+            "source_start": 454,
+            "source_end": 458,
+            "source_count": 5,
+            "calendar_start": "2019-09-30",
+            "calendar_end": "2019-10-06",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 91,
+            "source_start": 459,
+            "source_end": 463,
+            "source_count": 5,
+            "calendar_start": "2019-10-07",
+            "calendar_end": "2019-10-13",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 92,
+            "source_start": 464,
+            "source_end": 468,
+            "source_count": 5,
+            "calendar_start": "2019-10-14",
+            "calendar_end": "2019-10-20",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 93,
+            "source_start": 469,
+            "source_end": 473,
+            "source_count": 5,
+            "calendar_start": "2019-10-21",
+            "calendar_end": "2019-10-27",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 94,
+            "source_start": 474,
+            "source_end": 478,
+            "source_count": 5,
+            "calendar_start": "2019-10-28",
+            "calendar_end": "2019-11-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 95,
+            "source_start": 479,
+            "source_end": 483,
+            "source_count": 5,
+            "calendar_start": "2019-11-04",
+            "calendar_end": "2019-11-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 96,
+            "source_start": 484,
+            "source_end": 488,
+            "source_count": 5,
+            "calendar_start": "2019-11-11",
+            "calendar_end": "2019-11-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 97,
+            "source_start": 489,
+            "source_end": 493,
+            "source_count": 5,
+            "calendar_start": "2019-11-18",
+            "calendar_end": "2019-11-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 98,
+            "source_start": 494,
+            "source_end": 498,
+            "source_count": 5,
+            "calendar_start": "2019-11-25",
+            "calendar_end": "2019-12-01",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 99,
+            "source_start": 499,
+            "source_end": 503,
+            "source_count": 5,
+            "calendar_start": "2019-12-02",
+            "calendar_end": "2019-12-08",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 100,
+            "source_start": 504,
+            "source_end": 508,
+            "source_count": 5,
+            "calendar_start": "2019-12-09",
+            "calendar_end": "2019-12-15",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 101,
+            "source_start": 509,
+            "source_end": 513,
+            "source_count": 5,
+            "calendar_start": "2019-12-16",
+            "calendar_end": "2019-12-22",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 102,
+            "source_start": 514,
+            "source_end": 518,
+            "source_count": 5,
+            "calendar_start": "2019-12-23",
+            "calendar_end": "2019-12-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 103,
+            "source_start": 519,
+            "source_end": 523,
+            "source_count": 5,
+            "calendar_start": "2019-12-30",
+            "calendar_end": "2020-01-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 104,
+            "source_start": 524,
+            "source_end": 528,
+            "source_count": 5,
+            "calendar_start": "2020-01-06",
+            "calendar_end": "2020-01-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 105,
+            "source_start": 529,
+            "source_end": 533,
+            "source_count": 5,
+            "calendar_start": "2020-01-13",
+            "calendar_end": "2020-01-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 106,
+            "source_start": 534,
+            "source_end": 538,
+            "source_count": 5,
+            "calendar_start": "2020-01-20",
+            "calendar_end": "2020-01-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 107,
+            "source_start": 539,
+            "source_end": 543,
+            "source_count": 5,
+            "calendar_start": "2020-01-27",
+            "calendar_end": "2020-02-02",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 108,
+            "source_start": 544,
+            "source_end": 548,
+            "source_count": 5,
+            "calendar_start": "2020-02-03",
+            "calendar_end": "2020-02-09",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 109,
+            "source_start": 549,
+            "source_end": 553,
+            "source_count": 5,
+            "calendar_start": "2020-02-10",
+            "calendar_end": "2020-02-16",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 110,
+            "source_start": 554,
+            "source_end": 558,
+            "source_count": 5,
+            "calendar_start": "2020-02-17",
+            "calendar_end": "2020-02-23",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 111,
+            "source_start": 559,
+            "source_end": 563,
+            "source_count": 5,
+            "calendar_start": "2020-02-24",
+            "calendar_end": "2020-03-01",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 112,
+            "source_start": 564,
+            "source_end": 568,
+            "source_count": 5,
+            "calendar_start": "2020-03-02",
+            "calendar_end": "2020-03-08",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 113,
+            "source_start": 569,
+            "source_end": 573,
+            "source_count": 5,
+            "calendar_start": "2020-03-09",
+            "calendar_end": "2020-03-15",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 114,
+            "source_start": 574,
+            "source_end": 578,
+            "source_count": 5,
+            "calendar_start": "2020-03-16",
+            "calendar_end": "2020-03-22",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 115,
+            "source_start": 579,
+            "source_end": 583,
+            "source_count": 5,
+            "calendar_start": "2020-03-23",
+            "calendar_end": "2020-03-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 116,
+            "source_start": 584,
+            "source_end": 588,
+            "source_count": 5,
+            "calendar_start": "2020-03-30",
+            "calendar_end": "2020-04-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 117,
+            "source_start": 589,
+            "source_end": 593,
+            "source_count": 5,
+            "calendar_start": "2020-04-06",
+            "calendar_end": "2020-04-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 118,
+            "source_start": 594,
+            "source_end": 598,
+            "source_count": 5,
+            "calendar_start": "2020-04-13",
+            "calendar_end": "2020-04-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 119,
+            "source_start": 599,
+            "source_end": 603,
+            "source_count": 5,
+            "calendar_start": "2020-04-20",
+            "calendar_end": "2020-04-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 120,
+            "source_start": 604,
+            "source_end": 608,
+            "source_count": 5,
+            "calendar_start": "2020-04-27",
+            "calendar_end": "2020-05-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 121,
+            "source_start": 609,
+            "source_end": 613,
+            "source_count": 5,
+            "calendar_start": "2020-05-04",
+            "calendar_end": "2020-05-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 122,
+            "source_start": 614,
+            "source_end": 618,
+            "source_count": 5,
+            "calendar_start": "2020-05-11",
+            "calendar_end": "2020-05-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 123,
+            "source_start": 619,
+            "source_end": 623,
+            "source_count": 5,
+            "calendar_start": "2020-05-18",
+            "calendar_end": "2020-05-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 124,
+            "source_start": 624,
+            "source_end": 628,
+            "source_count": 5,
+            "calendar_start": "2020-05-25",
+            "calendar_end": "2020-05-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 125,
+            "source_start": 629,
+            "source_end": 633,
+            "source_count": 5,
+            "calendar_start": "2020-06-01",
+            "calendar_end": "2020-06-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 126,
+            "source_start": 634,
+            "source_end": 638,
+            "source_count": 5,
+            "calendar_start": "2020-06-08",
+            "calendar_end": "2020-06-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 127,
+            "source_start": 639,
+            "source_end": 643,
+            "source_count": 5,
+            "calendar_start": "2020-06-15",
+            "calendar_end": "2020-06-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 128,
+            "source_start": 644,
+            "source_end": 648,
+            "source_count": 5,
+            "calendar_start": "2020-06-22",
+            "calendar_end": "2020-06-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 129,
+            "source_start": 649,
+            "source_end": 653,
+            "source_count": 5,
+            "calendar_start": "2020-06-29",
+            "calendar_end": "2020-07-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 130,
+            "source_start": 654,
+            "source_end": 658,
+            "source_count": 5,
+            "calendar_start": "2020-07-06",
+            "calendar_end": "2020-07-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 131,
+            "source_start": 659,
+            "source_end": 663,
+            "source_count": 5,
+            "calendar_start": "2020-07-13",
+            "calendar_end": "2020-07-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 132,
+            "source_start": 664,
+            "source_end": 668,
+            "source_count": 5,
+            "calendar_start": "2020-07-20",
+            "calendar_end": "2020-07-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 133,
+            "source_start": 669,
+            "source_end": 673,
+            "source_count": 5,
+            "calendar_start": "2020-07-27",
+            "calendar_end": "2020-08-02",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 134,
+            "source_start": 674,
+            "source_end": 678,
+            "source_count": 5,
+            "calendar_start": "2020-08-03",
+            "calendar_end": "2020-08-09",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 135,
+            "source_start": 679,
+            "source_end": 683,
+            "source_count": 5,
+            "calendar_start": "2020-08-10",
+            "calendar_end": "2020-08-16",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 136,
+            "source_start": 684,
+            "source_end": 688,
+            "source_count": 5,
+            "calendar_start": "2020-08-17",
+            "calendar_end": "2020-08-23",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 137,
+            "source_start": 689,
+            "source_end": 693,
+            "source_count": 5,
+            "calendar_start": "2020-08-24",
+            "calendar_end": "2020-08-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 138,
+            "source_start": 694,
+            "source_end": 698,
+            "source_count": 5,
+            "calendar_start": "2020-08-31",
+            "calendar_end": "2020-09-06",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 139,
+            "source_start": 699,
+            "source_end": 703,
+            "source_count": 5,
+            "calendar_start": "2020-09-07",
+            "calendar_end": "2020-09-13",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 140,
+            "source_start": 704,
+            "source_end": 708,
+            "source_count": 5,
+            "calendar_start": "2020-09-14",
+            "calendar_end": "2020-09-20",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 141,
+            "source_start": 709,
+            "source_end": 713,
+            "source_count": 5,
+            "calendar_start": "2020-09-21",
+            "calendar_end": "2020-09-27",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 142,
+            "source_start": 714,
+            "source_end": 718,
+            "source_count": 5,
+            "calendar_start": "2020-09-28",
+            "calendar_end": "2020-10-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 143,
+            "source_start": 719,
+            "source_end": 723,
+            "source_count": 5,
+            "calendar_start": "2020-10-05",
+            "calendar_end": "2020-10-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 144,
+            "source_start": 724,
+            "source_end": 728,
+            "source_count": 5,
+            "calendar_start": "2020-10-12",
+            "calendar_end": "2020-10-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 145,
+            "source_start": 729,
+            "source_end": 733,
+            "source_count": 5,
+            "calendar_start": "2020-10-19",
+            "calendar_end": "2020-10-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 146,
+            "source_start": 734,
+            "source_end": 738,
+            "source_count": 5,
+            "calendar_start": "2020-10-26",
+            "calendar_end": "2020-11-01",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 147,
+            "source_start": 739,
+            "source_end": 743,
+            "source_count": 5,
+            "calendar_start": "2020-11-02",
+            "calendar_end": "2020-11-08",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 148,
+            "source_start": 744,
+            "source_end": 748,
+            "source_count": 5,
+            "calendar_start": "2020-11-09",
+            "calendar_end": "2020-11-15",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 149,
+            "source_start": 749,
+            "source_end": 753,
+            "source_count": 5,
+            "calendar_start": "2020-11-16",
+            "calendar_end": "2020-11-22",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 150,
+            "source_start": 754,
+            "source_end": 758,
+            "source_count": 5,
+            "calendar_start": "2020-11-23",
+            "calendar_end": "2020-11-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 151,
+            "source_start": 759,
+            "source_end": 763,
+            "source_count": 5,
+            "calendar_start": "2020-11-30",
+            "calendar_end": "2020-12-06",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 152,
+            "source_start": 764,
+            "source_end": 768,
+            "source_count": 5,
+            "calendar_start": "2020-12-07",
+            "calendar_end": "2020-12-13",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 153,
+            "source_start": 769,
+            "source_end": 773,
+            "source_count": 5,
+            "calendar_start": "2020-12-14",
+            "calendar_end": "2020-12-20",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 154,
+            "source_start": 774,
+            "source_end": 778,
+            "source_count": 5,
+            "calendar_start": "2020-12-21",
+            "calendar_end": "2020-12-27",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 155,
+            "source_start": 779,
+            "source_end": 783,
+            "source_count": 5,
+            "calendar_start": "2020-12-28",
+            "calendar_end": "2021-01-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 156,
+            "source_start": 784,
+            "source_end": 788,
+            "source_count": 5,
+            "calendar_start": "2021-01-04",
+            "calendar_end": "2021-01-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 157,
+            "source_start": 789,
+            "source_end": 793,
+            "source_count": 5,
+            "calendar_start": "2021-01-11",
+            "calendar_end": "2021-01-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 158,
+            "source_start": 794,
+            "source_end": 798,
+            "source_count": 5,
+            "calendar_start": "2021-01-18",
+            "calendar_end": "2021-01-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 159,
+            "source_start": 799,
+            "source_end": 803,
+            "source_count": 5,
+            "calendar_start": "2021-01-25",
+            "calendar_end": "2021-01-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 160,
+            "source_start": 804,
+            "source_end": 808,
+            "source_count": 5,
+            "calendar_start": "2021-02-01",
+            "calendar_end": "2021-02-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 161,
+            "source_start": 809,
+            "source_end": 813,
+            "source_count": 5,
+            "calendar_start": "2021-02-08",
+            "calendar_end": "2021-02-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 162,
+            "source_start": 814,
+            "source_end": 818,
+            "source_count": 5,
+            "calendar_start": "2021-02-15",
+            "calendar_end": "2021-02-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 163,
+            "source_start": 819,
+            "source_end": 823,
+            "source_count": 5,
+            "calendar_start": "2021-02-22",
+            "calendar_end": "2021-02-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 164,
+            "source_start": 824,
+            "source_end": 828,
+            "source_count": 5,
+            "calendar_start": "2021-03-01",
+            "calendar_end": "2021-03-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 165,
+            "source_start": 829,
+            "source_end": 833,
+            "source_count": 5,
+            "calendar_start": "2021-03-08",
+            "calendar_end": "2021-03-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 166,
+            "source_start": 834,
+            "source_end": 838,
+            "source_count": 5,
+            "calendar_start": "2021-03-15",
+            "calendar_end": "2021-03-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 167,
+            "source_start": 839,
+            "source_end": 843,
+            "source_count": 5,
+            "calendar_start": "2021-03-22",
+            "calendar_end": "2021-03-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 168,
+            "source_start": 844,
+            "source_end": 848,
+            "source_count": 5,
+            "calendar_start": "2021-03-29",
+            "calendar_end": "2021-04-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 169,
+            "source_start": 849,
+            "source_end": 853,
+            "source_count": 5,
+            "calendar_start": "2021-04-05",
+            "calendar_end": "2021-04-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 170,
+            "source_start": 854,
+            "source_end": 858,
+            "source_count": 5,
+            "calendar_start": "2021-04-12",
+            "calendar_end": "2021-04-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 171,
+            "source_start": 859,
+            "source_end": 863,
+            "source_count": 5,
+            "calendar_start": "2021-04-19",
+            "calendar_end": "2021-04-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 172,
+            "source_start": 864,
+            "source_end": 868,
+            "source_count": 5,
+            "calendar_start": "2021-04-26",
+            "calendar_end": "2021-05-02",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 173,
+            "source_start": 869,
+            "source_end": 873,
+            "source_count": 5,
+            "calendar_start": "2021-05-03",
+            "calendar_end": "2021-05-09",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 174,
+            "source_start": 874,
+            "source_end": 878,
+            "source_count": 5,
+            "calendar_start": "2021-05-10",
+            "calendar_end": "2021-05-16",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 175,
+            "source_start": 879,
+            "source_end": 883,
+            "source_count": 5,
+            "calendar_start": "2021-05-17",
+            "calendar_end": "2021-05-23",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 176,
+            "source_start": 884,
+            "source_end": 888,
+            "source_count": 5,
+            "calendar_start": "2021-05-24",
+            "calendar_end": "2021-05-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 177,
+            "source_start": 889,
+            "source_end": 893,
+            "source_count": 5,
+            "calendar_start": "2021-05-31",
+            "calendar_end": "2021-06-06",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 178,
+            "source_start": 894,
+            "source_end": 898,
+            "source_count": 5,
+            "calendar_start": "2021-06-07",
+            "calendar_end": "2021-06-13",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 179,
+            "source_start": 899,
+            "source_end": 903,
+            "source_count": 5,
+            "calendar_start": "2021-06-14",
+            "calendar_end": "2021-06-20",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 180,
+            "source_start": 904,
+            "source_end": 908,
+            "source_count": 5,
+            "calendar_start": "2021-06-21",
+            "calendar_end": "2021-06-27",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 181,
+            "source_start": 909,
+            "source_end": 913,
+            "source_count": 5,
+            "calendar_start": "2021-06-28",
+            "calendar_end": "2021-07-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 182,
+            "source_start": 914,
+            "source_end": 918,
+            "source_count": 5,
+            "calendar_start": "2021-07-05",
+            "calendar_end": "2021-07-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 183,
+            "source_start": 919,
+            "source_end": 923,
+            "source_count": 5,
+            "calendar_start": "2021-07-12",
+            "calendar_end": "2021-07-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 184,
+            "source_start": 924,
+            "source_end": 928,
+            "source_count": 5,
+            "calendar_start": "2021-07-19",
+            "calendar_end": "2021-07-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 185,
+            "source_start": 929,
+            "source_end": 933,
+            "source_count": 5,
+            "calendar_start": "2021-07-26",
+            "calendar_end": "2021-08-01",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 186,
+            "source_start": 934,
+            "source_end": 938,
+            "source_count": 5,
+            "calendar_start": "2021-08-02",
+            "calendar_end": "2021-08-08",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 187,
+            "source_start": 939,
+            "source_end": 943,
+            "source_count": 5,
+            "calendar_start": "2021-08-09",
+            "calendar_end": "2021-08-15",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 188,
+            "source_start": 944,
+            "source_end": 948,
+            "source_count": 5,
+            "calendar_start": "2021-08-16",
+            "calendar_end": "2021-08-22",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 189,
+            "source_start": 949,
+            "source_end": 953,
+            "source_count": 5,
+            "calendar_start": "2021-08-23",
+            "calendar_end": "2021-08-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 190,
+            "source_start": 954,
+            "source_end": 958,
+            "source_count": 5,
+            "calendar_start": "2021-08-30",
+            "calendar_end": "2021-09-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 191,
+            "source_start": 959,
+            "source_end": 963,
+            "source_count": 5,
+            "calendar_start": "2021-09-06",
+            "calendar_end": "2021-09-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 192,
+            "source_start": 964,
+            "source_end": 968,
+            "source_count": 5,
+            "calendar_start": "2021-09-13",
+            "calendar_end": "2021-09-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 193,
+            "source_start": 969,
+            "source_end": 973,
+            "source_count": 5,
+            "calendar_start": "2021-09-20",
+            "calendar_end": "2021-09-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 194,
+            "source_start": 974,
+            "source_end": 978,
+            "source_count": 5,
+            "calendar_start": "2021-09-27",
+            "calendar_end": "2021-10-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 195,
+            "source_start": 979,
+            "source_end": 983,
+            "source_count": 5,
+            "calendar_start": "2021-10-04",
+            "calendar_end": "2021-10-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 196,
+            "source_start": 984,
+            "source_end": 988,
+            "source_count": 5,
+            "calendar_start": "2021-10-11",
+            "calendar_end": "2021-10-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 197,
+            "source_start": 989,
+            "source_end": 993,
+            "source_count": 5,
+            "calendar_start": "2021-10-18",
+            "calendar_end": "2021-10-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 198,
+            "source_start": 994,
+            "source_end": 998,
+            "source_count": 5,
+            "calendar_start": "2021-10-25",
+            "calendar_end": "2021-10-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 199,
+            "source_start": 999,
+            "source_end": 1003,
+            "source_count": 5,
+            "calendar_start": "2021-11-01",
+            "calendar_end": "2021-11-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 200,
+            "source_start": 1004,
+            "source_end": 1008,
+            "source_count": 5,
+            "calendar_start": "2021-11-08",
+            "calendar_end": "2021-11-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 201,
+            "source_start": 1009,
+            "source_end": 1013,
+            "source_count": 5,
+            "calendar_start": "2021-11-15",
+            "calendar_end": "2021-11-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 202,
+            "source_start": 1014,
+            "source_end": 1018,
+            "source_count": 5,
+            "calendar_start": "2021-11-22",
+            "calendar_end": "2021-11-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 203,
+            "source_start": 1019,
+            "source_end": 1023,
+            "source_count": 5,
+            "calendar_start": "2021-11-29",
+            "calendar_end": "2021-12-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 204,
+            "source_start": 1024,
+            "source_end": 1028,
+            "source_count": 5,
+            "calendar_start": "2021-12-06",
+            "calendar_end": "2021-12-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 205,
+            "source_start": 1029,
+            "source_end": 1033,
+            "source_count": 5,
+            "calendar_start": "2021-12-13",
+            "calendar_end": "2021-12-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 206,
+            "source_start": 1034,
+            "source_end": 1038,
+            "source_count": 5,
+            "calendar_start": "2021-12-20",
+            "calendar_end": "2021-12-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 207,
+            "source_start": 1039,
+            "source_end": 1043,
+            "source_count": 5,
+            "calendar_start": "2021-12-27",
+            "calendar_end": "2022-01-02",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 208,
+            "source_start": 1044,
+            "source_end": 1048,
+            "source_count": 5,
+            "calendar_start": "2022-01-03",
+            "calendar_end": "2022-01-09",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 209,
+            "source_start": 1049,
+            "source_end": 1053,
+            "source_count": 5,
+            "calendar_start": "2022-01-10",
+            "calendar_end": "2022-01-16",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 210,
+            "source_start": 1054,
+            "source_end": 1058,
+            "source_count": 5,
+            "calendar_start": "2022-01-17",
+            "calendar_end": "2022-01-23",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 211,
+            "source_start": 1059,
+            "source_end": 1063,
+            "source_count": 5,
+            "calendar_start": "2022-01-24",
+            "calendar_end": "2022-01-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 212,
+            "source_start": 1064,
+            "source_end": 1068,
+            "source_count": 5,
+            "calendar_start": "2022-01-31",
+            "calendar_end": "2022-02-06",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 213,
+            "source_start": 1069,
+            "source_end": 1073,
+            "source_count": 5,
+            "calendar_start": "2022-02-07",
+            "calendar_end": "2022-02-13",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 214,
+            "source_start": 1074,
+            "source_end": 1078,
+            "source_count": 5,
+            "calendar_start": "2022-02-14",
+            "calendar_end": "2022-02-20",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 215,
+            "source_start": 1079,
+            "source_end": 1083,
+            "source_count": 5,
+            "calendar_start": "2022-02-21",
+            "calendar_end": "2022-02-27",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 216,
+            "source_start": 1084,
+            "source_end": 1088,
+            "source_count": 5,
+            "calendar_start": "2022-02-28",
+            "calendar_end": "2022-03-06",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 217,
+            "source_start": 1089,
+            "source_end": 1093,
+            "source_count": 5,
+            "calendar_start": "2022-03-07",
+            "calendar_end": "2022-03-13",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 218,
+            "source_start": 1094,
+            "source_end": 1098,
+            "source_count": 5,
+            "calendar_start": "2022-03-14",
+            "calendar_end": "2022-03-20",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 219,
+            "source_start": 1099,
+            "source_end": 1103,
+            "source_count": 5,
+            "calendar_start": "2022-03-21",
+            "calendar_end": "2022-03-27",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 220,
+            "source_start": 1104,
+            "source_end": 1108,
+            "source_count": 5,
+            "calendar_start": "2022-03-28",
+            "calendar_end": "2022-04-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 221,
+            "source_start": 1109,
+            "source_end": 1113,
+            "source_count": 5,
+            "calendar_start": "2022-04-04",
+            "calendar_end": "2022-04-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 222,
+            "source_start": 1114,
+            "source_end": 1118,
+            "source_count": 5,
+            "calendar_start": "2022-04-11",
+            "calendar_end": "2022-04-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 223,
+            "source_start": 1119,
+            "source_end": 1123,
+            "source_count": 5,
+            "calendar_start": "2022-04-18",
+            "calendar_end": "2022-04-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 224,
+            "source_start": 1124,
+            "source_end": 1128,
+            "source_count": 5,
+            "calendar_start": "2022-04-25",
+            "calendar_end": "2022-05-01",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 225,
+            "source_start": 1129,
+            "source_end": 1133,
+            "source_count": 5,
+            "calendar_start": "2022-05-02",
+            "calendar_end": "2022-05-08",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 226,
+            "source_start": 1134,
+            "source_end": 1138,
+            "source_count": 5,
+            "calendar_start": "2022-05-09",
+            "calendar_end": "2022-05-15",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 227,
+            "source_start": 1139,
+            "source_end": 1143,
+            "source_count": 5,
+            "calendar_start": "2022-05-16",
+            "calendar_end": "2022-05-22",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 228,
+            "source_start": 1144,
+            "source_end": 1148,
+            "source_count": 5,
+            "calendar_start": "2022-05-23",
+            "calendar_end": "2022-05-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 229,
+            "source_start": 1149,
+            "source_end": 1153,
+            "source_count": 5,
+            "calendar_start": "2022-05-30",
+            "calendar_end": "2022-06-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 230,
+            "source_start": 1154,
+            "source_end": 1158,
+            "source_count": 5,
+            "calendar_start": "2022-06-06",
+            "calendar_end": "2022-06-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 231,
+            "source_start": 1159,
+            "source_end": 1163,
+            "source_count": 5,
+            "calendar_start": "2022-06-13",
+            "calendar_end": "2022-06-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 232,
+            "source_start": 1164,
+            "source_end": 1168,
+            "source_count": 5,
+            "calendar_start": "2022-06-20",
+            "calendar_end": "2022-06-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 233,
+            "source_start": 1169,
+            "source_end": 1173,
+            "source_count": 5,
+            "calendar_start": "2022-06-27",
+            "calendar_end": "2022-07-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 234,
+            "source_start": 1174,
+            "source_end": 1178,
+            "source_count": 5,
+            "calendar_start": "2022-07-04",
+            "calendar_end": "2022-07-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 235,
+            "source_start": 1179,
+            "source_end": 1183,
+            "source_count": 5,
+            "calendar_start": "2022-07-11",
+            "calendar_end": "2022-07-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 236,
+            "source_start": 1184,
+            "source_end": 1188,
+            "source_count": 5,
+            "calendar_start": "2022-07-18",
+            "calendar_end": "2022-07-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 237,
+            "source_start": 1189,
+            "source_end": 1193,
+            "source_count": 5,
+            "calendar_start": "2022-07-25",
+            "calendar_end": "2022-07-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 238,
+            "source_start": 1194,
+            "source_end": 1198,
+            "source_count": 5,
+            "calendar_start": "2022-08-01",
+            "calendar_end": "2022-08-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 239,
+            "source_start": 1199,
+            "source_end": 1203,
+            "source_count": 5,
+            "calendar_start": "2022-08-08",
+            "calendar_end": "2022-08-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 240,
+            "source_start": 1204,
+            "source_end": 1208,
+            "source_count": 5,
+            "calendar_start": "2022-08-15",
+            "calendar_end": "2022-08-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 241,
+            "source_start": 1209,
+            "source_end": 1213,
+            "source_count": 5,
+            "calendar_start": "2022-08-22",
+            "calendar_end": "2022-08-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 242,
+            "source_start": 1214,
+            "source_end": 1218,
+            "source_count": 5,
+            "calendar_start": "2022-08-29",
+            "calendar_end": "2022-09-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 243,
+            "source_start": 1219,
+            "source_end": 1223,
+            "source_count": 5,
+            "calendar_start": "2022-09-05",
+            "calendar_end": "2022-09-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 244,
+            "source_start": 1224,
+            "source_end": 1228,
+            "source_count": 5,
+            "calendar_start": "2022-09-12",
+            "calendar_end": "2022-09-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 245,
+            "source_start": 1229,
+            "source_end": 1233,
+            "source_count": 5,
+            "calendar_start": "2022-09-19",
+            "calendar_end": "2022-09-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 246,
+            "source_start": 1234,
+            "source_end": 1238,
+            "source_count": 5,
+            "calendar_start": "2022-09-26",
+            "calendar_end": "2022-10-02",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 247,
+            "source_start": 1239,
+            "source_end": 1243,
+            "source_count": 5,
+            "calendar_start": "2022-10-03",
+            "calendar_end": "2022-10-09",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 248,
+            "source_start": 1244,
+            "source_end": 1248,
+            "source_count": 5,
+            "calendar_start": "2022-10-10",
+            "calendar_end": "2022-10-16",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 249,
+            "source_start": 1249,
+            "source_end": 1253,
+            "source_count": 5,
+            "calendar_start": "2022-10-17",
+            "calendar_end": "2022-10-23",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 250,
+            "source_start": 1254,
+            "source_end": 1258,
+            "source_count": 5,
+            "calendar_start": "2022-10-24",
+            "calendar_end": "2022-10-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 251,
+            "source_start": 1259,
+            "source_end": 1263,
+            "source_count": 5,
+            "calendar_start": "2022-10-31",
+            "calendar_end": "2022-11-06",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 252,
+            "source_start": 1264,
+            "source_end": 1268,
+            "source_count": 5,
+            "calendar_start": "2022-11-07",
+            "calendar_end": "2022-11-13",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 253,
+            "source_start": 1269,
+            "source_end": 1273,
+            "source_count": 5,
+            "calendar_start": "2022-11-14",
+            "calendar_end": "2022-11-20",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 254,
+            "source_start": 1274,
+            "source_end": 1278,
+            "source_count": 5,
+            "calendar_start": "2022-11-21",
+            "calendar_end": "2022-11-27",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 255,
+            "source_start": 1279,
+            "source_end": 1283,
+            "source_count": 5,
+            "calendar_start": "2022-11-28",
+            "calendar_end": "2022-12-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 256,
+            "source_start": 1284,
+            "source_end": 1288,
+            "source_count": 5,
+            "calendar_start": "2022-12-05",
+            "calendar_end": "2022-12-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 257,
+            "source_start": 1289,
+            "source_end": 1293,
+            "source_count": 5,
+            "calendar_start": "2022-12-12",
+            "calendar_end": "2022-12-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 258,
+            "source_start": 1294,
+            "source_end": 1298,
+            "source_count": 5,
+            "calendar_start": "2022-12-19",
+            "calendar_end": "2022-12-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 259,
+            "source_start": 1299,
+            "source_end": 1303,
+            "source_count": 5,
+            "calendar_start": "2022-12-26",
+            "calendar_end": "2023-01-01",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 260,
+            "source_start": 1304,
+            "source_end": 1308,
+            "source_count": 5,
+            "calendar_start": "2023-01-02",
+            "calendar_end": "2023-01-08",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 261,
+            "source_start": 1309,
+            "source_end": 1313,
+            "source_count": 5,
+            "calendar_start": "2023-01-09",
+            "calendar_end": "2023-01-15",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 262,
+            "source_start": 1314,
+            "source_end": 1318,
+            "source_count": 5,
+            "calendar_start": "2023-01-16",
+            "calendar_end": "2023-01-22",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 263,
+            "source_start": 1319,
+            "source_end": 1323,
+            "source_count": 5,
+            "calendar_start": "2023-01-23",
+            "calendar_end": "2023-01-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 264,
+            "source_start": 1324,
+            "source_end": 1328,
+            "source_count": 5,
+            "calendar_start": "2023-01-30",
+            "calendar_end": "2023-02-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 265,
+            "source_start": 1329,
+            "source_end": 1333,
+            "source_count": 5,
+            "calendar_start": "2023-02-06",
+            "calendar_end": "2023-02-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 266,
+            "source_start": 1334,
+            "source_end": 1338,
+            "source_count": 5,
+            "calendar_start": "2023-02-13",
+            "calendar_end": "2023-02-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 267,
+            "source_start": 1339,
+            "source_end": 1343,
+            "source_count": 5,
+            "calendar_start": "2023-02-20",
+            "calendar_end": "2023-02-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 268,
+            "source_start": 1344,
+            "source_end": 1348,
+            "source_count": 5,
+            "calendar_start": "2023-02-27",
+            "calendar_end": "2023-03-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 269,
+            "source_start": 1349,
+            "source_end": 1353,
+            "source_count": 5,
+            "calendar_start": "2023-03-06",
+            "calendar_end": "2023-03-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 270,
+            "source_start": 1354,
+            "source_end": 1358,
+            "source_count": 5,
+            "calendar_start": "2023-03-13",
+            "calendar_end": "2023-03-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 271,
+            "source_start": 1359,
+            "source_end": 1363,
+            "source_count": 5,
+            "calendar_start": "2023-03-20",
+            "calendar_end": "2023-03-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 272,
+            "source_start": 1364,
+            "source_end": 1368,
+            "source_count": 5,
+            "calendar_start": "2023-03-27",
+            "calendar_end": "2023-04-02",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 273,
+            "source_start": 1369,
+            "source_end": 1373,
+            "source_count": 5,
+            "calendar_start": "2023-04-03",
+            "calendar_end": "2023-04-09",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 274,
+            "source_start": 1374,
+            "source_end": 1378,
+            "source_count": 5,
+            "calendar_start": "2023-04-10",
+            "calendar_end": "2023-04-16",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 275,
+            "source_start": 1379,
+            "source_end": 1383,
+            "source_count": 5,
+            "calendar_start": "2023-04-17",
+            "calendar_end": "2023-04-23",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 276,
+            "source_start": 1384,
+            "source_end": 1388,
+            "source_count": 5,
+            "calendar_start": "2023-04-24",
+            "calendar_end": "2023-04-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 277,
+            "source_start": 1389,
+            "source_end": 1393,
+            "source_count": 5,
+            "calendar_start": "2023-05-01",
+            "calendar_end": "2023-05-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 278,
+            "source_start": 1394,
+            "source_end": 1398,
+            "source_count": 5,
+            "calendar_start": "2023-05-08",
+            "calendar_end": "2023-05-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 279,
+            "source_start": 1399,
+            "source_end": 1403,
+            "source_count": 5,
+            "calendar_start": "2023-05-15",
+            "calendar_end": "2023-05-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 280,
+            "source_start": 1404,
+            "source_end": 1408,
+            "source_count": 5,
+            "calendar_start": "2023-05-22",
+            "calendar_end": "2023-05-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 281,
+            "source_start": 1409,
+            "source_end": 1413,
+            "source_count": 5,
+            "calendar_start": "2023-05-29",
+            "calendar_end": "2023-06-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 282,
+            "source_start": 1414,
+            "source_end": 1418,
+            "source_count": 5,
+            "calendar_start": "2023-06-05",
+            "calendar_end": "2023-06-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 283,
+            "source_start": 1419,
+            "source_end": 1423,
+            "source_count": 5,
+            "calendar_start": "2023-06-12",
+            "calendar_end": "2023-06-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 284,
+            "source_start": 1424,
+            "source_end": 1428,
+            "source_count": 5,
+            "calendar_start": "2023-06-19",
+            "calendar_end": "2023-06-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 285,
+            "source_start": 1429,
+            "source_end": 1433,
+            "source_count": 5,
+            "calendar_start": "2023-06-26",
+            "calendar_end": "2023-07-02",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 286,
+            "source_start": 1434,
+            "source_end": 1438,
+            "source_count": 5,
+            "calendar_start": "2023-07-03",
+            "calendar_end": "2023-07-09",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 287,
+            "source_start": 1439,
+            "source_end": 1443,
+            "source_count": 5,
+            "calendar_start": "2023-07-10",
+            "calendar_end": "2023-07-16",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 288,
+            "source_start": 1444,
+            "source_end": 1448,
+            "source_count": 5,
+            "calendar_start": "2023-07-17",
+            "calendar_end": "2023-07-23",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 289,
+            "source_start": 1449,
+            "source_end": 1453,
+            "source_count": 5,
+            "calendar_start": "2023-07-24",
+            "calendar_end": "2023-07-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 290,
+            "source_start": 1454,
+            "source_end": 1458,
+            "source_count": 5,
+            "calendar_start": "2023-07-31",
+            "calendar_end": "2023-08-06",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 291,
+            "source_start": 1459,
+            "source_end": 1463,
+            "source_count": 5,
+            "calendar_start": "2023-08-07",
+            "calendar_end": "2023-08-13",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 292,
+            "source_start": 1464,
+            "source_end": 1468,
+            "source_count": 5,
+            "calendar_start": "2023-08-14",
+            "calendar_end": "2023-08-20",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 293,
+            "source_start": 1469,
+            "source_end": 1473,
+            "source_count": 5,
+            "calendar_start": "2023-08-21",
+            "calendar_end": "2023-08-27",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 294,
+            "source_start": 1474,
+            "source_end": 1478,
+            "source_count": 5,
+            "calendar_start": "2023-08-28",
+            "calendar_end": "2023-09-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 295,
+            "source_start": 1479,
+            "source_end": 1483,
+            "source_count": 5,
+            "calendar_start": "2023-09-04",
+            "calendar_end": "2023-09-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 296,
+            "source_start": 1484,
+            "source_end": 1488,
+            "source_count": 5,
+            "calendar_start": "2023-09-11",
+            "calendar_end": "2023-09-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 297,
+            "source_start": 1489,
+            "source_end": 1493,
+            "source_count": 5,
+            "calendar_start": "2023-09-18",
+            "calendar_end": "2023-09-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 298,
+            "source_start": 1494,
+            "source_end": 1498,
+            "source_count": 5,
+            "calendar_start": "2023-09-25",
+            "calendar_end": "2023-10-01",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 299,
+            "source_start": 1499,
+            "source_end": 1503,
+            "source_count": 5,
+            "calendar_start": "2023-10-02",
+            "calendar_end": "2023-10-08",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 300,
+            "source_start": 1504,
+            "source_end": 1508,
+            "source_count": 5,
+            "calendar_start": "2023-10-09",
+            "calendar_end": "2023-10-15",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 301,
+            "source_start": 1509,
+            "source_end": 1513,
+            "source_count": 5,
+            "calendar_start": "2023-10-16",
+            "calendar_end": "2023-10-22",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 302,
+            "source_start": 1514,
+            "source_end": 1518,
+            "source_count": 5,
+            "calendar_start": "2023-10-23",
+            "calendar_end": "2023-10-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 303,
+            "source_start": 1519,
+            "source_end": 1523,
+            "source_count": 5,
+            "calendar_start": "2023-10-30",
+            "calendar_end": "2023-11-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 304,
+            "source_start": 1524,
+            "source_end": 1528,
+            "source_count": 5,
+            "calendar_start": "2023-11-06",
+            "calendar_end": "2023-11-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 305,
+            "source_start": 1529,
+            "source_end": 1533,
+            "source_count": 5,
+            "calendar_start": "2023-11-13",
+            "calendar_end": "2023-11-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 306,
+            "source_start": 1534,
+            "source_end": 1538,
+            "source_count": 5,
+            "calendar_start": "2023-11-20",
+            "calendar_end": "2023-11-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 307,
+            "source_start": 1539,
+            "source_end": 1543,
+            "source_count": 5,
+            "calendar_start": "2023-11-27",
+            "calendar_end": "2023-12-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 308,
+            "source_start": 1544,
+            "source_end": 1548,
+            "source_count": 5,
+            "calendar_start": "2023-12-04",
+            "calendar_end": "2023-12-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 309,
+            "source_start": 1549,
+            "source_end": 1553,
+            "source_count": 5,
+            "calendar_start": "2023-12-11",
+            "calendar_end": "2023-12-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 310,
+            "source_start": 1554,
+            "source_end": 1558,
+            "source_count": 5,
+            "calendar_start": "2023-12-18",
+            "calendar_end": "2023-12-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 311,
+            "source_start": 1559,
+            "source_end": 1563,
+            "source_count": 5,
+            "calendar_start": "2023-12-25",
+            "calendar_end": "2023-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 312,
+            "source_start": 1564,
+            "source_end": 1568,
+            "source_count": 5,
+            "calendar_start": "2024-01-01",
+            "calendar_end": "2024-01-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 313,
+            "source_start": 1569,
+            "source_end": 1573,
+            "source_count": 5,
+            "calendar_start": "2024-01-08",
+            "calendar_end": "2024-01-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 314,
+            "source_start": 1574,
+            "source_end": 1578,
+            "source_count": 5,
+            "calendar_start": "2024-01-15",
+            "calendar_end": "2024-01-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 315,
+            "source_start": 1579,
+            "source_end": 1583,
+            "source_count": 5,
+            "calendar_start": "2024-01-22",
+            "calendar_end": "2024-01-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 316,
+            "source_start": 1584,
+            "source_end": 1588,
+            "source_count": 5,
+            "calendar_start": "2024-01-29",
+            "calendar_end": "2024-02-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 317,
+            "source_start": 1589,
+            "source_end": 1593,
+            "source_count": 5,
+            "calendar_start": "2024-02-05",
+            "calendar_end": "2024-02-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 318,
+            "source_start": 1594,
+            "source_end": 1598,
+            "source_count": 5,
+            "calendar_start": "2024-02-12",
+            "calendar_end": "2024-02-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 319,
+            "source_start": 1599,
+            "source_end": 1603,
+            "source_count": 5,
+            "calendar_start": "2024-02-19",
+            "calendar_end": "2024-02-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 320,
+            "source_start": 1604,
+            "source_end": 1608,
+            "source_count": 5,
+            "calendar_start": "2024-02-26",
+            "calendar_end": "2024-03-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 321,
+            "source_start": 1609,
+            "source_end": 1613,
+            "source_count": 5,
+            "calendar_start": "2024-03-04",
+            "calendar_end": "2024-03-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 322,
+            "source_start": 1614,
+            "source_end": 1618,
+            "source_count": 5,
+            "calendar_start": "2024-03-11",
+            "calendar_end": "2024-03-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 323,
+            "source_start": 1619,
+            "source_end": 1623,
+            "source_count": 5,
+            "calendar_start": "2024-03-18",
+            "calendar_end": "2024-03-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 324,
+            "source_start": 1624,
+            "source_end": 1628,
+            "source_count": 5,
+            "calendar_start": "2024-03-25",
+            "calendar_end": "2024-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 325,
+            "source_start": 1629,
+            "source_end": 1633,
+            "source_count": 5,
+            "calendar_start": "2024-04-01",
+            "calendar_end": "2024-04-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 326,
+            "source_start": 1634,
+            "source_end": 1638,
+            "source_count": 5,
+            "calendar_start": "2024-04-08",
+            "calendar_end": "2024-04-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 327,
+            "source_start": 1639,
+            "source_end": 1643,
+            "source_count": 5,
+            "calendar_start": "2024-04-15",
+            "calendar_end": "2024-04-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 328,
+            "source_start": 1644,
+            "source_end": 1648,
+            "source_count": 5,
+            "calendar_start": "2024-04-22",
+            "calendar_end": "2024-04-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 329,
+            "source_start": 1649,
+            "source_end": 1653,
+            "source_count": 5,
+            "calendar_start": "2024-04-29",
+            "calendar_end": "2024-05-05",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 330,
+            "source_start": 1654,
+            "source_end": 1658,
+            "source_count": 5,
+            "calendar_start": "2024-05-06",
+            "calendar_end": "2024-05-12",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 331,
+            "source_start": 1659,
+            "source_end": 1663,
+            "source_count": 5,
+            "calendar_start": "2024-05-13",
+            "calendar_end": "2024-05-19",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 332,
+            "source_start": 1664,
+            "source_end": 1668,
+            "source_count": 5,
+            "calendar_start": "2024-05-20",
+            "calendar_end": "2024-05-26",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 333,
+            "source_start": 1669,
+            "source_end": 1673,
+            "source_count": 5,
+            "calendar_start": "2024-05-27",
+            "calendar_end": "2024-06-02",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 334,
+            "source_start": 1674,
+            "source_end": 1678,
+            "source_count": 5,
+            "calendar_start": "2024-06-03",
+            "calendar_end": "2024-06-09",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 335,
+            "source_start": 1679,
+            "source_end": 1683,
+            "source_count": 5,
+            "calendar_start": "2024-06-10",
+            "calendar_end": "2024-06-16",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 336,
+            "source_start": 1684,
+            "source_end": 1688,
+            "source_count": 5,
+            "calendar_start": "2024-06-17",
+            "calendar_end": "2024-06-23",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 337,
+            "source_start": 1689,
+            "source_end": 1693,
+            "source_count": 5,
+            "calendar_start": "2024-06-24",
+            "calendar_end": "2024-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 338,
+            "source_start": 1694,
+            "source_end": 1698,
+            "source_count": 5,
+            "calendar_start": "2024-07-01",
+            "calendar_end": "2024-07-07",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 339,
+            "source_start": 1699,
+            "source_end": 1703,
+            "source_count": 5,
+            "calendar_start": "2024-07-08",
+            "calendar_end": "2024-07-14",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 340,
+            "source_start": 1704,
+            "source_end": 1708,
+            "source_count": 5,
+            "calendar_start": "2024-07-15",
+            "calendar_end": "2024-07-21",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 341,
+            "source_start": 1709,
+            "source_end": 1713,
+            "source_count": 5,
+            "calendar_start": "2024-07-22",
+            "calendar_end": "2024-07-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 342,
+            "source_start": 1714,
+            "source_end": 1718,
+            "source_count": 5,
+            "calendar_start": "2024-07-29",
+            "calendar_end": "2024-08-04",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 343,
+            "source_start": 1719,
+            "source_end": 1723,
+            "source_count": 5,
+            "calendar_start": "2024-08-05",
+            "calendar_end": "2024-08-11",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 344,
+            "source_start": 1724,
+            "source_end": 1728,
+            "source_count": 5,
+            "calendar_start": "2024-08-12",
+            "calendar_end": "2024-08-18",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 345,
+            "source_start": 1729,
+            "source_end": 1733,
+            "source_count": 5,
+            "calendar_start": "2024-08-19",
+            "calendar_end": "2024-08-25",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 346,
+            "source_start": 1734,
+            "source_end": 1738,
+            "source_count": 5,
+            "calendar_start": "2024-08-26",
+            "calendar_end": "2024-09-01",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 347,
+            "source_start": 1739,
+            "source_end": 1743,
+            "source_count": 5,
+            "calendar_start": "2024-09-02",
+            "calendar_end": "2024-09-08",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 348,
+            "source_start": 1744,
+            "source_end": 1748,
+            "source_count": 5,
+            "calendar_start": "2024-09-09",
+            "calendar_end": "2024-09-15",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 349,
+            "source_start": 1749,
+            "source_end": 1753,
+            "source_count": 5,
+            "calendar_start": "2024-09-16",
+            "calendar_end": "2024-09-22",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 350,
+            "source_start": 1754,
+            "source_end": 1758,
+            "source_count": 5,
+            "calendar_start": "2024-09-23",
+            "calendar_end": "2024-09-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 351,
+            "source_start": 1759,
+            "source_end": 1763,
+            "source_count": 5,
+            "calendar_start": "2024-09-30",
+            "calendar_end": "2024-10-06",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 352,
+            "source_start": 1764,
+            "source_end": 1768,
+            "source_count": 5,
+            "calendar_start": "2024-10-07",
+            "calendar_end": "2024-10-13",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 353,
+            "source_start": 1769,
+            "source_end": 1773,
+            "source_count": 5,
+            "calendar_start": "2024-10-14",
+            "calendar_end": "2024-10-20",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 354,
+            "source_start": 1774,
+            "source_end": 1778,
+            "source_count": 5,
+            "calendar_start": "2024-10-21",
+            "calendar_end": "2024-10-27",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 355,
+            "source_start": 1779,
+            "source_end": 1783,
+            "source_count": 5,
+            "calendar_start": "2024-10-28",
+            "calendar_end": "2024-11-03",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 356,
+            "source_start": 1784,
+            "source_end": 1788,
+            "source_count": 5,
+            "calendar_start": "2024-11-04",
+            "calendar_end": "2024-11-10",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 357,
+            "source_start": 1789,
+            "source_end": 1793,
+            "source_count": 5,
+            "calendar_start": "2024-11-11",
+            "calendar_end": "2024-11-17",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 358,
+            "source_start": 1794,
+            "source_end": 1798,
+            "source_count": 5,
+            "calendar_start": "2024-11-18",
+            "calendar_end": "2024-11-24",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          }
+        ],
+        "excluded_partial_buckets": [
+          {
+            "start": "2018-01-01",
+            "end": "2018-01-07",
+            "observed_daily_bars": 4,
+            "expected_daily_bars": 5,
+            "reason": "incomplete_synthetic_weekday_bucket"
+          },
+          {
+            "start": "2024-11-25",
+            "end": "2024-12-01",
+            "observed_daily_bars": 1,
+            "expected_daily_bars": 5,
+            "reason": "incomplete_synthetic_weekday_bucket"
+          }
+        ],
+        "missing_children_filled": false
+      },
+      "replay_schedule": {
+        "observations": 12,
+        "indices": [
+          0,
+          4,
+          29,
+          39,
+          79,
+          119,
+          159,
+          198,
+          238,
+          278,
+          318,
+          358
+        ],
+        "semantics": "scheduled literal prefixes, not every source bar; full earlier history retained"
+      },
+      "cross_group_link_allowed": false
+    },
+    "month": {
+      "label": "月线",
+      "period": "month",
+      "role": "长期结构与历史位置；确认更慢，所需历史更长。",
+      "source_group": "daily_source",
+      "synthetic": true,
+      "input_sha256": "2c0703c33531424235c0277b3e779feae3d72c3d970bd3d83ed1dc8adfd0b1d1",
+      "aggregation_audit": {
+        "rule": "complete_calendar_bucket_OHLCV",
+        "calendar": "synthetic_weekdays_without_exchange_holidays",
+        "source_period": "day",
+        "source_group": "daily_source",
+        "lineage": [
+          {
+            "index": 0,
+            "source_start": 22,
+            "source_end": 41,
+            "source_count": 20,
+            "calendar_start": "2018-02-01",
+            "calendar_end": "2018-02-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 1,
+            "source_start": 42,
+            "source_end": 63,
+            "source_count": 22,
+            "calendar_start": "2018-03-01",
+            "calendar_end": "2018-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 2,
+            "source_start": 64,
+            "source_end": 84,
+            "source_count": 21,
+            "calendar_start": "2018-04-01",
+            "calendar_end": "2018-04-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 3,
+            "source_start": 85,
+            "source_end": 107,
+            "source_count": 23,
+            "calendar_start": "2018-05-01",
+            "calendar_end": "2018-05-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 4,
+            "source_start": 108,
+            "source_end": 128,
+            "source_count": 21,
+            "calendar_start": "2018-06-01",
+            "calendar_end": "2018-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 5,
+            "source_start": 129,
+            "source_end": 150,
+            "source_count": 22,
+            "calendar_start": "2018-07-01",
+            "calendar_end": "2018-07-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 6,
+            "source_start": 151,
+            "source_end": 173,
+            "source_count": 23,
+            "calendar_start": "2018-08-01",
+            "calendar_end": "2018-08-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 7,
+            "source_start": 174,
+            "source_end": 193,
+            "source_count": 20,
+            "calendar_start": "2018-09-01",
+            "calendar_end": "2018-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 8,
+            "source_start": 194,
+            "source_end": 216,
+            "source_count": 23,
+            "calendar_start": "2018-10-01",
+            "calendar_end": "2018-10-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 9,
+            "source_start": 217,
+            "source_end": 238,
+            "source_count": 22,
+            "calendar_start": "2018-11-01",
+            "calendar_end": "2018-11-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 10,
+            "source_start": 239,
+            "source_end": 259,
+            "source_count": 21,
+            "calendar_start": "2018-12-01",
+            "calendar_end": "2018-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 11,
+            "source_start": 260,
+            "source_end": 282,
+            "source_count": 23,
+            "calendar_start": "2019-01-01",
+            "calendar_end": "2019-01-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 12,
+            "source_start": 283,
+            "source_end": 302,
+            "source_count": 20,
+            "calendar_start": "2019-02-01",
+            "calendar_end": "2019-02-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 13,
+            "source_start": 303,
+            "source_end": 323,
+            "source_count": 21,
+            "calendar_start": "2019-03-01",
+            "calendar_end": "2019-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 14,
+            "source_start": 324,
+            "source_end": 345,
+            "source_count": 22,
+            "calendar_start": "2019-04-01",
+            "calendar_end": "2019-04-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 15,
+            "source_start": 346,
+            "source_end": 368,
+            "source_count": 23,
+            "calendar_start": "2019-05-01",
+            "calendar_end": "2019-05-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 16,
+            "source_start": 369,
+            "source_end": 388,
+            "source_count": 20,
+            "calendar_start": "2019-06-01",
+            "calendar_end": "2019-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 17,
+            "source_start": 389,
+            "source_end": 411,
+            "source_count": 23,
+            "calendar_start": "2019-07-01",
+            "calendar_end": "2019-07-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 18,
+            "source_start": 412,
+            "source_end": 433,
+            "source_count": 22,
+            "calendar_start": "2019-08-01",
+            "calendar_end": "2019-08-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 19,
+            "source_start": 434,
+            "source_end": 454,
+            "source_count": 21,
+            "calendar_start": "2019-09-01",
+            "calendar_end": "2019-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 20,
+            "source_start": 455,
+            "source_end": 477,
+            "source_count": 23,
+            "calendar_start": "2019-10-01",
+            "calendar_end": "2019-10-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 21,
+            "source_start": 478,
+            "source_end": 498,
+            "source_count": 21,
+            "calendar_start": "2019-11-01",
+            "calendar_end": "2019-11-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 22,
+            "source_start": 499,
+            "source_end": 520,
+            "source_count": 22,
+            "calendar_start": "2019-12-01",
+            "calendar_end": "2019-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 23,
+            "source_start": 521,
+            "source_end": 543,
+            "source_count": 23,
+            "calendar_start": "2020-01-01",
+            "calendar_end": "2020-01-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 24,
+            "source_start": 544,
+            "source_end": 563,
+            "source_count": 20,
+            "calendar_start": "2020-02-01",
+            "calendar_end": "2020-02-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 25,
+            "source_start": 564,
+            "source_end": 585,
+            "source_count": 22,
+            "calendar_start": "2020-03-01",
+            "calendar_end": "2020-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 26,
+            "source_start": 586,
+            "source_end": 607,
+            "source_count": 22,
+            "calendar_start": "2020-04-01",
+            "calendar_end": "2020-04-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 27,
+            "source_start": 608,
+            "source_end": 628,
+            "source_count": 21,
+            "calendar_start": "2020-05-01",
+            "calendar_end": "2020-05-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 28,
+            "source_start": 629,
+            "source_end": 650,
+            "source_count": 22,
+            "calendar_start": "2020-06-01",
+            "calendar_end": "2020-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 29,
+            "source_start": 651,
+            "source_end": 673,
+            "source_count": 23,
+            "calendar_start": "2020-07-01",
+            "calendar_end": "2020-07-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 30,
+            "source_start": 674,
+            "source_end": 694,
+            "source_count": 21,
+            "calendar_start": "2020-08-01",
+            "calendar_end": "2020-08-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 31,
+            "source_start": 695,
+            "source_end": 716,
+            "source_count": 22,
+            "calendar_start": "2020-09-01",
+            "calendar_end": "2020-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 32,
+            "source_start": 717,
+            "source_end": 738,
+            "source_count": 22,
+            "calendar_start": "2020-10-01",
+            "calendar_end": "2020-10-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 33,
+            "source_start": 739,
+            "source_end": 759,
+            "source_count": 21,
+            "calendar_start": "2020-11-01",
+            "calendar_end": "2020-11-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 34,
+            "source_start": 760,
+            "source_end": 782,
+            "source_count": 23,
+            "calendar_start": "2020-12-01",
+            "calendar_end": "2020-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 35,
+            "source_start": 783,
+            "source_end": 803,
+            "source_count": 21,
+            "calendar_start": "2021-01-01",
+            "calendar_end": "2021-01-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 36,
+            "source_start": 804,
+            "source_end": 823,
+            "source_count": 20,
+            "calendar_start": "2021-02-01",
+            "calendar_end": "2021-02-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 37,
+            "source_start": 824,
+            "source_end": 846,
+            "source_count": 23,
+            "calendar_start": "2021-03-01",
+            "calendar_end": "2021-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 38,
+            "source_start": 847,
+            "source_end": 868,
+            "source_count": 22,
+            "calendar_start": "2021-04-01",
+            "calendar_end": "2021-04-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 39,
+            "source_start": 869,
+            "source_end": 889,
+            "source_count": 21,
+            "calendar_start": "2021-05-01",
+            "calendar_end": "2021-05-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 40,
+            "source_start": 890,
+            "source_end": 911,
+            "source_count": 22,
+            "calendar_start": "2021-06-01",
+            "calendar_end": "2021-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 41,
+            "source_start": 912,
+            "source_end": 933,
+            "source_count": 22,
+            "calendar_start": "2021-07-01",
+            "calendar_end": "2021-07-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 42,
+            "source_start": 934,
+            "source_end": 955,
+            "source_count": 22,
+            "calendar_start": "2021-08-01",
+            "calendar_end": "2021-08-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 43,
+            "source_start": 956,
+            "source_end": 977,
+            "source_count": 22,
+            "calendar_start": "2021-09-01",
+            "calendar_end": "2021-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 44,
+            "source_start": 978,
+            "source_end": 998,
+            "source_count": 21,
+            "calendar_start": "2021-10-01",
+            "calendar_end": "2021-10-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 45,
+            "source_start": 999,
+            "source_end": 1020,
+            "source_count": 22,
+            "calendar_start": "2021-11-01",
+            "calendar_end": "2021-11-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 46,
+            "source_start": 1021,
+            "source_end": 1043,
+            "source_count": 23,
+            "calendar_start": "2021-12-01",
+            "calendar_end": "2021-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 47,
+            "source_start": 1044,
+            "source_end": 1064,
+            "source_count": 21,
+            "calendar_start": "2022-01-01",
+            "calendar_end": "2022-01-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 48,
+            "source_start": 1065,
+            "source_end": 1084,
+            "source_count": 20,
+            "calendar_start": "2022-02-01",
+            "calendar_end": "2022-02-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 49,
+            "source_start": 1085,
+            "source_end": 1107,
+            "source_count": 23,
+            "calendar_start": "2022-03-01",
+            "calendar_end": "2022-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 50,
+            "source_start": 1108,
+            "source_end": 1128,
+            "source_count": 21,
+            "calendar_start": "2022-04-01",
+            "calendar_end": "2022-04-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 51,
+            "source_start": 1129,
+            "source_end": 1150,
+            "source_count": 22,
+            "calendar_start": "2022-05-01",
+            "calendar_end": "2022-05-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 52,
+            "source_start": 1151,
+            "source_end": 1172,
+            "source_count": 22,
+            "calendar_start": "2022-06-01",
+            "calendar_end": "2022-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 53,
+            "source_start": 1173,
+            "source_end": 1193,
+            "source_count": 21,
+            "calendar_start": "2022-07-01",
+            "calendar_end": "2022-07-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 54,
+            "source_start": 1194,
+            "source_end": 1216,
+            "source_count": 23,
+            "calendar_start": "2022-08-01",
+            "calendar_end": "2022-08-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 55,
+            "source_start": 1217,
+            "source_end": 1238,
+            "source_count": 22,
+            "calendar_start": "2022-09-01",
+            "calendar_end": "2022-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 56,
+            "source_start": 1239,
+            "source_end": 1259,
+            "source_count": 21,
+            "calendar_start": "2022-10-01",
+            "calendar_end": "2022-10-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 57,
+            "source_start": 1260,
+            "source_end": 1281,
+            "source_count": 22,
+            "calendar_start": "2022-11-01",
+            "calendar_end": "2022-11-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 58,
+            "source_start": 1282,
+            "source_end": 1303,
+            "source_count": 22,
+            "calendar_start": "2022-12-01",
+            "calendar_end": "2022-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 59,
+            "source_start": 1304,
+            "source_end": 1325,
+            "source_count": 22,
+            "calendar_start": "2023-01-01",
+            "calendar_end": "2023-01-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 60,
+            "source_start": 1326,
+            "source_end": 1345,
+            "source_count": 20,
+            "calendar_start": "2023-02-01",
+            "calendar_end": "2023-02-28",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 61,
+            "source_start": 1346,
+            "source_end": 1368,
+            "source_count": 23,
+            "calendar_start": "2023-03-01",
+            "calendar_end": "2023-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 62,
+            "source_start": 1369,
+            "source_end": 1388,
+            "source_count": 20,
+            "calendar_start": "2023-04-01",
+            "calendar_end": "2023-04-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 63,
+            "source_start": 1389,
+            "source_end": 1411,
+            "source_count": 23,
+            "calendar_start": "2023-05-01",
+            "calendar_end": "2023-05-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 64,
+            "source_start": 1412,
+            "source_end": 1433,
+            "source_count": 22,
+            "calendar_start": "2023-06-01",
+            "calendar_end": "2023-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 65,
+            "source_start": 1434,
+            "source_end": 1454,
+            "source_count": 21,
+            "calendar_start": "2023-07-01",
+            "calendar_end": "2023-07-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 66,
+            "source_start": 1455,
+            "source_end": 1477,
+            "source_count": 23,
+            "calendar_start": "2023-08-01",
+            "calendar_end": "2023-08-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 67,
+            "source_start": 1478,
+            "source_end": 1498,
+            "source_count": 21,
+            "calendar_start": "2023-09-01",
+            "calendar_end": "2023-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 68,
+            "source_start": 1499,
+            "source_end": 1520,
+            "source_count": 22,
+            "calendar_start": "2023-10-01",
+            "calendar_end": "2023-10-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 69,
+            "source_start": 1521,
+            "source_end": 1542,
+            "source_count": 22,
+            "calendar_start": "2023-11-01",
+            "calendar_end": "2023-11-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 70,
+            "source_start": 1543,
+            "source_end": 1563,
+            "source_count": 21,
+            "calendar_start": "2023-12-01",
+            "calendar_end": "2023-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 71,
+            "source_start": 1564,
+            "source_end": 1586,
+            "source_count": 23,
+            "calendar_start": "2024-01-01",
+            "calendar_end": "2024-01-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 72,
+            "source_start": 1587,
+            "source_end": 1607,
+            "source_count": 21,
+            "calendar_start": "2024-02-01",
+            "calendar_end": "2024-02-29",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 73,
+            "source_start": 1608,
+            "source_end": 1628,
+            "source_count": 21,
+            "calendar_start": "2024-03-01",
+            "calendar_end": "2024-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 74,
+            "source_start": 1629,
+            "source_end": 1650,
+            "source_count": 22,
+            "calendar_start": "2024-04-01",
+            "calendar_end": "2024-04-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 75,
+            "source_start": 1651,
+            "source_end": 1673,
+            "source_count": 23,
+            "calendar_start": "2024-05-01",
+            "calendar_end": "2024-05-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 76,
+            "source_start": 1674,
+            "source_end": 1693,
+            "source_count": 20,
+            "calendar_start": "2024-06-01",
+            "calendar_end": "2024-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 77,
+            "source_start": 1694,
+            "source_end": 1716,
+            "source_count": 23,
+            "calendar_start": "2024-07-01",
+            "calendar_end": "2024-07-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 78,
+            "source_start": 1717,
+            "source_end": 1738,
+            "source_count": 22,
+            "calendar_start": "2024-08-01",
+            "calendar_end": "2024-08-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 79,
+            "source_start": 1739,
+            "source_end": 1759,
+            "source_count": 21,
+            "calendar_start": "2024-09-01",
+            "calendar_end": "2024-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 80,
+            "source_start": 1760,
+            "source_end": 1782,
+            "source_count": 23,
+            "calendar_start": "2024-10-01",
+            "calendar_end": "2024-10-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          }
+        ],
+        "excluded_partial_buckets": [
+          {
+            "start": "2018-01-01",
+            "end": "2018-01-31",
+            "observed_daily_bars": 22,
+            "expected_daily_bars": 23,
+            "reason": "incomplete_synthetic_weekday_bucket"
+          },
+          {
+            "start": "2024-11-01",
+            "end": "2024-11-30",
+            "observed_daily_bars": 17,
+            "expected_daily_bars": 21,
+            "reason": "incomplete_synthetic_weekday_bucket"
+          }
+        ],
+        "missing_children_filled": false
+      },
+      "replay_schedule": {
+        "observations": 12,
+        "indices": [
+          0,
+          4,
+          8,
+          17,
+          26,
+          29,
+          35,
+          44,
+          53,
+          62,
+          71,
+          80
+        ],
+        "semantics": "scheduled literal prefixes, not every source bar; full earlier history retained"
+      },
+      "cross_group_link_allowed": false
+    },
+    "quarter": {
+      "label": "季线",
+      "period": "quarter",
+      "role": "跨季度背景；样本少时不能强行画完整中枢。",
+      "source_group": "daily_source",
+      "synthetic": true,
+      "input_sha256": "c2759b96451a70f9c92e63e83137d75cbf0870faf7a4bc3cfa21bb95f6c357a6",
+      "aggregation_audit": {
+        "rule": "complete_calendar_bucket_OHLCV",
+        "calendar": "synthetic_weekdays_without_exchange_holidays",
+        "source_period": "day",
+        "source_group": "daily_source",
+        "lineage": [
+          {
+            "index": 0,
+            "source_start": 64,
+            "source_end": 128,
+            "source_count": 65,
+            "calendar_start": "2018-04-01",
+            "calendar_end": "2018-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 1,
+            "source_start": 129,
+            "source_end": 193,
+            "source_count": 65,
+            "calendar_start": "2018-07-01",
+            "calendar_end": "2018-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 2,
+            "source_start": 194,
+            "source_end": 259,
+            "source_count": 66,
+            "calendar_start": "2018-10-01",
+            "calendar_end": "2018-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 3,
+            "source_start": 260,
+            "source_end": 323,
+            "source_count": 64,
+            "calendar_start": "2019-01-01",
+            "calendar_end": "2019-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 4,
+            "source_start": 324,
+            "source_end": 388,
+            "source_count": 65,
+            "calendar_start": "2019-04-01",
+            "calendar_end": "2019-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 5,
+            "source_start": 389,
+            "source_end": 454,
+            "source_count": 66,
+            "calendar_start": "2019-07-01",
+            "calendar_end": "2019-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 6,
+            "source_start": 455,
+            "source_end": 520,
+            "source_count": 66,
+            "calendar_start": "2019-10-01",
+            "calendar_end": "2019-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 7,
+            "source_start": 521,
+            "source_end": 585,
+            "source_count": 65,
+            "calendar_start": "2020-01-01",
+            "calendar_end": "2020-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 8,
+            "source_start": 586,
+            "source_end": 650,
+            "source_count": 65,
+            "calendar_start": "2020-04-01",
+            "calendar_end": "2020-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 9,
+            "source_start": 651,
+            "source_end": 716,
+            "source_count": 66,
+            "calendar_start": "2020-07-01",
+            "calendar_end": "2020-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 10,
+            "source_start": 717,
+            "source_end": 782,
+            "source_count": 66,
+            "calendar_start": "2020-10-01",
+            "calendar_end": "2020-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 11,
+            "source_start": 783,
+            "source_end": 846,
+            "source_count": 64,
+            "calendar_start": "2021-01-01",
+            "calendar_end": "2021-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 12,
+            "source_start": 847,
+            "source_end": 911,
+            "source_count": 65,
+            "calendar_start": "2021-04-01",
+            "calendar_end": "2021-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 13,
+            "source_start": 912,
+            "source_end": 977,
+            "source_count": 66,
+            "calendar_start": "2021-07-01",
+            "calendar_end": "2021-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 14,
+            "source_start": 978,
+            "source_end": 1043,
+            "source_count": 66,
+            "calendar_start": "2021-10-01",
+            "calendar_end": "2021-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 15,
+            "source_start": 1044,
+            "source_end": 1107,
+            "source_count": 64,
+            "calendar_start": "2022-01-01",
+            "calendar_end": "2022-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 16,
+            "source_start": 1108,
+            "source_end": 1172,
+            "source_count": 65,
+            "calendar_start": "2022-04-01",
+            "calendar_end": "2022-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 17,
+            "source_start": 1173,
+            "source_end": 1238,
+            "source_count": 66,
+            "calendar_start": "2022-07-01",
+            "calendar_end": "2022-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 18,
+            "source_start": 1239,
+            "source_end": 1303,
+            "source_count": 65,
+            "calendar_start": "2022-10-01",
+            "calendar_end": "2022-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 19,
+            "source_start": 1304,
+            "source_end": 1368,
+            "source_count": 65,
+            "calendar_start": "2023-01-01",
+            "calendar_end": "2023-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 20,
+            "source_start": 1369,
+            "source_end": 1433,
+            "source_count": 65,
+            "calendar_start": "2023-04-01",
+            "calendar_end": "2023-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 21,
+            "source_start": 1434,
+            "source_end": 1498,
+            "source_count": 65,
+            "calendar_start": "2023-07-01",
+            "calendar_end": "2023-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 22,
+            "source_start": 1499,
+            "source_end": 1563,
+            "source_count": 65,
+            "calendar_start": "2023-10-01",
+            "calendar_end": "2023-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 23,
+            "source_start": 1564,
+            "source_end": 1628,
+            "source_count": 65,
+            "calendar_start": "2024-01-01",
+            "calendar_end": "2024-03-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 24,
+            "source_start": 1629,
+            "source_end": 1693,
+            "source_count": 65,
+            "calendar_start": "2024-04-01",
+            "calendar_end": "2024-06-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 25,
+            "source_start": 1694,
+            "source_end": 1759,
+            "source_count": 66,
+            "calendar_start": "2024-07-01",
+            "calendar_end": "2024-09-30",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          }
+        ],
+        "excluded_partial_buckets": [
+          {
+            "start": "2018-01-01",
+            "end": "2018-03-31",
+            "observed_daily_bars": 64,
+            "expected_daily_bars": 65,
+            "reason": "incomplete_synthetic_weekday_bucket"
+          },
+          {
+            "start": "2024-10-01",
+            "end": "2024-12-31",
+            "observed_daily_bars": 40,
+            "expected_daily_bars": 66,
+            "reason": "incomplete_synthetic_weekday_bucket"
+          }
+        ],
+        "missing_children_filled": false
+      },
+      "replay_schedule": {
+        "observations": 11,
+        "indices": [
+          0,
+          2,
+          4,
+          5,
+          8,
+          11,
+          13,
+          16,
+          19,
+          22,
+          25
+        ],
+        "semantics": "scheduled literal prefixes, not every source bar; full earlier history retained"
+      },
+      "cross_group_link_allowed": false
+    },
+    "year": {
+      "label": "年线",
+      "period": "year",
+      "role": "多年历史背景；几根年度K线通常不足以确认笔和线段。",
+      "source_group": "daily_source",
+      "synthetic": true,
+      "input_sha256": "0058d0ae02c76fec7cc2bd19cfc026c432e432d08dc5bec691f58dcbf0adb33b",
+      "aggregation_audit": {
+        "rule": "complete_calendar_bucket_OHLCV",
+        "calendar": "synthetic_weekdays_without_exchange_holidays",
+        "source_period": "day",
+        "source_group": "daily_source",
+        "lineage": [
+          {
+            "index": 0,
+            "source_start": 260,
+            "source_end": 520,
+            "source_count": 261,
+            "calendar_start": "2019-01-01",
+            "calendar_end": "2019-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 1,
+            "source_start": 521,
+            "source_end": 782,
+            "source_count": 262,
+            "calendar_start": "2020-01-01",
+            "calendar_end": "2020-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 2,
+            "source_start": 783,
+            "source_end": 1043,
+            "source_count": 261,
+            "calendar_start": "2021-01-01",
+            "calendar_end": "2021-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 3,
+            "source_start": 1044,
+            "source_end": 1303,
+            "source_count": 260,
+            "calendar_start": "2022-01-01",
+            "calendar_end": "2022-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          },
+          {
+            "index": 4,
+            "source_start": 1304,
+            "source_end": 1563,
+            "source_count": 260,
+            "calendar_start": "2023-01-01",
+            "calendar_end": "2023-12-31",
+            "calendar": "synthetic_weekdays_without_exchange_holidays",
+            "complete": true
+          }
+        ],
+        "excluded_partial_buckets": [
+          {
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "observed_daily_bars": 260,
+            "expected_daily_bars": 261,
+            "reason": "incomplete_synthetic_weekday_bucket"
+          },
+          {
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "observed_daily_bars": 236,
+            "expected_daily_bars": 262,
+            "reason": "incomplete_synthetic_weekday_bucket"
+          }
+        ],
+        "missing_children_filled": false
+      },
+      "replay_schedule": {
+        "observations": 5,
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "semantics": "scheduled literal prefixes, not every source bar; full earlier history retained"
+      },
+      "cross_group_link_allowed": false
+    }
+  }
+}

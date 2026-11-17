@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-11-17T03:46:01.428043+08:00",
+  "root": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday",
+  "frozen_code_sha256": "67dc64e53f7eac7a9285e9a89f979b20c8e8c4f1069e9a43b88db3c744b9892f",
+  "frozen_files_checked": 81,
+  "runner_pid": 23648,
+  "viewer_pid": 28980,
+  "supervisor_pid": 48292,
+  "task_counts": {
+    "pending": 1,
+    "running": 1,
+    "verified": 394,
+    "waiting_source": 10762
+  },
+  "active": [
+    {
+      "symbol": "bj920371",
+      "period": "5m",
+      "stage": "independent_verification",
+      "worker_pid": 30524,
+      "updated_at": "2026-11-17T03:44:34.016888+08:00"
+    }
+  ],
+  "acquisition": {
+    "state": "completed",
+    "processing_complete": true,
+    "requested": 11158,
+    "securities": 5579,
+    "periods": [
+      "1m",
+      "5m"
+    ],
+    "done": 11158,
+    "complete": 11158,
+    "failed": 0,
+    "unavailable": 0,
+    "bars": 256654260,
+    "stored_bytes": 10121192458,
+    "started_at": "2026-11-15T19:23:44+08:00",
+    "updated_at": "2026-11-17T03:44:18+08:00",
+    "seconds": 18269.278,
+    "universe_sha256": "276b6f75224c2ee08fd384a28ce5130717432684717b4848877a3d35350cafb0",
+    "cutoff": "2026-11-13T15:00:00+08:00",
+    "source": "http://127.0.0.1:65004",
+    "execution_allowed": false,
+    "uploaded": false,
+    "detail_journal": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acquisition\\acquisition-events.jsonl",
+    "status_final_count_verified": true,
+    "stop_file": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acquisition\\STOP",
+    "coverage_semantics": "frozen current provider universe and all native history actually returned; not all-delisted history",
+    "status_files_present": 11158,
+    "detail_results": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\acquisition\\acquisition-results.json"
+  },
+  "supervisor": {
+    "supervisor_pid": 48292,
+    "root": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday",
+    "runner_pid": null,
+    "execution_allowed": false,
+    "uploaded": false,
+    "state": "waiting_existing_runner",
+    "heartbeat": "2026-11-17T03:45:58+08:00",
+    "verified": 394,
+    "restarts": 0
+  },
+  "free_disk_bytes": 27344019456,
+  "execution_allowed": false,
+  "uploaded": false
+}

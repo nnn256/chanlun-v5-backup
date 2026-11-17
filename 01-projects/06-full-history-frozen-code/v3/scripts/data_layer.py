@@ -1,0 +1,676 @@
+# -*- coding: utf-8 -*-
+"""统一数据层 (Data Layer)
+整合 通达信 (TDX 高速二进制协议) + Baostock (复权历史K线) + 腾讯/东财 HTTP 容灾多级热备。
+
+设计原则：
+  1. 极速主力：以 通达信 (mootdx / pytdx) 为 09:15-09:25 竞价切片、1m/5m 分钟K线与实时行情主力通道 (40ms 极速响应)；
+  2. 多级容灾：TDX -> Baostock (历史前复权) -> 腾讯 HTTP -> 东财 HTTP，任意单点失效自动毫秒级切换；
+  3. 代理免穿：国内金融 HTTP 接口自动绕过环境代理 (HTTP_PROXY)，杜绝握手超时卡死；
+  4. 接口标准：向下兼容 stock_dashboard.py 及量化回测引擎格式，上层调用零改动。
+"""
+import sys
+import os
+import json
+import re
+import datetime
+import time
+import urllib.request
+from typing import List, Dict, Any, Optional, Tuple
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, '..'))
+
+# ============================================================================
+# 1. 通达信 (TDX) 高可用生产节点池与单例管理
+# ============================================================================
+TDX_SERVERS: List[Tuple[str, int]] = [
+    ('117.34.114.16', 7709),  # 国泰君安生产节点 A
+    ('117.34.114.15', 7709),  # 国泰君安生产节点 B
+    ('117.34.114.14', 7709),  # 国泰君安生产节点 C
+    ('117.34.114.13', 7709),  # 国泰君安生产节点 D
+]
+
+_mootdx_client = None
+_pytdx_client = None
+_active_server = None
+_tdx_disabled_until = 0
+
+# 上证指数族：6 位以 000 开头且市场为沪。个股 000001 无后缀时仍是深市平安银行。
+_SH_INDEX_PREFIX = '000'
+
+def _market_prefix(market: int) -> str:
+    """1=沪 sh, 0=深 sz, 2=北交所 bj"""
+    return {1: 'sh', 0: 'sz', 2: 'bj'}.get(int(market), 'sz')
+
+
+def _is_index(market: int, pure: str) -> bool:
+    """指数不能走个股通道：TDX/AKShare 按纯数字会把 000001 取成平安银行。"""
+    if market == 1 and pure.startswith(_SH_INDEX_PREFIX):
+        return True
+    if market == 0 and pure.startswith('399'):
+        return True
+    if market == 2 and pure.startswith('899'):
+        return True
+    return False
+
+
+def _clean_code(code: str) -> Tuple[int, str]:
+    """规范化股票代码 -> (market: 1=sh / 0=sz / 2=bj, pure_code: 6位字符串)
+
+    市场判定优先相信显式前缀/后缀（sh/sz/bj、.SH/.SZ/.BJ）。
+    没有标记时：920/4/8 开头为北交所，6/5/9 为沪，其余为深。
+    因此 000001.SH / 000300.SH / 000688.SH 保持沪市指数，
+    而无后缀的 000001 仍是深市个股。
+    """
+    raw = str(code).strip().lower().replace(' ', '')
+    explicit = None
+    if raw.startswith(('bj.', 'bj')) or raw.endswith('.bj'):
+        explicit = 2
+    elif raw.startswith(('sh.', 'sh')) or raw.endswith(('.sh', '.ss')) or 'xshg' in raw:
+        explicit = 1
+    elif raw.startswith(('sz.', 'sz')) or raw.endswith('.sz') or 'xsse' in raw:
+        explicit = 0
+
+    c = raw
+    for t in ('xshg', 'xsse', 'sh.', 'sz.', 'bj.', '.ss', '.sz', '.sh', '.bj'):
+        c = c.replace(t, '')
+    c = re.sub(r'^(sh|sz|bj)', '', c)
+    m = re.search(r'\d{6}', c)
+    pure = m.group(0) if m else c
+
+    if explicit is not None:
+        return explicit, pure
+    # 920 必须先于「9 开头=沪」判断，否则新北交所代码会被当成沪市
+    if pure.startswith('920') or pure.startswith(('4', '8')):
+        return 2, pure
+    if pure.startswith(('6', '5', '9')):
+        return 1, pure
+    return 0, pure
+
+
+def get_tdx_client():
+    """获取经过数据验证的高可用 mootdx 客户端单例"""
+    global _mootdx_client, _active_server, _tdx_disabled_until
+    now = time.time()
+    if now < _tdx_disabled_until:
+        return None
+
+    if _mootdx_client is not None:
+        return _mootdx_client
+
+    try:
+        from mootdx.quotes import Quotes
+        # 总时间预算: 节点池逐个试连, 最坏情况(全部不可达)曾耗时约 20s
+        # (16 节点 x timeout 1.2s + mootdx 内部 sleep 累计 14s)。
+        # 这里设 4s 总预算, 超了立刻放弃并进入长禁用期, 把时间让给 baostock 主通道。
+        _budget_deadline = time.time() + 4.0
+        for host, port in TDX_SERVERS:
+            if time.time() > _budget_deadline:
+                break
+            try:
+                c = Quotes.factory(market='std', server=(host, port), timeout=0.8)
+                # 发送试探包验证真实数据吐出
+                b = c.bars(symbol='600519', frequency=9, offset=1)
+                if b is not None and len(b) > 0:
+                    _mootdx_client = c
+                    _active_server = (host, port)
+                    return _mootdx_client
+            except Exception:
+                continue
+    except ImportError:
+        pass
+
+    # 全部节点不可达: 长禁用期(10 分钟), 避免每 30 秒就白等一轮
+    _tdx_disabled_until = time.time() + 600.0
+    return None
+def get_pytdx_client():
+    """获取底层的 pytdx 原始 API 实例 (用于逐笔分时与竞价切片)"""
+    global _pytdx_client, _active_server
+    if _pytdx_client is not None:
+        try:
+            if _pytdx_client.client and not _pytdx_client.client.is_stopped:
+                return _pytdx_client
+        except Exception:
+            _pytdx_client = None
+
+    try:
+        from pytdx.hq import TdxHq_API
+        # 优先使用已激活的活跃服务器，否则轮询
+        hosts = [_active_server] if _active_server else TDX_SERVERS
+        for item in hosts:
+            if not item: continue
+            host, port = item
+            try:
+                api = TdxHq_API()
+                if api.connect(host, port, time_out=1.0):
+                    _pytdx_client = api
+                    return _pytdx_client
+            except Exception:
+                continue
+    except ImportError:
+        pass
+    return None
+
+# ============================================================================
+# 2. 绕开本地环境变量代理的 HTTP 安全请求器
+# ============================================================================
+_NO_PROXY_OPENER = None
+
+def http_get(url: str, gbk: bool = False, timeout: float = 4.0) -> Optional[str]:
+    """安全拉取国内金融 HTTP 接口，强制直连，不受环境 HTTP_PROXY 污染挂起"""
+    global _NO_PROXY_OPENER
+    try:
+        if _NO_PROXY_OPENER is None:
+            _NO_PROXY_OPENER = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+        req = urllib.request.Request(
+            url,
+            headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                'Referer': 'https://finance.qq.com/'
+            }
+        )
+        with _NO_PROXY_OPENER.open(req, timeout=timeout) as resp:
+            raw = resp.read()
+        return raw.decode('gbk' if gbk else 'utf-8', 'replace')
+    except Exception:
+        return None
+
+# ============================================================================
+# 3. Baostock 前复权历史日 K 线引擎
+# ============================================================================
+_bs_logged = False
+_bs_init_failed = False
+_bs_disabled_until = 0
+
+def _bs_login() -> bool:
+    global _bs_logged, _bs_init_failed
+    if _bs_init_failed:
+        return False
+    if _bs_logged:
+        return True
+    try:
+        import baostock as bs
+        lg = bs.login()
+        _bs_logged = (lg.error_code == '0')
+        if not _bs_logged:
+            _bs_init_failed = True
+        return _bs_logged
+    except Exception:
+        _bs_init_failed = True
+        return False
+
+def bs_logout():
+    """显式登出 baostock"""
+    global _bs_logged
+    if _bs_logged:
+        try:
+            import baostock as bs
+            bs.logout()
+        except Exception:
+            pass
+        _bs_logged = False
+
+def kline_baostock(code: str, days: int = 160) -> Optional[List[List[Any]]]:
+    """获取 Baostock 前复权日K线 [date, open, close, high, low, vol]"""
+    global _bs_disabled_until
+    if time.time() < _bs_disabled_until or not _bs_login():
+        return None
+    try:
+        import baostock as bs
+        market, pure = _clean_code(code)
+        bs_code = _market_prefix(market) + '.' + pure
+        start_date = (datetime.date.today() - datetime.timedelta(days=int(days * 1.8))).strftime('%Y-%m-%d')
+        rs = bs.query_history_k_data_plus(
+            bs_code,
+            "date,open,high,low,close,volume",
+            start_date=start_date,
+            frequency="d",
+            adjustflag="2"  # 前复权
+        )
+        if rs.error_code != '0':
+            return None
+        result = []
+        while rs.next():
+            r = rs.get_row_data()
+            try:
+                result.append([r[0], float(r[1] or 0), float(r[4] or 0), float(r[2] or 0), float(r[3] or 0), float(r[5] or 0) / 100])
+            except Exception:
+                continue
+        return result[-days:] if len(result) > days else result
+    except Exception:
+        return None
+
+# ============================================================================
+# 4. 股票名称与基础信息缓存
+# ============================================================================
+_NAME_CACHE: Dict[str, str] = {}
+
+def get_stock_name(code: str) -> str:
+    """获取股票名称，按 本地缓存 -> stock_list.json -> 纯代码 兜底"""
+    global _NAME_CACHE
+    _, pure = _clean_code(code)
+    if pure in _NAME_CACHE:
+        return _NAME_CACHE[pure]
+    json_path = os.path.join(ROOT, 'data', 'stock_list.json')
+    if os.path.exists(json_path):
+        try:
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                for item in data:
+                    c = str(item.get('code', ''))
+                    n = str(item.get('name', ''))
+                    if c and n:
+                        _NAME_CACHE[c] = n
+        except Exception:
+            pass
+    return _NAME_CACHE.get(pure, pure)
+
+# ============================================================================
+# 5. 核心对外接口：全能批量实时行情 (TDX 优先 -> 腾讯 HTTP -> 东财)
+# ============================================================================
+def realtime_quotes(codes: List[str]) -> List[Dict[str, Any]]:
+    """批量拉取五档实时行情
+    返回: [{'code': '600519', 'name': '贵州茅台', 'price': 1318.49, 'pct': 0.67, 'amount': 5.5e9, 'vol': 42491, 'open': 1303.21, 'high': 1322.0, 'low': 1296.0, 'last_close': 1309.69}, ...]
+    """
+    if not codes:
+        return []
+
+    pure_map = {}
+    for c in codes:
+        m, p = _clean_code(c)
+        if p:
+            pure_map[p] = m
+    pures = list(pure_map.keys())
+
+    # --- 1. 优先走 通达信 (TDX) 批量行情 (耗时 ~40ms) ---
+    client = get_tdx_client()
+    if client is not None:
+        try:
+            # 分批按 50 只查询
+            all_records = []
+            for i in range(0, len(pures), 50):
+                batch = pures[i:i + 50]
+                df = client.quotes(symbol=batch if len(batch) > 1 else batch[0])
+                if df is not None and len(df) > 0:
+                    for _, row in df.iterrows():
+                        price = float(row.get('price', 0) or 0)
+                        last_close = float(row.get('last_close', 0) or 0)
+                        pct = round((price - last_close) / last_close * 100, 2) if last_close else 0.0
+                        c_code = str(row.get('code', ''))
+                        all_records.append({
+                            'code': c_code,
+                            'name': get_stock_name(c_code),
+                            'price': price,
+                            'pct': pct,
+                            'amount': float(row.get('amount', 0) or 0),
+                            'vol': float(row.get('vol', 0) or 0),
+                            'open': float(row.get('open', 0) or 0),
+                            'high': float(row.get('high', 0) or 0),
+                            'low': float(row.get('low', 0) or 0),
+                            'last_close': last_close,
+                        })
+            if all_records:
+                return all_records
+        except Exception:
+            pass
+
+    # --- 2. 腾讯 HTTP 容灾回退通道 (直连免代理) ---
+    tx_codes = [('sh' if pure_map[p] == 1 else 'sz') + p for p in pures]
+    tx_url = 'http://qt.gtimg.cn/q=' + ','.join(tx_codes[:60])
+    raw = http_get(tx_url, gbk=True, timeout=3.5)
+    if raw:
+        records = []
+        for line in raw.split(';'):
+            line = line.strip()
+            if not line or '=' not in line:
+                continue
+            try:
+                content = line.split('=', 1)[1].strip('"')
+                parts = content.split('~')
+                if len(parts) > 35:
+                    c_name = parts[1]
+                    c_code = parts[2]
+                    price = float(parts[3] or 0)
+                    last_close = float(parts[4] or 0)
+                    c_open = float(parts[5] or 0)
+                    c_vol = float(parts[6] or 0)
+                    pct = float(parts[32] or 0) if len(parts) > 32 and parts[32] else ((price - last_close) / last_close * 100 if last_close else 0.0)
+                    c_high = float(parts[33] or 0) if len(parts) > 33 and parts[33] else price
+                    c_low = float(parts[34] or 0) if len(parts) > 34 and parts[34] else price
+                    c_amt = float(parts[37] or 0) * 10000 if len(parts) > 37 and parts[37] else 0.0
+                    records.append({
+                        'code': c_code,
+                        'name': c_name,
+                        'price': price,
+                        'pct': round(pct, 2),
+                        'amount': c_amt,
+                        'vol': c_vol,
+                        'open': c_open,
+                        'high': c_high,
+                        'low': c_low,
+                        'last_close': last_close,
+                    })
+            except Exception:
+                continue
+        if records:
+            return records
+
+    return []
+
+# ============================================================================
+# 6. 核心对外接口：标准日 K 线 (TDX 优先 -> Baostock -> 腾讯 HTTP)
+# ============================================================================
+def _kline_akshare(code: str, days: int = 160) -> Optional[List[List[Any]]]:
+    """AKShare(新浪源) 日K 备用通道 —— 第四级容灾。
+
+    实测背景: TDX 节点池全部拒绝行情请求、腾讯 ifzq 间歇被 WAF 封，
+    实际只剩 baostock 单点。此函数通过 AKShare 走新浪域名，提供另一条独立通道。
+
+    格式对齐（关键，否则会静默产出错误数据）:
+      AKShare 列顺序 = [date, open, HIGH, LOW, CLOSE, volume, amount, ...]
+      本模块标准     = [date, open, CLOSE, HIGH, LOW, vol]
+      -> 需要重排: [d[0], d[1], d[4], d[2], d[3], d[5]]
+      并且 AKShare volume 单位是【股】，本模块是【手】 -> ÷100
+    """
+    try:
+        import akshare as ak
+    except ImportError:
+        return None
+
+    market, pure = _clean_code(code)
+    prefix = _market_prefix(market)
+    try:
+        end = datetime.date.today() + datetime.timedelta(days=1)
+        # 多取一些自然日以覆盖 days 个交易日（含节假日余量）
+        start = end - datetime.timedelta(days=int(days * 1.8) + 30)
+        df = ak.stock_zh_a_daily(
+            symbol=f"{prefix}{pure}",
+            start_date=start.strftime('%Y%m%d'),
+            end_date=end.strftime('%Y%m%d'),
+            adjust="qfq",
+        )
+    except Exception:
+        return None
+    if df is None or len(df) == 0:
+        return None
+
+    result = []
+    for _, r in df.iterrows():
+        try:
+            result.append([
+                str(r['date'])[:10],
+                float(r['open']),
+                float(r['close']),
+                float(r['high']),
+                float(r['low']),
+                round(float(r['volume']) / 100.0, 2),   # 股 -> 手
+            ])
+        except Exception:
+            continue
+    return result[-days:] if result else None
+
+
+
+def _kline_tencent(market: int, pure: str, days: int, period: str = 'day') -> Optional[List[List[Any]]]:
+    """腾讯前复权 K 线。period: day / week / month。指数与个股同一接口，前缀决定品种。"""
+    full = _market_prefix(market) + pure
+    tx_url = f"https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param={full},{period},,,{days},qfq"
+    raw = http_get(tx_url, timeout=3.5)
+    if not raw:
+        return None
+    try:
+        data = json.loads(raw)
+        sub = data.get('data', {}).get(full, {})
+        rows = sub.get(f'qfq{period}') or sub.get(period) or []
+        result = []
+        for r in rows:
+            result.append([
+                r[0], float(r[1]), float(r[2]), float(r[3]), float(r[4]), float(r[5])
+            ])
+        return result or None
+    except Exception:
+        return None
+
+
+def kline_eastmoney(code: str, limit: int = 160, klt: int = 101) -> Optional[List[List[Any]]]:
+    """东财 K 线容灾。klt: 1/5/15/30/60 分钟, 101 日, 102 周, 103 月。
+
+    日/周/月: [date, open, close, high, low, vol]
+    分钟:     [datetime, open, close, high, low, vol, amount]
+    """
+    market, pure = _clean_code(code)
+    secid = ('1.' if market == 1 else '0.') + pure
+    url = (
+        'https://push2his.eastmoney.com/api/qt/stock/kline/get'
+        f'?secid={secid}&klt={int(klt)}&fqt=1&lmt={int(limit)}&end=20500101'
+        '&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57'
+    )
+    raw = http_get(url, timeout=4.0)
+    if not raw:
+        return None
+    try:
+        rows = ((json.loads(raw).get('data') or {}).get('klines')) or []
+    except Exception:
+        return None
+    minute = int(klt) < 100
+    result = []
+    for line in rows:
+        parts = str(line).split(',')
+        if len(parts) < 6:
+            continue
+        try:
+            o, c, h, l = float(parts[1]), float(parts[2]), float(parts[3]), float(parts[4])
+            v = float(parts[5])
+            if minute:
+                amt = float(parts[6]) if len(parts) > 6 else v * c * 100
+                result.append([parts[0], o, c, h, l, v, amt])
+            else:
+                result.append([parts[0][:10], o, c, h, l, v])
+        except Exception:
+            continue
+    return result or None
+
+
+def kline_period(code: str, days: int = 160, period: str = 'day') -> Optional[List[List[Any]]]:
+    """周/月 K。禁止用日 K 冒充。period: week / month。"""
+    market, pure = _clean_code(code)
+    klt = 102 if period == 'week' else 103
+    em = kline_eastmoney(f'{_market_prefix(market)}{pure}', limit=days, klt=klt)
+    if em:
+        return em
+    return _kline_tencent(market, pure, days, period=period)
+
+
+def _kline_index(market: int, pure: str, days: int) -> Optional[List[List[Any]]]:
+    """指数专用通道：baostock / 腾讯。不降级到 TDX 或 AKShare 个股日 K。"""
+    tagged = _market_prefix(market) + pure
+    bs_kl = kline_baostock(tagged, days=days)
+    if bs_kl and len(bs_kl) >= 1:
+        return bs_kl
+    return _kline_tencent(market, pure, days, period='day')
+
+
+def kline(code: str, days: int = 160) -> Optional[List[List[Any]]]:
+    """获取日K线：标准格式 [[date, open, close, high, low, vol], ...]"""
+    market, pure = _clean_code(code)
+    if _is_index(market, pure):
+        return _kline_index(market, pure, days)
+
+    # --- 1. TDX 极速日K ---
+    client = get_tdx_client()
+    if client is not None:
+        try:
+            df = client.bars(symbol=pure, frequency=9, offset=days)
+            if df is not None and len(df) > 0:
+                result = []
+                for idx, row in df.iterrows():
+                    date_str = idx.strftime('%Y-%m-%d') if hasattr(idx, 'strftime') else str(idx)[:10]
+                    result.append([
+                        date_str,
+                        float(row.get('open', 0) or 0),
+                        float(row.get('close', 0) or 0),
+                        float(row.get('high', 0) or 0),
+                        float(row.get('low', 0) or 0),
+                        float(row.get('vol', 0) or 0),
+                    ])
+                if len(result) >= 1:
+                    return result
+        except Exception:
+            pass
+
+    # --- 2. Baostock 前复权日K ---
+    bs_kl = kline_baostock(pure, days=days)
+    if bs_kl and len(bs_kl) >= 1:
+        return bs_kl
+
+    # --- 3. AKShare(新浪源) 前复权日K ---
+    # 独立于腾讯的第三条通道: baostock 不可用时仍能出数, 避免日K单点
+    ak_kl = _kline_akshare(code, days=days)
+    if ak_kl and len(ak_kl) >= 1:
+        return ak_kl
+
+    # --- 4. 腾讯 HTTP 前复权日K 兜底 ---
+    tx_kl = _kline_tencent(market, pure, days, period='day')
+    if tx_kl:
+        return tx_kl
+
+    # --- 5. 东财日K ---
+    em_kl = kline_eastmoney(f'{_market_prefix(market)}{pure}', limit=days, klt=101)
+    if em_kl:
+        return em_kl
+
+    return None
+
+# ============================================================================
+# 7. 核心对外接口：分钟 K 线 (TDX 专属高速能力：1m / 5m / 15m / 30m / 60m)
+# ============================================================================
+def min_kline(code: str, n: int = 800, freq: str = '5m') -> Optional[List[List[Any]]]:
+    """获取分钟K线：[[datetime, open, close, high, low, vol, amount], ...]"""
+    market, pure = _clean_code(code)
+    freq_map = {'1m': 8, '5m': 0, '15m': 1, '30m': 2, '60m': 3}
+    cat = freq_map.get(freq.lower(), 0)
+
+    client = get_tdx_client()
+    if client is not None:
+        try:
+            df = client.bars(symbol=pure, frequency=cat, offset=n)
+            if df is not None and len(df) > 0:
+                result = []
+                for idx, row in df.iterrows():
+                    dt_str = idx.strftime('%Y-%m-%d %H:%M') if hasattr(idx, 'strftime') else str(idx)[:16]
+                    result.append([
+                        dt_str,
+                        float(row.get('open', 0) or 0),
+                        float(row.get('close', 0) or 0),
+                        float(row.get('high', 0) or 0),
+                        float(row.get('low', 0) or 0),
+                        float(row.get('vol', 0) or 0),
+                        float(row.get('amount', 0) or 0),
+                    ])
+                return result
+        except Exception:
+            pass
+
+    # 腾讯/TDX 不可用时走东财分钟 K，避免直接返回空数组
+    klt_map = {'1m': 1, '5m': 5, '15m': 15, '30m': 30, '60m': 60}
+    klt = klt_map.get(freq.lower())
+    if klt:
+        em = kline_eastmoney(f'{_market_prefix(market)}{pure}', limit=n, klt=klt)
+        if em:
+            return em
+    return None
+
+# ============================================================================
+# 8. 核心对外接口：09:15-09:25 集合竞价分笔轨迹提取 (TDX 专属黑匣子)
+# ============================================================================
+def auction_ticks(code: str, max_search_depth: int = 5000) -> List[Dict[str, Any]]:
+    """提取指定标的今早 09:15-09:25 集合竞价全量分笔明细
+    返回: [{'time': '09:22', 'price': 1335.88, 'vol': 0, 'num': 0, 'buyorsell': 8}, ...]
+    buyorsell=8 为虚撮报价变化；buyorsell=2 为 09:25:00 真实开盘撮合
+    """
+    market, pure = _clean_code(code)
+    api = get_pytdx_client()
+    if api is None:
+        return []
+
+    try:
+        # 二分查找快速定位日内起点 offset
+        low = 0
+        high = max_search_depth
+        earliest_offset = 0
+        while low <= high:
+            mid = (low + high) // 2
+            t = api.get_transaction_data(market, pure, mid, 10)
+            if t:
+                earliest_offset = mid
+                low = mid + 10
+            else:
+                high = mid - 1
+
+        if earliest_offset == 0:
+            return []
+
+        # 从最早的 offset 向上拉取 100 笔覆盖整个 09:15~09:25
+        start_offset = max(0, earliest_offset - 80)
+        raw_ticks = api.get_transaction_data(market, pure, start_offset, 100)
+        if not raw_ticks:
+            return []
+
+        auction_list = []
+        for t in raw_ticks:
+            if str(t.get('time', '')) <= '09:25':
+                auction_list.append(dict(t))
+        return auction_list
+    except Exception:
+        return []
+
+# ============================================================================
+# 自测主程序
+# ============================================================================
+if __name__ == '__main__':
+    sys.stdout = __import__('io').TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    print("=" * 65)
+    print("统一数据层 (data_layer) 高可用验证")
+    print("=" * 65)
+
+    # 1. 批量实时行情 (TDX + 腾讯双通道)
+    print("\n[1/4] 测试批量实时行情 (600519 茅台, 000001 平安, 300750 宁德):")
+    t0 = time.time()
+    quotes = realtime_quotes(['600519', '000001', '300750'])
+    cost = round((time.time() - t0) * 1000, 1)
+    print(f"  -> 获取成功: {len(quotes)} 只 | 耗时: {cost}ms")
+    for q in quotes:
+        print(f"     [{q['code']}] {q['name']:<5} 现价:{q['price']:<8} 涨跌:{q['pct']:>+5.2f}% 成交额:{q['amount']/1e8:.2f}亿")
+
+    # 2. 标准日K线 (TDX / Baostock / 腾讯)
+    print("\n[2/4] 测试标准日K线 (600519 最近5根):")
+    t0 = time.time()
+    kl = kline('600519', 5)
+    cost = round((time.time() - t0) * 1000, 1)
+    print(f"  -> 获取成功: {len(kl) if kl else 0} 根 | 耗时: {cost}ms")
+    if kl:
+        for r in kl:
+            print(f"     {r[0]} 开:{r[1]:<7.2f} 收:{r[2]:<7.2f} 高:{r[3]:<7.2f} 低:{r[4]:<7.2f} 量:{r[5]:.0f}")
+
+    # 3. 分钟K线 (1分钟 & 5分钟)
+    print("\n[3/4] 测试 TDX 分钟K线 (600519 最近3根 5分钟线):")
+    t0 = time.time()
+    k5 = min_kline('600519', 3, freq='5m')
+    cost = round((time.time() - t0) * 1000, 1)
+    print(f"  -> 获取成功: {len(k5) if k5 else 0} 根 | 耗时: {cost}ms")
+    if k5:
+        for r in k5:
+            print(f"     {r[0]} 收:{r[2]:<7.2f} 成交额:{r[6]/1e4:.0f}万")
+
+    # 4. 09:15-09:25 集合竞价分笔明细
+    print("\n[4/4] 测试 09:15-09:25 竞价切片 (600519 早盘):")
+    t0 = time.time()
+    auc = auction_ticks('600519')
+    cost = round((time.time() - t0) * 1000, 1)
+    print(f"  -> 竞价分笔: {len(auc)} 笔 | 耗时: {cost}ms")
+    if auc:
+        print(f"     首笔 09:15 虚撮: {auc[0]}")
+        print(f"     尾笔 09:25 撮合: {auc[-1]}")
+
+    bs_logout()
+    print("\n[√] 统一数据层自测全部通过！")

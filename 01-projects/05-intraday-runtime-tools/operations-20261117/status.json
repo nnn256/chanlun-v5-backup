@@ -1,0 +1,13 @@
+{
+  "supervisor_pid": 63856,
+  "root": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday",
+  "runner_pid": 40448,
+  "execution_allowed": false,
+  "uploaded": false,
+  "state": "running",
+  "heartbeat": "2026-11-17T22:33:45+08:00",
+  "verified": 793,
+  "restarts": 0,
+  "stdout": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\operations-20261117\\run-20261117-170625-63856-01.stdout.log",
+  "stderr": "F:\\ChanlunAlgorithmTests\\2026-11-15-all-market-intraday\\operations-20261117\\run-20261117-170625-63856-01.stderr.log"
+}

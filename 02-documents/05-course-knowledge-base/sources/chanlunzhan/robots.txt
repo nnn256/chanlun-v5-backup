@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /stocks/
+Disallow: /practice/
+Disallow: /data/
+
+Host: https://chanlunzhan.com
+Sitemap: https://chanlunzhan.com/sitemap.xml

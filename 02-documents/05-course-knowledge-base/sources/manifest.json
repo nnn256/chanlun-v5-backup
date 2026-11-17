@@ -1,0 +1,4292 @@
+[
+  {
+    "url": "https://www.structguide.com/boyi-chanlun-auto-drawing",
+    "sitemap_lastmod": "2026-10-04",
+    "retrieved_at": "2026-11-06T00:30:59+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/boyi-chanlun-auto-drawing",
+    "title": "博易大师缠论自动画线：指标源码、安装环境与网页方案",
+    "content_type": "text/html",
+    "bytes": 43521,
+    "sha256": "facdfe12ddc4b841983934bee0c095b90f33f3168393ef5d9d00deef0f32677e",
+    "raw_file": "sources/raw/boyi-chanlun-auto-drawing.html",
+    "text_file": "sources/text/boyi-chanlun-auto-drawing.md",
+    "text_chars": 2201,
+    "links": [
+      {
+        "text": "新浪财经缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/sina"
+      },
+      {
+        "text": "网页使用步骤",
+        "url": "https://www.structguide.com/boyi-chanlun-auto-drawing#web-path"
+      },
+      {
+        "text": "新浪财经兼容范围",
+        "url": "https://www.structguide.com/sites/sina#supported-periods"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "新浪财经缠论画线教程",
+        "url": "https://www.structguide.com/tutorial/sina"
+      },
+      {
+        "text": "“安装后不显示”一节",
+        "url": "https://www.structguide.com/tutorial/sina#troubleshooting"
+      },
+      {
+        "text": "新浪财经缠论画线教程的图层设置",
+        "url": "https://www.structguide.com/tutorial/sina#settings"
+      },
+      {
+        "text": "新浪财经缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/sina"
+      },
+      {
+        "text": "缠论自动画线软件怎么选",
+        "url": "https://www.structguide.com/faq/chanlun-indicator"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/chanlun-auto-drawing",
+    "sitemap_lastmod": "2026-10-09",
+    "retrieved_at": "2026-11-06T00:30:59+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/chanlun-auto-drawing",
+    "title": "缠论自动画线插件：支持网站、图层与使用方式",
+    "content_type": "text/html",
+    "bytes": 49368,
+    "sha256": "12e77f3ee2592b51c8c3d55d843b6cb9541e0f98c98a59b8833084f29e1765bc",
+    "raw_file": "sources/raw/chanlun-auto-drawing.html",
+    "text_file": "sources/text/chanlun-auto-drawing.md",
+    "text_chars": 3950,
+    "links": [
+      {
+        "text": "通达信近似缠论公式",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula"
+      },
+      {
+        "text": "结构回放说明",
+        "url": "https://www.structguide.com/chanlun-auto-drawing#replay-check"
+      },
+      {
+        "text": "分型识别规则",
+        "url": "https://www.structguide.com/concept/fractal"
+      },
+      {
+        "text": "笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "线段的画线规则",
+        "url": "https://www.structguide.com/concept/segment"
+      },
+      {
+        "text": "中枢的画线规则",
+        "url": "https://www.structguide.com/concept/central-zone"
+      },
+      {
+        "text": "结构回放核对方法",
+        "url": "https://www.structguide.com/chanlun-auto-drawing#replay-check"
+      },
+      {
+        "text": "同花顺缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tonghuashun"
+      },
+      {
+        "text": "东方财富缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/eastmoney"
+      },
+      {
+        "text": "雪球缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/xueqiu"
+      },
+      {
+        "text": "新浪财经缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/sina"
+      },
+      {
+        "text": "TradingView 缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tradingview"
+      },
+      {
+        "text": "moomoo 缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/moomoo"
+      },
+      {
+        "text": "缠论自动画线软件怎么选",
+        "url": "https://www.structguide.com/faq/chanlun-indicator"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "免费画线与 VIP 权益的区别",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#free-and-vip"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "适合谁",
+        "url": "https://www.structguide.com/who-its-for"
+      },
+      {
+        "text": "分型确认与更新",
+        "url": "https://www.structguide.com/concept/fractal#confirmation"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "线段的结束点确认",
+        "url": "https://www.structguide.com/concept/segment#confirmation"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/chanlun-videos",
+    "sitemap_lastmod": "2026-10-22",
+    "retrieved_at": "2026-11-06T00:30:59+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/chanlun-videos",
+    "title": "缠论视频讲解：画线规则01—05集",
+    "content_type": "text/html",
+    "bytes": 45960,
+    "sha256": "955d0a40f841bbffe24f1083942c206fb39f38ec27360dbe23b509943d2dda9c",
+    "raw_file": "sources/raw/chanlun-videos.html",
+    "text_file": "sources/text/chanlun-videos.md",
+    "text_chars": 2817,
+    "links": [
+      {
+        "text": "首页",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "画线规则",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "01 K线包含与合并",
+        "url": "https://www.structguide.com/chanlun-videos#episode-01"
+      },
+      {
+        "text": "02 分型",
+        "url": "https://www.structguide.com/chanlun-videos#episode-02"
+      },
+      {
+        "text": "03 笔",
+        "url": "https://www.structguide.com/chanlun-videos#episode-03"
+      },
+      {
+        "text": "04 线段",
+        "url": "https://www.structguide.com/chanlun-videos#episode-04"
+      },
+      {
+        "text": "05 中枢",
+        "url": "https://www.structguide.com/chanlun-videos#episode-05"
+      },
+      {
+        "text": "在B站观看第01集",
+        "url": "https://www.bilibili.com/video/BV1bRHW6uEbb/"
+      },
+      {
+        "text": "查看K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "在B站观看第02集",
+        "url": "https://www.bilibili.com/video/BV1brpc6CE86/"
+      },
+      {
+        "text": "查看分型识别规则",
+        "url": "https://www.structguide.com/concept/fractal"
+      },
+      {
+        "text": "在B站观看第03集",
+        "url": "https://www.bilibili.com/video/BV1azp56nEpa/"
+      },
+      {
+        "text": "查看笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "在B站观看第04集",
+        "url": "https://www.bilibili.com/video/BV1g5nM6tEC3/"
+      },
+      {
+        "text": "查看线段的画线规则",
+        "url": "https://www.structguide.com/concept/segment"
+      },
+      {
+        "text": "在B站观看第05集",
+        "url": "https://www.bilibili.com/video/BV1Wunn6JEZR/"
+      },
+      {
+        "text": "查看中枢的画线规则",
+        "url": "https://www.structguide.com/concept/central-zone"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/concept/central-zone",
+    "sitemap_lastmod": "2026-10-22",
+    "retrieved_at": "2026-11-06T00:31:00+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/concept/central-zone",
+    "title": "缠论中枢画线公式图解：区间计算与延伸规则",
+    "content_type": "text/html",
+    "bytes": 61982,
+    "sha256": "62ee76a671a8c2baad2594c27f26610852b3eaa37863943bb71637e310c6b8ed",
+    "raw_file": "sources/raw/concept__central-zone.html",
+    "text_file": "sources/text/concept__central-zone.md",
+    "text_chars": 7500,
+    "links": [
+      {
+        "text": "首页",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "画线规则",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "数字与图例",
+        "url": "https://www.structguide.com/concept/central-zone#用-12-18-的例子核对"
+      },
+      {
+        "text": "取实际范围",
+        "url": "https://www.structguide.com/concept/central-zone#definition"
+      },
+      {
+        "text": "选择成员",
+        "url": "https://www.structguide.com/concept/central-zone#members"
+      },
+      {
+        "text": "检查延伸",
+        "url": "https://www.structguide.com/concept/central-zone#extension"
+      },
+      {
+        "text": "线段规则",
+        "url": "https://www.structguide.com/concept/segment"
+      },
+      {
+        "text": "通达信电脑版近似公式下载",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula#download"
+      },
+      {
+        "text": "文华财经 WH6 近似公式下载",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing#download"
+      },
+      {
+        "text": "第三节",
+        "url": "https://www.structguide.com/concept/central-zone#members"
+      },
+      {
+        "text": "延伸规则",
+        "url": "https://www.structguide.com/concept/central-zone#extension"
+      },
+      {
+        "text": "这里",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "区间取值",
+        "url": "https://www.structguide.com/concept/central-zone#definition"
+      },
+      {
+        "text": "成员选择",
+        "url": "https://www.structguide.com/concept/central-zone#members"
+      },
+      {
+        "text": "延伸处理",
+        "url": "https://www.structguide.com/concept/central-zone#extension"
+      },
+      {
+        "text": "重算说明",
+        "url": "https://www.structguide.com/concept/central-zone#confirmation"
+      },
+      {
+        "text": "画线差异核对顺序",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#drawing-differences"
+      },
+      {
+        "text": "这张图",
+        "url": "https://www.structguide.com/concept/central-zone#l1-相对区间的四种位置"
+      },
+      {
+        "text": "通达信近似缠论公式下载",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula#download"
+      },
+      {
+        "text": "文华财经近似缠论公式下载",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing#download"
+      },
+      {
+        "text": "插件",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "支持的网站",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "线段的画线规则",
+        "url": "https://www.structguide.com/concept/segment"
+      },
+      {
+        "text": "笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/concept/containment",
+    "sitemap_lastmod": "2026-10-15",
+    "retrieved_at": "2026-11-06T00:31:00+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/concept/containment",
+    "title": "缠论K线包含关系与合并图解：处理规则、公式与方向",
+    "content_type": "text/html",
+    "bytes": 59869,
+    "sha256": "23d8925b2356787825bfe482d723b2f00a206a1f09aeae96c492201282d63ebb",
+    "raw_file": "sources/raw/concept__containment.html",
+    "text_file": "sources/text/concept__containment.md",
+    "text_chars": 6314,
+    "links": [
+      {
+        "text": "首页",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "画线规则",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "合并图解",
+        "url": "https://www.structguide.com/concept/containment#merge"
+      },
+      {
+        "text": "价格来源",
+        "url": "https://www.structguide.com/concept/containment#after-merge"
+      },
+      {
+        "text": "规则速查表",
+        "url": "https://www.structguide.com/concept/containment#implementation"
+      },
+      {
+        "text": "分型识别规则",
+        "url": "https://www.structguide.com/concept/fractal#definition"
+      },
+      {
+        "text": "画线差异核对顺序",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#drawing-differences"
+      },
+      {
+        "text": "区间示意图",
+        "url": "https://www.structguide.com/concept/containment#merge"
+      },
+      {
+        "text": "标记来源图",
+        "url": "https://www.structguide.com/concept/containment#after-merge"
+      },
+      {
+        "text": "开头的方向选择",
+        "url": "https://www.structguide.com/concept/containment#序列开头没有参照时"
+      },
+      {
+        "text": "左边的参照",
+        "url": "https://www.structguide.com/concept/containment#direction"
+      },
+      {
+        "text": "连续处理说明",
+        "url": "https://www.structguide.com/concept/containment#工具会继续检查相邻包含"
+      },
+      {
+        "text": "插件",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "支持网站",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "通达信近似缠论公式",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula"
+      },
+      {
+        "text": "文华财经 WH6 近似缠论公式",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing"
+      },
+      {
+        "text": "分型怎样识别",
+        "url": "https://www.structguide.com/concept/fractal"
+      },
+      {
+        "text": "面板设置",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/concept/fractal",
+    "sitemap_lastmod": "2026-10-15",
+    "retrieved_at": "2026-11-06T00:31:00+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/concept/fractal",
+    "title": "缠论分型画线规则图解：识别条件、比较算式与标记更新",
+    "content_type": "text/html",
+    "bytes": 56049,
+    "sha256": "806e2d3895b650500fd5ca33f304081d647fcf8d5a45c5ac96a07ab90fd73fe2",
+    "raw_file": "sources/raw/concept__fractal.html",
+    "text_file": "sources/text/concept__fractal.md",
+    "text_chars": 5313,
+    "links": [
+      {
+        "text": "首页",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "画线规则",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "价格来源图",
+        "url": "https://www.structguide.com/concept/containment#after-merge"
+      },
+      {
+        "text": "笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "笔的确认图解",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "结构回放",
+        "url": "https://www.structguide.com/chanlun-auto-drawing#replay-check"
+      },
+      {
+        "text": "标记更新说明",
+        "url": "https://www.structguide.com/concept/fractal#confirmation"
+      },
+      {
+        "text": "K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "连接条件",
+        "url": "https://www.structguide.com/concept/stroke#conditions"
+      },
+      {
+        "text": "确认过程图解",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/concept/segment",
+    "sitemap_lastmod": "2026-10-15",
+    "retrieved_at": "2026-11-06T00:31:00+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/concept/segment",
+    "title": "缠论线段划分规则图解：特征序列、笔破坏与结束确认",
+    "content_type": "text/html",
+    "bytes": 76982,
+    "sha256": "72c3036e561816f0628d63da3b13a2db5936a0219f5cac7258de7d53d634ff97",
+    "raw_file": "sources/raw/concept__segment.html",
+    "text_file": "sources/text/concept__segment.md",
+    "text_chars": 11478,
+    "links": [
+      {
+        "text": "首页",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "画线规则",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "路径一：特征序列确认",
+        "url": "https://www.structguide.com/concept/segment#characteristic-confirmation"
+      },
+      {
+        "text": "路径二：第一笔破坏后的成段确认",
+        "url": "https://www.structguide.com/concept/segment#direct-break"
+      },
+      {
+        "text": "第71课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000c8i.html"
+      },
+      {
+        "text": "两条路径的取舍顺序",
+        "url": "https://www.structguide.com/concept/segment#candidate-selection"
+      },
+      {
+        "text": "笔的更新说明",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "结构回放",
+        "url": "https://www.structguide.com/chanlun-auto-drawing#replay-check"
+      },
+      {
+        "text": "参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "起始图解",
+        "url": "https://www.structguide.com/concept/segment#initial-check"
+      },
+      {
+        "text": "特征序列",
+        "url": "https://www.structguide.com/concept/segment#sequence"
+      },
+      {
+        "text": "第一笔破坏后的成段确认",
+        "url": "https://www.structguide.com/concept/segment#direct-break"
+      },
+      {
+        "text": "特征序列确认",
+        "url": "https://www.structguide.com/concept/segment#characteristic-confirmation"
+      },
+      {
+        "text": "第一笔破坏后的成段确认",
+        "url": "https://www.structguide.com/concept/segment#direct-break"
+      },
+      {
+        "text": "特征序列路径",
+        "url": "https://www.structguide.com/concept/segment#characteristic-confirmation"
+      },
+      {
+        "text": "笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "中枢画线规则",
+        "url": "https://www.structguide.com/concept/central-zone"
+      },
+      {
+        "text": "两条路径怎样选择",
+        "url": "https://www.structguide.com/concept/segment#candidate-selection"
+      },
+      {
+        "text": "笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "中枢的画线规则",
+        "url": "https://www.structguide.com/concept/central-zone"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/concept/stroke",
+    "sitemap_lastmod": "2026-10-15",
+    "retrieved_at": "2026-11-06T00:31:00+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/concept/stroke",
+    "title": "缠论笔画线规则图解：连接条件、端点选择与确认",
+    "content_type": "text/html",
+    "bytes": 63956,
+    "sha256": "e846dc1e4cbd643f0b3376add05de28e575fa56f93b0756f45cdade62bd500c3",
+    "raw_file": "sources/raw/concept__stroke.html",
+    "text_file": "sources/text/concept__stroke.md",
+    "text_chars": 7840,
+    "links": [
+      {
+        "text": "首页",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "画线规则",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "分型图解",
+        "url": "https://www.structguide.com/concept/fractal"
+      },
+      {
+        "text": "K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "严格笔与宽松笔",
+        "url": "https://www.structguide.com/concept/stroke#modes"
+      },
+      {
+        "text": "画线差异核对顺序",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#drawing-differences"
+      },
+      {
+        "text": "结构回放",
+        "url": "https://www.structguide.com/chanlun-auto-drawing#replay-check"
+      },
+      {
+        "text": "参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "连接条件",
+        "url": "https://www.structguide.com/concept/stroke#conditions"
+      },
+      {
+        "text": "间隔计数图解",
+        "url": "https://www.structguide.com/concept/stroke#counting"
+      },
+      {
+        "text": "端点选择",
+        "url": "https://www.structguide.com/concept/stroke#drawing"
+      },
+      {
+        "text": "确认过程图解",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "第一笔与端点选择",
+        "url": "https://www.structguide.com/concept/stroke#drawing"
+      },
+      {
+        "text": "第一反向笔造成笔破坏后的成段确认",
+        "url": "https://www.structguide.com/concept/segment#direct-break"
+      },
+      {
+        "text": "端点选择",
+        "url": "https://www.structguide.com/concept/stroke#drawing"
+      },
+      {
+        "text": "实时更新的说明",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "实时更新说明",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "线段画线规则",
+        "url": "https://www.structguide.com/concept/segment"
+      },
+      {
+        "text": "通达信近似缠论公式下载",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula#download"
+      },
+      {
+        "text": "公式实现说明",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula#implementation"
+      },
+      {
+        "text": "中枢画线规则",
+        "url": "https://www.structguide.com/concept/central-zone"
+      },
+      {
+        "text": "K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "分型识别规则",
+        "url": "https://www.structguide.com/concept/fractal"
+      },
+      {
+        "text": "K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "线段画线规则",
+        "url": "https://www.structguide.com/concept/segment"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/download/",
+    "sitemap_lastmod": "2026-10-23",
+    "retrieved_at": "2026-11-06T00:31:01+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/download/",
+    "title": "安装 Struct Guide 缠论自动画线插件",
+    "content_type": "text/html",
+    "bytes": 46057,
+    "sha256": "b073ec9b98c36fa6e6dd717c49c019957276f98ed49ed25671ab86982a46b7ec",
+    "raw_file": "sources/raw/download.html",
+    "text_file": "sources/text/download.md",
+    "text_chars": 2645,
+    "links": [
+      {
+        "text": "前往 Chrome 应用商店安装",
+        "url": "https://chromewebstore.google.com/detail/structure-guild-for-marke/kcoopfogmmbbijhkcamjejagjkbchlgg?hl=zh-CN"
+      },
+      {
+        "text": "前往 Edge 应用商店安装",
+        "url": "https://microsoftedge.microsoft.com/addons/detail/structure-guild-for-marke/nibbchbhagojanbhneamgdcnlgelobbg?hl=zh-CN"
+      },
+      {
+        "text": "前往360浏览器扩展商店安装",
+        "url": "https://ext.se.360.cn/#/extension-detail?id=onoeeoanmojnkbajlcfkohecmgnjpmaj"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "用户协议",
+        "url": "https://www.structguide.com/terms"
+      },
+      {
+        "text": "隐私政策",
+        "url": "https://www.structguide.com/privacy"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "分型",
+        "url": "https://www.structguide.com/concept/fractal"
+      },
+      {
+        "text": "笔",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "线段",
+        "url": "https://www.structguide.com/concept/segment"
+      },
+      {
+        "text": "中枢",
+        "url": "https://www.structguide.com/concept/central-zone"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/faq/",
+    "sitemap_lastmod": "2026-11-02",
+    "retrieved_at": "2026-11-06T00:31:01+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/faq/",
+    "title": "知识库：按网站和软件查阅",
+    "content_type": "text/html",
+    "bytes": 44635,
+    "sha256": "1cbdc43bb306655c1a4050c223bb223d87f8496394c04ab729bfd2bfb27fa7e2",
+    "raw_file": "sources/raw/faq.html",
+    "text_file": "sources/text/faq.md",
+    "text_chars": 2711,
+    "links": [
+      {
+        "text": "Struct Guide 适合谁？",
+        "url": "https://www.structguide.com/who-its-for"
+      },
+      {
+        "text": "缠论自动画线软件怎么选",
+        "url": "https://www.structguide.com/faq/chanlun-indicator"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "108课原文阅读索引",
+        "url": "https://www.structguide.com/faq/how-to-read-108"
+      },
+      {
+        "text": "缠论视频讲解",
+        "url": "https://www.structguide.com/chanlun-videos"
+      },
+      {
+        "text": "常见指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "插件效果与适配TradingView 缠论插件：自动画笔、线段和中枢查看完整图表上的实际效果，了解图层入口及与 Pine 指标的区别。",
+        "url": "https://www.structguide.com/sites/tradingview"
+      },
+      {
+        "text": "使用教程TradingView 缠论插件怎么安装和设置打开 Full Chart，设置图层，排查指标列表找不到和图层不显示。",
+        "url": "https://www.structguide.com/tutorial/tradingview"
+      },
+      {
+        "text": "插件下载与适配同花顺缠论自动画线插件：画笔、线段和中枢查看网页画线实际效果、下载插件，并核对支持的市场与周期。",
+        "url": "https://www.structguide.com/sites/tonghuashun"
+      },
+      {
+        "text": "使用教程同花顺缠论自动画线怎么设置？插件安装与使用教程从安装、打开K线到图层设置，按现象排查面板和画线不显示的问题。",
+        "url": "https://www.structguide.com/tutorial/tonghuashun"
+      },
+      {
+        "text": "指标与网页插件东方财富缠论指标：自动画笔、线段和中枢查看普通与全屏 K 线效果，了解中枢显示、支持周期及安装设置。",
+        "url": "https://www.structguide.com/sites/eastmoney"
+      },
+      {
+        "text": "插件效果与适配雪球缠论插件：自动画笔、线段和中枢在网页详情页查看结构，核对图层入口、支持周期及与 App 的区别。",
+        "url": "https://www.structguide.com/sites/xueqiu"
+      },
+      {
+        "text": "安装与设置雪球缠论插件怎么安装和设置从浏览器扩展安装到打开K线、显示笔线段中枢，再排查不显示问题。",
+        "url": "https://www.structguide.com/tutorial/xueqiu"
+      },
+      {
+        "text": "查询工具雪球板块代码列表按代码或名称查找 BK 板块，核对同名项和分类索引。",
+        "url": "https://www.structguide.com/sites/xueqiu/boards"
+      },
+      {
+        "text": "适配说明新浪财经期货缠论自动画线了解期货网页的结构图层、K线入口及其与客户端数据的区别。",
+        "url": "https://www.structguide.com/sites/sina"
+      },
+      {
+        "text": "使用教程新浪财经期货画线设置与问题排查区分K线、分时和5日视图，检查切换合约后的显示。",
+        "url": "https://www.structguide.com/tutorial/sina"
+      },
+      {
+        "text": "适配说明moomoo 缠论自动画线怎么设置在受支持的日周月季年 K 线上显示结构，查看网页设置方法。",
+        "url": "https://www.structguide.com/sites/moomoo"
+      },
+      {
+        "text": "公式下载通达信近似缠论公式免费TXT源码、导入方法、近似规则与网页插件方案对照。",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula"
+      },
+      {
+        "text": "公式下载文华财经近似缠论公式下载 WH6 麦语言源码，查看近似规则、导入步骤与网页画线方案。",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing"
+      },
+      {
+        "text": "软件说明博易大师缠论：公式与网页方案另开期货网页查看结构；插件不在博易大师内运行，也不读取其数据。",
+        "url": "https://www.structguide.com/boyi-chanlun-auto-drawing"
+      },
+      {
+        "text": "软件说明MT5 缠论指标与网页插件怎么区分了解 TradingView 网页画线方式；插件不在 MT5 内运行或连接其账户。",
+        "url": "https://www.structguide.com/mt5-chanlun-auto-drawing"
+      },
+      {
+        "text": "视频讲解缠论视频讲解：画线规则01—05集五集简介、B站观看入口与文字图解，按包含、分型、笔、线段、中枢顺序查阅。",
+        "url": "https://www.structguide.com/chanlun-videos"
+      },
+      {
+        "text": "阅读索引108课原文阅读索引五类结构概念分别在哪几课？查原文出处、笔的补充定义与线段图例更正。",
+        "url": "https://www.structguide.com/faq/how-to-read-108"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/faq/chanlun-indicator",
+    "sitemap_lastmod": "2026-10-12",
+    "retrieved_at": "2026-11-06T00:31:01+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/faq/chanlun-indicator",
+    "title": "缠论自动画线软件怎么选：指标公式、网页插件与兼容范围",
+    "content_type": "text/html",
+    "bytes": 55225,
+    "sha256": "afe5f59b97414fb3a7e30fae089558dc0e81dfcc03e9194dedfc0229cc8e8931",
+    "raw_file": "sources/raw/faq__chanlun-indicator.html",
+    "text_file": "sources/text/faq__chanlun-indicator.md",
+    "text_chars": 5597,
+    "links": [
+      {
+        "text": "免费画线与 VIP 权益的区别",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#free-and-vip"
+      },
+      {
+        "text": "通达信近似缠论公式下载",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula"
+      },
+      {
+        "text": "免费与付费说明",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#free-and-vip"
+      },
+      {
+        "text": "分型、笔、线段和中枢的逐层显示图解",
+        "url": "https://www.structguide.com/chanlun-auto-drawing#layer-walkthrough"
+      },
+      {
+        "text": "缠论自动画线插件介绍",
+        "url": "https://www.structguide.com/chanlun-auto-drawing"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "同花顺缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tonghuashun"
+      },
+      {
+        "text": "东方财富缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/eastmoney"
+      },
+      {
+        "text": "TradingView 缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tradingview"
+      },
+      {
+        "text": "雪球缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/xueqiu"
+      },
+      {
+        "text": "moomoo 缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/moomoo"
+      },
+      {
+        "text": "新浪财经缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/sina"
+      },
+      {
+        "text": "通达信近似缠论公式",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula"
+      },
+      {
+        "text": "文华财经近似缠论公式",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing"
+      },
+      {
+        "text": "博易大师环境对照",
+        "url": "https://www.structguide.com/boyi-chanlun-auto-drawing"
+      },
+      {
+        "text": "原生指标与网页方案",
+        "url": "https://www.structguide.com/mt5-chanlun-auto-drawing"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "跨工具核对记录表",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula#different-results"
+      },
+      {
+        "text": "K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "严格笔与宽松笔",
+        "url": "https://www.structguide.com/concept/stroke#modes"
+      },
+      {
+        "text": "特征序列与确认路径",
+        "url": "https://www.structguide.com/concept/segment#sequence"
+      },
+      {
+        "text": "中枢输入与区间公式",
+        "url": "https://www.structguide.com/concept/central-zone#definition"
+      },
+      {
+        "text": "成员选择",
+        "url": "https://www.structguide.com/concept/central-zone#members"
+      },
+      {
+        "text": "结构回放核对方法",
+        "url": "https://www.structguide.com/chanlun-auto-drawing#replay-check"
+      },
+      {
+        "text": "用户协议的会员权益表",
+        "url": "https://www.structguide.com/terms#membership-benefits"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "用户协议的回放安排",
+        "url": "https://www.structguide.com/terms#replay-expiry"
+      },
+      {
+        "text": "隐私政策的快照保存说明",
+        "url": "https://www.structguide.com/privacy#snapshot-retention"
+      },
+      {
+        "text": "用户协议",
+        "url": "https://www.structguide.com/terms"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "通达信近似缠论公式",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula"
+      },
+      {
+        "text": "免费画线与 VIP 权益的区别",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#free-and-vip"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/faq/drawing-rules",
+    "sitemap_lastmod": "2026-10-22",
+    "retrieved_at": "2026-11-06T00:31:01+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/faq/drawing-rules",
+    "title": "Struct Guide 画线规则总览：包含、分型、笔、线段与中枢",
+    "content_type": "text/html",
+    "bytes": 43508,
+    "sha256": "528da9092f3f71eb0f05fff0a1edd2ef36eb19b171cd8b2457e3040214ac9dbf",
+    "raw_file": "sources/raw/faq__drawing-rules.html",
+    "text_file": "sources/text/faq__drawing-rules.md",
+    "text_chars": 1935,
+    "links": [
+      {
+        "text": "缠论视频讲解",
+        "url": "https://www.structguide.com/chanlun-videos"
+      },
+      {
+        "text": "线段规则与图例",
+        "url": "https://www.structguide.com/concept/segment"
+      },
+      {
+        "text": "K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "包含边界",
+        "url": "https://www.structguide.com/concept/containment#definition"
+      },
+      {
+        "text": "合并图解",
+        "url": "https://www.structguide.com/concept/containment#merge"
+      },
+      {
+        "text": "方向判定",
+        "url": "https://www.structguide.com/concept/containment#direction"
+      },
+      {
+        "text": "分型识别规则",
+        "url": "https://www.structguide.com/concept/fractal"
+      },
+      {
+        "text": "识别条件",
+        "url": "https://www.structguide.com/concept/fractal#definition"
+      },
+      {
+        "text": "确认与更新",
+        "url": "https://www.structguide.com/concept/fractal#confirmation"
+      },
+      {
+        "text": "笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "连接条件",
+        "url": "https://www.structguide.com/concept/stroke#conditions"
+      },
+      {
+        "text": "间隔图解",
+        "url": "https://www.structguide.com/concept/stroke#counting"
+      },
+      {
+        "text": "起点与端点",
+        "url": "https://www.structguide.com/concept/stroke#drawing"
+      },
+      {
+        "text": "线段的画线规则",
+        "url": "https://www.structguide.com/concept/segment"
+      },
+      {
+        "text": "特征序列",
+        "url": "https://www.structguide.com/concept/segment#sequence"
+      },
+      {
+        "text": "缺口确认图解",
+        "url": "https://www.structguide.com/concept/segment#gap"
+      },
+      {
+        "text": "第一笔破坏后的成段确认",
+        "url": "https://www.structguide.com/concept/segment#direct-break"
+      },
+      {
+        "text": "中枢的画线规则",
+        "url": "https://www.structguide.com/concept/central-zone"
+      },
+      {
+        "text": "中枢画线公式图解",
+        "url": "https://www.structguide.com/concept/central-zone#definition"
+      },
+      {
+        "text": "延伸处理",
+        "url": "https://www.structguide.com/concept/central-zone#extension"
+      },
+      {
+        "text": "公式源码入口",
+        "url": "https://www.structguide.com/concept/central-zone#formula-download"
+      },
+      {
+        "text": "笔的确认图解",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "结构回放",
+        "url": "https://www.structguide.com/chanlun-auto-drawing#replay-check"
+      },
+      {
+        "text": "画线差异核对顺序",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#drawing-differences"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/faq/how-to-read-108",
+    "sitemap_lastmod": "2026-10-10",
+    "retrieved_at": "2026-11-06T00:31:02+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/faq/how-to-read-108",
+    "title": "缠中说禅108课原文怎么读？五类结构概念课号索引",
+    "content_type": "text/html",
+    "bytes": 53977,
+    "sha256": "293a290abda3bdcdf4677ee943e2997b7c12b3201109025c615fe84842855c73",
+    "raw_file": "sources/raw/faq__how-to-read-108.html",
+    "text_file": "sources/text/faq__how-to-read-108.md",
+    "text_chars": 4711,
+    "links": [
+      {
+        "text": "62课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bf2.html"
+      },
+      {
+        "text": "65课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bpo.html"
+      },
+      {
+        "text": "K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "62课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bf2.html"
+      },
+      {
+        "text": "65课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bpo.html"
+      },
+      {
+        "text": "77课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cih.html"
+      },
+      {
+        "text": "分型识别规则",
+        "url": "https://www.structguide.com/concept/fractal"
+      },
+      {
+        "text": "62课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bf2.html"
+      },
+      {
+        "text": "65课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bpo.html"
+      },
+      {
+        "text": "77课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cih.html"
+      },
+      {
+        "text": "2007年9月18日补充博文",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cnh.html"
+      },
+      {
+        "text": "笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "65课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bpo.html"
+      },
+      {
+        "text": "67课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000c16.html"
+      },
+      {
+        "text": "71课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000c8i.html"
+      },
+      {
+        "text": "77课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cih.html"
+      },
+      {
+        "text": "78课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cio.html"
+      },
+      {
+        "text": "81课的图例更正",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cmz.html"
+      },
+      {
+        "text": "线段的画线规则",
+        "url": "https://www.structguide.com/concept/segment"
+      },
+      {
+        "text": "17课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c010007p1.html"
+      },
+      {
+        "text": "18课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c010007t8.html"
+      },
+      {
+        "text": "20课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c010007zw.html"
+      },
+      {
+        "text": "63课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bgd.html"
+      },
+      {
+        "text": "78课末段",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cio.html"
+      },
+      {
+        "text": "中枢的画线规则",
+        "url": "https://www.structguide.com/concept/central-zone"
+      },
+      {
+        "text": "第62课《分型、笔与线段》",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bf2.html"
+      },
+      {
+        "text": "第65课《再说说分型、笔、线段》",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bpo.html"
+      },
+      {
+        "text": "K线包含关系详解",
+        "url": "https://www.structguide.com/concept/containment"
+      },
+      {
+        "text": "第62课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bf2.html"
+      },
+      {
+        "text": "第65课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bpo.html"
+      },
+      {
+        "text": "第77课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cih.html"
+      },
+      {
+        "text": "分型识别规则",
+        "url": "https://www.structguide.com/concept/fractal"
+      },
+      {
+        "text": "第62课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bf2.html"
+      },
+      {
+        "text": "第65课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bpo.html"
+      },
+      {
+        "text": "第77课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cih.html"
+      },
+      {
+        "text": "《忽闻台风可休市，聊赋七律说〈风灾〉》",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cnh.html"
+      },
+      {
+        "text": "笔的画线规则",
+        "url": "https://www.structguide.com/concept/stroke"
+      },
+      {
+        "text": "62课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bf2.html"
+      },
+      {
+        "text": "65课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bpo.html"
+      },
+      {
+        "text": "67课《线段的划分标准》",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000c16.html"
+      },
+      {
+        "text": "71课《线段划分标准的再分辨》",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000c8i.html"
+      },
+      {
+        "text": "77课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cih.html"
+      },
+      {
+        "text": "78课《继续说线段的划分》",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cio.html"
+      },
+      {
+        "text": "81课开头的图例更正",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cmz.html"
+      },
+      {
+        "text": "线段的画线规则",
+        "url": "https://www.structguide.com/concept/segment"
+      },
+      {
+        "text": "第17课的中枢定义",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c010007p1.html"
+      },
+      {
+        "text": "第18课的区间算式与组成条件",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c010007t8.html"
+      },
+      {
+        "text": "第20课的区间、延伸和扩张相关段落",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c010007zw.html"
+      },
+      {
+        "text": "第63课",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000bgd.html"
+      },
+      {
+        "text": "第78课末段",
+        "url": "https://blog.sina.com.cn/s/blog_486e105c01000cio.html"
+      },
+      {
+        "text": "中枢的画线规则",
+        "url": "https://www.structguide.com/concept/central-zone"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "structguide@outlook.com",
+        "url": "mailto:structguide@outlook.com"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula",
+    "sitemap_lastmod": "2026-10-12",
+    "retrieved_at": "2026-11-06T00:31:02+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula",
+    "title": "通达信近似缠论公式下载：实现方法与插件区别",
+    "content_type": "text/html",
+    "bytes": 127448,
+    "sha256": "6f67a3c7dc786239b60b47fc5bc4fe39e89ed676ac729a17a02cd89e82166d81",
+    "raw_file": "sources/raw/faq__tongdaxin-approx-chanlun-formula.html",
+    "text_file": "sources/text/faq__tongdaxin-approx-chanlun-formula.md",
+    "text_chars": 44380,
+    "links": [
+      {
+        "text": "免费下载近似公式 TXT 源码",
+        "url": "https://www.structguide.com/formulas/sg-tdx-approx-v1.txt"
+      },
+      {
+        "text": "结构快照与回放",
+        "url": "https://www.structguide.com/chanlun-auto-drawing#replay-check"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "安装 Struct Guide 网页画线插件",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "同花顺缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tonghuashun"
+      },
+      {
+        "text": "东方财富缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/eastmoney"
+      },
+      {
+        "text": "通达信官方函数列表",
+        "url": "https://help.tdx.com.cn/gspt/docs/markdown/redword/functionlist.html"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "文华财经近似缠论公式",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing"
+      },
+      {
+        "text": "画线差异核对顺序",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#drawing-differences"
+      },
+      {
+        "text": "structguide@outlook.com",
+        "url": "mailto:structguide@outlook.com"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "缠论自动画线软件怎么选",
+        "url": "https://www.structguide.com/faq/chanlun-indicator"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:03+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/",
+    "title": "常见指标速查手册",
+    "content_type": "text/html",
+    "bytes": 57206,
+    "sha256": "d010b286a408ccffef1c7ae2d53c24aa594ef65fc83cc7336bf768d46c291cb9",
+    "raw_file": "sources/raw/indicators.html",
+    "text_file": "sources/text/indicators.md",
+    "text_chars": 11879,
+    "links": [
+      {
+        "text": "ADX",
+        "url": "https://www.structguide.com/indicators/#adx"
+      },
+      {
+        "text": "ATR",
+        "url": "https://www.structguide.com/indicators/#atr"
+      },
+      {
+        "text": "BIAS",
+        "url": "https://www.structguide.com/indicators/#bias"
+      },
+      {
+        "text": "BOLL",
+        "url": "https://www.structguide.com/indicators/#boll"
+      },
+      {
+        "text": "CCI",
+        "url": "https://www.structguide.com/indicators/#cci"
+      },
+      {
+        "text": "DMI",
+        "url": "https://www.structguide.com/indicators/#dmi"
+      },
+      {
+        "text": "EMA",
+        "url": "https://www.structguide.com/indicators/#ema"
+      },
+      {
+        "text": "KDJ",
+        "url": "https://www.structguide.com/indicators/#kdj"
+      },
+      {
+        "text": "MA",
+        "url": "https://www.structguide.com/indicators/#ma"
+      },
+      {
+        "text": "MACD",
+        "url": "https://www.structguide.com/indicators/#macd"
+      },
+      {
+        "text": "OBV",
+        "url": "https://www.structguide.com/indicators/#obv"
+      },
+      {
+        "text": "PSY",
+        "url": "https://www.structguide.com/indicators/#psy"
+      },
+      {
+        "text": "ROC",
+        "url": "https://www.structguide.com/indicators/#roc"
+      },
+      {
+        "text": "RSI",
+        "url": "https://www.structguide.com/indicators/#rsi"
+      },
+      {
+        "text": "VOL",
+        "url": "https://www.structguide.com/indicators/#vol"
+      },
+      {
+        "text": "VWAP",
+        "url": "https://www.structguide.com/indicators/#vwap"
+      },
+      {
+        "text": "WR",
+        "url": "https://www.structguide.com/indicators/#wr"
+      },
+      {
+        "text": "ADX｜平均方向指数",
+        "url": "https://www.structguide.com/indicators/dmi-adx#adx"
+      },
+      {
+        "text": "阅读计算图解",
+        "url": "https://www.structguide.com/indicators/dmi-adx#adx"
+      },
+      {
+        "text": "DX怎样计算并平滑成ADX？",
+        "url": "https://www.structguide.com/indicators/dmi-adx#adx"
+      },
+      {
+        "text": "怎样从连续数据算出首个ADX？",
+        "url": "https://www.structguide.com/indicators/dmi-adx#example"
+      },
+      {
+        "text": "DMI、DI、DX和ADX分别是什么？",
+        "url": "https://www.structguide.com/indicators/dmi-adx#overview"
+      },
+      {
+        "text": "参数、初始化和ADXR怎样区分？",
+        "url": "https://www.structguide.com/indicators/dmi-adx#differences"
+      },
+      {
+        "text": "ATR｜平均真实波幅",
+        "url": "https://www.structguide.com/indicators/atr"
+      },
+      {
+        "text": "阅读全文：ATR平均真实波幅是什么？TR计算公式与平滑图解",
+        "url": "https://www.structguide.com/indicators/atr"
+      },
+      {
+        "text": "TR与ATR的计算公式是什么？",
+        "url": "https://www.structguide.com/indicators/atr#formula"
+      },
+      {
+        "text": "高低差只有2，真实波幅为什么是10？",
+        "url": "https://www.structguide.com/indicators/atr#true-range"
+      },
+      {
+        "text": "怎样用连续数据算出ATR？",
+        "url": "https://www.structguide.com/indicators/atr#example"
+      },
+      {
+        "text": "参数14是什么意思，ATR是数值还是百分比？",
+        "url": "https://www.structguide.com/indicators/atr#parameters"
+      },
+      {
+        "text": "不同软件的ATR为什么不一样？",
+        "url": "https://www.structguide.com/indicators/atr#differences"
+      },
+      {
+        "text": "BIAS｜乖离率",
+        "url": "https://www.structguide.com/indicators/bias"
+      },
+      {
+        "text": "阅读全文：BIAS乖离率是什么？计算公式、周期与数字图解",
+        "url": "https://www.structguide.com/indicators/bias"
+      },
+      {
+        "text": "BIAS的计算公式是什么？",
+        "url": "https://www.structguide.com/indicators/bias#formula"
+      },
+      {
+        "text": "同样相差2元，BIAS为什么不同？",
+        "url": "https://www.structguide.com/indicators/bias#example"
+      },
+      {
+        "text": "正值、负值与零分别表示什么？",
+        "url": "https://www.structguide.com/indicators/bias#meaning"
+      },
+      {
+        "text": "不同周期的BIAS曲线怎样计算？",
+        "url": "https://www.structguide.com/indicators/bias#parameters"
+      },
+      {
+        "text": "BIAS与BOLL的计算有什么区别？",
+        "url": "https://www.structguide.com/indicators/bias#bias-boll"
+      },
+      {
+        "text": "均线为0或软件数值不同时，怎样核对？",
+        "url": "https://www.structguide.com/indicators/bias#differences"
+      },
+      {
+        "text": "BOLL｜布林带",
+        "url": "https://www.structguide.com/indicators/boll"
+      },
+      {
+        "text": "阅读全文：BOLL布林带是什么？三条线计算公式、参数与图解",
+        "url": "https://www.structguide.com/indicators/boll"
+      },
+      {
+        "text": "BOLL三条线怎么看，名称与公式怎样对应？",
+        "url": "https://www.structguide.com/indicators/boll#read-chart"
+      },
+      {
+        "text": "中轨、上轨和下轨的公式是什么？",
+        "url": "https://www.structguide.com/indicators/boll#formula"
+      },
+      {
+        "text": "标准差怎样一步步计算？",
+        "url": "https://www.structguide.com/indicators/boll#standard-deviation"
+      },
+      {
+        "text": "均值相同，布林带为什么仍可能变宽或变窄？",
+        "url": "https://www.structguide.com/indicators/boll#width"
+      },
+      {
+        "text": "布林带宽度与相对带宽怎么算？",
+        "url": "https://www.structguide.com/indicators/boll#bandwidth"
+      },
+      {
+        "text": "参数20和2分别是什么意思？",
+        "url": "https://www.structguide.com/indicators/boll#parameters"
+      },
+      {
+        "text": "两个软件的BOLL数值为什么不同？",
+        "url": "https://www.structguide.com/indicators/boll#differences"
+      },
+      {
+        "text": "两倍标准差等于95%的概率保证吗？",
+        "url": "https://www.structguide.com/indicators/boll#probability"
+      },
+      {
+        "text": "CCI｜顺势指标（商品通道指数）",
+        "url": "https://www.structguide.com/indicators/cci"
+      },
+      {
+        "text": "阅读全文：CCI顺势指标是什么？计算公式、平均偏差与0.015",
+        "url": "https://www.structguide.com/indicators/cci"
+      },
+      {
+        "text": "CCI的公式和输入是什么？",
+        "url": "https://www.structguide.com/indicators/cci#formula"
+      },
+      {
+        "text": "怎样用5个数字手算CCI？",
+        "url": "https://www.structguide.com/indicators/cci#example"
+      },
+      {
+        "text": "0.015与正负100是什么意思？",
+        "url": "https://www.structguide.com/indicators/cci#scale"
+      },
+      {
+        "text": "周期和输入价格怎样影响结果？",
+        "url": "https://www.structguide.com/indicators/cci#parameters"
+      },
+      {
+        "text": "CCI、BIAS与BOLL的计算有何区别？",
+        "url": "https://www.structguide.com/indicators/cci#comparison"
+      },
+      {
+        "text": "平均绝对偏差为0时怎么办？",
+        "url": "https://www.structguide.com/indicators/cci#differences"
+      },
+      {
+        "text": "DMI｜动向指标",
+        "url": "https://www.structguide.com/indicators/dmi-adx#overview"
+      },
+      {
+        "text": "阅读计算图解",
+        "url": "https://www.structguide.com/indicators/dmi-adx#overview"
+      },
+      {
+        "text": "高低价变化怎样筛选成DM？",
+        "url": "https://www.structguide.com/indicators/dmi-adx#dm"
+      },
+      {
+        "text": "两种变化相等时怎样处理？",
+        "url": "https://www.structguide.com/indicators/dmi-adx#dm"
+      },
+      {
+        "text": "TR与DM怎样计算出DI？",
+        "url": "https://www.structguide.com/indicators/dmi-adx#di"
+      },
+      {
+        "text": "怎样一步步手算DMI和ADX？",
+        "url": "https://www.structguide.com/indicators/dmi-adx#example"
+      },
+      {
+        "text": "软件数值不同先核对什么？",
+        "url": "https://www.structguide.com/indicators/dmi-adx#differences"
+      },
+      {
+        "text": "EMA｜指数移动平均",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema"
+      },
+      {
+        "text": "阅读全文：MA和EMA有什么区别？计算公式、权重与初始化图解",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema"
+      },
+      {
+        "text": "EMA计算公式是什么？",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema#ema-formula"
+      },
+      {
+        "text": "EMA与MA的计算有什么区别？",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema#comparison"
+      },
+      {
+        "text": "输入相同，两条均线为什么会分开？",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema#example"
+      },
+      {
+        "text": "EMA对新数据更敏感，具体指什么？",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema#sensitivity"
+      },
+      {
+        "text": "EMA5只计算最近5根K线吗？",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema#weights"
+      },
+      {
+        "text": "初始值为什么会影响EMA？",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema#initialization"
+      },
+      {
+        "text": "MA、EMA、BOLL分别是什么意思？",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema#ma-ema-boll"
+      },
+      {
+        "text": "KDJ｜随机指标",
+        "url": "https://www.structguide.com/indicators/kdj"
+      },
+      {
+        "text": "阅读全文：KDJ是什么指标？RSV、K、D、J计算公式与参数图解",
+        "url": "https://www.structguide.com/indicators/kdj"
+      },
+      {
+        "text": "RSV、K、D、J的公式分别是什么？",
+        "url": "https://www.structguide.com/indicators/kdj#formula"
+      },
+      {
+        "text": "怎样用一组数字算出三条线的数值？",
+        "url": "https://www.structguide.com/indicators/kdj#example"
+      },
+      {
+        "text": "参数9、3、3分别是什么意思？",
+        "url": "https://www.structguide.com/indicators/kdj#parameters"
+      },
+      {
+        "text": "J为什么会大于100或小于0？",
+        "url": "https://www.structguide.com/indicators/kdj#j-range"
+      },
+      {
+        "text": "初始值与零分母怎样处理？",
+        "url": "https://www.structguide.com/indicators/kdj#differences"
+      },
+      {
+        "text": "MA｜移动平均线（本文采用简单平均）",
+        "url": "https://www.structguide.com/indicators/ma"
+      },
+      {
+        "text": "阅读全文：MA均线是什么？计算公式、周期设置与数字图解",
+        "url": "https://www.structguide.com/indicators/ma"
+      },
+      {
+        "text": "均线是什么意思，图上是哪条线，颜色代表什么？",
+        "url": "https://www.structguide.com/indicators/ma#read-chart"
+      },
+      {
+        "text": "均线怎么设置，哪些选项会改变计算？",
+        "url": "https://www.structguide.com/indicators/ma#settings"
+      },
+      {
+        "text": "5日均线怎样手算？",
+        "url": "https://www.structguide.com/indicators/ma#five-numbers"
+      },
+      {
+        "text": "“移动”平均是什么意思？",
+        "url": "https://www.structguide.com/indicators/ma#rolling-window"
+      },
+      {
+        "text": "价格下降时，均线为什么仍可能上升？",
+        "url": "https://www.structguide.com/indicators/ma#change"
+      },
+      {
+        "text": "MA5一定代表5天吗？",
+        "url": "https://www.structguide.com/indicators/ma#period"
+      },
+      {
+        "text": "周期越长，为什么通常越平滑？",
+        "url": "https://www.structguide.com/indicators/ma#weight"
+      },
+      {
+        "text": "均线是不是平均持仓成本？",
+        "url": "https://www.structguide.com/indicators/ma#cost"
+      },
+      {
+        "text": "盘中数值为什么会变化？",
+        "url": "https://www.structguide.com/indicators/ma#live"
+      },
+      {
+        "text": "同样是MA5，两个软件为什么不同？",
+        "url": "https://www.structguide.com/indicators/ma#differences"
+      },
+      {
+        "text": "MA与EMA有什么区别？",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema#comparison"
+      },
+      {
+        "text": "MACD｜指数平滑异同移动平均线",
+        "url": "https://www.structguide.com/indicators/macd"
+      },
+      {
+        "text": "阅读全文：MACD是什么指标？DIF、DEA与柱状图计算公式",
+        "url": "https://www.structguide.com/indicators/macd"
+      },
+      {
+        "text": "DIF、DEA和柱值分别怎么算？",
+        "url": "https://www.structguide.com/indicators/macd#formula"
+      },
+      {
+        "text": "参数12、26、9是什么意思？",
+        "url": "https://www.structguide.com/indicators/macd#parameters"
+      },
+      {
+        "text": "怎样用4个数字手算一次？",
+        "url": "https://www.structguide.com/indicators/macd#example"
+      },
+      {
+        "text": "零轴、曲线和柱子分别表示什么？",
+        "url": "https://www.structguide.com/indicators/macd#read-chart"
+      },
+      {
+        "text": "不同软件的MACD数字为什么不一样？",
+        "url": "https://www.structguide.com/indicators/macd#differences"
+      },
+      {
+        "text": "OBV｜能量潮指标",
+        "url": "https://www.structguide.com/indicators/obv"
+      },
+      {
+        "text": "阅读全文：OBV能量潮是什么？计算公式、成交量累计与图解",
+        "url": "https://www.structguide.com/indicators/obv"
+      },
+      {
+        "text": "OBV的加减公式是什么？",
+        "url": "https://www.structguide.com/indicators/obv#formula"
+      },
+      {
+        "text": "收盘价不变，有成交量也不累计吗？",
+        "url": "https://www.structguide.com/indicators/obv#example"
+      },
+      {
+        "text": "OBV为什么可以是负数？",
+        "url": "https://www.structguide.com/indicators/obv#negative"
+      },
+      {
+        "text": "OBV是资金流入流出金额吗？",
+        "url": "https://www.structguide.com/indicators/obv#quantity"
+      },
+      {
+        "text": "基础OBV有没有周期参数？",
+        "url": "https://www.structguide.com/indicators/obv#parameters"
+      },
+      {
+        "text": "软件的OBV数值为什么不一样？",
+        "url": "https://www.structguide.com/indicators/obv#differences"
+      },
+      {
+        "text": "PSY｜心理线",
+        "url": "https://www.structguide.com/indicators/psy"
+      },
+      {
+        "text": "阅读计算图解",
+        "url": "https://www.structguide.com/indicators/psy"
+      },
+      {
+        "text": "PSY的计数公式是什么？",
+        "url": "https://www.structguide.com/indicators/psy#formula"
+      },
+      {
+        "text": "怎样用六个价格计算PSY5？",
+        "url": "https://www.structguide.com/indicators/psy#example"
+      },
+      {
+        "text": "为什么上涨次数不等于上涨幅度？",
+        "url": "https://www.structguide.com/indicators/psy#count-magnitude"
+      },
+      {
+        "text": "PSY60表示未来上涨概率60%吗？",
+        "url": "https://www.structguide.com/indicators/psy#meaning"
+      },
+      {
+        "text": "N与PSYMA参数分别是什么？",
+        "url": "https://www.structguide.com/indicators/psy#parameters"
+      },
+      {
+        "text": "平价、缺失值与软件差异怎样处理？",
+        "url": "https://www.structguide.com/indicators/psy#differences"
+      },
+      {
+        "text": "ROC｜变动率指标",
+        "url": "https://www.structguide.com/indicators/roc"
+      },
+      {
+        "text": "阅读计算图解",
+        "url": "https://www.structguide.com/indicators/roc"
+      },
+      {
+        "text": "ROC公式是什么？",
+        "url": "https://www.structguide.com/indicators/roc#formula"
+      },
+      {
+        "text": "计算ROC3需要几个价格？",
+        "url": "https://www.structguide.com/indicators/roc#example"
+      },
+      {
+        "text": "ROC等于逐期涨跌幅相加吗？",
+        "url": "https://www.structguide.com/indicators/roc#compound"
+      },
+      {
+        "text": "ROC、价差和BIAS有什么区别？",
+        "url": "https://www.structguide.com/indicators/roc#comparison"
+      },
+      {
+        "text": "周期、零轴与数值范围怎样理解？",
+        "url": "https://www.structguide.com/indicators/roc#parameters"
+      },
+      {
+        "text": "基准为0或软件数值不同时怎么办？",
+        "url": "https://www.structguide.com/indicators/roc#differences"
+      },
+      {
+        "text": "RSI｜相对强弱指标",
+        "url": "https://www.structguide.com/indicators/rsi"
+      },
+      {
+        "text": "阅读全文：RSI相对强弱指标是什么？计算公式、参数与平滑图解",
+        "url": "https://www.structguide.com/indicators/rsi"
+      },
+      {
+        "text": "RSI计算公式是什么？",
+        "url": "https://www.structguide.com/indicators/rsi#formula"
+      },
+      {
+        "text": "怎样用5个收盘价手算RSI？",
+        "url": "https://www.structguide.com/indicators/rsi#example"
+      },
+      {
+        "text": "RSI为70表示什么，是70%的上涨概率吗？",
+        "url": "https://www.structguide.com/indicators/rsi#meaning"
+      },
+      {
+        "text": "RSI的平滑与EMA有什么区别？",
+        "url": "https://www.structguide.com/indicators/rsi#smoothing"
+      },
+      {
+        "text": "分母为0或软件数值不同时，怎样核对？",
+        "url": "https://www.structguide.com/indicators/rsi#differences"
+      },
+      {
+        "text": "VOL｜成交量与均量线",
+        "url": "https://www.structguide.com/indicators/vol"
+      },
+      {
+        "text": "阅读全文：VOL成交量是什么？MAVOL均量线公式与红绿柱图解",
+        "url": "https://www.structguide.com/indicators/vol"
+      },
+      {
+        "text": "VOL与MAVOL的计算公式是什么？",
+        "url": "https://www.structguide.com/indicators/vol#formula"
+      },
+      {
+        "text": "5期均量线怎样手算和更新？",
+        "url": "https://www.structguide.com/indicators/vol#example"
+      },
+      {
+        "text": "成交量与成交额有什么区别？",
+        "url": "https://www.structguide.com/indicators/vol#volume-amount"
+      },
+      {
+        "text": "红绿成交量柱代表什么？",
+        "url": "https://www.structguide.com/indicators/vol#colors"
+      },
+      {
+        "text": "周期5、10与未结束K线怎样影响数值？",
+        "url": "https://www.structguide.com/indicators/vol#parameters"
+      },
+      {
+        "text": "数量单位和软件口径怎样核对？",
+        "url": "https://www.structguide.com/indicators/vol#differences"
+      },
+      {
+        "text": "VWAP｜成交量加权平均价",
+        "url": "https://www.structguide.com/indicators/vwap"
+      },
+      {
+        "text": "阅读全文：VWAP是什么？成交量加权均价公式、重置与MA区别",
+        "url": "https://www.structguide.com/indicators/vwap"
+      },
+      {
+        "text": "VWAP计算公式是什么？",
+        "url": "https://www.structguide.com/indicators/vwap#formula"
+      },
+      {
+        "text": "怎样用三组数字手算加权均价？",
+        "url": "https://www.structguide.com/indicators/vwap#example"
+      },
+      {
+        "text": "K线VWAP为什么不一定等于逐笔均价？",
+        "url": "https://www.structguide.com/indicators/vwap#source"
+      },
+      {
+        "text": "VWAP为什么重置，锚定VWAP是什么？",
+        "url": "https://www.structguide.com/indicators/vwap#anchor"
+      },
+      {
+        "text": "VWAP、MA、VWMA有什么区别？",
+        "url": "https://www.structguide.com/indicators/vwap#comparison"
+      },
+      {
+        "text": "零量与数据来源不同怎样处理？",
+        "url": "https://www.structguide.com/indicators/vwap#differences"
+      },
+      {
+        "text": "WR｜威廉指标",
+        "url": "https://www.structguide.com/indicators/wr"
+      },
+      {
+        "text": "阅读计算图解",
+        "url": "https://www.structguide.com/indicators/wr"
+      },
+      {
+        "text": "正值WR与负值Williams %R的公式是什么？",
+        "url": "https://www.structguide.com/indicators/wr#formula"
+      },
+      {
+        "text": "同一组价格为什么得到20和负20？",
+        "url": "https://www.structguide.com/indicators/wr#example"
+      },
+      {
+        "text": "WR与KDJ中的RSV是什么关系？",
+        "url": "https://www.structguide.com/indicators/wr#rsv"
+      },
+      {
+        "text": "周期参数改变了什么？",
+        "url": "https://www.structguide.com/indicators/wr#parameters"
+      },
+      {
+        "text": "零分母与不同软件的数值怎样核对？",
+        "url": "https://www.structguide.com/indicators/wr#differences"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/atr",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:03+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/atr",
+    "title": "ATR平均真实波幅是什么？TR计算公式与平滑图解",
+    "content_type": "text/html",
+    "bytes": 47219,
+    "sha256": "0cc741897b138a0298aa7e3a8a88f3e21b1e2707b9efb3f69de38ff4e7da014b",
+    "raw_file": "sources/raw/indicators__atr.html",
+    "text_file": "sources/text/indicators__atr.md",
+    "text_chars": 4999,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "TradingView ATR说明",
+        "url": "https://www.tradingview.com/support/solutions/43000501823-average-true-range-atr/"
+      },
+      {
+        "text": "DMI与ADX",
+        "url": "https://www.structguide.com/indicators/dmi-adx"
+      },
+      {
+        "text": "RSI怎么算",
+        "url": "https://www.structguide.com/indicators/rsi"
+      },
+      {
+        "text": "MA和EMA的区别",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema"
+      },
+      {
+        "text": "BOLL布林带怎么算",
+        "url": "https://www.structguide.com/indicators/boll"
+      },
+      {
+        "text": "返回常见指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "TradingView ATR说明",
+        "url": "https://www.tradingview.com/support/solutions/43000501823-average-true-range-atr/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/bias",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:03+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/bias",
+    "title": "BIAS乖离率是什么？计算公式、周期与数字图解",
+    "content_type": "text/html",
+    "bytes": 46650,
+    "sha256": "ac5bfac387d0e47d69936d1aa74fd0bff69e610ea1b103f25c25d82844845cf0",
+    "raw_file": "sources/raw/indicators__bias.html",
+    "text_file": "sources/text/indicators__bias.md",
+    "text_chars": 4427,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "东方财富BIAS说明的计算公式",
+        "url": "https://qhweb.eastmoney.com/videos/10/1889158.html"
+      },
+      {
+        "text": "BOLL布林带公式",
+        "url": "https://www.structguide.com/indicators/boll"
+      },
+      {
+        "text": "ROC变动率",
+        "url": "https://www.structguide.com/indicators/roc"
+      },
+      {
+        "text": "CCI计算图解",
+        "url": "https://www.structguide.com/indicators/cci"
+      },
+      {
+        "text": "MA均线怎么算",
+        "url": "https://www.structguide.com/indicators/ma"
+      },
+      {
+        "text": "BOLL布林带怎么算",
+        "url": "https://www.structguide.com/indicators/boll"
+      },
+      {
+        "text": "返回常见指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "东方财富BIAS说明的计算公式",
+        "url": "https://qhweb.eastmoney.com/videos/10/1889158.html"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/boll",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:04+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/boll",
+    "title": "BOLL布林带是什么？三条线计算公式、参数与图解",
+    "content_type": "text/html",
+    "bytes": 55654,
+    "sha256": "c33fa55c60d3455fe5a4744f4db54a2b556d63bd672fa0778d6ae97a6a22e197",
+    "raw_file": "sources/raw/indicators__boll.html",
+    "text_file": "sources/text/indicators__boll.md",
+    "text_chars": 8850,
+    "links": [
+      {
+        "text": "MA均线的计算原理",
+        "url": "https://www.structguide.com/indicators/ma"
+      },
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "MetaTrader 5官方布林带公式",
+        "url": "https://www.metatrader5.com/en/terminal/help/indicators/trend_indicators/bb"
+      },
+      {
+        "text": "TradingView的BOLL说明",
+        "url": "https://www.tradingview.com/support/solutions/43000501840-bollinger-bands-bb/"
+      },
+      {
+        "text": "布林带规则说明",
+        "url": "https://www.bollingerbands.com/bollinger-band-rules"
+      },
+      {
+        "text": "MetaTrader 5官方布林带公式",
+        "url": "https://www.metatrader5.com/en/terminal/help/indicators/trend_indicators/bb"
+      },
+      {
+        "text": "TradingView的BOLL说明",
+        "url": "https://www.tradingview.com/support/solutions/43000501840-bollinger-bands-bb/"
+      },
+      {
+        "text": "两种均线的计算对比",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema"
+      },
+      {
+        "text": "布林带规则说明",
+        "url": "https://www.bollingerbands.com/bollinger-band-rules"
+      },
+      {
+        "text": "CCI计算图解",
+        "url": "https://www.structguide.com/indicators/cci"
+      },
+      {
+        "text": "MA均线怎么算？用5个数字看懂移动平均",
+        "url": "https://www.structguide.com/indicators/ma"
+      },
+      {
+        "text": "MA和EMA有什么区别？用一组数字看懂两种均线",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema"
+      },
+      {
+        "text": "返回常见指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/cci",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:04+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/cci",
+    "title": "CCI顺势指标是什么？计算公式、平均偏差与0.015",
+    "content_type": "text/html",
+    "bytes": 48006,
+    "sha256": "fa7753c31288c7c483ef8d453f64b10f617df19f8fe97431ff368679dfc221ce",
+    "raw_file": "sources/raw/indicators__cci.html",
+    "text_file": "sources/text/indicators__cci.md",
+    "text_chars": 5872,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "TradingView CCI说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502001-commodity-channel-index-cci/"
+      },
+      {
+        "text": "BIAS乖离率",
+        "url": "https://www.structguide.com/indicators/bias"
+      },
+      {
+        "text": "BOLL布林带",
+        "url": "https://www.structguide.com/indicators/boll"
+      },
+      {
+        "text": "返回指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "TradingView CCI说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502001-commodity-channel-index-cci/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/dmi-adx",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:04+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/dmi-adx",
+    "title": "DMI与ADX是什么？计算公式、参数与逐步计算图解",
+    "content_type": "text/html",
+    "bytes": 50111,
+    "sha256": "bdf0a0f949e240ed149a6df59ac0b361e2318c03232fac437b74005031aceb0f",
+    "raw_file": "sources/raw/indicators__dmi-adx.html",
+    "text_file": "sources/text/indicators__dmi-adx.md",
+    "text_chars": 6903,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "TradingView DMI说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502250-directional-movement-dmi/"
+      },
+      {
+        "text": "ATR真实波幅公式",
+        "url": "https://www.structguide.com/indicators/atr#formula"
+      },
+      {
+        "text": "ATR怎么算",
+        "url": "https://www.structguide.com/indicators/atr"
+      },
+      {
+        "text": "RSI怎么算",
+        "url": "https://www.structguide.com/indicators/rsi"
+      },
+      {
+        "text": "返回指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "TradingView DMI说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502250-directional-movement-dmi/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/kdj",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:05+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/kdj",
+    "title": "KDJ是什么指标？RSV、K、D、J计算公式与参数图解",
+    "content_type": "text/html",
+    "bytes": 47595,
+    "sha256": "b2ec006d4669fd87f58724cb3e9dd2caad20349342d8b8e3c26ed1a03052eefb",
+    "raw_file": "sources/raw/indicators__kdj.html",
+    "text_file": "sources/text/indicators__kdj.md",
+    "text_chars": 5207,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "富途KDJ说明的计算公式部分",
+        "url": "https://support.futunn.com/topic149?from_platform=1&lang=zh-cn"
+      },
+      {
+        "text": "WR威廉指标",
+        "url": "https://www.structguide.com/indicators/wr"
+      },
+      {
+        "text": "MA和EMA的区别",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema"
+      },
+      {
+        "text": "RSI怎么算",
+        "url": "https://www.structguide.com/indicators/rsi"
+      },
+      {
+        "text": "返回常见指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "富途KDJ说明的计算公式部分",
+        "url": "https://support.futunn.com/topic149?from_platform=1&lang=zh-cn"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/ma",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:05+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/ma",
+    "title": "MA均线是什么？计算公式、周期设置与数字图解",
+    "content_type": "text/html",
+    "bytes": 52898,
+    "sha256": "4a9cef9cc874dbd3cd19670d98a30d1358b1bafc3940c4d9527760dc7a6def52",
+    "raw_file": "sources/raw/indicators__ma.html",
+    "text_file": "sources/text/indicators__ma.md",
+    "text_chars": 7165,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "TradingView：简单移动平均的计算与参数",
+        "url": "https://www.tradingview.com/support/solutions/43000696841-simple-moving-average/"
+      },
+      {
+        "text": "VOL成交量与均量线",
+        "url": "https://www.structguide.com/indicators/vol"
+      },
+      {
+        "text": "VWAP成交量加权均价",
+        "url": "https://www.structguide.com/indicators/vwap"
+      },
+      {
+        "text": "BOLL布林带怎么算？用一组数字看懂中轨、上轨和下轨",
+        "url": "https://www.structguide.com/indicators/boll"
+      },
+      {
+        "text": "MA和EMA有什么区别？用一组数字看懂两种均线",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema"
+      },
+      {
+        "text": "TradingView：简单移动平均的计算与参数",
+        "url": "https://www.tradingview.com/support/solutions/43000696841-simple-moving-average/"
+      },
+      {
+        "text": "返回常见指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "Struct Guide画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/ma-vs-ema",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:05+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/ma-vs-ema",
+    "title": "MA和EMA有什么区别？计算公式、权重与初始化图解",
+    "content_type": "text/html",
+    "bytes": 53344,
+    "sha256": "c3dbaec1fb1b76c06e78916055bd5a1b97cad06161ea6ef7813d4324b0f4a72c",
+    "raw_file": "sources/raw/indicators__ma-vs-ema.html",
+    "text_file": "sources/text/indicators__ma-vs-ema.md",
+    "text_chars": 7738,
+    "links": [
+      {
+        "text": "MA均线怎么算？用5个数字看懂移动平均",
+        "url": "https://www.structguide.com/indicators/ma"
+      },
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "TradingView的EMA计算说明",
+        "url": "https://www.tradingview.com/support/solutions/43000592270-exponential-moving-average/"
+      },
+      {
+        "text": "TradingView的EMA计算说明",
+        "url": "https://www.tradingview.com/support/solutions/43000592270-exponential-moving-average/"
+      },
+      {
+        "text": "BOLL布林带计算公式",
+        "url": "https://www.structguide.com/indicators/boll"
+      },
+      {
+        "text": "MACD是什么指标？DIF、DEA和柱状图的计算公式图解",
+        "url": "https://www.structguide.com/indicators/macd"
+      },
+      {
+        "text": "BOLL布林带怎么算？用一组数字看懂中轨、上轨和下轨",
+        "url": "https://www.structguide.com/indicators/boll"
+      },
+      {
+        "text": "MA均线怎么算？用5个数字看懂移动平均",
+        "url": "https://www.structguide.com/indicators/ma"
+      },
+      {
+        "text": "返回常见指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/macd",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:05+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/macd",
+    "title": "MACD是什么指标？DIF、DEA与柱状图计算公式",
+    "content_type": "text/html",
+    "bytes": 48889,
+    "sha256": "bca3a09fc6282b21c87a5338eec73beedf2b9a24b4890c7555d0b16dc1348e4b",
+    "raw_file": "sources/raw/indicators__macd.html",
+    "text_file": "sources/text/indicators__macd.md",
+    "text_chars": 6044,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "TradingView MACD说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502344-moving-average-convergence-divergence-macd-indicator/"
+      },
+      {
+        "text": "MA和EMA的区别",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema"
+      },
+      {
+        "text": "MA均线怎么算",
+        "url": "https://www.structguide.com/indicators/ma"
+      },
+      {
+        "text": "MA和EMA的区别",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema"
+      },
+      {
+        "text": "BOLL布林带怎么算",
+        "url": "https://www.structguide.com/indicators/boll"
+      },
+      {
+        "text": "常见指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "TradingView MACD说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502344-moving-average-convergence-divergence-macd-indicator/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/obv",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/obv",
+    "title": "OBV能量潮是什么？计算公式、成交量累计与图解",
+    "content_type": "text/html",
+    "bytes": 48289,
+    "sha256": "927993cc8927227ae8fca3fe5a4e0c45c9746f7bfef350f5ec57b38309c430ed",
+    "raw_file": "sources/raw/indicators__obv.html",
+    "text_file": "sources/text/indicators__obv.md",
+    "text_chars": 6075,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "TradingView OBV计算说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502593-on-balance-volume-obv/"
+      },
+      {
+        "text": "VWAP",
+        "url": "https://www.structguide.com/indicators/vwap"
+      },
+      {
+        "text": "VOL成交量与均量线",
+        "url": "https://www.structguide.com/indicators/vol"
+      },
+      {
+        "text": "VWAP成交量加权均价",
+        "url": "https://www.structguide.com/indicators/vwap"
+      },
+      {
+        "text": "返回指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "TradingView OBV计算说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502593-on-balance-volume-obv/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/psy",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/psy",
+    "title": "PSY心理线是什么？计算公式、参数与数字示例",
+    "content_type": "text/html",
+    "bytes": 47063,
+    "sha256": "2508d00eeb233a1f80b4a674b0145866edc1be3b69d2bb4f24048ac0ca703ec2",
+    "raw_file": "sources/raw/indicators__psy.html",
+    "text_file": "sources/text/indicators__psy.md",
+    "text_chars": 5238,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "富途PSY公式说明",
+        "url": "https://www.futuhk.com/cn/hant/support/topic1_656"
+      },
+      {
+        "text": "ROC图解",
+        "url": "https://www.structguide.com/indicators/roc"
+      },
+      {
+        "text": "RSI计算图解",
+        "url": "https://www.structguide.com/indicators/rsi"
+      },
+      {
+        "text": "ROC变动率",
+        "url": "https://www.structguide.com/indicators/roc"
+      },
+      {
+        "text": "RSI相对强弱指标",
+        "url": "https://www.structguide.com/indicators/rsi"
+      },
+      {
+        "text": "返回指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "富途PSY公式说明",
+        "url": "https://www.futuhk.com/cn/hant/support/topic1_656"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/roc",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:06+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/roc",
+    "title": "ROC变动率是什么？计算公式、周期与涨跌幅区别",
+    "content_type": "text/html",
+    "bytes": 46946,
+    "sha256": "30c911df947e02425fbcf241faf8a883e3a1a65f54cd491e8fcf55e80af191be",
+    "raw_file": "sources/raw/indicators__roc.html",
+    "text_file": "sources/text/indicators__roc.md",
+    "text_chars": 5180,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "TradingView ROC说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502343-rate-of-change-roc/"
+      },
+      {
+        "text": "BIAS乖离率",
+        "url": "https://www.structguide.com/indicators/bias"
+      },
+      {
+        "text": "BIAS怎么算",
+        "url": "https://www.structguide.com/indicators/bias"
+      },
+      {
+        "text": "PSY心理线怎么算",
+        "url": "https://www.structguide.com/indicators/psy"
+      },
+      {
+        "text": "返回指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "TradingView ROC说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502343-rate-of-change-roc/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/rsi",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:07+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/rsi",
+    "title": "RSI相对强弱指标是什么？计算公式、参数与平滑图解",
+    "content_type": "text/html",
+    "bytes": 46951,
+    "sha256": "ec70c6fcf7e1eecec2ddde675ea227839a6ea9db4637ef609b043e30672f821c",
+    "raw_file": "sources/raw/indicators__rsi.html",
+    "text_file": "sources/text/indicators__rsi.md",
+    "text_chars": 4872,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "TradingView RSI说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502338-relative-strength-index-rsi/"
+      },
+      {
+        "text": "MA与EMA计算图解",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema"
+      },
+      {
+        "text": "PSY心理线",
+        "url": "https://www.structguide.com/indicators/psy"
+      },
+      {
+        "text": "KDJ怎么算",
+        "url": "https://www.structguide.com/indicators/kdj"
+      },
+      {
+        "text": "ATR怎么算",
+        "url": "https://www.structguide.com/indicators/atr"
+      },
+      {
+        "text": "返回常见指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "TradingView RSI说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502338-relative-strength-index-rsi/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/vol",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:07+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/vol",
+    "title": "VOL成交量是什么？MAVOL均量线公式与红绿柱图解",
+    "content_type": "text/html",
+    "bytes": 48881,
+    "sha256": "15f60784bc7ce2eaff146eff3048f20ea6f2f3f4bc584795dda06933e3c25542",
+    "raw_file": "sources/raw/indicators__vol.html",
+    "text_file": "sources/text/indicators__vol.md",
+    "text_chars": 6312,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "TradingView平均成交量说明",
+        "url": "https://www.tradingview.com/support/solutions/43000745917-how-do-we-calculate-average-volume/"
+      },
+      {
+        "text": "MA价格均线",
+        "url": "https://www.structguide.com/indicators/ma"
+      },
+      {
+        "text": "VWAP计算图解",
+        "url": "https://www.structguide.com/indicators/vwap"
+      },
+      {
+        "text": "MA均线怎么算",
+        "url": "https://www.structguide.com/indicators/ma"
+      },
+      {
+        "text": "VWAP是什么",
+        "url": "https://www.structguide.com/indicators/vwap"
+      },
+      {
+        "text": "OBV怎么算",
+        "url": "https://www.structguide.com/indicators/obv"
+      },
+      {
+        "text": "返回指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "TradingView平均成交量说明",
+        "url": "https://www.tradingview.com/support/solutions/43000745917-how-do-we-calculate-average-volume/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/vwap",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:08+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/vwap",
+    "title": "VWAP是什么？成交量加权均价公式、重置与MA区别",
+    "content_type": "text/html",
+    "bytes": 48343,
+    "sha256": "ecdd5e366d360a4b1b0b7f16b7b87827764a4273817fdc5d1054a1b52b2b5ee2",
+    "raw_file": "sources/raw/indicators__vwap.html",
+    "text_file": "sources/text/indicators__vwap.md",
+    "text_chars": 6012,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "TradingView VWAP说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502018-volume-weighted-average-price-vwap/"
+      },
+      {
+        "text": "TradingView VWMA说明",
+        "url": "https://www.tradingview.com/support/solutions/43000592293-volume-weighted-moving-average-vwma/"
+      },
+      {
+        "text": "MA与EMA图解",
+        "url": "https://www.structguide.com/indicators/ma-vs-ema"
+      },
+      {
+        "text": "VOL与均量线",
+        "url": "https://www.structguide.com/indicators/vol"
+      },
+      {
+        "text": "MA均线",
+        "url": "https://www.structguide.com/indicators/ma"
+      },
+      {
+        "text": "返回指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "TradingView VWAP说明",
+        "url": "https://www.tradingview.com/support/solutions/43000502018-volume-weighted-average-price-vwap/"
+      },
+      {
+        "text": "TradingView VWMA说明",
+        "url": "https://www.tradingview.com/support/solutions/43000592293-volume-weighted-moving-average-vwma/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/indicators/wr",
+    "sitemap_lastmod": "2026-11-03",
+    "retrieved_at": "2026-11-06T00:31:08+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/indicators/wr",
+    "title": "WR威廉指标是什么？计算公式、正负刻度与参数",
+    "content_type": "text/html",
+    "bytes": 47018,
+    "sha256": "03f2663ee6b9cef4dd3dc013c14e631851b495c59f539d4c36b0ad926c32762d",
+    "raw_file": "sources/raw/indicators__wr.html",
+    "text_file": "sources/text/indicators__wr.md",
+    "text_chars": 5443,
+    "links": [
+      {
+        "text": "Struct Guide",
+        "url": "https://www.structguide.com/"
+      },
+      {
+        "text": "富途WMSR说明",
+        "url": "https://support.futunn.com/hant/topic256"
+      },
+      {
+        "text": "IBKR Williams指标说明",
+        "url": "https://www.interactivebrokers.com/campus/glossary-terms/williams-oscillator/"
+      },
+      {
+        "text": "KDJ计算图解",
+        "url": "https://www.structguide.com/indicators/kdj"
+      },
+      {
+        "text": "KDJ怎么算",
+        "url": "https://www.structguide.com/indicators/kdj"
+      },
+      {
+        "text": "RSI怎么算",
+        "url": "https://www.structguide.com/indicators/rsi"
+      },
+      {
+        "text": "返回指标速查手册",
+        "url": "https://www.structguide.com/indicators/"
+      },
+      {
+        "text": "富途WMSR说明",
+        "url": "https://support.futunn.com/hant/topic256"
+      },
+      {
+        "text": "IBKR Williams指标说明",
+        "url": "https://www.interactivebrokers.com/campus/glossary-terms/williams-oscillator/"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/mt5-chanlun-auto-drawing",
+    "sitemap_lastmod": "2026-10-09",
+    "retrieved_at": "2026-11-06T00:31:08+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/mt5-chanlun-auto-drawing",
+    "title": "MT5 缠论指标怎么选：Chanlun Indicator 与网页插件的区别",
+    "content_type": "text/html",
+    "bytes": 43608,
+    "sha256": "6ff919478233cca843617aae2710d3f2338f8c6a27ab05425e2ef524a4f03e8e",
+    "raw_file": "sources/raw/mt5-chanlun-auto-drawing.html",
+    "text_file": "sources/text/mt5-chanlun-auto-drawing.md",
+    "text_chars": 2403,
+    "links": [
+      {
+        "text": "TradingView 缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tradingview"
+      },
+      {
+        "text": "MQL5 官方自定义指标文档",
+        "url": "https://www.mql5.com/en/docs/customind"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "TradingView 缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tradingview"
+      },
+      {
+        "text": "TradingView 缠论画线教程",
+        "url": "https://www.structguide.com/tutorial/tradingview"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "跨工具核对记录表",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula#different-results"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/sites/",
+    "sitemap_lastmod": "2026-10-14",
+    "retrieved_at": "2026-11-06T00:31:09+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/sites/",
+    "title": "Struct Guide 支持的网站与K线周期",
+    "content_type": "text/html",
+    "bytes": 38848,
+    "sha256": "0cd0b4b5f4384154575f335203450c1fd451ed8827754328a6f5edc630f40fe0",
+    "raw_file": "sources/raw/sites.html",
+    "text_file": "sources/text/sites.md",
+    "text_chars": 1465,
+    "links": [
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "TradingView 缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tradingview"
+      },
+      {
+        "text": "同花顺缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tonghuashun"
+      },
+      {
+        "text": "东方财富缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/eastmoney"
+      },
+      {
+        "text": "雪球缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/xueqiu"
+      },
+      {
+        "text": "新浪财经缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/sina"
+      },
+      {
+        "text": "moomoo 缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/moomoo"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/sites/eastmoney",
+    "sitemap_lastmod": "2026-10-22",
+    "retrieved_at": "2026-11-06T00:31:09+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/sites/eastmoney",
+    "title": "东方财富缠论指标：自动画笔、线段和中枢",
+    "content_type": "text/html",
+    "bytes": 48803,
+    "sha256": "3fb1875a8d3c4a8154f678de38bf30cca1f46174ffafd3be32a2a4533a722408",
+    "raw_file": "sources/raw/sites__eastmoney.html",
+    "text_file": "sources/text/sites__eastmoney.md",
+    "text_chars": 3977,
+    "links": [
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "画笔与线段效果",
+        "url": "https://www.structguide.com/sites/eastmoney#layers"
+      },
+      {
+        "text": "中枢与全屏设置",
+        "url": "https://www.structguide.com/sites/eastmoney#central-zone"
+      },
+      {
+        "text": "安装后不显示",
+        "url": "https://www.structguide.com/sites/eastmoney#setup"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "笔模式说明",
+        "url": "https://www.structguide.com/concept/stroke#modes"
+      },
+      {
+        "text": "兼容表",
+        "url": "https://www.structguide.com/sites/eastmoney#supported-periods"
+      },
+      {
+        "text": "中枢画线公式图解",
+        "url": "https://www.structguide.com/concept/central-zone#definition"
+      },
+      {
+        "text": "设置与排查说明",
+        "url": "https://www.structguide.com/sites/eastmoney#setup"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "东方财富网页",
+        "url": "https://quote.eastmoney.com/"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "structguide@outlook.com",
+        "url": "mailto:structguide@outlook.com"
+      },
+      {
+        "text": "新浪财经缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/sina"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "缠论自动画线软件怎么选",
+        "url": "https://www.structguide.com/faq/chanlun-indicator"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/sites/moomoo",
+    "sitemap_lastmod": "2026-10-14",
+    "retrieved_at": "2026-11-06T00:31:10+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/sites/moomoo",
+    "title": "moomoo 缠论自动画线：网页版设置、支持市场与周期",
+    "content_type": "text/html",
+    "bytes": 46373,
+    "sha256": "bc22ec9fe5d9a7d771e0a1cf8df9c0602e61988fbce92c6f423d1f14583944fd",
+    "raw_file": "sources/raw/sites__moomoo.html",
+    "text_file": "sources/text/sites__moomoo.md",
+    "text_chars": 3220,
+    "links": [
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "设置说明",
+        "url": "https://www.structguide.com/sites/moomoo#setup"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "moomoo网页",
+        "url": "https://www.moomoo.com/hans/quote/us"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "structguide@outlook.com",
+        "url": "mailto:structguide@outlook.com"
+      },
+      {
+        "text": "兼容表",
+        "url": "https://www.structguide.com/sites/moomoo#supported-periods"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "缠论自动画线软件怎么选",
+        "url": "https://www.structguide.com/faq/chanlun-indicator"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/sites/sina",
+    "sitemap_lastmod": "2026-10-14",
+    "retrieved_at": "2026-11-06T00:31:10+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/sites/sina",
+    "title": "新浪财经缠论自动画线：期货K线、支持周期与网页设置",
+    "content_type": "text/html",
+    "bytes": 45945,
+    "sha256": "3da1d43ad2891ad465b2520ff02fa381b71a41667ac4ee7b3b5260ce296529ff",
+    "raw_file": "sources/raw/sites__sina.html",
+    "text_file": "sources/text/sites__sina.md",
+    "text_chars": 3108,
+    "links": [
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "新浪财经缠论画线教程",
+        "url": "https://www.structguide.com/tutorial/sina"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "新浪财经缠论画线教程",
+        "url": "https://www.structguide.com/tutorial/sina"
+      },
+      {
+        "text": "新浪财经",
+        "url": "https://finance.sina.com.cn/"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "新浪财经网页",
+        "url": "https://finance.sina.com.cn/"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "安装后不显示，怎么排查？",
+        "url": "https://www.structguide.com/tutorial/sina#troubleshooting"
+      },
+      {
+        "text": "兼容表",
+        "url": "https://www.structguide.com/sites/sina#supported-periods"
+      },
+      {
+        "text": "文华财经近似缠论公式",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing"
+      },
+      {
+        "text": "博易大师使用环境对照",
+        "url": "https://www.structguide.com/boyi-chanlun-auto-drawing"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "缠论自动画线软件怎么选",
+        "url": "https://www.structguide.com/faq/chanlun-indicator"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/sites/tonghuashun",
+    "sitemap_lastmod": "2026-10-22",
+    "retrieved_at": "2026-11-06T00:31:10+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/sites/tonghuashun",
+    "title": "同花顺缠论自动画线插件：画笔、线段和中枢",
+    "content_type": "text/html",
+    "bytes": 49957,
+    "sha256": "8df4f31444c9db8ff74f04f95354e2f3967dc60eee8ebe136b38e81be5234410",
+    "raw_file": "sources/raw/sites__tonghuashun.html",
+    "text_file": "sources/text/sites__tonghuashun.md",
+    "text_chars": 4583,
+    "links": [
+      {
+        "text": "下载 Struct Guide 浏览器插件",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "自动画笔与线段",
+        "url": "https://www.structguide.com/sites/tonghuashun#stroke-lines"
+      },
+      {
+        "text": "只显示中枢",
+        "url": "https://www.structguide.com/sites/tonghuashun#central-zone"
+      },
+      {
+        "text": "同花顺安装与设置教程",
+        "url": "https://www.structguide.com/tutorial/tonghuashun"
+      },
+      {
+        "text": "支持的市场与周期",
+        "url": "https://www.structguide.com/sites/tonghuashun#supported-periods"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "同花顺安装与设置教程的图层设置",
+        "url": "https://www.structguide.com/tutorial/tonghuashun#settings"
+      },
+      {
+        "text": "笔的连接条件",
+        "url": "https://www.structguide.com/concept/stroke#conditions"
+      },
+      {
+        "text": "两种笔模式的计数方式",
+        "url": "https://www.structguide.com/concept/stroke#modes"
+      },
+      {
+        "text": "中枢画线公式图解",
+        "url": "https://www.structguide.com/concept/central-zone#definition"
+      },
+      {
+        "text": "成员选择条件",
+        "url": "https://www.structguide.com/concept/central-zone#members"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "同花顺网页",
+        "url": "https://10jqka.com.cn/"
+      },
+      {
+        "text": "支持范围",
+        "url": "https://www.structguide.com/sites/tonghuashun#supported-periods"
+      },
+      {
+        "text": "同花顺安装与设置教程",
+        "url": "https://www.structguide.com/tutorial/tonghuashun#settings"
+      },
+      {
+        "text": "按现象排查",
+        "url": "https://www.structguide.com/tutorial/tonghuashun#troubleshooting"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "缠论自动画线软件怎么选",
+        "url": "https://www.structguide.com/faq/chanlun-indicator"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "只显示中枢的设置",
+        "url": "https://www.structguide.com/sites/tonghuashun#central-zone"
+      },
+      {
+        "text": "同花顺安装与设置教程",
+        "url": "https://www.structguide.com/tutorial/tonghuashun"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/sites/tradingview",
+    "sitemap_lastmod": "2026-10-22",
+    "retrieved_at": "2026-11-06T00:31:11+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/sites/tradingview",
+    "title": "TradingView 缠论插件：自动画笔、线段和中枢",
+    "content_type": "text/html",
+    "bytes": 47764,
+    "sha256": "15c4d90532153f84cc4f1ad9661b63c5ca34f2ab5982f670dbc91f38ddac1bed",
+    "raw_file": "sources/raw/sites__tradingview.html",
+    "text_file": "sources/text/sites__tradingview.md",
+    "text_chars": 4035,
+    "links": [
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "画笔、线段与中枢效果",
+        "url": "https://www.structguide.com/sites/tradingview#layers"
+      },
+      {
+        "text": "TradingView 缠论画线教程",
+        "url": "https://www.structguide.com/tutorial/tradingview"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "TradingView 缠论画线教程的完整图表设置",
+        "url": "https://www.structguide.com/tutorial/tradingview#open-chart"
+      },
+      {
+        "text": "图层设置",
+        "url": "https://www.structguide.com/tutorial/tradingview#settings"
+      },
+      {
+        "text": "中枢画线公式图解",
+        "url": "https://www.structguide.com/concept/central-zone#definition"
+      },
+      {
+        "text": "TradingView 官方 Pine Script 文档",
+        "url": "https://www.tradingview.com/pine-script-docs/welcome/"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "TradingView网页",
+        "url": "https://www.tradingview.com/"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "TradingView 缠论画线教程的“安装后不显示”一节",
+        "url": "https://www.structguide.com/tutorial/tradingview#troubleshooting"
+      },
+      {
+        "text": "TradingView 历史数据说明",
+        "url": "https://www.tradingview.com/support/solutions/43000480679-historical-intraday-data-bars-and-limits-explained/"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "缠论自动画线软件怎么选",
+        "url": "https://www.structguide.com/faq/chanlun-indicator"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/sites/xueqiu",
+    "sitemap_lastmod": "2026-10-22",
+    "retrieved_at": "2026-11-06T00:31:11+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/sites/xueqiu",
+    "title": "雪球缠论插件：自动画笔、线段和中枢",
+    "content_type": "text/html",
+    "bytes": 46088,
+    "sha256": "6fe5c1fd6e05adb0d013bcef697a4d0d5bf0b4a47a9db730f2211b383a19d716",
+    "raw_file": "sources/raw/sites__xueqiu.html",
+    "text_file": "sources/text/sites__xueqiu.md",
+    "text_chars": 3183,
+    "links": [
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "雪球缠论画线教程",
+        "url": "https://www.structguide.com/tutorial/xueqiu"
+      },
+      {
+        "text": "画笔、线段与中枢效果",
+        "url": "https://www.structguide.com/sites/xueqiu#layers"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "雪球缠论画线教程的K线入口",
+        "url": "https://www.structguide.com/tutorial/xueqiu#open-chart"
+      },
+      {
+        "text": "雪球缠论画线教程的图层设置",
+        "url": "https://www.structguide.com/tutorial/xueqiu#settings"
+      },
+      {
+        "text": "中枢画线公式图解",
+        "url": "https://www.structguide.com/concept/central-zone#definition"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "雪球网页",
+        "url": "https://xueqiu.com/"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "安装后不显示，怎么排查？",
+        "url": "https://www.structguide.com/tutorial/xueqiu#troubleshooting"
+      },
+      {
+        "text": "雪球板块代码列表",
+        "url": "https://www.structguide.com/sites/xueqiu/boards"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "缠论自动画线软件怎么选",
+        "url": "https://www.structguide.com/faq/chanlun-indicator"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/sites/xueqiu/boards",
+    "sitemap_lastmod": "2026-10-04",
+    "retrieved_at": "2026-11-06T00:31:11+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/sites/xueqiu/boards",
+    "title": "雪球板块代码列表",
+    "content_type": "text/html",
+    "bytes": 60972,
+    "sha256": "60dc3f1712891474daefc1f2551883c148ea57d4bc58d3ed42a39e3cd43d7505",
+    "raw_file": "sources/raw/sites__xueqiu__boards.html",
+    "text_file": "sources/text/sites__xueqiu__boards.md",
+    "text_chars": 3744,
+    "links": [
+      {
+        "text": "种植业与林业 BK0001",
+        "url": "https://xueqiu.com/S/BK0001"
+      },
+      {
+        "text": "BK0001种植业与林业行业板块",
+        "url": "https://xueqiu.com/S/BK0001"
+      },
+      {
+        "text": "BK0002养殖业行业板块",
+        "url": "https://xueqiu.com/S/BK0002"
+      },
+      {
+        "text": "BK0003农产品加工行业板块",
+        "url": "https://xueqiu.com/S/BK0003"
+      },
+      {
+        "text": "BK0004农业服务行业板块",
+        "url": "https://xueqiu.com/S/BK0004"
+      },
+      {
+        "text": "BK0005煤炭开采加工行业板块",
+        "url": "https://xueqiu.com/S/BK0005"
+      },
+      {
+        "text": "BK0006石油矿业开采行业板块",
+        "url": "https://xueqiu.com/S/BK0006"
+      },
+      {
+        "text": "BK0007油气开采及服务行业板块",
+        "url": "https://xueqiu.com/S/BK0007"
+      },
+      {
+        "text": "BK0008化学原料行业板块",
+        "url": "https://xueqiu.com/S/BK0008"
+      },
+      {
+        "text": "BK0009化学制品行业板块",
+        "url": "https://xueqiu.com/S/BK0009"
+      },
+      {
+        "text": "BK0010化工合成材料行业板块",
+        "url": "https://xueqiu.com/S/BK0010"
+      },
+      {
+        "text": "BK0011化工新材料行业板块",
+        "url": "https://xueqiu.com/S/BK0011"
+      },
+      {
+        "text": "BK0012钢铁行业板块",
+        "url": "https://xueqiu.com/S/BK0012"
+      },
+      {
+        "text": "BK0013有色冶炼加工行业板块",
+        "url": "https://xueqiu.com/S/BK0013"
+      },
+      {
+        "text": "BK0014金属新材料行业板块",
+        "url": "https://xueqiu.com/S/BK0014"
+      },
+      {
+        "text": "BK0015建筑材料行业板块",
+        "url": "https://xueqiu.com/S/BK0015"
+      },
+      {
+        "text": "BK0016建筑装饰行业板块",
+        "url": "https://xueqiu.com/S/BK0016"
+      },
+      {
+        "text": "BK0017通用设备行业板块",
+        "url": "https://xueqiu.com/S/BK0017"
+      },
+      {
+        "text": "BK0018专用设备行业板块",
+        "url": "https://xueqiu.com/S/BK0018"
+      },
+      {
+        "text": "BK0019仪器仪表行业板块",
+        "url": "https://xueqiu.com/S/BK0019"
+      },
+      {
+        "text": "BK0020电力设备行业板块",
+        "url": "https://xueqiu.com/S/BK0020"
+      },
+      {
+        "text": "BK0021半导体行业板块",
+        "url": "https://xueqiu.com/S/BK0021"
+      },
+      {
+        "text": "BK0022光学光电子行业板块",
+        "url": "https://xueqiu.com/S/BK0022"
+      },
+      {
+        "text": "BK0023其他电子行业板块",
+        "url": "https://xueqiu.com/S/BK0023"
+      },
+      {
+        "text": "BK0024消费电子行业板块",
+        "url": "https://xueqiu.com/S/BK0024"
+      },
+      {
+        "text": "BK0025汽车整车行业板块",
+        "url": "https://xueqiu.com/S/BK0025"
+      },
+      {
+        "text": "BK0026汽车零部件行业板块",
+        "url": "https://xueqiu.com/S/BK0026"
+      },
+      {
+        "text": "BK0027非汽车交运行业板块",
+        "url": "https://xueqiu.com/S/BK0027"
+      },
+      {
+        "text": "BK0028汽车服务及其他行业板块",
+        "url": "https://xueqiu.com/S/BK0028"
+      },
+      {
+        "text": "BK0029通信设备行业板块",
+        "url": "https://xueqiu.com/S/BK0029"
+      },
+      {
+        "text": "BK0030计算机设备行业板块",
+        "url": "https://xueqiu.com/S/BK0030"
+      },
+      {
+        "text": "BK0031白色家电行业板块",
+        "url": "https://xueqiu.com/S/BK0031"
+      },
+      {
+        "text": "BK0032黑色家电行业板块",
+        "url": "https://xueqiu.com/S/BK0032"
+      },
+      {
+        "text": "BK0033饮料制造行业板块",
+        "url": "https://xueqiu.com/S/BK0033"
+      },
+      {
+        "text": "BK0034食品加工制造行业板块",
+        "url": "https://xueqiu.com/S/BK0034"
+      },
+      {
+        "text": "BK0035纺织制造行业板块",
+        "url": "https://xueqiu.com/S/BK0035"
+      },
+      {
+        "text": "BK0036服装家纺行业板块",
+        "url": "https://xueqiu.com/S/BK0036"
+      },
+      {
+        "text": "BK0037造纸行业板块",
+        "url": "https://xueqiu.com/S/BK0037"
+      },
+      {
+        "text": "BK0038包装印刷行业板块",
+        "url": "https://xueqiu.com/S/BK0038"
+      },
+      {
+        "text": "BK0039家居用品行业板块",
+        "url": "https://xueqiu.com/S/BK0039"
+      },
+      {
+        "text": "BK0040化学制药行业板块",
+        "url": "https://xueqiu.com/S/BK0040"
+      },
+      {
+        "text": "BK0041中药行业板块",
+        "url": "https://xueqiu.com/S/BK0041"
+      },
+      {
+        "text": "BK0042生物制品行业板块",
+        "url": "https://xueqiu.com/S/BK0042"
+      },
+      {
+        "text": "BK0043医药商业行业板块",
+        "url": "https://xueqiu.com/S/BK0043"
+      },
+      {
+        "text": "BK0044医疗器械行业板块",
+        "url": "https://xueqiu.com/S/BK0044"
+      },
+      {
+        "text": "BK0045电力行业板块",
+        "url": "https://xueqiu.com/S/BK0045"
+      },
+      {
+        "text": "BK0046燃气行业板块",
+        "url": "https://xueqiu.com/S/BK0046"
+      },
+      {
+        "text": "BK0047环保工程行业板块",
+        "url": "https://xueqiu.com/S/BK0047"
+      },
+      {
+        "text": "BK0048港口航运行业板块",
+        "url": "https://xueqiu.com/S/BK0048"
+      },
+      {
+        "text": "BK0049公路铁路运输行业板块",
+        "url": "https://xueqiu.com/S/BK0049"
+      },
+      {
+        "text": "BK0050公交行业板块",
+        "url": "https://xueqiu.com/S/BK0050"
+      },
+      {
+        "text": "BK0001 种植业与林业",
+        "url": "https://xueqiu.com/S/BK0001"
+      },
+      {
+        "text": "BK0901 北京",
+        "url": "https://xueqiu.com/S/BK0901"
+      },
+      {
+        "text": "BK9000 军工信息化",
+        "url": "https://xueqiu.com/S/BK9000"
+      },
+      {
+        "text": "雪球兼容范围",
+        "url": "https://www.structguide.com/sites/xueqiu#supported-periods"
+      },
+      {
+        "text": "雪球缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/xueqiu"
+      },
+      {
+        "text": "雪球兼容范围",
+        "url": "https://www.structguide.com/sites/xueqiu#supported-periods"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/tutorial/sina",
+    "sitemap_lastmod": "2026-10-04",
+    "retrieved_at": "2026-11-06T00:31:12+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/tutorial/sina",
+    "title": "新浪财经期货缠论画线教程：K线入口、设置与问题排查",
+    "content_type": "text/html",
+    "bytes": 44554,
+    "sha256": "317eccc20fd634e529d3a83ac9b13b5e436280246ad38bbb943d436c62ce4ccf",
+    "raw_file": "sources/raw/tutorial__sina.html",
+    "text_file": "sources/text/tutorial__sina.md",
+    "text_chars": 2584,
+    "links": [
+      {
+        "text": "新浪财经缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/sina"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "新浪财经网页",
+        "url": "https://finance.sina.com.cn/"
+      },
+      {
+        "text": "新浪财经兼容范围",
+        "url": "https://www.structguide.com/sites/sina#supported-periods"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "structguide@outlook.com",
+        "url": "mailto:structguide@outlook.com"
+      },
+      {
+        "text": "新浪财经缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/sina"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/tutorial/tonghuashun",
+    "sitemap_lastmod": "2026-10-13",
+    "retrieved_at": "2026-11-06T00:31:12+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/tutorial/tonghuashun",
+    "title": "同花顺缠论自动画线怎么设置？插件安装与使用教程",
+    "content_type": "text/html",
+    "bytes": 46981,
+    "sha256": "c0848e30f68750b1efe2dc01a1ffeab11dea426ece62f8be1e184298e4ff2020",
+    "raw_file": "sources/raw/tutorial__tonghuashun.html",
+    "text_file": "sources/text/tutorial__tonghuashun.md",
+    "text_chars": 3200,
+    "links": [
+      {
+        "text": "客户端公式与网页插件的区别",
+        "url": "https://www.structguide.com/sites/tonghuashun#formula-or-extension"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "同花顺网页",
+        "url": "https://10jqka.com.cn/"
+      },
+      {
+        "text": "同花顺兼容范围",
+        "url": "https://www.structguide.com/sites/tonghuashun#supported-periods"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "structguide@outlook.com",
+        "url": "mailto:structguide@outlook.com"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "同花顺缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tonghuashun"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/tutorial/tradingview",
+    "sitemap_lastmod": "2026-10-04",
+    "retrieved_at": "2026-11-06T00:31:12+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/tutorial/tradingview",
+    "title": "TradingView 缠论插件怎么安装：Full Chart、画线设置与不显示排查",
+    "content_type": "text/html",
+    "bytes": 46485,
+    "sha256": "cf157f743cae99308bcef7a0ecd3781c3534c528c5ba6048e6264a5f8e97204c",
+    "raw_file": "sources/raw/tutorial__tradingview.html",
+    "text_file": "sources/text/tutorial__tradingview.md",
+    "text_chars": 3203,
+    "links": [
+      {
+        "text": "TradingView 缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tradingview"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "TradingView 兼容范围",
+        "url": "https://www.structguide.com/sites/tradingview#supported-periods"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "structguide@outlook.com",
+        "url": "mailto:structguide@outlook.com"
+      },
+      {
+        "text": "安卓 Edge 安装与使用说明",
+        "url": "https://www.structguide.com/tutorial/tradingview#install"
+      },
+      {
+        "text": "TradingView 缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/tradingview"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/tutorial/xueqiu",
+    "sitemap_lastmod": "2026-10-22",
+    "retrieved_at": "2026-11-06T00:31:13+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/tutorial/xueqiu",
+    "title": "雪球缠论插件怎么安装和设置？K线入口与不显示排查",
+    "content_type": "text/html",
+    "bytes": 44654,
+    "sha256": "a3d73865e2ac18e8b291a6da44b24caf3a439c65bdcc86ff63647ca72df330cb",
+    "raw_file": "sources/raw/tutorial__xueqiu.html",
+    "text_file": "sources/text/tutorial__xueqiu.md",
+    "text_chars": 2587,
+    "links": [
+      {
+        "text": "雪球缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/xueqiu"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "雪球网页",
+        "url": "https://xueqiu.com/"
+      },
+      {
+        "text": "雪球兼容范围",
+        "url": "https://www.structguide.com/sites/xueqiu#supported-periods"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "笔的确认与更新规则",
+        "url": "https://www.structguide.com/concept/stroke#confirmation"
+      },
+      {
+        "text": "structguide@outlook.com",
+        "url": "mailto:structguide@outlook.com"
+      },
+      {
+        "text": "板块代码列表",
+        "url": "https://www.structguide.com/sites/xueqiu/boards"
+      },
+      {
+        "text": "雪球缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/xueqiu"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing",
+    "sitemap_lastmod": "2026-10-21",
+    "retrieved_at": "2026-11-06T00:31:13+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/wenhua-chanlun-auto-drawing",
+    "title": "文华财经缠论指标公式：自动画笔、线段与中枢",
+    "content_type": "text/html",
+    "bytes": 194826,
+    "sha256": "67970a0097d27d377c77d717d716ed87cc2b0b535d3fba35eb4586a06c82b670",
+    "raw_file": "sources/raw/wenhua-chanlun-auto-drawing.html",
+    "text_file": "sources/text/wenhua-chanlun-auto-drawing.md",
+    "text_chars": 87130,
+    "links": [
+      {
+        "text": "网页版方案",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing#web-path"
+      },
+      {
+        "text": "免费下载 WH6 麦语言 TXT 源码",
+        "url": "https://www.structguide.com/formulas/sg-wh6-approx-v1.txt"
+      },
+      {
+        "text": "导入步骤见下文",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing#installation"
+      },
+      {
+        "text": "实际效果图",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing#screenshots"
+      },
+      {
+        "text": "通达信近似缠论公式",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula"
+      },
+      {
+        "text": "结构快照与回放",
+        "url": "https://www.structguide.com/chanlun-auto-drawing#replay-check"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "安装 Struct Guide 网页画线插件",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "新浪财经兼容范围",
+        "url": "https://www.structguide.com/sites/sina#supported-periods"
+      },
+      {
+        "text": "新浪财经缠论画线教程",
+        "url": "https://www.structguide.com/tutorial/sina"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "通达信近似缠论公式的实现说明",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula#implementation"
+      },
+      {
+        "text": "上方下载",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing#download"
+      },
+      {
+        "text": "近似实现说明",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing#formula"
+      },
+      {
+        "text": "上方截图",
+        "url": "https://www.structguide.com/wenhua-chanlun-auto-drawing#screenshots"
+      },
+      {
+        "text": "通达信近似缠论公式",
+        "url": "https://www.structguide.com/faq/tongdaxin-approx-chanlun-formula"
+      },
+      {
+        "text": "structguide@outlook.com",
+        "url": "mailto:structguide@outlook.com"
+      },
+      {
+        "text": "画线差异核对顺序",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#drawing-differences"
+      },
+      {
+        "text": "画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "新浪财经缠论自动画线支持说明",
+        "url": "https://www.structguide.com/sites/sina"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      },
+      {
+        "text": "缠论自动画线软件怎么选",
+        "url": "https://www.structguide.com/faq/chanlun-indicator"
+      }
+    ]
+  },
+  {
+    "url": "https://www.structguide.com/who-its-for",
+    "sitemap_lastmod": "2026-10-04",
+    "retrieved_at": "2026-11-06T00:31:13+08:00",
+    "status": "ok",
+    "http_status": 200,
+    "final_url": "https://www.structguide.com/who-its-for",
+    "title": "Struct Guide 适合谁？网页画线、手机使用与安装前核对",
+    "content_type": "text/html",
+    "bytes": 41421,
+    "sha256": "cdc91152804d31b7eb1ade7f0fe5407045f498f99ab4484dfbb33eba72cb8dc3",
+    "raw_file": "sources/raw/who-its-for.html",
+    "text_file": "sources/text/who-its-for.md",
+    "text_chars": 1466,
+    "links": [
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "Struct Guide 画线规则与参数总览",
+        "url": "https://www.structguide.com/faq/drawing-rules"
+      },
+      {
+        "text": "免费画线与 VIP 权益的区别",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#free-and-vip"
+      },
+      {
+        "text": "隐私政策",
+        "url": "https://www.structguide.com/privacy"
+      },
+      {
+        "text": "免费画线与 VIP 权益的区别",
+        "url": "https://www.structguide.com/faq/chanlun-indicator#free-and-vip"
+      },
+      {
+        "text": "支持网站与周期",
+        "url": "https://www.structguide.com/sites/"
+      },
+      {
+        "text": "安装说明",
+        "url": "https://www.structguide.com/download/"
+      }
+    ]
+  }
+]

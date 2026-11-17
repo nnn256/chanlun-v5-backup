@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>缠论全链 · 讲解、递归与多周期</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chart_narration.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#lesson" aria-label="回到课程"><span class="brand-mark">缠</span><span>把结构看明白<small>CHANLUN / A VISUAL STUDY</small></span></a>
+    <nav class="tabs" aria-label="选择模式"><button id="tab-lesson" class="active" aria-selected="true">大白话讲解</button><button id="tab-chart" aria-selected="false">递归图解</button><button id="tab-period" aria-selected="false">全周期讲解</button><button id="tab-full" aria-selected="false">多周期全层</button></nav>
+    <a class="video-link" href="缠论一遍串起来.mp4" target="_blank" rel="noopener">打开完整 MP4 <span>↗</span></a>
+  </header>
+  <main>
+    <section id="lesson-view">
+      <div class="intro"><div><p class="eyebrow">从一根 K 线，到一套判断顺序</p><h1>缠论，一遍串起来<span>。</span></h1></div><p>听一段，看一张图。<br>学完就把同一套规则交给程序。</p></div>
+      <div class="lesson-layout">
+        <div class="lesson-main">
+          <div class="stage-wrap"><div id="lesson-stage" class="stage" aria-live="polite"></div><div class="stage-progress"><div id="lesson-progress"></div></div></div>
+          <div class="lesson-transport"><button id="lesson-prev" class="icon-button" aria-label="上一章">←</button><button id="lesson-play" class="primary">开始连续讲解</button><button id="lesson-next" class="icon-button" aria-label="下一章">→</button><span id="lesson-position">01 / 13</span><span id="lesson-duration"></span><label class="voice-toggle"><input id="voice" type="checkbox" checked>中文配音</label></div>
+          <div class="narration-box"><span>这一段在讲什么</span><p id="narration"></p></div>
+          <div class="lesson-foot"><span>可以用 ← → 切章，空格暂停。示意图为教学绘制。</span><button id="go-chart">懂了，看看程序怎么画 →</button></div>
+        </div>
+        <aside class="chapter-panel"><div class="panel-label">13 个问题，串成一条线 <span id="total-duration"></span></div><div id="chapter-list"></div><div class="chapter-tip">先理解逻辑，再逐根验证。<br>这是一份入门串讲，不承诺一遍掌握所有边界。</div></aside>
+      </div>
+    </section>
+    <section id="chart-view" hidden>
+      <div class="intro chart-intro"><div><p class="eyebrow">特征序列线段 / 已完成走势类型递归 / 逐根重算</p><h1>每一层，都有形成依据<span>。</span></h1></div><p id="data-description">合成示例 · 声明规则口径<br>分解完成与反转确认分别记录</p></div>
+      <div class="chart-layout">
+        <div class="chart-main">
+          <div class="chart-top"><div class="time-status"><span class="status-dot"></span><b id="asof-label">正在读取算法数据</b></div><div class="chart-actions"><label>结构秩 <select id="rank-select"><option value="0">全部层级</option><option value="1">L1</option><option value="2">L2</option><option value="3">L3</option></select></label><label>视野 <select id="window-size"><option value="0">全部</option><option value="160">最近160根</option><option value="80">最近80根</option></select></label><button id="export-json">导出当时数据</button><button id="export-svg">保存图 SVG</button></div></div>
+          <div class="layers" role="group" aria-label="图层"><label><input type="checkbox" data-layer="candles" checked><i class="candle-dot"></i>K线</label><label><input type="checkbox" data-layer="fractals" checked><i class="fractal-dot"></i>分型</label><label><input type="checkbox" data-layer="strokes" checked><i class="stroke-dot"></i>笔</label><label><input type="checkbox" data-layer="segments" checked><i class="segment-dot"></i>特征序列线段</label><label><input type="checkbox" data-layer="centers" checked><i class="center-dot"></i>递归中枢</label><label><input type="checkbox" data-layer="types"><i class="segment-dot"></i>完成分解</label><label><input type="checkbox" data-layer="signals" checked><i class="signal-dot"></i>六类候选</label></div>
+          <div id="chart-host" class="chart-host"></div>
+          <div class="chart-transport"><button id="chart-play" class="primary">播放形成过程</button><button id="chart-step">下一根 →</button><button id="chart-reset">重头</button><select id="chart-speed" aria-label="回放速度"><option value="280">正常速度</option><option value="80">快速</option><option value="650">慢速</option></select><span id="bar-count"></span></div>
+          <div class="timeline"><input id="time-slider" type="range" min="5" max="378" value="130" aria-label="选择截至第几根K线"><div><span>只计算左侧已发生的数据</span><span id="snapshot-count"></span></div></div>
+          <div class="jump-cases"><span>结构逐级生长</span><button data-jump="80">早期结构</button><button data-jump="240">查看 L1</button><button data-jump="480">查看 L2</button><button data-jump="99999">完整递归</button></div>
+        </div>
+        <aside class="evidence-panel"><p class="panel-label">当前这一刻</p><h2 id="state-label">结构计算中</h2><div id="structure-counts" class="structure-counts"></div><p class="evidence-hint">点选结构查看组件、依据和确认时间。L1/L2/L3 是理论结构秩，不是分钟周期。</p><div id="hierarchy-audit"></div><div id="selected-evidence"><span class="empty-label">先点一个结构，看看它凭什么成立。</span></div><div id="signal-evidence"></div><details class="scope"><summary>这版算法采用什么口径？</summary><p>线段处理特征序列无缺口、有缺口第二序列和笔破坏路径；L0 声明为确认线段最低边界。L1 以上只使用完整、连续、同秩的下级走势类型建立中枢，并逐对象重算凭据。</p><p>同级分解完成不等于反转；反转使用独立的反向中枢破坏与不返回凭据。虚线表示候选尾部。MACD仍只提供辅助力度。</p><code>declared recursive profile<br>execution_allowed=false</code></details></aside>
+      </div>
+      <section id="chart-narration" aria-label="当前图形的中文讲解"></section>
+      <div class="chart-foot"><span>合成示例不代表真实股票走势。确认时间是算法最早知道的时间，不是拐点价格发生的时间。</span><button id="back-lesson">回到讲解 ↑</button></div>
+    </section>
+    <section id="period-view" hidden><div class="intro"><div><p class="eyebrow">常用 10 周期 / 每个可选结构层级 / 文字与中文朗读</p><h1>这张图，逐层讲给你听<span>。</span></h1></div><p>1分到年线，L0到L8<br>每个周期都讲当前事实与缺失条件</p></div><div class="full-tools"><p>切换周期、结构层级或历史时点，图和解释一起更新。分钟源与长期日源分组独立，不拼接成虚假的多周期确认。</p><a href="period-explained.html" target="_blank" rel="noopener">独立打开全周期讲解 ↗</a></div><iframe id="period-frame" title="全部常用周期的图形与中文讲解" data-src="period-explained.html"></iframe></section>
+    <section id="full-view" hidden><div class="intro"><div><p class="eyebrow">周期与结构秩分开 / 数据对账 / 完整证据</p><h1>所有计算层，放在一起核对<span>。</span></h1></div><p>中枢演化、同级分解、力度、六类点<br>区间套、真实下级触发与小转大</p></div><div class="full-tools"><p>日线、30分、5分结构一起显示。缺少触发证据就显示等待；0个候选不会补造。周期已按OHLCV对账。</p><a href="full-study-final/完整算法复习.html" target="_blank" rel="noopener">在独立窗口查看全层图 ↗</a></div><iframe id="full-frame" title="多周期完整算法与证据" data-src="full-study-final/完整算法复习.html"></iframe></section>
+    <div id="fatal-error" hidden></div>
+  </main>
+  <footer class="site-footer"><span>课程摘要 + 声明口径的全链计算</span><span>先定级别 · 再认结构 · 最后等确认</span><a href="README.md">使用与算法说明</a></footer>
+  <audio id="narration-audio" preload="metadata"></audio>
+  <script src="lessons.js"></script><script src="media.js"></script><script src="data.js"></script><script src="chart_explainer.js"></script><script src="chart_narration.js"></script><script src="app.js"></script>
+</body></html>
